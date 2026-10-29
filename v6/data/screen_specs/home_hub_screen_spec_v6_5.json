@@ -1,0 +1,12 @@
+{
+  "spec_version": "6.5",
+  "screen_id": "HOME_HUB_SCREEN",
+  "canonical_viewport": [1280, 720],
+  "geometry_policy": "LOCK_V6_4",
+  "composition_class": "REFERENCE_PLATE_PRESENTATION_HUB",
+  "base_plate": "res://v6/art/reference_runtime/home_hub_reference_runtime_base_v6_5.png",
+  "ui_overlay": "res://v6/art/plates/home_hub/home_hub_ui_overlay_v6_5.png",
+  "render_dynamic": ["hud_values", "nav_labels", "rest_label", "transparent_hit_targets", "optional_state_badges_vfx"],
+  "do_not_render_on_hub": ["farmer", "cat", "cow", "sheep", "chicken", "portal_prefab", "front_occluder"],
+  "interaction_policy": "preserve callbacks/hotspots independent from decorative sprite rendering"
+}

@@ -1,0 +1,16 @@
+{
+  "review_status": "self_reviewed_critical_save_and_capacity_not_native_approved",
+  "keys": ["Storage is full (%d item stacks). Upgrade the Warehouse or use/sell an item first.","Save failed. Your progress is not confirmed saved.\nPlease retry.","Could not save this action; your previous farm state was kept."],
+  "th": ["คลังเต็มแล้ว (%d ชนิดไอเทม) อัปเกรดโกดัง หรือใช้/ขายไอเทมก่อน","บันทึกไม่สำเร็จ ยังยืนยันไม่ได้ว่าความคืบหน้าถูกบันทึกแล้ว\nโปรดลองอีกครั้ง","บันทึกการกระทำนี้ไม่สำเร็จ ข้อมูลฟาร์มก่อนหน้านี้ยังคงอยู่"],
+  "ms": ["Stor penuh (%d jenis barang). Naik taraf gudang atau gunakan/jual barang dahulu.","Gagal menyimpan. Kemajuan belum disahkan tersimpan.\nSila cuba lagi.","Tindakan ini tidak dapat disimpan; keadaan ladang sebelumnya dikekalkan."],
+  "id": ["Gudang penuh (%d jenis barang). Tingkatkan gudang atau gunakan/jual barang terlebih dahulu.","Gagal menyimpan. Kemajuan belum dikonfirmasi tersimpan.\nSilakan coba lagi.","Tindakan ini tidak dapat disimpan; keadaan ladang sebelumnya tetap disimpan."],
+  "zh_CN": ["仓库已满（%d种物品）。请先升级仓库，或使用/出售物品。","保存失败，尚未确认进度已保存。\n请重试。","无法保存此次操作；之前的农场状态已保留。"],
+  "ja": ["倉庫が満杯です（%d種類のアイテム）。倉庫を拡張するか、先にアイテムを使う・売る必要があります。","保存できませんでした。進行状況の保存は確認されていません。\nもう一度お試しください。","この操作を保存できませんでした。以前の農場の状態は保持されています。"],
+  "ko": ["창고가 가득 찼습니다(아이템 %d종). 창고를 확장하거나 먼저 아이템을 사용/판매하세요.","저장하지 못했습니다. 진행 상황이 저장되었다고 확인할 수 없습니다.\n다시 시도하세요.","이 작업을 저장할 수 없었습니다. 이전 농장 상태가 유지되었습니다."],
+  "ru": ["Склад заполнен (%d видов предметов). Улучшите склад или сначала используйте/продайте предметы.","Не удалось сохранить. Сохранение прогресса не подтверждено.\nПопробуйте ещё раз.","Не удалось сохранить действие; прежнее состояние фермы сохранено."],
+  "es": ["El almacén está lleno (%d tipos de objetos). Amplíalo o usa/vende un objeto primero.","No se pudo guardar. No se ha confirmado el guardado del progreso.\nInténtalo de nuevo.","No se pudo guardar esta acción; se conservó el estado anterior de la granja."],
+  "pt_BR": ["O depósito está cheio (%d tipos de itens). Amplie o depósito ou use/venda um item primeiro.","Não foi possível salvar. O progresso não foi confirmado como salvo.\nTente novamente.","Não foi possível salvar esta ação; o estado anterior da fazenda foi preservado."],
+  "de": ["Das Lager ist voll (%d Gegenstandsarten). Erweitere das Lager oder verwende/verkaufe zuerst einen Gegenstand.","Speichern fehlgeschlagen. Der Fortschritt wurde nicht nachweislich gespeichert.\nBitte versuche es erneut.","Diese Aktion konnte nicht gespeichert werden; der vorherige Farmzustand blieb erhalten."],
+  "fr": ["L’entrepôt est plein (%d types d’objets). Agrandis-le ou utilise/vends d’abord un objet.","La sauvegarde a échoué. L’enregistrement de la progression n’est pas confirmé.\nRéessaie.","Cette action n’a pas pu être sauvegardée ; l’état précédent de la ferme a été conservé."],
+  "pl": ["Magazyn jest pełny (%d rodzajów przedmiotów). Rozbuduj go albo najpierw użyj/sprzedaj przedmiot.","Zapis nie powiódł się. Nie potwierdzono zapisania postępu.\nSpróbuj ponownie.","Nie udało się zapisać tej czynności; zachowano poprzedni stan farmy."]
+}

@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3]
+[ext_resource type="Script" path="res://scripts/components/plot_cell_v7.gd" id="1"]
+[node name="PlotCell" type="Control"]
+script = ExtResource("1")
+[node name="BaseSoil" type="TextureRect" parent="."]
+[node name="WateredOverlay" type="TextureRect" parent="."]
+[node name="FertilizerOverlay" type="TextureRect" parent="."]
+[node name="CropSprite" type="TextureRect" parent="."]
+[node name="ReadyOverlay" type="TextureRect" parent="."]
+[node name="SelectionOverlay" type="TextureRect" parent="."]
+[node name="HoverOverlay" type="TextureRect" parent="."]
+[node name="DisabledOverlay" type="TextureRect" parent="."]
+[node name="ClickArea" type="Button" parent="."]

@@ -1,0 +1,28 @@
+{
+  "registry_version": "6.2",
+  "screen_id": "SAVE_SCREEN",
+  "canonical_viewport": [1280, 720],
+  "status": "V6_2_SHELL_ALIGNED",
+  "rects": [
+    {"id": "HEADER_TITLE", "type": "RELATIVE_CONTENT_RECT", "px": [20, 2, 512, 38]},
+    {"id": "HEADER_SUBTITLE", "type": "RELATIVE_CONTENT_RECT", "px": [20, 43, 512, 24]},
+    {"id": "SLOT_THUMBNAIL", "type": "RELATIVE_CONTENT_RECT", "px": [35, 17, 180, 105]},
+    {"id": "SLOT_NUMBER_BADGE", "type": "RELATIVE_CONTENT_RECT", "px": [15, 7, 55, 40]},
+    {"id": "SLOT_NAME", "type": "RELATIVE_CONTENT_RECT", "px": [245, 18, 370, 32]},
+    {"id": "SLOT_INFO", "type": "RELATIVE_CONTENT_RECT", "px": [245, 55, 370, 28]},
+    {"id": "SLOT_STATUS", "type": "RELATIVE_CONTENT_RECT", "px": [470, 103, 145, 26]},
+    {"id": "DETAIL_TITLE", "type": "RELATIVE_CONTENT_RECT", "px": [35, 2, 463, 55]},
+    {"id": "DETAIL_THUMBNAIL", "type": "RELATIVE_CONTENT_RECT", "px": [50, 95, 433, 205]},
+    {"id": "DETAIL_THUMBNAIL_FRAME", "type": "RELATIVE_CONTENT_RECT", "px": [35, 80, 463, 235]},
+    {"id": "DETAIL_FARM_NAME", "type": "RELATIVE_CONTENT_RECT", "px": [45, 315, 443, 38]},
+    {"id": "DETAIL_STAT_1", "type": "RELATIVE_CONTENT_RECT", "px": [106, 350, 320, 24]},
+    {"id": "DETAIL_STAT_2", "type": "RELATIVE_CONTENT_RECT", "px": [106, 377, 320, 24]},
+    {"id": "DETAIL_STAT_3", "type": "RELATIVE_CONTENT_RECT", "px": [106, 404, 320, 24]},
+    {"id": "DETAIL_STAT_LABEL", "type": "RELATIVE_CONTENT_RECT", "px": [10, 0, 300, 24]},
+    {"id": "DETAIL_LAST_SAVED", "type": "RELATIVE_CONTENT_RECT", "px": [45, 438, 443, 20]},
+    {"id": "DETAIL_EMPTY_MESSAGE", "type": "RELATIVE_CONTENT_RECT", "px": [45, 330, 443, 90]},
+    {"id": "DETAIL_EMPTY_ICON", "type": "RELATIVE_CONTENT_RECT", "px": [166, 25, 100, 95]},
+    {"id": "DETAIL_EMPTY_TITLE", "type": "RELATIVE_CONTENT_RECT", "px": [20, 132, 393, 42]},
+    {"id": "DETAIL_CONFIRM_STATUS", "type": "RELATIVE_CONTENT_RECT", "px": [25, 446, 483, 30]}
+  ]
+}

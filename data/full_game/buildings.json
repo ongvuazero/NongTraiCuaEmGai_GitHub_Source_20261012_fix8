@@ -1,0 +1,13 @@
+{
+  "barn":{"name":"Barn Upgrade","island":"main","cost":180,"items":{"stone":2},"max_level":3,"orders":1,"effect":"Adds one animal-care capacity per level; Cloud Chicken remains available."},
+  "alchemy":{"name":"Alchemy Workbench","island":"main","cost":400,"items":{},"max_level":1,"orders":1,"effect":"Unlocks food, medicine and dragon recipes."},
+  "special_shop":{"name":"Special Shop","island":"main","cost":700,"items":{},"max_level":1,"orders":3,"effect":"Unlocks rare eggs and specialist supplies."},
+  "dragon_altar":{"name":"Dragon Altar","island":"main","cost":900,"items":{"ancient_fruit":1},"max_level":1,"orders":3,"blessing_cost":5,"blessing_energy":20,"effect":"Unlocks Dragon Island and elemental incubation. Once daily spend 5 Dragon Energy to recover up to 20 farm energy."},
+  "garden":{"name":"Botanical Garden Upgrade","island":"botanical","cost":200,"items":{"stone":3},"max_level":2,"orders":1,"effect":"Adds one herb yield per harvest, capped at three."},
+  "pond":{"name":"Fish Pond","island":"main","cost":250,"items":{"stone":3},"max_level":2,"orders":2,"effect":"Allows fish care and fish materials."},
+  "monster_pen":{"name":"Monster Sanctuary","island":"monster","cost":300,"items":{"stone":4},"max_level":1,"orders":3,"effect":"Allows slime and golem companions."},
+  "icehouse":{"name":"Icehouse","island":"ice","cost":300,"items":{"ice_shard":2},"max_level":1,"orders":3,"effect":"Daily creature fullness and cleanliness decay reduced by two."},
+  "forge":{"name":"Warm Forge","island":"lava","cost":350,"items":{"ember":2,"stone":3},"max_level":1,"orders":4,"effect":"Queued crafting and incubation gain one extra progress per day."},
+  "serpent_den":{"name":"Serpent Den","island":"snake","cost":280,"items":{"snake_scale":2},"max_level":1,"orders":4,"effect":"Allows a serpent companion and disease resistance utility."},
+  "warehouse":{"name":"Warehouse Upgrade","island":"main","cost":350,"items":{"stone":5},"max_level":3,"orders":2,"effect":"Unlocks larger forage batches without limiting existing inventory or dropping old items."}
+}

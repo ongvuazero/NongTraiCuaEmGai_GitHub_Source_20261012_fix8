@@ -1,0 +1,22 @@
+{
+  "Ấp": ["Incubate", "Ấp"],
+  "Đổi": ["Convert", "Đổi"],
+  "Hiếm / khác": ["Rare / other", "Hiếm / khác"],
+  "Storage: %d / %d item types. All categories share this capacity.": ["Storage: %d / %d item types. All categories share this capacity.", "Kho: %d / %d loại vật phẩm. Các nhóm dùng chung sức chứa này."],
+  "Owned: %d\nCategory: %s\n%s\n%s": ["Owned: %d\nCategory: %s\n%s\n%s", "Đang có: %d\nPhân loại: %s\n%s\n%s"],
+  "Cannot be sold.": ["Cannot be sold.", "Không bán được."],
+  "Recover 25 farm energy. Creature diseases need matching remedies.": ["Recover 25 farm energy. Creature diseases need matching remedies.", "Hồi 25 năng lượng nông trại. Bệnh vật nuôi cần thuốc đúng bệnh."],
+  "Use an altar blessing to recover farm energy.": ["Use an altar blessing to recover farm energy.", "Dùng ban phước ở tế đàn để hồi năng lượng nông trại."],
+  "Convert one fruit to 5 Dragon Energy on Dragon Island.": ["Convert one fruit to 5 Dragon Energy on Dragon Island.", "Đổi một quả thành 5 Long Khí tại Đảo Rồng."],
+  "Hatches %s in %d days. Collect the hatchling in Companions.": ["Hatches %s in %d days. Collect the hatchling in Companions.", "Nở thành %s sau %d ngày. Nhận con non trong Bộ sưu tập."],
+  "Offer this cake to an owned dragon in Companions.": ["Offer this cake to an owned dragon in Companions.", "Tặng bánh cho rồng đang nuôi trong Bộ sưu tập."],
+  "Food for Cloud Chicken. Feed from the Animal screen.": ["Food for Cloud Chicken. Feed from the Animal screen.", "Thức ăn của Gà Mây. Cho ăn tại màn Vật nuôi."],
+  "Food for %s. Feed in Animal or Companions.": ["Food for %s. Feed in Animal or Companions.", "Thức ăn của %s. Cho ăn tại Vật nuôi hoặc Bộ sưu tập."],
+  "Cures %s. Choose the sick creature in Companions.": ["Cures %s. Choose the sick creature in Companions.", "Chữa %s. Chọn vật nuôi bị bệnh trong Bộ sưu tập."],
+  "Plant in the Herb Garden.": ["Plant in the Herb Garden.", "Trồng tại Vườn dược liệu."],
+  "Choose a field bed to plant this seed.": ["Choose a field bed to plant this seed.", "Chọn một ô ruộng để gieo hạt này."],
+  "Sell a crop or keep it for farm orders.": ["Sell a crop or keep it for farm orders.", "Bán nông sản hoặc giữ lại để giao đơn."],
+  "Keep for recipes and buildings, or sell when a price is shown.": ["Keep for recipes and buildings, or sell when a price is shown.", "Giữ để chế tạo, xây công trình; có thể bán khi có giá."],
+  "Keep this item for farm activities.": ["Keep this item for farm activities.", "Giữ vật phẩm này cho hoạt động nông trại."],
+  "Unrecognized saved item. Kept safely; no current action is available.": ["Unrecognized saved item. Kept safely; no current action is available.", "Vật phẩm cũ chưa rõ loại. Vẫn giữ an toàn; hiện không có thao tác sử dụng."]
+}

@@ -1,0 +1,38 @@
+# Godot generated data
+.godot/
+.import/
+*.import
+
+# Exported builds and platform output
+BUILD/
+build/
+reports/
+qa/
+android/
+*.apk
+*.aab
+*.exe
+*.pck
+
+# Local logs and temporary files
+*.log
+*.tmp
+*.bak
+*.swp
+__pycache__/
+*.py[cod]
+.DS_Store
+Thumbs.db
+
+# Signing credentials and local configuration
+*.keystore
+*.jks
+*.p12
+*.pem
+*.key
+.env
+.env.*
+
+# Historical working copies
+BACKUPS/
+

@@ -1,0 +1,4239 @@
+{
+  "Recover save": ["Recover save", "Khôi phục ô lưu"],
+  "Recoverable save": ["Recoverable save", "Có bản lưu khôi phục"],
+  "Corrupt save data": ["Corrupt save data", "Dữ liệu lưu bị lỗi"],
+  "Backup found. Recover before loading.": ["Backup found. Recover before loading.", "Có bản dự phòng. Khôi phục trước khi tải."],
+  "No valid recovery copy. This slot is not empty.": ["No valid recovery copy. This slot is not empty.", "Không có bản khôi phục hợp lệ. Ô này không trống."],
+  "Confirm overwrite": ["Confirm overwrite", "Xác nhận ghi đè"],
+  "Confirm delete": ["Confirm delete", "Xác nhận xóa"],
+  "Slot %d · %s\nDay %d · %s": ["Slot %d · %s\nDay %d · %s", "Ô %d · %s\nNgày %d · %s"],
+  "Corrupt or missing primary save": ["Corrupt or missing primary save", "Bản lưu chính bị lỗi hoặc bị thiếu"],
+  "Replace this farm with a new Day 1 farm?\nA backup is kept on this device.": ["Replace this farm with a new Day 1 farm?\nA backup is kept on this device.", "Thay nông trại này bằng nông trại mới ở Ngày 1?\nBản dự phòng được giữ trên thiết bị này."],
+  "Remove this slot from the list?\nA deleted copy is kept on this device.": ["Remove this slot from the list?\nA deleted copy is kept on this device.", "Xóa ô này khỏi danh sách?\nBản sao đã xóa được giữ trên thiết bị này."],
+  "Overwrite": ["Overwrite", "Ghi đè"],
+  "Delete save": ["Delete save", "Xóa ô lưu"],
+  "Cancel": ["Cancel", "Hủy"],
+  "No farm name": ["No farm name", "Chưa có tên nông trại"],
+  "Save confirmation expired. Please choose the slot again.": ["Save confirmation expired. Please choose the slot again.", "Xác nhận đã hết hiệu lực. Vui lòng chọn lại ô lưu."],
+  "Start or load a farm before saving.": ["Start or load a farm before saving.", "Hãy tạo hoặc tải nông trại trước khi lưu."],
+  "Cannot load this save. Recover a backup or choose another slot.": ["Cannot load this save. Recover a backup or choose another slot.", "Không thể tải bản lưu này. Hãy khôi phục dự phòng hoặc chọn ô khác."],
+  "Could not recover this save. Original files were kept.": ["Could not recover this save. Original files were kept.", "Không thể khôi phục bản lưu này. Các tệp gốc được giữ nguyên."],
+  "Recovered save slot %d. Original recovery copies were kept.": ["Recovered save slot %d. Original recovery copies were kept.", "Đã khôi phục ô lưu %d. Các bản khôi phục gốc được giữ nguyên."],
+  "Deleted slot %d. A deleted copy is kept on this device.": ["Deleted slot %d. A deleted copy is kept on this device.", "Đã xóa ô %d. Bản sao đã xóa được giữ trên thiết bị này."],
+  "Could not delete this slot. Original files were kept.": ["Could not delete this slot. Original files were kept.", "Không thể xóa ô này. Các tệp gốc được giữ nguyên."],
+  "Cannot advance the day: farm data is invalid. Load a valid save or recover a backup.": ["Cannot advance the day: farm data is invalid. Load a valid save or recover a backup.", "Không thể sang ngày: dữ liệu nông trại không hợp lệ. Hãy tải bản lưu hợp lệ hoặc khôi phục dự phòng."],
+  "Could not save preferences. Farm save slots were not changed.": ["Could not save preferences. Farm save slots were not changed.", "Không thể lưu cài đặt. Các ô lưu nông trại không bị thay đổi."],
+  "Preferences saved. Farm save slots were not changed.": ["Preferences saved. Farm save slots were not changed.", "Đã lưu cài đặt. Các ô lưu nông trại không bị thay đổi."],
+  "Thời gian\n%s": ["Play time\n%s", "Thời gian\n%s"],
+  "Cà chua: Đơn 1 · Bí ngô: Đơn 2": ["Tomato: Order 1 · Pumpkin: Order 2", "Cà chua: Đơn 1 · Bí ngô: Đơn 2"],
+  "Cả 3 loại hạt đã mở": ["All 3 seeds unlocked", "Cả 3 loại hạt đã mở"],
+  "Chọn hạt": ["Choose seed", "Chọn hạt"],
+  "Đơn hàng đã giao": ["Orders delivered", "Đơn hàng đã giao"],
+  "Gợi ý đầu phiên": ["First-session hints", "Gợi ý đầu phiên"],
+  "Đang hiện": ["Active", "Đang hiện"],
+  "Đã xong": ["Completed", "Đã xong"],
+  "Harvested +%d %s.\nStorage: %d.": [
+    "Harvested +%d %s.\nStorage: %d.",
+    "Đã thu +%d %s.\nKho: %d."
+  ],
+  "Next: PLANT.": [
+    "Next: PLANT.",
+    "Tiếp: GIEO."
+  ],
+  "Next: WATER.": [
+    "Next: WATER.",
+    "Tiếp: TƯỚI."
+  ],
+  "Next: NEXT DAY.": [
+    "Next: NEXT DAY.",
+    "Tiếp: NGÀY MỚI."
+  ],
+  "Next: HARVEST.": [
+    "Next: HARVEST.",
+    "Tiếp: THU HOẠCH."
+  ],
+  "Next: ORDERS.": [
+    "Next: ORDERS.",
+    "Tiếp: NHIỆM VỤ."
+  ],
+  "Tilled plot %d.": [
+    "Tilled plot %d.",
+    "Đã cuốc ô %d."
+  ],
+  "Planted %s on plot %d.": [
+    "Planted %s on plot %d.",
+    "Đã gieo %s vào ô %d."
+  ],
+  "Watered plot %d.": [
+    "Watered plot %d.",
+    "Đã tưới ô %d."
+  ],
+  "Fertilized plot %d.": [
+    "Fertilized plot %d.",
+    "Đã bón phân ô %d."
+  ],
+  "Day %d. Energy restored.": [
+    "Day %d. Energy restored.",
+    "Đã sang ngày %d. Năng lượng đã hồi."
+  ],
+  "Fertilized": [
+    "Fertilized",
+    "Đã bón phân"
+  ],
+  "Not fertilized": [
+    "Not fertilized",
+    "Chưa bón phân"
+  ],
+  "FERTILIZER %s": [
+    "FERTILIZER %s",
+    "PHÂN BÓN %s"
+  ],
+  "Chạm vật nuôi để chăm sóc.": [
+    "Click an animal to care for it.",
+    "Chạm vật nuôi để chăm sóc."
+  ],
+  "No %d · Sạch %d · Vui %d": [
+    "Full %d · Clean %d · Happy %d",
+    "No %d · Sạch %d · Vui %d"
+  ],
+  "Chưa nhận nuôi": [
+    "Not adopted",
+    "Chưa nhận nuôi"
+  ],
+  "Thức ăn %d · Sẵn sàng %d": [
+    "Food %d · Ready %d",
+    "Thức ăn %d · Sẵn sàng %d"
+  ],
+  "Đã cho ăn.\n%s còn ×%d.": [
+    "Fed.\n%s remaining ×%d.",
+    "Đã cho ăn.\n%s còn ×%d."
+  ],
+  "Đã dọn dẹp.": [
+    "Cleaned.",
+    "Đã dọn dẹp."
+  ],
+  "Đã vuốt ve.": [
+    "Petted.",
+    "Đã vuốt ve."
+  ],
+  "Đã thu %s ×%d.\nKho: %d.": [
+    "Collected %s ×%d.\nStorage: %d.",
+    "Đã thu %s ×%d.\nKho: %d."
+  ],
+  "Vịt": [
+    "Duck",
+    "Vịt"
+  ],
+  "Heo": [
+    "Pig",
+    "Heo"
+  ],
+  "Vịt Mây": [
+    "Cloud Duck",
+    "Vịt Mây"
+  ],
+  "Heo Củ": [
+    "Root Pig",
+    "Heo Củ"
+  ],
+  "Thu trứng vịt": [
+    "Collect duck eggs",
+    "Thu trứng vịt"
+  ],
+  "Thu nấm củ": [
+    "Collect truffles",
+    "Thu nấm củ"
+  ],
+  "Trứng gà": [
+    "Chicken Egg",
+    "Trứng gà"
+  ],
+  "Trứng vịt": [
+    "Duck eggs",
+    "Trứng vịt"
+  ],
+  "Sữa": [
+    "Milk",
+    "Sữa"
+  ],
+  "Nấm củ": [
+    "Truffles",
+    "Nấm củ"
+  ],
+  "Ao Vịt Mây": [
+    "Duck pond",
+    "Ao Vịt Mây"
+  ],
+  "Khu Heo Củ": [
+    "Pig yard",
+    "Khu Heo Củ"
+  ],
+  "Hạt ao hồ": [
+    "Pond grain",
+    "Hạt ao hồ"
+  ],
+  "Củ nghiền": [
+    "Root mash",
+    "Củ nghiền"
+  ],
+  "1 hạt bạc hà khi Đảo Dược Liệu đã mở.": [
+    "1 Mint Seed if Botanical Island is open.",
+    "1 hạt bạc hà khi Đảo Dược Liệu đã mở."
+  ],
+  "Tưới 1 luống đã trồng vào ngày mới.": [
+    "Waters 1 planted bed next morning.",
+    "Tưới 1 luống đã trồng vào ngày mới."
+  ],
+  "Tìm 1 đá xây dựng vào ngày mới.": [
+    "Finds 1 building stone next morning.",
+    "Tìm 1 đá xây dựng vào ngày mới."
+  ],
+  "Giao hỗ trợ": [
+    "Assign help",
+    "Giao hỗ trợ"
+  ],
+  "Dừng hỗ trợ": [
+    "Stop help",
+    "Dừng hỗ trợ"
+  ],
+  "Dùng thuốc": [
+    "Use cure",
+    "Dùng thuốc"
+  ],
+  "Đã nuôi": [
+    "Owned",
+    "Đã nuôi"
+  ],
+  "Xem trước": [
+    "Preview",
+    "Xem trước"
+  ],
+  "Sẵn sàng: %d · %s": [
+    "Ready: %d · %s",
+    "Sẵn sàng: %d · %s"
+  ],
+  "%s · dành cho %s": [
+    "%s · for %s",
+    "%s · dành cho %s"
+  ],
+  "Thức ăn: %s ×%d": [
+    "Food: %s ×%d",
+    "Thức ăn: %s ×%d"
+  ],
+  "%s · Sẵn sàng %d · Kho %d": [
+    "%s · Ready %d · Stored %d",
+    "%s · Sẵn sàng %d · Kho %d"
+  ],
+  "Đã giao hỗ trợ": [
+    "Help assigned",
+    "Đã giao hỗ trợ"
+  ],
+  "Chưa giao hỗ trợ": [
+    "Help not assigned",
+    "Chưa giao hỗ trợ"
+  ],
+  "Hỗ trợ áp dụng ngày mới khi cả ba chỉ số từ 40 và không bệnh. Một loài cho mỗi loại hỗ trợ. Hạt/đá cần chỗ trong Kho.": [
+    "Help applies next morning when all three care meters are at least 40 and the animal is healthy. One species per help type. Seeds/stone need free Storage space.",
+    "Hỗ trợ áp dụng ngày mới khi cả ba chỉ số từ 40 và không bệnh. Một loài cho mỗi loại hỗ trợ. Hạt/đá cần chỗ trong Kho."
+  ],
+  "Đủ điều kiện nhận nuôi.": [
+    "Ready to adopt.",
+    "Đủ điều kiện nhận nuôi."
+  ],
+  "Sản phẩm ngày mới: chỉ số ≥40, không bệnh.": [
+    "Daily output: care ≥40, healthy.",
+    "Sản phẩm ngày mới: chỉ số ≥40, không bệnh."
+  ],
+  "Mỗi ngày chăm tốt tạo 1 sản phẩm. Tối đa chờ thu: %d.": [
+    "Good daily care produces 1 product. Maximum waiting to collect: %d.",
+    "Mỗi ngày chăm tốt tạo 1 sản phẩm. Tối đa chờ thu: %d."
+  ],
+  "Nhận nuôi: %d xu · %d đơn · Chuồng": [
+    "Adopt: %d coins · %d orders · Barn",
+    "Nhận nuôi: %d xu · %d đơn · Chuồng"
+  ],
+  "Đã cho %s ăn.\nDùng 1 thức ăn riêng.": [
+    "%s fed.\nUsed 1 species food.",
+    "Đã cho %s ăn.\nDùng 1 thức ăn riêng."
+  ],
+  "Đã dọn khu %s.": [
+    "%s yard cleaned.",
+    "Đã dọn khu %s."
+  ],
+  "%s vui hơn.": [
+    "%s is happier.",
+    "%s vui hơn."
+  ],
+  "Đã thu %d %s vào Kho.": [
+    "Collected %d %s into Storage.",
+    "Đã thu %d %s vào Kho."
+  ],
+  "Chăm %s mỗi ngày.\nThức ăn và sản phẩm riêng.": [
+    "Care for %s daily.\nIts own food and products.",
+    "Chăm %s mỗi ngày.\nThức ăn và sản phẩm riêng."
+  ],
+  "Đã nhận nuôi %s.": [
+    "%s adopted.",
+    "Đã nhận nuôi %s."
+  ],
+  "Đã dừng hỗ trợ.": [
+    "Help stopped.",
+    "Đã dừng hỗ trợ."
+  ],
+  "Đã giao hỗ trợ.\nHiệu quả từ ngày mới.": [
+    "Help assigned.\nApplies next morning.",
+    "Đã giao hỗ trợ.\nHiệu quả từ ngày mới."
+  ],
+  "Đã dùng đúng thuốc cho %s.": [
+    "Used the matching cure for %s.",
+    "Đã dùng đúng thuốc cho %s."
+  ],
+  "Ngày mới: xem thức ăn, sản phẩm và hỗ trợ.": [
+    "New day: check food, output and help.",
+    "Ngày mới: xem thức ăn, sản phẩm và hỗ trợ."
+  ],
+  "Feed trough": [
+    "Feed trough",
+    "Máng ăn"
+  ],
+  "Gà": [
+    "Chicken",
+    "Gà"
+  ],
+  "Bò": [
+    "Cow",
+    "Bò"
+  ],
+  "BÒ ♥": [
+    "COW ♥",
+    "BÒ ♥"
+  ],
+  "Bò Đồng Cỏ": [
+    "Meadow Cow",
+    "Bò Đồng Cỏ"
+  ],
+  "Nhận nuôi": [
+    "Adopt",
+    "Nhận nuôi"
+  ],
+  "Chăm Gà Mây để nhận trứng.\nCho ăn, vuốt ve, dọn dẹp.": [
+    "Care for Cloud Chicken for eggs.\nFeed, pet and clean.",
+    "Chăm Gà Mây để nhận trứng.\nCho ăn, vuốt ve, dọn dẹp."
+  ],
+  "Bò dùng cỏ khô riêng.\nChăm tốt để nhận sữa.": [
+    "Cows need meadow fodder.\nGood care produces milk.",
+    "Bò dùng cỏ khô riêng.\nChăm tốt để nhận sữa."
+  ],
+  "Chưa nhận nuôi loài này.\nXem điều kiện ở nút Nhận nuôi.": [
+    "This animal is not adopted.\nCheck the Adopt button.",
+    "Chưa nhận nuôi loài này.\nXem điều kiện ở nút Nhận nuôi."
+  ],
+  "Chưa nhận nuôi loài này.": [
+    "This animal is not adopted.",
+    "Chưa nhận nuôi loài này."
+  ],
+  "Đang bệnh: %s\nDùng %s.": [
+    "Ill: %s\nUse %s.",
+    "Đang bệnh: %s\nDùng %s."
+  ],
+  "%s bị %s. Mở Bộ sưu tập và dùng thuốc đúng bệnh.": [
+    "%s has %s. Open Companions and use the matching cure.",
+    "%s bị %s. Mở Bộ sưu tập và dùng thuốc đúng bệnh."
+  ],
+  "BÒ ĐỒNG CỎ    ·    Sữa: %d": [
+    "MEADOW COW    ·    Milk: %d",
+    "BÒ ĐỒNG CỎ    ·    Sữa: %d"
+  ],
+  "Thức ăn của Gà Mây": [
+    "Cloud Chicken food",
+    "Thức ăn của Gà Mây"
+  ],
+  "Cỏ khô riêng cho Bò Đồng Cỏ": [
+    "Meadow fodder for cows only",
+    "Cỏ khô riêng cho Bò Đồng Cỏ"
+  ],
+  "Cỏ khô": [
+    "Fodder",
+    "Cỏ khô"
+  ],
+  "Chuồng Gà Mây": [
+    "Chicken coop",
+    "Chuồng Gà Mây"
+  ],
+  "Khu Bò Đồng Cỏ": [
+    "Cow pasture",
+    "Khu Bò Đồng Cỏ"
+  ],
+  "Thu sữa": [
+    "Collect milk",
+    "Thu sữa"
+  ],
+  "Đã cho Bò Đồng Cỏ ăn cỏ khô.": [
+    "Cow fed meadow fodder.",
+    "Đã cho Bò Đồng Cỏ ăn cỏ khô."
+  ],
+  "Khu bò đã sạch hơn.": [
+    "Cow pasture cleaned.",
+    "Khu bò đã sạch hơn."
+  ],
+  "Bò Đồng Cỏ vui hơn.": [
+    "Meadow Cow is happier.",
+    "Bò Đồng Cỏ vui hơn."
+  ],
+  "Đã thu sữa vào Kho.": [
+    "Milk collected into storage.",
+    "Đã thu sữa vào Kho."
+  ],
+  "Đã nhận nuôi Bò Đồng Cỏ.": [
+    "Meadow Cow adopted.",
+    "Đã nhận nuôi Bò Đồng Cỏ."
+  ],
+  "Ngày %d\n%s": [
+    "Day %d\n%s",
+    "Ngày %d\n%s"
+  ],
+  "Dragon nav": [
+    "Dragon",
+    "Rồng"
+  ],
+  "Trang trai": [
+    "Home",
+    "Trang trại"
+  ],
+  "Ruong": [
+    "Field",
+    "Ruộng"
+  ],
+  "Vat nuoi": [
+    "Animals",
+    "Vật nuôi"
+  ],
+  "Dao Rong": [
+    "Dragon Island",
+    "Đảo Rồng"
+  ],
+  "spring": [
+    "Spring",
+    "Xuân"
+  ],
+  "summer": [
+    "Summer",
+    "Hạ"
+  ],
+  "autumn": [
+    "Autumn",
+    "Thu"
+  ],
+  "winter": [
+    "Winter",
+    "Đông"
+  ],
+  "Spring": [
+    "Spring",
+    "Xuân"
+  ],
+  "Summer": [
+    "Summer",
+    "Hạ"
+  ],
+  "Autumn": [
+    "Autumn",
+    "Thu"
+  ],
+  "Winter": [
+    "Winter",
+    "Đông"
+  ],
+  "Năng lượng: %s / 100": [
+    "Energy: %s / 100",
+    "Năng lượng: %s / 100"
+  ],
+  "Ruộng": [
+    "Field",
+    "Ruộng"
+  ],
+  "Cửa hàng": [
+    "Shop",
+    "Cửa hàng"
+  ],
+  "Kho": [
+    "Storage",
+    "Kho"
+  ],
+  "Vật nuôi": [
+    "Animals",
+    "Vật nuôi"
+  ],
+  "Đảo Rồng": [
+    "Dragon Island",
+    "Đảo Rồng"
+  ],
+  "Nhiệm vụ": [
+    "Orders",
+    "Nhiệm vụ"
+  ],
+  "Cài đặt": [
+    "Settings",
+    "Cài đặt"
+  ],
+  "Nghỉ / Ngày mới": [
+    "Rest / Next Day",
+    "Nghỉ / Ngày mới"
+  ],
+  "KHÓA": [
+    "LOCKED",
+    "KHÓA"
+  ],
+  "Hat Ca rot": [
+    "Carrot Seeds",
+    "Hạt Cà rốt"
+  ],
+  "Hat Ca chua": [
+    "Tomato Seeds",
+    "Hạt Cà chua"
+  ],
+  "Hat Bi ngo": [
+    "Pumpkin Seeds",
+    "Hạt Bí ngô"
+  ],
+  "Ca rot": [
+    "Carrot",
+    "Cà rốt"
+  ],
+  "Ca rot tuoi": [
+    "Fresh Carrot",
+    "Cà rốt tươi"
+  ],
+  "Ca chua": [
+    "Tomato",
+    "Cà chua"
+  ],
+  "Bi ngo": [
+    "Pumpkin",
+    "Bí ngô"
+  ],
+  "Thuc an vat nuoi": [
+    "Animal Feed",
+    "Thức ăn vật nuôi"
+  ],
+  "Thuoc bo sung": [
+    "Care Supplement",
+    "Thuốc bổ sung"
+  ],
+  "Trung ga": [
+    "Chicken Egg",
+    "Trứng gà"
+  ],
+  "Banh Rong": [
+    "Dragon Cake",
+    "Bánh Rồng"
+  ],
+  "Hat giong": [
+    "Seeds",
+    "Hạt giống"
+  ],
+  "Nong san": [
+    "Crops",
+    "Nông sản"
+  ],
+  "Cham soc": [
+    "Care",
+    "Chăm sóc"
+  ],
+  "Thu hoach": [
+    "Produce",
+    "Thu hoạch"
+  ],
+  "Craft": [
+    "Workshop",
+    "Chế tạo"
+  ],
+  "Shop": [
+    "Shop",
+    "Cửa hàng"
+  ],
+  "Tien": [
+    "Coins",
+    "Xu"
+  ],
+  "Ngày %d": [
+    "Day %d",
+    "Ngày %d"
+  ],
+  "Đơn đầu tiên": [
+    "First Order",
+    "Đơn đầu tiên"
+  ],
+  "Vụ mùa mới": [
+    "New Crop",
+    "Vụ mùa mới"
+  ],
+  "Thu hoạch lớn": [
+    "Big Harvest",
+    "Thu hoạch lớn"
+  ],
+  "Giao 1 Cà rốt tươi để mở khóa Cà chua.": [
+    "Deliver 1 Fresh Carrot to unlock Tomato.",
+    "Giao 1 Cà rốt tươi để mở khóa Cà chua."
+  ],
+  "Giao 2 Cà chua để mở khóa Bí ngô.": [
+    "Deliver 2 Tomatoes to unlock Pumpkin.",
+    "Giao 2 Cà chua để mở khóa Bí ngô."
+  ],
+  "Giao 1 Bí ngô để hoàn thành mục tiêu nông trại đầu tiên.": [
+    "Deliver 1 Pumpkin to complete your first farm goal.",
+    "Giao 1 Bí ngô để hoàn thành mục tiêu nông trại đầu tiên."
+  ],
+  "Click ruong de trong trot, click chuong de cham soc vat nuoi.": [
+    "Visit the Field to grow crops or the Barn to care for animals.",
+    "Vào Ruộng để trồng trọt, vào Chuồng để chăm sóc vật nuôi."
+  ],
+  "Khong the tai save.": [
+    "Could not load this save.",
+    "Không thể tải bản lưu."
+  ],
+  "Nhan Confirm lan nua de ghi de Slot %d.": [
+    "Press Confirm again to overwrite Slot %d.",
+    "Bấm Xác nhận lần nữa để ghi đè ô lưu %d."
+  ],
+  "Nhan Delete lan nua de xoa Slot %d.": [
+    "Press Delete again to delete Slot %d.",
+    "Bấm Xóa lần nữa để xóa ô lưu %d."
+  ],
+  "Cây trồng này chưa được mở khóa.": [
+    "This crop is not unlocked yet.",
+    "Cây trồng này chưa được mở khóa."
+  ],
+  "Khong the thuc hien: trang thai hoac nang luong khong du.": [
+    "Action unavailable: check the plot state and energy.",
+    "Chưa thể thực hiện: kiểm tra trạng thái ô đất và năng lượng."
+  ],
+  "Hạt giống này chưa được mở khóa.": [
+    "These seeds are not unlocked yet.",
+    "Hạt giống này chưa được mở khóa."
+  ],
+  "Da mua %s.": [
+    "Bought %s.",
+    "Đã mua %s."
+  ],
+  "Khong du tien.": [
+    "Not enough coins.",
+    "Không đủ xu."
+  ],
+  "Khong co nong san de ban.": [
+    "No crops available to sell.",
+    "Không có nông sản để bán."
+  ],
+  "Da ban %s.": [
+    "Sold %s.",
+    "Đã bán %s."
+  ],
+  "Chua co trung san sang.": [
+    "No eggs ready yet.",
+    "Chưa có trứng sẵn sàng."
+  ],
+  "Da thu trung vao Kho.": [
+    "Eggs collected into Storage.",
+    "Đã thu trứng vào Kho."
+  ],
+  "Khong du nang luong.": [
+    "Not enough energy.",
+    "Không đủ năng lượng."
+  ],
+  "Khong con thuc an vat nuoi.": [
+    "No animal feed left.",
+    "Không còn thức ăn vật nuôi."
+  ],
+  "Da cho ga an.": [
+    "Chicken fed.",
+    "Đã cho gà ăn."
+  ],
+  "Da don dep chuong.": [
+    "Barn cleaned.",
+    "Đã dọn chuồng."
+  ],
+  "Da vuot ve ga.": [
+    "Chicken petted.",
+    "Đã vuốt ve gà."
+  ],
+  "Không có đơn hàng hợp lệ.": [
+    "No valid order available.",
+    "Không có đơn hàng hợp lệ."
+  ],
+  "Chưa đủ vật phẩm: cần %d, hiện có %d.": [
+    "Not enough items: need %d, have %d.",
+    "Chưa đủ vật phẩm: cần %d, hiện có %d."
+  ],
+  "Đã hoàn thành mục tiêu nông trại đầu tiên!": [
+    "First farm goal complete!",
+    "Đã hoàn thành mục tiêu nông trại đầu tiên!"
+  ],
+  "Đã giao %s · nhận %d xu và %s x%d.": [
+    "Delivered %s · earned %d coins and %s ×%d.",
+    "Đã giao %s · nhận %d xu và %s ×%d."
+  ],
+  "Start or load a farm first.": [
+    "Start or load a farm first.",
+    "Hãy bắt đầu hoặc tải nông trại trước."
+  ],
+  "Action unavailable.": [
+    "Action unavailable.",
+    "Chưa thể thực hiện."
+  ],
+  "Could not save this action; your previous farm state was kept.": [
+    "Could not save this action; your previous farm state was kept.",
+    "Không lưu được thao tác; trạng thái nông trại trước đó được giữ nguyên."
+  ],
+  "Complete %d crop orders first.": [
+    "Complete %d crop orders first.",
+    "Hoàn thành %d đơn hàng nông sản trước."
+  ],
+  "Unlock %s first.": [
+    "Unlock %s first.",
+    "Mở khóa %s trước."
+  ],
+  "Build %s first.": [
+    "Build %s first.",
+    "Xây %s trước."
+  ],
+  "Need %d coins; you have %d.": [
+    "Need %d coins; you have %d.",
+    "Cần %d xu; hiện có %d."
+  ],
+  "Need %s x%d; you have %d.": [
+    "Need %s ×%d; you have %d.",
+    "Cần %s ×%d; hiện có %d."
+  ],
+  "Storage is full (%d item stacks). Build a Warehouse upgrade or use/sell an item first.": [
+    "Storage is full (%d item stacks). Upgrade the Warehouse or use/sell an item first.",
+    "Kho đã đầy (%d loại vật phẩm). Nâng cấp Kho hoặc dùng/bán bớt vật phẩm."
+  ],
+  "Unlock Dragon Island first.": [
+    "Unlock Dragon Island first.",
+    "Mở khóa Đảo Rồng trước."
+  ],
+  "The altar blessing was used today. Return next day.": [
+    "The altar blessing was used today. Return next day.",
+    "Đã nhận phước lành hôm nay. Hãy quay lại vào ngày mới."
+  ],
+  "Farm energy is already full.": [
+    "Farm energy is already full.",
+    "Năng lượng nông trại đã đầy."
+  ],
+  "Need %d Dragon Energy for an altar blessing.": [
+    "Need %d Dragon Energy for an altar blessing.",
+    "Cần %d Long Khí để nhận phước lành."
+  ],
+  "Altar blessing recovered farm energy. Available again next day.": [
+    "Altar blessing restored farm energy. Available again next day.",
+    "Phước lành đã hồi năng lượng. Có thể nhận lại vào ngày mới."
+  ],
+  "Unlock Dragon Island before converting surplus fruit.": [
+    "Unlock Dragon Island before converting surplus fruit.",
+    "Mở Đảo Rồng trước khi đổi trái dư."
+  ],
+  "Need one Ancient Dragon Fruit.": [
+    "Need one Ancient Dragon Fruit.",
+    "Cần 1 Long Quả Cổ."
+  ],
+  "Dragon Energy is near its 99-point cap; use it first.": [
+    "Dragon Energy is near its 99-point cap; use it first.",
+    "Long Khí gần giới hạn 99; hãy dùng bớt trước."
+  ],
+  "Converted surplus fruit into 5 Dragon Energy.": [
+    "Converted surplus fruit into 5 Dragon Energy.",
+    "Đã đổi trái dư thành 5 Long Khí."
+  ],
+  "Unknown world action: ": [
+    "Unknown action: ",
+    "Thao tác không hợp lệ: "
+  ],
+  "Unknown island.": [
+    "Unknown island.",
+    "Đảo không hợp lệ."
+  ],
+  "This island is already unlocked.": [
+    "This island is already unlocked.",
+    "Đảo này đã mở khóa."
+  ],
+  "Unlocked %s.": [
+    "Unlocked %s.",
+    "Đã mở khóa %s."
+  ],
+  "Unknown building.": [
+    "Unknown building.",
+    "Công trình không hợp lệ."
+  ],
+  "This building is already at its maximum level.": [
+    "This building is already at its maximum level.",
+    "Công trình đã đạt cấp tối đa."
+  ],
+  "%s is now level %d.": [
+    "%s is now level %d.",
+    "%s đã đạt cấp %d."
+  ],
+  "This item cannot be purchased.": [
+    "This item cannot be purchased.",
+    "Không thể mua vật phẩm này."
+  ],
+  "Bought %s x%d.": [
+    "Bought %s ×%d.",
+    "Đã mua %s ×%d."
+  ],
+  "Rare materials and food cannot be sold here.": [
+    "Rare materials and food cannot be sold here.",
+    "Không thể bán nguyên liệu hiếm và thức ăn ở đây."
+  ],
+  "You do not own this item.": [
+    "You do not own this item.",
+    "Bạn chưa có vật phẩm này."
+  ],
+  "Sold one %s for %d coins.": [
+    "Sold one %s for %d coins.",
+    "Đã bán 1 %s nhận %d xu."
+  ],
+  "Unknown recipe.": [
+    "Unknown recipe.",
+    "Công thức không hợp lệ."
+  ],
+  "This recipe is already queued; claim it before crafting again.": [
+    "This recipe is already queued; claim it before crafting again.",
+    "Công thức đang được chế tạo; nhận thành phẩm trước khi làm tiếp."
+  ],
+  "Crafted %s x%d.": [
+    "Crafted %s ×%d.",
+    "Đã chế tạo %s ×%d."
+  ],
+  "%s queued for %d days.": [
+    "%s queued for %d days.",
+    "%s đang được chế tạo trong %d ngày."
+  ],
+  "Queued recipe data is missing.": [
+    "Queued recipe data is missing.",
+    "Thiếu dữ liệu công thức đang chế tạo."
+  ],
+  "Collected %s x%d.": [
+    "Collected %s ×%d.",
+    "Đã nhận %s ×%d."
+  ],
+  "No finished craft to collect.": [
+    "No finished craft to collect.",
+    "Chưa có thành phẩm để nhận."
+  ],
+  "Unknown medicinal crop.": [
+    "Unknown medicinal crop.",
+    "Thảo dược không hợp lệ."
+  ],
+  "This garden is occupied; harvest it first.": [
+    "This garden is occupied; harvest it first.",
+    "Vườn đang có cây; hãy thu hoạch trước."
+  ],
+  "Buy %s first.": [
+    "Buy %s first.",
+    "Mua %s trước."
+  ],
+  "Need 3 energy to plant.": [
+    "Need 3 energy to plant.",
+    "Cần 3 năng lượng để trồng."
+  ],
+  "Planted %s in its separate medicinal garden.": [
+    "Planted %s in its medicinal garden.",
+    "Đã trồng %s trong vườn thảo dược."
+  ],
+  "Plant this medicinal garden first.": [
+    "Plant this medicinal garden first.",
+    "Trồng thảo dược vào vườn trước."
+  ],
+  "This garden is ready to harvest.": [
+    "This garden is ready to harvest.",
+    "Vườn đã sẵn sàng thu hoạch."
+  ],
+  "This garden was watered today.": [
+    "This garden was watered today.",
+    "Vườn đã được tưới hôm nay."
+  ],
+  "Need 2 energy to water.": [
+    "Need 2 energy to water.",
+    "Cần 2 năng lượng để tưới."
+  ],
+  "Watered %s. Advance the day to grow it.": [
+    "Watered %s. Advance the day to grow it.",
+    "Đã tưới %s. Qua ngày mới để cây phát triển."
+  ],
+  "This garden is still growing.": [
+    "This garden is still growing.",
+    "Vườn vẫn đang phát triển."
+  ],
+  "Need 3 energy to harvest.": [
+    "Need 3 energy to harvest.",
+    "Cần 3 năng lượng để thu hoạch."
+  ],
+  "Harvested %s x%d.": [
+    "Harvested %s ×%d.",
+    "Đã thu hoạch %s ×%d."
+  ],
+  "Unknown creature.": [
+    "Unknown companion.",
+    "Bạn đồng hành không hợp lệ."
+  ],
+  "You already have this companion.": [
+    "You already have this companion.",
+    "Bạn đã có bạn đồng hành này."
+  ],
+  "Dragons must hatch from their own elemental eggs.": [
+    "Dragons hatch from their own elemental eggs.",
+    "Rồng cần nở từ trứng nguyên tố tương ứng."
+  ],
+  "Companion capacity reached; upgrade the matching building.": [
+    "Companion capacity reached; upgrade its building.",
+    "Đã đủ bạn đồng hành; nâng cấp công trình tương ứng."
+  ],
+  "Welcomed %s. Food: %s.": [
+    "Welcomed %s. Food: %s.",
+    "Đã đón %s. Thức ăn: %s."
+  ],
+  "You do not own this creature.": [
+    "You do not own this companion.",
+    "Bạn chưa có bạn đồng hành này."
+  ],
+  "No product ready. Feed, clean and pet this companion, then advance the day.": [
+    "No product ready. Feed, clean and pet this companion, then advance the day.",
+    "Chưa có sản phẩm. Cho ăn, dọn sạch và vuốt ve rồi qua ngày mới."
+  ],
+  "Use Dragon Energy before collecting more.": [
+    "Use Dragon Energy before collecting more.",
+    "Dùng bớt Long Khí trước khi thu thêm."
+  ],
+  "Collected %s x%d from %s.": [
+    "Collected %s ×%d from %s.",
+    "Đã thu %s ×%d từ %s."
+  ],
+  "Companion needs healthy care meters of at least 40 before assignment.": [
+    "Care meters must be at least 40 and the companion healthy.",
+    "Bạn đồng hành cần khỏe mạnh và mỗi chỉ số chăm sóc từ 40 trở lên."
+  ],
+  "This companion is already assigned.": [
+    "This companion is already assigned.",
+    "Bạn đồng hành này đã được phân công."
+  ],
+  "%s assigned to %s utility. Benefits apply next day while care is adequate.": [
+    "%s assigned to %s. Benefits apply next day while care is adequate.",
+    "Đã phân công %s hỗ trợ %s. Có hiệu lực ngày sau khi được chăm sóc tốt."
+  ],
+  "This companion is not assigned.": [
+    "This companion is not assigned.",
+    "Bạn đồng hành này chưa được phân công."
+  ],
+  "Unassigned %s.": [
+    "Unassigned %s.",
+    "Đã hủy phân công %s."
+  ],
+  "Need %d energy for care.": [
+    "Need %d energy for care.",
+    "Cần %d năng lượng để chăm sóc."
+  ],
+  "Dragon Cake is a dragon-only mood supplement, not species food.": [
+    "Dragon Cake improves a dragon's mood; it does not replace food.",
+    "Bánh Rồng cải thiện tâm trạng rồng, không thay thế thức ăn."
+  ],
+  "This dragon is already content.": [
+    "This dragon is already happy.",
+    "Rồng đã rất vui vẻ."
+  ],
+  "Craft a Warm Dragon Cake first.": [
+    "Craft a Warm Dragon Cake first.",
+    "Chế tạo Bánh Rồng ấm trước."
+  ],
+  "This companion is already full.": [
+    "This companion is already full.",
+    "Bạn đồng hành đã no bụng."
+  ],
+  "Need the species food: %s.": [
+    "Needs its own food: %s.",
+    "Cần thức ăn phù hợp: %s."
+  ],
+  "This companion is already clean.": [
+    "This companion is already clean.",
+    "Bạn đồng hành đã sạch sẽ."
+  ],
+  "This companion is already content.": [
+    "This companion is already happy.",
+    "Bạn đồng hành đã rất vui vẻ."
+  ],
+  "This companion is healthy.": [
+    "This companion is healthy.",
+    "Bạn đồng hành đang khỏe mạnh."
+  ],
+  "No configured cure for this disease.": [
+    "No cure is configured for this illness.",
+    "Chưa có thuốc phù hợp cho bệnh này."
+  ],
+  "Need %s for %s.": [
+    "Need %s for %s.",
+    "Cần %s để chữa %s."
+  ],
+  "%s: %s complete.": [
+    "%s: %s complete.",
+    "%s: đã hoàn thành %s."
+  ],
+  "Unknown egg.": [
+    "Unknown egg.",
+    "Trứng không hợp lệ."
+  ],
+  "This dragon is already in your collection.": [
+    "This dragon is already in your collection.",
+    "Rồng này đã có trong bộ sưu tập."
+  ],
+  "You already own or incubate this egg.": [
+    "You already own or incubate this egg.",
+    "Bạn đã có hoặc đang ấp trứng này."
+  ],
+  "Need %d Dragon Energy.": [
+    "Need %d Dragon Energy.",
+    "Cần %d Long Khí."
+  ],
+  "Bought %s.": [
+    "Bought %s.",
+    "Đã mua %s."
+  ],
+  "This egg is already incubating.": [
+    "This egg is already incubating.",
+    "Trứng này đang được ấp."
+  ],
+  "Buy or craft this egg first.": [
+    "Buy or craft this egg first.",
+    "Mua hoặc chế tạo trứng này trước."
+  ],
+  "All three incubators are occupied; hatch a ready egg first.": [
+    "All three incubators are occupied; hatch a ready egg first.",
+    "Cả 3 lò ấp đều bận; cho trứng đã sẵn sàng nở trước."
+  ],
+  "%s is incubating for %d days.": [
+    "%s is incubating for %d days.",
+    "%s đang được ấp trong %d ngày."
+  ],
+  "This egg is not ready to hatch.": [
+    "This egg is not ready to hatch.",
+    "Trứng chưa sẵn sàng nở."
+  ],
+  "Hatched %s! Care for it with %s.": [
+    "%s hatched! Feed it %s.",
+    "%s đã nở! Chăm sóc bằng %s."
+  ],
+  "Unlock this island first.": [
+    "Unlock this island first.",
+    "Mở khóa đảo này trước."
+  ],
+  "Already gathered here today; return tomorrow.": [
+    "Already gathered here today; return tomorrow.",
+    "Đã thu gom ở đây hôm nay; quay lại ngày mai."
+  ],
+  "Need 4 energy to gather.": [
+    "Need 4 energy to gather.",
+    "Cần 4 năng lượng để thu gom."
+  ],
+  "Gathered %s x%d from %s.": [
+    "Gathered %s ×%d from %s.",
+    "Đã thu gom %s ×%d tại %s."
+  ],
+  "Unknown event.": [
+    "Unknown event.",
+    "Sự kiện không hợp lệ."
+  ],
+  "This reward has already been claimed.": [
+    "This reward has already been claimed.",
+    "Phần thưởng này đã được nhận."
+  ],
+  "Progress: %d / %d.": [
+    "Progress: %d / %d.",
+    "Tiến độ: %d / %d."
+  ],
+  "This event is available during %s.": [
+    "This event is available during %s.",
+    "Sự kiện diễn ra vào mùa %s."
+  ],
+  "Claimed %s: %d coins and supplies.": [
+    "Claimed %s: %d coins and supplies.",
+    "Đã nhận %s: %d xu và vật phẩm."
+  ],
+  "Dragon hatched": [
+    "Dragon hatched",
+    "Rồng đã nở"
+  ],
+  "Ancient Dragon Fruit discovered! Keep it for the Dragon Altar.": [
+    "Ancient Dragon Fruit discovered! Keep it for the Dragon Altar.",
+    "Tìm thấy Long Quả Cổ! Hãy giữ lại cho Điện thờ Rồng."
+  ],
+  "None": [
+    "None",
+    "Không có"
+  ],
+  "true": [
+    "Yes",
+    "Có"
+  ],
+  "false": [
+    "No",
+    "Không"
+  ],
+  "Feed": [
+    "Feed",
+    "cho ăn"
+  ],
+  "Clean": [
+    "Clean",
+    "Vệ sinh"
+  ],
+  "Pet": [
+    "Pet",
+    "Vuốt ve"
+  ],
+  "Treat": [
+    "Treat",
+    "Món thưởng"
+  ],
+  "Heal": [
+    "Heal",
+    "chữa bệnh"
+  ],
+  "animal": [
+    "Animal",
+    "Vật nuôi"
+  ],
+  "dragon": [
+    "Dragon",
+    "Rồng"
+  ],
+  "monster": [
+    "Companion",
+    "Linh thú"
+  ],
+  "all": [
+    "All",
+    "Tất cả"
+  ],
+  "Any": [
+    "Any",
+    "Bất kỳ"
+  ],
+  "sleep": [
+    "Drowsiness",
+    "buồn ngủ"
+  ],
+  "fatigue": [
+    "Fatigue",
+    "mệt mỏi"
+  ],
+  "poison": [
+    "Poisoning",
+    "nhiễm độc"
+  ],
+  "fever": [
+    "Fever",
+    "sốt"
+  ],
+  "cold": [
+    "Cold",
+    "cảm lạnh"
+  ],
+  "stomach": [
+    "Stomachache",
+    "đau bụng"
+  ],
+  "skin": [
+    "Skin irritation",
+    "bệnh da"
+  ],
+  "water": [
+    "Watering",
+    "tưới cây"
+  ],
+  "health": [
+    "Health",
+    "sức khỏe"
+  ],
+  "storage": [
+    "Storage",
+    "bảo quản"
+  ],
+  "garden": [
+    "Gardening",
+    "vườn thảo dược"
+  ],
+  "hatch": [
+    "Incubation",
+    "ấp trứng"
+  ],
+  "gather": [
+    "Foraging",
+    "thu gom"
+  ],
+  "Slot khong hop le.": [
+    "Invalid save slot.",
+    "Ô lưu không hợp lệ."
+  ],
+  "Slot %d dang trong.": [
+    "Slot %d is empty.",
+    "Ô lưu %d đang trống."
+  ],
+  "Save slot %d bi loi; tep goc va backup van duoc giu.": [
+    "Save slot %d is damaged; the original and backup are preserved.",
+    "Ô lưu %d bị lỗi; bản gốc và bản sao lưu được giữ nguyên."
+  ],
+  "Khong mo duoc save.": [
+    "Could not open save.",
+    "Không mở được bản lưu."
+  ],
+  "Save co header khong hop le.": [
+    "Invalid save header.",
+    "Tiêu đề bản lưu không hợp lệ."
+  ],
+  "Save khong phai Dictionary.": [
+    "Invalid save format.",
+    "Định dạng bản lưu không hợp lệ."
+  ],
+  "Save sai schema.": [
+    "Invalid save schema.",
+    "Cấu trúc bản lưu không hợp lệ."
+  ],
+  "EMPTY PLOT": [
+    "EMPTY PLOT",
+    "Ô ĐẤT TRỐNG"
+  ],
+  "Ready": [
+    "Ready",
+    "Chín"
+  ],
+  "%d / %d Days": [
+    "%d/%d Days",
+    "%d/%d ngày"
+  ],
+  "GROWTH   %s\nWATER     %s\nYIELD     %s": [
+    "GROWTH   %s\nWATER     %s\nYIELD     %s",
+    "SINH TRƯỞNG   %s\nTƯỚI     %s\nSẢN LƯỢNG     %s"
+  ],
+  "Not planted": [
+    "Not planted",
+    "Chưa gieo"
+  ],
+  "Watered": [
+    "Watered",
+    "Đã tưới"
+  ],
+  "Dry": [
+    "Dry",
+    "Chưa tưới"
+  ],
+  "1 crop": [
+    "1 crop",
+    "1 nông sản"
+  ],
+  "Harvest when ready.": [
+    "Harvest when ready.",
+    "Thu hoạch khi cây chín."
+  ],
+  "Water daily.": [
+    "Water daily.",
+    "Tưới cây mỗi ngày."
+  ],
+  "Choose a seed.": [
+    "Choose a seed.",
+    "Chọn hạt giống."
+  ],
+  "Till before planting.": [
+    "Till before planting.",
+    "Cuốc đất trước khi gieo."
+  ],
+  "TIP": [
+    "TIP",
+    "GỢI Ý"
+  ],
+  "Selected: %s": [
+    "Selected: %s",
+    "Đang chọn: %s"
+  ],
+  "Growth\nWater\nYield": [
+    "Growth\nWater\nYield",
+    "Giai đoạn\nTưới\nSản lượng"
+  ],
+  "%s\n%s\n1": [
+    "%s\n%s\n1",
+    "%s\n%s\n1"
+  ],
+  "READY": [
+    "READY",
+    "ĐÃ CHÍN"
+  ],
+  "TILLED": [
+    "TILLED",
+    "ĐÃ CUỐC"
+  ],
+  "UNTILLED": [
+    "UNTILLED",
+    "CHƯA CUỐC"
+  ],
+  "PLANTED": [
+    "PLANTED",
+    "ĐÃ GIEO"
+  ],
+  "GROWING": [
+    "GROWING",
+    "ĐANG LỚN"
+  ],
+  "Carrot is in Storage. Open Orders to complete your first order.": [
+    "Carrot is in Storage. Open Orders to complete your first order.",
+    "Đã có Cà rốt trong Kho. Mở Đơn hàng để giao đơn đầu."
+  ],
+  "Carrot is ready. Press HARVEST.": [
+    "Carrot is ready. Press HARVEST.",
+    "Cà rốt đã chín. Chọn THU HOẠCH."
+  ],
+  "Select a plot, then press TILL.": [
+    "Select a plot, then press TILL.",
+    "Chọn ô đất, rồi chọn CUỐC."
+  ],
+  "Press PLANT, choose Carrot, then select a plot.": [
+    "Press PLANT, choose Carrot, then select a plot.",
+    "Chọn GIEO, chọn Cà rốt, rồi chạm ô đất."
+  ],
+  "Press WATER.": [
+    "Press WATER.",
+    "Chọn TƯỚI."
+  ],
+  "Press NEXT DAY. Water again tomorrow.": [
+    "Press NEXT DAY. Water again tomorrow.",
+    "Chọn NGÀY MỚI. Mai tưới tiếp."
+  ],
+  "DAY %d · %s": [
+    "DAY %d\n%s",
+    "NGÀY %d\n%s"
+  ],
+  "COINS  %d": [
+    "COINS\n%d",
+    "XU\n%d"
+  ],
+  "ENERGY  %d/100": [
+    "ENERGY\n%d/100",
+    "NĂNG LƯỢNG\n%d/100"
+  ],
+  "SPRING": [
+    "SPRING",
+    "XUÂN"
+  ],
+  "SUMMER": [
+    "SUMMER",
+    "HẠ"
+  ],
+  "AUTUMN": [
+    "AUTUMN",
+    "THU"
+  ],
+  "WINTER": [
+    "WINTER",
+    "ĐÔNG"
+  ],
+  "Choose a seed, then click a tilled plot.": [
+    "Choose a seed, then click a tilled plot.",
+    "Chọn hạt giống, rồi chạm đất đã cuốc."
+  ],
+  "Rest until tomorrow. Energy returns to 100.": [
+    "Rest until tomorrow. Energy returns to 100.",
+    "Nghỉ sang ngày mai để hồi đủ 100 năng lượng."
+  ],
+  "Return to field selection.": [
+    "Return to field selection.",
+    "Trở về chọn ruộng."
+  ],
+  "Choose %s seeds.": [
+    "Choose %s seeds.",
+    "Chọn hạt %s."
+  ],
+  "%s\nLOCKED": [
+    "%s\nLOCKED",
+    "%s\nKHÓA"
+  ],
+  "%s\nx%d": [
+    "%s\nx%d",
+    "%s\nx%d"
+  ],
+  "LOCKED": [
+    "LOCKED",
+    "KHÓA"
+  ],
+  "Till": [
+    "Till",
+    "Cuốc"
+  ],
+  "Plant": [
+    "Plant",
+    "Gieo"
+  ],
+  "Water": [
+    "Water",
+    "Tưới nước"
+  ],
+  "Fertilize": [
+    "Fertilize",
+    "Bón phân"
+  ],
+  "Harvest": [
+    "Harvest",
+    "Thu hoạch"
+  ],
+  "Click an untilled plot.": [
+    "Click untilled soil.",
+    "Chạm đất chưa cuốc."
+  ],
+  "Plant %s in a tilled plot.": [
+    "Plant %s in tilled soil.",
+    "Gieo %s vào đất đã cuốc."
+  ],
+  "Click a planted plot to water.": [
+    "Click a planted plot.",
+    "Chạm cây để tưới."
+  ],
+  "Click a growing crop to fertilize.": [
+    "Click a growing crop.",
+    "Chạm cây để bón phân."
+  ],
+  "Click a ready crop to harvest.": [
+    "Click a ready crop.",
+    "Chạm cây đã chín."
+  ],
+  "Choose a tool, then click a plot.": [
+    "Choose a tool, then click a plot.",
+    "Chọn dụng cụ, rồi chạm ô đất."
+  ],
+  "Not enough Energy. Rest until tomorrow.": [
+    "Not enough Energy. Rest until tomorrow.",
+    "Thiếu năng lượng. Nghỉ sang ngày mai."
+  ],
+  "No seeds available. Buy seeds in the Shop.": [
+    "No seeds available. Buy seeds in the Shop.",
+    "Hết hạt giống. Mua thêm tại Cửa hàng."
+  ],
+  "Complete The First Order to unlock Tomato.": [
+    "Complete The First Order to unlock Tomato.",
+    "Giao Đơn đầu tiên để mở Cà chua."
+  ],
+  "Complete A New Crop to unlock Pumpkin.": [
+    "Complete A New Crop to unlock Pumpkin.",
+    "Giao Vụ mùa mới để mở Bí ngô."
+  ],
+  "Carrot": [
+    "Carrot",
+    "Cà rốt"
+  ],
+  "Tomato": [
+    "Tomato",
+    "Cà chua"
+  ],
+  "Pumpkin": [
+    "Pumpkin",
+    "Bí ngô"
+  ],
+  "Plot %02d selected.": [
+    "Plot %02d selected.",
+    "Đã chọn ô %02d."
+  ],
+  "Ready to Harvest": [
+    "Ready to Harvest",
+    "Sẵn sàng thu hoạch"
+  ],
+  "Planted": [
+    "Planted",
+    "Đã gieo"
+  ],
+  "Growing · Day %d": [
+    "Growing · Day %d",
+    "Đang lớn · Ngày %d"
+  ],
+  "Tilled": [
+    "Tilled",
+    "Đã cuốc"
+  ],
+  "Untilled": [
+    "Untilled",
+    "Chưa cuốc"
+  ],
+  "Done.": [
+    "Done.",
+    "Xong."
+  ],
+  "Not enough Energy.": [
+    "Not enough Energy.",
+    "Thiếu năng lượng."
+  ],
+  "This plot is locked.": [
+    "This plot is locked.",
+    "Ô đất này chưa mở."
+  ],
+  "This plot is already tilled.": [
+    "This plot is already tilled.",
+    "Ô này đã cuốc rồi."
+  ],
+  "Till this plot first.": [
+    "Till this plot first.",
+    "Cuốc ô này trước."
+  ],
+  "This plot already has a crop.": [
+    "Plot already planted.",
+    "Ô này đã có cây."
+  ],
+  "No %s seeds. Buy more in the Shop.": [
+    "Buy %s seeds in the Shop.",
+    "Mua hạt %s tại Cửa hàng."
+  ],
+  "Choose an unlocked seed.": [
+    "Choose an unlocked seed.",
+    "Chọn hạt giống đã mở."
+  ],
+  "Already watered today.": [
+    "Already watered today.",
+    "Đã tưới hôm nay."
+  ],
+  "This crop is ready. Harvest it.": [
+    "This crop is ready. Harvest it.",
+    "Cây đã chín. Hãy thu hoạch."
+  ],
+  "Plant a crop first.": [
+    "Plant a crop first.",
+    "Gieo cây trước."
+  ],
+  "Already fertilized.": [
+    "Already fertilized.",
+    "Đã bón phân rồi."
+  ],
+  "Nothing is ready to harvest.": [
+    "Nothing is ready to harvest.",
+    "Chưa có cây chín."
+  ],
+  "FARM": [
+    "FARM",
+    "NÔNG TRẠI"
+  ],
+  "Growing Area": [
+    "Growing Area",
+    "Khu trồng trọt"
+  ],
+  "STATE   UNTILLED": [
+    "STATE   UNTILLED",
+    "CHƯA CUỐC"
+  ],
+  "BACK": [
+    "BACK",
+    "TRỞ VỀ"
+  ],
+  "TILL": [
+    "TILL",
+    "CUỐC"
+  ],
+  "PLANT": [
+    "PLANT",
+    "GIEO"
+  ],
+  "WATER": [
+    "WATER",
+    "TƯỚI"
+  ],
+  "FERTILIZE": [
+    "FERTILIZE",
+    "BÓN PHÂN"
+  ],
+  "HARVEST": [
+    "HARVEST",
+    "THU HOẠCH"
+  ],
+  "NEXT DAY": [
+    "NEXT DAY",
+    "NGÀY MỚI"
+  ],
+  "CHOOSE SEED": [
+    "CHOOSE SEED",
+    "CHỌN HẠT GIỐNG"
+  ],
+  "CARROT": [
+    "CARROT",
+    "CÀ RỐT"
+  ],
+  "TOMATO\nLOCKED": [
+    "TOMATO\nLOCKED",
+    "CÀ CHUA\nKHÓA"
+  ],
+  "PUMPKIN\nLOCKED": [
+    "PUMPKIN\nLOCKED",
+    "BÍ NGÔ\nKHÓA"
+  ],
+  "DAY 1 · SPRING": [
+    "DAY 1\nSPRING",
+    "NGÀY 1\nXUÂN"
+  ],
+  "COINS  400": [
+    "COINS\n400",
+    "XU\n400"
+  ],
+  "ENERGY  100/100": [
+    "ENERGY\n100/100",
+    "NĂNG LƯỢNG\n100/100"
+  ],
+  "2 / 4 Days\nDry\n1": [
+    "2/4 Days\nDry\n1",
+    "2/4 ngày\nChưa tưới\n1"
+  ],
+  "GROWTH   Not planted\nWATER   Dry\nYIELD   —\nSOIL   Untilled\n": [
+    "GROWTH   Not planted\nWATER   Dry\nYIELD   —\nSOIL   Untilled\n",
+    "SINH TRƯỞNG   Chưa gieo\nTƯỚI   Chưa tưới\nSẢN LƯỢNG   —\nĐẤT   Chưa cuốc\n"
+  ],
+  "Retry save": [
+    "Retry save",
+    "Thử lưu lại"
+  ],
+  "New day. Changes autosaved.": [
+    "New day. Changes autosaved.",
+    "Đã sang ngày mới. Thay đổi được tự động lưu."
+  ],
+  "Bạn của Sunny": [
+    "Sunny & friends",
+    "Bạn của Sunny"
+  ],
+  "+%d xu\n%s ×%d": [
+    "+%d coins\n%s ×%d",
+    "+%d xu\n%s ×%d"
+  ],
+  "900 xu + 1 Long Quả Cổ\nCần hoàn thành 3 đơn hàng.\nTiến độ: %d / 3 đơn": [
+    "900 coins + 1 Ancient Fruit\nComplete 3 orders first.\nProgress: %d / 3 orders",
+    "900 xu + 1 Long Quả Cổ\nCần hoàn thành 3 đơn hàng.\nTiến độ: %d / 3 đơn"
+  ],
+  "←  Trang trại": [
+    "←  Home",
+    "←  Trang trại"
+  ],
+  "Bản thử nghiệm": [
+    "Preview build",
+    "Bản thử nghiệm"
+  ],
+  "‹   GÀ MÁI · SUNNY   ›": [
+    "‹   CLOUD CHICKEN   ›",
+    "‹   GÀ MÂY   ›"
+  ],
+  "%d / %d loại": [
+    "%d / %d types",
+    "%d / %d loại"
+  ],
+  "%d xu": [
+    "%d coins",
+    "%d xu"
+  ],
+  "%d xu · x%d": [
+    "%d coins · x%d",
+    "%d xu · x%d"
+  ],
+  "%s · %d xu\nTrứng trong Kho: %d\nThời gian ấp: %d ngày": [
+    "%s · %d coins\nEggs in Storage: %d\nIncubation: %d days",
+    "%s · %d xu\nTrứng trong Kho: %d\nThời gian ấp: %d ngày"
+  ],
+  "%s · %s\nHỗ trợ: %s\n%s": [
+    "%s · %s\nUtility: %s\n%s",
+    "%s · %s\nHỗ trợ: %s\n%s"
+  ],
+  "%s\nẤp: %d / %d ngày\n%s": [
+    "%s\nIncubation: %d / %d days\n%s",
+    "%s\nẤp: %d / %d ngày\n%s"
+  ],
+  "%s\nGiá: %d xu / %d · Có: %d\nThức ăn và thuốc khác nhau theo loài.": [
+    "%s\nPrice: %d coins / %d · Owned: %d\nFood and medicine vary by species.",
+    "%s\nGiá: %d xu / %d · Có: %d\nThức ăn và thuốc khác nhau theo loài."
+  ],
+  "%s\nNo %d · Sạch %d · Vui %d\n%s": [
+    "%s\nFull %d · Clean %d · Happy %d\n%s",
+    "%s\nNo %d · Sạch %d · Vui %d\n%s"
+  ],
+  "←  Quay lại": [
+    "←  Back",
+    "←  Quay lại"
+  ],
+  "←  Về trang trại": [
+    "←  Home",
+    "←  Về trang trại"
+  ],
+  "+%d xu · %s x%d": [
+    "+%d coins · %s x%d",
+    "+%d xu · %s x%d"
+  ],
+  "▣  Kho Rồng": [
+    "▣  Dragon Storage",
+    "▣  Kho Rồng"
+  ],
+  "▤  Sách Rồng": [
+    "▤  Dragon Book",
+    "▤  Sách Rồng"
+  ],
+  "◆  Shop Rồng": [
+    "◆  Dragon Shop",
+    "◆  Cửa hàng Rồng"
+  ],
+  "◉  Lò ấp trứng": [
+    "◉  Egg Incubator",
+    "◉  Lò ấp trứng"
+  ],
+  "●  Sân chơi": [
+    "●  Playground",
+    "●  Sân chơi"
+  ],
+  "♥ ♥ ♥ ♥ ♡    ·    Trứng: 1": [
+    "♥ ♥ ♥ ♥ ♡    ·    Eggs: 1",
+    "♥ ♥ ♥ ♥ ♡    ·    Trứng: 1"
+  ],
+  "⚡  Năng lượng  100": [
+    "⚡  Energy  100",
+    "⚡  Năng lượng  100"
+  ],
+  "✦  Nhà trẻ": [
+    "✦  Nursery",
+    "✦  Nhà trẻ"
+  ],
+  "🌾  Thức ăn  3": [
+    "🌾  Feed  3",
+    "🌾  Thức ăn  3"
+  ],
+  "12 xu": [
+    "12 coins",
+    "12 xu"
+  ],
+  "Am luong chung": [
+    "Master volume",
+    "Âm lượng chung"
+  ],
+  "Âm lượng đã ở mức cao nhất.": [
+    "Volume is already at maximum.",
+    "Âm lượng đã ở mức cao nhất."
+  ],
+  "Âm lượng đã ở mức thấp nhất.": [
+    "Volume is already at minimum.",
+    "Âm lượng đã ở mức thấp nhất."
+  ],
+  "ÂM THANH": [
+    "AUDIO",
+    "ÂM THANH"
+  ],
+  "Áp dụng": [
+    "Apply",
+    "Áp dụng"
+  ],
+  "Ấp nhanh": [
+    "Fast incubation",
+    "Ấp nhanh"
+  ],
+  "Ấp trứng": [
+    "Incubate",
+    "Ấp trứng"
+  ],
+  "Bán": [
+    "Sell",
+    "Bán"
+  ],
+  "Bán 1 %s": [
+    "Sell 1 %s",
+    "Bán 1 %s"
+  ],
+  "Bản đồ đảo": [
+    "Island Map",
+    "Bản đồ đảo"
+  ],
+  "Bạn đồng hành dịu dàng": [
+    "A gentle companion",
+    "Bạn đồng hành dịu dàng"
+  ],
+  "BẢNG GIAO HÀNG MỖI NGÀY": [
+    "DAILY ORDER BOARD",
+    "BẢNG GIAO HÀNG MỖI NGÀY"
+  ],
+  "Bánh Rồng": [
+    "Dragon Cake",
+    "Bánh Rồng"
+  ],
+  "Bào chế": [
+    "Workshop",
+    "Bào chế"
+  ],
+  "Bảo quản": [
+    "Preservation",
+    "Bảo quản"
+  ],
+  "BẬT": [
+    "ON",
+    "BẬT"
+  ],
+  "BẮT ĐẦU": [
+    "GET STARTED",
+    "BẮT ĐẦU"
+  ],
+  "Bắt đầu một nông trại mới": [
+    "Start a new farm",
+    "Bắt đầu một nông trại mới"
+  ],
+  "Bí ngô": [
+    "Pumpkin",
+    "Bí ngô"
+  ],
+  "Bộ sưu tập": [
+    "Collection",
+    "Bộ sưu tập"
+  ],
+  "Cà chua": [
+    "Tomato",
+    "Cà chua"
+  ],
+  "Cà rốt dùng cho Đơn đầu tiên. Hãy giữ lại ít nhất 1 củ.": [
+    "Keep at least 1 Carrot for the First Order.",
+    "Cà rốt dùng cho Đơn đầu tiên. Hãy giữ lại ít nhất 1 củ."
+  ],
+  "Cà rốt tươi": [
+    "Fresh Carrot",
+    "Cà rốt tươi"
+  ],
+  "CÀI ĐẶT": [
+    "SETTINGS",
+    "CÀI ĐẶT"
+  ],
+  "Cài đặt đã được lưu; chưa có thay đổi mới.": [
+    "Settings are saved; no pending changes.",
+    "Cài đặt đã được lưu; chưa có thay đổi mới."
+  ],
+  "Cần thêm %d %s trong Kho.": [
+    "Need %d more %s in Storage.",
+    "Cần thêm %d %s trong Kho."
+  ],
+  "Cần thuốc: %s": [
+    "Needs medicine: %s",
+    "Cần thuốc: %s"
+  ],
+  "Chăm sóc đàn gà mỗi ngày để nhận trứng.": [
+    "Care for your chickens daily to collect eggs.",
+    "Chăm sóc đàn gà mỗi ngày để nhận trứng."
+  ],
+  "Chăm sóc Gà Mây mỗi ngày để nhận trứng và hỗ trợ nông trại.": [
+    "Care for Cloud Chicken daily for eggs and farm help.",
+    "Chăm sóc Gà Mây mỗi ngày để nhận trứng và hỗ trợ nông trại."
+  ],
+  "Chế độ cửa sổ": [
+    "Window mode",
+    "Chế độ cửa sổ"
+  ],
+  "Chỉ bán nông sản đang có trong kho": [
+    "Only stored crops can be sold",
+    "Chỉ bán nông sản đang có trong kho"
+  ],
+  "Chỉ nông sản mới có thể bán.": [
+    "Only crops can be sold.",
+    "Chỉ nông sản mới có thể bán."
+  ],
+  "Chỉ Thuốc bổ sung đang có trong kho mới dùng trực tiếp được": [
+    "Only Energy Medicine in Storage can be used directly",
+    "Chỉ Thuốc bổ sung đang có trong kho mới dùng trực tiếp được"
+  ],
+  "CHI TIẾT Ô LƯU %d": [
+    "SAVE SLOT %d DETAILS",
+    "CHI TIẾT Ô LƯU %d"
+  ],
+  "CHI TIẾT SẢN PHẨM": [
+    "PRODUCT DETAILS",
+    "CHI TIẾT SẢN PHẨM"
+  ],
+  "CHI TIẾT VẬT PHẨM": [
+    "ITEM DETAILS",
+    "CHI TIẾT VẬT PHẨM"
+  ],
+  "Cho ăn": [
+    "Feed",
+    "Cho ăn"
+  ],
+  "Chơi lần cuối\n%s": [
+    "Last played\n%s",
+    "Chơi lần cuối\n%s"
+  ],
+  "Chọn %s": [
+    "Select %s",
+    "Chọn %s"
+  ],
+  "Chọn %s · số lượng %d": [
+    "Select %s · owned %d",
+    "Chọn %s · số lượng %d"
+  ],
+  "Chọn hạt giống để bắt đầu vụ mùa mới.": [
+    "Choose seeds to start a new crop.",
+    "Chọn hạt giống để bắt đầu vụ mùa mới."
+  ],
+  "CHỌN KHU RUỘNG": [
+    "CHOOSE A FIELD",
+    "CHỌN KHU RUỘNG"
+  ],
+  "Chọn một nhóm vật phẩm để xem kho.": [
+    "Choose a category to browse Storage.",
+    "Chọn một nhóm vật phẩm để xem kho."
+  ],
+  "Chọn nơi bạn muốn gieo trồng": [
+    "Choose where to plant your crops",
+    "Chọn nơi bạn muốn gieo trồng"
+  ],
+  "CHỌN Ô LƯU": [
+    "CHOOSE A SAVE SLOT",
+    "CHỌN Ô LƯU"
+  ],
+  "Chưa có hành động phù hợp.": [
+    "No available action.",
+    "Chưa có hành động phù hợp."
+  ],
+  "Chưa có rồng đồng hành.\nMua và ấp trứng tại Lò ấp.\nMỗi loài dùng thức ăn riêng.": [
+    "No dragon companions yet.\nBuy and incubate an egg.\nEach species needs its own food.",
+    "Chưa có rồng đồng hành.\nMua và ấp trứng tại Lò ấp.\nMỗi loài dùng thức ăn riêng."
+  ],
+  "Chưa có trứng sẵn sàng để thu.": [
+    "No eggs are ready to collect.",
+    "Chưa có trứng sẵn sàng để thu."
+  ],
+  "CHƯA MỞ": [
+    "LOCKED",
+    "CHƯA MỞ"
+  ],
+  "Chưa sở hữu": [
+    "Not owned",
+    "Chưa sở hữu"
+  ],
+  "Chuồng đã sạch hơn.": [
+    "The barn is cleaner now.",
+    "Chuồng đã sạch hơn."
+  ],
+  "Cỡ chữ": [
+    "Text size",
+    "Cỡ chữ"
+  ],
+  "CỔNG ĐẢO RỒNG": [
+    "DRAGON ISLAND GATE",
+    "CỔNG ĐẢO RỒNG"
+  ],
+  "CỬA HÀNG": [
+    "SHOP",
+    "CỬA HÀNG"
+  ],
+  "Cửa sổ": [
+    "Windowed",
+    "Cửa sổ"
+  ],
+  "Đã bán 1 %s · nhận %d xu": [
+    "Sold 1 %s · received %d coins",
+    "Đã bán 1 %s · nhận %d xu"
+  ],
+  "Đã cho Gà Mây ăn · dùng 1 thức ăn.": [
+    "Fed Cloud Chicken · used 1 feed.",
+    "Đã cho Gà Mây ăn · dùng 1 thức ăn."
+  ],
+  "Đã chọn %s · số lượng %d": [
+    "Selected %s · owned %d",
+    "Đã chọn %s · số lượng %d"
+  ],
+  "Đã chọn nhóm sản phẩm: %s.": [
+    "Selected category: %s.",
+    "Đã chọn nhóm sản phẩm: %s."
+  ],
+  "Đã dùng Thuốc bổ sung · năng lượng được hồi phục.": [
+    "Used Energy Medicine · energy restored.",
+    "Đã dùng Thuốc bổ sung · năng lượng được hồi phục."
+  ],
+  "ĐÃ HOÀN THÀNH": [
+    "COMPLETED",
+    "ĐÃ HOÀN THÀNH"
+  ],
+  "Đã hoàn thành: %d": [
+    "Completed: %d",
+    "Đã hoàn thành: %d"
+  ],
+  "Đã mua %s x%d · còn %d xu": [
+    "Bought %s x%d · %d coins left",
+    "Đã mua %s x%d · còn %d xu"
+  ],
+  "Đã sang ngày mới. Kiểm tra tiến độ trứng và chăm sóc rồng.": [
+    "A new day: check incubation and care for your dragons.",
+    "Đã sang ngày mới. Kiểm tra tiến độ trứng và chăm sóc rồng."
+  ],
+  "Đã sở hữu": [
+    "Owned",
+    "Đã sở hữu"
+  ],
+  "Đã thu %d trứng vào Kho.": [
+    "Collected %d eggs into Storage.",
+    "Đã thu %d trứng vào Kho."
+  ],
+  "ĐANG CHỌN": [
+    "SELECTED",
+    "ĐANG CHỌN"
+  ],
+  "ĐANG GIAO": [
+    "ACTIVE ORDER",
+    "ĐANG GIAO"
+  ],
+  "Đang xem %s.": [
+    "Viewing %s.",
+    "Đang xem %s."
+  ],
+  "Đang xem: %s": [
+    "Viewing: %s",
+    "Đang xem: %s"
+  ],
+  "Đảo & công trình": [
+    "Islands & Buildings",
+    "Đảo & công trình"
+  ],
+  "Đất màu mỡ bên hồ.\nMở khóa ở giai đoạn sau.": [
+    "Fertile soil by the lake.\nUnlocks in a later stage.",
+    "Đất màu mỡ bên hồ.\nMở khóa ở giai đoạn sau."
+  ],
+  "Day %d\n%s": [
+    "Day %d\n%s",
+    "Ngày %d\n%s"
+  ],
+  "Độ phân giải": [
+    "Resolution",
+    "Độ phân giải"
+  ],
+  "Đổi ngôn ngữ · lưu ngay": [
+    "Change language · saved immediately",
+    "Đổi ngôn ngữ · lưu ngay"
+  ],
+  "Dọn dẹp": [
+    "Clean",
+    "Dọn dẹp"
+  ],
+  "ĐƠN HÀNG": [
+    "ORDERS",
+    "ĐƠN HÀNG"
+  ],
+  "ĐƠN KẾ TIẾP": [
+    "NEXT ORDER",
+    "ĐƠN KẾ TIẾP"
+  ],
+  "Đón rồng": [
+    "Hatch",
+    "Đón rồng"
+  ],
+  "Đóng": [
+    "Close",
+    "Đóng"
+  ],
+  "DỮ LIỆU LỖI": [
+    "INVALID DATA",
+    "DỮ LIỆU LỖI"
+  ],
+  "Dữ liệu thế giới chưa sẵn sàng.": [
+    "World data is not ready.",
+    "Dữ liệu thế giới chưa sẵn sàng."
+  ],
+  "Dùng": [
+    "Use",
+    "Dùng"
+  ],
+  "Dùng để hồi năng lượng": [
+    "Use to restore energy",
+    "Dùng để hồi năng lượng"
+  ],
+  "GÀ MÂY    ·    Trứng: %d": [
+    "CLOUD CHICKEN    ·    Eggs: %d",
+    "GÀ MÂY    ·    Trứng: %d"
+  ],
+  "Gà Mây bị %s, ngừng đẻ trứng.\nMở Bộ sưu tập → dùng thuốc đúng bệnh.": [
+    "Cloud Chicken has %s; egg laying stopped.\nOpen Collection → use the right medicine.",
+    "Gà Mây bị %s, ngừng đẻ trứng.\nMở Bộ sưu tập → dùng thuốc đúng bệnh."
+  ],
+  "Gà Mây rất vui khi được vuốt ve.": [
+    "Cloud Chicken enjoys being petted.",
+    "Gà Mây rất vui khi được vuốt ve."
+  ],
+  "Gán utility": [
+    "Assign utility",
+    "Gán hỗ trợ"
+  ],
+  "Giá mua": [
+    "Price",
+    "Giá mua"
+  ],
+  "Giảm âm lượng.": [
+    "Lower volume.",
+    "Giảm âm lượng."
+  ],
+  "Gian hàng đang chuẩn bị": [
+    "This stall is being prepared",
+    "Gian hàng đang chuẩn bị"
+  ],
+  "Giao đơn": [
+    "Deliver",
+    "Giao đơn"
+  ],
+  "Giao đơn và nhận phần thưởng.": [
+    "Deliver the order and claim rewards.",
+    "Giao đơn và nhận phần thưởng."
+  ],
+  "Hạt Bí ngô": [
+    "Pumpkin Seeds",
+    "Hạt Bí ngô"
+  ],
+  "Hạt bí ngô cho vụ mùa dài và giá trị cao.": [
+    "Pumpkin seeds for a longer, valuable crop.",
+    "Hạt bí ngô cho vụ mùa dài và giá trị cao."
+  ],
+  "Hạt Cà chua": [
+    "Tomato Seeds",
+    "Hạt Cà chua"
+  ],
+  "Hạt Cà rốt": [
+    "Carrot Seeds",
+    "Hạt Cà rốt"
+  ],
+  "Hạt giống": [
+    "Seeds",
+    "Hạt giống"
+  ],
+  "Hạt giống cà chua, phù hợp vụ mùa đều đặn.": [
+    "Tomato seeds for steady harvests.",
+    "Hạt giống cà chua, phù hợp vụ mùa đều đặn."
+  ],
+  "Hạt giống khỏe cho vụ mùa cà rốt mới.": [
+    "Healthy seeds for a fresh Carrot crop.",
+    "Hạt giống khỏe cho vụ mùa cà rốt mới."
+  ],
+  "Hạt thảo dược": [
+    "Herb seeds",
+    "Hạt thảo dược"
+  ],
+  "Hết thức ăn vật nuôi. Mua thêm tại Shop.": [
+    "No animal feed left. Buy more at the Shop.",
+    "Hết thức ăn vật nuôi. Mua thêm tại Cửa hàng."
+  ],
+  "Hiếm": [
+    "Rare",
+    "Hiếm"
+  ],
+  "HIỂN THỊ": [
+    "DISPLAY",
+    "HIỂN THỊ"
+  ],
+  "Hiển thị hướng dẫn": [
+    "Show guidance",
+    "Hiển thị hướng dẫn"
+  ],
+  "Hieu ung": [
+    "Sound effects",
+    "Hiệu ứng"
+  ],
+  "Hỗ trợ: %s": [
+    "Utility: %s",
+    "Hỗ trợ: %s"
+  ],
+  "Hoàn thành Đơn đầu tiên để mở khóa.": [
+    "Complete the First Order to unlock.",
+    "Hoàn thành Đơn đầu tiên để mở khóa."
+  ],
+  "Hoàn thành đơn hiện tại để mở đơn kế tiếp.": [
+    "Complete the active order to unlock the next.",
+    "Hoàn thành đơn hiện tại để mở đơn kế tiếp."
+  ],
+  "Hoàn thành Vụ mùa mới để mở khóa.": [
+    "Complete the New Crop order to unlock.",
+    "Hoàn thành Vụ mùa mới để mở khóa."
+  ],
+  "Khác": [
+    "Other",
+    "Khác"
+  ],
+  "Khí hậu mát trên cao.\nMở khóa ở giai đoạn sau.": [
+    "Cool highland climate.\nUnlocks in a later stage.",
+    "Khí hậu mát trên cao.\nMở khóa ở giai đoạn sau."
+  ],
+  "KHO NÔNG TRẠI": [
+    "FARM STORAGE",
+    "KHO NÔNG TRẠI"
+  ],
+  "Kho Rồng": [
+    "Dragon Storage",
+    "Kho Rồng"
+  ],
+  "Kho thảo dược · thức ăn · vật liệu · trứng rồng": [
+    "Herbs · Feed · Materials · Dragon Eggs",
+    "Kho thảo dược · thức ăn · vật liệu · trứng rồng"
+  ],
+  "Khôi phục năng lượng khi sử dụng từ Kho.": [
+    "Restores energy when used from Storage.",
+    "Khôi phục năng lượng khi sử dụng từ Kho."
+  ],
+  "Không có": [
+    "None",
+    "Không có"
+  ],
+  "Không còn %s để bán": [
+    "No %s left to sell",
+    "Không còn %s để bán"
+  ],
+  "Không đủ năng lượng. Nghỉ sang ngày mới.": [
+    "Not enough energy. Rest until the next day.",
+    "Không đủ năng lượng. Nghỉ sang ngày mới."
+  ],
+  "Không đủ xu": [
+    "Not enough coins",
+    "Không đủ xu"
+  ],
+  "Không đủ xu · cần %d, hiện có %d": [
+    "Not enough coins · need %d, have %d",
+    "Không đủ xu · cần %d, hiện có %d"
+  ],
+  "Khu vườn ấm áp cạnh nhà.\nPhù hợp cho mọi loại cây.": [
+    "A cozy garden by the house.\nSuitable for every crop.",
+    "Khu vườn ấm áp cạnh nhà.\nPhù hợp cho mọi loại cây."
+  ],
+  "Last Played\n%s": [
+    "Last played\n%s",
+    "Chơi lần cuối\n%s"
+  ],
+  "Lò ấp": [
+    "Incubator",
+    "Lò ấp"
+  ],
+  "Lò ấp trứng": [
+    "Egg Incubator",
+    "Lò ấp trứng"
+  ],
+  "LÒ ẤP TRỨNG · SẮP RA MẮT": [
+    "EGG INCUBATOR · COMING SOON",
+    "LÒ ẤP TRỨNG · SẮP RA MẮT"
+  ],
+  "Lọc theo %s": [
+    "Filter by %s",
+    "Lọc theo %s"
+  ],
+  "LỐI CHƠI": [
+    "GAMEPLAY",
+    "LỐI CHƠI"
+  ],
+  "Long Khi": [
+    "Dragon Energy",
+    "Long Khí"
+  ],
+  "Long Khí: %d · Long Mạch: %d\nMỗi ngày: 5 Long Khí → 20 năng lượng.\nVật phẩm nằm trong Kho chung.": [
+    "Dragon Energy: %d · Long Vein: %d\nDaily: 5 Dragon Energy → 20 energy.\nItems are kept in shared Storage.",
+    "Long Khí: %d · Long Mạch: %d\nMỗi ngày: 5 Long Khí → 20 năng lượng.\nVật phẩm nằm trong Kho chung."
+  ],
+  "Long Khí\n%d": [
+    "Dragon Energy\n%d",
+    "Long Khí\n%d"
+  ],
+  "Lựa chọn tiếp theo  (%d / %d)": [
+    "Next choice  (%d / %d)",
+    "Lựa chọn tiếp theo  (%d / %d)"
+  ],
+  "Lưu thay đổi cài đặt.": [
+    "Save settings changes.",
+    "Lưu thay đổi cài đặt."
+  ],
+  "Mặc định": [
+    "Defaults",
+    "Mặc định"
+  ],
+  "Máng ăn": [
+    "Feeding trough",
+    "Máng ăn"
+  ],
+  "Mở Đảo": [
+    "Unlock",
+    "Mở Đảo"
+  ],
+  "Mở đảo: 900 xu + 1 Long Quả Cổ.\nHoàn thành 3 đơn hàng trước.\nTiến độ: %d / 3 đơn": [
+    "Unlock: 900 coins + 1 Ancient Fruit.\nComplete 3 orders first.\nProgress: %d / 3 orders",
+    "Mở đảo: 900 xu + 1 Long Quả Cổ.\nHoàn thành 3 đơn hàng trước.\nTiến độ: %d / 3 đơn"
+  ],
+  "Mở Kho": [
+    "Open Storage",
+    "Mở Kho"
+  ],
+  "Mở rộng": [
+    "Expansion",
+    "Mở rộng"
+  ],
+  "MỞ RUỘNG": [
+    "ENTER FIELD",
+    "MỞ RUỘNG"
+  ],
+  "Mỗi loại vật phẩm có số lượng riêng. Save cũ và thu hoạch ruộng không bị mất vật phẩm khi quá giới hạn.": [
+    "Each item type has its own quantity. Old saves and field harvests retain items beyond capacity.",
+    "Mỗi loại vật phẩm có số lượng riêng. Save cũ và thu hoạch ruộng không bị mất vật phẩm khi quá giới hạn."
+  ],
+  "Một cánh đồng yên tĩnh.\nMở khóa ở giai đoạn sau.": [
+    "A peaceful forest field.\nUnlocks in a later stage.",
+    "Một cánh đồng yên tĩnh.\nMở khóa ở giai đoạn sau."
+  ],
+  "Một khởi đầu mới trên nông trại.": [
+    "A fresh beginning on the farm.",
+    "Một khởi đầu mới trên nông trại."
+  ],
+  "Mua %s": [
+    "Buy %s",
+    "Mua %s"
+  ],
+  "Mua gói": [
+    "Buy pack",
+    "Mua gói"
+  ],
+  "Mua Hạt Cà rốt": [
+    "Buy Carrot Seeds",
+    "Mua Hạt Cà rốt"
+  ],
+  "MUA NGAY": [
+    "BUY NOW",
+    "MUA NGAY"
+  ],
+  "Mua trứng": [
+    "Buy egg",
+    "Mua trứng"
+  ],
+  "Mùa xuân": [
+    "Spring",
+    "Mùa xuân"
+  ],
+  "My Farm": [
+    "My Farm",
+    "Nông trại của tôi"
+  ],
+  "Năng lượng  %d": [
+    "Energy  %d",
+    "Năng lượng  %d"
+  ],
+  "Ngày 1": [
+    "Day 1",
+    "Ngày 1"
+  ],
+  "Ngày 1 · Mùa xuân": [
+    "Day 1 · Spring",
+    "Ngày 1 · Mùa xuân"
+  ],
+  "Ngày mới": [
+    "Next Day",
+    "Ngày mới"
+  ],
+  "Ngày mới: kiểm tra thức ăn, độ sạch và trứng sẵn sàng.": [
+    "New day: check feed, cleanliness and ready eggs.",
+    "Ngày mới: kiểm tra thức ăn, độ sạch và trứng sẵn sàng."
+  ],
+  "Ngôn ngữ": [
+    "Language",
+    "Ngôn ngữ"
+  ],
+  "NGÔN NGỮ": [
+    "LANGUAGE",
+    "NGÔN NGỮ"
+  ],
+  "Nhà trẻ": [
+    "Nursery",
+    "Nhà trẻ"
+  ],
+  "Nhận phước": [
+    "Blessing",
+    "Nhận phước"
+  ],
+  "No bụng": [
+    "Fullness",
+    "No bụng"
+  ],
+  "Nội dung Lò ấp trứng đang được chuẩn bị.": [
+    "The Egg Incubator is being prepared.",
+    "Nội dung Lò ấp trứng đang được chuẩn bị."
+  ],
+  "Nông sản": [
+    "Crops",
+    "Nông sản"
+  ],
+  "Nông trại": [
+    "Farm",
+    "Nông trại"
+  ],
+  "Nông trại của tôi": [
+    "My Farm",
+    "Nông trại của tôi"
+  ],
+  "Ô lưu đang trống\nSẵn sàng bắt đầu Ngày 1": [
+    "This slot is empty\nReady to begin Day 1",
+    "Ô lưu đang trống\nSẵn sàng bắt đầu Ngày 1"
+  ],
+  "Ô TRỐNG": [
+    "EMPTY SLOT",
+    "Ô TRỐNG"
+  ],
+  "Play Time\n%s": [
+    "Play time\n%s",
+    "Thời gian chơi\n%s"
+  ],
+  "Qua ngày để trứng phát triển.": [
+    "Advance a day for egg growth.",
+    "Qua ngày để trứng phát triển."
+  ],
+  "Quay lại": [
+    "Back",
+    "Quay lại"
+  ],
+  "RỒNG MÂY": [
+    "CLOUD DRAGON",
+    "RỒNG MÂY"
+  ],
+  "Ruộng Cao Nguyên": [
+    "Highland Field",
+    "Ruộng Cao Nguyên"
+  ],
+  "Ruộng Rừng": [
+    "Forest Field",
+    "Ruộng Rừng"
+  ],
+  "Ruộng Ven Hồ": [
+    "Lakeside Field",
+    "Ruộng Ven Hồ"
+  ],
+  "Sách Rồng": [
+    "Dragon Book",
+    "Sách Rồng"
+  ],
+  "Sạch sẽ": [
+    "Clean",
+    "Sạch sẽ"
+  ],
+  "Sân chơi": [
+    "Playground",
+    "Sân chơi"
+  ],
+  "Sẵn sàng đón rồng!": [
+    "Ready to meet your dragon!",
+    "Sẵn sàng đón rồng!"
+  ],
+  "SẮP CÓ": [
+    "COMING SOON",
+    "SẮP CÓ"
+  ],
+  "Sắp ra mắt": [
+    "Coming soon",
+    "Sắp ra mắt"
+  ],
+  "Shop Rồng": [
+    "Dragon Shop",
+    "Cửa hàng Rồng"
+  ],
+  "Sinh vật": [
+    "Companions",
+    "Sinh vật"
+  ],
+  "Số lượng": [
+    "Quantity",
+    "Số lượng"
+  ],
+  "Số lượng: %d\nPhân loại: %s\nVật phẩm được bảo quản cẩn thận trong kho nông trại.": [
+    "Quantity: %d\nCategory: %s\nSafely stored on your farm.",
+    "Số lượng: %d\nPhân loại: %s\nVật phẩm được bảo quản cẩn thận trong kho nông trại."
+  ],
+  "Số lượng: 6\nPhân loại: Tất cả\nVật phẩm được bảo quản cẩn thận trong kho nông trại.": [
+    "Quantity: 6\nCategory: All\nSafely stored on your farm.",
+    "Số lượng: 6\nPhân loại: Tất cả\nVật phẩm được bảo quản cẩn thận trong kho nông trại."
+  ],
+  "Sự kiện": [
+    "Events",
+    "Sự kiện"
+  ],
+  "Sức khỏe": [
+    "Health",
+    "Sức khỏe"
+  ],
+  "Sức khỏe tốt": [
+    "Healthy",
+    "Sức khỏe tốt"
+  ],
+  "SUNNY & BẠN BÈ": [
+    "SUNNY & FRIENDS",
+    "SUNNY & BẠN BÈ"
+  ],
+  "SUNNY ♥": [
+    "SUNNY ♥",
+    "SUNNY ♥"
+  ],
+  "Sưu tập": [
+    "Collect",
+    "Sưu tập"
+  ],
+  "Tăng âm lượng.": [
+    "Raise volume.",
+    "Tăng âm lượng."
+  ],
+  "TẮT": [
+    "OFF",
+    "TẮT"
+  ],
+  "Tất cả": [
+    "All",
+    "Tất cả"
+  ],
+  "Thích ngắm mây và nghe tiếng chuông gió.": [
+    "Loves clouds and the sound of wind chimes.",
+    "Thích ngắm mây và nghe tiếng chuông gió."
+  ],
+  "Thoát": [
+    "Quit",
+    "Thoát"
+  ],
+  "Thời gian chơi\n%s": [
+    "Play time\n%s",
+    "Thời gian chơi\n%s"
+  ],
+  "Thu Long Khí": [
+    "Collect Energy",
+    "Thu Long Khí"
+  ],
+  "Thu trứng": [
+    "Collect Eggs",
+    "Thu trứng"
+  ],
+  "Thu vật liệu": [
+    "Gather materials",
+    "Thu vật liệu"
+  ],
+  "Thức ăn  %d": [
+    "Feed  %d",
+    "Thức ăn  %d"
+  ],
+  "Thức ăn giúp vật nuôi no bụng và khỏe mạnh.": [
+    "Feed keeps your animals full and healthy.",
+    "Thức ăn giúp vật nuôi no bụng và khỏe mạnh."
+  ],
+  "Thức ăn vật nuôi": [
+    "Animal Feed",
+    "Thức ăn vật nuôi"
+  ],
+  "Thức ăn: %s": [
+    "Food: %s",
+    "Thức ăn: %s"
+  ],
+  "Thực phẩm": [
+    "Food",
+    "Thực phẩm"
+  ],
+  "Thuốc": [
+    "Medicine",
+    "Thuốc"
+  ],
+  "Thuốc bổ sung": [
+    "Energy Medicine",
+    "Thuốc bổ sung"
+  ],
+  "Tiếng Anh": [
+    "English",
+    "Tiếng Anh"
+  ],
+  "Tiếng Việt": [
+    "Vietnamese",
+    "Tiếng Việt"
+  ],
+  "Tiếp tục": [
+    "Continue",
+    "Tiếp tục"
+  ],
+  "Tiếp tục câu chuyện nông trại": [
+    "Continue your farm story",
+    "Tiếp tục câu chuyện nông trại"
+  ],
+  "Tiêu chuẩn": [
+    "Standard",
+    "Tiêu chuẩn"
+  ],
+  "Tình bạn": [
+    "Friendship",
+    "Tình bạn"
+  ],
+  "Toàn màn hình": [
+    "Fullscreen",
+    "Toàn màn hình"
+  ],
+  "Trò chơi mới": [
+    "New Game",
+    "Trò chơi mới"
+  ],
+  "Trong kho: %d / %d %s": [
+    "In Storage: %d / %d %s",
+    "Trong kho: %d / %d %s"
+  ],
+  "Tưới nước": [
+    "Watering",
+    "Tưới nước"
+  ],
+  "Vào Ruộng để trồng\nCà rốt đầu tiên.": [
+    "Enter the Field to plant\nyour first Carrot.",
+    "Vào Ruộng để trồng\nCà rốt đầu tiên."
+  ],
+  "Vật liệu": [
+    "Materials",
+    "Vật liệu"
+  ],
+  "Vật phẩm hữu ích cho nông trại.": [
+    "A useful farm item.",
+    "Vật phẩm hữu ích cho nông trại."
+  ],
+  "Vật phẩm này không thể dùng trực tiếp.": [
+    "This item cannot be used directly.",
+    "Vật phẩm này không thể dùng trực tiếp."
+  ],
+  "Về trang trại": [
+    "Home",
+    "Về trang trại"
+  ],
+  "Vui vẻ": [
+    "Mood",
+    "Vui vẻ"
+  ],
+  "Vui: %d": [
+    "Happy: %d",
+    "Vui: %d"
+  ],
+  "Vườn Nhà": [
+    "Home Garden",
+    "Vườn Nhà"
+  ],
+  "Vuốt ve": [
+    "Pet",
+    "Vuốt ve"
+  ],
+  "x1  ·  28 xu": [
+    "x1  ·  28 coins",
+    "x1  ·  28 xu"
+  ],
+  "x2  ·  22 xu": [
+    "x2  ·  22 coins",
+    "x2  ·  22 xu"
+  ],
+  "x3  ·  12 xu": [
+    "x3  ·  12 coins",
+    "x3  ·  12 xu"
+  ],
+  "x3  ·  16 xu": [
+    "x3  ·  16 coins",
+    "x3  ·  16 xu"
+  ],
+  "Xác nhận": [
+    "Confirm",
+    "Xác nhận"
+  ],
+  "Xác nhận trước khi nghỉ": [
+    "Confirm before resting",
+    "Xác nhận trước khi nghỉ"
+  ],
+  "Xem %s": [
+    "View %s",
+    "Xem %s"
+  ],
+  "Xem các đảo": [
+    "View islands",
+    "Xem các đảo"
+  ],
+  "Xem công trình và nâng cấp thật.": [
+    "View buildings and upgrades.",
+    "Xem công trình và nâng cấp thật."
+  ],
+  "Xem trứng rồng, điều kiện mở khóa và lò ấp.": [
+    "View dragon eggs, unlock rules and incubation.",
+    "Xem trứng rồng, điều kiện mở khóa và lò ấp."
+  ],
+  "Xóa": [
+    "Delete",
+    "Xóa"
+  ],
+  "Xu: 400": [
+    "Coins: 400",
+    "Xu: 400"
+  ],
+  "Xu: %d": [
+    "Coins: %d",
+    "Xu: %d"
+  ],
+  "Nhac": [
+    "Music",
+    "Nhạc"
+  ],
+  "Farm": [
+    "Farm",
+    "Nông trại"
+  ],
+  "%s x%d": [
+    "%s x%d",
+    "%s x%d"
+  ],
+  "× %d": [
+    "× %d",
+    "× %d"
+  ],
+  "Thức ăn": [
+    "Feed",
+    "Thức ăn"
+  ],
+  "Thuốc bổ": [
+    "Energy Tonic",
+    "Thuốc bổ"
+  ],
+  "%d · ×%d": [
+    "%d · ×%d",
+    "%d · ×%d"
+  ],
+  "%d loại": [
+    "%d types",
+    "%d loại"
+  ],
+  "Đang xem %d loại trong kho chính. Tổng kho: %d / %d loại. Mở kho thảo dược để xem vật phẩm thế giới.": [
+    "Viewing %d core item types. Total Storage: %d / %d types. Open herb Storage for world items.",
+    "Đang xem %d loại trong kho chính. Tổng kho: %d / %d loại. Mở kho thảo dược để xem vật phẩm thế giới."
+  ],
+  "Cloud Chicken Feed": [
+    "Cloud Chicken Feed",
+    "Thức ăn Gà Mây"
+  ],
+  "Energy Tonic": [
+    "Energy Tonic",
+    "Thuốc năng lượng"
+  ],
+  "Compatible food for Cloud Chicken only. Other species need their own food.": [
+    "Compatible food for Cloud Chicken only. Other species need their own food.",
+    "Thức ăn tương thích riêng cho Gà Mây. Loài khác cần thức ăn đúng loài."
+  ],
+  "Restores 25 farm energy when used from Storage. Does not cure creature disease.": [
+    "Restores 25 farm energy when used from Storage. Does not cure creature disease.",
+    "Dùng từ Kho để hồi 25 năng lượng nông trại. Không chữa bệnh cho vật nuôi."
+  ],
+  "Level": [
+    "Level",
+    "Cấp"
+  ],
+  "Coins + DE": [
+    "Coins + DE",
+    "Xu + Long Khí"
+  ],
+  "Not for sale": [
+    "Not for sale",
+    "Không bán"
+  ],
+  "Not for sale. Earn this through gameplay.": [
+    "Not for sale. Earn this through gameplay.",
+    "Không bán. Nhận vật phẩm này qua hoạt động trong game."
+  ],
+  "%d coins + %d Dragon Energy · Owned: %d": [
+    "%d coins + %d Dragon Energy · Owned: %d",
+    "%d xu + %d Long Khí · Đang có: %d"
+  ],
+  "Hatches %s in %d days. Incubate after purchase on Dragon Island.": [
+    "Hatches %s in %d days. Incubate after purchase on Dragon Island.",
+    "Nở thành %s sau %d ngày. Mua rồi ấp tại Đảo Rồng."
+  ],
+  "Cures %s. Not an energy refill.": [
+    "Cures %s. Not an energy refill.",
+    "Chữa %s. Không dùng để hồi năng lượng."
+  ],
+  "Species food: %s only.": [
+    "Species food: %s only.",
+    "Thức ăn đúng loài: chỉ dành cho %s."
+  ],
+  "Text only\nNo approved icon": [
+    "Text only\nNo approved icon",
+    "Hiển thị chữ\nChưa có icon chuẩn"
+  ],
+  "Orders required: %d": [
+    "Orders required: %d",
+    "Cần hoàn thành %d đơn"
+  ],
+  "Materials: %s": [
+    "Materials: %s",
+    "Vật liệu: %s"
+  ],
+  "Hatch time: %d days": [
+    "Hatch time: %d days",
+    "Thời gian ấp: %d ngày"
+  ],
+  "Fully upgraded": [
+    "Fully upgraded",
+    "Đã nâng cấp tối đa"
+  ],
+  "Max": [
+    "Max",
+    "Tối đa"
+  ],
+  "Previous": [
+    "Previous",
+    "Trước"
+  ],
+  "Next": [
+    "Next",
+    "Sau"
+  ],
+  "Previous page": [
+    "Previous page",
+    "Trang trước"
+  ],
+  "Next page": [
+    "Next page",
+    "Trang sau"
+  ],
+  "Page %d / %d": [
+    "Page %d / %d",
+    "Trang %d / %d"
+  ],
+  "Ấp": [
+    "Incubate",
+    "Ấp"
+  ],
+  "Đổi": [
+    "Convert",
+    "Đổi"
+  ],
+  "Hiếm / khác": [
+    "Rare / other",
+    "Hiếm / khác"
+  ],
+  "Storage: %d / %d item types. All categories share this capacity.": [
+    "Storage: %d / %d item types. All categories share this capacity.",
+    "Kho: %d / %d loại vật phẩm. Các nhóm dùng chung sức chứa này."
+  ],
+  "Owned: %d\nCategory: %s\n%s\n%s": [
+    "Owned: %d\nCategory: %s\n%s\n%s",
+    "Đang có: %d\nPhân loại: %s\n%s\n%s"
+  ],
+  "Cannot be sold.": [
+    "Cannot be sold.",
+    "Không bán được."
+  ],
+  "Recover 25 farm energy. Creature diseases need matching remedies.": [
+    "Recover 25 farm energy. Creature diseases need matching remedies.",
+    "Hồi 25 năng lượng nông trại. Bệnh vật nuôi cần thuốc đúng bệnh."
+  ],
+  "Use an altar blessing to recover farm energy.": [
+    "Use an altar blessing to recover farm energy.",
+    "Dùng ban phước ở tế đàn để hồi năng lượng nông trại."
+  ],
+  "Convert one fruit to 5 Dragon Energy on Dragon Island.": [
+    "Convert one fruit to 5 Dragon Energy on Dragon Island.",
+    "Đổi một quả thành 5 Long Khí tại Đảo Rồng."
+  ],
+  "Hatches %s in %d days. Collect the hatchling in Companions.": [
+    "Hatches %s in %d days. Collect the hatchling in Companions.",
+    "Nở thành %s sau %d ngày. Nhận con non trong Bộ sưu tập."
+  ],
+  "Offer this cake to an owned dragon in Companions.": [
+    "Offer this cake to an owned dragon in Companions.",
+    "Tặng bánh cho rồng đang nuôi trong Bộ sưu tập."
+  ],
+  "Food for Cloud Chicken. Feed from the Animal screen.": [
+    "Food for Cloud Chicken. Feed from the Animal screen.",
+    "Thức ăn của Gà Mây. Cho ăn tại màn Vật nuôi."
+  ],
+  "Food for %s. Feed in Animal or Companions.": [
+    "Food for %s. Feed in Animal or Companions.",
+    "Thức ăn của %s. Cho ăn tại Vật nuôi hoặc Bộ sưu tập."
+  ],
+  "Cures %s. Choose the sick creature in Companions.": [
+    "Cures %s. Choose the sick creature in Companions.",
+    "Chữa %s. Chọn vật nuôi bị bệnh trong Bộ sưu tập."
+  ],
+  "Plant in the Herb Garden.": [
+    "Plant in the Herb Garden.",
+    "Trồng tại Vườn dược liệu."
+  ],
+  "Choose a field bed to plant this seed.": [
+    "Choose a field bed to plant this seed.",
+    "Chọn một ô ruộng để gieo hạt này."
+  ],
+  "Sell a crop or keep it for farm orders.": [
+    "Sell a crop or keep it for farm orders.",
+    "Bán nông sản hoặc giữ lại để giao đơn."
+  ],
+  "Keep for recipes and buildings, or sell when a price is shown.": [
+    "Keep for recipes and buildings, or sell when a price is shown.",
+    "Giữ để chế tạo, xây công trình; có thể bán khi có giá."
+  ],
+  "Keep this item for farm activities.": [
+    "Keep this item for farm activities.",
+    "Giữ vật phẩm này cho hoạt động nông trại."
+  ],
+  "Unrecognized saved item. Kept safely; no current action is available.": [
+    "Unrecognized saved item. Kept safely; no current action is available.",
+    "Vật phẩm cũ chưa rõ loại. Vẫn giữ an toàn; hiện không có thao tác sử dụng."
+  ],
+  "Islands": [
+    "Islands",
+    "Các đảo"
+  ],
+  "Buildings": [
+    "Buildings",
+    "Công trình"
+  ],
+  "Herb garden": [
+    "Herb garden",
+    "Vườn dược liệu"
+  ],
+  "Recipes": [
+    "Recipes",
+    "Công thức"
+  ],
+  "Supplies": [
+    "Supplies",
+    "Vật tư"
+  ],
+  "Companions": [
+    "Companions",
+    "Bạn đồng hành"
+  ],
+  "Eggs": [
+    "Eggs",
+    "Trứng"
+  ],
+  "Milestones & fairs": [
+    "Milestones & fairs",
+    "Mục tiêu và lễ hội"
+  ],
+  "Island Journal": [
+    "Island Journal",
+    "Nhật ký khám phá đảo"
+  ],
+  "Workshop & Botanical Garden": [
+    "Workshop & Botanical Garden",
+    "Xưởng và vườn dược liệu"
+  ],
+  "Companion Collection": [
+    "Companion Collection",
+    "Bộ sưu tập bạn đồng hành"
+  ],
+  "Season Calendar": [
+    "Season Calendar",
+    "Lịch mùa và lễ hội"
+  ],
+  "Farm Journal": [
+    "Farm Journal",
+    "Nhật ký nông trại"
+  ],
+  "Explore at your own pace. Every island brings a new farm benefit.": [
+    "Explore at your own pace. Every island brings a new farm benefit.",
+    "Khám phá theo nhịp riêng. Mỗi đảo mang đến một lợi ích mới cho nông trại."
+  ],
+  "Careful hands, fresh herbs and useful recipes for your farm.": [
+    "Careful hands, fresh herbs and useful recipes for your farm.",
+    "Dược liệu tươi và những công thức hữu ích, được làm bằng đôi tay khéo léo."
+  ],
+  "Care for a companion, collect its gifts and choose its daily help.": [
+    "Care for a companion, collect its gifts and choose its daily help.",
+    "Chăm sóc bạn đồng hành, nhận sản phẩm và giao việc hỗ trợ mỗi ngày."
+  ],
+  "Small goals, seasonal celebrations and rewards to collect once.": [
+    "Small goals, seasonal celebrations and rewards to collect once.",
+    "Mục tiêu nhỏ, lễ hội theo mùa và phần thưởng dành cho mỗi cột mốc."
+  ],
+  "Home": [
+    "Home",
+    "Trang trại"
+  ],
+  "Next Day": [
+    "Next Day",
+    "Ngày mới"
+  ],
+  "Map": [
+    "Map",
+    "Bản đồ"
+  ],
+  "Workshop": [
+    "Workshop",
+    "Xưởng"
+  ],
+  "Calendar": [
+    "Calendar",
+    "Lịch mùa"
+  ],
+  "Choose an entry": [
+    "Choose an entry",
+    "Chọn một mục"
+  ],
+  "Details & care": [
+    "Details & care",
+    "Thông tin và chăm sóc"
+  ],
+  "Details & actions": [
+    "Details & actions",
+    "Thông tin và hành động"
+  ],
+  "Energy: %s / 100": [
+    "Energy: %s / 100",
+    "Năng lượng: %s / 100"
+  ],
+  "Dragon Energy %d": [
+    "Dragon Energy %d",
+    "Long Khí %d"
+  ],
+  "Open": [
+    "Open",
+    "Đã mở"
+  ],
+  "Locked": [
+    "Locked",
+    "Chưa mở"
+  ],
+  "Level %d": [
+    "Level %d",
+    "Cấp %d"
+  ],
+  "Owned: %d": [
+    "Owned: %d",
+    "Đang có: %d"
+  ],
+  "In collection": [
+    "In collection",
+    "Đã có trong bộ sưu tập"
+  ],
+  "Not owned": [
+    "Not owned",
+    "Chưa sở hữu"
+  ],
+  "Claimed": [
+    "Claimed",
+    "Đã nhận thưởng"
+  ],
+  "View reward": [
+    "View reward",
+    "Xem phần thưởng"
+  ],
+  "Ready to harvest": [
+    "Ready to harvest",
+    "Sẵn sàng thu hoạch"
+  ],
+  "Growing": [
+    "Growing",
+    "Đang phát triển"
+  ],
+  "Ready to plant": [
+    "Ready to plant",
+    "Sẵn sàng gieo trồng"
+  ],
+  "View recipe": [
+    "View recipe",
+    "Xem công thức"
+  ],
+  "Yes": [
+    "Yes",
+    "Có"
+  ],
+  "No": [
+    "No",
+    "Chưa"
+  ],
+  "Healthy": [
+    "Healthy",
+    "Khỏe mạnh"
+  ],
+  "Garden": [
+    "Garden",
+    "Hỗ trợ vườn"
+  ],
+  "Storage": [
+    "Storage",
+    "Bảo quản"
+  ],
+  "Gather": [
+    "Gather",
+    "Tìm vật liệu"
+  ],
+  "Hatch": [
+    "Hatch",
+    "Hỗ trợ ấp trứng"
+  ],
+  "Health": [
+    "Health",
+    "Phòng bệnh"
+  ],
+  "Cold": [
+    "Cold",
+    "Cảm lạnh"
+  ],
+  "Fever": [
+    "Fever",
+    "Sốt"
+  ],
+  "Poison": [
+    "Poison",
+    "Nhiễm độc"
+  ],
+  "Fatigue": [
+    "Fatigue",
+    "Mệt mỏi"
+  ],
+  "%s %d/%d": [
+    "%s %d/%d",
+    "%s %d/%d"
+  ],
+  "%s ×%d": [
+    "%s ×%d",
+    "%s ×%d"
+  ],
+  "Action complete. Changes autosaved.": [
+    "Action complete. Changes autosaved.",
+    "Đã thực hiện. Thay đổi được tự động lưu."
+  ],
+  "Complete %d orders · Unlock: %d coins\nMaterials: %s": [
+    "Complete %d orders · Unlock: %d coins\nMaterials: %s",
+    "Hoàn thành %d đơn · Mở đảo: %d xu\nVật liệu: %s"
+  ],
+  "Unlock island": [
+    "Unlock island",
+    "Mở đảo"
+  ],
+  "Forage: %s": [
+    "Forage: %s",
+    "Tìm: %s"
+  ],
+  "Level %d / %d · Next upgrade: %d coins\nMaterials: %s": [
+    "Level %d / %d · Next upgrade: %d coins\nMaterials: %s",
+    "Cấp %d / %d · Nâng cấp tiếp: %d xu\nVật liệu: %s"
+  ],
+  "Build / upgrade": [
+    "Build / upgrade",
+    "Xây dựng / nâng cấp"
+  ],
+  "Seeds: %d · Growth: %d/%d\nWatered today: %s · Favorite season: %s": [
+    "Seeds: %d · Growth: %d/%d\nWatered today: %s · Favorite season: %s",
+    "Hạt giống: %d · Phát triển: %d/%d\nĐã tưới hôm nay: %s · Mùa phù hợp: %s"
+  ],
+  "Plant herb": [
+    "Plant herb",
+    "Trồng dược liệu"
+  ],
+  "Water herb": [
+    "Water herb",
+    "Tưới dược liệu"
+  ],
+  "Harvest herb": [
+    "Harvest herb",
+    "Thu hoạch dược liệu"
+  ],
+  "Ingredients: %s\nMakes: %s ×%d · Time: %d day(s)\nWorkbench: %s": [
+    "Ingredients: %s\nMakes: %s ×%d · Time: %d day(s)\nWorkbench: %s",
+    "Nguyên liệu: %s\nNhận: %s ×%d · Thời gian: %d ngày\nCông trình: %s"
+  ],
+  "Crafting: %d/%d days · Finished: %s": [
+    "Crafting: %d/%d days · Finished: %s",
+    "Chế tạo: %d/%d ngày · Hoàn tất: %s"
+  ],
+  "Craft recipe": [
+    "Craft recipe",
+    "Chế tạo"
+  ],
+  "Collect finished recipe": [
+    "Collect finished recipe",
+    "Nhận thành phẩm"
+  ],
+  "%s · Owned: %d\nBuy %d for %d coins · Sell one: %d coins": [
+    "%s · Owned: %d\nBuy %d for %d coins · Sell one: %d coins",
+    "%s · Đang có: %d\nMua %d với %d xu · Bán một: %d xu"
+  ],
+  "Buy supplies": [
+    "Buy supplies",
+    "Mua vật tư"
+  ],
+  "Sell one": [
+    "Sell one",
+    "Bán một"
+  ],
+  "Convert extra fruit to Dragon Energy": [
+    "Convert extra fruit to Dragon Energy",
+    "Đổi quả dư thành Long Khí"
+  ],
+  "Altar blessing: recover farm energy": [
+    "Altar blessing: recover farm energy",
+    "Cầu phúc: hồi năng lượng nông trại"
+  ],
+  "Food: %s · Daily help: %s\nGift: %s · Ready: %d": [
+    "Food: %s · Daily help: %s\nGift: %s · Ready: %d",
+    "Thức ăn: %s · Hỗ trợ: %s\nSản phẩm: %s · Sẵn sàng: %d"
+  ],
+  "Fullness: %d · Cleanliness: %d · Happiness: %d\nHealth: %s · Assigned: %s": [
+    "Fullness: %d · Cleanliness: %d · Happiness: %d\nHealth: %s · Assigned: %s",
+    "No bụng: %d · Sạch sẽ: %d · Hạnh phúc: %d\nSức khỏe: %s · Đã giao việc: %s"
+  ],
+  "Adopt companion": [
+    "Adopt companion",
+    "Đón bạn đồng hành"
+  ],
+  "Feed species food": [
+    "Feed species food",
+    "Cho ăn đúng loại"
+  ],
+  "Offer Dragon Cake": [
+    "Offer Dragon Cake",
+    "Tặng Bánh Rồng"
+  ],
+  "Treat matching disease": [
+    "Treat matching disease",
+    "Dùng thuốc đúng bệnh"
+  ],
+  "Collect product": [
+    "Collect product",
+    "Nhận sản phẩm"
+  ],
+  "Assign daily help": [
+    "Assign daily help",
+    "Giao việc hằng ngày"
+  ],
+  "Unassign daily help": [
+    "Unassign daily help",
+    "Hủy giao việc"
+  ],
+  "Hatches: %s · %d days\nCost: %d coins + %d Dragon Energy\nOwned eggs: %d": [
+    "Hatches: %s · %d days\nCost: %d coins + %d Dragon Energy\nOwned eggs: %d",
+    "Nở thành: %s · %d ngày\nGiá: %d xu + %d Long Khí\nTrứng đang có: %d"
+  ],
+  "Incubation: %d/%d days · Ready: %s": [
+    "Incubation: %d/%d days · Ready: %s",
+    "Đang ấp: %d/%d ngày · Sẵn sàng: %s"
+  ],
+  "Buy egg": [
+    "Buy egg",
+    "Mua trứng"
+  ],
+  "Start incubation": [
+    "Start incubation",
+    "Bắt đầu ấp"
+  ],
+  "Hatch ready egg": [
+    "Hatch ready egg",
+    "Cho trứng nở"
+  ],
+  "Progress: %d / %d\nReward: %d coins + %s\nSeason: %s\nDelivery: %s": [
+    "Progress: %d / %d\nReward: %d coins + %s\nSeason: %s\nDelivery: %s",
+    "Tiến độ: %d / %d\nThưởng: %d xu + %s\nMùa: %s\nCần giao: %s"
+  ],
+  "Claim reward / deliver fair order": [
+    "Claim reward / deliver fair order",
+    "Nhận thưởng / giao đơn lễ hội"
+  ],
+  "Day %d · %s · Dragon Energy %d · Orders %d · Saved automatically": [
+    "Day %d · %s · Dragon Energy %d · Orders %d · Saved automatically",
+    "Ngày %d · %s · Long Khí %d · Đơn hoàn thành %d · Tự động lưu"
+  ],
+  "Select an entry to inspect its requirements.": [
+    "Select an entry to inspect its requirements.",
+    "Chọn một mục để xem điều kiện và hành động."
+  ],
+  "Main Island": [
+    "Main Island",
+    "Đảo Chính"
+  ],
+  "Botanical Island": [
+    "Botanical Island",
+    "Đảo Thực Vật"
+  ],
+  "Dragon Island": [
+    "Dragon Island",
+    "Đảo Rồng"
+  ],
+  "Monster Island": [
+    "Monster Island",
+    "Đảo Quái Vật"
+  ],
+  "Ice Island": [
+    "Ice Island",
+    "Đảo Băng"
+  ],
+  "Lava Island": [
+    "Lava Island",
+    "Đảo Nham Thạch"
+  ],
+  "Snake Island": [
+    "Snake Island",
+    "Đảo Rắn"
+  ],
+  "Your approved 12-plot farm, home and Cloud Chicken barn.": [
+    "Your 12-plot farm, home and Cloud Chicken barn.",
+    "Nông trại 12 ô đất, ngôi nhà và chuồng Gà Mây của bạn."
+  ],
+  "Grow medicinal herbs separately from the 12 farm plots; brew specific cures and species food.": [
+    "Grow medicinal herbs and brew remedies or companion food.",
+    "Trồng dược liệu trong vườn riêng để bào chế thuốc và thức ăn đúng loài."
+  ],
+  "Build the Dragon Altar, incubate elemental eggs and use one companion utility at a time.": [
+    "Build the Dragon Altar, incubate elemental eggs and assign your dragons to help.",
+    "Xây Long Đàn, ấp trứng nguyên tố và giao việc hỗ trợ cho rồng."
+  ],
+  "Slimes recover garden supplies; golems collect a small amount of building stone.": [
+    "Slimes recover garden supplies; golems collect a small amount of building stone.",
+    "Slime tìm vật tư cho vườn; golem giúp thu thập một ít đá xây dựng."
+  ],
+  "An icehouse preserves care meters and unlocks cold-water fish and frost herbs.": [
+    "An icehouse preserves care meters and unlocks cold-water fish and frost herbs.",
+    "Nhà băng giảm hao hụt khi chăm sóc, mở cá nước lạnh và dược liệu băng."
+  ],
+  "The warm forge reduces queued crafting and incubation time by one day.": [
+    "The warm forge speeds up queued crafting and incubation.",
+    "Lò ấm giúp chế tạo và ấp trứng nhanh hơn."
+  ],
+  "Grow antidote herbs and assign a serpent to reduce creature disease risk.": [
+    "Grow antidote herbs and assign a serpent to reduce creature disease risk.",
+    "Trồng thảo dược giải độc và nhờ rắn giảm nguy cơ bệnh cho vật nuôi."
+  ],
+  "Barn Upgrade": [
+    "Barn Upgrade",
+    "Nâng cấp chuồng"
+  ],
+  "Alchemy Workbench": [
+    "Alchemy Workbench",
+    "Bàn bào chế"
+  ],
+  "Special Shop": [
+    "Special Shop",
+    "Cửa hàng đặc biệt"
+  ],
+  "Dragon Altar": [
+    "Dragon Altar",
+    "Long Đàn"
+  ],
+  "Botanical Garden Upgrade": [
+    "Botanical Garden Upgrade",
+    "Nâng cấp vườn dược liệu"
+  ],
+  "Fish Pond": [
+    "Fish Pond",
+    "Hồ cá"
+  ],
+  "Monster Sanctuary": [
+    "Monster Sanctuary",
+    "Khu nuôi quái vật"
+  ],
+  "Icehouse": [
+    "Icehouse",
+    "Nhà băng"
+  ],
+  "Warm Forge": [
+    "Warm Forge",
+    "Lò ấm"
+  ],
+  "Serpent Den": [
+    "Serpent Den",
+    "Nhà rắn"
+  ],
+  "Warehouse Upgrade": [
+    "Warehouse Upgrade",
+    "Nâng cấp kho"
+  ],
+  "Adds one animal-care capacity per level; Cloud Chicken remains available.": [
+    "Each level adds room for another farm animal.",
+    "Mỗi cấp thêm chỗ cho một vật nuôi trong chuồng."
+  ],
+  "Unlocks food, medicine and dragon recipes.": [
+    "Unlocks food, medicine and dragon recipes.",
+    "Mở công thức thức ăn, thuốc và món dành cho rồng."
+  ],
+  "Unlocks rare eggs and specialist supplies.": [
+    "Unlocks rare eggs and specialist supplies.",
+    "Mở trứng hiếm và vật tư chuyên dụng."
+  ],
+  "Unlocks Dragon Island and elemental incubation.": [
+    "Unlocks Dragon Island and elemental incubation.",
+    "Mở Đảo Rồng và tính năng ấp trứng nguyên tố."
+  ],
+  "Adds one herb yield per harvest, capped at three.": [
+    "Adds one herb per harvest at each level, up to three.",
+    "Mỗi cấp thêm một dược liệu mỗi lần thu hoạch, tối đa ba."
+  ],
+  "Allows fish care and fish materials.": [
+    "Allows fish care and fish materials.",
+    "Cho phép chăm sóc cá và nhận vật liệu từ cá."
+  ],
+  "Allows slime and golem companions.": [
+    "Allows slime and golem companions.",
+    "Cho phép đón slime và golem làm bạn đồng hành."
+  ],
+  "Daily creature fullness and cleanliness decay reduced by two.": [
+    "Daily creature fullness and cleanliness decay reduced by two.",
+    "Giảm hai điểm hao hụt no bụng và sạch sẽ mỗi ngày."
+  ],
+  "Queued crafting and incubation gain one extra progress per day.": [
+    "Queued crafting and incubation gain one extra progress per day.",
+    "Chế tạo và ấp trứng tiến thêm một bước mỗi ngày."
+  ],
+  "Allows a serpent companion and disease resistance utility.": [
+    "Allows a serpent companion and disease resistance utility.",
+    "Cho phép đón rắn và sử dụng hỗ trợ phòng bệnh."
+  ],
+  "Unlocks larger forage batches without limiting existing inventory or dropping old items.": [
+    "Adds ten item stacks per level and improves foraging.",
+    "Mỗi cấp thêm mười loại vật phẩm trong kho và tăng lượng thu thập."
+  ],
+  "Ancient Dragon Fruit": [
+    "Ancient Dragon Fruit",
+    "Long Quả Cổ"
+  ],
+  "Dragon Crystal": [
+    "Dragon Crystal",
+    "Tinh thể rồng"
+  ],
+  "Dragon Energy": [
+    "Dragon Energy",
+    "Long Khí"
+  ],
+  "Building Stone": [
+    "Building Stone",
+    "Đá xây dựng"
+  ],
+  "Ice Shard": [
+    "Ice Shard",
+    "Mảnh băng"
+  ],
+  "Warm Ember": [
+    "Warm Ember",
+    "Than hồng"
+  ],
+  "Snake Scale": [
+    "Snake Scale",
+    "Vảy rắn"
+  ],
+  "Monster Gel": [
+    "Monster Gel",
+    "Gel quái vật"
+  ],
+  "Mint Seeds": [
+    "Mint Seeds",
+    "Hạt bạc hà"
+  ],
+  "Lavender Seeds": [
+    "Lavender Seeds",
+    "Hạt oải hương"
+  ],
+  "Sun Herb Seeds": [
+    "Sun Herb Seeds",
+    "Hạt dược liệu nắng"
+  ],
+  "Frost Herb Seeds": [
+    "Frost Herb Seeds",
+    "Hạt dược liệu băng"
+  ],
+  "Antidote Herb Seeds": [
+    "Antidote Herb Seeds",
+    "Hạt dược liệu giải độc"
+  ],
+  "Mint": [
+    "Mint",
+    "Bạc hà"
+  ],
+  "Lavender": [
+    "Lavender",
+    "Oải hương"
+  ],
+  "Sun Herb": [
+    "Sun Herb",
+    "Dược liệu nắng"
+  ],
+  "Frost Herb": [
+    "Frost Herb",
+    "Dược liệu băng"
+  ],
+  "Antidote Herb": [
+    "Antidote Herb",
+    "Dược liệu giải độc"
+  ],
+  "Grain Feed": [
+    "Grain Feed",
+    "Hạt dinh dưỡng"
+  ],
+  "Pond Grain": [
+    "Pond Grain",
+    "Hạt ao hồ"
+  ],
+  "Root Mash": [
+    "Root Mash",
+    "Củ nghiền"
+  ],
+  "Meadow Fodder": [
+    "Meadow Fodder",
+    "Thức ăn đồng cỏ"
+  ],
+  "Water Dragon Meal": [
+    "Water Dragon Meal",
+    "Thức ăn Rồng Nước"
+  ],
+  "Fire Dragon Meal": [
+    "Fire Dragon Meal",
+    "Thức ăn Rồng Lửa"
+  ],
+  "Ice Dragon Meal": [
+    "Ice Dragon Meal",
+    "Thức ăn Rồng Băng"
+  ],
+  "Forest Dragon Meal": [
+    "Forest Dragon Meal",
+    "Thức ăn Rồng Rừng"
+  ],
+  "Gold Dragon Meal": [
+    "Gold Dragon Meal",
+    "Thức ăn Rồng Vàng"
+  ],
+  "Shadow Dragon Meal": [
+    "Shadow Dragon Meal",
+    "Thức ăn Rồng Bóng Tối"
+  ],
+  "Crystal Dragon Meal": [
+    "Crystal Dragon Meal",
+    "Thức ăn Rồng Tinh Thể"
+  ],
+  "Rainbow Dragon Meal": [
+    "Rainbow Dragon Meal",
+    "Thức ăn Rồng Cầu Vồng"
+  ],
+  "Silver Fish Flakes": [
+    "Silver Fish Flakes",
+    "Thức ăn Cá Bạc"
+  ],
+  "Koi Pellets": [
+    "Koi Pellets",
+    "Thức ăn cá Koi"
+  ],
+  "Cold-Water Pellets": [
+    "Cold-Water Pellets",
+    "Thức ăn cá nước lạnh"
+  ],
+  "Gold Fish Pellets": [
+    "Gold Fish Pellets",
+    "Thức ăn Cá Vàng"
+  ],
+  "Feeder Fish Grain": [
+    "Feeder Fish Grain",
+    "Thức ăn Cá Mồi"
+  ],
+  "Slime Herb Jelly": [
+    "Slime Herb Jelly",
+    "Thạch dược liệu Slime"
+  ],
+  "Golem Mineral Meal": [
+    "Golem Mineral Meal",
+    "Thức ăn khoáng Golem"
+  ],
+  "Serpent Meal": [
+    "Serpent Meal",
+    "Thức ăn rắn"
+  ],
+  "Cold Remedy": [
+    "Cold Remedy",
+    "Thuốc cảm lạnh"
+  ],
+  "Fever Remedy": [
+    "Fever Remedy",
+    "Thuốc hạ sốt"
+  ],
+  "Antidote": [
+    "Antidote",
+    "Thuốc giải độc"
+  ],
+  "Restorative Tonic": [
+    "Restorative Tonic",
+    "Thuốc hồi sức"
+  ],
+  "Duck Egg": [
+    "Duck Egg",
+    "Trứng vịt"
+  ],
+  "Fresh Milk": [
+    "Fresh Milk",
+    "Sữa tươi"
+  ],
+  "Root Truffle": [
+    "Root Truffle",
+    "Nấm củ"
+  ],
+  "Silver Scale": [
+    "Silver Scale",
+    "Vảy bạc"
+  ],
+  "Koi Pearl": [
+    "Koi Pearl",
+    "Ngọc Koi"
+  ],
+  "Ice Pearl": [
+    "Ice Pearl",
+    "Ngọc băng"
+  ],
+  "Gold Scale": [
+    "Gold Scale",
+    "Vảy vàng"
+  ],
+  "Forage Fish Flakes": [
+    "Forage Fish Flakes",
+    "Vảy Cá Mồi"
+  ],
+  "Rare": [
+    "Rare",
+    "Vật phẩm hiếm"
+  ],
+  "Material": [
+    "Material",
+    "Vật liệu"
+  ],
+  "Herb Seed": [
+    "Herb Seed",
+    "Hạt dược liệu"
+  ],
+  "Herb": [
+    "Herb",
+    "Dược liệu"
+  ],
+  "Food": [
+    "Food",
+    "Thức ăn"
+  ],
+  "Medicine": [
+    "Medicine",
+    "Thuốc"
+  ],
+  "Animal Product": [
+    "Animal Product",
+    "Sản phẩm vật nuôi"
+  ],
+  "Creature Material": [
+    "Creature Material",
+    "Vật liệu sinh vật"
+  ],
+  "Found by farm harvesting; guaranteed after twelve harvests without a fruit.": [
+    "Harvest crops to find this rare fruit. Long Vein guarantees one after twelve harvests without a fruit.",
+    "Thu hoạch nông sản để tìm quả hiếm. Long Mạch bảo đảm một quả sau mười hai lần thu hoạch chưa nhận quả."
+  ],
+  "For Cloud Chicken only; existing animal_feed remains compatible.": [
+    "Food for Cloud Chicken; ordinary animal feed can also be used.",
+    "Thức ăn dành cho Gà Mây; vẫn có thể dùng thức ăn vật nuôi thường."
+  ],
+  "Cloud Chicken": [
+    "Cloud Chicken",
+    "Gà Mây"
+  ],
+  "Cloud Duck": [
+    "Cloud Duck",
+    "Vịt Mây"
+  ],
+  "Root Pig": [
+    "Root Pig",
+    "Heo Củ"
+  ],
+  "Meadow Cow": [
+    "Meadow Cow",
+    "Bò Đồng Cỏ"
+  ],
+  "Water Dragon": [
+    "Water Dragon",
+    "Rồng Nước"
+  ],
+  "Fire Dragon": [
+    "Fire Dragon",
+    "Rồng Lửa"
+  ],
+  "Ice Dragon": [
+    "Ice Dragon",
+    "Rồng Băng"
+  ],
+  "Forest Dragon": [
+    "Forest Dragon",
+    "Rồng Rừng"
+  ],
+  "Gold Dragon": [
+    "Gold Dragon",
+    "Rồng Vàng"
+  ],
+  "Shadow Dragon": [
+    "Shadow Dragon",
+    "Rồng Bóng Tối"
+  ],
+  "Crystal Dragon": [
+    "Crystal Dragon",
+    "Rồng Tinh Thể"
+  ],
+  "Rainbow Dragon": [
+    "Rainbow Dragon",
+    "Rồng Cầu Vồng"
+  ],
+  "Silver Fish": [
+    "Silver Fish",
+    "Cá Bạc"
+  ],
+  "Koi": [
+    "Koi",
+    "Cá Koi"
+  ],
+  "Ice Fish": [
+    "Ice Fish",
+    "Cá Băng"
+  ],
+  "Gold Fish": [
+    "Gold Fish",
+    "Cá Vàng"
+  ],
+  "Feeder Fish": [
+    "Feeder Fish",
+    "Cá Mồi"
+  ],
+  "Garden Slime": [
+    "Garden Slime",
+    "Slime Vườn"
+  ],
+  "Stone Golem": [
+    "Stone Golem",
+    "Golem Đá"
+  ],
+  "Herbal Serpent": [
+    "Herbal Serpent",
+    "Rắn Dược Liệu"
+  ],
+  "Your first farm companion. Happy, fed and clean hens produce one egg daily; assigned hens recover a herb seed.": [
+    "Your first companion. Happy, fed and clean hens produce one egg daily; assigned hens recover a herb seed.",
+    "Bạn đồng hành đầu tiên. Gà vui vẻ, no bụng và sạch sẽ cho một trứng mỗi ngày; khi được giao việc sẽ tìm thêm hạt dược liệu."
+  ],
+  "Waters one planted farm bed on the next morning when assigned and cared for.": [
+    "Waters one planted farm bed on the next morning when assigned and cared for.",
+    "Tưới một ô đã trồng vào sáng hôm sau khi được giao việc và chăm sóc đầy đủ."
+  ],
+  "Assigned happy pigs find one building stone per day.": [
+    "Assigned happy pigs find one building stone per day.",
+    "Heo vui vẻ được giao việc sẽ tìm một đá xây dựng mỗi ngày."
+  ],
+  "Assigned cows recover one botanical seed daily.": [
+    "Assigned cows recover one botanical seed daily.",
+    "Bò được giao việc sẽ tìm một hạt dược liệu mỗi ngày."
+  ],
+  "Waters at most two already-planted beds; never tills, plants or harvests.": [
+    "Waters at most two planted beds each day when assigned.",
+    "Tưới tối đa hai ô đã trồng mỗi ngày khi được giao việc."
+  ],
+  "Adds one daily progress to existing egg/craft queues, capped at two total.": [
+    "Adds one progress to incubation and crafting each day, up to two in total.",
+    "Thêm một bước tiến cho ấp trứng và chế tạo mỗi ngày, tổng cộng tối đa hai bước."
+  ],
+  "Improves forage preservation and lowers care decay when assigned.": [
+    "Improves forage preservation and lowers care decay when assigned.",
+    "Tăng lượng vật tư thu thập và giảm hao hụt khi chăm sóc nếu được giao việc."
+  ],
+  "Recovers one herb seed per cared day for the medicinal garden.": [
+    "Recovers one herb seed per cared day for the medicinal garden.",
+    "Tìm một hạt dược liệu mỗi ngày khi được chăm sóc đầy đủ."
+  ],
+  "Collects one crystal per cared day; does not mint coins.": [
+    "Collects one crystal each day while well cared for.",
+    "Tìm một tinh thể mỗi ngày khi được chăm sóc đầy đủ."
+  ],
+  "Resists disease for the farm's companions.": [
+    "Resists disease for the farm's companions.",
+    "Giúp các bạn đồng hành trong nông trại phòng bệnh."
+  ],
+  "Provides preservation utility; requires rare crystal egg.": [
+    "Preserves supplies and care meters; hatches from a rare Crystal Egg.",
+    "Hỗ trợ bảo quản vật tư và thể trạng; nở từ Trứng Tinh Thể hiếm."
+  ],
+  "Late collection target and capped incubation utility; no unlimited economy buff.": [
+    "A rare collection companion that helps eggs hatch faster.",
+    "Bạn đồng hành hiếm giúp ấp trứng nhanh hơn."
+  ],
+  "Produces low-value silver scales for recipes.": [
+    "Produces silver scales for recipes.",
+    "Cho vảy bạc để dùng trong công thức."
+  ],
+  "Calming pond companion with disease-resistance utility.": [
+    "Calming pond companion with disease-resistance utility.",
+    "Bạn đồng hành hiền hòa trong hồ, giúp phòng bệnh."
+  ],
+  "Cold-water companion that supports preservation.": [
+    "Cold-water companion that supports preservation.",
+    "Bạn đồng hành nước lạnh giúp bảo quản."
+  ],
+  "Provides modest crafting materials instead of crop-level coin income.": [
+    "Provides small amounts of materials for crafting.",
+    "Cung cấp một lượng nhỏ vật liệu chế tạo."
+  ],
+  "Low-cost fish and food-material collection.": [
+    "An affordable fish that provides food materials.",
+    "Loài cá dễ nuôi cung cấp nguyên liệu làm thức ăn."
+  ],
+  "Assigned slimes recover one medicinal seed daily.": [
+    "Assigned slimes recover one medicinal seed daily.",
+    "Slime được giao việc tìm một hạt dược liệu mỗi ngày."
+  ],
+  "Assigned golems gather one stone per day.": [
+    "Assigned golems gather one stone per day.",
+    "Golem được giao việc thu thập một đá mỗi ngày."
+  ],
+  "Its assigned utility prevents neglect disease once basic care is adequate.": [
+    "Assigned serpents help prevent disease while basic care is maintained.",
+    "Rắn được giao việc giúp phòng bệnh khi vẫn duy trì chăm sóc cơ bản."
+  ],
+  "Fresh herb for cold remedies and grain feed.": [
+    "Fresh herb for cold remedies and grain feed.",
+    "Dược liệu tươi để làm thuốc cảm lạnh và hạt dinh dưỡng."
+  ],
+  "Calming herb for restorative tonics.": [
+    "Calming herb for restorative tonics.",
+    "Dược liệu dịu nhẹ để làm thuốc hồi sức."
+  ],
+  "Warm herb for fever remedies and fire dragon meals.": [
+    "Warm herb for fever remedies and fire dragon meals.",
+    "Dược liệu ấm để làm thuốc hạ sốt và thức ăn Rồng Lửa."
+  ],
+  "Cold-growing herb for specialist food and crystal recipes.": [
+    "Cold-growing herb for specialist food and crystal recipes.",
+    "Dược liệu vùng lạnh để làm thức ăn chuyên dụng và công thức tinh thể."
+  ],
+  "Used specifically for poison remedies.": [
+    "Used specifically for poison remedies.",
+    "Dược liệu chuyên dùng làm thuốc giải độc."
+  ],
+  "Warm Dragon Cake": [
+    "Warm Dragon Cake",
+    "Bánh Rồng Ấm"
+  ],
+  "Water Egg": [
+    "Water Egg",
+    "Trứng Nước"
+  ],
+  "Fire Egg": [
+    "Fire Egg",
+    "Trứng Lửa"
+  ],
+  "Forest Egg": [
+    "Forest Egg",
+    "Trứng Rừng"
+  ],
+  "Ice Egg": [
+    "Ice Egg",
+    "Trứng Băng"
+  ],
+  "Gold Egg": [
+    "Gold Egg",
+    "Trứng Vàng"
+  ],
+  "Shadow Egg": [
+    "Shadow Egg",
+    "Trứng Bóng Tối"
+  ],
+  "Crystal Egg": [
+    "Crystal Egg",
+    "Trứng Tinh Thể"
+  ],
+  "Rainbow Egg": [
+    "Rainbow Egg",
+    "Trứng Cầu Vồng"
+  ],
+  "Small Harvest": [
+    "Small Harvest",
+    "Vụ mùa nhỏ"
+  ],
+  "Farm Apprentice": [
+    "Farm Apprentice",
+    "Nông dân tập sự"
+  ],
+  "Cloud Chicken Friend": [
+    "Cloud Chicken Friend",
+    "Người bạn Gà Mây"
+  ],
+  "Young Herbalist": [
+    "Young Herbalist",
+    "Người trồng dược liệu"
+  ],
+  "Helpful Brewer": [
+    "Helpful Brewer",
+    "Người bào chế tận tâm"
+  ],
+  "First Dragon": [
+    "First Dragon",
+    "Chú rồng đầu tiên"
+  ],
+  "Island Explorer": [
+    "Island Explorer",
+    "Nhà thám hiểm đảo"
+  ],
+  "Summer Fair": [
+    "Summer Fair",
+    "Lễ hội mùa hè"
+  ],
+  "Autumn Fair": [
+    "Autumn Fair",
+    "Lễ hội mùa thu"
+  ],
+  "Winter Fair": [
+    "Winter Fair",
+    "Lễ hội mùa đông"
+  ],
+  "Harvest three regular crops.": [
+    "Harvest three regular crops.",
+    "Thu hoạch ba nông sản thường."
+  ],
+  "Complete the first three crop orders.": [
+    "Complete the first three crop orders.",
+    "Hoàn thành ba đơn nông sản đầu tiên."
+  ],
+  "Perform three creature-care actions.": [
+    "Perform three creature-care actions.",
+    "Thực hiện ba lần chăm sóc bạn đồng hành."
+  ],
+  "Harvest four botanical gardens.": [
+    "Harvest four botanical gardens.",
+    "Thu hoạch vườn dược liệu bốn lần."
+  ],
+  "Craft three recipes.": [
+    "Craft three recipes.",
+    "Chế tạo theo công thức ba lần."
+  ],
+  "Hatch one dragon.": [
+    "Hatch one dragon.",
+    "Ấp nở một chú rồng."
+  ],
+  "Gather resources ten times.": [
+    "Gather resources ten times.",
+    "Thu thập vật tư mười lần."
+  ],
+  "During Summer, deliver two carrots and one egg.": [
+    "During Summer, deliver two carrots and one egg.",
+    "Trong mùa hè, giao hai Cà rốt và một trứng gà."
+  ],
+  "During Autumn, deliver two pumpkins and one milk.": [
+    "During Autumn, deliver two pumpkins and one milk.",
+    "Trong mùa thu, giao hai Bí ngô và một sữa tươi."
+  ],
+  "During Winter, deliver two frost herbs.": [
+    "During Winter, deliver two frost herbs.",
+    "Trong mùa đông, giao hai dược liệu băng."
+  ],
+  "Preferred Spring medicinal herbs gain one extra growth every third day.": [
+    "Spring herbs gain extra growth every third day.",
+    "Dược liệu mùa xuân phát triển thêm vào mỗi ngày thứ ba."
+  ],
+  "Warm weather costs two additional fullness; Summer herbs grow faster.": [
+    "Warm weather costs two additional fullness; Summer herbs grow faster.",
+    "Thời tiết nóng làm hao thêm hai điểm no bụng; dược liệu mùa hè lớn nhanh hơn."
+  ],
+  "Autumn medicinal herbs grow faster; care remains steady.": [
+    "Autumn medicinal herbs grow faster; care remains steady.",
+    "Dược liệu mùa thu lớn nhanh hơn; mức chăm sóc giữ ổn định."
+  ],
+  "Cold weather costs two additional cleanliness; Winter herbs thrive.": [
+    "Cold weather costs two additional cleanliness; Winter herbs thrive.",
+    "Thời tiết lạnh làm hao thêm hai điểm sạch sẽ; dược liệu mùa đông phát triển tốt."
+  ],
+  "Main": [
+    "Main",
+    "Đảo Chính"
+  ],
+  "Botanical": [
+    "Botanical",
+    "Đảo Thực Vật"
+  ],
+  "Dragon": [
+    "Dragon",
+    "Đảo Rồng"
+  ],
+  "Monster": [
+    "Monster",
+    "Đảo Quái Vật"
+  ],
+  "Ice": [
+    "Ice",
+    "Đảo Băng"
+  ],
+  "Lava": [
+    "Lava",
+    "Đảo Nham Thạch"
+  ],
+  "Snake": [
+    "Snake",
+    "Đảo Rắn"
+  ],
+  "Level %d / %d · Fully upgraded": [
+    "Level %d / %d · Fully upgraded",
+    "Cấp %d / %d · Đã nâng cấp tối đa"
+  ],
+  "%s · Owned: %d": [
+    "%s · Owned: %d",
+    "%s · Đang có: %d"
+  ],
+  "Buy %d for %d coins": [
+    "Buy %d for %d coins",
+    "Mua %d với %d xu"
+  ],
+  "Sell one: %d coins": [
+    "Sell one: %d coins",
+    "Bán một: %d xu"
+  ],
+  "Obtain through farming, gathering or crafting.": [
+    "Obtain through farming, gathering or crafting.",
+    "Nhận qua trồng trọt, thu thập hoặc chế tạo."
+  ],
+  "Cloud Chicken Egg": [
+    "Cloud Chicken Egg",
+    "Trứng Gà Mây"
+  ],
+  "Collected from a cared-for Cloud Chicken. Used in recipes or sold for a modest amount.": [
+    "Collected from a cared-for Cloud Chicken. Used in recipes or sold for a modest amount.",
+    "Thu từ Gà Mây được chăm sóc đầy đủ. Dùng làm nguyên liệu hoặc bán để nhận một ít xu."
+  ],
+  "Craft this supplement, then offer it to an owned dragon in Companions for +25 happiness. It never replaces species food or cures disease.": [
+    "Offer this crafted cake to a dragon for +25 happiness. It supplements species food and does not cure disease.",
+    "Tặng bánh đã chế tạo cho rồng để tăng 25 điểm hạnh phúc. Đây là món bổ sung, không thay thức ăn đúng loài hay thuốc chữa bệnh."
+  ],
+  "Unlocks Dragon Island and elemental incubation. Once daily spend 5 Dragon Energy to recover up to 20 farm energy.": [
+    "Unlocks Dragon Island and incubation. Once per day, spend 5 Dragon Energy to recover up to 20 farm energy.",
+    "Mở Đảo Rồng và ấp trứng. Mỗi ngày một lần, dùng 5 Long Khí để hồi tối đa 20 năng lượng nông trại."
+  ],
+  "Progress: %d / %d\nReward: %d coins + %s\nSeason: %s · Delivery: %s": [
+    "Progress: %d / %d\nReward: %d coins + %s\nSeason: %s · Delivery: %s",
+    "Tiến độ: %d / %d\nThưởng: %d xu + %s\nMùa: %s · Cần giao: %s"
+  ],
+  "Selected": [
+    "Selected",
+    "Đã chọn"
+  ],
+  "Unavailable": [
+    "Unavailable",
+    "Không thể dùng"
+  ],
+  "Day %d": [
+    "Day %d",
+    "Ngày %d"
+  ],
+  "Trang trại": [
+    "Farm",
+    "Trang trại"
+  ],
+  "Island map": [
+    "Island map",
+    "Bản đồ đảo"
+  ],
+  "Explore the islands": [
+    "Explore the islands",
+    "Khám phá các đảo"
+  ],
+  "Farm workshop": [
+    "Farm workshop",
+    "Xưởng nông trại"
+  ],
+  "Our farm companions": [
+    "Our farm companions",
+    "Bạn nhỏ của nông trại"
+  ],
+  "Seasons & celebrations": [
+    "Seasons & celebrations",
+    "Mùa lễ hội"
+  ],
+  "Choose an island on the map to discover its gifts.": [
+    "Choose an island on the map to discover its gifts.",
+    "Chọn một đảo trên bản đồ để khám phá quà tặng của thiên nhiên."
+  ],
+  "Build, grow herbs and make useful things for your farm.": [
+    "Build, grow herbs and make useful things for your farm.",
+    "Xây công trình, trồng thảo mộc và chế tạo đồ dùng cho nông trại."
+  ],
+  "A little care every day makes a happy companion.": [
+    "A little care every day makes a happy companion.",
+    "Chăm sóc mỗi ngày để các bạn nhỏ luôn vui vẻ."
+  ],
+  "Watch your progress and collect your farm rewards.": [
+    "Watch your progress and collect your farm rewards.",
+    "Theo dõi thành quả và nhận phần thưởng của nông trại."
+  ],
+  "Your selected companion": [
+    "Your selected companion",
+    "Bạn nhỏ đang chọn"
+  ],
+  "Selected island": [
+    "Selected island",
+    "Đảo đang chọn"
+  ],
+  "Your next farm goal": [
+    "Your next farm goal",
+    "Mục tiêu của nông trại"
+  ],
+  "Make it for your farm": [
+    "Make it for your farm",
+    "Chăm chút nông trại"
+  ],
+  "Tap an island to explore": [
+    "Tap an island to explore",
+    "Chọn đảo để khám phá"
+  ],
+  "Forage resources": [
+    "Forage resources",
+    "Tìm tài nguyên"
+  ],
+  "Fullness": [
+    "Fullness",
+    "Độ no"
+  ],
+  "Cleanliness": [
+    "Cleanliness",
+    "Sạch sẽ"
+  ],
+  "Happiness": [
+    "Happiness",
+    "Vui vẻ"
+  ],
+  "%s: %d": [
+    "%s: %d",
+    "%s: %d"
+  ],
+  "%s · Orders %d/%d": [
+    "%s · Orders %d/%d",
+    "%s · Đơn hàng %d/%d"
+  ],
+  "Unlock: %d coins · Materials: %s": [
+    "Unlock: %d coins · Materials: %s",
+    "Mở đảo: %d xu · Vật liệu: %s"
+  ],
+  "First visit: %s · Forage: %s ×%d": [
+    "First visit: %s · Forage: %s ×%d",
+    "Mở trước: %s · Thu được: %s ×%d"
+  ],
+  "Level %d / %d": [
+    "Level %d / %d",
+    "Cấp %d / %d"
+  ],
+  "Next upgrade: %d coins · Materials: %s": [
+    "Next upgrade: %d coins · Materials: %s",
+    "Nâng cấp: %d xu · Vật liệu: %s"
+  ],
+  "Your farm enjoys this building's benefits.": [
+    "Your farm enjoys this building's benefits.",
+    "Nông trại đang nhận lợi ích từ công trình này."
+  ],
+  "Island: %s · Orders: %d": [
+    "Island: %s · Orders: %d",
+    "Đảo: %s · Cần %d đơn hàng"
+  ],
+  "Island: %s": [
+    "Island: %s",
+    "Đảo: %s"
+  ],
+  "Growth: %d/%d days · Watered: %s": [
+    "Growth: %d/%d days · Watered: %s",
+    "Lớn: %d/%d ngày · Đã tưới: %s"
+  ],
+  "Seeds: %s ×%d · Favorite season: %s": [
+    "Seeds: %s ×%d · Favorite season: %s",
+    "Hạt: %s ×%d · Mùa hợp: %s"
+  ],
+  "Makes: %s ×%d\nWorkbench: %s": [
+    "Makes: %s ×%d\nWorkbench: %s",
+    "Thành phẩm: %s ×%d\nCần: %s"
+  ],
+  "Time: %d day(s) · Recipe cost: %d coins": [
+    "Time: %d day(s) · Recipe cost: %d coins",
+    "Thời gian: %d ngày · Phí chế tạo: %d xu"
+  ],
+  "Ingredients: %s": [
+    "Ingredients: %s",
+    "Nguyên liệu: %s"
+  ],
+  "Make Dragon Energy": [
+    "Make Dragon Energy",
+    "Đổi lấy Long Khí"
+  ],
+  "Altar blessing": [
+    "Altar blessing",
+    "Nhận phúc lành"
+  ],
+  "%s · Daily help: %s": [
+    "%s · Daily help: %s",
+    "%s · Hỗ trợ: %s"
+  ],
+  "Adopt: %d coins · Orders: %d · Island: %s": [
+    "Adopt: %d coins · Orders: %d · Island: %s",
+    "Nhận nuôi: %d xu · Đơn hàng: %d · Đảo: %s"
+  ],
+  "Food: %s · Gift: %s ×%d": [
+    "Food: %s · Gift: %s ×%d",
+    "Thức ăn: %s · Quà: %s ×%d"
+  ],
+  "Treat disease": [
+    "Treat disease",
+    "Chữa bệnh"
+  ],
+  "Give Dragon Cake": [
+    "Give Dragon Cake",
+    "Tặng bánh rồng"
+  ],
+  "Assign help": [
+    "Assign help",
+    "Nhờ giúp đỡ"
+  ],
+  "Rest companion": [
+    "Rest companion",
+    "Cho nghỉ ngơi"
+  ],
+  "Hatches: %s · %d days": [
+    "Hatches: %s · %d days",
+    "Nở thành: %s · %d ngày"
+  ],
+  "Owned eggs: %d": [
+    "Owned eggs: %d",
+    "Trứng đang có: %d"
+  ],
+  "Cost: %d coins + %d Dragon Energy": [
+    "Cost: %d coins + %d Dragon Energy",
+    "Giá: %d xu + %d Long Khí"
+  ],
+  "Progress: %d / %d · Season: %s": [
+    "Progress: %d / %d · Season: %s",
+    "Tiến độ: %d / %d · Mùa: %s"
+  ],
+  "Reward: %d coins + %s": [
+    "Reward: %d coins + %s",
+    "Thưởng: %d xu + %s"
+  ],
+  "Delivery: %s": [
+    "Delivery: %s",
+    "Cần giao: %s"
+  ],
+  "Collect reward": [
+    "Collect reward",
+    "Nhận thưởng"
+  ],
+  "Ready when you are. Your progress is saved automatically.": [
+    "Ready when you are. Your progress is saved automatically.",
+    "Sẵn sàng rồi! Thành quả của bạn sẽ được tự động lưu."
+  ],
+  "Your cozy home, twelve crop beds and the Cloud Chicken barn.": [
+    "Your cozy home, twelve crop beds and the Cloud Chicken barn.",
+    "Ngôi nhà ấm áp, mười hai luống rau và chuồng Gà Mây của bạn."
+  ],
+  "Grow medicinal herbs, brew remedies and prepare food for your companions.": [
+    "Grow medicinal herbs, brew remedies and prepare food for your companions.",
+    "Trồng thảo mộc, pha thuốc và làm thức ăn cho các bạn nhỏ."
+  ],
+  "Raise elemental dragons, hatch their eggs and choose a daily helper.": [
+    "Raise elemental dragons, hatch their eggs and choose a daily helper.",
+    "Ấp trứng, nuôi rồng nguyên tố và chọn một bạn giúp việc mỗi ngày."
+  ],
+  "Hatch elemental eggs. Once a day, spend 5 Dragon Energy to restore up to 20 farm energy.": [
+    "Hatch elemental eggs. Once a day, spend 5 Dragon Energy to restore up to 20 farm energy.",
+    "Ấp trứng nguyên tố. Mỗi ngày dùng 5 Long Khí để hồi tối đa 20 năng lượng nông trại."
+  ],
+  "Carry more gathered supplies. Your existing items always stay safe.": [
+    "Carry more gathered supplies. Your existing items always stay safe.",
+    "Mang về nhiều tài nguyên hơn. Đồ dùng đang có luôn được giữ an toàn."
+  ],
+  "A crafted cake gives an owned dragon +25 happiness. Keep feeding and treating it as usual.": [
+    "A crafted cake gives an owned dragon +25 happiness. Keep feeding and treating it as usual.",
+    "Tặng bánh tự làm cho rồng đang nuôi để tăng 25 vui vẻ. Vẫn cần cho ăn và chữa bệnh."
+  ],
+  "A rare companion that helps eggs hatch a little faster.": [
+    "A rare companion that helps eggs hatch a little faster.",
+    "Người bạn quý hiếm giúp trứng nở nhanh hơn một chút."
+  ],
+  "A cared-for daily helper brings home one crystal each day.": [
+    "A cared-for daily helper brings home one crystal each day.",
+    "Khi được chăm sóc và giao việc, bạn nhỏ mang về một pha lê mỗi ngày."
+  ],
+  "Need %d energy; you have %d.\nNext Day restores 100.": [
+    "Need %d energy; you have %d.\nNext Day restores 100.",
+    "Cần %d năng lượng; bạn có %d.\nNgày mới hồi đầy 100."
+  ],
+  "A bright pond companion that brings small crafting materials.": [
+    "A bright pond companion that brings small crafting materials.",
+    "Người bạn lung linh bên ao, cho một ít vật liệu chế tạo."
+  ]
+}

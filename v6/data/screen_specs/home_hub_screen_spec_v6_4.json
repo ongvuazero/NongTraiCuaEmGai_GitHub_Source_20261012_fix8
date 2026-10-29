@@ -1,0 +1,34 @@
+{
+  "spec_version": "6.4",
+  "screen_id": "HOME_HUB_SCREEN",
+  "canonical_viewport": [1280, 720],
+  "geometry_policy": "LOCK_V6_3_RECTS_AND_FOOT_ANCHORS",
+  "world_plate": "res://v6/art/plates/home_hub/home_hub_world_plate_v6_2.png",
+  "front_occluder": "res://v6/art/plates/home_hub/home_hub_front_occluder_v6_2.png",
+  "static_ui_owner": "res://v6/art/plates/home_hub/home_hub_ui_master_plate_v6_4.png",
+  "static_ui_policy": "exact reference logo + HUD shells/icons + nav shells/icons + Rest shell/icon; no dynamic text",
+  "dynamic_text_rects": {
+    "DATE": [578, 13, 116, 57],
+    "MONEY": [748, 14, 116, 56],
+    "ENERGY": [921, 14, 118, 56],
+    "LONG_KHI": [1101, 13, 150, 57],
+    "NAV_FIELD": [75, 129, 156, 62],
+    "NAV_SHOP": [75, 194, 156, 62],
+    "NAV_STORAGE": [75, 258, 156, 62],
+    "NAV_ANIMALS": [75, 323, 156, 62],
+    "NAV_DRAGON": [75, 388, 156, 62],
+    "NAV_QUEST": [75, 454, 156, 62],
+    "NAV_SETTINGS": [75, 519, 156, 62],
+    "REST": [70, 592, 180, 72]
+  },
+  "foot_anchors": {
+    "FARMER": [790, 628],
+    "CAT": [855, 627],
+    "COW": [1122, 495],
+    "SHEEP": [1064, 501],
+    "CHICKEN": [1198, 519],
+    "PORTAL_GROUND": [1160, 260]
+  },
+  "qa_locale": "en",
+  "shipping_locale": "runtime"
+}

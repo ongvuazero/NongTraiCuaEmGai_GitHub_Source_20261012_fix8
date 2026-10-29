@@ -1,0 +1,21 @@
+{
+  "spec_version": "6.1",
+  "screen_id": "SAVE_SCREEN",
+  "canonical_viewport": [1280, 720],
+  "composition_class": "CLASS_A_PLATE_FIRST_UI_SHELLS",
+  "visual_status": "LEGACY_VISUAL_FALLBACK",
+  "composition_owner": {"type": "plate_first_ui_shells", "required_key": "SAVE_BG_PLATE"},
+  "ui_rects": [
+    {"id": "LOGO_RECT", "px": [28, 10, 215, 104]},
+    {"id": "HEADER_RECT", "px": [134, 29, 552, 76]},
+    {"id": "SLOT_1_RECT", "px": [24, 143, 671, 146]},
+    {"id": "SLOT_2_RECT", "px": [24, 304, 671, 146]},
+    {"id": "SLOT_3_RECT", "px": [24, 465, 671, 146]},
+    {"id": "DETAIL_RECT", "px": [721, 136, 533, 481]},
+    {"id": "BACK_BUTTON_RECT", "px": [32, 633, 158, 55]},
+    {"id": "DELETE_BUTTON_RECT", "px": [801, 633, 186, 55]},
+    {"id": "CONFIRM_BUTTON_RECT", "px": [1007, 633, 220, 55]}
+  ],
+  "required_visual_keys": ["SAVE_BG_PLATE", "SAVE_HEADER_PLATE", "SAVE_SLOT_OCCUPIED", "SAVE_SLOT_SELECTED", "SAVE_SLOT_EMPTY", "SAVE_DETAIL_PANEL", "BTN_BACK", "BTN_DELETE", "BTN_CONFIRM"],
+  "qa_fixture": {"selected_slot": 1, "farm_name": "My Farm", "day": 12, "season": "Spring", "money": 12480, "location": "Farm", "capture": "save_FALLBACK_v6_1.png"}
+}

@@ -1,0 +1,252 @@
+{
+  "version": 3,
+  "canvas": [1280,720],
+  "measurement": "Scene-specific 1280x720 masks: painted water pigments travel inside fixed water boundaries; loose leaves carry wind without resampling flattened foliage edges; local pigment sheen, restrained light and chimney wisps. Scene clocks resume from a transient per-scene cache and freeze with Save. Architecture, paths, UI and input geometry remain fixed. Panel water is measured separately against its own source texture.",
+  "global_exclusions": [[0,0,245,720],[245,0,1035,84]],
+  "panel_scenes": {
+    "island_map": {
+      "source": "res://assets/canonical_v2/03_ART_RUNTIME_READY/ENVIRONMENT/BACKGROUND_PLATES/E03-06__Dragon_Island_far_floating_islands_sky.png",
+      "canvas": [1280,720],
+      "measurement": "Source-pixel polygons, scaled through the TextureRect KEEP_ASPECT_COVERED draw rectangle; captions and state badges are excluded in panel-local coordinates.",
+      "layers": [
+        {"id":"map_far_sea","kind":"surface","polygon":[[403,294],[700,294],[704,319],[618,344],[411,338]],"strength":0.20,"flow":[0.7,0.04],"color":"b7eaf3"},
+        {"id":"map_middle_sea","kind":"surface","polygon":[[582,377],[709,387],[772,367],[915,366],[955,392],[941,428],[809,462],[755,456],[688,430],[627,434],[579,407]],"strength":0.20,"flow":[0.7,0.04],"color":"b7eaf3"},
+        {"id":"map_lower_sea","kind":"surface","polygon":[[445,486],[564,448],[670,488],[840,471],[829,516],[735,547],[620,590],[565,654],[541,658],[511,621],[482,615],[489,560],[433,570]],"strength":0.20,"flow":[0.7,0.06],"color":"b7eaf3"},
+        {"id":"map_upper_left_fall","kind":"waterfall","polygon":[[218,225],[252,225],[257,270],[253,355],[238,394],[226,357]],"strength":0.27,"flow":[0,1],"color":"d3f6fa"},
+        {"id":"map_near_left_fall","kind":"waterfall","polygon":[[237,455],[268,463],[286,530],[287,616],[279,660],[245,642],[239,587]],"strength":0.26,"flow":[0,1],"color":"d3f6fa"},
+        {"id":"map_castle_fall","kind":"waterfall","polygon":[[833,182],[852,182],[854,215],[849,271],[839,285],[832,242]],"strength":0.27,"flow":[0,1],"color":"d3f6fa"},
+        {"id":"map_upper_right_fall","kind":"waterfall","polygon":[[1090,263],[1109,263],[1114,304],[1110,352],[1100,368],[1091,340]],"strength":0.26,"flow":[0,1],"color":"d3f6fa"},
+        {"id":"map_near_right_fall","kind":"waterfall","polygon":[[1036,548],[1058,549],[1064,568],[1057,607],[1052,681],[1040,718],[1018,718],[1022,665],[1028,609]],"strength":0.25,"flow":[0,1],"color":"d3f6fa"}
+      ]
+    }
+  },
+  "scenes": {
+    "field_lakeside": {
+      "source": "res://assets/field_zones_v1/lakeside_background.png",
+      "exclusions": [[1030,132,250,440],[0,575,1280,145],[278,191,252,43]],
+      "layers": [{"id":"lake_surface","kind":"surface","polygon":[[580,108],[1050,108],[1050,189],[845,199],[636,175]],"strength":0.18,"flow":[0.5,0.04],"color":"b7edf4"}],
+      "particles": [{"kind":"leaf","count":6,"polygon":[[285,89],[422,90],[438,151],[328,172]],"velocity":[7,4],"color":"bed891"}]
+    },
+    "field_forest": {
+      "source": "res://assets/field_zones_v1/forest_background.png",
+      "exclusions": [[1030,132,250,440],[0,575,1280,145],[278,191,252,43]],
+      "layers": [{"id":"forest_canopy_light","kind":"foliage","polygon":[[421,93],[540,84],[645,106],[606,166],[460,164]],"strength":0.48,"flow":[0,0],"sway_pixels":0,"color":"ffffff"}],
+      "particles": [{"kind":"leaf","count":9,"polygon":[[298,88],[1010,88],[991,184],[329,181]],"velocity":[6,6],"color":"b8ce78"}]
+    },
+    "field_highland": {
+      "source": "res://assets/field_zones_v1/highland_background.png",
+      "exclusions": [[1030,132,250,440],[0,575,1280,145],[278,191,252,43]],
+      "layers": [{"id":"highland_far_water","kind":"surface","polygon":[[586,142],[913,143],[865,167],[658,165]],"strength":0.15,"flow":[0.6,0.04],"color":"b7edf4"}],
+      "particles": [{"kind":"breeze","count":7,"polygon":[[523,89],[1006,89],[1005,173],[546,172]],"velocity":[18,0],"color":"e5f2d4"}]
+    },
+    "field": {
+      "source": "res://assets/living_world_all_v2/field.png",
+      "exclusions": [[1030,640,250,80]],
+      "layers": [
+        {"id":"distant_ocean","kind":"surface","polygon":[[720,92],[1250,92],[1198,160],[1073,178],[960,175],[811,190],[706,165]],"strength":0.24,"flow":[0.6,0.1],"color":"b7edf4"},
+        {"id":"field_upper_shrubs","kind":"foliage","polygon":[[382,105],[422,88],[466,101],[482,133],[462,164],[405,158],[380,135]],"strength":0.94,"flow":[0,0],"sway_pixels":3.2,"color":"ffffff"},
+        {"id":"field_right_tree","kind":"foliage","polygon":[[1195,189],[1233,170],[1279,149],[1279,236],[1238,240],[1192,218]],"strength":0.94,"flow":[0,0],"sway_pixels":3.5,"color":"ffffff"}
+      ],
+      "particles": [{"kind":"leaf","count":7,"polygon":[[285,91],[568,89],[572,235],[350,268],[265,230]],"velocity":[12,7],"color":"c9dc83"},{"kind":"breeze","count":5,"polygon":[[780,100],[1210,100],[1170,194],[885,184]],"velocity":[19,0],"color":"e0f5d3"}]
+    },
+    "hub": {
+      "source": "res://assets/living_world_all_v2/home_hub.png",
+      "global_exclusions_override": [[0,0,245,720],[525,0,755,84]],
+      "exclusions": [[827,254,143,51],[1057,90,175,210],[900,326,130,150],[284,645,700,75]],
+      "layers": [
+        {"id":"coastal_water","kind":"surface","polygon":[[708,210],[1051,210],[1045,250],[975,266],[925,273],[869,276],[792,251],[716,248]],"strength":0.25,"flow":[0.7,0.08],"color":"b7eaf3"},
+        {"id":"far_cascade","kind":"waterfall","polygon":[[681,204],[690,204],[695,230],[690,247],[680,238]],"strength":0.31,"flow":[0,1],"color":"d3f6fa"},
+        {"id":"cascade_mist","kind":"mist","polygon":[[675,232],[695,231],[706,251],[689,256],[672,246]],"strength":0.05,"flow":[0.4,-0.15],"color":"e6faf6"},
+        {"id":"house_lantern","kind":"lantern","polygon":[[457,292],[467,289],[477,295],[479,307],[473,318],[461,319],[453,309],[451,299]],"strength":0.08,"flow":[0,0],"color":"ffe2a8"},
+        {"id":"home_tree_crown","kind":"foliage","polygon":[[269,10],[417,7],[461,42],[451,76],[419,97],[370,55],[290,61]],"strength":0.94,"flow":[0,0],"sway_pixels":3.4,"color":"ffffff"},
+        {"id":"home_garden_left","kind":"foliage","polygon":[[260,436],[312,427],[354,447],[365,473],[356,504],[286,518],[252,497]],"strength":0.94,"flow":[0,0],"sway_pixels":3.0,"color":"ffffff"},
+        {"id":"home_garden_right","kind":"foliage","polygon":[[400,433],[467,438],[534,453],[567,477],[554,493],[457,505],[408,488]],"strength":0.94,"flow":[0,0],"sway_pixels":2.8,"color":"ffffff"}
+      ],
+      "particles": [{"kind":"smoke","count":9,"emitter":[338,88],"velocity":[5,-18],"lifetime":3.4,"radius":4.4,"color":"e6e3df"},{"kind":"leaf","count":7,"polygon":[[261,87],[575,91],[523,149],[307,131]],"velocity":[10,5],"color":"ccdc8f"},{"kind":"firefly","count":6,"polygon":[[648,372],[742,366],[727,423],[627,442],[582,404]],"velocity":[3,-2],"color":"ffe5a1"}]
+    },
+    "dragon": {
+      "source":"res://assets/living_world_all_v2/dragon.png",
+      "exclusions":[[306,84,364,243],[0,640,1280,80]],
+      "layers":[
+        {"id":"near_river","kind":"surface","polygon":[[250,626],[305,621],[367,626],[418,640],[337,640],[275,638]],"strength":0.30,"flow":[0.8,0.25],"color":"b6e8ef"},
+        {"id":"bridge_waterfall","kind":"waterfall","polygon":[[276,557],[302,557],[307,599],[304,622],[285,621],[279,595]],"strength":0.30,"flow":[0,1],"color":"d6f6ff"},
+        {"id":"far_fall_left","kind":"waterfall","polygon":[[755,177],[776,176],[778,216],[768,237],[755,225]],"strength":0.24,"flow":[0,1],"color":"d6f6ff"},
+        {"id":"far_fall_middle","kind":"waterfall","polygon":[[878,171],[896,171],[892,210],[883,243],[869,261],[861,255],[870,223]],"strength":0.24,"flow":[0,1],"color":"d6f6ff"},
+        {"id":"far_mist","kind":"mist","polygon":[[748,196],[900,185],[917,223],[851,235],[752,218]],"strength":0.05,"flow":[0.2,-0.1],"color":"e1f6fa"},
+        {"id":"quiet_rainbow","kind":"rainbow","polygon":[[724,155],[906,143],[921,206],[720,217]],"strength":0.055,"flow":[0,0],"color":"ffffff"},
+        {"id":"stall_lantern","kind":"lantern","polygon":[[944,279],[953,276],[962,281],[967,290],[964,304],[950,309],[943,297]],"strength":0.06,"flow":[0,0],"color":"ffe1a5"},
+        {"id":"dragon_left_leaflets","kind":"foliage","polygon":[[252,330],[288,324],[309,357],[298,399],[264,407],[250,386]],"strength":0.94,"flow":[0,0],"sway_pixels":3.1,"color":"ffffff"}
+      ],
+      "particles":[{"kind":"leaf","count":6,"polygon":[[252,87],[305,87],[300,321],[251,336]],"velocity":[5,10],"color":"cadb93"},{"kind":"firefly","count":7,"polygon":[[685,283],[845,257],[907,279],[867,314],[709,330]],"velocity":[4,-2],"color":"fff0b8"}]
+    },
+    "botanical": {
+      "source":"res://assets/living_world_all_v2/botanical.png",
+      "exclusions":[[1030,640,250,80]],
+      "layers":[
+        {"id":"upper_right_fall","kind":"waterfall","polygon":[[1084,192],[1118,187],[1112,236],[1102,262],[1081,248]],"strength":0.21,"flow":[0,1],"color":"c8f4f8"},
+        {"id":"distant_water","kind":"surface","polygon":[[1070,275],[1135,276],[1209,262],[1279,278],[1279,304],[1160,299],[1090,300]],"strength":0.15,"flow":[0.6,0.1],"color":"bceaf3"},
+        {"id":"garden_breeze_mist","kind":"mist","polygon":[[903,170],[932,182],[930,222],[902,218]],"strength":0.045,"flow":[0.2,-0.1],"color":"def8df"},
+        {"id":"botanical_crown","kind":"foliage","polygon":[[326,86],[452,86],[494,103],[482,121],[433,121],[356,105]],"strength":0.94,"flow":[0,0],"sway_pixels":3.3,"color":"ffffff"},
+        {"id":"botanical_side_leaves","kind":"foliage","polygon":[[267,323],[318,325],[333,349],[317,389],[277,388],[258,359]],"strength":0.94,"flow":[0,0],"sway_pixels":3.1,"color":"ffffff"}
+      ],
+      "particles":[{"kind":"smoke","count":7,"emitter":[884,105],"velocity":[5,-16],"lifetime":2.8,"radius":3.8,"color":"e4e0d9"},{"kind":"leaf","count":8,"polygon":[[287,86],[664,88],[655,132],[354,127]],"velocity":[12,5],"color":"b7d877"},{"kind":"firefly","count":6,"polygon":[[279,331],[354,330],[357,368],[299,385],[265,373]],"velocity":[3,-3],"color":"fff4a1"}]
+    },
+    "monster": {
+      "source":"res://assets/living_world_all_v2/monster.png",
+      "exclusions":[[1030,640,250,80]],
+      "layers":[
+        {"id":"distant_cascade","kind":"waterfall","polygon":[[1156,98],[1180,97],[1177,140],[1168,174],[1153,156]],"strength":0.19,"flow":[0,1],"color":"caedf9"},
+        {"id":"far_coast","kind":"surface","polygon":[[899,162],[930,168],[937,188],[900,186]],"strength":0.21,"flow":[0.6,0.1],"color":"bae9f7"},
+        {"id":"monster_crown","kind":"foliage","polygon":[[305,86],[428,85],[460,100],[442,118],[370,122],[310,106]],"strength":0.94,"flow":[0,0],"sway_pixels":3.4,"color":"ffffff"},
+        {"id":"monster_side_leaves","kind":"foliage","polygon":[[278,333],[322,337],[347,365],[329,398],[289,389],[266,363]],"strength":0.94,"flow":[0,0],"sway_pixels":3.0,"color":"ffffff"}
+      ],
+      "particles":[{"kind":"smoke","count":7,"emitter":[668,61],"velocity":[4,-15],"lifetime":2.8,"radius":3.5,"color":"e2ddd3"},{"kind":"leaf","count":7,"polygon":[[330,85],[691,86],[674,119],[398,137]],"velocity":[10,6],"color":"c4d987"},{"kind":"firefly","count":9,"polygon":[[267,310],[354,331],[370,359],[343,384],[274,369]],"velocity":[4,-3],"color":"dceab5"}]
+    },
+    "ice": {
+      "source":"res://assets/living_world_all_v2/ice.png",
+      "exclusions":[[1030,640,250,80]],
+      "layers":[
+        {"id":"high_frozen_cascade","kind":"waterfall","polygon":[[712,104],[755,103],[756,147],[742,154],[715,148]],"strength":0.19,"flow":[0,0.7],"color":"d6f6ff"},
+        {"id":"cold_sea","kind":"surface","polygon":[[820,132],[941,134],[1016,125],[1071,133],[1060,152],[903,157],[830,156]],"strength":0.15,"flow":[0.6,0.1],"color":"bde8fa"},
+        {"id":"fish_pond","kind":"surface","polygon":[[887,464],[959,454],[1019,470],[1091,499],[1180,481],[1184,535],[1113,559],[979,579],[902,553],[862,516]],"strength":0.17,"flow":[0.35,0.15],"color":"b3e5f5"},
+        {"id":"cold_mist","kind":"mist","polygon":[[793,156],[895,163],[934,183],[922,204],[836,197]],"strength":0.04,"flow":[0.25,-0.1],"color":"e5f8ff"},
+        {"id":"ice_pine_tips","kind":"foliage","polygon":[[600,84],[628,84],[648,114],[637,132],[610,126],[591,113]],"strength":0.94,"flow":[0,0],"sway_pixels":2.3,"color":"ffffff"}
+      ],
+      "particles":[{"kind":"snow","count":18,"polygon":[[266,84],[918,84],[924,196],[852,214],[728,184],[412,185],[264,223]],"velocity":[4,9],"color":"eaf7ff"}]
+    },
+    "lava": {
+      "source":"res://assets/living_world_all_v2/lava.png",
+      "exclusions":[[1030,640,250,80]],
+      "layers":[
+        {"id":"volcano_runoff","kind":"lava","polygon":[[1167,86],[1178,99],[1169,125],[1182,154],[1177,177],[1157,177],[1153,150],[1159,122]],"strength":0.17,"flow":[0,0.6],"color":"ffc173"},
+        {"id":"distant_warm_mist","kind":"mist","polygon":[[805,152],[916,137],[936,163],[926,189],[840,191]],"strength":0.04,"flow":[0.25,-0.1],"color":"f1e0cf"},
+        {"id":"lava_hardy_leaves","kind":"foliage","polygon":[[338,190],[359,190],[382,211],[375,229],[339,234],[320,219]],"strength":0.94,"flow":[0,0],"sway_pixels":2.6,"color":"ffffff"}
+      ],
+      "particles":[{"kind":"ember","count":12,"polygon":[[971,90],[1249,90],[1260,177],[1100,186],[980,162]],"velocity":[6,-9],"color":"ffd99c"},{"kind":"breeze","count":5,"polygon":[[290,150],[330,147],[349,191],[309,213]],"velocity":[9,-2],"color":"f4dab3"}]
+    },
+    "animal_cloud_chicken": {
+      "source":"res://assets/living_world_all_v2/chicken_yard.png",
+      "exclusions":[[350,99,720,55],[370,160,510,73],[475,270,345,310],[0,636,350,84],[1050,636,230,84]],
+      "layers":[
+        {"id":"coop_distant_lake","kind":"surface","polygon":[[282,177],[346,170],[399,169],[593,170],[624,188],[563,210],[415,223],[349,213],[284,207]],"strength":0.10,"flow":[0.5,0.06],"color":"c3e9f1"},
+        {"id":"coop_door_lantern","kind":"lantern","polygon":[[727,174],[735,170],[743,175],[746,188],[739,197],[728,194],[723,184]],"strength":0.055,"flow":[0,0],"color":"ffe6b0"},
+        {"id":"coop_side_flowers","kind":"foliage","polygon":[[262,263],[309,255],[343,269],[351,298],[322,319],[277,310]],"strength":0.94,"flow":[0,0],"sway_pixels":2.8,"color":"ffffff"}
+      ],
+      "particles":[{"kind":"leaf","count":6,"polygon":[[267,281],[339,280],[355,348],[335,406],[275,385]],"velocity":[5,4],"color":"c8d989"},{"kind":"firefly","count":5,"polygon":[[266,487],[356,476],[392,548],[347,577],[279,552]],"velocity":[3,-2],"color":"fff0b3"}]
+    },
+    "animal_cow": {
+      "source":"res://assets/living_world_all_v2/cow_yard.png",
+      "exclusions":[[350,99,720,55],[370,160,510,73],[475,270,345,310],[0,636,350,84],[1050,636,230,84]],
+      "layers":[
+        {"id":"cow_far_coast","kind":"surface","polygon":[[552,235],[691,235],[685,248],[649,265],[580,259],[550,247]],"strength":0.10,"flow":[0.55,0.08],"color":"bfe8f0"},
+        {"id":"cow_stall_lantern","kind":"lantern","polygon":[[902,283],[909,280],[917,285],[921,299],[914,309],[902,306],[898,295]],"strength":0.055,"flow":[0,0],"color":"ffe1a5"},
+        {"id":"cow_right_crown","kind":"foliage","polygon":[[1077,86],[1174,84],[1235,101],[1227,139],[1164,163],[1100,134]],"strength":0.94,"flow":[0,0],"sway_pixels":3.6,"color":"ffffff"},
+        {"id":"cow_bunting","kind":"flag","polygon":[[640,278],[722,289],[715,311],[698,299],[680,311],[665,293],[651,305]],"strength":0.94,"flow":[0,0],"sway_pixels":2.4,"color":"ffffff"}
+      ],
+      "particles":[{"kind":"leaf","count":6,"polygon":[[1078,86],[1240,84],[1236,146],[1150,154],[1081,132]],"velocity":[6,4],"color":"c8d98a"},{"kind":"breeze","count":5,"polygon":[[281,330],[369,336],[409,397],[352,425],[286,392]],"velocity":[7,-1],"color":"e3f0c5"}]
+    },
+    "animal_duck": {
+      "source":"res://assets/living_world_all_v2/duck_pond.png",
+      "measurement_note":"Ripples traced in open pond water only, split around bank/deck/lily/rock silhouettes; actor lane and species tabs are subtracted.",
+      "exclusions":[[350,99,720,55],[370,160,510,73],[475,270,345,310],[0,636,350,84],[1050,636,230,84]],
+      "layers":[
+        {"id":"duck_cascade","kind":"waterfall","polygon":[[842,88],[865,88],[875,126],[889,145],[895,165],[874,174],[850,154],[843,119]],"strength":0.18,"flow":[0,0.8],"color":"c1ebe8"},
+        {"id":"duck_open_pond","kind":"surface","polygon":[[618,196],[742,203],[824,203],[888,222],[901,247],[891,276],[862,296],[831,322],[814,360],[792,375],[789,314],[755,283],[699,263],[635,269],[609,250]],"strength":0.15,"flow":[0.34,0.16],"color":"a5e2dd"},
+        {"id":"duck_lower_pond","kind":"surface","polygon":[[849,330],[885,347],[926,369],[956,395],[944,411],[914,417],[873,394],[843,367]],"strength":0.13,"flow":[0.25,0.12],"color":"b8e8df"},
+        {"id":"duck_bank_lantern","kind":"lantern","polygon":[[973,183],[981,179],[989,184],[993,200],[986,212],[974,208],[968,196]],"strength":0.05,"flow":[0,0],"color":"ffe6ab"},
+        {"id":"duck_bank_reeds","kind":"foliage","polygon":[[1042,378],[1080,380],[1098,405],[1083,435],[1052,433],[1035,403]],"strength":0.94,"flow":[0,0],"sway_pixels":3.2,"color":"ffffff"}
+      ],
+      "particles":[{"kind":"leaf","count":6,"polygon":[[265,159],[321,158],[347,206],[317,234],[266,215]],"velocity":[4,3],"color":"f0c5d4"},{"kind":"firefly","count":6,"polygon":[[282,566],[415,552],[442,603],[370,626],[282,612]],"velocity":[3,-2],"color":"d9efae"}]
+    },
+    "animal_pig": {
+      "source":"res://assets/living_world_all_v2/pig_yard.png",
+      "exclusions":[[350,99,720,55],[370,160,510,73],[475,270,345,310],[0,636,350,84],[1050,636,230,84]],
+      "layers":[
+        {"id":"pig_trough_water","kind":"surface","polygon":[[319,495],[359,488],[390,498],[366,513],[322,509]],"strength":0.13,"flow":[0.35,0.08],"color":"b4e1e1"},
+        {"id":"pig_barn_lantern","kind":"lantern","polygon":[[322,230],[330,226],[338,231],[342,243],[336,253],[324,251],[319,240]],"strength":0.055,"flow":[0,0],"color":"ffe3ab"},
+        {"id":"pig_tree_fringe","kind":"foliage","polygon":[[1080,87],[1199,86],[1217,106],[1187,138],[1136,162],[1092,132]],"strength":0.94,"flow":[0,0],"sway_pixels":3.4,"color":"ffffff"},
+        {"id":"pig_garden","kind":"foliage","polygon":[[902,538],[1017,522],[1125,546],[1093,587],[1008,619],[931,598]],"strength":0.94,"flow":[0,0],"sway_pixels":3.0,"color":"ffffff"}
+      ],
+      "particles":[{"kind":"leaf","count":6,"polygon":[[1083,85],[1199,85],[1209,138],[1161,175],[1090,141]],"velocity":[6,4],"color":"c7d987"},{"kind":"firefly","count":5,"polygon":[[273,350],[359,360],[401,419],[350,456],[276,420]],"velocity":[3,-2],"color":"f2edb6"}]
+    },
+    "title": {
+      "inherit":"hub",
+      "global_exclusions_override":[],
+      "exclusions":[[420,40,430,230],[486,287,298,322],[0,688,280,32],[827,254,143,51],[1057,90,175,210]],
+      "particles":[{"kind":"smoke","count":9,"emitter":[338,88],"velocity":[5,-18],"lifetime":3.4,"radius":4.4,"color":"e6e3df"},{"kind":"leaf","count":5,"polygon":[[275,93],[378,91],[383,133],[318,142],[276,124]],"velocity":[9,5],"color":"b4cf79"}]
+    },
+    "save": {
+      "inherit":"hub",
+      "global_exclusions_override":[],
+      "exclusions":[[45,16,211,106],[245,37,404,76],[34,132,674,158],[34,303,674,145],[34,461,674,145],[722,131,530,475],[754,80,442,70],[33,619,203,58],[786,617,194,59],[994,617,246,59],[0,688,280,32]],
+      "particles":[],
+      "extra_layers":[{"id":"save_scenery_bottom_leaves","kind":"foliage","polygon":[[1183,684],[1235,675],[1279,684],[1279,719],[1181,719]],"strength":0.94,"flow":[0,0],"sway_pixels":2.8,"color":"ffffff"}]
+    },
+    "field_select": {
+      "inherit":"field",
+      "exclusions":[[285,113,977,502],[20,642,218,61],[1030,640,250,80]],
+      "particles":[{"kind":"leaf","count":5,"polygon":[[253,91],[280,91],[278,314],[251,332]],"velocity":[4,6],"color":"b5d484"}]
+    },
+    "shop": {
+      "source":"res://assets/living_world_all_v2/shop.png",
+      "exclusions":[[277,109,954,529],[1040,648,228,72]],
+      "layers":[{"id":"shop_window_vines","kind":"foliage","polygon":[[1219,207],[1279,209],[1279,348],[1244,331],[1228,282]],"strength":0.94,"flow":[0,0],"sway_pixels":2.5,"color":"ffffff"},{"id":"shop_right_floor_flowers","kind":"foliage","polygon":[[1240,443],[1279,444],[1279,574],[1249,573],[1234,523]],"strength":0.94,"flow":[0,0],"sway_pixels":2.3,"color":"ffffff"}],
+      "particles":[{"kind":"firefly","count":3,"polygon":[[1235,242],[1275,237],[1277,337],[1237,329]],"velocity":[1,-2],"color":"e8dcb5"}]
+    },
+    "storage": {
+      "source":"res://assets/living_world_all_v2/storage.png",
+      "exclusions":[[275,109,956,529],[1030,648,238,72]],
+      "layers":[{"id":"storage_right_shelf_flowers","kind":"foliage","polygon":[[1241,244],[1279,230],[1279,418],[1246,416],[1232,355]],"strength":0.94,"flow":[0,0],"sway_pixels":2.4,"color":"ffffff"}],
+      "particles":[{"kind":"firefly","count":3,"polygon":[[1238,255],[1275,251],[1278,366],[1241,374]],"velocity":[1,-2],"color":"e8dcb5"}]
+    },
+    "settings": {
+      "source":"res://assets/living_world_all_v2/settings.png",
+      "exclusions":[[270,102,890,535],[1030,640,250,80]],
+      "layers":[{"id":"settings_shelf_lantern","kind":"lantern","polygon":[[1240,226],[1278,226],[1279,316],[1240,317],[1233,284]],"strength":0.19,"flow":[0,0],"color":"ffe1a5"},{"id":"settings_right_frame_leaves","kind":"foliage","polygon":[[1200,84],[1266,85],[1279,101],[1279,179],[1248,190],[1205,155]],"strength":0.94,"flow":[0,0],"sway_pixels":2.4,"color":"ffffff"}],
+      "particles":[]
+    },
+    "quest": {
+      "inherit":"hub",
+      "exclusions":[[104,101,1072,536],[25,650,190,52],[827,254,143,51],[1057,90,175,210]],
+      "particles":[{"kind":"leaf","count":5,"polygon":[[1190,88],[1279,88],[1279,238],[1229,242],[1192,148]],"velocity":[5,8],"color":"aacb72"}],
+      "extra_layers":[{"id":"orders_edge_leaves","kind":"foliage","polygon":[[1203,653],[1245,644],[1279,663],[1279,719],[1198,719]],"strength":0.94,"flow":[0,0],"sway_pixels":2.8,"color":"ffffff"},{"id":"orders_upper_right_leaves","kind":"foliage","polygon":[[1238,88],[1279,88],[1279,174],[1248,177],[1235,149]],"strength":0.94,"flow":[0,0],"sway_pixels":2.6,"color":"ffffff"}]
+    },
+    "islands": {
+      "inherit":"hub",
+      "exclusions":[[32,94,1216,542],[40,653,170,54],[232,653,772,55],[1040,653,200,54]],
+      "particles":[{"kind":"leaf","count":5,"polygon":[[1256,88],[1279,88],[1279,254],[1256,245]],"velocity":[2,8],"color":"aacb72"}],
+      "extra_layers":[{"id":"island_menu_corner_leaves","kind":"foliage","polygon":[[1245,650],[1279,646],[1279,719],[1243,719]],"strength":0.94,"flow":[0,0],"sway_pixels":2.8,"color":"ffffff"},{"id":"island_menu_upper_edge_leaves","kind":"foliage","polygon":[[1249,89],[1279,86],[1279,179],[1249,177]],"strength":0.94,"flow":[0,0],"sway_pixels":2.4,"color":"ffffff"}]
+    },
+    "craft": {
+      "inherit":"shop",
+      "exclusions":[[32,94,1216,542],[40,653,170,54],[232,653,772,55],[1040,653,200,54]]
+    },
+    "creatures": {
+      "inherit":"animal_cloud_chicken",
+      "exclusions":[[32,94,1216,542],[40,653,170,54],[232,653,772,55],[1040,653,200,54]],
+      "particles":[{"kind":"leaf","count":5,"polygon":[[1258,85],[1279,85],[1279,310],[1258,309]],"velocity":[2,7],"color":"aacb72"}],
+      "extra_layers":[{"id":"companion_menu_edge_leaves","kind":"foliage","polygon":[[1247,650],[1279,647],[1279,719],[1246,719]],"strength":0.94,"flow":[0,0],"sway_pixels":2.8,"color":"ffffff"},{"id":"companion_menu_upper_vines","kind":"foliage","polygon":[[1254,86],[1279,86],[1279,238],[1254,236]],"strength":0.94,"flow":[0,0],"sway_pixels":2.4,"color":"ffffff"}]
+    },
+    "events": {
+      "inherit":"field",
+      "exclusions":[[32,94,1216,542],[40,653,170,54],[232,653,772,55],[1040,653,200,54]],
+      "particles":[{"kind":"leaf","count":8,"polygon":[[1249,193],[1279,185],[1279,279],[1249,273]],"velocity":[1.8,7],"color":"c9dc83"}],
+      "extra_layers":[{"id":"events_side_leaflets","kind":"foliage","polygon":[[1249,193],[1279,185],[1279,279],[1249,273]],"strength":0.94,"flow":[0,0],"sway_pixels":2.4,"color":"ffffff"}]
+    },
+    "snake": {
+      "source":"res://assets/living_world_v1/snake_painterly_pilot.png",
+      "measurement_note":"Retraced against calmer painterly pilot. Water stays in the far right horizon channel and two distant right waterfalls, clear of the central stone clearing and standing actors.",
+      "exclusions":[[1030,640,250,80]],
+      "layers":[
+        {"id":"far_ruins_fall","kind":"waterfall","polygon":[[1092,96],[1107,96],[1109,110],[1105,132],[1097,142],[1091,127]],"strength":0.18,"flow":[0,0.8],"color":"cff0f6"},
+        {"id":"far_right_water","kind":"surface","polygon":[[1030,158],[1088,152],[1108,161],[1123,175],[1118,186],[1083,191],[1041,184]],"strength":0.11,"flow":[0.55,0.05],"color":"b8e6f0"},
+        {"id":"right_horizon_channel","kind":"surface","polygon":[[1139,240],[1187,242],[1224,234],[1279,241],[1279,264],[1238,266],[1169,262],[1144,254]],"strength":0.12,"flow":[0.5,0.08],"color":"b8e6f0"},
+        {"id":"outer_right_fall","kind":"waterfall","polygon":[[1229,301],[1248,301],[1259,317],[1263,351],[1267,391],[1256,417],[1241,408],[1234,377]],"strength":0.16,"flow":[0,0.7],"color":"d5edf2"},
+        {"id":"far_river_mist","kind":"mist","polygon":[[1084,142],[1122,151],[1124,176],[1101,187],[1076,174]],"strength":0.035,"flow":[0.2,-0.1],"color":"e4f6e9"},
+        {"id":"snake_canopy_fringe","kind":"foliage","polygon":[[290,89],[328,77],[373,86],[390,107],[365,127],[321,120],[290,104]],"strength":0.94,"flow":[0,0],"sway_pixels":3.2,"color":"ffffff"},
+        {"id":"snake_side_leaves","kind":"foliage","polygon":[[255,332],[294,326],[323,345],[330,378],[302,397],[268,381]],"strength":0.94,"flow":[0,0],"sway_pixels":3.2,"color":"ffffff"}
+      ],
+      "particles":[{"kind":"leaf","count":8,"polygon":[[277,88],[672,84],[668,145],[464,135],[288,150]],"velocity":[10,6],"color":"b5d58b"},{"kind":"firefly","count":7,"polygon":[[278,326],[338,320],[360,361],[325,392],[274,374]],"velocity":[3,-2],"color":"e5ed9d"}]
+    }
+  }
+}

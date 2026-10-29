@@ -1,0 +1,1465 @@
+{
+  "review_status": "self_reviewed_domain_not_native_approved",
+  "scope": "Ten confirmed audit semantic groups plus dragon identity, eggs, food, ownership, incubation and care/navigation compounds; not all catalog meaning.",
+  "languages": [
+    "th",
+    "ms",
+    "id",
+    "zh_CN",
+    "ja",
+    "ko",
+    "ru",
+    "es",
+    "pt_BR",
+    "de",
+    "fr",
+    "pl"
+  ],
+  "rows": [
+    [
+      "Corrupt save data",
+      [
+        "ข้อมูลบันทึกเสียหาย",
+        "Data simpanan rosak",
+        "Data simpanan rusak",
+        "存档数据损坏",
+        "セーブデータが破損しています",
+        "저장 데이터 손상",
+        "Повреждённые данные сохранения",
+        "Datos de guardado dañados",
+        "Dados do jogo salvo corrompidos",
+        "Beschädigte Speicherdaten",
+        "Données de sauvegarde corrompues",
+        "Uszkodzone dane zapisu"
+      ]
+    ],
+    [
+      "Slot %d · %s\nDay %d · %s",
+      [
+        "ช่องบันทึก %d · %s\nวันที่ %d · %s",
+        "Slot %d · %s\nHari %d · %s",
+        "Slot %d · %s\nHari %d · %s",
+        "存档位 %d · %s\n第 %d 天 · %s",
+        "スロット %d · %s\n%d日目 · %s",
+        "슬롯 %d · %s\n%d일째 · %s",
+        "Ячейка %d · %s\nДень %d · %s",
+        "Ranura %d · %s\nDía %d · %s",
+        "Slot %d · %s\nDia %d · %s",
+        "Speicherplatz %d · %s\nTag %d · %s",
+        "Emplacement %d · %s\nJour %d · %s",
+        "Miejsce zapisu %d · %s\nDzień %d · %s"
+      ]
+    ],
+    [
+      "Replace this farm with a new Day 1 farm?\nA backup is kept on this device.",
+      [
+        "แทนที่ฟาร์มนี้ด้วยฟาร์มใหม่ในวันที่ 1 หรือไม่?\nไฟล์สำรองจะถูกเก็บไว้บนอุปกรณ์นี้",
+        "Gantikan ladang ini dengan ladang baharu pada Hari 1?\nSalinan sandaran disimpan pada peranti ini.",
+        "Ganti ladang ini dengan ladang baru pada Hari 1?\nSalinan cadangan disimpan di perangkat ini.",
+        "要用第1天的新农场替换这个农场吗？\n此设备上会保留备份。",
+        "この農場を1日目の新しい農場に置き換えますか？\nバックアップはこの端末に保存されます。",
+        "이 농장을 1일째의 새 농장으로 바꾸시겠습니까?\n백업은 이 기기에 보관됩니다.",
+        "Заменить эту ферму новой фермой с 1-го дня?\nРезервная копия останется на этом устройстве.",
+        "¿Reemplazar esta granja por una nueva del día 1?\nSe conservará una copia de seguridad en este dispositivo.",
+        "Substituir esta fazenda por uma nova no Dia 1?\nUma cópia de segurança será mantida neste dispositivo.",
+        "Diese Farm durch eine neue Farm an Tag 1 ersetzen?\nEine Sicherungskopie bleibt auf diesem Gerät erhalten.",
+        "Remplacer cette ferme par une nouvelle au jour 1 ?\nUne copie de sauvegarde sera conservée sur cet appareil.",
+        "Zastąpić tę farmę nową farmą od dnia 1?\nKopia zapasowa pozostanie na tym urządzeniu."
+      ]
+    ],
+    [
+      "Remove this slot from the list?\nA deleted copy is kept on this device.",
+      [
+        "ลบช่องบันทึกนี้ออกจากรายการหรือไม่?\nสำเนาไฟล์ที่ลบจะถูกเก็บไว้บนอุปกรณ์นี้",
+        "Buang slot ini daripada senarai?\nSalinan simpanan yang dipadamkan akan kekal pada peranti ini.",
+        "Hapus slot ini dari daftar?\nSalinan simpanan yang dihapus tetap disimpan di perangkat ini.",
+        "要从列表中移除此存档位吗？\n已删除存档的副本会保留在此设备上。",
+        "このスロットを一覧から削除しますか？\n削除したセーブのコピーはこの端末に残ります。",
+        "이 슬롯을 목록에서 제거하시겠습니까?\n삭제된 저장 파일의 사본은 이 기기에 보관됩니다.",
+        "Удалить эту ячейку из списка?\nКопия удалённого сохранения останется на этом устройстве.",
+        "¿Quitar esta ranura de la lista?\nSe conservará una copia del guardado eliminado en este dispositivo.",
+        "Remover este slot da lista?\nUma cópia do jogo salvo excluído será mantida neste dispositivo.",
+        "Diesen Speicherplatz aus der Liste entfernen?\nEine Kopie des gelöschten Spielstands bleibt auf diesem Gerät erhalten.",
+        "Retirer cet emplacement de la liste ?\nUne copie de la sauvegarde supprimée restera sur cet appareil.",
+        "Usunąć to miejsce zapisu z listy?\nKopia usuniętego zapisu pozostanie na tym urządzeniu."
+      ]
+    ],
+    [
+      "Unlock Dragon Island first.",
+      [
+        "ปลดล็อกเกาะมังกรก่อน",
+        "Buka kunci Pulau Naga dahulu.",
+        "Buka Pulau Naga terlebih dahulu.",
+        "请先解锁龙岛。",
+        "先にドラゴン島を解放してください。",
+        "먼저 드래곤 섬을 해금하세요.",
+        "Сначала откройте Остров драконов.",
+        "Desbloquea primero la Isla de los Dragones.",
+        "Desbloqueie a Ilha dos Dragões primeiro.",
+        "Schalte zuerst die Dracheninsel frei.",
+        "Débloque d’abord l’Île des dragons.",
+        "Najpierw odblokuj Wyspę Smoków."
+      ]
+    ],
+    [
+      "This garden was watered today.",
+      [
+        "สวนนี้รดน้ำแล้ววันนี้",
+        "Taman ini sudah disiram hari ini.",
+        "Kebun ini sudah disiram hari ini.",
+        "今天已给这个花园浇过水。",
+        "この庭には今日すでに水をあげました。",
+        "이 정원에는 오늘 이미 물을 주었습니다.",
+        "Этот сад уже полит сегодня.",
+        "Este jardín ya se ha regado hoy.",
+        "Este jardim já foi regado hoje.",
+        "Dieser Garten wurde heute bereits gegossen.",
+        "Ce jardin a déjà été arrosé aujourd’hui.",
+        "Ten ogród został już dziś podlany."
+      ]
+    ],
+    [
+      "During Autumn, deliver two pumpkins and one milk.",
+      [
+        "ในฤดูใบไม้ร่วง ส่งฟักทองสองลูกและนมหนึ่งชิ้น",
+        "Pada musim luruh, hantar dua labu dan satu susu.",
+        "Pada musim gugur, kirim dua labu dan satu susu.",
+        "在秋季交付两个南瓜和一份牛奶。",
+        "秋にカボチャ2個と牛乳1個を届ける。",
+        "가을에 호박 두 개와 우유 한 개를 납품하세요.",
+        "Осенью доставьте две тыквы и одну порцию молока.",
+        "Durante el otoño, entrega dos calabazas y una unidad de leche.",
+        "Durante o outono, entregue duas abóboras e uma unidade de leite.",
+        "Liefere im Herbst zwei Kürbisse und eine Portion Milch.",
+        "En automne, livre deux citrouilles et une unité de lait.",
+        "Jesienią dostarcz dwie dynie i jedną porcję mleka."
+      ]
+    ],
+    [
+      "The yard needs cleaning — click the mess.",
+      [
+        "ลานเลี้ยงสัตว์ต้องทำความสะอาด — คลิกสิ่งสกปรก",
+        "Halaman haiwan perlu dibersihkan — klik kotoran.",
+        "Halaman hewan perlu dibersihkan — klik kotorannya.",
+        "圈舍需要清理——点击脏污。",
+        "飼育場の掃除が必要です。汚れをクリックしてください。",
+        "동물 마당을 청소해야 합니다. 오물을 클릭하세요.",
+        "Двор нужно убрать — нажмите на грязь.",
+        "El corral necesita limpieza: haz clic en la suciedad.",
+        "O cercado precisa de limpeza — clique na sujeira.",
+        "Das Gehege muss gereinigt werden — klicke auf den Schmutz.",
+        "L’enclos a besoin d’être nettoyé : clique sur les saletés.",
+        "Zagroda wymaga sprzątania — kliknij nieczystości."
+      ]
+    ],
+    [
+      "Raise elemental dragons, hatch their eggs and choose a daily helper.",
+      [
+        "เลี้ยงมังกรธาตุต่าง ๆ ฟักไข่ของพวกมัน และเลือกผู้ช่วยประจำวัน",
+        "Bela naga unsur, tetaskan telurnya dan pilih pembantu harian.",
+        "Pelihara naga unsur, tetaskan telurnya, dan pilih pembantu harian.",
+        "饲养元素龙，孵化它们的蛋，并选择每日助手。",
+        "属性ドラゴンを育て、卵を孵化させて、毎日のお手伝い役を選びましょう。",
+        "속성 드래곤을 키우고 알을 부화시킨 뒤 매일 도우미를 선택하세요.",
+        "Выращивайте стихийных драконов, выводите их из яиц и выбирайте ежедневного помощника.",
+        "Cría dragones elementales, incuba sus huevos y elige un ayudante diario.",
+        "Crie dragões elementais, choque seus ovos e escolha um ajudante diário.",
+        "Ziehe Elementardrachen auf, brüte ihre Eier aus und wähle einen täglichen Helfer.",
+        "Élève des dragons élémentaires, fais éclore leurs œufs et choisis un assistant quotidien.",
+        "Hoduj smoki żywiołów, wykluwaj je z jaj i wybieraj codziennego pomocnika."
+      ]
+    ],
+    [
+      "Cows need meadow fodder.\nGood care produces milk.",
+      [
+        "วัวต้องกินหญ้าแห้ง\nดูแลให้ดีเพื่อผลิตนม",
+        "Lembu memerlukan rumput kering.\nPenjagaan yang baik menghasilkan susu.",
+        "Sapi membutuhkan rumput kering.\nPerawatan yang baik menghasilkan susu.",
+        "奶牛需要牧草。\n照顾好它们就能产奶。",
+        "牛には牧草が必要です。\nよく世話すると牛乳が採れます。",
+        "소에게는 목초가 필요합니다.\n잘 돌보면 우유가 생산됩니다.",
+        "Коровам нужен луговой корм.\nХороший уход приносит молоко.",
+        "Las vacas necesitan forraje de pradera.\nUn buen cuidado produce leche.",
+        "As vacas precisam de forragem de pasto.\nBons cuidados produzem leite.",
+        "Kühe brauchen Wiesenfutter.\nGute Pflege sorgt für Milch.",
+        "Les vaches ont besoin de fourrage.\nDe bons soins permettent de produire du lait.",
+        "Krowy potrzebują paszy łąkowej.\nDobra opieka zapewnia mleko."
+      ]
+    ],
+    [
+      "Owned",
+      [
+        "มีแล้ว",
+        "Dimiliki",
+        "Dimiliki",
+        "已拥有",
+        "所有済み",
+        "보유 중",
+        "Есть",
+        "En propiedad",
+        "Possuído",
+        "Im Besitz",
+        "Possédé",
+        "Posiadane"
+      ]
+    ],
+    [
+      "Owned: %d",
+      [
+        "มี: %d",
+        "Dimiliki: %d",
+        "Dimiliki: %d",
+        "已拥有：%d",
+        "所有数：%d",
+        "보유: %d",
+        "В наличии: %d",
+        "En propiedad: %d",
+        "Quantidade: %d",
+        "Im Besitz: %d",
+        "Quantité possédée : %d",
+        "Posiadane: %d"
+      ]
+    ],
+    [
+      "Owned eggs: %d",
+      [
+        "ไข่ที่มี: %d",
+        "Telur dimiliki: %d",
+        "Telur dimiliki: %d",
+        "拥有的蛋：%d",
+        "卵の所持数：%d",
+        "보유한 알: %d",
+        "Яиц в наличии: %d",
+        "Huevos en propiedad: %d",
+        "Ovos possuídos: %d",
+        "Eier im Besitz: %d",
+        "Œufs possédés : %d",
+        "Posiadane jaja: %d"
+      ]
+    ],
+    [
+      "Empty nest",
+      [
+        "รังว่าง",
+        "Sarang kosong",
+        "Sarang kosong",
+        "空巢",
+        "空の巣",
+        "빈 둥지",
+        "Пустое гнездо",
+        "Nido vacío",
+        "Ninho vazio",
+        "Leeres Nest",
+        "Nid vide",
+        "Puste gniazdo"
+      ]
+    ],
+    [
+      "Unlock",
+      [
+        "ปลดล็อก",
+        "Buka kunci",
+        "Buka",
+        "解锁",
+        "解放",
+        "해금",
+        "Открыть",
+        "Desbloquear",
+        "Desbloquear",
+        "Freischalten",
+        "Débloquer",
+        "Odblokuj"
+      ]
+    ],
+    [
+      "Unlock island",
+      [
+        "ปลดล็อกเกาะ",
+        "Buka kunci pulau",
+        "Buka pulau",
+        "解锁岛屿",
+        "島を解放",
+        "섬 해금",
+        "Открыть остров",
+        "Desbloquear isla",
+        "Desbloquear ilha",
+        "Insel freischalten",
+        "Débloquer l’île",
+        "Odblokuj wyspę"
+      ]
+    ],
+    [
+      "Hatch",
+      [
+        "ฟักไข่",
+        "Tetaskan",
+        "Tetaskan",
+        "孵化",
+        "孵化",
+        "부화",
+        "Вылупить",
+        "Eclosionar",
+        "Chocar",
+        "Ausbrüten",
+        "Faire éclore",
+        "Wykluj"
+      ]
+    ],
+    [
+      "Hatch!",
+      [
+        "ฟักไข่!",
+        "Tetaskan!",
+        "Tetaskan!",
+        "孵化！",
+        "孵化！",
+        "부화!",
+        "Вылупить!",
+        "¡Eclosionar!",
+        "Chocar!",
+        "Ausbrüten!",
+        "Faire éclore !",
+        "Wykluj!"
+      ]
+    ],
+    [
+      "Egg Incubator",
+      [
+        "โรงฟักไข่",
+        "Inkubator telur",
+        "Inkubator telur",
+        "孵化器",
+        "孵化器",
+        "알 부화기",
+        "Инкубатор яиц",
+        "Incubadora de huevos",
+        "Incubadora de ovos",
+        "Brutkasten",
+        "Incubateur d’œufs",
+        "Inkubator jaj"
+      ]
+    ],
+    [
+      "Nursery",
+      [
+        "สถานเลี้ยงมังกร",
+        "Taska naga",
+        "Penitipan naga",
+        "育龙园",
+        "ドラゴン保育所",
+        "드래곤 보육원",
+        "Ясли для драконов",
+        "Guardería de dragones",
+        "Berçário de dragões",
+        "Drachenkrippe",
+        "Nurserie de dragons",
+        "Żłobek smoków"
+      ]
+    ],
+    [
+      "Playground",
+      [
+        "สนามเด็กเล่น",
+        "Taman permainan",
+        "Taman bermain",
+        "游乐场",
+        "遊び場",
+        "놀이터",
+        "Игровая площадка",
+        "Zona de juegos",
+        "Área de brincadeiras",
+        "Spielplatz",
+        "Aire de jeux",
+        "Plac zabaw"
+      ]
+    ],
+    [
+      "Dragon",
+      [
+        "มังกร",
+        "Naga",
+        "Naga",
+        "龙",
+        "ドラゴン",
+        "드래곤",
+        "Дракон",
+        "Dragón",
+        "Dragão",
+        "Drache",
+        "Dragon",
+        "Smok"
+      ]
+    ],
+    [
+      "Dragon Cake",
+      [
+        "เค้กมังกร",
+        "Kek naga",
+        "Kue naga",
+        "龙蛋糕",
+        "ドラゴンケーキ",
+        "드래곤 케이크",
+        "Драконий пирог",
+        "Pastel de dragón",
+        "Bolo de dragão",
+        "Drachenkuchen",
+        "Gâteau pour dragon",
+        "Ciasto dla smoka"
+      ]
+    ],
+    [
+      "Warm Dragon Cake",
+      [
+        "เค้กมังกรอุ่น",
+        "Kek naga hangat",
+        "Kue naga hangat",
+        "暖龙蛋糕",
+        "温かいドラゴンケーキ",
+        "따뜻한 드래곤 케이크",
+        "Тёплый драконий пирог",
+        "Pastel de dragón caliente",
+        "Bolo de dragão quente",
+        "Warmer Drachenkuchen",
+        "Gâteau chaud pour dragon",
+        "Ciepłe ciasto dla smoka"
+      ]
+    ],
+    [
+      "EMPTY SLOT",
+      [
+        "ช่องว่าง",
+        "Slot kosong",
+        "Slot kosong",
+        "空存档位",
+        "空きスロット",
+        "빈 슬롯",
+        "Пустая ячейка",
+        "Ranura vacía",
+        "Slot vazio",
+        "Leerer Speicherplatz",
+        "Emplacement vide",
+        "Puste miejsce zapisu"
+      ]
+    ],
+    [
+      "Water Dragon",
+      [
+        "มังกรน้ำ",
+        "Naga Air",
+        "Naga Air",
+        "水龙",
+        "水のドラゴン",
+        "물 드래곤",
+        "Водяной дракон",
+        "Dragón de agua",
+        "Dragão da Água",
+        "Wasserdrache",
+        "Dragon d’eau",
+        "Smok Wody"
+      ]
+    ],
+    [
+      "Water Dragon Meal",
+      [
+        "อาหารมังกรน้ำ",
+        "Makanan Naga Air",
+        "Pakan Naga Air",
+        "水龙饲料",
+        "水のドラゴンの餌",
+        "물 드래곤 먹이",
+        "Корм для водяного дракона",
+        "Comida para dragón de agua",
+        "Ração para Dragão da Água",
+        "Wasserdrachenfutter",
+        "Nourriture pour dragon d’eau",
+        "Karma dla smoka wody"
+      ]
+    ],
+    [
+      "Water Egg",
+      [
+        "ไข่มังกรน้ำ",
+        "Telur Naga Air",
+        "Telur Naga Air",
+        "水龙蛋",
+        "水のドラゴンの卵",
+        "물 드래곤 알",
+        "Яйцо водяного дракона",
+        "Huevo de dragón de agua",
+        "Ovo de Dragão da Água",
+        "Wasserdrachenei",
+        "Œuf de dragon d’eau",
+        "Jajo smoka wody"
+      ]
+    ],
+    [
+      "Fire Dragon",
+      [
+        "มังกรไฟ",
+        "Naga Api",
+        "Naga Api",
+        "火龙",
+        "火のドラゴン",
+        "불 드래곤",
+        "Огненный дракон",
+        "Dragón de fuego",
+        "Dragão do Fogo",
+        "Feuerdrache",
+        "Dragon de feu",
+        "Smok Ognia"
+      ]
+    ],
+    [
+      "Fire Dragon Meal",
+      [
+        "อาหารมังกรไฟ",
+        "Makanan Naga Api",
+        "Pakan Naga Api",
+        "火龙饲料",
+        "火のドラゴンの餌",
+        "불 드래곤 먹이",
+        "Корм для огненного дракона",
+        "Comida para dragón de fuego",
+        "Ração para Dragão do Fogo",
+        "Feuerdrachenfutter",
+        "Nourriture pour dragon de feu",
+        "Karma dla smoka ognia"
+      ]
+    ],
+    [
+      "Fire Egg",
+      [
+        "ไข่มังกรไฟ",
+        "Telur Naga Api",
+        "Telur Naga Api",
+        "火龙蛋",
+        "火のドラゴンの卵",
+        "불 드래곤 알",
+        "Яйцо огненного дракона",
+        "Huevo de dragón de fuego",
+        "Ovo de Dragão do Fogo",
+        "Feuerdrachenei",
+        "Œuf de dragon de feu",
+        "Jajo smoka ognia"
+      ]
+    ],
+    [
+      "Forest Dragon",
+      [
+        "มังกรป่า",
+        "Naga Hutan",
+        "Naga Hutan",
+        "森林龙",
+        "森のドラゴン",
+        "숲 드래곤",
+        "Лесной дракон",
+        "Dragón del bosque",
+        "Dragão da Floresta",
+        "Walddrache",
+        "Dragon de forêt",
+        "Smok Lasu"
+      ]
+    ],
+    [
+      "Forest Dragon Meal",
+      [
+        "อาหารมังกรป่า",
+        "Makanan Naga Hutan",
+        "Pakan Naga Hutan",
+        "森林龙饲料",
+        "森のドラゴンの餌",
+        "숲 드래곤 먹이",
+        "Корм для лесного дракона",
+        "Comida para dragón del bosque",
+        "Ração para Dragão da Floresta",
+        "Walddrachenfutter",
+        "Nourriture pour dragon de forêt",
+        "Karma dla smoka lasu"
+      ]
+    ],
+    [
+      "Forest Egg",
+      [
+        "ไข่มังกรป่า",
+        "Telur Naga Hutan",
+        "Telur Naga Hutan",
+        "森林龙蛋",
+        "森のドラゴンの卵",
+        "숲 드래곤 알",
+        "Яйцо лесного дракона",
+        "Huevo de dragón del bosque",
+        "Ovo de Dragão da Floresta",
+        "Walddrachenei",
+        "Œuf de dragon de forêt",
+        "Jajo smoka lasu"
+      ]
+    ],
+    [
+      "Ice Dragon",
+      [
+        "มังกรน้ำแข็ง",
+        "Naga Ais",
+        "Naga Es",
+        "冰龙",
+        "氷のドラゴン",
+        "얼음 드래곤",
+        "Ледяной дракон",
+        "Dragón de hielo",
+        "Dragão do Gelo",
+        "Eisdrache",
+        "Dragon de glace",
+        "Smok Lodu"
+      ]
+    ],
+    [
+      "Ice Dragon Meal",
+      [
+        "อาหารมังกรน้ำแข็ง",
+        "Makanan Naga Ais",
+        "Pakan Naga Es",
+        "冰龙饲料",
+        "氷のドラゴンの餌",
+        "얼음 드래곤 먹이",
+        "Корм для ледяного дракона",
+        "Comida para dragón de hielo",
+        "Ração para Dragão do Gelo",
+        "Eisdrachenfutter",
+        "Nourriture pour dragon de glace",
+        "Karma dla smoka lodu"
+      ]
+    ],
+    [
+      "Ice Egg",
+      [
+        "ไข่มังกรน้ำแข็ง",
+        "Telur Naga Ais",
+        "Telur Naga Es",
+        "冰龙蛋",
+        "氷のドラゴンの卵",
+        "얼음 드래곤 알",
+        "Яйцо ледяного дракона",
+        "Huevo de dragón de hielo",
+        "Ovo de Dragão do Gelo",
+        "Eisdrachenei",
+        "Œuf de dragon de glace",
+        "Jajo smoka lodu"
+      ]
+    ],
+    [
+      "Gold Dragon",
+      [
+        "มังกรทอง",
+        "Naga Emas",
+        "Naga Emas",
+        "金龙",
+        "黄金のドラゴン",
+        "황금 드래곤",
+        "Золотой дракон",
+        "Dragón dorado",
+        "Dragão Dourado",
+        "Golddrache",
+        "Dragon d’or",
+        "Smok Złota"
+      ]
+    ],
+    [
+      "Gold Dragon Meal",
+      [
+        "อาหารมังกรทอง",
+        "Makanan Naga Emas",
+        "Pakan Naga Emas",
+        "金龙饲料",
+        "黄金のドラゴンの餌",
+        "황금 드래곤 먹이",
+        "Корм для золотого дракона",
+        "Comida para dragón dorado",
+        "Ração para Dragão Dourado",
+        "Golddrachenfutter",
+        "Nourriture pour dragon d’or",
+        "Karma dla smoka złota"
+      ]
+    ],
+    [
+      "Gold Egg",
+      [
+        "ไข่มังกรทอง",
+        "Telur Naga Emas",
+        "Telur Naga Emas",
+        "金龙蛋",
+        "黄金のドラゴンの卵",
+        "황금 드래곤 알",
+        "Яйцо золотого дракона",
+        "Huevo de dragón dorado",
+        "Ovo de Dragão Dourado",
+        "Golddrachenei",
+        "Œuf de dragon d’or",
+        "Jajo smoka złota"
+      ]
+    ],
+    [
+      "Shadow Dragon",
+      [
+        "มังกรเงา",
+        "Naga Bayang",
+        "Naga Bayangan",
+        "暗影龙",
+        "影のドラゴン",
+        "그림자 드래곤",
+        "Теневой дракон",
+        "Dragón de sombras",
+        "Dragão das Sombras",
+        "Schattendrache",
+        "Dragon d’ombre",
+        "Smok Cienia"
+      ]
+    ],
+    [
+      "Shadow Dragon Meal",
+      [
+        "อาหารมังกรเงา",
+        "Makanan Naga Bayang",
+        "Pakan Naga Bayangan",
+        "暗影龙饲料",
+        "影のドラゴンの餌",
+        "그림자 드래곤 먹이",
+        "Корм для теневого дракона",
+        "Comida para dragón de sombras",
+        "Ração para Dragão das Sombras",
+        "Schattendrachenfutter",
+        "Nourriture pour dragon d’ombre",
+        "Karma dla smoka cienia"
+      ]
+    ],
+    [
+      "Shadow Egg",
+      [
+        "ไข่มังกรเงา",
+        "Telur Naga Bayang",
+        "Telur Naga Bayangan",
+        "暗影龙蛋",
+        "影のドラゴンの卵",
+        "그림자 드래곤 알",
+        "Яйцо теневого дракона",
+        "Huevo de dragón de sombras",
+        "Ovo de Dragão das Sombras",
+        "Schattendrachenei",
+        "Œuf de dragon d’ombre",
+        "Jajo smoka cienia"
+      ]
+    ],
+    [
+      "Crystal Dragon",
+      [
+        "มังกรคริสตัล",
+        "Naga Kristal",
+        "Naga Kristal",
+        "水晶龙",
+        "水晶のドラゴン",
+        "수정 드래곤",
+        "Кристальный дракон",
+        "Dragón de cristal",
+        "Dragão de Cristal",
+        "Kristalldrache",
+        "Dragon de cristal",
+        "Smok Kryształu"
+      ]
+    ],
+    [
+      "Crystal Dragon Meal",
+      [
+        "อาหารมังกรคริสตัล",
+        "Makanan Naga Kristal",
+        "Pakan Naga Kristal",
+        "水晶龙饲料",
+        "水晶のドラゴンの餌",
+        "수정 드래곤 먹이",
+        "Корм для кристального дракона",
+        "Comida para dragón de cristal",
+        "Ração para Dragão de Cristal",
+        "Kristalldrachenfutter",
+        "Nourriture pour dragon de cristal",
+        "Karma dla smoka kryształu"
+      ]
+    ],
+    [
+      "Crystal Egg",
+      [
+        "ไข่มังกรคริสตัล",
+        "Telur Naga Kristal",
+        "Telur Naga Kristal",
+        "水晶龙蛋",
+        "水晶のドラゴンの卵",
+        "수정 드래곤 알",
+        "Яйцо кристального дракона",
+        "Huevo de dragón de cristal",
+        "Ovo de Dragão de Cristal",
+        "Kristalldrachenei",
+        "Œuf de dragon de cristal",
+        "Jajo smoka kryształu"
+      ]
+    ],
+    [
+      "Rainbow Dragon",
+      [
+        "มังกรสายรุ้ง",
+        "Naga Pelangi",
+        "Naga Pelangi",
+        "彩虹龙",
+        "虹のドラゴン",
+        "무지개 드래곤",
+        "Радужный дракон",
+        "Dragón arcoíris",
+        "Dragão Arco-Íris",
+        "Regenbogendrache",
+        "Dragon arc-en-ciel",
+        "Smok Tęczy"
+      ]
+    ],
+    [
+      "Rainbow Dragon Meal",
+      [
+        "อาหารมังกรสายรุ้ง",
+        "Makanan Naga Pelangi",
+        "Pakan Naga Pelangi",
+        "彩虹龙饲料",
+        "虹のドラゴンの餌",
+        "무지개 드래곤 먹이",
+        "Корм для радужного дракона",
+        "Comida para dragón arcoíris",
+        "Ração para Dragão Arco-Íris",
+        "Regenbogendrachenfutter",
+        "Nourriture pour dragon arc-en-ciel",
+        "Karma dla smoka tęczy"
+      ]
+    ],
+    [
+      "Rainbow Egg",
+      [
+        "ไข่มังกรสายรุ้ง",
+        "Telur Naga Pelangi",
+        "Telur Naga Pelangi",
+        "彩虹龙蛋",
+        "虹のドラゴンの卵",
+        "무지개 드래곤 알",
+        "Яйцо радужного дракона",
+        "Huevo de dragón arcoíris",
+        "Ovo de Dragão Arco-Íris",
+        "Regenbogendrachenei",
+        "Œuf de dragon arc-en-ciel",
+        "Jajo smoka tęczy"
+      ]
+    ],
+    [
+      "Unlock %s first.",
+      [
+        "ปลดล็อก %s ก่อน",
+        "Buka kunci %s dahulu.",
+        "Buka %s terlebih dahulu.",
+        "请先解锁%s。",
+        "先に%sを解放してください。",
+        "먼저 %s을(를) 해금하세요.",
+        "Сначала откройте %s.",
+        "Desbloquea primero %s.",
+        "Desbloqueie %s primeiro.",
+        "Schalte zuerst %s frei.",
+        "Débloque d’abord %s.",
+        "Najpierw odblokuj %s."
+      ]
+    ],
+    [
+      "Unlocked %s.",
+      [
+        "ปลดล็อก %s แล้ว",
+        "%s telah dibuka.",
+        "%s telah dibuka.",
+        "已解锁%s。",
+        "%sを解放しました。",
+        "%s 해금 완료.",
+        "Открыто: %s.",
+        "Has desbloqueado %s.",
+        "%s foi desbloqueado.",
+        "%s freigeschaltet.",
+        "%s a été débloqué.",
+        "Odblokowano: %s."
+      ]
+    ],
+    [
+      "Unlock this island first.",
+      [
+        "ปลดล็อกเกาะนี้ก่อน",
+        "Buka kunci pulau ini dahulu.",
+        "Buka pulau ini terlebih dahulu.",
+        "请先解锁此岛。",
+        "先にこの島を解放してください。",
+        "먼저 이 섬을 해금하세요.",
+        "Сначала откройте этот остров.",
+        "Desbloquea primero esta isla.",
+        "Desbloqueie esta ilha primeiro.",
+        "Schalte zuerst diese Insel frei.",
+        "Débloque d’abord cette île.",
+        "Najpierw odblokuj tę wyspę."
+      ]
+    ],
+    [
+      "Unlock Dragon Island before converting surplus fruit.",
+      [
+        "ปลดล็อกเกาะมังกรก่อนแปลงผลไม้ส่วนเกิน",
+        "Buka kunci Pulau Naga sebelum menukar buah lebihan.",
+        "Buka Pulau Naga sebelum mengubah buah berlebih.",
+        "转换多余果实前，请先解锁龙岛。",
+        "余った果実を変換する前にドラゴン島を解放してください。",
+        "남은 과일을 변환하기 전에 드래곤 섬을 해금하세요.",
+        "Откройте Остров драконов, прежде чем превращать лишние плоды.",
+        "Desbloquea la Isla de los Dragones antes de convertir la fruta sobrante.",
+        "Desbloqueie a Ilha dos Dragões antes de converter as frutas excedentes.",
+        "Schalte die Dracheninsel frei, bevor du überschüssige Früchte umwandelst.",
+        "Débloque l’Île des dragons avant de convertir les fruits en surplus.",
+        "Odblokuj Wyspę Smoków przed przetworzeniem nadmiaru owoców."
+      ]
+    ],
+    [
+      "Unlocks Dragon Island and elemental incubation.",
+      [
+        "ปลดล็อกเกาะมังกรและการฟักไข่มังกรธาตุ",
+        "Membuka Pulau Naga dan penetasan telur naga unsur.",
+        "Membuka Pulau Naga dan penetasan telur naga unsur.",
+        "解锁龙岛与元素龙蛋孵化。",
+        "ドラゴン島と属性ドラゴンの孵化を解放します。",
+        "드래곤 섬과 속성 알 부화를 해금합니다.",
+        "Открывает Остров драконов и инкубацию стихийных яиц.",
+        "Desbloquea la Isla de los Dragones y la incubación elemental.",
+        "Desbloqueia a Ilha dos Dragões e a incubação elemental.",
+        "Schaltet die Dracheninsel und das Ausbrüten von Elementareiern frei.",
+        "Débloque l’Île des dragons et l’incubation élémentaire.",
+        "Odblokowuje Wyspę Smoków i inkubację jaj żywiołów."
+      ]
+    ],
+    [
+      "Unlock: %d coins · Materials: %s",
+      [
+        "ปลดล็อก: %d เหรียญ · วัสดุ: %s",
+        "Buka kunci: %d syiling · Bahan: %s",
+        "Buka: %d koin · Bahan: %s",
+        "解锁：%d金币 · 材料：%s",
+        "解放：%dコイン · 素材：%s",
+        "해금: 코인 %d · 재료: %s",
+        "Открытие: %d монет · Материалы: %s",
+        "Desbloquear: %d monedas · Materiales: %s",
+        "Desbloquear: %d moedas · Materiais: %s",
+        "Freischalten: %d Münzen · Material: %s",
+        "Débloquer : %d pièces · Matériaux : %s",
+        "Odblokowanie: %d monet · Materiały: %s"
+      ]
+    ],
+    [
+      "Unlock: 900 coins + 1 Ancient Fruit.\nComplete 3 orders first.\nProgress: %d / 3 orders",
+      [
+        "ปลดล็อก: 900 เหรียญ + ผลไม้โบราณ 1 ชิ้น\nทำคำสั่งซื้อ 3 รายการก่อน\nความคืบหน้า: %d / 3 รายการ",
+        "Buka kunci: 900 syiling + 1 Buah Purba.\nSelesaikan 3 pesanan dahulu.\nKemajuan: %d / 3 pesanan",
+        "Buka: 900 koin + 1 Buah Kuno.\nSelesaikan 3 pesanan dahulu.\nKemajuan: %d / 3 pesanan",
+        "解锁：900金币 + 1个远古果实。\n请先完成3个订单。\n进度：%d / 3个订单",
+        "解放：900コイン + 古代の果実1個。\n先に依頼を3件完了してください。\n進行状況：%d / 3件",
+        "해금: 코인 900 + 고대 과일 1개.\n먼저 주문 3개를 완료하세요.\n진행: %d / 3 주문",
+        "Открытие: 900 монет + 1 древний плод.\nСначала выполните 3 заказа.\nПрогресс: %d / 3 заказа",
+        "Desbloquear: 900 monedas + 1 fruta antigua.\nCompleta primero 3 pedidos.\nProgreso: %d / 3 pedidos",
+        "Desbloquear: 900 moedas + 1 Fruta Antiga.\nConclua 3 pedidos primeiro.\nProgresso: %d / 3 pedidos",
+        "Freischalten: 900 Münzen + 1 Antike Frucht.\nErledige zuerst 3 Aufträge.\nFortschritt: %d / 3 Aufträge",
+        "Débloquer : 900 pièces + 1 fruit ancien.\nTermine d’abord 3 commandes.\nProgression : %d / 3 commandes",
+        "Odblokowanie: 900 monet + 1 pradawny owoc.\nNajpierw wykonaj 3 zamówienia.\nPostęp: %d / 3 zamówienia"
+      ]
+    ],
+    [
+      "Hatch elemental eggs. Once a day, spend 5 Dragon Energy to restore up to 20 farm energy.",
+      [
+        "ฟักไข่มังกรธาตุ วันละครั้ง ใช้พลังมังกร 5 แต้มเพื่อฟื้นพลังฟาร์มได้สูงสุด 20 แต้ม",
+        "Tetaskan telur naga unsur. Sekali sehari, gunakan 5 Tenaga Naga untuk memulihkan sehingga 20 tenaga ladang.",
+        "Tetaskan telur naga unsur. Sekali sehari, gunakan 5 Energi Naga untuk memulihkan hingga 20 energi ladang.",
+        "孵化元素龙蛋。每天可消耗5点龙能量，恢复最多20点农场体力。",
+        "属性ドラゴンの卵を孵化させます。1日に1回、ドラゴンエネルギー5を使い、農場の体力を最大20回復できます。",
+        "속성 알을 부화시키세요. 하루 한 번 드래곤 에너지 5를 사용해 농장 에너지를 최대 20 회복합니다.",
+        "Выводите драконов из стихийных яиц. Раз в день потратьте 5 энергии драконов, чтобы восстановить до 20 энергии фермы.",
+        "Incuba huevos elementales. Una vez al día, gasta 5 de energía de dragón para recuperar hasta 20 de energía de la granja.",
+        "Choque ovos elementais. Uma vez por dia, gaste 5 de Energia de Dragão para recuperar até 20 de energia da fazenda.",
+        "Brüte Elementareier aus. Gib einmal am Tag 5 Drachenenergie aus, um bis zu 20 Farmenergie wiederherzustellen.",
+        "Fais éclore des œufs élémentaires. Une fois par jour, dépense 5 points d’énergie draconique pour récupérer jusqu’à 20 points d’énergie de ferme.",
+        "Wykluwaj jaja żywiołów. Raz dziennie wydaj 5 energii smoków, aby odzyskać do 20 energii farmy."
+      ]
+    ],
+    [
+      "No dragon yet. Buy and incubate\nan egg at the Egg Incubator.",
+      [
+        "ยังไม่มีมังกร ซื้อไข่แล้วนำไปฟัก\nที่โรงฟักไข่",
+        "Belum ada naga. Beli dan tetaskan\nsebiji telur di Inkubator Telur.",
+        "Belum ada naga. Beli dan tetaskan\nsebutir telur di Inkubator Telur.",
+        "还没有龙。购买并孵化龙蛋\n地点：孵化器。",
+        "まだドラゴンがいません。卵を購入して\n孵化器で孵化させてください。",
+        "아직 드래곤이 없습니다. 알을 구매한 뒤\n알 부화기에서 부화시키세요.",
+        "Драконов пока нет. Купите яйцо\nи поместите его в инкубатор.",
+        "Aún no hay dragones. Compra e incuba\nun huevo en la incubadora.",
+        "Ainda não há dragões. Compre e choque\num ovo na Incubadora de Ovos.",
+        "Noch keine Drachen. Kaufe ein Ei\nund brüte es im Brutkasten aus.",
+        "Pas encore de dragon. Achète un œuf\net fais-le éclore dans l’incubateur.",
+        "Nie masz jeszcze smoków. Kup jajo\ni umieść je w inkubatorze."
+      ]
+    ],
+    [
+      "Hatches %s in %d days. Incubate after purchase on Dragon Island.",
+      [
+        "ฟักเป็น %s ใน %d วัน หลังซื้อ นำไปฟักที่เกาะมังกร",
+        "Menetaskan %s dalam %d hari. Tetaskan selepas pembelian di Pulau Naga.",
+        "Menetaskan %s dalam %d hari. Tetaskan setelah dibeli di Pulau Naga.",
+        "%s将在%d天后孵出。购买后可在龙岛孵化。",
+        "%sが%d日で孵化します。購入後、ドラゴン島で孵化させてください。",
+        "%s이(가) %d일 후 부화합니다. 구매 후 드래곤 섬에서 부화시키세요.",
+        "%s вылупится за %d дней. После покупки поместите яйцо в инкубатор на Острове драконов.",
+        "%s eclosiona en %d días. Incúbalo tras comprarlo en la Isla de los Dragones.",
+        "%s nasce em %d dias. Choque após a compra na Ilha dos Dragões.",
+        "%s schlüpft nach %d Tagen. Nach dem Kauf auf der Dracheninsel ausbrüten.",
+        "%s éclôt en %d jours. Après l’achat, fais éclore l’œuf sur l’Île des dragons.",
+        "%s wykluje się za %d dni. Po zakupie inkubuj jajo na Wyspie Smoków."
+      ]
+    ],
+    [
+      "Hatches %s in %d days. Collect the hatchling in Companions.",
+      [
+        "ฟักเป็น %s ใน %d วัน รับลูกมังกรในหน้าเพื่อนร่วมฟาร์ม",
+        "Menetaskan %s dalam %d hari. Ambil anak naga dalam Sahabat.",
+        "Menetaskan %s dalam %d hari. Ambil anak naga di Sahabat.",
+        "%s将在%d天后孵出。在伙伴页面领取幼龙。",
+        "%sが%d日で孵化します。「仲間」で幼体を受け取ってください。",
+        "%s이(가) %d일 후 부화합니다. 동료 화면에서 새끼를 받으세요.",
+        "%s вылупится за %d дней. Заберите детёныша в разделе «Компаньоны».",
+        "%s eclosiona en %d días. Recoge la cría en Compañeros.",
+        "%s nasce em %d dias. Recolha o filhote em Companheiros.",
+        "%s schlüpft nach %d Tagen. Hole das Jungtier unter Begleiter ab.",
+        "%s éclôt en %d jours. Récupère le petit dans Compagnons.",
+        "%s wykluje się za %d dni. Odbierz młode w sekcji Towarzysze."
+      ]
+    ],
+    [
+      "Hatch time: %d days",
+      [
+        "เวลาฟัก: %d วัน",
+        "Masa penetasan: %d hari",
+        "Waktu penetasan: %d hari",
+        "孵化时间：%d天",
+        "孵化時間：%d日",
+        "부화 시간: %d일",
+        "Время инкубации: %d дней",
+        "Tiempo de incubación: %d días",
+        "Tempo de incubação: %d dias",
+        "Brutzeit: %d Tage",
+        "Durée d’incubation : %d jours",
+        "Czas inkubacji: %d dni"
+      ]
+    ],
+    [
+      "Hatches: %s · %d days",
+      [
+        "ฟักเป็น: %s · %d วัน",
+        "Menetas: %s · %d hari",
+        "Menetas: %s · %d hari",
+        "孵出：%s · %d天",
+        "孵化：%s · %d日",
+        "부화: %s · %d일",
+        "Вылупится: %s · %d дней",
+        "Eclosiona: %s · %d días",
+        "Nasce: %s · %d dias",
+        "Schlüpft: %s · %d Tage",
+        "Éclosion : %s · %d jours",
+        "Wyklucie: %s · %d dni"
+      ]
+    ],
+    [
+      "Hatch ready egg",
+      [
+        "ฟักไข่ที่พร้อมแล้ว",
+        "Tetaskan telur yang sedia",
+        "Tetaskan telur yang siap",
+        "孵化就绪的蛋",
+        "準備できた卵を孵化",
+        "준비된 알 부화",
+        "Вылупить готовое яйцо",
+        "Eclosionar huevo listo",
+        "Chocar ovo pronto",
+        "Bereites Ei ausbrüten",
+        "Faire éclore l’œuf prêt",
+        "Wykluj gotowe jajo"
+      ]
+    ],
+    [
+      "Not owned. Hatch its elemental egg on Dragon Island.",
+      [
+        "ยังไม่มี ฟักไข่มังกรธาตุชนิดนี้ที่เกาะมังกร",
+        "Belum dimiliki. Tetaskan telur unsurnya di Pulau Naga.",
+        "Belum dimiliki. Tetaskan telur unsurnya di Pulau Naga.",
+        "尚未拥有。在龙岛孵化对应的元素龙蛋。",
+        "未所有です。ドラゴン島で対応する属性の卵を孵化させてください。",
+        "미보유. 드래곤 섬에서 해당 속성 알을 부화시키세요.",
+        "Ещё нет. Выведите его из стихийного яйца на Острове драконов.",
+        "No lo tienes. Incuba su huevo elemental en la Isla de los Dragones.",
+        "Ainda não possui. Choque o ovo elemental na Ilha dos Dragões.",
+        "Nicht im Besitz. Brüte sein Elementarei auf der Dracheninsel aus.",
+        "Non possédé. Fais éclore son œuf élémentaire sur l’Île des dragons.",
+        "Nieposiadane. Wykluj jego jajo żywiołu na Wyspie Smoków."
+      ]
+    ],
+    [
+      "Unlocks food, medicine and dragon recipes.",
+      [
+        "ปลดล็อกสูตรอาหาร ยา และสูตรสำหรับมังกร",
+        "Membuka resipi makanan, ubat dan naga.",
+        "Membuka resep pakan, obat, dan naga.",
+        "解锁食物、药物与龙相关配方。",
+        "食べ物・薬・ドラゴン用のレシピを解放します。",
+        "음식, 약, 드래곤 레시피를 해금합니다.",
+        "Открывает рецепты еды, лекарств и блюд для драконов.",
+        "Desbloquea recetas de comida, medicinas y dragones.",
+        "Desbloqueia receitas de comida, remédios e dragões.",
+        "Schaltet Rezepte für Futter, Medizin und Drachen frei.",
+        "Débloque les recettes de nourriture, de remèdes et pour dragons.",
+        "Odblokowuje przepisy na jedzenie, lekarstwa i pokarm dla smoków."
+      ]
+    ],
+    [
+      "Unlocks rare eggs and specialist supplies.",
+      [
+        "ปลดล็อกไข่หายากและอุปกรณ์เฉพาะทาง",
+        "Membuka telur nadir dan bekalan khusus.",
+        "Membuka telur langka dan perlengkapan khusus.",
+        "解锁稀有蛋与专用物资。",
+        "希少な卵と専門用品を解放します。",
+        "희귀 알과 전용 물자를 해금합니다.",
+        "Открывает редкие яйца и специальные припасы.",
+        "Desbloquea huevos raros y suministros especializados.",
+        "Desbloqueia ovos raros e suprimentos especializados.",
+        "Schaltet seltene Eier und Spezialbedarf frei.",
+        "Débloque les œufs rares et les fournitures spécialisées.",
+        "Odblokowuje rzadkie jaja i specjalistyczne zapasy."
+      ]
+    ],
+    [
+      "Full %d · Clean %d · Happy %d",
+      [
+        "อิ่ม %d · สะอาด %d · มีความสุข %d",
+        "Kenyang %d · Bersih %d · Gembira %d",
+        "Kenyang %d · Bersih %d · Senang %d",
+        "饱食 %d · 清洁 %d · 快乐 %d",
+        "満腹度 %d · 清潔度 %d · 幸福度 %d",
+        "포만감 %d · 청결 %d · 행복 %d",
+        "Сытость %d · Чистота %d · Настроение %d",
+        "Saciedad %d · Limpieza %d · Felicidad %d",
+        "Saciedade %d · Limpeza %d · Felicidade %d",
+        "Sättigung %d · Sauberkeit %d · Freude %d",
+        "Satiété %d · Propreté %d · Bonheur %d",
+        "Sytość %d · Czystość %d · Radość %d"
+      ]
+    ],
+    [
+      "Full %d · Clean %d · Happy %d\nProducts: %d",
+      [
+        "อิ่ม %d · สะอาด %d · มีความสุข %d\nผลผลิต: %d",
+        "Kenyang %d · Bersih %d · Gembira %d\nProduk: %d",
+        "Kenyang %d · Bersih %d · Senang %d\nProduk: %d",
+        "饱食 %d · 清洁 %d · 快乐 %d\n产物: %d",
+        "満腹度 %d · 清潔度 %d · 幸福度 %d\n生産品: %d",
+        "포만감 %d · 청결 %d · 행복 %d\n생산품: %d",
+        "Сытость %d · Чистота %d · Настроение %d\nПродукты: %d",
+        "Saciedad %d · Limpieza %d · Felicidad %d\nProductos: %d",
+        "Saciedade %d · Limpeza %d · Felicidade %d\nProdutos: %d",
+        "Sättigung %d · Sauberkeit %d · Freude %d\nErzeugnisse: %d",
+        "Satiété %d · Propreté %d · Bonheur %d\nProduits: %d",
+        "Sytość %d · Czystość %d · Radość %d\nProdukty: %d"
+      ]
+    ],
+    [
+      "Full %d · Clean %d · Happy %d\nRemedy: %s\nOwned: %d",
+      [
+        "อิ่ม %d · สะอาด %d · มีความสุข %d\nยารักษา: %s\nมี: %d",
+        "Kenyang %d · Bersih %d · Gembira %d\nUbat: %s\nDimiliki: %d",
+        "Kenyang %d · Bersih %d · Senang %d\nObat: %s\nDimiliki: %d",
+        "饱食 %d · 清洁 %d · 快乐 %d\n药物: %s\n已拥有：%d",
+        "満腹度 %d · 清潔度 %d · 幸福度 %d\n薬: %s\n所有数：%d",
+        "포만감 %d · 청결 %d · 행복 %d\n치료약: %s\n보유: %d",
+        "Сытость %d · Чистота %d · Настроение %d\nЛекарство: %s\nВ наличии: %d",
+        "Saciedad %d · Limpieza %d · Felicidad %d\nRemedio: %s\nEn propiedad: %d",
+        "Saciedade %d · Limpeza %d · Felicidade %d\nRemédio: %s\nQuantidade: %d",
+        "Sättigung %d · Sauberkeit %d · Freude %d\nMedizin: %s\nIm Besitz: %d",
+        "Satiété %d · Propreté %d · Bonheur %d\nRemède: %s\nQuantité possédée : %d",
+        "Sytość %d · Czystość %d · Radość %d\nLekarstwo: %s\nPosiadane: %d"
+      ]
+    ],
+    [
+      "%s\nFull %d · Clean %d · Happy %d\n%s",
+      [
+        "%s\nอิ่ม %d · สะอาด %d · มีความสุข %d\n%s",
+        "%s\nKenyang %d · Bersih %d · Gembira %d\n%s",
+        "%s\nKenyang %d · Bersih %d · Senang %d\n%s",
+        "%s\n饱食 %d · 清洁 %d · 快乐 %d\n%s",
+        "%s\n満腹度 %d · 清潔度 %d · 幸福度 %d\n%s",
+        "%s\n포만감 %d · 청결 %d · 행복 %d\n%s",
+        "%s\nСытость %d · Чистота %d · Настроение %d\n%s",
+        "%s\nSaciedad %d · Limpieza %d · Felicidad %d\n%s",
+        "%s\nSaciedade %d · Limpeza %d · Felicidade %d\n%s",
+        "%s\nSättigung %d · Sauberkeit %d · Freude %d\n%s",
+        "%s\nSatiété %d · Propreté %d · Bonheur %d\n%s",
+        "%s\nSytość %d · Czystość %d · Radość %d\n%s"
+      ]
+    ],
+    [
+      "Food: %s",
+      [
+        "อาหาร: %s",
+        "Makanan: %s",
+        "Pakan: %s",
+        "食物: %s",
+        "餌: %s",
+        "먹이: %s",
+        "Корм: %s",
+        "Comida: %s",
+        "Ração: %s",
+        "Futter: %s",
+        "Nourriture: %s",
+        "Pokarm: %s"
+      ]
+    ],
+    [
+      "Food: %s ×%d",
+      [
+        "อาหาร: %s ×%d",
+        "Makanan: %s ×%d",
+        "Pakan: %s ×%d",
+        "食物: %s ×%d",
+        "餌: %s ×%d",
+        "먹이: %s ×%d",
+        "Корм: %s ×%d",
+        "Comida: %s ×%d",
+        "Ração: %s ×%d",
+        "Futter: %s ×%d",
+        "Nourriture: %s ×%d",
+        "Pokarm: %s ×%d"
+      ]
+    ],
+    [
+      "Food",
+      [
+        "อาหาร",
+        "Makanan",
+        "Pakan",
+        "食物",
+        "餌",
+        "먹이",
+        "Корм",
+        "Comida",
+        "Ração",
+        "Futter",
+        "Nourriture",
+        "Pokarm"
+      ]
+    ],
+    [
+      "Owned: %d\nCategory: %s\n%s\n%s",
+      [
+        "มี: %d\nหมวดหมู่: %s\n%s\n%s",
+        "Dimiliki: %d\nKategori: %s\n%s\n%s",
+        "Dimiliki: %d\nKategori: %s\n%s\n%s",
+        "已拥有：%d\n分类: %s\n%s\n%s",
+        "所有数：%d\nカテゴリ: %s\n%s\n%s",
+        "보유: %d\n분류: %s\n%s\n%s",
+        "В наличии: %d\nКатегория: %s\n%s\n%s",
+        "En propiedad: %d\nCategoría: %s\n%s\n%s",
+        "Quantidade: %d\nCategoria: %s\n%s\n%s",
+        "Im Besitz: %d\nKategorie: %s\n%s\n%s",
+        "Quantité possédée : %d\nCatégorie: %s\n%s\n%s",
+        "Posiadane: %d\nKategoria: %s\n%s\n%s"
+      ]
+    ],
+    [
+      "%s · Owned: %d",
+      [
+        "%s · มี: %d",
+        "%s · Dimiliki: %d",
+        "%s · Dimiliki: %d",
+        "%s · 已拥有：%d",
+        "%s · 所有数：%d",
+        "%s · 보유: %d",
+        "%s · В наличии: %d",
+        "%s · En propiedad: %d",
+        "%s · Quantidade: %d",
+        "%s · Im Besitz: %d",
+        "%s · Quantité possédée : %d",
+        "%s · Posiadane: %d"
+      ]
+    ],
+    [
+      "Hatches: %s · %d days\nCost: %d coins + %d Dragon Energy\nOwned eggs: %d",
+      [
+        "ฟักเป็น: %s · %d วัน\nราคา: %d เหรียญ + %d พลังมังกร\nไข่ที่มี: %d",
+        "Menetas: %s · %d hari\nKos: %d syiling + %d Tenaga Naga\nTelur dimiliki: %d",
+        "Menetas: %s · %d hari\nBiaya: %d koin + %d Energi Naga\nTelur dimiliki: %d",
+        "孵出：%s · %d天\n费用: %d 金币 + %d 龙能量\n拥有的蛋：%d",
+        "孵化：%s · %d日\n費用: %d コイン + %d ドラゴンエネルギー\n卵の所持数：%d",
+        "부화: %s · %d일\n비용: %d 코인 + %d 드래곤 에너지\n보유한 알: %d",
+        "Вылупится: %s · %d дней\nСтоимость: %d монет + %d Энергия драконов\nЯиц в наличии: %d",
+        "Eclosiona: %s · %d días\nCoste: %d monedas + %d Energía de dragón\nHuevos en propiedad: %d",
+        "Nasce: %s · %d dias\nCusto: %d moedas + %d Energia de Dragão\nOvos possuídos: %d",
+        "Schlüpft: %s · %d Tage\nKosten: %d Münzen + %d Drachenenergie\nEier im Besitz: %d",
+        "Éclosion : %s · %d jours\nCoût: %d pièces + %d Énergie draconique\nŒufs possédés : %d",
+        "Wyklucie: %s · %d dni\nKoszt: %d monet + %d Energia smoków\nPosiadane jaja: %d"
+      ]
+    ],
+    [
+      "Cost: %d coins + %d Dragon Energy",
+      [
+        "ราคา: %d เหรียญ + %d พลังมังกร",
+        "Kos: %d syiling + %d Tenaga Naga",
+        "Biaya: %d koin + %d Energi Naga",
+        "费用: %d 金币 + %d 龙能量",
+        "費用: %d コイン + %d ドラゴンエネルギー",
+        "비용: %d 코인 + %d 드래곤 에너지",
+        "Стоимость: %d монет + %d Энергия драконов",
+        "Coste: %d monedas + %d Energía de dragón",
+        "Custo: %d moedas + %d Energia de Dragão",
+        "Kosten: %d Münzen + %d Drachenenergie",
+        "Coût: %d pièces + %d Énergie draconique",
+        "Koszt: %d monet + %d Energia smoków"
+      ]
+    ],
+    [
+      "Feed · Clean · Remedy",
+      [
+        "ให้อาหาร · ทำความสะอาด · ยารักษา",
+        "Beri makan · Bersihkan · Ubat",
+        "Beri makan · Bersihkan · Obat",
+        "喂食 · 清理 · 药物",
+        "餌やり · 掃除 · 薬",
+        "먹이 주기 · 청소 · 치료약",
+        "Кормить · Убрать · Лекарство",
+        "Alimentar · Limpiar · Remedio",
+        "Alimentar · Limpar · Remédio",
+        "Füttern · Reinigen · Medizin",
+        "Nourrir · Nettoyer · Remède",
+        "Nakarm · Posprzątaj · Lekarstwo"
+      ]
+    ],
+    [
+      "Pet · Happiness · Collect Energy",
+      [
+        "ลูบ · ความสุข · เก็บพลัง",
+        "Belai · Kegembiraan · Kumpul tenaga",
+        "Elus · Kebahagiaan · Kumpulkan energi",
+        "抚摸 · 快乐 · 收集能量",
+        "なでる · 幸福度 · エネルギー回収",
+        "쓰다듬기 · 행복 · 에너지 수집",
+        "Погладить · Настроение · Собрать энергию",
+        "Acariciar · Felicidad · Recoger energía",
+        "Acariciar · Felicidade · Coletar energia",
+        "Streicheln · Freude · Energie sammeln",
+        "Caresser · Bonheur · Collecter l’énergie",
+        "Pogłaszcz · Radość · Zbierz energię"
+      ]
+    ],
+    [
+      "NURSERY · CARE",
+      [
+        "สถานเลี้ยงมังกร · ดูแล",
+        "Taska naga · Penjagaan",
+        "Penitipan naga · Perawatan",
+        "育龙园 · 照料",
+        "ドラゴン保育所 · お世話",
+        "드래곤 보육원 · 돌봄",
+        "Ясли для драконов · Уход",
+        "Guardería de dragones · Cuidados",
+        "Berçário de dragões · Cuidados",
+        "Drachenkrippe · Pflege",
+        "Nurserie de dragons · Soins",
+        "Żłobek smoków · Opieka"
+      ]
+    ],
+    [
+      "PLAYGROUND · PLAY",
+      [
+        "สนามเด็กเล่น · เล่น",
+        "Taman permainan · Bermain",
+        "Taman bermain · Bermain",
+        "游乐场 · 玩耍",
+        "遊び場 · 遊ぶ",
+        "놀이터 · 놀이",
+        "Игровая площадка · Игра",
+        "Zona de juegos · Jugar",
+        "Área de brincadeiras · Brincar",
+        "Spielplatz · Spielen",
+        "Aire de jeux · Jouer",
+        "Plac zabaw · Zabawa"
+      ]
+    ],
+    [
+      "DRAGON CARE",
+      [
+        "ดูแล · มังกร",
+        "Penjagaan · Naga",
+        "Perawatan · Naga",
+        "照料 · 龙",
+        "お世話 · ドラゴン",
+        "돌봄 · 드래곤",
+        "Уход · Дракон",
+        "Cuidados · Dragón",
+        "Cuidados · Dragão",
+        "Pflege · Drache",
+        "Soins · Dragon",
+        "Opieka · Smok"
+      ]
+    ],
+    [
+      "Unlocks Dragon Island and incubation. Once per day, spend 5 Dragon Energy to recover up to 20 farm energy.",
+      [
+        "ปลดล็อกเกาะมังกรและการฟักไข่มังกรธาตุ วันละครั้ง ใช้พลังมังกร 5 แต้มเพื่อฟื้นพลังฟาร์มได้สูงสุด 20 แต้ม",
+        "Membuka Pulau Naga dan penetasan telur naga unsur. Sekali sehari, gunakan 5 Tenaga Naga untuk memulihkan sehingga 20 tenaga ladang.",
+        "Membuka Pulau Naga dan penetasan telur naga unsur. Sekali sehari, gunakan 5 Energi Naga untuk memulihkan hingga 20 energi ladang.",
+        "解锁龙岛与元素龙蛋孵化。 每天可消耗5点龙能量，恢复最多20点农场体力。",
+        "ドラゴン島と属性ドラゴンの孵化を解放します。 1日に1回、ドラゴンエネルギー5を使い、農場の体力を最大20回復できます。",
+        "드래곤 섬과 속성 알 부화를 해금합니다. 하루 한 번 드래곤 에너지 5를 사용해 농장 에너지를 최대 20 회복합니다.",
+        "Открывает Остров драконов и инкубацию стихийных яиц. Раз в день потратьте 5 энергии драконов, чтобы восстановить до 20 энергии фермы.",
+        "Desbloquea la Isla de los Dragones y la incubación elemental. Una vez al día, gasta 5 de energía de dragón para recuperar hasta 20 de energía de la granja.",
+        "Desbloqueia a Ilha dos Dragões e a incubação elemental. Uma vez por dia, gaste 5 de Energia de Dragão para recuperar até 20 de energia da fazenda.",
+        "Schaltet die Dracheninsel und das Ausbrüten von Elementareiern frei. Gib einmal am Tag 5 Drachenenergie aus, um bis zu 20 Farmenergie wiederherzustellen.",
+        "Débloque l’Île des dragons et l’incubation élémentaire. Une fois par jour, dépense 5 points d’énergie draconique pour récupérer jusqu’à 20 points d’énergie de ferme.",
+        "Odblokowuje Wyspę Smoków i inkubację jaj żywiołów. Raz dziennie wydaj 5 energii smoków, aby odzyskać do 20 energii farmy."
+      ]
+    ],
+    [
+      "Open Storage",
+      [
+        "เปิดคลัง",
+        "Buka stor",
+        "Buka gudang",
+        "打开仓库",
+        "倉庫を開く",
+        "창고 열기",
+        "Открыть склад",
+        "Abrir almacén",
+        "Abrir depósito",
+        "Lager öffnen",
+        "Ouvrir l’entrepôt",
+        "Otwórz magazyn"
+      ]
+    ],
+    [
+      "Assign utility",
+      [
+        "มอบหมายงาน",
+        "Jadikan pembantu",
+        "Tugaskan bantuan",
+        "指派协助",
+        "お手伝いを任命",
+        "도우미 배정",
+        "Назначить помощником",
+        "Asignar ayuda",
+        "Atribuir ajuda",
+        "Helfer zuweisen",
+        "Assigner un rôle",
+        "Przydziel pomoc"
+      ]
+    ]
+  ]
+}

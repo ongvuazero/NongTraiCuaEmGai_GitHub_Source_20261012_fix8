@@ -1,0 +1,6 @@
+{
+  "spring":{"name":"Spring","description":"Preferred Spring medicinal herbs gain one extra growth every third day.","fullness_decay":8,"cleanliness_decay":6,"garden_growth_interval":3},
+  "summer":{"name":"Summer","description":"Warm weather costs two additional fullness; Summer herbs grow faster.","fullness_decay":10,"cleanliness_decay":6,"garden_growth_interval":3},
+  "autumn":{"name":"Autumn","description":"Autumn medicinal herbs grow faster; care remains steady.","fullness_decay":8,"cleanliness_decay":6,"garden_growth_interval":3},
+  "winter":{"name":"Winter","description":"Cold weather costs two additional cleanliness; Winter herbs thrive.","fullness_decay":8,"cleanliness_decay":8,"garden_growth_interval":3}
+}

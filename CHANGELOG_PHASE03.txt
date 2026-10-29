@@ -1,0 +1,9 @@
+MY SISTER'S FARM - PHASE 03 CHANGELOG
+
+- Replaced the 1816-line main scene owner with a small boot/router compatibility layer.
+- Added GameState and ScreenRouter autoloads.
+- Added ten independent screen scenes and scripts, including Field Select.
+- Added six reusable component scenes plus shared UI factory helpers.
+- Rebuilt Title, Save, Hub, Field Select, Field, Shop, Storage, Settings, Animal and Dragon screens with Canonical V2 runtime art.
+- Preserved three-slot saving, field state machine, energy gates, shop, inventory, animal care and settings persistence.
+- Added deterministic 1280x720 QA capture and regression test script.

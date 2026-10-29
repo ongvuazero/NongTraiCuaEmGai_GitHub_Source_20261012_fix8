@@ -1,0 +1,183 @@
+{
+  "version": "V6.2",
+  "viewport": [
+    1280,
+    720
+  ],
+  "coordinate_space": "home_hub_world_plate_v6_2",
+  "walkability_map": "res://v6/art/plates/home_hub/home_hub_walkability_v6_2.png",
+  "zones": [
+    {
+      "id": "FIELD_ENTRY",
+      "shape": "polygon",
+      "points": [
+        [
+          242,
+          430
+        ],
+        [
+          522,
+          412
+        ],
+        [
+          548,
+          548
+        ],
+        [
+          228,
+          566
+        ]
+      ],
+      "action": "open_field"
+    },
+    {
+      "id": "SHOP_ENTRY",
+      "shape": "circle",
+      "center": [
+        516,
+        322
+      ],
+      "radius": 46,
+      "action": "open_shop"
+    },
+    {
+      "id": "STORAGE_ENTRY",
+      "shape": "polygon",
+      "points": [
+        [
+          333,
+          322
+        ],
+        [
+          421,
+          322
+        ],
+        [
+          421,
+          390
+        ],
+        [
+          333,
+          390
+        ]
+      ],
+      "action": "open_storage"
+    },
+    {
+      "id": "ANIMALS_ENTRY",
+      "shape": "polygon",
+      "points": [
+        [
+          1004,
+          344
+        ],
+        [
+          1270,
+          318
+        ],
+        [
+          1270,
+          548
+        ],
+        [
+          1020,
+          514
+        ]
+      ],
+      "action": "open_animals"
+    },
+    {
+      "id": "DRAGON_ISLAND_ENTRY",
+      "shape": "circle",
+      "center": [
+        1167,
+        178
+      ],
+      "radius": 72,
+      "action": "open_dragon_island"
+    },
+    {
+      "id": "QUEST_BOARD_ENTRY",
+      "shape": "polygon",
+      "points": [
+        [
+          596,
+          329
+        ],
+        [
+          663,
+          329
+        ],
+        [
+          663,
+          408
+        ],
+        [
+          596,
+          408
+        ]
+      ],
+      "action": "open_quests"
+    },
+    {
+      "id": "SETTINGS_ENTRY",
+      "shape": "circle",
+      "center": [
+        466,
+        297
+      ],
+      "radius": 34,
+      "action": "open_settings"
+    },
+    {
+      "id": "PORTAL_TRAVEL_ZONE",
+      "shape": "circle",
+      "center": [
+        1168,
+        179
+      ],
+      "radius": 58,
+      "action": "portal_travel"
+    },
+    {
+      "id": "COW_INTERACTION",
+      "shape": "circle",
+      "center": [
+        1123,
+        408
+      ],
+      "radius": 44,
+      "action": "animal_cow"
+    },
+    {
+      "id": "SHEEP_INTERACTION",
+      "shape": "circle",
+      "center": [
+        1180,
+        438
+      ],
+      "radius": 42,
+      "action": "animal_sheep"
+    },
+    {
+      "id": "CHICKEN_INTERACTION",
+      "shape": "circle",
+      "center": [
+        1044,
+        462
+      ],
+      "radius": 34,
+      "action": "animal_chicken"
+    },
+    {
+      "id": "CAT_INTERACTION",
+      "shape": "circle",
+      "center": [
+        715,
+        500
+      ],
+      "radius": 38,
+      "action": "pet_cat"
+    }
+  ]
+}

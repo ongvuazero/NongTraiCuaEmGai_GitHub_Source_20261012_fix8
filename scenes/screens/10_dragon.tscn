@@ -1,0 +1,777 @@
+[gd_scene format=3 uid="uid://cyd3l0mntyow2"]
+
+[ext_resource type="Script" uid="uid://dcuk1f2lvyrut" path="res://scripts/screens/dragon_screen.gd" id="1_indbk"]
+[ext_resource type="Texture2D" uid="uid://by57xd4eh3sr1" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/ENVIRONMENT/SCREEN_PLATES/dragon_environment.png" id="2_kpsx4"]
+[ext_resource type="Texture2D" uid="uid://c4em2wlffsuep" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/TITLE_SAVE_HOME/canonical_logo.png" id="3_mnkrs"]
+[ext_resource type="Texture2D" uid="uid://bosboi8eujp3e" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/HUD/day_season_chip.png" id="4_4h8hu"]
+[ext_resource type="Texture2D" uid="uid://g71uyu1qdi84" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/HUD/money_chip.png" id="5_p5y1x"]
+[ext_resource type="Texture2D" uid="uid://b4fiqkklolcr0" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/HUD/energy_chip.png" id="6_7nqyt"]
+[ext_resource type="Texture2D" uid="uid://brkmxgljhu2ib" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/HUD/long_khi_chip.png" id="7_odu12"]
+[ext_resource type="Texture2D" uid="uid://cd8n1r000pemc" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/TITLE_SAVE_HOME/title_button_frame_default.png" id="8_s6csd"]
+[ext_resource type="Texture2D" uid="uid://bqsxb0mjrlkyj" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/TITLE_SAVE_HOME/title_button_frame_pressed.png" id="9_sxrw2"]
+[ext_resource type="Texture2D" uid="uid://4sa08cfhg7mj" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/TITLE_SAVE_HOME/title_button_frame_hover.png" id="10_0f0m4"]
+[ext_resource type="Texture2D" uid="uid://bxtfrn4jdyq62" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/TITLE_SAVE_HOME/title_button_frame_disabled.png" id="11_k4sp7"]
+[ext_resource type="Texture2D" uid="uid://bkkfrphkf8j40" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/PROPS/PORTAL/dragon_portal_complete.png" id="12_vavli"]
+[ext_resource type="Texture2D" uid="uid://chmmq3mqff2fc" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/CHARACTERS/DRAGONS/dragon_inhabitants_sheet.png" id="13_5sh0i"]
+[ext_resource type="Texture2D" uid="uid://b3bfhwcn57anu" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/ANIMATION/FARMER/idle/frame_01.png" id="14_bcer1"]
+[ext_resource type="Texture2D" uid="uid://d0x264qqeht5c" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/CHARACTERS/CAT/calico_cat_sitting.png" id="15_kb505"]
+[ext_resource type="Texture2D" uid="uid://bvxtt7scepx8k" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/REPAIRS_AND_SHARED/DRAGON/blue_sleeping_dragon.png" id="16_qps32"]
+[ext_resource type="Texture2D" uid="uid://clmrlg17a6yqu" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/ITEMS/dragon.png" id="17_f71pw"]
+[ext_resource type="Script" path="res://scripts/ui/farm_navigation_button.gd" id="18_farm_nav"]
+[ext_resource type="Texture2D" path="res://resources/ui/farm_logo_shared.tres" id="19_farm_art"]
+[ext_resource type="Script" path="res://scripts/ui/farm_navigation_logo.gd" id="20_farm_logo"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cwxht"]
+bg_color = Color(0.19215687, 0.35686275, 0.45882353, 0.9098039)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.8392157, 0.70980394, 0.40784314, 1)
+corner_radius_top_left = 14
+corner_radius_top_right = 14
+corner_radius_bottom_right = 14
+corner_radius_bottom_left = 14
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_27xpg"]
+atlas = ExtResource("13_5sh0i")
+region = Rect2(0, 0, 334, 470)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_28iwk"]
+atlas = ExtResource("13_5sh0i")
+region = Rect2(334, 0, 334, 470)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jffwx"]
+atlas = ExtResource("13_5sh0i")
+region = Rect2(668, 0, 334, 470)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kg73a"]
+atlas = ExtResource("13_5sh0i")
+region = Rect2(1336, 0, 336, 470)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1u2i3"]
+bg_color = Color(0.96862745, 0.92156863, 0.84313726, 0.9607843)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.4627451, 0.3137255, 0.18431373, 1)
+corner_radius_top_left = 18
+corner_radius_top_right = 18
+corner_radius_bottom_right = 18
+corner_radius_bottom_left = 18
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_48k8p"]
+bg_color = Color(0.84705883, 0.76862746, 0.60784316, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.54509807, 0.35686275, 0.1764706, 1)
+corner_radius_top_left = 11
+corner_radius_top_right = 11
+corner_radius_bottom_right = 11
+corner_radius_bottom_left = 11
+
+[node name="DragonRoot" type="Control" unique_id=1900873657]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_indbk")
+metadata/true_wysiwyg_v2 = true
+metadata/TRUE_WYSIWYG_V2 = "PASS"
+
+[node name="Background" type="TextureRect" parent="." unique_id=441025512]
+layout_mode = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+mouse_filter = 2
+texture = ExtResource("2_kpsx4")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="TopHUD" type="Control" parent="." unique_id=453864069]
+anchors_preset = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+mouse_filter = 2
+
+[node name="Logo" type="TextureRect" parent="TopHUD" unique_id=844671617]
+layout_mode = 0
+offset_left = 29.0
+offset_top = 9.0
+offset_right = 264.0
+offset_bottom = 120.0
+mouse_filter = 2
+texture = ExtResource("19_farm_art")
+expand_mode = 1
+stretch_mode = 0
+script = ExtResource("20_farm_logo")
+
+[node name="HUD_DaySeasonChip" type="TextureRect" parent="TopHUD" unique_id=613319370]
+layout_mode = 0
+offset_left = 505.0
+offset_top = 9.0
+offset_right = 689.0
+offset_bottom = 71.0
+mouse_filter = 2
+texture = ExtResource("4_4h8hu")
+expand_mode = 1
+
+[node name="HUD_DaySeasonLabel" type="Label" parent="TopHUD" unique_id=902646124]
+layout_mode = 0
+offset_left = 559.0
+offset_top = 12.0
+offset_right = 682.0
+offset_bottom = 68.0
+theme_override_colors/font_color = Color(0.23137255, 0.15686275, 0.101960786, 1)
+theme_override_font_sizes/font_size = 17
+text = "Ngày 1 · Mùa xuân"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HUD_CoinChip" type="TextureRect" parent="TopHUD" unique_id=84631870]
+layout_mode = 0
+offset_left = 696.0
+offset_top = 9.0
+offset_right = 878.0
+offset_bottom = 71.0
+mouse_filter = 2
+texture = ExtResource("5_p5y1x")
+expand_mode = 1
+
+[node name="HUD_CoinValue" type="Label" parent="TopHUD" unique_id=1863916434]
+layout_mode = 0
+offset_left = 750.0
+offset_top = 12.0
+offset_right = 871.0
+offset_bottom = 68.0
+theme_override_colors/font_color = Color(0.23137255, 0.15686275, 0.101960786, 1)
+theme_override_font_sizes/font_size = 19
+text = "400"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HUD_EnergyChip" type="TextureRect" parent="TopHUD" unique_id=24922740]
+layout_mode = 0
+offset_left = 885.0
+offset_top = 9.0
+offset_right = 1069.0
+offset_bottom = 71.0
+mouse_filter = 2
+texture = ExtResource("6_7nqyt")
+expand_mode = 1
+
+[node name="HUD_EnergyValue" type="Label" parent="TopHUD" unique_id=1356216135]
+layout_mode = 0
+offset_left = 939.0
+offset_top = 12.0
+offset_right = 1062.0
+offset_bottom = 68.0
+theme_override_colors/font_color = Color(0.23137255, 0.15686275, 0.101960786, 1)
+theme_override_font_sizes/font_size = 19
+text = "100/100"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HUD_DragonEnergyChip" type="TextureRect" parent="TopHUD" unique_id=363168857]
+layout_mode = 0
+offset_left = 1076.0
+offset_top = 9.0
+offset_right = 1274.0
+offset_bottom = 71.0
+mouse_filter = 2
+texture = ExtResource("7_odu12")
+expand_mode = 1
+
+[node name="HUD_DragonEnergyValue" type="Label" parent="TopHUD" unique_id=2129833289]
+layout_mode = 0
+offset_left = 1130.0
+offset_top = 12.0
+offset_right = 1267.0
+offset_bottom = 68.0
+theme_override_colors/font_color = Color(0.23137255, 0.15686275, 0.101960786, 1)
+theme_override_font_sizes/font_size = 19
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LeftNavigation" type="Control" parent="." unique_id=1737821321]
+anchors_preset = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+mouse_filter = 2
+
+[node name="DragonNav_0" type="TextureButton" parent="LeftNavigation" unique_id=1742572058]
+layout_mode = 0
+offset_left = 23.0
+offset_top = 129.0
+offset_right = 231.0
+offset_bottom = 191.0
+texture_normal = ExtResource("8_s6csd")
+texture_pressed = ExtResource("9_sxrw2")
+texture_hover = ExtResource("10_0f0m4")
+texture_disabled = ExtResource("11_k4sp7")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("18_farm_nav")
+icon_id = "egg"
+caption_source = "Lò ấp trứng"
+
+[node name="Caption" type="Label" parent="LeftNavigation/DragonNav_0" unique_id=1542005743]
+layout_mode = 0
+offset_right = 233.0
+offset_bottom = 63.0
+theme_override_colors/font_color = Color(0.23529412, 0.15686275, 0.09411765, 1)
+theme_override_font_sizes/font_size = 16
+text = "Lò ấp trứng"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="DragonNav_1" type="TextureButton" parent="LeftNavigation" unique_id=795701869]
+layout_mode = 0
+offset_left = 23.0
+offset_top = 194.0
+offset_right = 231.0
+offset_bottom = 256.0
+texture_normal = ExtResource("8_s6csd")
+texture_pressed = ExtResource("9_sxrw2")
+texture_hover = ExtResource("10_0f0m4")
+texture_disabled = ExtResource("11_k4sp7")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("18_farm_nav")
+icon_id = "nursery"
+caption_source = "Nhà trẻ"
+
+[node name="Caption" type="Label" parent="LeftNavigation/DragonNav_1" unique_id=658349918]
+layout_mode = 0
+offset_right = 233.0
+offset_bottom = 63.0
+theme_override_colors/font_color = Color(0.23529412, 0.15686275, 0.09411765, 1)
+theme_override_font_sizes/font_size = 16
+text = "Nhà trẻ"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="DragonNav_2" type="TextureButton" parent="LeftNavigation" unique_id=478147430]
+layout_mode = 0
+offset_left = 23.0
+offset_top = 258.0
+offset_right = 231.0
+offset_bottom = 320.0
+texture_normal = ExtResource("8_s6csd")
+texture_pressed = ExtResource("9_sxrw2")
+texture_hover = ExtResource("10_0f0m4")
+texture_disabled = ExtResource("11_k4sp7")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("18_farm_nav")
+icon_id = "play"
+caption_source = "Sân chơi"
+
+[node name="Caption" type="Label" parent="LeftNavigation/DragonNav_2" unique_id=1832132769]
+layout_mode = 0
+offset_right = 233.0
+offset_bottom = 63.0
+theme_override_colors/font_color = Color(0.23529412, 0.15686275, 0.09411765, 1)
+theme_override_font_sizes/font_size = 16
+text = "Sân chơi"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="DragonNav_3" type="TextureButton" parent="LeftNavigation" unique_id=1632298215]
+layout_mode = 0
+offset_left = 23.0
+offset_top = 323.0
+offset_right = 231.0
+offset_bottom = 385.0
+texture_normal = ExtResource("8_s6csd")
+texture_pressed = ExtResource("9_sxrw2")
+texture_hover = ExtResource("10_0f0m4")
+texture_disabled = ExtResource("11_k4sp7")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("18_farm_nav")
+icon_id = "shop"
+caption_source = "Shop Rồng"
+
+[node name="Caption" type="Label" parent="LeftNavigation/DragonNav_3" unique_id=2111047330]
+layout_mode = 0
+offset_right = 233.0
+offset_bottom = 63.0
+theme_override_colors/font_color = Color(0.23529412, 0.15686275, 0.09411765, 1)
+theme_override_font_sizes/font_size = 16
+text = "Shop Rồng"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="DragonNav_4" type="TextureButton" parent="LeftNavigation" unique_id=551162959]
+layout_mode = 0
+offset_left = 23.0
+offset_top = 388.0
+offset_right = 231.0
+offset_bottom = 450.0
+texture_normal = ExtResource("8_s6csd")
+texture_pressed = ExtResource("9_sxrw2")
+texture_hover = ExtResource("10_0f0m4")
+texture_disabled = ExtResource("11_k4sp7")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("18_farm_nav")
+icon_id = "storage"
+caption_source = "Kho Rồng"
+
+[node name="Caption" type="Label" parent="LeftNavigation/DragonNav_4" unique_id=2048417383]
+layout_mode = 0
+offset_right = 233.0
+offset_bottom = 63.0
+theme_override_colors/font_color = Color(0.23529412, 0.15686275, 0.09411765, 1)
+theme_override_font_sizes/font_size = 16
+text = "Kho Rồng"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="DragonNav_5" type="TextureButton" parent="LeftNavigation" unique_id=536675908]
+layout_mode = 0
+offset_left = 23.0
+offset_top = 454.0
+offset_right = 231.0
+offset_bottom = 516.0
+texture_normal = ExtResource("8_s6csd")
+texture_pressed = ExtResource("9_sxrw2")
+texture_hover = ExtResource("10_0f0m4")
+texture_disabled = ExtResource("11_k4sp7")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("18_farm_nav")
+icon_id = "book"
+caption_source = "Sách Rồng"
+
+[node name="Caption" type="Label" parent="LeftNavigation/DragonNav_5" unique_id=911326284]
+layout_mode = 0
+offset_right = 233.0
+offset_bottom = 63.0
+theme_override_colors/font_color = Color(0.23529412, 0.15686275, 0.09411765, 1)
+theme_override_font_sizes/font_size = 16
+text = "Sách Rồng"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="FooterActions" type="Control" parent="." unique_id=1902679401]
+anchors_preset = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+mouse_filter = 2
+
+[node name="DragonBackToHub" type="TextureButton" parent="FooterActions" unique_id=1753074852]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 592.0
+offset_right = 250.0
+offset_bottom = 664.0
+texture_normal = ExtResource("8_s6csd")
+texture_pressed = ExtResource("9_sxrw2")
+texture_hover = ExtResource("10_0f0m4")
+texture_disabled = ExtResource("11_k4sp7")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("18_farm_nav")
+icon_id = "home"
+caption_source = "Trang trại"
+
+[node name="Caption" type="Label" parent="FooterActions/DragonBackToHub" unique_id=73338855]
+layout_mode = 0
+offset_right = 225.0
+offset_bottom = 66.0
+theme_override_colors/font_color = Color(0.23529412, 0.15686275, 0.09411765, 1)
+theme_override_font_sizes/font_size = 22
+text = "Trang trại"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MainContent" type="Control" parent="." unique_id=2143178748]
+anchors_preset = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+mouse_filter = 2
+
+[node name="DragonHabitat" type="Control" parent="MainContent" unique_id=458938865]
+anchors_preset = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+mouse_filter = 2
+
+[node name="HatcheryPortalVisual" type="TextureRect" parent="MainContent/DragonHabitat" unique_id=1273940024]
+layout_mode = 0
+offset_left = 302.0
+offset_top = 150.0
+offset_right = 522.0
+offset_bottom = 436.0
+mouse_filter = 2
+texture = ExtResource("12_vavli")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="DragonPortalIdentity" type="Panel" parent="MainContent/DragonHabitat" unique_id=1513638289]
+layout_mode = 0
+offset_left = 326.0
+offset_top = 415.0
+offset_right = 498.0
+offset_bottom = 454.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_cwxht")
+
+[node name="DragonPortalIdentityLabel" type="Label" parent="MainContent/DragonHabitat/DragonPortalIdentity" unique_id=1925467479]
+layout_mode = 0
+offset_left = 4.0
+offset_right = 168.0
+offset_bottom = 39.0
+theme_override_colors/font_color = Color(1, 0.94509804, 0.7882353, 1)
+theme_override_font_sizes/font_size = 16
+text = "CỔNG ĐẢO RỒNG"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Dragon03Shadow" type="Polygon2D" parent="MainContent/DragonHabitat" unique_id=1285796821]
+color = Color(0.16, 0.12, 0.1, 0.22)
+polygon = PackedVector2Array(724, 421, 721.54663, 425.65875, 714.3538, 430, 702.9117, 433.72794, 688, 436.58847, 670.63495, 438.38666, 652, 439, 633.36505, 438.38666, 616, 436.58847, 601.0883, 433.72794, 589.6462, 430, 582.45337, 425.65875, 580, 421, 582.45337, 416.34125, 589.6462, 412, 601.0883, 408.27206, 616, 405.41153, 633.36505, 403.61334, 652, 403, 670.63495, 403.61334, 688, 405.41153, 702.9117, 408.27206, 714.3538, 412, 721.54663, 416.34125)
+
+[node name="DragonVisual01" type="TextureRect" parent="MainContent/DragonHabitat" unique_id=72922586]
+layout_mode = 0
+offset_left = 712.0
+offset_top = 148.0
+offset_right = 806.0
+offset_bottom = 226.0
+mouse_filter = 2
+texture = SubResource("AtlasTexture_27xpg")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="DragonVisual02" type="TextureRect" parent="MainContent/DragonHabitat" unique_id=676528708]
+layout_mode = 0
+offset_left = 784.0
+offset_top = 350.0
+offset_right = 886.0
+offset_bottom = 428.0
+mouse_filter = 2
+texture = SubResource("AtlasTexture_28iwk")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="DragonVisual03" type="TextureRect" parent="MainContent/DragonHabitat" unique_id=459853876]
+layout_mode = 0
+offset_left = 606.0
+offset_top = 310.0
+offset_right = 696.0
+offset_bottom = 418.0
+mouse_filter = 2
+texture = SubResource("AtlasTexture_jffwx")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="DragonVisual04" type="TextureRect" parent="MainContent/DragonHabitat" unique_id=1618771083]
+layout_mode = 0
+offset_left = 1080.0
+offset_top = 418.0
+offset_right = 1174.0
+offset_bottom = 518.0
+mouse_filter = 2
+texture = SubResource("AtlasTexture_kg73a")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="DragonVisual05" type="TextureRect" parent="MainContent/DragonHabitat" unique_id=824785816]
+layout_mode = 0
+offset_left = 902.0
+offset_top = 398.0
+offset_right = 1048.0
+offset_bottom = 490.0
+mouse_filter = 2
+texture = ExtResource("16_qps32")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="FarmerVisual" type="TextureRect" parent="MainContent/DragonHabitat" unique_id=7666715]
+layout_mode = 0
+offset_left = 535.0
+offset_top = 389.0
+offset_right = 661.0
+offset_bottom = 585.0
+mouse_filter = 2
+texture = ExtResource("14_bcer1")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="CatVisual" type="TextureRect" parent="MainContent/DragonHabitat" unique_id=960220585]
+layout_mode = 0
+offset_left = 642.0
+offset_top = 503.0
+offset_right = 717.0
+offset_bottom = 578.0
+mouse_filter = 2
+texture = ExtResource("15_kb505")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Dragon02Shadow" type="Polygon2D" parent="MainContent/DragonHabitat" unique_id=1266480509]
+color = Color(0.16, 0.12, 0.1, 0.22)
+polygon = PackedVector2Array(907, 430, 904.54663, 433.8823, 897.3538, 437.5, 885.9117, 440.6066, 871, 442.9904, 853.63495, 444.4889, 835, 445, 816.36505, 444.4889, 799, 442.9904, 784.0883, 440.6066, 772.6462, 437.5, 765.45337, 433.8823, 763, 430, 765.45337, 426.1177, 772.6462, 422.5, 784.0883, 419.3934, 799, 417.0096, 816.36505, 415.5111, 835, 415, 853.63495, 415.5111, 871, 417.0096, 885.9117, 419.3934, 897.3538, 422.5, 904.54663, 426.1177)
+
+[node name="Dragon04Shadow" type="Polygon2D" parent="MainContent/DragonHabitat" unique_id=1283964258]
+color = Color(0.16, 0.12, 0.1, 0.22)
+polygon = PackedVector2Array(1153, 440, 1150.683, 443.62347, 1143.8898, 447, 1133.0833, 449.8995, 1119, 452.12436, 1102.5997, 453.52295, 1085, 454, 1067.4003, 453.52295, 1051, 452.12436, 1036.9167, 449.8995, 1026.1102, 447, 1019.317, 443.62347, 1017, 440, 1019.317, 436.37653, 1026.1102, 433, 1036.9167, 430.1005, 1051, 427.87564, 1067.4003, 426.47705, 1085, 426, 1102.5997, 426.47705, 1119, 427.87564, 1133.0833, 430.1005, 1143.8898, 433, 1150.683, 436.37653)
+
+[node name="Dragon05Shadow" type="Polygon2D" parent="MainContent/DragonHabitat" unique_id=784024059]
+color = Color(0.16, 0.12, 0.1, 0.22)
+polygon = PackedVector2Array(1067, 487, 1063.763, 491.65875, 1054.2725, 496, 1039.1752, 499.72794, 1019.5, 502.58847, 996.5878, 504.38666, 972, 505, 947.4122, 504.38666, 924.5, 502.58847, 904.8248, 499.72794, 889.7276, 496, 880.23706, 491.65875, 877, 487, 880.23706, 482.34125, 889.7276, 478, 904.8248, 474.27206, 924.5, 471.41153, 947.4122, 469.61334, 972, 469, 996.5878, 469.61334, 1019.5, 471.41153, 1039.1752, 474.27206, 1054.2725, 478, 1063.763, 482.34125)
+
+[node name="ActivityZoneGuide" type="Control" parent="MainContent/DragonHabitat" unique_id=1494160900]
+editor_description = "GUIDE_OR_INTERACTION_NODE only. Habitat environment artwork is BAKED_INTO_BACKGROUND."
+anchors_preset = 0
+offset_left = 520.0
+offset_top = 200.0
+offset_right = 1180.0
+offset_bottom = 560.0
+mouse_filter = 2
+metadata/EDITOR_GUIDE_ONLY = true
+metadata/BAKED_INTO_BACKGROUND = true
+
+[node name="DragonInfoPanel" type="Panel" parent="MainContent" unique_id=2089287607]
+layout_mode = 0
+offset_left = 943.0
+offset_top = 500.0
+offset_right = 1252.0
+offset_bottom = 661.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_1u2i3")
+
+[node name="DragonPortrait" type="TextureRect" parent="MainContent/DragonInfoPanel" unique_id=1830318976]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 25.0
+offset_right = 110.0
+offset_bottom = 121.0
+mouse_filter = 2
+texture = ExtResource("17_f71pw")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="DragonNameLabel" type="Label" parent="MainContent/DragonInfoPanel" unique_id=1876533447]
+layout_mode = 0
+offset_left = 116.0
+offset_top = 12.0
+offset_right = 294.0
+offset_bottom = 46.0
+theme_override_colors/font_color = Color(0.14901961, 0.29803923, 0.4627451, 1)
+theme_override_font_sizes/font_size = 21
+text = "RỒNG MÂY"
+vertical_alignment = 1
+
+[node name="DragonPersonalityLabel" type="Label" parent="MainContent/DragonInfoPanel" unique_id=302515842]
+layout_mode = 0
+offset_left = 116.0
+offset_top = 43.0
+offset_right = 294.0
+offset_bottom = 68.0
+theme_override_colors/font_color = Color(0.30980393, 0.43529412, 0.5254902, 1)
+theme_override_font_sizes/font_size = 16
+text = "Bạn đồng hành dịu dàng"
+vertical_alignment = 1
+
+[node name="DragonFriendshipLabel" type="Label" parent="MainContent/DragonInfoPanel" unique_id=899524227]
+layout_mode = 0
+offset_left = 116.0
+offset_top = 73.0
+offset_right = 196.0
+offset_bottom = 99.0
+theme_override_colors/font_color = Color(0.41568628, 0.29411766, 0.19607843, 1)
+theme_override_font_sizes/font_size = 16
+text = "Tình bạn"
+vertical_alignment = 1
+
+[node name="FriendshipBar" type="Panel" parent="MainContent/DragonInfoPanel" unique_id=1401081405]
+layout_mode = 0
+offset_left = 116.0
+offset_top = 100.0
+offset_right = 288.0
+offset_bottom = 122.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_48k8p")
+
+[node name="FriendshipFill" type="ColorRect" parent="MainContent/DragonInfoPanel/FriendshipBar" unique_id=1534387585]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 46.0
+offset_bottom = 18.0
+mouse_filter = 2
+color = Color(0.44705883, 0.6509804, 0.29803923, 1)
+
+[node name="DragonMessageLabel" type="Label" parent="MainContent/DragonInfoPanel" unique_id=547120489]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 128.0
+offset_right = 294.0
+offset_bottom = 155.0
+theme_override_colors/font_color = Color(0.41568628, 0.29411766, 0.19607843, 1)
+theme_override_font_sizes/font_size = 16
+text = "Thích ngắm mây và nghe tiếng chuông gió."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ComingSoonPanel" type="Panel" parent="MainContent" unique_id=1530916991]
+editor_description = "Live Dragon section summary and actions. Existing cream panel style preserves readable contrast."
+visible = false
+layout_mode = 0
+offset_left = 835.0
+offset_top = 235.0
+offset_right = 1171.0
+offset_bottom = 498.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_1u2i3")
+
+[node name="ComingSoonTitle" type="Label" parent="MainContent/ComingSoonPanel" unique_id=806478812]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 20.0
+offset_right = 318.0
+offset_bottom = 68.0
+theme_override_font_sizes/font_size = 24
+text = "LÒ ẤP TRỨNG"
+horizontal_alignment = 1
+clip_text = true
+max_lines_visible = 1
+
+[node name="ComingSoonMessage" type="Label" parent="MainContent/ComingSoonPanel" unique_id=35296312]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 78.0
+offset_right = 316.0
+offset_bottom = 153.0
+clip_contents = true
+theme_override_font_sizes/font_size = 16
+text = "Nội dung Lò ấp trứng đang được chuẩn bị."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+max_lines_visible = 3
+
+
+[node name="DragonSectionPrimary" type="TextureButton" parent="MainContent/ComingSoonPanel"]
+editor_description = "MANUAL: Approved Dragon menu art and serialized layout; script updates caption/state only."
+layout_mode = 0
+offset_left = 18.0
+offset_top = 156.0
+offset_right = 162.0
+offset_bottom = 202.0
+texture_normal = ExtResource("8_s6csd")
+texture_pressed = ExtResource("9_sxrw2")
+texture_hover = ExtResource("10_0f0m4")
+texture_disabled = ExtResource("11_k4sp7")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Caption" type="Label" parent="MainContent/ComingSoonPanel/DragonSectionPrimary"]
+layout_mode = 0
+offset_right = 144.0
+offset_bottom = 46.0
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.3, 0.2, 0.12, 1)
+theme_override_font_sizes/font_size = 15
+text = ""
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+
+[node name="DragonSectionSecondary" type="TextureButton" parent="MainContent/ComingSoonPanel"]
+editor_description = "MANUAL: Approved Dragon menu art and serialized layout; script updates caption/state only."
+layout_mode = 0
+offset_left = 174.0
+offset_top = 156.0
+offset_right = 318.0
+offset_bottom = 202.0
+texture_normal = ExtResource("8_s6csd")
+texture_pressed = ExtResource("9_sxrw2")
+texture_hover = ExtResource("10_0f0m4")
+texture_disabled = ExtResource("11_k4sp7")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Caption" type="Label" parent="MainContent/ComingSoonPanel/DragonSectionSecondary"]
+layout_mode = 0
+offset_right = 144.0
+offset_bottom = 46.0
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.3, 0.2, 0.12, 1)
+theme_override_font_sizes/font_size = 15
+text = ""
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+
+[node name="DragonSelectionCycle" type="TextureButton" parent="MainContent/ComingSoonPanel"]
+editor_description = "MANUAL: Approved Dragon menu art and serialized layout; script updates caption/state only."
+layout_mode = 0
+offset_left = 20.0
+offset_top = 210.0
+offset_right = 316.0
+offset_bottom = 256.0
+texture_normal = ExtResource("8_s6csd")
+texture_pressed = ExtResource("9_sxrw2")
+texture_hover = ExtResource("10_0f0m4")
+texture_disabled = ExtResource("11_k4sp7")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Caption" type="Label" parent="MainContent/ComingSoonPanel/DragonSelectionCycle"]
+layout_mode = 0
+offset_right = 296.0
+offset_bottom = 46.0
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.3, 0.2, 0.12, 1)
+theme_override_font_sizes/font_size = 15
+text = ""
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+
+[node name="DragonIslandAccess" type="TextureButton" parent="."]
+editor_description = "MANUAL: Approved Dragon menu art and serialized layout; script updates caption/state only."
+layout_mode = 0
+offset_left = 943.0
+offset_top = 667.0
+offset_right = 1252.0
+offset_bottom = 707.0
+texture_normal = ExtResource("8_s6csd")
+texture_pressed = ExtResource("9_sxrw2")
+texture_hover = ExtResource("10_0f0m4")
+texture_disabled = ExtResource("11_k4sp7")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Caption" type="Label" parent="DragonIslandAccess"]
+layout_mode = 0
+offset_right = 309.0
+offset_bottom = 40.0
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.3, 0.2, 0.12, 1)
+theme_override_font_sizes/font_size = 17
+text = "Đảo & công trình"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+
+[node name="DragonActionFeedback" type="Label" parent="MainContent/ComingSoonPanel"]
+visible = false
+layout_mode = 0
+offset_left = 20.0
+offset_top = 78.0
+offset_right = 316.0
+offset_bottom = 153.0
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.36, 0.21, 0.11, 1)
+theme_override_font_sizes/font_size = 16
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+

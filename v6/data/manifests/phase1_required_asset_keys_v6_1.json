@@ -1,0 +1,33 @@
+{
+  "manifest_version": "6.1",
+  "canonical_viewport": [1280, 720],
+  "assets": [
+    {"key":"TITLE_WORLD_PLATE","screen":"TITLE","expected_dimensions":[1280,720]},
+    {"key":"TITLE_LOGO","screen":"TITLE"},
+    {"key":"BTN_CONTINUE","screen":"TITLE"},
+    {"key":"BTN_NEW_GAME","screen":"TITLE"},
+    {"key":"BTN_SETTINGS","screen":"TITLE"},
+    {"key":"BTN_QUIT","screen":"TITLE"},
+    {"key":"TITLE_LEFT_QUOTE_SIGN","screen":"TITLE"},
+    {"key":"TITLE_RIGHT_QUOTE_SIGN","screen":"TITLE"},
+    {"key":"TITLE_DRAGON_DIRECTION_SIGN","screen":"TITLE"},
+    {"key":"SAVE_BG_PLATE","screen":"SAVE","expected_dimensions":[1280,720]},
+    {"key":"SAVE_HEADER_PLATE","screen":"SAVE"},
+    {"key":"SAVE_SLOT_OCCUPIED","screen":"SAVE","expected_dimensions":[671,146]},
+    {"key":"SAVE_SLOT_SELECTED","screen":"SAVE","expected_dimensions":[671,146]},
+    {"key":"SAVE_SLOT_EMPTY","screen":"SAVE","expected_dimensions":[671,146]},
+    {"key":"SAVE_DETAIL_PANEL","screen":"SAVE","expected_dimensions":[533,481]},
+    {"key":"BTN_BACK","screen":"SAVE"},
+    {"key":"BTN_DELETE","screen":"SAVE"},
+    {"key":"BTN_CONFIRM","screen":"SAVE"},
+    {"key":"HOME_HUB_WORLD_PLATE","screen":"HOME_HUB","expected_dimensions":[1280,720]},
+    {"key":"HOME_HUB_FRONT_OCCLUDER","screen":"HOME_HUB","expected_dimensions":[1280,720]},
+    {"key":"HOME_HUB_WALKABILITY_MAP","screen":"HOME_HUB"},
+    {"key":"FARMER_BACK","screen":"HOME_HUB"},
+    {"key":"CAT_PREFAB_ART","screen":"HOME_HUB"},
+    {"key":"COW_PREFAB_ART","screen":"HOME_HUB"},
+    {"key":"SHEEP_PREFAB_ART","screen":"HOME_HUB"},
+    {"key":"CHICKEN_PREFAB_ART","screen":"HOME_HUB"},
+    {"key":"PORTAL_PREFAB_ART","screen":"HOME_HUB"}
+  ]
+}

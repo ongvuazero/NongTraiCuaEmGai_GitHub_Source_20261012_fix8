@@ -1,0 +1,20 @@
+{
+  "version": "7.3",
+  "scope": "isolated_field_visual_proof_only",
+  "canonical_field_route_modified": false,
+  "runtime_root": "res://v7/art/runtime_crops_plant_only/",
+  "pivot": "bottom_center",
+  "ownership": "plant_only",
+  "forbidden_pixels": ["soil", "mound", "rocks", "plot_border", "background", "inventory_frame", "wide_ground_shadow"],
+  "common": {
+    "seed": "seed_stage0_plant_only.png",
+    "sprout": "sprout_stage1_plant_only.png"
+  },
+  "families": {
+    "carrot": ["seed_stage0_plant_only.png", "carrot_stage1_plant_only.png", "carrot_stage2_plant_only.png", "carrot_stage3_plant_only.png", "carrot_stage4_plant_only.png"],
+    "tomato": ["seed_stage0_plant_only.png", "tomato_stage1_plant_only.png", "tomato_stage2_plant_only.png", "tomato_stage3_plant_only.png", "tomato_stage4_plant_only.png"],
+    "pumpkin": ["seed_stage0_plant_only.png", "pumpkin_stage1_plant_only.png", "pumpkin_stage2_plant_only.png", "pumpkin_stage3_plant_only.png", "pumpkin_stage4_plant_only.png", "pumpkin_stage5_plant_only.png"]
+  },
+  "generation_method": "image edit/background extraction from canonical V2 WORLD crop sources; tight alpha-bound normalization",
+  "source_registry": "res://scripts/ui_asset_registry.gd::CROP_FRAMES"
+}

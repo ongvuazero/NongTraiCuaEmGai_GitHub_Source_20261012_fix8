@@ -1,0 +1,1623 @@
+[gd_scene format=3 uid="uid://funoc2tc5udd"]
+
+[ext_resource type="Script" uid="uid://cico2fxnn2d10" path="res://scripts/screens/field_screen.gd" id="1_6mcbl"]
+[ext_resource type="Texture2D" uid="uid://bbaes628ovtay" path="res://v7/art/runtime_crops_plant_only/carrot_stage2_plant_only.png" id="2_ymykm"]
+[ext_resource type="Texture2D" uid="uid://brkmxgljhu2ib" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/HUD/long_khi_chip.png" id="9_kc2kc"]
+[ext_resource type="Script" uid="uid://8oqb50ynbrgb" path="res://tools/editor/field_preview_controller.gd" id="11_v24li"]
+[ext_resource type="Script" uid="uid://ly70rb8jfbbo" path="res://tools/editor/field_world_tuning.gd" id="11_world_tuning"]
+[ext_resource type="Texture2D" uid="uid://cd8n1r000pemc" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/TITLE_SAVE_HOME/title_button_frame_default.png" id="12_fhw48"]
+[ext_resource type="Texture2D" uid="uid://bmdgvg6h6fbse" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/ITEMS/harvest_basket.png" id="37_tnlii"]
+[ext_resource type="Texture2D" uid="uid://cjsiygj7i08mi" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/SEED_PICKER/carrot_selected.png" id="42_ynwwd"]
+[ext_resource type="Texture2D" uid="uid://c6b2r76obadf8" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/SEED_PICKER/tomato_default.png" id="43_6ruwj"]
+[ext_resource type="Texture2D" uid="uid://b3bfhwcn57anu" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/ANIMATION/FARMER/idle/frame_01.png" id="44_jio7s"]
+[ext_resource type="Texture2D" uid="uid://cf4nv3dj4wwl4" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/SEED_PICKER/pumpkin_default.png" id="44_kvag2"]
+[ext_resource type="Texture2D" path="res://assets/field_approved_v1/runtime/field_background_clear_v2_20261008.png" id="45_recon_bg"]
+[ext_resource type="Texture2D" uid="uid://dukc7ksyl0to2" path="res://assets/field_approved_v1/runtime/ui/logo.png" id="47_recon_logo"]
+[ext_resource type="Texture2D" uid="uid://dkterkomx2jye" path="res://assets/field_approved_v1/runtime/ui/back_button.png" id="48_recon_back"]
+[ext_resource type="Texture2D" uid="uid://cuov3cmdcwb6n" path="res://assets/field_approved_v1/runtime/ui/hud_day_frame.png" id="49_recon_day"]
+[ext_resource type="Texture2D" uid="uid://b8yca2slc1nwo" path="res://assets/field_approved_v1/runtime/ui/hud_coins_frame.png" id="50_recon_coins"]
+[ext_resource type="Texture2D" uid="uid://bon35lffoj7lg" path="res://assets/field_approved_v1/runtime/ui/hud_energy_frame.png" id="51_recon_energy"]
+[ext_resource type="Texture2D" uid="uid://b0xnlc6fl23lu" path="res://assets/field_approved_v1/runtime/ui/hud_plus_button.png" id="52_recon_plus"]
+[ext_resource type="Texture2D" uid="uid://6qohsa8rkmk1" path="res://assets/field_approved_v1/runtime/ui/bottom_action_tray_approved.png" id="53_v6_tray"]
+[ext_resource type="Texture2D" uid="uid://byav56rfvl76f" path="res://assets/field_approved_v1/runtime/ui/action_till_approved.png" id="54_v6_till"]
+[ext_resource type="Texture2D" uid="uid://cvtbnebovhscg" path="res://assets/field_approved_v1/runtime/ui/action_plant_approved.png" id="55_v6_plant"]
+[ext_resource type="Texture2D" uid="uid://p5d3rnadar5d" path="res://assets/field_approved_v1/runtime/ui/action_water_approved.png" id="56_v6_water"]
+[ext_resource type="Texture2D" uid="uid://ce6owo1xx00tq" path="res://assets/field_approved_v1/runtime/ui/action_fertilize_approved.png" id="57_v6_fert"]
+[ext_resource type="Texture2D" uid="uid://do1e04rs33h42" path="res://assets/field_approved_v1/runtime/ui/action_harvest_approved.png" id="58_v6_harvest"]
+[ext_resource type="Texture2D" uid="uid://bgrujqu0i08r0" path="res://assets/field_approved_v1/runtime/ui/action_next_day_approved.png" id="59_v6_next"]
+[ext_resource type="Texture2D" uid="uid://ifu6aptjcfi1" path="res://assets/field_approved_v1/runtime/ui/crop_info_panel_blank_approved.png" id="60_v6_panel"]
+
+[sub_resource type="AtlasTexture" id="AtlasReconLogo"]
+atlas = ExtResource("47_recon_logo")
+region = Rect2(4, 6, 435, 177)
+
+[sub_resource type="AtlasTexture" id="AtlasReconDay"]
+atlas = ExtResource("49_recon_day")
+region = Rect2(12, 6, 309, 97)
+
+[sub_resource type="AtlasTexture" id="AtlasReconCoins"]
+atlas = ExtResource("50_recon_coins")
+region = Rect2(6, 18, 279, 81)
+
+[sub_resource type="AtlasTexture" id="AtlasReconEnergy"]
+atlas = ExtResource("51_recon_energy")
+region = Rect2(12, 18, 257, 81)
+
+[sub_resource type="AtlasTexture" id="AtlasReconPlus"]
+atlas = ExtResource("52_recon_plus")
+region = Rect2(0, 26, 89, 79)
+
+[sub_resource type="StyleBoxEmpty" id="StyleTransparent"]
+
+[sub_resource type="AtlasTexture" id="AtlasReconBack"]
+atlas = ExtResource("48_recon_back")
+region = Rect2(10, 12, 127, 115)
+
+[sub_resource type="StyleBoxFlat" id="StyleSeedGroup"]
+bg_color = Color(1, 0.960784, 0.839216, 0.98)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.72549, 0.52549, 0.301961, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_color = Color(0.180392, 0.101961, 0.0470588, 0.3)
+shadow_size = 6
+shadow_offset = Vector2(0, 4)
+
+[sub_resource type="StyleBoxFlat" id="FieldToolSelected"]
+bg_color = Color(1, 0.88, 0.45, 0.035)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(1, 0.83, 0.29, 1)
+corner_radius_top_left = 14
+corner_radius_top_right = 14
+corner_radius_bottom_right = 14
+corner_radius_bottom_left = 14
+shadow_color = Color(0.99, 0.75, 0.18, 0.38)
+shadow_size = 3
+
+[sub_resource type="StyleBoxFlat" id="FieldToolHover"]
+bg_color = Color(0.94, 0.96, 0.63, 0.025)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.73, 0.84, 0.36, 1)
+corner_radius_top_left = 14
+corner_radius_top_right = 14
+corner_radius_bottom_right = 14
+corner_radius_bottom_left = 14
+
+[sub_resource type="StyleBoxFlat" id="FieldToolPressed"]
+bg_color = Color(0.33, 0.22, 0.11, 0.08)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.57, 0.38, 0.16, 1)
+corner_radius_top_left = 14
+corner_radius_top_right = 14
+corner_radius_bottom_right = 14
+corner_radius_bottom_left = 14
+
+[sub_resource type="StyleBoxFlat" id="FieldToolDisabled"]
+bg_color = Color(0.43, 0.37, 0.29, 0.02)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.46, 0.40, 0.30, 0.65)
+corner_radius_top_left = 14
+corner_radius_top_right = 14
+corner_radius_bottom_right = 14
+corner_radius_bottom_left = 14
+
+[node name="FieldGameplayRoot" type="Control" unique_id=470589041]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_6mcbl")
+tool_selected_style = SubResource("FieldToolSelected")
+tool_hover_style = SubResource("FieldToolHover")
+tool_pressed_style = SubResource("FieldToolPressed")
+tool_disabled_style = SubResource("FieldToolDisabled")
+metadata/v7_visual_status = "V7_PHASE2_FIELD_CORE_CANONICAL"
+metadata/FIELD_PRODUCTION_LOCK = "PASS"
+metadata/field_production_status = "FIELD_PRODUCTION_LOCK_PASS"
+metadata/FIELD_GAMEPLAY_FUNCTIONAL_LOCK = "PASS"
+metadata/FIELD_GAMEPLAY_DATA_LOCK = "PASS"
+metadata/FIELD_GAMEPLAY_SAVE_LOCK = "PASS"
+metadata/FIELD_GAMEPLAY_ROUTE_LOCK = "PASS"
+metadata/FIELD_WORLD_RENDER_LOCK = "PASS"
+metadata/FIELD_GAMEPLAY_VISUAL_LOCK = "OPEN"
+metadata/FIELD_GAMEPLAY_UI_TUNING_MODE = "ACTIVE"
+metadata/projection_source = "res://v7/runtime/field_projection_v7_2.gd"
+metadata/true_wysiwyg_v2 = true
+metadata/TRUE_WYSIWYG_V2 = "PASS"
+metadata/wysiwyg_generation = "V3_CLEAN_BINDING"
+
+[node name="EDIT_ME" type="Control" parent="." unique_id=1168936993]
+editor_description = "USER MANUAL EDIT AREA. Expand this group to adjust Screen 05."
+anchors_preset = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+mouse_filter = 2
+
+[node name="Background" type="Sprite2D" parent="EDIT_ME" unique_id=1342537852]
+z_index = -100
+scale = Vector2(0.76555026, 0.76514345)
+texture = ExtResource("45_recon_bg")
+centered = false
+
+[node name="FieldArea" type="Control" parent="EDIT_ME" unique_id=181363590]
+editor_description = "MANUAL: Move/adjust the 12 runtime plots here. Base ground art is partly baked into Background, so large plot repositioning may require later background/art correction. WAIT FOR USER DECISION."
+anchors_preset = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+
+[node name="WorldRenderer" type="Node2D" parent="EDIT_ME/FieldArea" unique_id=1321193300]
+z_index = 20
+script = ExtResource("11_world_tuning")
+
+[node name="Plot01" type="Control" parent="EDIT_ME/FieldArea" unique_id=964119827]
+editor_description = "REAL_EDITABLE_VISUAL layers for crop state plus GUIDE_OR_INTERACTION_NODE bounds. The untiled base soil/path geometry is BAKED_INTO_BACKGROUND; move with care."
+visible = false
+anchors_preset = 0
+offset_left = 285.0
+offset_top = 288.0
+offset_right = 428.0
+offset_bottom = 341.0
+
+[node name="CropVisual" type="Sprite2D" parent="EDIT_ME/FieldArea/Plot01" unique_id=1500412087]
+visible = false
+z_index = 1
+position = Vector2(70.77249, 30.850006)
+scale = Vector2(0.04, 0.04)
+texture = ExtResource("2_ymykm")
+centered = false
+offset = Vector2(-578.5, -1187)
+metadata/crop_fit_reference_scale = 0.04
+
+[node name="TECHNICAL" type="Control" parent="EDIT_ME/FieldArea/Plot01" unique_id=56462319]
+editor_description = "DO NOT EDIT unless debugging plot state/click bounds."
+anchors_preset = 0
+offset_right = 143.0
+offset_bottom = 53.0
+mouse_filter = 2
+
+[node name="SoilVisual" type="Polygon2D" parent="EDIT_ME/FieldArea/Plot01/TECHNICAL" unique_id=1593925989]
+visible = false
+z_index = -2
+color = Color(0.45882353, 0.27450982, 0.16078432, 1)
+polygon = PackedVector2Array(10.218628, -4.324585, 143.09164, -4.324585, 136.34482, 51.307404, -1.6424866, 51.307404)
+
+[node name="WateredOverlay" type="Polygon2D" parent="EDIT_ME/FieldArea/Plot01/TECHNICAL" unique_id=237475038]
+visible = false
+z_index = -1
+color = Color(0.28627452, 0.19215687, 0.14901961, 0.65882355)
+polygon = PackedVector2Array(10.218628, -4.324585, 143.09164, -4.324585, 136.34482, 51.307404, -1.6424866, 51.307404)
+
+[node name="FertilizedOverlay" type="Polygon2D" parent="EDIT_ME/FieldArea/Plot01/TECHNICAL" unique_id=1156854615]
+visible = false
+z_index = -1
+color = Color(0.8392157, 0.6901961, 0.2901961, 0.33333334)
+polygon = PackedVector2Array(10.218628, -4.324585, 143.09164, -4.324585, 136.34482, 51.307404, -1.6424866, 51.307404)
+
+[node name="SelectionFrame" type="Line2D" parent="EDIT_ME/FieldArea/Plot01/TECHNICAL" unique_id=607248809]
+z_index = 2
+points = PackedVector2Array(10.218628, -4.324585, 143.09164, -4.324585, 136.34482, 51.307404, -1.6424866, 51.307404)
+closed = true
+width = 4.0
+default_color = Color(1, 0.90588236, 0.47843137, 1)
+
+[node name="ClickTarget" type="Button" parent="EDIT_ME/FieldArea/Plot01/TECHNICAL" unique_id=927323379]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_right = 143.0
+offset_bottom = 53.0
+flat = true
+
+[node name="Plot02" type="Control" parent="EDIT_ME/FieldArea" unique_id=1335188192]
+editor_description = "REAL_EDITABLE_VISUAL layers for crop state plus GUIDE_OR_INTERACTION_NODE bounds. The untiled base soil/path geometry is BAKED_INTO_BACKGROUND; move with care."
+visible = false
+anchors_preset = 0
+offset_left = 438.0
+offset_top = 288.0
+offset_right = 581.0
+offset_bottom = 341.0
+
+[node name="CropVisual" type="Sprite2D" parent="EDIT_ME/FieldArea/Plot02" unique_id=1358983364]
+visible = false
+z_index = 1
+position = Vector2(71.23752, 30.850006)
+scale = Vector2(0.04, 0.04)
+texture = ExtResource("2_ymykm")
+centered = false
+offset = Vector2(-578.5, -1187)
+metadata/crop_fit_reference_scale = 0.04
+
+[node name="TECHNICAL" type="Control" parent="EDIT_ME/FieldArea/Plot02" unique_id=2078740960]
+editor_description = "DO NOT EDIT unless debugging plot state/click bounds."
+anchors_preset = 0
+offset_right = 143.0
+offset_bottom = 53.0
+mouse_filter = 2
+
+[node name="SoilVisual" type="Polygon2D" parent="EDIT_ME/FieldArea/Plot02/TECHNICAL" unique_id=580015022]
+visible = false
+z_index = -2
+color = Color(0.45882353, 0.27450982, 0.16078432, 1)
+polygon = PackedVector2Array(6.923645, -4.324585, 139.79657, -4.324585, 138.99664, 51.307404, 1.0093689, 51.307404)
+
+[node name="WateredOverlay" type="Polygon2D" parent="EDIT_ME/FieldArea/Plot02/TECHNICAL" unique_id=398642030]
+visible = false
+z_index = -1
+color = Color(0.28627452, 0.19215687, 0.14901961, 0.65882355)
+polygon = PackedVector2Array(6.923645, -4.324585, 139.79657, -4.324585, 138.99664, 51.307404, 1.0093689, 51.307404)
+
+[node name="FertilizedOverlay" type="Polygon2D" parent="EDIT_ME/FieldArea/Plot02/TECHNICAL" unique_id=1636512935]
+visible = false
+z_index = -1
+color = Color(0.8392157, 0.6901961, 0.2901961, 0.33333334)
+polygon = PackedVector2Array(6.923645, -4.324585, 139.79657, -4.324585, 138.99664, 51.307404, 1.0093689, 51.307404)
+
+[node name="SelectionFrame" type="Line2D" parent="EDIT_ME/FieldArea/Plot02/TECHNICAL" unique_id=1632302624]
+visible = false
+z_index = 2
+points = PackedVector2Array(6.923645, -4.324585, 139.79657, -4.324585, 138.99664, 51.307404, 1.0093689, 51.307404)
+closed = true
+width = 4.0
+default_color = Color(1, 0.90588236, 0.47843137, 1)
+
+[node name="ClickTarget" type="Button" parent="EDIT_ME/FieldArea/Plot02/TECHNICAL" unique_id=824830738]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_right = 143.0
+offset_bottom = 53.0
+flat = true
+
+[node name="Plot03" type="Control" parent="EDIT_ME/FieldArea" unique_id=535266959]
+editor_description = "REAL_EDITABLE_VISUAL layers for crop state plus GUIDE_OR_INTERACTION_NODE bounds. The untiled base soil/path geometry is BAKED_INTO_BACKGROUND; move with care."
+visible = false
+anchors_preset = 0
+offset_left = 592.0
+offset_top = 288.0
+offset_right = 735.0
+offset_bottom = 341.0
+
+[node name="CropVisual" type="Sprite2D" parent="EDIT_ME/FieldArea/Plot03" unique_id=1463668243]
+visible = false
+z_index = 1
+position = Vector2(71.702515, 30.850006)
+scale = Vector2(0.04, 0.04)
+texture = ExtResource("2_ymykm")
+centered = false
+offset = Vector2(-578.5, -1187)
+metadata/crop_fit_reference_scale = 0.04
+
+[node name="TECHNICAL" type="Control" parent="EDIT_ME/FieldArea/Plot03" unique_id=1977145129]
+editor_description = "DO NOT EDIT unless debugging plot state/click bounds."
+anchors_preset = 0
+offset_right = 143.0
+offset_bottom = 53.0
+mouse_filter = 2
+
+[node name="SoilVisual" type="Polygon2D" parent="EDIT_ME/FieldArea/Plot03/TECHNICAL" unique_id=833414456]
+visible = false
+z_index = -2
+color = Color(0.45882353, 0.27450982, 0.16078432, 1)
+polygon = PackedVector2Array(3.628601, -4.324585, 136.50159, -4.324585, 141.6485, 51.307404, 3.6611938, 51.307404)
+
+[node name="WateredOverlay" type="Polygon2D" parent="EDIT_ME/FieldArea/Plot03/TECHNICAL" unique_id=412763742]
+visible = false
+z_index = -1
+color = Color(0.28627452, 0.19215687, 0.14901961, 0.65882355)
+polygon = PackedVector2Array(3.628601, -4.324585, 136.50159, -4.324585, 141.6485, 51.307404, 3.6611938, 51.307404)
+
+[node name="FertilizedOverlay" type="Polygon2D" parent="EDIT_ME/FieldArea/Plot03/TECHNICAL" unique_id=1542139433]
+visible = false
+z_index = -1
+color = Color(0.8392157, 0.6901961, 0.2901961, 0.33333334)
+polygon = PackedVector2Array(3.628601, -4.324585, 136.50159, -4.324585, 141.6485, 51.307404, 3.6611938, 51.307404)
+
+[node name="SelectionFrame" type="Line2D" parent="EDIT_ME/FieldArea/Plot03/TECHNICAL" unique_id=1379151794]
+visible = false
+z_index = 2
+points = PackedVector2Array(3.628601, -4.324585, 136.50159, -4.324585, 141.6485, 51.307404, 3.6611938, 51.307404)
+closed = true
+width = 4.0
+default_color = Color(1, 0.90588236, 0.47843137, 1)
+
+[node name="ClickTarget" type="Button" parent="EDIT_ME/FieldArea/Plot03/TECHNICAL" unique_id=1124025425]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_right = 143.0
+offset_bottom = 53.0
+flat = true
+
+[node name="Plot04" type="Control" parent="EDIT_ME/FieldArea" unique_id=97173044]
+editor_description = "REAL_EDITABLE_VISUAL layers for crop state plus GUIDE_OR_INTERACTION_NODE bounds. The untiled base soil/path geometry is BAKED_INTO_BACKGROUND; move with care."
+visible = false
+anchors_preset = 0
+offset_left = 746.0
+offset_top = 288.0
+offset_right = 889.0
+offset_bottom = 341.0
+
+[node name="CropVisual" type="Sprite2D" parent="EDIT_ME/FieldArea/Plot04" unique_id=730514526]
+visible = false
+z_index = 1
+position = Vector2(72.16748, 30.850006)
+scale = Vector2(0.04, 0.04)
+texture = ExtResource("2_ymykm")
+centered = false
+offset = Vector2(-578.5, -1187)
+metadata/crop_fit_reference_scale = 0.04
+
+[node name="TECHNICAL" type="Control" parent="EDIT_ME/FieldArea/Plot04" unique_id=1687259206]
+editor_description = "DO NOT EDIT unless debugging plot state/click bounds."
+anchors_preset = 0
+offset_right = 143.0
+offset_bottom = 53.0
+mouse_filter = 2
+
+[node name="SoilVisual" type="Polygon2D" parent="EDIT_ME/FieldArea/Plot04/TECHNICAL" unique_id=894040639]
+visible = false
+z_index = -2
+color = Color(0.45882353, 0.27450982, 0.16078432, 1)
+polygon = PackedVector2Array(0.33355713, -4.324585, 133.20648, -4.324585, 144.3003, 51.307404, 6.3129883, 51.307404)
+
+[node name="WateredOverlay" type="Polygon2D" parent="EDIT_ME/FieldArea/Plot04/TECHNICAL" unique_id=689153170]
+visible = false
+z_index = -1
+color = Color(0.28627452, 0.19215687, 0.14901961, 0.65882355)
+polygon = PackedVector2Array(0.33355713, -4.324585, 133.20648, -4.324585, 144.3003, 51.307404, 6.3129883, 51.307404)
+
+[node name="FertilizedOverlay" type="Polygon2D" parent="EDIT_ME/FieldArea/Plot04/TECHNICAL" unique_id=577687780]
+visible = false
+z_index = -1
+color = Color(0.8392157, 0.6901961, 0.2901961, 0.33333334)
+polygon = PackedVector2Array(0.33355713, -4.324585, 133.20648, -4.324585, 144.3003, 51.307404, 6.3129883, 51.307404)
+
+[node name="SelectionFrame" type="Line2D" parent="EDIT_ME/FieldArea/Plot04/TECHNICAL" unique_id=432122843]
+visible = false
+z_index = 2
+points = PackedVector2Array(0.33355713, -4.324585, 133.20648, -4.324585, 144.3003, 51.307404, 6.3129883, 51.307404)
+closed = true
+width = 4.0
+default_color = Color(1, 0.90588236, 0.47843137, 1)
+
+[node name="ClickTarget" type="Button" parent="EDIT_ME/FieldArea/Plot04/TECHNICAL" unique_id=263029327]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_right = 143.0
+offset_bottom = 53.0
+flat = true
+
+[node name="Plot05" type="Control" parent="EDIT_ME/FieldArea" unique_id=112244386]
+editor_description = "REAL_EDITABLE_VISUAL layers for crop state plus GUIDE_OR_INTERACTION_NODE bounds. The untiled base soil/path geometry is BAKED_INTO_BACKGROUND; move with care."
+visible = false
+anchors_preset = 0
+offset_left = 265.0
+offset_top = 367.0
+offset_right = 435.0
+offset_bottom = 435.0
+
+[node name="CropVisual" type="Sprite2D" parent="EDIT_ME/FieldArea/Plot05" unique_id=34040483]
+visible = false
+z_index = 1
+position = Vector2(83.04181, 45.7088)
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("2_ymykm")
+centered = false
+offset = Vector2(-578.5, -1187)
+metadata/crop_fit_reference_scale = 0.05
+
+[node name="TECHNICAL" type="Control" parent="EDIT_ME/FieldArea/Plot05" unique_id=1711817996]
+editor_description = "DO NOT EDIT unless debugging plot state/click bounds."
+anchors_preset = 0
+offset_right = 170.0
+offset_bottom = 68.0
+mouse_filter = 2
+
+[node name="SoilVisual" type="Polygon2D" parent="EDIT_ME/FieldArea/Plot05/TECHNICAL" unique_id=2067698288]
+visible = false
+z_index = -2
+color = Color(0.45882353, 0.27450982, 0.16078432, 1)
+polygon = PackedVector2Array(21.636536, -5.662781, 161.62997, -5.662781, 152.2579, 71.615906, 5.160187, 71.615906)
+
+[node name="WateredOverlay" type="Polygon2D" parent="EDIT_ME/FieldArea/Plot05/TECHNICAL" unique_id=678245048]
+visible = false
+z_index = -1
+color = Color(0.28627452, 0.19215687, 0.14901961, 0.65882355)
+polygon = PackedVector2Array(21.636536, -5.662781, 161.62997, -5.662781, 152.2579, 71.615906, 5.160187, 71.615906)
+
+[node name="FertilizedOverlay" type="Polygon2D" parent="EDIT_ME/FieldArea/Plot05/TECHNICAL" unique_id=256424049]
+visible = false
+z_index = -1
+color = Color(0.8392157, 0.6901961, 0.2901961, 0.33333334)
+polygon = PackedVector2Array(21.636536, -5.662781, 161.62997, -5.662781, 152.2579, 71.615906, 5.160187, 71.615906)
+
+[node name="SelectionFrame" type="Line2D" parent="EDIT_ME/FieldArea/Plot05/TECHNICAL" unique_id=1561211221]
+visible = false
+z_index = 2
+points = PackedVector2Array(21.636536, -5.662781, 161.62997, -5.662781, 152.2579, 71.615906, 5.160187, 71.615906)
+closed = true
+width = 4.0
+default_color = Color(1, 0.90588236, 0.47843137, 1)
+
+[node name="ClickTarget" type="Button" parent="EDIT_ME/FieldArea/Plot05/TECHNICAL" unique_id=266206023]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_right = 170.0
+offset_bottom = 68.0
+flat = true
+
+[node name="Plot06" type="Control" parent="EDIT_ME/FieldArea" unique_id=22425062]
+editor_description = "REAL_EDITABLE_VISUAL layers for crop state plus GUIDE_OR_INTERACTION_NODE bounds. The untiled base soil/path geometry is BAKED_INTO_BACKGROUND; move with care."
+visible = false
+anchors_preset = 0
+offset_left = 442.0
+offset_top = 367.0
+offset_right = 612.0
+offset_bottom = 435.0
+
+[node name="CropVisual" type="Sprite2D" parent="EDIT_ME/FieldArea/Plot06" unique_id=308084096]
+visible = false
+z_index = 1
+position = Vector2(84.29346, 45.7088)
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("2_ymykm")
+centered = false
+offset = Vector2(-578.5, -1187)
+metadata/crop_fit_reference_scale = 0.05
+
+[node name="TECHNICAL" type="Control" parent="EDIT_ME/FieldArea/Plot06" unique_id=659723226]
+editor_description = "DO NOT EDIT unless debugging plot state/click bounds."
+anchors_preset = 0
+offset_right = 170.0
+offset_bottom = 68.0
+mouse_filter = 2
+
+[node name="SoilVisual" type="Polygon2D" parent="EDIT_ME/FieldArea/Plot06/TECHNICAL" unique_id=1587636627]
+visible = false
+z_index = -2
+color = Color(0.45882353, 0.27450982, 0.16078432, 1)
+polygon = PackedVector2Array(17.396759, -5.662781, 157.39014, -5.662781, 156.27893, 71.615906, 9.181213, 71.615906)
+
+[node name="WateredOverlay" type="Polygon2D" parent="EDIT_ME/FieldArea/Plot06/TECHNICAL" unique_id=403538600]
+visible = false
+z_index = -1
+color = Color(0.28627452, 0.19215687, 0.14901961, 0.65882355)
+polygon = PackedVector2Array(17.396759, -5.662781, 157.39014, -5.662781, 156.27893, 71.615906, 9.181213, 71.615906)
+
+[node name="FertilizedOverlay" type="Polygon2D" parent="EDIT_ME/FieldArea/Plot06/TECHNICAL" unique_id=2061355165]
+visible = false
+z_index = -1
+color = Color(0.8392157, 0.6901961, 0.2901961, 0.33333334)
+polygon = PackedVector2Array(17.396759, -5.662781, 157.39014, -5.662781, 156.27893, 71.615906, 9.181213, 71.615906)
+
+[node name="SelectionFrame" type="Line2D" parent="EDIT_ME/FieldArea/Plot06/TECHNICAL" unique_id=409125097]
+visible = false
+z_index = 2
+points = PackedVector2Array(17.396759, -5.662781, 157.39014, -5.662781, 156.27893, 71.615906, 9.181213, 71.615906)
+closed = true
+width = 4.0
+default_color = Color(1, 0.90588236, 0.47843137, 1)
+
+[node name="ClickTarget" type="Button" parent="EDIT_ME/FieldArea/Plot06/TECHNICAL" unique_id=366595261]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_right = 170.0
+offset_bottom = 68.0
+flat = true
+
+[node name="Plot07" type="Control" parent="EDIT_ME/FieldArea" unique_id=1138947479]
+editor_description = "REAL_EDITABLE_VISUAL layers for crop state plus GUIDE_OR_INTERACTION_NODE bounds. The untiled base soil/path geometry is BAKED_INTO_BACKGROUND; move with care."
+visible = false
+anchors_preset = 0
+offset_left = 620.0
+offset_top = 367.0
+offset_right = 790.0
+offset_bottom = 435.0
+
+[node name="CropVisual" type="Sprite2D" parent="EDIT_ME/FieldArea/Plot07" unique_id=1240628493]
+visible = false
+z_index = 1
+position = Vector2(85.545044, 45.7088)
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("2_ymykm")
+centered = false
+offset = Vector2(-578.5, -1187)
+metadata/crop_fit_reference_scale = 0.05
+
+[node name="TECHNICAL" type="Control" parent="EDIT_ME/FieldArea/Plot07" unique_id=1703632142]
+editor_description = "DO NOT EDIT unless debugging plot state/click bounds."
+anchors_preset = 0
+offset_right = 170.0
+offset_bottom = 68.0
+mouse_filter = 2
+
+[node name="SoilVisual" type="Polygon2D" parent="EDIT_ME/FieldArea/Plot07/TECHNICAL" unique_id=91965440]
+visible = false
+z_index = -2
+color = Color(0.45882353, 0.27450982, 0.16078432, 1)
+polygon = PackedVector2Array(13.156921, -5.662781, 153.15033, -5.662781, 160.29993, 71.615906, 13.202209, 71.615906)
+
+[node name="WateredOverlay" type="Polygon2D" parent="EDIT_ME/FieldArea/Plot07/TECHNICAL" unique_id=1176849627]
+visible = false
+z_index = -1
+color = Color(0.28627452, 0.19215687, 0.14901961, 0.65882355)
+polygon = PackedVector2Array(13.156921, -5.662781, 153.15033, -5.662781, 160.29993, 71.615906, 13.202209, 71.615906)
+
+[node name="FertilizedOverlay" type="Polygon2D" parent="EDIT_ME/FieldArea/Plot07/TECHNICAL" unique_id=1861087653]
+visible = false
+z_index = -1
+color = Color(0.8392157, 0.6901961, 0.2901961, 0.33333334)
+polygon = PackedVector2Array(13.156921, -5.662781, 153.15033, -5.662781, 160.29993, 71.615906, 13.202209, 71.615906)
+
+[node name="SelectionFrame" type="Line2D" parent="EDIT_ME/FieldArea/Plot07/TECHNICAL" unique_id=417451375]
+visible = false
+z_index = 2
+points = PackedVector2Array(13.156921, -5.662781, 153.15033, -5.662781, 160.29993, 71.615906, 13.202209, 71.615906)
+closed = true
+width = 4.0
+default_color = Color(1, 0.90588236, 0.47843137, 1)
+
+[node name="ClickTarget" type="Button" parent="EDIT_ME/FieldArea/Plot07/TECHNICAL" unique_id=1814106790]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_right = 170.0
+offset_bottom = 68.0
+flat = true
+
+[node name="Plot08" type="Control" parent="EDIT_ME/FieldArea" unique_id=2106897679]
+editor_description = "REAL_EDITABLE_VISUAL layers for crop state plus GUIDE_OR_INTERACTION_NODE bounds. The untiled base soil/path geometry is BAKED_INTO_BACKGROUND; move with care."
+visible = false
+anchors_preset = 0
+offset_left = 798.0
+offset_top = 367.0
+offset_right = 968.0
+offset_bottom = 435.0
+
+[node name="CropVisual" type="Sprite2D" parent="EDIT_ME/FieldArea/Plot08" unique_id=1439222255]
+visible = false
+z_index = 1
+position = Vector2(86.79675, 45.7088)
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("2_ymykm")
+centered = false
+offset = Vector2(-578.5, -1187)
+metadata/crop_fit_reference_scale = 0.05
+
+[node name="TECHNICAL" type="Control" parent="EDIT_ME/FieldArea/Plot08" unique_id=1021464514]
+editor_description = "DO NOT EDIT unless debugging plot state/click bounds."
+anchors_preset = 0
+offset_right = 170.0
+offset_bottom = 68.0
+mouse_filter = 2
+
+[node name="SoilVisual" type="Polygon2D" parent="EDIT_ME/FieldArea/Plot08/TECHNICAL" unique_id=1393833642]
+visible = false
+z_index = -2
+color = Color(0.45882353, 0.27450982, 0.16078432, 1)
+polygon = PackedVector2Array(8.917175, -5.662781, 148.91052, -5.662781, 164.32098, 71.615906, 17.223267, 71.615906)
+
+[node name="WateredOverlay" type="Polygon2D" parent="EDIT_ME/FieldArea/Plot08/TECHNICAL" unique_id=1273836798]
+visible = false
+z_index = -1
+color = Color(0.28627452, 0.19215687, 0.14901961, 0.65882355)
+polygon = PackedVector2Array(8.917175, -5.662781, 148.91052, -5.662781, 164.32098, 71.615906, 17.223267, 71.615906)
+
+[node name="FertilizedOverlay" type="Polygon2D" parent="EDIT_ME/FieldArea/Plot08/TECHNICAL" unique_id=2056460854]
+visible = false
+z_index = -1
+color = Color(0.8392157, 0.6901961, 0.2901961, 0.33333334)
+polygon = PackedVector2Array(8.917175, -5.662781, 148.91052, -5.662781, 164.32098, 71.615906, 17.223267, 71.615906)
+
+[node name="SelectionFrame" type="Line2D" parent="EDIT_ME/FieldArea/Plot08/TECHNICAL" unique_id=1349019200]
+visible = false
+z_index = 2
+points = PackedVector2Array(8.917175, -5.662781, 148.91052, -5.662781, 164.32098, 71.615906, 17.223267, 71.615906)
+closed = true
+width = 4.0
+default_color = Color(1, 0.90588236, 0.47843137, 1)
+
+[node name="ClickTarget" type="Button" parent="EDIT_ME/FieldArea/Plot08/TECHNICAL" unique_id=1938401075]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_right = 170.0
+offset_bottom = 68.0
+flat = true
+
+[node name="Plot09" type="Control" parent="EDIT_ME/FieldArea" unique_id=565486079]
+editor_description = "REAL_EDITABLE_VISUAL layers for crop state plus GUIDE_OR_INTERACTION_NODE bounds. The untiled base soil/path geometry is BAKED_INTO_BACKGROUND; move with care."
+visible = false
+anchors_preset = 0
+offset_left = 232.0
+offset_top = 472.0
+offset_right = 432.0
+offset_bottom = 552.0
+
+[node name="CropVisual" type="Sprite2D" parent="EDIT_ME/FieldArea/Plot09" unique_id=548740253]
+visible = false
+z_index = 1
+position = Vector2(97.56613, 54.55298)
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("2_ymykm")
+centered = false
+offset = Vector2(-578.5, -1187)
+metadata/crop_fit_reference_scale = 0.06
+
+[node name="TECHNICAL" type="Control" parent="EDIT_ME/FieldArea/Plot09" unique_id=1923272556]
+editor_description = "DO NOT EDIT unless debugging plot state/click bounds."
+anchors_preset = 0
+offset_right = 200.0
+offset_bottom = 80.0
+mouse_filter = 2
+
+[node name="SoilVisual" type="Polygon2D" parent="EDIT_ME/FieldArea/Plot09/TECHNICAL" unique_id=2135009438]
+visible = false
+z_index = -2
+color = Color(0.45882353, 0.27450982, 0.16078432, 1)
+polygon = PackedVector2Array(32.8161, -5.3436584, 182.35052, -5.3436584, 171.52213, 83.94385, 13.779404, 83.94385)
+
+[node name="WateredOverlay" type="Polygon2D" parent="EDIT_ME/FieldArea/Plot09/TECHNICAL" unique_id=703475473]
+visible = false
+z_index = -1
+color = Color(0.28627452, 0.19215687, 0.14901961, 0.65882355)
+polygon = PackedVector2Array(32.8161, -5.3436584, 182.35052, -5.3436584, 171.52213, 83.94385, 13.779404, 83.94385)
+
+[node name="FertilizedOverlay" type="Polygon2D" parent="EDIT_ME/FieldArea/Plot09/TECHNICAL" unique_id=328493872]
+visible = false
+z_index = -1
+color = Color(0.8392157, 0.6901961, 0.2901961, 0.33333334)
+polygon = PackedVector2Array(32.8161, -5.3436584, 182.35052, -5.3436584, 171.52213, 83.94385, 13.779404, 83.94385)
+
+[node name="SelectionFrame" type="Line2D" parent="EDIT_ME/FieldArea/Plot09/TECHNICAL" unique_id=727603731]
+visible = false
+z_index = 2
+points = PackedVector2Array(32.8161, -5.3436584, 182.35052, -5.3436584, 171.52213, 83.94385, 13.779404, 83.94385)
+closed = true
+width = 4.0
+default_color = Color(1, 0.90588236, 0.47843137, 1)
+
+[node name="ClickTarget" type="Button" parent="EDIT_ME/FieldArea/Plot09/TECHNICAL" unique_id=732352339]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_right = 200.0
+offset_bottom = 80.0
+flat = true
+
+[node name="Plot10" type="Control" parent="EDIT_ME/FieldArea" unique_id=791222139]
+editor_description = "REAL_EDITABLE_VISUAL layers for crop state plus GUIDE_OR_INTERACTION_NODE bounds. The untiled base soil/path geometry is BAKED_INTO_BACKGROUND; move with care."
+visible = false
+anchors_preset = 0
+offset_left = 445.0
+offset_top = 472.0
+offset_right = 645.0
+offset_bottom = 552.0
+
+[node name="CropVisual" type="Sprite2D" parent="EDIT_ME/FieldArea/Plot10" unique_id=1377269574]
+visible = false
+z_index = 1
+position = Vector2(99.121826, 54.55298)
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("2_ymykm")
+centered = false
+offset = Vector2(-578.5, -1187)
+metadata/crop_fit_reference_scale = 0.06
+
+[node name="TECHNICAL" type="Control" parent="EDIT_ME/FieldArea/Plot10" unique_id=1166605596]
+editor_description = "DO NOT EDIT unless debugging plot state/click bounds."
+anchors_preset = 0
+offset_right = 200.0
+offset_bottom = 80.0
+mouse_filter = 2
+
+[node name="SoilVisual" type="Polygon2D" parent="EDIT_ME/FieldArea/Plot10/TECHNICAL" unique_id=1020039758]
+visible = false
+z_index = -2
+color = Color(0.45882353, 0.27450982, 0.16078432, 1)
+polygon = PackedVector2Array(27.969055, -5.3436584, 177.50348, -5.3436584, 176.2196, 83.94385, 18.476868, 83.94385)
+
+[node name="WateredOverlay" type="Polygon2D" parent="EDIT_ME/FieldArea/Plot10/TECHNICAL" unique_id=426392644]
+visible = false
+z_index = -1
+color = Color(0.28627452, 0.19215687, 0.14901961, 0.65882355)
+polygon = PackedVector2Array(27.969055, -5.3436584, 177.50348, -5.3436584, 176.2196, 83.94385, 18.476868, 83.94385)
+
+[node name="FertilizedOverlay" type="Polygon2D" parent="EDIT_ME/FieldArea/Plot10/TECHNICAL" unique_id=398119247]
+visible = false
+z_index = -1
+color = Color(0.8392157, 0.6901961, 0.2901961, 0.33333334)
+polygon = PackedVector2Array(27.969055, -5.3436584, 177.50348, -5.3436584, 176.2196, 83.94385, 18.476868, 83.94385)
+
+[node name="SelectionFrame" type="Line2D" parent="EDIT_ME/FieldArea/Plot10/TECHNICAL" unique_id=736458241]
+visible = false
+z_index = 2
+points = PackedVector2Array(27.969055, -5.3436584, 177.50348, -5.3436584, 176.2196, 83.94385, 18.476868, 83.94385)
+closed = true
+width = 4.0
+default_color = Color(1, 0.90588236, 0.47843137, 1)
+
+[node name="ClickTarget" type="Button" parent="EDIT_ME/FieldArea/Plot10/TECHNICAL" unique_id=1880240261]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_right = 200.0
+offset_bottom = 80.0
+flat = true
+
+[node name="Plot11" type="Control" parent="EDIT_ME/FieldArea" unique_id=2096899791]
+editor_description = "REAL_EDITABLE_VISUAL layers for crop state plus GUIDE_OR_INTERACTION_NODE bounds. The untiled base soil/path geometry is BAKED_INTO_BACKGROUND; move with care."
+visible = false
+anchors_preset = 0
+offset_left = 658.0
+offset_top = 472.0
+offset_right = 858.0
+offset_bottom = 552.0
+
+[node name="CropVisual" type="Sprite2D" parent="EDIT_ME/FieldArea/Plot11" unique_id=1038083838]
+visible = false
+z_index = 1
+position = Vector2(100.67749, 54.55298)
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("2_ymykm")
+centered = false
+offset = Vector2(-578.5, -1187)
+metadata/crop_fit_reference_scale = 0.06
+
+[node name="TECHNICAL" type="Control" parent="EDIT_ME/FieldArea/Plot11" unique_id=2091842920]
+editor_description = "DO NOT EDIT unless debugging plot state/click bounds."
+anchors_preset = 0
+offset_right = 200.0
+offset_bottom = 80.0
+mouse_filter = 2
+
+[node name="SoilVisual" type="Polygon2D" parent="EDIT_ME/FieldArea/Plot11/TECHNICAL" unique_id=1448823200]
+visible = false
+z_index = -2
+color = Color(0.45882353, 0.27450982, 0.16078432, 1)
+polygon = PackedVector2Array(23.121948, -5.3436584, 172.65637, -5.3436584, 180.91705, 83.94385, 23.174255, 83.94385)
+
+[node name="WateredOverlay" type="Polygon2D" parent="EDIT_ME/FieldArea/Plot11/TECHNICAL" unique_id=143928236]
+visible = false
+z_index = -1
+color = Color(0.28627452, 0.19215687, 0.14901961, 0.65882355)
+polygon = PackedVector2Array(23.121948, -5.3436584, 172.65637, -5.3436584, 180.91705, 83.94385, 23.174255, 83.94385)
+
+[node name="FertilizedOverlay" type="Polygon2D" parent="EDIT_ME/FieldArea/Plot11/TECHNICAL" unique_id=482787505]
+visible = false
+z_index = -1
+color = Color(0.8392157, 0.6901961, 0.2901961, 0.33333334)
+polygon = PackedVector2Array(23.121948, -5.3436584, 172.65637, -5.3436584, 180.91705, 83.94385, 23.174255, 83.94385)
+
+[node name="SelectionFrame" type="Line2D" parent="EDIT_ME/FieldArea/Plot11/TECHNICAL" unique_id=606421297]
+visible = false
+z_index = 2
+points = PackedVector2Array(23.121948, -5.3436584, 172.65637, -5.3436584, 180.91705, 83.94385, 23.174255, 83.94385)
+closed = true
+width = 4.0
+default_color = Color(1, 0.90588236, 0.47843137, 1)
+
+[node name="ClickTarget" type="Button" parent="EDIT_ME/FieldArea/Plot11/TECHNICAL" unique_id=1320011957]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_right = 200.0
+offset_bottom = 80.0
+flat = true
+
+[node name="Plot12" type="Control" parent="EDIT_ME/FieldArea" unique_id=934879525]
+editor_description = "REAL_EDITABLE_VISUAL layers for crop state plus GUIDE_OR_INTERACTION_NODE bounds. The untiled base soil/path geometry is BAKED_INTO_BACKGROUND; move with care."
+visible = false
+anchors_preset = 0
+offset_left = 871.0
+offset_top = 472.0
+offset_right = 1071.0
+offset_bottom = 552.0
+
+[node name="CropVisual" type="Sprite2D" parent="EDIT_ME/FieldArea/Plot12" unique_id=1444618795]
+visible = false
+z_index = 1
+position = Vector2(102.23309, 54.55298)
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("2_ymykm")
+centered = false
+offset = Vector2(-578.5, -1187)
+metadata/crop_fit_reference_scale = 0.06
+
+[node name="TECHNICAL" type="Control" parent="EDIT_ME/FieldArea/Plot12" unique_id=2005209027]
+editor_description = "DO NOT EDIT unless debugging plot state/click bounds."
+anchors_preset = 0
+offset_right = 200.0
+offset_bottom = 80.0
+mouse_filter = 2
+
+[node name="SoilVisual" type="Polygon2D" parent="EDIT_ME/FieldArea/Plot12/TECHNICAL" unique_id=1599003783]
+visible = false
+z_index = -2
+color = Color(0.45882353, 0.27450982, 0.16078432, 1)
+polygon = PackedVector2Array(18.274902, -5.3436584, 167.80933, -5.3436584, 185.6145, 83.94385, 27.871765, 83.94385)
+
+[node name="WateredOverlay" type="Polygon2D" parent="EDIT_ME/FieldArea/Plot12/TECHNICAL" unique_id=1733987960]
+visible = false
+z_index = -1
+color = Color(0.28627452, 0.19215687, 0.14901961, 0.65882355)
+polygon = PackedVector2Array(18.274902, -5.3436584, 167.80933, -5.3436584, 185.6145, 83.94385, 27.871765, 83.94385)
+
+[node name="FertilizedOverlay" type="Polygon2D" parent="EDIT_ME/FieldArea/Plot12/TECHNICAL" unique_id=185829403]
+visible = false
+z_index = -1
+color = Color(0.8392157, 0.6901961, 0.2901961, 0.33333334)
+polygon = PackedVector2Array(18.274902, -5.3436584, 167.80933, -5.3436584, 185.6145, 83.94385, 27.871765, 83.94385)
+
+[node name="SelectionFrame" type="Line2D" parent="EDIT_ME/FieldArea/Plot12/TECHNICAL" unique_id=2009691725]
+visible = false
+z_index = 2
+points = PackedVector2Array(18.274902, -5.3436584, 167.80933, -5.3436584, 185.6145, 83.94385, 27.871765, 83.94385)
+closed = true
+width = 4.0
+default_color = Color(1, 0.90588236, 0.47843137, 1)
+
+[node name="ClickTarget" type="Button" parent="EDIT_ME/FieldArea/Plot12/TECHNICAL" unique_id=1688308408]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_right = 200.0
+offset_bottom = 80.0
+flat = true
+
+[node name="FarmerVisual" type="TextureRect" parent="EDIT_ME/FieldArea" unique_id=1949175300]
+z_index = 20
+layout_mode = 0
+offset_left = 114.0
+offset_top = 286.0
+offset_right = 230.0
+offset_bottom = 482.0
+mouse_filter = 2
+texture = ExtResource("44_jio7s")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="CatVisual" type="TextureRect" parent="EDIT_ME/FieldArea" unique_id=196990718]
+visible = false
+z_index = 20
+layout_mode = 0
+offset_left = 59.0
+offset_top = 418.0
+offset_right = 141.0
+offset_bottom = 500.0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TopHUD" type="Control" parent="EDIT_ME" unique_id=1907816168]
+z_index = 100
+anchors_preset = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+mouse_filter = 2
+
+[node name="Logo" type="TextureRect" parent="EDIT_ME/TopHUD" unique_id=874174580]
+layout_mode = 0
+offset_left = 25.26
+offset_top = 12.24
+offset_right = 260.28
+offset_bottom = 110.18
+mouse_filter = 2
+texture = SubResource("AtlasReconLogo")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="HUD_DaySeasonChip" type="TextureRect" parent="EDIT_ME/TopHUD" unique_id=1013746792]
+layout_mode = 0
+offset_left = 584.88
+offset_top = 13.01
+offset_right = 772.44
+offset_bottom = 61.98
+mouse_filter = 2
+texture = SubResource("AtlasReconDay")
+expand_mode = 1
+
+[node name="DayValueMask" type="ColorRect" parent="EDIT_ME/TopHUD" unique_id=603704250]
+visible = false
+layout_mode = 0
+offset_left = 640.0
+offset_top = 23.0
+offset_right = 766.0
+offset_bottom = 55.0
+mouse_filter = 2
+color = Color(0.988, 0.922, 0.773, 0.98)
+
+[node name="HUD_DaySeasonLabel" type="Label" parent="EDIT_ME/TopHUD" unique_id=106371759]
+layout_mode = 0
+offset_left = 640.0
+offset_top = 16.0
+offset_right = 766.0
+offset_bottom = 60.0
+theme_override_colors/font_color = Color(0.23137255, 0.15686275, 0.101960786, 1)
+theme_override_constants/line_spacing = -10
+theme_override_font_sizes/font_size = 14
+text = "DAY 1 · SPRING"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HUD_CoinChip" type="TextureRect" parent="EDIT_ME/TopHUD" unique_id=2079378456]
+layout_mode = 0
+offset_left = 799.23
+offset_top = 13.77
+offset_right = 968.42
+offset_bottom = 61.97
+mouse_filter = 2
+texture = SubResource("AtlasReconCoins")
+expand_mode = 1
+
+[node name="CoinValueMask" type="ColorRect" parent="EDIT_ME/TopHUD" unique_id=1463785024]
+visible = false
+layout_mode = 0
+offset_left = 852.0
+offset_top = 23.0
+offset_right = 960.0
+offset_bottom = 55.0
+mouse_filter = 2
+color = Color(0.988, 0.922, 0.773, 0.98)
+
+[node name="HUD_CoinValue" type="Label" parent="EDIT_ME/TopHUD" unique_id=1610448434]
+layout_mode = 0
+offset_left = 850.0
+offset_top = 16.0
+offset_right = 962.0
+offset_bottom = 60.0
+theme_override_colors/font_color = Color(0.23137255, 0.15686275, 0.101960786, 1)
+theme_override_font_sizes/font_size = 18
+text = "COINS  400"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HUD_EnergyChip" type="TextureRect" parent="EDIT_ME/TopHUD" unique_id=1072804583]
+layout_mode = 0
+offset_left = 994.45
+offset_top = 13.77
+offset_right = 1217.23
+offset_bottom = 62.74
+mouse_filter = 2
+texture = SubResource("AtlasReconEnergy")
+expand_mode = 1
+
+[node name="EnergyValueMask" type="ColorRect" parent="EDIT_ME/TopHUD" unique_id=847637732]
+visible = false
+layout_mode = 0
+offset_left = 1060.0
+offset_top = 23.0
+offset_right = 1198.0
+offset_bottom = 56.0
+mouse_filter = 2
+color = Color(0.988, 0.922, 0.773, 0.98)
+
+[node name="HUD_EnergyValue" type="Label" parent="EDIT_ME/TopHUD" unique_id=1488478384]
+layout_mode = 0
+offset_left = 1058.0
+offset_top = 16.0
+offset_right = 1202.0
+offset_bottom = 60.0
+theme_override_colors/font_color = Color(0.23137255, 0.15686275, 0.101960786, 1)
+theme_override_font_sizes/font_size = 18
+text = "ENERGY  100/100"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HUD_PlusButton" type="TextureRect" parent="EDIT_ME/TopHUD" unique_id=1415769691]
+layout_mode = 0
+offset_left = 1192.0
+offset_top = 11.0
+offset_right = 1240.0
+offset_bottom = 64.0
+mouse_filter = 2
+texture = SubResource("AtlasReconPlus")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="HUD_DragonEnergyChip" type="TextureRect" parent="EDIT_ME/TopHUD" unique_id=591324761]
+visible = false
+layout_mode = 0
+offset_left = 1076.0
+offset_top = 9.0
+offset_right = 1274.0
+offset_bottom = 71.0
+mouse_filter = 2
+texture = ExtResource("9_kc2kc")
+expand_mode = 1
+
+[node name="HUD_DragonEnergyValue" type="Label" parent="EDIT_ME/TopHUD" unique_id=1165991538]
+visible = false
+layout_mode = 0
+offset_left = 1131.0
+offset_top = 15.0
+offset_right = 1268.0
+offset_bottom = 71.0
+theme_override_colors/font_color = Color(0.23137255, 0.15686275, 0.101960786, 1)
+theme_override_font_sizes/font_size = 19
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="FieldLabel" type="Control" parent="EDIT_ME" unique_id=1036390154]
+visible = false
+z_index = 100
+anchors_preset = 0
+offset_left = 160.0
+offset_top = 132.0
+offset_right = 310.0
+offset_bottom = 192.0
+mouse_filter = 2
+
+[node name="FieldTitlePlaque" type="TextureRect" parent="EDIT_ME/FieldLabel" unique_id=1056923271]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("12_fhw48")
+expand_mode = 1
+
+[node name="FieldTitle" type="Label" parent="EDIT_ME/FieldLabel" unique_id=1356331902]
+layout_mode = 0
+offset_left = 14.0
+offset_top = 7.0
+offset_right = 136.0
+offset_bottom = 52.0
+theme_override_colors/font_color = Color(0.294118, 0.176471, 0.0941176, 1)
+theme_override_colors/font_outline_color = Color(1, 0.956863, 0.862745, 1)
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 18
+text = "FARM"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="FieldSubtitle" type="Label" parent="EDIT_ME/FieldLabel" unique_id=425516018]
+visible = false
+layout_mode = 0
+offset_left = 16.0
+offset_top = 32.0
+offset_right = 159.0
+offset_bottom = 61.0
+theme_override_colors/font_color = Color(0.403922, 0.27451, 0.180392, 1)
+theme_override_font_sizes/font_size = 12
+text = "Growing Area"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CropInfoPanel" type="Panel" parent="EDIT_ME" unique_id=1351521674]
+z_index = 100
+layout_mode = 0
+offset_left = 1032.0
+offset_top = 132.0
+offset_right = 1270.0
+offset_bottom = 570.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleTransparent")
+
+[node name="ApprovedPanelArt" type="TextureRect" parent="EDIT_ME/CropInfoPanel" unique_id=1944040592]
+layout_mode = 0
+offset_right = 238.0
+offset_bottom = 438.0
+mouse_filter = 2
+texture = ExtResource("60_v6_panel")
+expand_mode = 1
+offset_left = 0.0
+offset_top = 0.0
+
+[node name="CropTitle" type="Label" parent="EDIT_ME/CropInfoPanel" unique_id=1262232628]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 10.0
+offset_right = 222.0
+offset_bottom = 48.0
+theme_override_colors/font_color = Color(0.294118, 0.176471, 0.0941176, 1)
+theme_override_font_sizes/font_size = 25
+text = "EMPTY PLOT"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CropPreview" type="TextureRect" parent="EDIT_ME/CropInfoPanel" unique_id=1612210453]
+visible = false
+layout_mode = 0
+offset_left = 34.0
+offset_top = 52.0
+offset_right = 204.0
+offset_bottom = 175.0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="LifecycleLabel" type="Label" parent="EDIT_ME/CropInfoPanel" unique_id=1884129124]
+layout_mode = 0
+offset_left = 22.0
+offset_top = 177.0
+offset_right = 216.0
+offset_bottom = 207.0
+theme_override_colors/font_color = Color(0.223529, 0.439216, 0.231373, 1)
+theme_override_font_sizes/font_size = 18
+text = "STATE   UNTILLED"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="DetailLabel" type="Label" parent="EDIT_ME/CropInfoPanel" unique_id=909220234]
+visible = false
+layout_mode = 0
+offset_left = 32.0
+offset_top = 180.0
+offset_right = 180.0
+offset_bottom = 301.0
+theme_override_colors/font_color = Color(0.403922, 0.27451, 0.180392, 1)
+theme_override_constants/line_spacing = 4
+theme_override_font_sizes/font_size = 12
+text = "GROWTH   Not planted
+WATER   Dry
+YIELD   —
+SOIL   Untilled
+"
+
+[node name="StatNames" type="Label" parent="EDIT_ME/CropInfoPanel" unique_id=155620863]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 213.0
+offset_right = 126.0
+offset_bottom = 295.0
+theme_override_colors/font_color = Color(0.403922, 0.27451, 0.180392, 1)
+theme_override_constants/line_spacing = -3
+theme_override_font_sizes/font_size = 16
+text = "Growth
+Water
+Yield"
+
+[node name="StatValues" type="Label" parent="EDIT_ME/CropInfoPanel" unique_id=1237951681]
+layout_mode = 0
+offset_left = 124.0
+offset_top = 213.0
+offset_right = 215.0
+offset_bottom = 295.0
+theme_override_colors/font_color = Color(0.294118, 0.176471, 0.0941176, 1)
+theme_override_constants/line_spacing = -3
+theme_override_font_sizes/font_size = 16
+text = "2 / 4 Days
+Dry
+1"
+
+[node name="TipHeading" type="Label" parent="EDIT_ME/CropInfoPanel" unique_id=4794926]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 312.0
+offset_right = 214.0
+offset_bottom = 339.0
+theme_override_colors/font_color = Color(0.223529, 0.439216, 0.231373, 1)
+theme_override_constants/line_spacing = -2
+theme_override_font_sizes/font_size = 15
+text = "TIP"
+
+[node name="TipText" type="Label" parent="EDIT_ME/CropInfoPanel" unique_id=916628544]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 344.0
+offset_right = 214.0
+offset_bottom = 424.0
+theme_override_colors/font_color = Color(0.403922, 0.27451, 0.180392, 1)
+theme_override_constants/line_spacing = -2
+theme_override_font_sizes/font_size = 15
+text = "Water daily."
+autowrap_mode = 2
+
+[node name="FieldBackButton" type="TextureButton" parent="EDIT_ME" unique_id=1246873036]
+z_index = 100
+layout_mode = 0
+offset_left = 31.39
+offset_top = 114.0
+offset_right = 140.86
+offset_bottom = 156.08
+texture_normal = SubResource("AtlasReconBack")
+texture_pressed = SubResource("AtlasReconBack")
+texture_hover = SubResource("AtlasReconBack")
+texture_disabled = SubResource("AtlasReconBack")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Caption" type="Label" parent="EDIT_ME/FieldBackButton" unique_id=1240375674]
+visible = false
+layout_mode = 0
+offset_left = 20.0
+offset_top = 3.0
+offset_right = 106.0
+offset_bottom = 43.0
+theme_override_colors/font_color = Color(1, 0.956863, 0.835294, 1)
+theme_override_font_sizes/font_size = 13
+text = "BACK"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BottomActionHUD" type="Panel" parent="EDIT_ME" unique_id=234253217]
+z_index = 100
+layout_mode = 0
+offset_left = 315.0
+offset_top = 575.0
+offset_right = 1265.0
+offset_bottom = 711.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleTransparent")
+
+[node name="ApprovedTrayArt" type="TextureRect" parent="EDIT_ME/BottomActionHUD" unique_id=1535625497]
+visible = false
+z_index = -1
+layout_mode = 0
+offset_right = 950.0
+offset_bottom = 136.0
+mouse_filter = 2
+texture = ExtResource("53_v6_tray")
+expand_mode = 1
+
+[node name="ToolGroup" type="Panel" parent="EDIT_ME/BottomActionHUD" unique_id=134497463]
+layout_mode = 0
+offset_right = 620.0
+offset_bottom = 136.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleTransparent")
+
+[node name="Action_till" type="TextureButton" parent="EDIT_ME/BottomActionHUD/ToolGroup" unique_id=504156041]
+layout_mode = 0
+offset_left = 49.0
+offset_right = 178.0
+offset_bottom = 136.0
+disabled = true
+texture_normal = ExtResource("54_v6_till")
+texture_pressed = ExtResource("54_v6_till")
+texture_hover = ExtResource("54_v6_till")
+texture_disabled = ExtResource("54_v6_till")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Caption" type="Label" parent="EDIT_ME/BottomActionHUD/ToolGroup/Action_till" unique_id=412470208]
+layout_mode = 0
+offset_top = 99.0
+offset_right = 129.0
+offset_bottom = 134.0
+theme_override_colors/font_color = Color(1, 0.956863, 0.835294, 1)
+theme_override_colors/font_outline_color = Color(0.290196, 0.160784, 0.0980392, 1)
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 20
+text = "TILL"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Action_seed" type="TextureButton" parent="EDIT_ME/BottomActionHUD/ToolGroup" unique_id=1019448438]
+layout_mode = 0
+offset_left = 193.0
+offset_top = 1.0
+offset_right = 325.0
+offset_bottom = 135.0
+disabled = true
+texture_normal = ExtResource("55_v6_plant")
+texture_pressed = ExtResource("55_v6_plant")
+texture_hover = ExtResource("55_v6_plant")
+texture_disabled = ExtResource("55_v6_plant")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Caption" type="Label" parent="EDIT_ME/BottomActionHUD/ToolGroup/Action_seed" unique_id=719193075]
+layout_mode = 0
+offset_top = 99.0
+offset_right = 132.0
+offset_bottom = 134.0
+theme_override_colors/font_color = Color(1, 0.956863, 0.835294, 1)
+theme_override_colors/font_outline_color = Color(0.290196, 0.160784, 0.0980392, 1)
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 20
+text = "PLANT"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SeedPickerAnchor" type="Control" parent="EDIT_ME/BottomActionHUD/ToolGroup/Action_seed" unique_id=2140805947]
+z_index = 120
+anchors_preset = 0
+mouse_filter = 2
+
+[node name="SeedPickerGroup" type="Panel" parent="EDIT_ME/BottomActionHUD/ToolGroup/Action_seed/SeedPickerAnchor" unique_id=2119988164]
+visible = false
+layout_mode = 0
+offset_left = -485.0
+offset_top = -130.0
+offset_right = -170.0
+offset_bottom = -10.0
+theme_override_styles/panel = SubResource("StyleSeedGroup")
+
+[node name="PointerTail" type="Polygon2D" parent="EDIT_ME/BottomActionHUD/ToolGroup/Action_seed/SeedPickerAnchor/SeedPickerGroup" unique_id=1722447076]
+color = Color(0.65098, 0.427451, 0.207843, 1)
+polygon = PackedVector2Array(124, 102, 140, 102, 132, 112)
+
+[node name="Title" type="Label" parent="EDIT_ME/BottomActionHUD/ToolGroup/Action_seed/SeedPickerAnchor/SeedPickerGroup" unique_id=956381336]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 2.0
+offset_right = 307.0
+offset_bottom = 30.0
+theme_override_colors/font_color = Color(0.415686, 0.278431, 0.168627, 1)
+theme_override_font_sizes/font_size = 18
+text = "CHOOSE SEED"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Seed_carrot" type="TextureButton" parent="EDIT_ME/BottomActionHUD/ToolGroup/Action_seed/SeedPickerAnchor/SeedPickerGroup" unique_id=835470185]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 32.0
+offset_right = 93.0
+offset_bottom = 108.0
+texture_normal = ExtResource("42_ynwwd")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Caption" type="Label" parent="EDIT_ME/BottomActionHUD/ToolGroup/Action_seed/SeedPickerAnchor/SeedPickerGroup/Seed_carrot" unique_id=1513048992]
+layout_mode = 0
+offset_top = 36.0
+offset_right = 75.0
+offset_bottom = 81.0
+theme_override_colors/font_color = Color(1, 0.956863, 0.835294, 1)
+theme_override_colors/font_outline_color = Color(0.29, 0.16, 0.098, 1)
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 16
+text = "CARROT"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Seed_tomato" type="TextureButton" parent="EDIT_ME/BottomActionHUD/ToolGroup/Action_seed/SeedPickerAnchor/SeedPickerGroup" unique_id=1389103136]
+layout_mode = 0
+offset_left = 120.0
+offset_top = 32.0
+offset_right = 195.0
+offset_bottom = 108.0
+texture_normal = ExtResource("43_6ruwj")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Caption" type="Label" parent="EDIT_ME/BottomActionHUD/ToolGroup/Action_seed/SeedPickerAnchor/SeedPickerGroup/Seed_tomato" unique_id=675435399]
+layout_mode = 0
+offset_top = 36.0
+offset_right = 75.0
+offset_bottom = 81.0
+theme_override_colors/font_color = Color(1, 0.956863, 0.835294, 1)
+theme_override_colors/font_outline_color = Color(0.29, 0.16, 0.098, 1)
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 16
+text = "TOMATO
+LOCKED"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Seed_pumpkin" type="TextureButton" parent="EDIT_ME/BottomActionHUD/ToolGroup/Action_seed/SeedPickerAnchor/SeedPickerGroup" unique_id=2065829983]
+layout_mode = 0
+offset_left = 222.0
+offset_top = 32.0
+offset_right = 297.0
+offset_bottom = 108.0
+texture_normal = ExtResource("44_kvag2")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Caption" type="Label" parent="EDIT_ME/BottomActionHUD/ToolGroup/Action_seed/SeedPickerAnchor/SeedPickerGroup/Seed_pumpkin" unique_id=568808393]
+layout_mode = 0
+offset_top = 36.0
+offset_right = 75.0
+offset_bottom = 81.0
+theme_override_colors/font_color = Color(1, 0.956863, 0.835294, 1)
+theme_override_colors/font_outline_color = Color(0.29, 0.16, 0.098, 1)
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 16
+text = "PUMPKIN
+LOCKED"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Action_water" type="TextureButton" parent="EDIT_ME/BottomActionHUD/ToolGroup" unique_id=883476971]
+layout_mode = 0
+offset_left = 340.0
+offset_top = 1.0
+offset_right = 472.0
+offset_bottom = 135.0
+disabled = true
+texture_normal = ExtResource("56_v6_water")
+texture_pressed = ExtResource("56_v6_water")
+texture_hover = ExtResource("56_v6_water")
+texture_disabled = ExtResource("56_v6_water")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Caption" type="Label" parent="EDIT_ME/BottomActionHUD/ToolGroup/Action_water" unique_id=1348499812]
+layout_mode = 0
+offset_top = 99.0
+offset_right = 132.0
+offset_bottom = 134.0
+theme_override_colors/font_color = Color(1, 0.956863, 0.835294, 1)
+theme_override_colors/font_outline_color = Color(0.290196, 0.160784, 0.0980392, 1)
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 20
+text = "WATER"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Action_fertilize" type="TextureButton" parent="EDIT_ME/BottomActionHUD/ToolGroup" unique_id=1755781320]
+layout_mode = 0
+offset_left = 488.0
+offset_top = 1.0
+offset_right = 613.0
+offset_bottom = 135.0
+disabled = true
+texture_normal = ExtResource("57_v6_fert")
+texture_pressed = ExtResource("57_v6_fert")
+texture_hover = ExtResource("57_v6_fert")
+texture_disabled = ExtResource("57_v6_fert")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Caption" type="Label" parent="EDIT_ME/BottomActionHUD/ToolGroup/Action_fertilize" unique_id=470350068]
+layout_mode = 0
+offset_top = 99.0
+offset_right = 125.0
+offset_bottom = 134.0
+theme_override_colors/font_color = Color(1, 0.956863, 0.835294, 1)
+theme_override_colors/font_outline_color = Color(0.290196, 0.160784, 0.0980392, 1)
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 20
+text = "FERTILIZE"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Action_harvest" type="TextureButton" parent="EDIT_ME/BottomActionHUD" unique_id=1601977653]
+layout_mode = 0
+offset_left = 628.0
+offset_top = 1.0
+offset_right = 756.0
+offset_bottom = 135.0
+disabled = true
+texture_normal = ExtResource("58_v6_harvest")
+texture_pressed = ExtResource("58_v6_harvest")
+texture_hover = ExtResource("58_v6_harvest")
+texture_disabled = ExtResource("58_v6_harvest")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Icon" type="TextureRect" parent="EDIT_ME/BottomActionHUD/Action_harvest" unique_id=1846711954]
+visible = false
+layout_mode = 0
+offset_left = 10.0
+offset_top = 17.0
+offset_right = 50.0
+offset_bottom = 57.0
+mouse_filter = 2
+texture = ExtResource("37_tnlii")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Caption" type="Label" parent="EDIT_ME/BottomActionHUD/Action_harvest" unique_id=2006556414]
+layout_mode = 0
+offset_top = 99.0
+offset_right = 128.0
+offset_bottom = 133.0
+theme_override_colors/font_color = Color(1, 0.956863, 0.835294, 1)
+theme_override_colors/font_outline_color = Color(0.290196, 0.160784, 0.0980392, 1)
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 20
+text = "HARVEST"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Action_advance_day" type="TextureButton" parent="EDIT_ME/BottomActionHUD" unique_id=88165090]
+layout_mode = 0
+offset_left = 771.0
+offset_top = 1.0
+offset_right = 936.0
+offset_bottom = 135.0
+texture_normal = ExtResource("59_v6_next")
+texture_pressed = ExtResource("59_v6_next")
+texture_hover = ExtResource("59_v6_next")
+texture_disabled = ExtResource("59_v6_next")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Caption" type="Label" parent="EDIT_ME/BottomActionHUD/Action_advance_day" unique_id=1428753536]
+layout_mode = 0
+offset_top = 96.0
+offset_right = 165.0
+offset_bottom = 132.0
+theme_override_colors/font_color = Color(1, 0.956863, 0.835294, 1)
+theme_override_colors/font_outline_color = Color(0.113725, 0.0823529, 0.211765, 1)
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 20
+text = "NEXT DAY"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SeedAccess" type="Panel" parent="EDIT_ME"]
+editor_description = "MANUAL: seed access and live stock. Positions remain authored here."
+z_index = 100
+offset_left = 24.0
+offset_top = 579.0
+offset_right = 324.0
+offset_bottom = 707.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleSeedGroup")
+
+[node name="SeedAccessTitle" type="Label" parent="EDIT_ME/SeedAccess"]
+offset_left = 14.0
+offset_top = 6.0
+offset_right = 284.0
+offset_bottom = 31.0
+mouse_filter = 2
+theme_override_font_sizes/font_size = 18
+text = "Hạt giống"
+vertical_alignment = 1
+
+[node name="SelectedSeedIcon" type="TextureRect" parent="EDIT_ME/SeedAccess"]
+offset_left = 14.0
+offset_top = 32.0
+offset_right = 72.0
+offset_bottom = 91.0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="SelectedSeedStock" type="Label" parent="EDIT_ME/SeedAccess"]
+offset_left = 80.0
+offset_top = 32.0
+offset_right = 282.0
+offset_bottom = 60.0
+mouse_filter = 2
+theme_override_font_sizes/font_size = 18
+text = "Cà rốt ×6"
+vertical_alignment = 1
+
+[node name="OpenSeedPicker" type="TextureButton" parent="EDIT_ME/SeedAccess"]
+offset_left = 130.0
+offset_top = 64.0
+offset_right = 282.0
+offset_bottom = 112.0
+texture_normal = ExtResource("12_fhw48")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Caption" type="Label" parent="EDIT_ME/SeedAccess/OpenSeedPicker"]
+offset_right = 152.0
+offset_bottom = 48.0
+mouse_filter = 2
+theme_override_font_sizes/font_size = 16
+text = "Chọn hạt"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="UnlockSummary" type="Label" parent="EDIT_ME/SeedAccess"]
+offset_left = 14.0
+offset_top = 112.0
+offset_right = 285.0
+offset_bottom = 128.0
+mouse_filter = 2
+theme_override_font_sizes/font_size = 11
+text = "Cà chua: Đơn 1 · Bí ngô: Đơn 2"
+vertical_alignment = 1
+
+[node name="DO_NOT_EDIT" type="Control" parent="." unique_id=411907502]
+editor_description = "TECHNICAL SUPPORT. Do not manually move these nodes."
+anchors_preset = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+mouse_filter = 2
+
+[node name="EditorPreviewState" type="Node" parent="DO_NOT_EDIT" unique_id=582931954]
+editor_description = "Editor-only visual state preview. Runtime always replaces it with save-backed plot state."
+script = ExtResource("11_v24li")

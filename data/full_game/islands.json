@@ -1,0 +1,9 @@
+{
+  "main": {"name":"Main Island","description":"Your approved 12-plot farm, home and Cloud Chicken barn.","cost":0,"orders":0,"requires":"","items":{},"gather_item":"stone","gather_amount":1},
+  "botanical": {"name":"Botanical Island","description":"Grow medicinal herbs separately from the 12 farm plots; brew specific cures and species food.","cost":250,"orders":1,"requires":"main","items":{},"gather_item":"seed_mint","gather_amount":2},
+  "dragon": {"name":"Dragon Island","description":"Build the Dragon Altar, incubate elemental eggs and use one companion utility at a time.","cost":900,"orders":3,"requires":"main","items":{"ancient_fruit":1},"gather_item":"dragon_crystal","gather_amount":1},
+  "monster": {"name":"Monster Island","description":"Slimes recover garden supplies; golems collect a small amount of building stone.","cost":650,"orders":3,"requires":"botanical","items":{"mint":2},"gather_item":"monster_gel","gather_amount":1},
+  "ice": {"name":"Ice Island","description":"An icehouse preserves care meters and unlocks cold-water fish and frost herbs.","cost":850,"orders":3,"requires":"dragon","items":{"dragon_crystal":2},"gather_item":"ice_shard","gather_amount":1},
+  "lava": {"name":"Lava Island","description":"The warm forge reduces queued crafting and incubation time by one day.","cost":1050,"orders":4,"requires":"dragon","items":{"dragon_crystal":3,"stone":4},"gather_item":"ember","gather_amount":1},
+  "snake": {"name":"Snake Island","description":"Grow antidote herbs and assign a serpent to reduce creature disease risk.","cost":900,"orders":4,"requires":"botanical","items":{"medicine_cold":1,"lavender":2},"gather_item":"snake_scale","gather_amount":1}
+}

@@ -1,0 +1,4 @@
+[gd_scene format=3]
+[node name="ItemCard" type="Control"]
+[node name="Icon" type="TextureRect" parent="."]
+[node name="Caption" type="Label" parent="."]

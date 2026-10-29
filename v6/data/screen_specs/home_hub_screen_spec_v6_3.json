@@ -1,0 +1,36 @@
+{
+  "spec_version": "6.3",
+  "screen_id": "HOME_HUB_SCREEN",
+  "canonical_viewport": [1280, 720],
+  "world_plate_policy": "keep_v6_2",
+  "visible_ui_rects": {
+    "LOGO": [44, 13, 208, 104],
+    "DATE": [535, 13, 166, 57],
+    "MONEY": [703, 14, 168, 56],
+    "ENERGY": [876, 14, 170, 56],
+    "LONG_KHI": [1057, 13, 201, 57],
+    "NAV_FIELD": [23, 129, 208, 62],
+    "NAV_SHOP": [23, 194, 208, 62],
+    "NAV_STORAGE": [23, 258, 208, 62],
+    "NAV_ANIMALS": [23, 323, 208, 62],
+    "NAV_DRAGON": [23, 388, 208, 62],
+    "NAV_QUEST": [23, 454, 208, 62],
+    "NAV_SETTINGS": [23, 519, 208, 62],
+    "REST_NEXTDAY": [20, 592, 230, 72]
+  },
+  "value_rects": {
+    "DATE": [578, 13, 116, 57],
+    "MONEY": [748, 14, 116, 56],
+    "ENERGY": [921, 14, 118, 56],
+    "LONG_KHI": [1101, 13, 150, 57]
+  },
+  "foot_anchors": {
+    "FARMER": [790, 628],
+    "CAT": [855, 627],
+    "COW": [1122, 495],
+    "SHEEP": [1064, 501],
+    "CHICKEN": [1198, 519],
+    "PORTAL_GROUND": [1160, 260]
+  },
+  "placement_mode": "alpha_bbox_compensated_and_feet_anchored"
+}

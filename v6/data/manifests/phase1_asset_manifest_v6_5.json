@@ -1,0 +1,30 @@
+{
+  "version": "6.5",
+  "canonical_viewport": [1280, 720],
+  "source_policy": "supplied approved V6.5 reference plates and overlays; copied without resize, crop, recolor, sharpening, or regeneration",
+  "screens": {
+    "TITLE": {
+      "base": "res://v6/art/reference_runtime/title_reference_runtime_base_v6_5.png",
+      "ui_overlay": "res://v6/art/plates/title/title_ui_overlay_v6_5.png",
+      "dynamic": ["localized menu labels", "transparent hit targets"]
+    },
+    "SAVE": {
+      "base": "res://v6/art/reference_runtime/save_reference_runtime_base_v6_5.png",
+      "ui_overlay": "res://v6/art/plates/save/save_ui_overlay_v6_5.png",
+      "static_icon_overlay": "res://v6/art/plates/save/save_static_icon_overlay_v6_5.png",
+      "parity_thumbnails": [
+        "res://v6/art/plates/save/save_thumb_slot1_v6_5.png",
+        "res://v6/art/plates/save/save_thumb_slot2_v6_5.png",
+        "res://v6/art/plates/save/save_thumb_slot3_v6_5.png",
+        "res://v6/art/plates/save/save_thumb_detail_v6_5.png"
+      ],
+      "dynamic": ["shipping or parity thumbnails", "separate save data fields", "transparent hit targets"]
+    },
+    "HOME_HUB": {
+      "base": "res://v6/art/reference_runtime/home_hub_reference_runtime_base_v6_5.png",
+      "ui_overlay": "res://v6/art/plates/home_hub/home_hub_ui_overlay_v6_5.png",
+      "dynamic": ["HUD values", "localized navigation labels", "Rest label", "transparent hit targets"],
+      "disabled_duplicate_runtime_art": ["farmer", "cat", "cow", "sheep", "chicken", "portal", "front occluder"]
+    }
+  }
+}

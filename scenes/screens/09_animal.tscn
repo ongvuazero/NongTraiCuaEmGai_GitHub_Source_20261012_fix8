@@ -1,0 +1,1707 @@
+[gd_scene format=3 uid="uid://dun5pgrll6orj"]
+
+[ext_resource type="Script" uid="uid://chydvd8kbu1ni" path="res://scripts/screens/animal_screen.gd" id="1_lg7o8"]
+[ext_resource type="Texture2D" uid="uid://btlvan5hcgdwk" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/ENVIRONMENT/SCREEN_PLATES/animal_coop_yard.png" id="2_hredd"]
+[ext_resource type="Texture2D" uid="uid://bosboi8eujp3e" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/HUD/day_season_chip.png" id="4_hbu36"]
+[ext_resource type="Texture2D" uid="uid://g71uyu1qdi84" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/HUD/money_chip.png" id="5_43k2n"]
+[ext_resource type="Texture2D" uid="uid://b4fiqkklolcr0" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/HUD/energy_chip.png" id="6_1chqe"]
+[ext_resource type="Texture2D" uid="uid://brkmxgljhu2ib" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/HUD/long_khi_chip.png" id="7_upin4"]
+[ext_resource type="Texture2D" uid="uid://3fvhxg8s68uw" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/CHARACTERS/ANIMALS/cow_idle.png" id="9_qm0uv"]
+[ext_resource type="Texture2D" uid="uid://c0dd4kccy87ql" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/CHARACTERS/ANIMALS/sheep_idle.png" id="10_phpp4"]
+[ext_resource type="Texture2D" uid="uid://cdxoq3q2xnftd" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/ANIMAL/BASE/chicken_idle.png" id="11_cebhf"]
+[ext_resource type="Texture2D" uid="uid://b4jqcidup8nhc" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/SHARED_BUTTONS/primary_medium/default.png" id="12_yce1y"]
+[ext_resource type="Texture2D" uid="uid://bom20iiwygta5" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/SHARED_BUTTONS/primary_medium/pressed.png" id="13_1rluf"]
+[ext_resource type="Texture2D" uid="uid://bk72ihtc2jlkc" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/SHARED_BUTTONS/primary_medium/hover.png" id="14_cyert"]
+[ext_resource type="Texture2D" uid="uid://dqxw0gv0xipbe" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/SHARED_BUTTONS/primary_medium/disabled.png" id="15_lxe3v"]
+[ext_resource type="Texture2D" uid="uid://cd8n1r000pemc" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/TITLE_SAVE_HOME/title_button_frame_default.png" id="16_hwf3r"]
+[ext_resource type="Texture2D" uid="uid://bqsxb0mjrlkyj" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/TITLE_SAVE_HOME/title_button_frame_pressed.png" id="17_v3hl3"]
+[ext_resource type="Texture2D" uid="uid://4sa08cfhg7mj" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/TITLE_SAVE_HOME/title_button_frame_hover.png" id="18_y161f"]
+[ext_resource type="Texture2D" uid="uid://bxtfrn4jdyq62" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/TITLE_SAVE_HOME/title_button_frame_disabled.png" id="19_at7jv"]
+[ext_resource type="Texture2D" uid="uid://xftgsglwpf3t" path="res://assets/gdd_closure_v3/animals/duck_idle.png" id="20_duck"]
+[ext_resource type="Texture2D" uid="uid://ccf7v5x6hlhkr" path="res://assets/gdd_closure_v3/animals/pig_idle.png" id="21_pig"]
+[ext_resource type="Texture2D" uid="uid://blj4jnds84moo" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/PANELS/right_detail_panel_9slice.png" id="22_care_panel"]
+
+[ext_resource type="Texture2D" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/ANIMAL/STATUS_OVERLAYS/selected_interaction_ring.png" id="23_selection"]
+[ext_resource type="Texture2D" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/ANIMAL/STATUS_OVERLAYS/interaction_success_heart_burst.png" id="24_success"]
+[ext_resource type="Texture2D" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/ITEMS/egg.png" id="25_egg"]
+[ext_resource type="Texture2D" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/ANIMAL/STATUS_OVERLAYS/dirty_mud_dust.png" id="26_dirty"]
+[ext_resource type="Texture2D" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/ANIMAL/STATUS_OVERLAYS/egg_ready.png" id="27_nest"]
+[ext_resource type="Texture2D" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/ANIMAL/STATUS_OVERLAYS/clean_fresh_sparkle.png" id="28_clean"]
+[ext_resource type="Texture2D" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/ANIMAL/STATUS_OVERLAYS/happy_cared_heart.png" id="29_happy"]
+[ext_resource type="Texture2D" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/ITEMS/animal_feed.png" id="30_food"]
+[ext_resource type="FontFile" path="res://assets/fonts/BeVietnamPro-SemiBold.ttf" id="31_semibold"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4001g"]
+bg_color = Color(0.96862745, 0.90588236, 0.78431374, 0.95686275)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.5019608, 0.3137255, 0.16862746, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kr0x6"]
+bg_color = Color(0.43529412, 0.6117647, 0.29803923, 0.9098039)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.27058825, 0.41568628, 0.19215687, 1)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_skg0f"]
+bg_color = Color(0.84705883, 0.76862746, 0.60784316, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.54509807, 0.35686275, 0.1764706, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nknjk"]
+bg_color = Color(0.84705883, 0.76862746, 0.60784316, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.54509807, 0.35686275, 0.1764706, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nbtt6"]
+bg_color = Color(0.84705883, 0.76862746, 0.60784316, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.54509807, 0.35686275, 0.1764706, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vsapm"]
+bg_color = Color(1, 0.95686275, 0.8352941, 0.8666667)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.69803923, 0.47843137, 0.23921569, 1)
+corner_radius_top_left = 14
+corner_radius_top_right = 14
+corner_radius_bottom_right = 14
+corner_radius_bottom_left = 14
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kfsrq"]
+bg_color = Color(0.9647059, 0.89411765, 0.7490196, 0.95686275)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.54509807, 0.35686275, 0.1764706, 1)
+corner_radius_top_left = 14
+corner_radius_top_right = 14
+corner_radius_bottom_right = 14
+corner_radius_bottom_left = 14
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_care_track"]
+bg_color = Color(0.87, 0.77, 0.57, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.58, 0.38, 0.2, 1)
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_left = 6
+corner_radius_bottom_right = 6
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_care_fill"]
+bg_color = Color(0.43, 0.67, 0.22, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.29, 0.51, 0.14, 1)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_left = 5
+corner_radius_bottom_right = 5
+
+[node name="AnimalRoot" type="Control" unique_id=552969957]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_lg7o8")
+metadata/ANIMAL_CORE_LOCK = "FUNCTIONAL_TEST_REQUIRED"
+metadata/animal_core_status = "REVIEW_REQUIRED"
+metadata/true_wysiwyg_v2 = true
+metadata/TRUE_WYSIWYG_V2 = "REVIEW_REQUIRED"
+
+[node name="Background" type="TextureRect" parent="." unique_id=1755742016]
+layout_mode = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+mouse_filter = 2
+texture = ExtResource("2_hredd")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="TopHUD" type="Control" parent="." unique_id=1727236551]
+anchors_preset = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+mouse_filter = 2
+
+[node name="HUD_DaySeasonChip" type="TextureRect" parent="TopHUD" unique_id=1481046067]
+layout_mode = 0
+offset_left = 56.0
+offset_top = 14.0
+offset_right = 432.0
+offset_bottom = 79.0
+mouse_filter = 2
+texture = ExtResource("4_hbu36")
+expand_mode = 1
+
+[node name="HUD_DaySeasonLabel" type="Label" parent="TopHUD" unique_id=1431286193]
+mouse_filter = 2
+layout_mode = 0
+offset_left = 216.0
+offset_top = 19.0
+offset_right = 362.0
+offset_bottom = 75.0
+theme_override_colors/font_color = Color(0.23137255, 0.15686275, 0.101960786, 1)
+theme_override_font_sizes/font_size = 17
+text = "Ngày 1 · Mùa xuân"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HUD_CoinChip" type="TextureRect" parent="TopHUD" unique_id=1192938320]
+layout_mode = 0
+offset_left = 446.0
+offset_top = 13.0
+offset_right = 628.0
+offset_bottom = 75.0
+mouse_filter = 2
+texture = ExtResource("5_43k2n")
+expand_mode = 1
+
+[node name="HUD_CoinValue" type="Label" parent="TopHUD" unique_id=496972912]
+mouse_filter = 2
+layout_mode = 0
+offset_left = 488.0
+offset_top = 20.0
+offset_right = 609.0
+offset_bottom = 76.0
+theme_override_colors/font_color = Color(0.23137255, 0.15686275, 0.101960786, 1)
+theme_override_font_sizes/font_size = 19
+text = "400"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HUD_EnergyChip" type="TextureRect" parent="TopHUD" unique_id=1166994951]
+layout_mode = 0
+offset_left = 685.0
+offset_top = 13.0
+offset_right = 869.0
+offset_bottom = 75.0
+mouse_filter = 2
+texture = ExtResource("6_1chqe")
+expand_mode = 1
+
+[node name="HUD_EnergyValue" type="Label" parent="TopHUD" unique_id=1049090315]
+mouse_filter = 2
+layout_mode = 0
+offset_left = 719.0
+offset_top = 16.0
+offset_right = 842.0
+offset_bottom = 72.0
+theme_override_colors/font_color = Color(0.23137255, 0.15686275, 0.101960786, 1)
+theme_override_font_sizes/font_size = 19
+text = "100/100"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HUD_DragonEnergyChip" type="TextureRect" parent="TopHUD" unique_id=2032918644]
+layout_mode = 0
+offset_left = 934.0
+offset_top = 6.0
+offset_right = 1132.0
+offset_bottom = 68.0
+mouse_filter = 2
+texture = ExtResource("7_upin4")
+expand_mode = 1
+
+[node name="HUD_DragonEnergyValue" type="Label" parent="TopHUD" unique_id=2090664453]
+mouse_filter = 2
+layout_mode = 0
+offset_left = 981.0
+offset_top = 15.0
+offset_right = 1118.0
+offset_bottom = 71.0
+theme_override_colors/font_color = Color(0.23137255, 0.15686275, 0.101960786, 1)
+theme_override_font_sizes/font_size = 19
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AnimalYard" type="Control" parent="." unique_id=209863830]
+anchors_preset = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+mouse_filter = 2
+
+[node name="CowVisual" type="TextureRect" parent="AnimalYard" unique_id=361318130]
+editor_description = "Selected cow species presentation. One world.creatures.cow record owns care/products; this art is not an individual growth entity."
+visible = false
+layout_mode = 0
+offset_left = 495.0
+offset_top = 278.0
+offset_right = 801.0
+offset_bottom = 570.0
+mouse_filter = 2
+texture = ExtResource("9_qm0uv")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="SheepVisual" type="TextureRect" parent="AnimalYard" unique_id=1766898224]
+visible = false
+layout_mode = 0
+offset_left = 660.0
+offset_top = 326.0
+offset_right = 800.0
+offset_bottom = 466.0
+mouse_filter = 2
+texture = ExtResource("10_phpp4")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="ChickenVisual01" type="TextureRect" parent="AnimalYard" unique_id=2021960463]
+layout_mode = 0
+offset_left = 494.0
+offset_top = 342.0
+offset_right = 682.0
+offset_bottom = 530.0
+mouse_filter = 2
+texture = ExtResource("11_cebhf")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="ChickenVisual02" type="TextureRect" parent="AnimalYard" unique_id=892531550]
+layout_mode = 0
+offset_left = 708.0
+offset_top = 326.0
+offset_right = 814.0
+offset_bottom = 432.0
+mouse_filter = 2
+texture = ExtResource("11_cebhf")
+expand_mode = 1
+stretch_mode = 5
+flip_h = true
+
+[node name="ChickVisual01" type="TextureRect" parent="AnimalYard" unique_id=2067067915]
+visible = false
+editor_description = "Retained decorative node only; no baby maturity or breeding authority exists. Hidden at runtime."
+layout_mode = 0
+offset_left = 663.0
+offset_top = 444.0
+offset_right = 731.0
+offset_bottom = 512.0
+mouse_filter = 2
+texture = ExtResource("11_cebhf")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="ChickVisual02" type="TextureRect" parent="AnimalYard" unique_id=1766370656]
+visible = false
+editor_description = "Retained decorative node only; no baby maturity or breeding authority exists. Hidden at runtime."
+layout_mode = 0
+offset_left = 577.0
+offset_top = 455.0
+offset_right = 635.0
+offset_bottom = 513.0
+mouse_filter = 2
+texture = ExtResource("11_cebhf")
+expand_mode = 1
+stretch_mode = 5
+flip_h = true
+
+[node name="ChickVisual03" type="TextureRect" parent="AnimalYard" unique_id=624224778]
+visible = false
+editor_description = "Retained decorative node only; no baby maturity or breeding authority exists. Hidden at runtime."
+layout_mode = 0
+offset_left = 637.0
+offset_top = 304.0
+offset_right = 691.0
+offset_bottom = 358.0
+mouse_filter = 2
+texture = ExtResource("11_cebhf")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="FenceRailTopDark" type="ColorRect" parent="AnimalYard" unique_id=1574727301]
+visible = false
+layout_mode = 0
+offset_left = 364.0
+offset_top = 548.3
+offset_right = 1144.0
+offset_bottom = 558.3
+mouse_filter = 2
+color = Color(0.5294118, 0.31764707, 0.14901961, 1)
+
+[node name="FenceRailTopHighlight" type="ColorRect" parent="AnimalYard" unique_id=2108665593]
+visible = false
+layout_mode = 0
+offset_left = 364.0
+offset_top = 548.3
+offset_right = 1144.0
+offset_bottom = 550.3
+mouse_filter = 2
+color = Color(0.7176471, 0.47843137, 0.2509804, 1)
+
+[node name="FenceRailBottomDark" type="ColorRect" parent="AnimalYard" unique_id=264803279]
+visible = false
+layout_mode = 0
+offset_left = 364.0
+offset_top = 568.43
+offset_right = 1144.0
+offset_bottom = 578.43
+mouse_filter = 2
+color = Color(0.5294118, 0.31764707, 0.14901961, 1)
+
+[node name="FenceRailBottomHighlight" type="ColorRect" parent="AnimalYard" unique_id=212331549]
+visible = false
+layout_mode = 0
+offset_left = 364.0
+offset_top = 568.43
+offset_right = 1144.0
+offset_bottom = 570.43
+mouse_filter = 2
+color = Color(0.7176471, 0.47843137, 0.2509804, 1)
+
+[node name="FencePost01" type="ColorRect" parent="AnimalYard" unique_id=1282658760]
+visible = false
+layout_mode = 0
+offset_left = 374.14
+offset_top = 530.0
+offset_right = 390.14
+offset_bottom = 591.0
+mouse_filter = 2
+color = Color(0.5294118, 0.31764707, 0.14901961, 1)
+
+[node name="FencePost02" type="ColorRect" parent="AnimalYard" unique_id=129640956]
+visible = false
+layout_mode = 0
+offset_left = 619.84
+offset_top = 530.0
+offset_right = 635.84
+offset_bottom = 591.0
+mouse_filter = 2
+color = Color(0.5294118, 0.31764707, 0.14901961, 1)
+
+[node name="FencePost03" type="ColorRect" parent="AnimalYard" unique_id=962289871]
+visible = false
+layout_mode = 0
+offset_left = 866.32
+offset_top = 530.0
+offset_right = 882.32
+offset_bottom = 591.0
+mouse_filter = 2
+color = Color(0.5294118, 0.31764707, 0.14901961, 1)
+
+[node name="FencePost04" type="ColorRect" parent="AnimalYard" unique_id=1331890861]
+visible = false
+layout_mode = 0
+offset_left = 1127.62
+offset_top = 530.0
+offset_right = 1143.62
+offset_bottom = 591.0
+mouse_filter = 2
+color = Color(0.5294118, 0.31764707, 0.14901961, 1)
+
+[node name="CoopGuide" type="Control" parent="AnimalYard" unique_id=1170026754]
+editor_description = "BAKED_INTO_BACKGROUND: coop artwork is part of Background. This GUIDE_OR_INTERACTION_NODE marks its authoring/interaction region only."
+anchors_preset = 0
+offset_left = 842.0
+offset_top = 166.0
+offset_right = 1172.0
+offset_bottom = 376.0
+mouse_filter = 2
+metadata/EDITOR_GUIDE_ONLY = true
+metadata/BAKED_INTO_BACKGROUND = true
+
+[node name="DuckVisual" type="TextureRect" parent="AnimalYard" unique_id=68247054]
+editor_description = "Selected duck species art. Food, disease, egg output and help read world.creatures.duck; no individual duck growth state."
+visible = false
+layout_mode = 0
+offset_left = 515.0
+offset_top = 334.0
+offset_right = 729.0
+offset_bottom = 548.0
+mouse_filter = 2
+texture = ExtResource("20_duck")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="PigVisual" type="TextureRect" parent="AnimalYard" unique_id=1531378042]
+editor_description = "Selected pig species art. Food, disease, truffle output and help read world.creatures.pig; no individual pig growth state."
+visible = false
+layout_mode = 0
+offset_left = 482.0
+offset_top = 302.0
+offset_right = 754.0
+offset_bottom = 562.0
+mouse_filter = 2
+texture = ExtResource("21_pig")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="AnimalSpeciesStrip" type="Control" parent="." unique_id=1747873030]
+editor_description = "MANUAL: Four species selectors. Authored global placement retained from the hidden dashboard. No runtime geometry reset."
+anchors_preset = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 1280.0
+offset_bottom = 720.0
+mouse_filter = 2
+
+[node name="AnimalSpecies_chicken" type="TextureButton" parent="AnimalSpeciesStrip" unique_id=1165304214]
+editor_description = "Select chicken care only. Does not change another species."
+layout_mode = 0
+offset_left = 350.0
+offset_top = 100.0
+offset_right = 518.0
+offset_bottom = 150.0
+texture_normal = ExtResource("12_yce1y")
+texture_pressed = ExtResource("13_1rluf")
+texture_hover = ExtResource("14_cyert")
+texture_disabled = ExtResource("15_lxe3v")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Caption" type="Label" parent="AnimalSpeciesStrip/AnimalSpecies_chicken" unique_id=857436254]
+mouse_filter = 2
+offset_top = 0.0
+offset_left = 10.0
+layout_mode = 0
+offset_right = 158.0
+offset_bottom = 50.0
+theme_override_colors/font_color = Color(0.24, 0.16, 0.09, 1)
+theme_override_font_sizes/font_size = 20
+text = "Gà"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AnimalSpecies_cow" type="TextureButton" parent="AnimalSpeciesStrip" unique_id=1900249932]
+editor_description = "Select cow preview/care. Ownership, food and milk come from current world data."
+layout_mode = 0
+offset_left = 534.0
+offset_top = 100.0
+offset_right = 702.0
+offset_bottom = 150.0
+texture_normal = ExtResource("12_yce1y")
+texture_pressed = ExtResource("13_1rluf")
+texture_hover = ExtResource("14_cyert")
+texture_disabled = ExtResource("15_lxe3v")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Caption" type="Label" parent="AnimalSpeciesStrip/AnimalSpecies_cow" unique_id=225413161]
+mouse_filter = 2
+offset_top = 0.0
+offset_left = 10.0
+layout_mode = 0
+offset_right = 158.0
+offset_bottom = 50.0
+theme_override_colors/font_color = Color(0.24, 0.16, 0.09, 1)
+theme_override_font_sizes/font_size = 20
+text = "Bò"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AnimalSpecies_duck" type="TextureButton" parent="AnimalSpeciesStrip" unique_id=197096217]
+editor_description = "Select duck preview/care; uses current duck definition and save record."
+layout_mode = 0
+offset_left = 718.0
+offset_top = 100.0
+offset_right = 886.0
+offset_bottom = 150.0
+texture_normal = ExtResource("16_hwf3r")
+texture_pressed = ExtResource("17_v3hl3")
+texture_hover = ExtResource("18_y161f")
+texture_disabled = ExtResource("19_at7jv")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Caption" type="Label" parent="AnimalSpeciesStrip/AnimalSpecies_duck" unique_id=1988919218]
+mouse_filter = 2
+offset_top = 0.0
+offset_left = 10.0
+layout_mode = 0
+offset_right = 158.0
+offset_bottom = 50.0
+theme_override_colors/font_color = Color(0.24, 0.16, 0.09, 1)
+theme_override_font_sizes/font_size = 20
+text = "Vịt"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AnimalSpecies_pig" type="TextureButton" parent="AnimalSpeciesStrip" unique_id=631997509]
+editor_description = "Select pig preview/care; uses current pig definition and save record."
+layout_mode = 0
+offset_left = 902.0
+offset_top = 100.0
+offset_right = 1070.0
+offset_bottom = 150.0
+texture_normal = ExtResource("16_hwf3r")
+texture_pressed = ExtResource("17_v3hl3")
+texture_hover = ExtResource("18_y161f")
+texture_disabled = ExtResource("19_at7jv")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Caption" type="Label" parent="AnimalSpeciesStrip/AnimalSpecies_pig" unique_id=749537905]
+mouse_filter = 2
+offset_top = 0.0
+offset_left = 10.0
+layout_mode = 0
+offset_right = 158.0
+offset_bottom = 50.0
+theme_override_colors/font_color = Color(0.24, 0.16, 0.09, 1)
+theme_override_font_sizes/font_size = 20
+text = "Heo"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AnimalCareContext" type="NinePatchRect" parent="." unique_id=1743877154]
+editor_description = "MANUAL: Species care panel adopted from reviewed mockup. Real care bars, four actions, food/product values and result. Click a species/body to open; click outside or × to close. Geometry is scene-authored."
+visible = true
+z_index = 10
+layout_mode = 0
+offset_left = 888.0
+offset_top = 150.0
+offset_right = 1268.0
+offset_bottom = 590.0
+texture = ExtResource("22_care_panel")
+patch_margin_left = 68
+patch_margin_top = 112
+patch_margin_right = 68
+patch_margin_bottom = 54
+
+[node name="CareSpeciesName" type="Label" parent="AnimalCareContext" unique_id=1800174420]
+mouse_filter = 2
+layout_mode = 0
+offset_left = 80.0
+offset_top = 44.0
+offset_right = 304.0
+offset_bottom = 82.0
+theme_override_colors/font_color = Color(1, 0.953, 0.824, 1)
+theme_override_fonts/font = ExtResource("31_semibold")
+theme_override_font_sizes/font_size = 20
+text = "Gà Mây"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AnimalCareClose" type="TextureButton" parent="AnimalCareContext" unique_id=1689025840]
+layout_mode = 0
+offset_left = 316.0
+offset_top = 39.0
+offset_right = 350.0
+offset_bottom = 70.0
+texture_normal = ExtResource("16_hwf3r")
+texture_pressed = ExtResource("17_v3hl3")
+texture_hover = ExtResource("18_y161f")
+texture_disabled = ExtResource("19_at7jv")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Caption" type="Label" parent="AnimalCareContext/AnimalCareClose" unique_id=1217345329]
+mouse_filter = 2
+offset_top = 0.0
+offset_left = 0.0
+layout_mode = 0
+offset_right = 34.0
+offset_bottom = 31.0
+theme_override_colors/font_color = Color(0.24, 0.16, 0.09, 1)
+theme_override_font_sizes/font_size = 22
+text = "×"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CareStateSummary" type="Label" parent="AnimalCareContext" unique_id=730775727]
+visible = false
+layout_mode = 0
+offset_left = 24.0
+offset_top = 77.0
+offset_right = 328.0
+offset_bottom = 102.0
+theme_override_colors/font_color = Color(0.36, 0.21, 0.11, 1)
+theme_override_font_sizes/font_size = 17
+text = "No 60 · Sạch 75 · Vui 68"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CareFoodAndProduct" type="Label" parent="AnimalCareContext" unique_id=72058678]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 257.0
+offset_right = 344.0
+offset_bottom = 281.0
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.36, 0.21, 0.11, 1)
+theme_override_font_sizes/font_size = 15
+text = "Thức ăn 3 · Sẵn sàng 0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CareActionResult" type="Label" parent="AnimalCareContext" unique_id=1273387391]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 366.0
+offset_right = 344.0
+offset_bottom = 400.0
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.36, 0.21, 0.11, 1)
+theme_override_font_sizes/font_size = 15
+text = "Chạm vật nuôi để chăm sóc."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+max_lines_visible = 2
+
+[node name="AnimalAdoptSelected" type="TextureButton" parent="AnimalCareContext" unique_id=682529867]
+editor_description = "Adopt selected species using existing world rules; orders, barn, capacity and coins remain authoritative."
+visible = false
+layout_mode = 0
+offset_left = 40.0
+offset_top = 295.0
+offset_right = 346.0
+offset_bottom = 351.0
+texture_normal = ExtResource("12_yce1y")
+texture_pressed = ExtResource("13_1rluf")
+texture_hover = ExtResource("14_cyert")
+texture_disabled = ExtResource("15_lxe3v")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Caption" type="Label" parent="AnimalCareContext/AnimalAdoptSelected" unique_id=1291913601]
+mouse_filter = 2
+offset_top = 0.0
+offset_left = 0.0
+layout_mode = 0
+offset_right = 306.0
+offset_bottom = 56.0
+theme_override_colors/font_color = Color(0.24, 0.16, 0.09, 1)
+theme_override_font_sizes/font_size = 17
+text = "Nhận nuôi"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AnimalUtilitySelected" type="TextureButton" parent="AnimalCareContext" unique_id=703958004]
+editor_description = "Assign/unassign the selected species through existing world rules. Shared utility slots can be replaced by this action."
+layout_mode = 0
+offset_left = 40.0
+offset_top = 295.0
+offset_right = 346.0
+offset_bottom = 351.0
+texture_normal = ExtResource("16_hwf3r")
+texture_pressed = ExtResource("17_v3hl3")
+texture_hover = ExtResource("18_y161f")
+texture_disabled = ExtResource("19_at7jv")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Caption" type="Label" parent="AnimalCareContext/AnimalUtilitySelected" unique_id=1800536286]
+mouse_filter = 2
+offset_top = 0.0
+offset_left = 0.0
+layout_mode = 0
+offset_right = 306.0
+offset_bottom = 56.0
+theme_override_colors/font_color = Color(0.24, 0.16, 0.09, 1)
+theme_override_font_sizes/font_size = 17
+text = "Giao hỗ trợ"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AnimalHealSelected" type="TextureButton" parent="AnimalCareContext" unique_id=1437253624]
+editor_description = "Heal selected diseased species with medicine_<disease> via world authority; does not use the generic energy medicine."
+visible = false
+layout_mode = 0
+offset_left = 40.0
+offset_top = 295.0
+offset_right = 346.0
+offset_bottom = 351.0
+texture_normal = ExtResource("12_yce1y")
+texture_pressed = ExtResource("13_1rluf")
+texture_hover = ExtResource("14_cyert")
+texture_disabled = ExtResource("15_lxe3v")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Caption" type="Label" parent="AnimalCareContext/AnimalHealSelected" unique_id=1652659945]
+mouse_filter = 2
+offset_top = 0.0
+offset_left = 0.0
+layout_mode = 0
+offset_right = 306.0
+offset_bottom = 56.0
+theme_override_colors/font_color = Color(0.24, 0.16, 0.09, 1)
+theme_override_font_sizes/font_size = 17
+text = "Dùng thuốc"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AnimalCareActions" type="Control" parent="."]
+editor_description = "MANUAL: Four simple real care actions. Thick icon/caption buttons; visibility follows the selected care panel. No new transaction logic."
+z_index = 11
+layout_mode = 0
+offset_left = 246.0
+offset_top = 602.0
+offset_right = 868.0
+offset_bottom = 684.0
+mouse_filter = 2
+
+[node name="AnimalAction_feed_animals" type="TextureButton" parent="AnimalCareActions" unique_id=421555835]
+layout_mode = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 148.0
+offset_bottom = 82.0
+texture_normal = ExtResource("12_yce1y")
+texture_pressed = ExtResource("13_1rluf")
+texture_hover = ExtResource("14_cyert")
+texture_disabled = ExtResource("15_lxe3v")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Caption" type="Label" parent="AnimalCareActions/AnimalAction_feed_animals" unique_id=966917617]
+mouse_filter = 2
+layout_mode = 0
+offset_top = 48.0
+offset_left = 9.0
+offset_right = 139.0
+offset_bottom = 74.0
+theme_override_colors/font_color = Color(0.24705882, 0.16470589, 0.09411765, 1)
+theme_override_font_sizes/font_size = 18
+text = "Cho ăn"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ActionIcon" type="TextureRect" parent="AnimalCareActions/AnimalAction_feed_animals"]
+layout_mode = 0
+offset_left = 54.0
+offset_top = 8.0
+offset_right = 94.0
+offset_bottom = 48.0
+mouse_filter = 2
+texture = ExtResource("30_food")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="AnimalAction_pet_animals" type="TextureButton" parent="AnimalCareActions" unique_id=1256572624]
+layout_mode = 0
+offset_left = 158.0
+offset_top = 0.0
+offset_right = 306.0
+offset_bottom = 82.0
+texture_normal = ExtResource("12_yce1y")
+texture_pressed = ExtResource("13_1rluf")
+texture_hover = ExtResource("14_cyert")
+texture_disabled = ExtResource("15_lxe3v")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Caption" type="Label" parent="AnimalCareActions/AnimalAction_pet_animals" unique_id=545570357]
+mouse_filter = 2
+layout_mode = 0
+offset_top = 48.0
+offset_left = 9.0
+offset_right = 139.0
+offset_bottom = 74.0
+theme_override_colors/font_color = Color(0.23529412, 0.15686275, 0.09411765, 1)
+theme_override_font_sizes/font_size = 18
+text = "Vuốt ve"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ActionIcon" type="TextureRect" parent="AnimalCareActions/AnimalAction_pet_animals"]
+layout_mode = 0
+offset_left = 54.0
+offset_top = 8.0
+offset_right = 94.0
+offset_bottom = 48.0
+mouse_filter = 2
+texture = ExtResource("29_happy")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="AnimalAction_collect" type="TextureButton" parent="AnimalCareActions" unique_id=612985216]
+layout_mode = 0
+offset_left = 474.0
+offset_top = 0.0
+offset_right = 622.0
+offset_bottom = 82.0
+texture_normal = ExtResource("16_hwf3r")
+texture_pressed = ExtResource("17_v3hl3")
+texture_hover = ExtResource("18_y161f")
+texture_disabled = ExtResource("19_at7jv")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Caption" type="Label" parent="AnimalCareActions/AnimalAction_collect" unique_id=648906881]
+mouse_filter = 2
+layout_mode = 0
+offset_top = 48.0
+offset_left = 9.0
+offset_right = 139.0
+offset_bottom = 74.0
+theme_override_colors/font_color = Color(0.23529412, 0.15686275, 0.09411765, 1)
+theme_override_font_sizes/font_size = 16
+text = "Thu trứng"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ActionIcon" type="TextureRect" parent="AnimalCareActions/AnimalAction_collect"]
+layout_mode = 0
+offset_left = 54.0
+offset_top = 8.0
+offset_right = 94.0
+offset_bottom = 48.0
+mouse_filter = 2
+texture = ExtResource("25_egg")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="AnimalAction_clean_animals" type="TextureButton" parent="AnimalCareActions" unique_id=799110950]
+layout_mode = 0
+offset_left = 316.0
+offset_top = 0.0
+offset_right = 464.0
+offset_bottom = 82.0
+texture_normal = ExtResource("12_yce1y")
+texture_pressed = ExtResource("13_1rluf")
+texture_hover = ExtResource("14_cyert")
+texture_disabled = ExtResource("15_lxe3v")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Caption" type="Label" parent="AnimalCareActions/AnimalAction_clean_animals" unique_id=1381696206]
+mouse_filter = 2
+layout_mode = 0
+offset_top = 48.0
+offset_left = 9.0
+offset_right = 139.0
+offset_bottom = 74.0
+theme_override_colors/font_color = Color(0.23529412, 0.15686275, 0.09411765, 1)
+theme_override_font_sizes/font_size = 18
+text = "Dọn dẹp"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ActionIcon" type="TextureRect" parent="AnimalCareActions/AnimalAction_clean_animals"]
+layout_mode = 0
+offset_left = 54.0
+offset_top = 8.0
+offset_right = 94.0
+offset_bottom = 48.0
+mouse_filter = 2
+texture = ExtResource("28_clean")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="CareFullnessLabel" type="Label" parent="AnimalCareContext"]
+layout_mode = 0
+offset_left = 78.0
+offset_top = 120.0
+offset_right = 167.0
+offset_bottom = 148.0
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.36, 0.21, 0.11, 1)
+theme_override_font_sizes/font_size = 14
+text = "No bụng"
+vertical_alignment = 1
+
+[node name="CareFullness" type="ProgressBar" parent="AnimalCareContext"]
+editor_description = "Read-only current care value. Refresh changes value only, preserving this authored rectangle."
+layout_mode = 0
+offset_left = 172.0
+offset_top = 127.0
+offset_right = 306.0
+offset_bottom = 143.0
+mouse_filter = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_care_track")
+theme_override_styles/fill = SubResource("StyleBoxFlat_care_fill")
+value = 60.0
+show_percentage = false
+
+[node name="CareFullnessValue" type="Label" parent="AnimalCareContext"]
+layout_mode = 0
+offset_left = 316.0
+offset_top = 120.0
+offset_right = 350.0
+offset_bottom = 148.0
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.36, 0.21, 0.11, 1)
+theme_override_font_sizes/font_size = 18
+text = "60"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CareCleanlinessLabel" type="Label" parent="AnimalCareContext"]
+layout_mode = 0
+offset_left = 78.0
+offset_top = 154.0
+offset_right = 167.0
+offset_bottom = 182.0
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.36, 0.21, 0.11, 1)
+theme_override_font_sizes/font_size = 14
+text = "Sạch sẽ"
+vertical_alignment = 1
+
+[node name="CareCleanliness" type="ProgressBar" parent="AnimalCareContext"]
+editor_description = "Read-only current care value. Refresh changes value only, preserving this authored rectangle."
+layout_mode = 0
+offset_left = 172.0
+offset_top = 161.0
+offset_right = 306.0
+offset_bottom = 177.0
+mouse_filter = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_care_track")
+theme_override_styles/fill = SubResource("StyleBoxFlat_care_fill")
+value = 75.0
+show_percentage = false
+
+[node name="CareCleanlinessValue" type="Label" parent="AnimalCareContext"]
+layout_mode = 0
+offset_left = 316.0
+offset_top = 154.0
+offset_right = 350.0
+offset_bottom = 182.0
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.36, 0.21, 0.11, 1)
+theme_override_font_sizes/font_size = 18
+text = "75"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CareHappinessLabel" type="Label" parent="AnimalCareContext"]
+layout_mode = 0
+offset_left = 78.0
+offset_top = 188.0
+offset_right = 167.0
+offset_bottom = 216.0
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.36, 0.21, 0.11, 1)
+theme_override_font_sizes/font_size = 14
+text = "Vui vẻ"
+vertical_alignment = 1
+
+[node name="CareHappiness" type="ProgressBar" parent="AnimalCareContext"]
+editor_description = "Read-only current care value. Refresh changes value only, preserving this authored rectangle."
+layout_mode = 0
+offset_left = 172.0
+offset_top = 195.0
+offset_right = 306.0
+offset_bottom = 211.0
+mouse_filter = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_care_track")
+theme_override_styles/fill = SubResource("StyleBoxFlat_care_fill")
+value = 68.0
+show_percentage = false
+
+[node name="CareHappinessValue" type="Label" parent="AnimalCareContext"]
+layout_mode = 0
+offset_left = 316.0
+offset_top = 188.0
+offset_right = 350.0
+offset_bottom = 216.0
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.36, 0.21, 0.11, 1)
+theme_override_font_sizes/font_size = 18
+text = "68"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CareProductIcon" type="TextureRect" parent="AnimalCareContext"]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 224.0
+offset_right = 74.0
+offset_bottom = 256.0
+mouse_filter = 2
+texture = ExtResource("25_egg")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="CareProductQuantity" type="Label" parent="AnimalCareContext"]
+layout_mode = 0
+offset_left = 82.0
+offset_top = 224.0
+offset_right = 350.0
+offset_bottom = 256.0
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.3, 0.19, 0.1, 1)
+theme_override_font_sizes/font_size = 17
+text = "Sẵn sàng: 0 · Trứng gà"
+vertical_alignment = 1
+
+[node name="CareFullnessIcon" type="TextureRect" parent="AnimalCareContext"]
+editor_description = "Food meter icon; script binds the selected species' actual food."
+layout_mode = 0
+offset_left = 40.0
+offset_top = 121.0
+offset_right = 68.0
+offset_bottom = 149.0
+mouse_filter = 2
+texture = ExtResource("30_food")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="CareCleanlinessIcon" type="TextureRect" parent="AnimalCareContext"]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 155.0
+offset_right = 68.0
+offset_bottom = 183.0
+mouse_filter = 2
+texture = ExtResource("28_clean")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="CareHappinessIcon" type="TextureRect" parent="AnimalCareContext"]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 189.0
+offset_right = 68.0
+offset_bottom = 217.0
+mouse_filter = 2
+texture = ExtResource("29_happy")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="AnimalNavigation" type="Control" parent="." unique_id=1280830126]
+editor_description = "MANUAL: Existing Back and Next Day controls remain accessible while the old dashboard/footer stays hidden."
+anchors_preset = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+mouse_filter = 2
+
+[node name="AnimalBackToHub" type="TextureButton" parent="AnimalNavigation" unique_id=754380288]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 650.0
+offset_right = 230.0
+offset_bottom = 716.0
+texture_normal = ExtResource("16_hwf3r")
+texture_pressed = ExtResource("17_v3hl3")
+texture_hover = ExtResource("18_y161f")
+texture_disabled = ExtResource("19_at7jv")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Caption" type="Label" parent="AnimalNavigation/AnimalBackToHub" unique_id=597288517]
+mouse_filter = 2
+layout_mode = 0
+offset_left = 12.0
+offset_top = 0.0
+offset_right = 198.0
+offset_bottom = 66.0
+theme_override_colors/font_color = Color(0.23529412, 0.15686275, 0.09411765, 1)
+theme_override_font_sizes/font_size = 24
+text = "Quay lại"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AnimalAdvanceDay" type="TextureButton" parent="AnimalNavigation" unique_id=1562191200]
+editor_description = "Visible next-day action using existing GameState.advance_day; product and assigned help apply through the current world rules."
+layout_mode = 0
+offset_left = 1058.0
+offset_top = 650.0
+offset_right = 1268.0
+offset_bottom = 716.0
+texture_normal = ExtResource("16_hwf3r")
+texture_pressed = ExtResource("17_v3hl3")
+texture_hover = ExtResource("18_y161f")
+texture_disabled = ExtResource("19_at7jv")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Caption" type="Label" parent="AnimalNavigation/AnimalAdvanceDay" unique_id=1867996398]
+mouse_filter = 2
+offset_top = 0.0
+offset_left = 12.0
+layout_mode = 0
+offset_right = 198.0
+offset_bottom = 66.0
+theme_override_colors/font_color = Color(0.23529412, 0.15686275, 0.09411765, 1)
+theme_override_font_sizes/font_size = 24
+text = "Ngày mới"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MainContent" type="Control" parent="." unique_id=1707232854]
+visible = false
+anchors_preset = 0
+offset_left = -4.0
+offset_top = -40.0
+offset_right = 1276.0
+offset_bottom = 680.0
+mouse_filter = 2
+
+[node name="AnimalInfoPanel" type="Panel" parent="MainContent" unique_id=1854860024]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 135.0
+offset_right = 340.0
+offset_bottom = 475.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_4001g")
+
+[node name="AnimalNameLabel" type="Label" parent="MainContent/AnimalInfoPanel" unique_id=401203068]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 10.0
+offset_right = 304.0
+offset_bottom = 52.0
+theme_override_colors/font_color = Color(0.29411766, 0.1764706, 0.09411765, 1)
+theme_override_font_sizes/font_size = 22
+text = "Gà Mây"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Art_chicken_idle" type="TextureRect" parent="MainContent/AnimalInfoPanel" unique_id=1841985296]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 51.0
+offset_right = 112.0
+offset_bottom = 155.0
+mouse_filter = 2
+texture = ExtResource("11_cebhf")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="AnimalSummaryPanel" type="Panel" parent="MainContent/AnimalInfoPanel" unique_id=855080009]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 156.0
+offset_right = 102.0
+offset_bottom = 180.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_kr0x6")
+
+[node name="AnimalDescriptionLabel" type="Label" parent="MainContent/AnimalInfoPanel/AnimalSummaryPanel" unique_id=1881949967]
+layout_mode = 0
+offset_right = 90.0
+offset_bottom = 24.0
+theme_override_colors/font_color = Color(1, 0.9529412, 0.8235294, 1)
+theme_override_font_sizes/font_size = 16
+text = "SUNNY ♥"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HungerLabel" type="Label" parent="MainContent/AnimalInfoPanel" unique_id=258086509]
+layout_mode = 0
+offset_left = 106.0
+offset_top = 61.0
+offset_right = 188.0
+offset_bottom = 95.0
+theme_override_colors/font_color = Color(0.3764706, 0.25490198, 0.15294118, 1)
+theme_override_font_sizes/font_size = 16
+text = "No bụng"
+vertical_alignment = 1
+
+[node name="HungerBar" type="Panel" parent="MainContent/AnimalInfoPanel" unique_id=181989891]
+layout_mode = 0
+offset_left = 184.0
+offset_top = 66.0
+offset_right = 314.0
+offset_bottom = 90.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_skg0f")
+
+[node name="ProgressFill" type="ColorRect" parent="MainContent/AnimalInfoPanel/HungerBar" unique_id=732244278]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 82.0
+offset_bottom = 20.0
+mouse_filter = 2
+color = Color(0.45882353, 0.6509804, 0.29411766, 1)
+
+[node name="HungerValue" type="Label" parent="MainContent/AnimalInfoPanel" unique_id=205762742]
+layout_mode = 0
+offset_left = 184.0
+offset_top = 61.0
+offset_right = 314.0
+offset_bottom = 95.0
+theme_override_colors/font_color = Color(0.24705882, 0.16470589, 0.09411765, 1)
+theme_override_font_sizes/font_size = 16
+text = "60"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CleanlinessLabel" type="Label" parent="MainContent/AnimalInfoPanel" unique_id=1114510883]
+layout_mode = 0
+offset_left = 106.0
+offset_top = 111.0
+offset_right = 188.0
+offset_bottom = 145.0
+theme_override_colors/font_color = Color(0.3764706, 0.25490198, 0.15294118, 1)
+theme_override_font_sizes/font_size = 16
+text = "Sạch sẽ"
+vertical_alignment = 1
+
+[node name="CleanlinessBar" type="Panel" parent="MainContent/AnimalInfoPanel" unique_id=1312212597]
+layout_mode = 0
+offset_left = 184.0
+offset_top = 116.0
+offset_right = 314.0
+offset_bottom = 140.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_nknjk")
+
+[node name="ProgressFill" type="ColorRect" parent="MainContent/AnimalInfoPanel/CleanlinessBar" unique_id=1524464692]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 101.5
+offset_bottom = 20.0
+mouse_filter = 2
+color = Color(0.45882353, 0.6509804, 0.29411766, 1)
+
+[node name="CleanlinessValue" type="Label" parent="MainContent/AnimalInfoPanel" unique_id=1075781822]
+layout_mode = 0
+offset_left = 184.0
+offset_top = 111.0
+offset_right = 314.0
+offset_bottom = 145.0
+theme_override_colors/font_color = Color(0.24705882, 0.16470589, 0.09411765, 1)
+theme_override_font_sizes/font_size = 16
+text = "75"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HappinessLabel" type="Label" parent="MainContent/AnimalInfoPanel" unique_id=2029622227]
+layout_mode = 0
+offset_left = 106.0
+offset_top = 161.0
+offset_right = 188.0
+offset_bottom = 195.0
+theme_override_colors/font_color = Color(0.3764706, 0.25490198, 0.15294118, 1)
+theme_override_font_sizes/font_size = 16
+text = "Vui vẻ"
+vertical_alignment = 1
+
+[node name="HappinessBar" type="Panel" parent="MainContent/AnimalInfoPanel" unique_id=345381765]
+layout_mode = 0
+offset_left = 184.0
+offset_top = 166.0
+offset_right = 314.0
+offset_bottom = 190.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_nbtt6")
+
+[node name="ProgressFill" type="ColorRect" parent="MainContent/AnimalInfoPanel/HappinessBar" unique_id=49968919]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 92.4
+offset_bottom = 20.0
+mouse_filter = 2
+color = Color(0.45882353, 0.6509804, 0.29411766, 1)
+
+[node name="HappinessValue" type="Label" parent="MainContent/AnimalInfoPanel" unique_id=1891493126]
+layout_mode = 0
+offset_left = 184.0
+offset_top = 161.0
+offset_right = 314.0
+offset_bottom = 195.0
+theme_override_colors/font_color = Color(0.24705882, 0.16470589, 0.09411765, 1)
+theme_override_font_sizes/font_size = 16
+text = "68"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="EggStatusLabel" type="Label" parent="MainContent/AnimalInfoPanel" unique_id=1746871525]
+layout_mode = 0
+offset_left = 22.0
+offset_top = 211.0
+offset_right = 300.0
+offset_bottom = 249.0
+theme_override_colors/font_color = Color(0.6627451, 0.29411766, 0.23921569, 1)
+theme_override_font_sizes/font_size = 17
+text = "♥ ♥ ♥ ♥ ♡    ·    Trứng: 1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AnimalFeedbackPanel" type="Panel" parent="MainContent/AnimalInfoPanel" unique_id=1364302822]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 252.0
+offset_right = 302.0
+offset_bottom = 328.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_vsapm")
+
+[node name="FeedbackLabel" type="Label" parent="MainContent/AnimalInfoPanel/AnimalFeedbackPanel" unique_id=782041266]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 5.0
+offset_right = 270.0
+offset_bottom = 71.0
+theme_override_colors/font_color = Color(0.36078432, 0.20784314, 0.11372549, 1)
+theme_override_font_sizes/font_size = 16
+text = "Chăm sóc đàn gà mỗi ngày để nhận trứng."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="AnimalResourceStrip" type="Panel" parent="MainContent" unique_id=955532631]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 482.0
+offset_right = 336.0
+offset_bottom = 530.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_kfsrq")
+
+[node name="EnergyValueLabel" type="Label" parent="MainContent/AnimalResourceStrip" unique_id=47395555]
+layout_mode = 0
+offset_left = 8.0
+offset_right = 156.0
+offset_bottom = 48.0
+theme_override_colors/font_color = Color(0.36078432, 0.20784314, 0.11372549, 1)
+theme_override_font_sizes/font_size = 16
+text = "⚡  Năng lượng  100"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="FeedInventoryLabel" type="Label" parent="MainContent/AnimalResourceStrip" unique_id=466867032]
+layout_mode = 0
+offset_left = 154.0
+offset_right = 292.0
+offset_bottom = 48.0
+theme_override_colors/font_color = Color(0.36078432, 0.20784314, 0.11372549, 1)
+theme_override_font_sizes/font_size = 16
+text = "🌾  Thức ăn  3"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AnimalSpeciesDetailsPanel" type="Panel" parent="MainContent" unique_id=2094077302]
+editor_description = "Read-only species summary: actual food inventory, product readiness/storage, existing utility and adoption conditions."
+layout_mode = 0
+offset_left = 352.0
+offset_top = 190.0
+offset_right = 1230.0
+offset_bottom = 284.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_kfsrq")
+
+[node name="AnimalFoodLabel" type="Label" parent="MainContent/AnimalSpeciesDetailsPanel" unique_id=261359807]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 12.0
+offset_right = 420.0
+offset_bottom = 42.0
+theme_override_colors/font_color = Color(0.36, 0.21, 0.11, 1)
+theme_override_font_sizes/font_size = 17
+text = "Thức ăn: Thức ăn vật nuôi ×3"
+vertical_alignment = 1
+text_overrun_behavior = 3
+
+[node name="AnimalOutputLabel" type="Label" parent="MainContent/AnimalSpeciesDetailsPanel" unique_id=1129458298]
+layout_mode = 0
+offset_left = 18.0
+offset_top = 47.0
+offset_right = 420.0
+offset_bottom = 81.0
+theme_override_colors/font_color = Color(0.36, 0.21, 0.11, 1)
+theme_override_font_sizes/font_size = 17
+text = "Trứng gà · Sẵn sàng 1 · Kho 0"
+vertical_alignment = 1
+text_overrun_behavior = 3
+
+[node name="AnimalUtilityLabel" type="Label" parent="MainContent/AnimalSpeciesDetailsPanel" unique_id=388734793]
+layout_mode = 0
+offset_left = 438.0
+offset_top = 8.0
+offset_right = 860.0
+offset_bottom = 48.0
+mouse_filter = 0
+theme_override_colors/font_color = Color(0.36, 0.21, 0.11, 1)
+theme_override_font_sizes/font_size = 16
+text = "Chưa giao hỗ trợ
+1 hạt bạc hà khi Đảo Dược Liệu đã mở."
+vertical_alignment = 1
+text_overrun_behavior = 3
+max_lines_visible = 2
+
+[node name="AnimalAdoptionLabel" type="Label" parent="MainContent/AnimalSpeciesDetailsPanel" unique_id=1507897924]
+layout_mode = 0
+offset_left = 438.0
+offset_top = 51.0
+offset_right = 860.0
+offset_bottom = 83.0
+mouse_filter = 0
+theme_override_colors/font_color = Color(0.36, 0.21, 0.11, 1)
+theme_override_font_sizes/font_size = 16
+text = "Sản phẩm ngày mới: chỉ số ≥40, không bệnh."
+vertical_alignment = 1
+text_overrun_behavior = 3
+
+[node name="AnimalCollectionAccess" type="TextureButton" parent="MainContent" unique_id=1301034133]
+editor_description = "Open the existing Companion Collection with the currently selected species."
+layout_mode = 0
+offset_left = 23.0
+offset_top = 572.0
+offset_right = 328.0
+offset_bottom = 636.0
+texture_normal = ExtResource("16_hwf3r")
+texture_pressed = ExtResource("17_v3hl3")
+texture_hover = ExtResource("18_y161f")
+texture_disabled = ExtResource("19_at7jv")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="CollectionCaption" type="Label" parent="MainContent/AnimalCollectionAccess" unique_id=1411879228]
+layout_mode = 0
+offset_top = 7.0
+offset_right = 296.0
+offset_bottom = 51.0
+theme_override_colors/font_color = Color(0.24, 0.16, 0.09, 1)
+theme_override_font_sizes/font_size = 17
+text = "Bộ sưu tập"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="FooterActions" type="Control" parent="." unique_id=963217054]
+visible = false
+anchors_preset = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+mouse_filter = 2
+
+[node name="AnimalSelectionMarker" type="TextureRect" parent="."]
+visible = false
+editor_description = "Presentation only. Follows the selected scene-authored body bounds, never changes animal position or state."
+z_index = 1
+layout_mode = 0
+offset_right = 140.0
+offset_bottom = 64.0
+mouse_filter = 2
+texture = ExtResource("23_selection")
+expand_mode = 1
+
+[node name="AnimalActionEffect" type="TextureRect" parent="."]
+editor_description = "Existing transparent status art, short feedback tween only. Not a new body animation."
+visible = false
+z_index = 8
+layout_mode = 0
+offset_right = 112.0
+offset_bottom = 112.0
+mouse_filter = 2
+texture = ExtResource("24_success")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="AnimalActionToast" type="TextureRect" parent="."]
+stretch_mode = 0
+expand_mode = 1
+editor_description = "Immediate real product gain/action feedback. Text persists in CareActionResult after this short toast fades."
+visible = false
+z_index = 8
+layout_mode = 0
+offset_right = 248.0
+offset_bottom = 56.0
+mouse_filter = 2
+texture = ExtResource("16_hwf3r")
+
+
+
+
+
+[node name="ProductIcon" type="TextureRect" parent="AnimalActionToast"]
+layout_mode = 0
+offset_left = 22.0
+offset_top = 9.0
+offset_right = 60.0
+offset_bottom = 47.0
+mouse_filter = 2
+texture = ExtResource("25_egg")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="ResultLabel" type="Label" parent="AnimalActionToast"]
+layout_mode = 0
+offset_left = 66.0
+offset_top = 3.0
+offset_right = 210.0
+offset_bottom = 53.0
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.29, 0.18, 0.09, 1)
+theme_override_font_sizes/font_size = 17
+text = "+1 Trứng gà"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AnimalInteractionHint" type="TextureRect" parent="."]
+stretch_mode = 0
+expand_mode = 1
+visible = false
+z_index = 3
+layout_mode = 0
+offset_left = 370.0
+offset_top = 638.0
+offset_right = 908.0
+offset_bottom = 698.0
+mouse_filter = 2
+texture = ExtResource("16_hwf3r")
+
+
+
+
+
+[node name="HintLabel" type="Label" parent="AnimalInteractionHint"]
+layout_mode = 0
+offset_left = 35.0
+offset_top = 5.0
+offset_right = 503.0
+offset_bottom = 55.0
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.29, 0.18, 0.09, 1)
+theme_override_font_sizes/font_size = 20
+text = "Chạm vật nuôi để chăm sóc."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AnimalWorldFeedback" type="Control" parent="."]
+editor_description = "MANUAL: World product/nest and yard mess. REAL state controls visibility, quantities and eligibility; clicking uses the same existing care transaction. No decorative fake eggs."
+z_index = 2
+layout_mode = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+mouse_filter = 2
+
+[node name="AnimalMess01" type="TextureButton" parent="AnimalWorldFeedback"]
+editor_description = "Visible while owned cleanliness <100. Touch this dirt to run existing Clean; no separate gameplay/save path."
+layout_mode = 0
+offset_left = 218.0
+offset_top = 500.0
+offset_right = 312.0
+offset_bottom = 560.0
+texture_normal = ExtResource("26_dirty")
+ignore_texture_size = true
+stretch_mode = 0
+mouse_default_cursor_shape = 2
+
+[node name="AnimalMess02" type="TextureButton" parent="AnimalWorldFeedback"]
+layout_mode = 0
+offset_left = 388.0
+offset_top = 540.0
+offset_right = 470.0
+offset_bottom = 590.0
+texture_normal = ExtResource("26_dirty")
+ignore_texture_size = true
+stretch_mode = 0
+mouse_default_cursor_shape = 2
+
+[node name="AnimalMess03" type="TextureButton" parent="AnimalWorldFeedback"]
+layout_mode = 0
+offset_left = 790.0
+offset_top = 505.0
+offset_right = 870.0
+offset_bottom = 558.0
+texture_normal = ExtResource("26_dirty")
+ignore_texture_size = true
+stretch_mode = 0
+mouse_default_cursor_shape = 2
+
+[node name="AnimalYardCleanStatus" type="Label" parent="AnimalWorldFeedback"]
+editor_description = "Shown only at real cleanliness=100; Clean is then unavailable and no mess sprites remain."
+visible = false
+layout_mode = 0
+offset_left = 238.0
+offset_top = 538.0
+offset_right = 420.0
+offset_bottom = 574.0
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.22, 0.42, 0.16, 1)
+theme_override_colors/font_outline_color = Color(1, 0.95, 0.81, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 21
+text = "Chuồng sạch"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AnimalWorldProduct" type="TextureButton" parent="AnimalWorldFeedback"]
+editor_description = "MANUAL: Collectable world nest/product. Visible only when actual products_ready>0; click collects exact ready quantity once via existing handler/autosave."
+visible = false
+layout_mode = 0
+offset_left = 350.0
+offset_top = 430.0
+offset_right = 480.0
+offset_bottom = 542.0
+ignore_texture_size = true
+stretch_mode = 0
+mouse_default_cursor_shape = 2
+
+[node name="NestArt" type="TextureRect" parent="AnimalWorldFeedback/AnimalWorldProduct"]
+layout_mode = 0
+offset_top = 31.0
+offset_right = 130.0
+offset_bottom = 105.0
+mouse_filter = 2
+texture = ExtResource("27_nest")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="ProductIcon" type="TextureRect" parent="AnimalWorldFeedback/AnimalWorldProduct"]
+layout_mode = 0
+offset_left = 38.0
+offset_top = 8.0
+offset_right = 92.0
+offset_bottom = 70.0
+mouse_filter = 2
+texture = ExtResource("25_egg")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="ProductQuantity" type="Label" parent="AnimalWorldFeedback/AnimalWorldProduct"]
+layout_mode = 0
+offset_left = 88.0
+offset_top = 18.0
+offset_right = 130.0
+offset_bottom = 49.0
+mouse_filter = 2
+theme_override_colors/font_color = Color(1, 0.96, 0.78, 1)
+theme_override_colors/font_outline_color = Color(0.28, 0.16, 0.07, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 21
+text = "×1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PickupCaption" type="Label" parent="AnimalWorldFeedback/AnimalWorldProduct"]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 82.0
+offset_right = 118.0
+offset_bottom = 111.0
+mouse_filter = 2
+theme_override_colors/font_color = Color(1, 0.96, 0.78, 1)
+theme_override_colors/font_outline_color = Color(0.28, 0.16, 0.07, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 20
+text = "Nhặt"
+horizontal_alignment = 1
+vertical_alignment = 1
+

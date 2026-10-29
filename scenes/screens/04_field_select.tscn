@@ -1,0 +1,608 @@
+[gd_scene format=3 uid="uid://5uys70nefcwr"]
+
+[ext_resource type="Script" uid="uid://cbbj5e5la7df3" path="res://scripts/screens/field_select_screen.gd" id="1_0qfkl"]
+[ext_resource type="Texture2D" uid="uid://q6nknwkxm3fb" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/ENVIRONMENT/BACKGROUND_PLATES/E01-08__Field_Select_scenic_background_farmhouse_edge.png" id="2_5mxmf"]
+[ext_resource type="Texture2D" uid="uid://c4em2wlffsuep" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/TITLE_SAVE_HOME/canonical_logo.png" id="3_12aqw"]
+[ext_resource type="Texture2D" uid="uid://bosboi8eujp3e" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/HUD/day_season_chip.png" id="4_lqh7q"]
+[ext_resource type="Texture2D" uid="uid://g71uyu1qdi84" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/HUD/money_chip.png" id="5_ukepu"]
+[ext_resource type="Texture2D" uid="uid://b4fiqkklolcr0" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/HUD/energy_chip.png" id="6_e1ll1"]
+[ext_resource type="Texture2D" uid="uid://brkmxgljhu2ib" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/HUD/long_khi_chip.png" id="7_vhh1f"]
+[ext_resource type="Texture2D" uid="uid://bxk03ynwf83e2" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/TITLE_SAVE_HOME/field_select_board.png" id="8_gnhdx"]
+[ext_resource type="Texture2D" uid="uid://dyms6kj2o4ggw" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/ENVIRONMENT/BACKGROUND_PLATES/E01-10__Field_4x3_plot_ground_master_without_crops.png" id="9_obj1d"]
+[ext_resource type="Texture2D" uid="uid://b4jqcidup8nhc" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/SHARED_BUTTONS/primary_medium/default.png" id="10_pae5m"]
+[ext_resource type="Texture2D" uid="uid://bom20iiwygta5" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/SHARED_BUTTONS/primary_medium/pressed.png" id="11_nshdj"]
+[ext_resource type="Texture2D" uid="uid://bk72ihtc2jlkc" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/SHARED_BUTTONS/primary_medium/hover.png" id="12_yp6j3"]
+[ext_resource type="Texture2D" uid="uid://dqxw0gv0xipbe" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/SHARED_BUTTONS/primary_medium/disabled.png" id="13_vomxj"]
+[ext_resource type="Texture2D" uid="uid://d1yayuu2js4hl" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/TITLE_SAVE_HOME/FIELD_PREVIEWS/lakeside_field.png" id="14_gra1w"]
+[ext_resource type="Texture2D" uid="uid://bxus74ctxkqax" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/TITLE_SAVE_HOME/FIELD_PREVIEWS/forest_field.png" id="15_xps16"]
+[ext_resource type="Texture2D" uid="uid://beepciuhn8i6k" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/TITLE_SAVE_HOME/FIELD_PREVIEWS/highland_field.png" id="16_d7kyt"]
+[ext_resource type="Texture2D" uid="uid://cd8n1r000pemc" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/TITLE_SAVE_HOME/title_button_frame_default.png" id="17_v3x6x"]
+[ext_resource type="Texture2D" uid="uid://bqsxb0mjrlkyj" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/TITLE_SAVE_HOME/title_button_frame_pressed.png" id="18_6gdju"]
+[ext_resource type="Texture2D" uid="uid://4sa08cfhg7mj" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/TITLE_SAVE_HOME/title_button_frame_hover.png" id="19_0arka"]
+[ext_resource type="Texture2D" uid="uid://bxtfrn4jdyq62" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/TITLE_SAVE_HOME/title_button_frame_disabled.png" id="20_nrino"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j4a2n"]
+bg_color = Color(0.54901963, 0.3647059, 0.20784314, 0.8627451)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.3882353, 0.2509804, 0.1254902, 1)
+corner_radius_top_left = 28
+corner_radius_top_right = 28
+corner_radius_bottom_right = 28
+corner_radius_bottom_left = 28
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8tbq5"]
+bg_color = Color(0.98039216, 0.9254902, 0.827451, 0.9607843)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.7490196, 0.5294118, 0.29411766, 1)
+corner_radius_top_left = 24
+corner_radius_top_right = 24
+corner_radius_bottom_right = 24
+corner_radius_bottom_left = 24
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pj7tx"]
+bg_color = Color(1, 0.9411765, 0.83137256, 0.9490196)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.43529412, 0.6784314, 0.27058825, 1)
+corner_radius_top_left = 17
+corner_radius_top_right = 17
+corner_radius_bottom_right = 17
+corner_radius_bottom_left = 17
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kvq6t"]
+bg_color = Color(1, 0.9411765, 0.83137256, 0.9490196)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.58431375, 0.4, 0.24705882, 1)
+corner_radius_top_left = 17
+corner_radius_top_right = 17
+corner_radius_bottom_right = 17
+corner_radius_bottom_left = 17
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4p6nd"]
+bg_color = Color(0.2901961, 0.20392157, 0.14117648, 0.9019608)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.8784314, 0.73333335, 0.47058824, 1)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fxsee"]
+bg_color = Color(1, 0.9411765, 0.83137256, 0.9490196)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.58431375, 0.4, 0.24705882, 1)
+corner_radius_top_left = 17
+corner_radius_top_right = 17
+corner_radius_bottom_right = 17
+corner_radius_bottom_left = 17
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_enxfh"]
+bg_color = Color(0.2901961, 0.20392157, 0.14117648, 0.9019608)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.8784314, 0.73333335, 0.47058824, 1)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v07yt"]
+bg_color = Color(1, 0.9411765, 0.83137256, 0.9490196)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.58431375, 0.4, 0.24705882, 1)
+corner_radius_top_left = 17
+corner_radius_top_right = 17
+corner_radius_bottom_right = 17
+corner_radius_bottom_left = 17
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tndjw"]
+bg_color = Color(0.2901961, 0.20392157, 0.14117648, 0.9019608)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.8784314, 0.73333335, 0.47058824, 1)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[node name="FieldSelectRoot" type="Control" unique_id=2073835370]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0qfkl")
+metadata/v7_visual_status = "V7_PHASE2_FIELD_SELECT_TRUE_WYSIWYG_V2"
+metadata/true_wysiwyg_v2 = true
+metadata/TRUE_WYSIWYG_V2 = "PASS"
+
+[node name="Background" type="TextureRect" parent="." unique_id=1207507852]
+layout_mode = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+mouse_filter = 2
+texture = ExtResource("2_5mxmf")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="FieldSelectWoodFrame" type="Panel" parent="." unique_id=1902872614]
+layout_mode = 0
+offset_left = 191.0
+offset_top = 127.0
+offset_right = 1099.0
+offset_bottom = 629.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_j4a2n")
+
+[node name="MainBoard" type="Panel" parent="." unique_id=44408205]
+layout_mode = 0
+offset_left = 204.0
+offset_top = 139.0
+offset_right = 1086.0
+offset_bottom = 615.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_8tbq5")
+
+[node name="FieldCard01" type="Panel" parent="MainBoard" unique_id=1075011096]
+layout_mode = 0
+offset_left = 29.0
+offset_top = 42.0
+offset_right = 435.0
+offset_bottom = 240.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_pj7tx")
+
+[node name="FieldPreview_0" type="TextureRect" parent="MainBoard/FieldCard01" unique_id=1549572227]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 14.0
+offset_right = 186.0
+offset_bottom = 156.0
+mouse_filter = 2
+texture = ExtResource("9_obj1d")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="FieldCard01Label" type="Label" parent="MainBoard/FieldCard01" unique_id=433027365]
+layout_mode = 0
+offset_left = 202.0
+offset_top = 16.0
+offset_right = 309.0
+offset_bottom = 50.0
+theme_override_colors/font_color = Color(0.29411766, 0.17254902, 0.09411765, 1)
+theme_override_font_sizes/font_size = 19
+text = "Vườn Nhà"
+vertical_alignment = 1
+
+[node name="FieldCard01Label_02" type="Label" parent="MainBoard/FieldCard01" unique_id=1893400901]
+layout_mode = 0
+offset_left = 198.0
+offset_top = 49.0
+offset_right = 393.0
+offset_bottom = 125.0
+theme_override_colors/font_color = Color(0.40784314, 0.2784314, 0.1764706, 1)
+theme_override_font_sizes/font_size = 16
+text = "Khu vườn ấm áp cạnh nhà.
+Phù hợp cho mọi loại cây."
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="FieldCard01Action" type="TextureButton" parent="MainBoard/FieldCard01" unique_id=679124535]
+layout_mode = 0
+offset_left = 196.0
+offset_top = 139.0
+offset_right = 391.0
+offset_bottom = 182.0
+mouse_filter = 2
+texture_normal = ExtResource("10_pae5m")
+texture_pressed = ExtResource("11_nshdj")
+texture_hover = ExtResource("12_yp6j3")
+texture_disabled = ExtResource("13_vomxj")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Caption" type="Label" parent="MainBoard/FieldCard01/FieldCard01Action" unique_id=167860136]
+layout_mode = 0
+offset_top = -7.0
+offset_right = 195.0
+offset_bottom = 43.0
+theme_override_colors/font_color = Color(0.24705882, 0.16470589, 0.09411765, 1)
+theme_override_font_sizes/font_size = 16
+text = "MỞ RUỘNG"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="EnterField" type="Button" parent="MainBoard/FieldCard01" unique_id=919472284]
+layout_mode = 0
+offset_right = 406.0
+offset_bottom = 198.0
+flat = true
+
+[node name="FieldCard02" type="Panel" parent="MainBoard" unique_id=1658496746]
+layout_mode = 0
+offset_left = 443.0
+offset_top = 42.0
+offset_right = 849.0
+offset_bottom = 240.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_kvq6t")
+
+[node name="FieldPreview_1" type="TextureRect" parent="MainBoard/FieldCard02" unique_id=50384606]
+modulate = Color(0.79, 0.77, 0.72, 0.92)
+layout_mode = 0
+offset_left = 12.0
+offset_top = 14.0
+offset_right = 186.0
+offset_bottom = 156.0
+mouse_filter = 2
+texture = ExtResource("14_gra1w")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="FieldCard02Surface" type="Panel" parent="MainBoard/FieldCard02" unique_id=1644260893]
+layout_mode = 0
+offset_left = 37.0
+offset_top = 105.0
+offset_right = 161.0
+offset_bottom = 142.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_4p6nd")
+
+[node name="FieldCard02SurfaceLabel" type="Label" parent="MainBoard/FieldCard02/FieldCard02Surface" unique_id=513856593]
+layout_mode = 0
+offset_right = 124.0
+offset_bottom = 37.0
+theme_override_colors/font_color = Color(1, 0.9411765, 0.78431374, 1)
+theme_override_font_sizes/font_size = 16
+text = "CHƯA MỞ"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="FieldCard02Label" type="Label" parent="MainBoard/FieldCard02" unique_id=150457624]
+layout_mode = 0
+offset_left = 198.0
+offset_top = 14.0
+offset_right = 394.0
+offset_bottom = 48.0
+theme_override_colors/font_color = Color(0.29411766, 0.17254902, 0.09411765, 1)
+theme_override_font_sizes/font_size = 19
+text = "Ruộng Ven Hồ"
+vertical_alignment = 1
+
+[node name="FieldCard02Label_02" type="Label" parent="MainBoard/FieldCard02" unique_id=1507469851]
+layout_mode = 0
+offset_left = 198.0
+offset_top = 49.0
+offset_right = 393.0
+offset_bottom = 125.0
+theme_override_colors/font_color = Color(0.40784314, 0.2784314, 0.1764706, 1)
+theme_override_font_sizes/font_size = 16
+text = "Đất màu mỡ bên hồ.
+Mở khóa ở giai đoạn sau."
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="FieldCard03" type="Panel" parent="MainBoard" unique_id=1714060626]
+layout_mode = 0
+offset_left = 29.0
+offset_top = 248.0
+offset_right = 435.0
+offset_bottom = 446.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_fxsee")
+
+[node name="FieldPreview_2" type="TextureRect" parent="MainBoard/FieldCard03" unique_id=656986527]
+modulate = Color(0.79, 0.77, 0.72, 0.92)
+layout_mode = 0
+offset_left = 12.0
+offset_top = 14.0
+offset_right = 186.0
+offset_bottom = 156.0
+mouse_filter = 2
+texture = ExtResource("15_xps16")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="FieldCard03Surface" type="Panel" parent="MainBoard/FieldCard03" unique_id=1159405932]
+layout_mode = 0
+offset_left = 37.0
+offset_top = 105.0
+offset_right = 161.0
+offset_bottom = 142.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_enxfh")
+
+[node name="FieldCard03SurfaceLabel" type="Label" parent="MainBoard/FieldCard03/FieldCard03Surface" unique_id=46824131]
+layout_mode = 0
+offset_right = 124.0
+offset_bottom = 37.0
+theme_override_colors/font_color = Color(1, 0.9411765, 0.78431374, 1)
+theme_override_font_sizes/font_size = 16
+text = "CHƯA MỞ"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="FieldCard03Label" type="Label" parent="MainBoard/FieldCard03" unique_id=1925414603]
+layout_mode = 0
+offset_left = 198.0
+offset_top = 14.0
+offset_right = 394.0
+offset_bottom = 48.0
+theme_override_colors/font_color = Color(0.29411766, 0.17254902, 0.09411765, 1)
+theme_override_font_sizes/font_size = 19
+text = "Ruộng Rừng"
+vertical_alignment = 1
+
+[node name="FieldCard03Label_02" type="Label" parent="MainBoard/FieldCard03" unique_id=914913037]
+layout_mode = 0
+offset_left = 198.0
+offset_top = 49.0
+offset_right = 393.0
+offset_bottom = 125.0
+theme_override_colors/font_color = Color(0.40784314, 0.2784314, 0.1764706, 1)
+theme_override_font_sizes/font_size = 16
+text = "Một cánh đồng yên tĩnh.
+Mở khóa ở giai đoạn sau."
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="FieldCard04" type="Panel" parent="MainBoard" unique_id=100995546]
+layout_mode = 0
+offset_left = 443.0
+offset_top = 248.0
+offset_right = 849.0
+offset_bottom = 446.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_v07yt")
+
+[node name="FieldPreview_3" type="TextureRect" parent="MainBoard/FieldCard04" unique_id=1852003209]
+modulate = Color(0.79, 0.77, 0.72, 0.92)
+layout_mode = 0
+offset_left = 12.0
+offset_top = 14.0
+offset_right = 186.0
+offset_bottom = 156.0
+mouse_filter = 2
+texture = ExtResource("16_d7kyt")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="FieldCard04Surface" type="Panel" parent="MainBoard/FieldCard04" unique_id=766367918]
+layout_mode = 0
+offset_left = 37.0
+offset_top = 105.0
+offset_right = 161.0
+offset_bottom = 142.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_tndjw")
+
+[node name="FieldCard04SurfaceLabel" type="Label" parent="MainBoard/FieldCard04/FieldCard04Surface" unique_id=487304112]
+layout_mode = 0
+offset_right = 124.0
+offset_bottom = 37.0
+theme_override_colors/font_color = Color(1, 0.9411765, 0.78431374, 1)
+theme_override_font_sizes/font_size = 16
+text = "CHƯA MỞ"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="FieldCard04Label" type="Label" parent="MainBoard/FieldCard04" unique_id=1871030624]
+layout_mode = 0
+offset_left = 198.0
+offset_top = 14.0
+offset_right = 394.0
+offset_bottom = 48.0
+theme_override_colors/font_color = Color(0.29411766, 0.17254902, 0.09411765, 1)
+theme_override_font_sizes/font_size = 19
+text = "Ruộng Cao Nguyên"
+vertical_alignment = 1
+
+[node name="FieldCard04Label_02" type="Label" parent="MainBoard/FieldCard04" unique_id=1786941977]
+layout_mode = 0
+offset_left = 198.0
+offset_top = 49.0
+offset_right = 393.0
+offset_bottom = 125.0
+theme_override_colors/font_color = Color(0.40784314, 0.2784314, 0.1764706, 1)
+theme_override_font_sizes/font_size = 16
+text = "Khí hậu mát trên cao.
+Mở khóa ở giai đoạn sau."
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="TopHUD" type="Control" parent="." unique_id=590274725]
+anchors_preset = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+mouse_filter = 2
+
+[node name="Logo" type="TextureRect" parent="TopHUD" unique_id=1587643842]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 10.0
+offset_right = 276.0
+offset_bottom = 121.0
+mouse_filter = 2
+texture = ExtResource("3_12aqw")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="HUD_DaySeasonChip" type="TextureRect" parent="TopHUD" unique_id=1061061981]
+layout_mode = 0
+offset_left = 505.0
+offset_top = 9.0
+offset_right = 689.0
+offset_bottom = 71.0
+mouse_filter = 2
+texture = ExtResource("4_lqh7q")
+expand_mode = 1
+
+[node name="HUD_DaySeasonLabel" type="Label" parent="TopHUD" unique_id=1875726104]
+layout_mode = 0
+offset_left = 559.0
+offset_top = 12.0
+offset_right = 682.0
+offset_bottom = 68.0
+theme_override_colors/font_color = Color(0.23137255, 0.15686275, 0.101960786, 1)
+theme_override_font_sizes/font_size = 17
+text = "Ngày 1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HUD_CoinChip" type="TextureRect" parent="TopHUD" unique_id=535148975]
+layout_mode = 0
+offset_left = 696.0
+offset_top = 9.0
+offset_right = 878.0
+offset_bottom = 71.0
+mouse_filter = 2
+texture = ExtResource("5_ukepu")
+expand_mode = 1
+
+[node name="HUD_CoinValue" type="Label" parent="TopHUD" unique_id=1012170726]
+layout_mode = 0
+offset_left = 750.0
+offset_top = 12.0
+offset_right = 871.0
+offset_bottom = 68.0
+theme_override_colors/font_color = Color(0.23137255, 0.15686275, 0.101960786, 1)
+theme_override_font_sizes/font_size = 19
+text = "400"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HUD_EnergyChip" type="TextureRect" parent="TopHUD" unique_id=2127655245]
+layout_mode = 0
+offset_left = 885.0
+offset_top = 9.0
+offset_right = 1069.0
+offset_bottom = 71.0
+mouse_filter = 2
+texture = ExtResource("6_e1ll1")
+expand_mode = 1
+
+[node name="HUD_EnergyValue" type="Label" parent="TopHUD" unique_id=1507731513]
+layout_mode = 0
+offset_left = 921.0
+offset_top = 12.0
+offset_right = 1044.0
+offset_bottom = 68.0
+theme_override_colors/font_color = Color(0.23137255, 0.15686275, 0.101960786, 1)
+theme_override_font_sizes/font_size = 19
+text = "100/100"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HUD_DragonEnergyChip" type="TextureRect" parent="TopHUD" unique_id=656507703]
+layout_mode = 0
+offset_left = 1076.0
+offset_top = 9.0
+offset_right = 1274.0
+offset_bottom = 71.0
+mouse_filter = 2
+texture = ExtResource("7_vhh1f")
+expand_mode = 1
+
+[node name="HUD_DragonEnergyValue" type="Label" parent="TopHUD" unique_id=1097662807]
+layout_mode = 0
+offset_left = 1132.0
+offset_top = 15.0
+offset_right = 1269.0
+offset_bottom = 71.0
+theme_override_colors/font_color = Color(0.23137255, 0.15686275, 0.101960786, 1)
+theme_override_font_sizes/font_size = 19
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Header" type="Control" parent="." unique_id=80683939]
+anchors_preset = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+mouse_filter = 2
+
+[node name="Art_field_select_board" type="TextureRect" parent="Header" unique_id=1242973674]
+layout_mode = 0
+offset_left = 354.0
+offset_top = 56.0
+offset_right = 930.0
+offset_bottom = 188.0
+mouse_filter = 2
+texture = ExtResource("8_gnhdx")
+expand_mode = 1
+
+[node name="HeaderLabel" type="Label" parent="Header" unique_id=1775642463]
+layout_mode = 0
+offset_left = 415.0
+offset_top = 92.0
+offset_right = 882.0
+offset_bottom = 137.0
+theme_override_colors/font_color = Color(0.29411766, 0.17254902, 0.09411765, 1)
+theme_override_font_sizes/font_size = 32
+text = "CHỌN KHU RUỘNG"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HeaderLabel_02" type="Label" parent="Header" unique_id=2110753720]
+layout_mode = 0
+offset_left = 383.0
+offset_top = 125.0
+offset_right = 891.0
+offset_bottom = 159.0
+theme_override_colors/font_color = Color(0.4627451, 0.3137255, 0.2, 1)
+theme_override_font_sizes/font_size = 16
+text = "Chọn nơi bạn muốn gieo trồng"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="FooterActions" type="Control" parent="." unique_id=1106603910]
+anchors_preset = 0
+offset_left = 9.0
+offset_top = -2.0
+offset_right = 1289.0
+offset_bottom = 718.0
+mouse_filter = 2
+
+[node name="BackToHub" type="TextureButton" parent="FooterActions" unique_id=1231481366]
+layout_mode = 0
+offset_left = 23.0
+offset_top = 635.0
+offset_right = 203.0
+offset_bottom = 696.0
+texture_normal = ExtResource("17_v3x6x")
+texture_pressed = ExtResource("18_6gdju")
+texture_hover = ExtResource("19_0arka")
+texture_disabled = ExtResource("20_nrino")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Caption" type="Label" parent="FooterActions/BackToHub" unique_id=1685972009]
+layout_mode = 0
+offset_left = -1.0
+offset_top = -3.0
+offset_right = 179.0
+offset_bottom = 58.0
+theme_override_colors/font_color = Color(0.23529412, 0.15686275, 0.09411765, 1)
+theme_override_font_sizes/font_size = 19
+text = "←  Quay lại"
+horizontal_alignment = 1
+vertical_alignment = 1

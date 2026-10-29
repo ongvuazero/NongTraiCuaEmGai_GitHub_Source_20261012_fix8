@@ -1,0 +1,12 @@
+{
+  "first_harvest":{"name":"Small Harvest","description":"Harvest three regular crops.","stat":"harvest","target":3,"coins":40,"items":{"seed_carrot":3}},
+  "crop_graduate":{"name":"Farm Apprentice","description":"Complete the first three crop orders.","stat":"orders_done","target":3,"coins":90,"items":{"seed_mint":2}},
+  "cloud_care":{"name":"Cloud Chicken Friend","description":"Perform three creature-care actions.","stat":"care","target":3,"coins":20,"items":{"grain_feed":2}},
+  "herbalist":{"name":"Young Herbalist","description":"Harvest four botanical gardens.","stat":"garden_harvest","target":4,"coins":40,"items":{"seed_lavender":2}},
+  "brewer":{"name":"Helpful Brewer","description":"Craft three recipes.","stat":"craft","target":3,"coins":40,"items":{"medicine_cold":1}},
+  "dragon_friend":{"name":"First Dragon","description":"Hatch one dragon.","stat":"hatch","target":1,"coins":30,"items":{"dragon_crystal":1}},
+  "explorer":{"name":"Island Explorer","description":"Gather resources ten times.","stat":"gather","target":10,"coins":50,"items":{"stone":3}},
+  "summer_fair":{"name":"Summer Fair","description":"During Summer, deliver two carrots and one egg.","stat":"day","target":29,"season":"summer","ingredients":{"crop_carrot":2,"egg":1},"coins":100,"items":{"seed_sun_herb":2}},
+  "autumn_fair":{"name":"Autumn Fair","description":"During Autumn, deliver two pumpkins and one milk.","stat":"day","target":57,"season":"autumn","ingredients":{"crop_pumpkin":2,"milk":1},"coins":180,"items":{"seed_frost_herb":2}},
+  "winter_fair":{"name":"Winter Fair","description":"During Winter, deliver two frost herbs.","stat":"day","target":85,"season":"winter","ingredients":{"frost_herb":2},"coins":100,"items":{"medicine_cold":2}}
+}

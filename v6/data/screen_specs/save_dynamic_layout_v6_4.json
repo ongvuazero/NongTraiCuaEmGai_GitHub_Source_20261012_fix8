@@ -1,0 +1,31 @@
+{
+  "spec_version": "6.4",
+  "screen_id": "SAVE_SCREEN",
+  "canonical_viewport": [1280, 720],
+  "static_owner": "res://v6/art/plates/save/save_ui_master_plate_v6_3.png",
+  "geometry_policy": "LOCK_V6_3_OUTER_RECTS",
+  "dynamic_layout_policy": "SEPARATE_FIELDS_NOT_ONE_SENTENCE",
+  "slot_1": {
+    "number": [45, 141, 53, 45],
+    "thumbnail": [98, 153, 192, 123],
+    "name": [340, 144, 347, 39],
+    "day_season": [346, 194, 80, 38],
+    "money": [471, 194, 83, 38],
+    "location": [584, 194, 95, 38],
+    "flavor": [307, 239, 285, 29],
+    "selected": [600, 238, 88, 30]
+  },
+  "detail": {
+    "title": [830, 94, 360, 45],
+    "thumbnail": [745, 153, 480, 233],
+    "farm_name": [790, 391, 330, 39],
+    "flavor": [756, 428, 350, 29],
+    "day_season": [801, 469, 75, 44],
+    "money": [923, 469, 83, 44],
+    "location": [1033, 469, 90, 44],
+    "play_time": [800, 529, 85, 42],
+    "last_played": [948, 529, 150, 42]
+  },
+  "qa_fixture": "qa/parity_fixture_v6_4.json",
+  "shipping_state": "actual save data"
+}

@@ -1,0 +1,32 @@
+{
+  "version": "6.4",
+  "canonical_viewport": [1280, 720],
+  "assets": [
+    {
+      "screen": "TITLE",
+      "role": "STATIC_UI_MASTER",
+      "path": "res://v6/art/plates/title/title_ui_master_plate_v6_4.png",
+      "size": [1280, 720],
+      "alpha": true,
+      "production_mode": "background-extraction image generation from approved Title reference",
+      "prompt_summary": "Preserve the exact approved logo, four button shells, and their static icons; remove all menu words and all world/background pixels; output a transparent full-canvas overlay."
+    },
+    {
+      "screen": "HOME_HUB",
+      "role": "STATIC_UI_MASTER",
+      "path": "res://v6/art/plates/home_hub/home_hub_ui_master_plate_v6_4.png",
+      "size": [1280, 720],
+      "alpha": true,
+      "production_mode": "background-extraction image generation from approved Home Hub reference",
+      "prompt_summary": "Preserve the exact approved logo, four HUD shells/icons, seven navigation shells/icons, and Rest shell/icon; remove values and labels and all world pixels; output a transparent full-canvas overlay."
+    },
+    {
+      "screen": "SAVE",
+      "role": "STATIC_UI_MASTER",
+      "path": "res://v6/art/plates/save/save_ui_master_plate_v6_3.png",
+      "size": [1280, 720],
+      "alpha": false,
+      "production_mode": "preserved V6.3 master plate as mandated by V6.4"
+    }
+  ]
+}

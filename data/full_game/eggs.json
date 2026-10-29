@@ -1,0 +1,10 @@
+{
+  "water_egg":{"name":"Water Egg","species":"water_dragon","cost":120,"energy_cost":0,"days":3,"island":"dragon","orders":3,"building":"dragon_altar"},
+  "fire_egg":{"name":"Fire Egg","species":"fire_dragon","cost":160,"energy_cost":0,"days":3,"island":"dragon","orders":3,"building":"dragon_altar"},
+  "forest_egg":{"name":"Forest Egg","species":"forest_dragon","cost":180,"energy_cost":0,"days":4,"island":"dragon","orders":3,"building":"dragon_altar"},
+  "ice_egg":{"name":"Ice Egg","species":"ice_dragon","cost":200,"energy_cost":0,"days":4,"island":"ice","orders":3,"building":"dragon_altar"},
+  "gold_egg":{"name":"Gold Egg","species":"gold_dragon","cost":320,"energy_cost":3,"days":5,"island":"dragon","orders":5,"building":"special_shop"},
+  "shadow_egg":{"name":"Shadow Egg","species":"shadow_dragon","cost":380,"energy_cost":5,"days":5,"island":"monster","orders":6,"building":"special_shop"},
+  "crystal_egg":{"name":"Crystal Egg","species":"crystal_dragon","cost":420,"energy_cost":6,"days":5,"island":"ice","orders":6,"building":"special_shop"},
+  "rainbow_egg":{"name":"Rainbow Egg","species":"rainbow_dragon","cost":550,"energy_cost":10,"days":6,"island":"lava","orders":8,"building":"special_shop"}
+}

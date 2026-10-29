@@ -1,0 +1,489 @@
+[gd_scene format=3 uid="uid://d2uh1vwoafrc"]
+
+[ext_resource type="Texture2D" uid="uid://cd8n1r000pemc" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/TITLE_SAVE_HOME/title_button_frame_default.png" id="1_title"]
+[ext_resource type="Texture2D" uid="uid://c1q4vujcqg1yd" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/FIELD/ACTION_BUTTONS/hoe/default.png" id="2_hoe_n"]
+[ext_resource type="Texture2D" uid="uid://dpp0wmocoovwn" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/FIELD/ACTION_BUTTONS/hoe/hover.png" id="3_hoe_h"]
+[ext_resource type="Texture2D" uid="uid://c1tm5xb5vrbpl" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/FIELD/ACTION_BUTTONS/hoe/pressed.png" id="4_hoe_p"]
+[ext_resource type="Texture2D" uid="uid://cn6oq4rd4uaq6" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/FIELD/ACTION_BUTTONS/hoe/disabled.png" id="5_hoe_d"]
+[ext_resource type="Texture2D" uid="uid://b2g4vx2dn3v3s" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/FIELD/ACTION_BUTTONS/plant/default.png" id="6_seed_n"]
+[ext_resource type="Texture2D" uid="uid://cotwl65s4ths8" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/FIELD/ACTION_BUTTONS/plant/hover.png" id="7_seed_h"]
+[ext_resource type="Texture2D" uid="uid://ckauhe652d2wa" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/FIELD/ACTION_BUTTONS/plant/pressed.png" id="8_seed_p"]
+[ext_resource type="Texture2D" uid="uid://g7ejy7k26mj3" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/FIELD/ACTION_BUTTONS/plant/disabled.png" id="9_seed_d"]
+[ext_resource type="Texture2D" uid="uid://dk3332vfuflhe" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/FIELD/ACTION_BUTTONS/water/default.png" id="10_water_n"]
+[ext_resource type="Texture2D" uid="uid://jcq1n7gip3pd" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/FIELD/ACTION_BUTTONS/water/hover.png" id="11_water_h"]
+[ext_resource type="Texture2D" uid="uid://bldmbfdcs4pyx" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/FIELD/ACTION_BUTTONS/water/pressed.png" id="12_water_p"]
+[ext_resource type="Texture2D" uid="uid://py1lhoh668l6" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/FIELD/ACTION_BUTTONS/water/disabled.png" id="13_water_d"]
+[ext_resource type="Texture2D" uid="uid://bjiehgysnld45" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/FIELD/ACTION_BUTTONS/fertilize/default.png" id="14_fert_n"]
+[ext_resource type="Texture2D" uid="uid://cjr2sqonwarlq" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/FIELD/ACTION_BUTTONS/fertilize/hover.png" id="15_fert_h"]
+[ext_resource type="Texture2D" uid="uid://dyhyr6dv0qcb6" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/FIELD/ACTION_BUTTONS/fertilize/pressed.png" id="16_fert_p"]
+[ext_resource type="Texture2D" uid="uid://d1ymgrmd4vmqm" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/FIELD/ACTION_BUTTONS/fertilize/disabled.png" id="17_fert_d"]
+[ext_resource type="Texture2D" uid="uid://b4jqcidup8nhc" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/SHARED_BUTTONS/primary_medium/default.png" id="18_harvest_n"]
+[ext_resource type="Texture2D" uid="uid://bk72ihtc2jlkc" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/SHARED_BUTTONS/primary_medium/hover.png" id="19_harvest_h"]
+[ext_resource type="Texture2D" uid="uid://bom20iiwygta5" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/SHARED_BUTTONS/primary_medium/pressed.png" id="20_harvest_p"]
+[ext_resource type="Texture2D" uid="uid://dqxw0gv0xipbe" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/SHARED_BUTTONS/primary_medium/disabled.png" id="21_harvest_d"]
+[ext_resource type="Texture2D" uid="uid://bmdgvg6h6fbse" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/ITEMS/harvest_basket.png" id="22_basket"]
+[ext_resource type="Texture2D" uid="uid://b6ivaq1riop64" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/SHARED_BUTTONS/night_next_day/default.png" id="23_next_n"]
+[ext_resource type="Texture2D" uid="uid://cn356yjwcctl0" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/SHARED_BUTTONS/night_next_day/hover.png" id="24_next_h"]
+[ext_resource type="Texture2D" uid="uid://cog8cero58n4n" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/SHARED_BUTTONS/night_next_day/pressed.png" id="25_next_p"]
+[ext_resource type="Texture2D" uid="uid://ljckoglqm6v6" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/SHARED_BUTTONS/night_next_day/disabled.png" id="26_next_d"]
+[ext_resource type="Texture2D" uid="uid://cftnf6w2iog6a" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/SHARED_BUTTONS/back/default.png" id="27_back_n"]
+[ext_resource type="Texture2D" uid="uid://bkp11gqolbg4m" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/SHARED_BUTTONS/back/hover.png" id="28_back_h"]
+[ext_resource type="Texture2D" uid="uid://bd6l2eor8hjtt" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/SHARED_BUTTONS/back/pressed.png" id="29_back_p"]
+[ext_resource type="Texture2D" uid="uid://c45w2g4uvi3gv" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/SHARED_BUTTONS/back/disabled.png" id="30_back_d"]
+[ext_resource type="Texture2D" uid="uid://dugy28en7nt3l" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/SEED_PICKER/carrot_default.png" id="31_carrot"]
+[ext_resource type="Texture2D" uid="uid://c6b2r76obadf8" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/SEED_PICKER/tomato_default.png" id="32_tomato"]
+[ext_resource type="Texture2D" uid="uid://cf4nv3dj4wwl4" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/SEED_PICKER/pumpkin_default.png" id="33_pumpkin"]
+
+[sub_resource type="StyleBoxFlat" id="StyleCropDetail"]
+bg_color = Color(0.968627, 0.898039, 0.745098, 0.9)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.603922, 0.388235, 0.207843, 1)
+corner_radius_top_left = 18
+corner_radius_top_right = 18
+corner_radius_bottom_right = 18
+corner_radius_bottom_left = 18
+
+[sub_resource type="StyleBoxFlat" id="StyleActionTray"]
+bg_color = Color(0.964706, 0.894118, 0.74902, 0.862745)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.545098, 0.356863, 0.176471, 1)
+corner_radius_top_left = 24
+corner_radius_top_right = 24
+corner_radius_bottom_right = 24
+corner_radius_bottom_left = 24
+
+[sub_resource type="StyleBoxFlat" id="StyleToolGroup"]
+bg_color = Color(0.545098, 0.356863, 0.176471, 0.14902)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.72549, 0.52549, 0.301961, 0.533333)
+corner_radius_top_left = 18
+corner_radius_top_right = 18
+corner_radius_bottom_right = 18
+corner_radius_bottom_left = 18
+
+[sub_resource type="StyleBoxFlat" id="StyleSeedGroup"]
+bg_color = Color(1, 0.960784, 0.839216, 0.721569)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.72549, 0.52549, 0.301961, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxEmpty" id="StyleTransparent"]
+
+[node name="FieldGameplayUI" type="Control" unique_id=240487468]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="TopUI" type="Control" parent="." unique_id=1637934427]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="FieldTitleGroup" type="Control" parent="TopUI" unique_id=1036390154]
+anchors_preset = 0
+offset_left = 23.0
+offset_top = 132.0
+offset_right = 198.0
+offset_bottom = 207.0
+mouse_filter = 2
+
+[node name="FieldTitlePlaque" type="TextureRect" parent="TopUI/FieldTitleGroup" unique_id=1056923271]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("1_title")
+expand_mode = 1
+
+[node name="FieldTitle" type="Label" parent="TopUI/FieldTitleGroup" unique_id=1356331902]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 4.0
+offset_right = 159.0
+offset_bottom = 43.0
+theme_override_colors/font_color = Color(0.294118, 0.176471, 0.0941176, 1)
+theme_override_colors/font_outline_color = Color(1, 0.956863, 0.862745, 1)
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 18
+text = "VƯỜN NHÀ"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="FieldSubtitle" type="Label" parent="TopUI/FieldTitleGroup"]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 38.0
+offset_right = 159.0
+offset_bottom = 67.0
+theme_override_colors/font_color = Color(0.403922, 0.27451, 0.180392, 1)
+theme_override_font_sizes/font_size = 12
+text = "12 ô canh tác"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RightUI" type="Control" parent="." unique_id=1236912091]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="CropDetailPanel" type="Panel" parent="RightUI" unique_id=1351521674]
+layout_mode = 0
+offset_left = 1006.0
+offset_top = 214.0
+offset_right = 1270.0
+offset_bottom = 550.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleCropDetail")
+
+[node name="CropTitle" type="Label" parent="RightUI/CropDetailPanel" unique_id=1262232628]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 10.0
+offset_right = 249.0
+offset_bottom = 44.0
+theme_override_colors/font_color = Color(0.294118, 0.176471, 0.0941176, 1)
+theme_override_font_sizes/font_size = 22
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CropPreview" type="TextureRect" parent="RightUI/CropDetailPanel" unique_id=1612210453]
+layout_mode = 0
+offset_left = 82.0
+offset_top = 46.0
+offset_right = 182.0
+offset_bottom = 146.0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="LifecycleLabel" type="Label" parent="RightUI/CropDetailPanel" unique_id=1884129124]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 148.0
+offset_right = 249.0
+offset_bottom = 180.0
+theme_override_colors/font_color = Color(0.223529, 0.439216, 0.231373, 1)
+theme_override_font_sizes/font_size = 15
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="DetailLabel" type="Label" parent="RightUI/CropDetailPanel" unique_id=909220234]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 184.0
+offset_right = 244.0
+offset_bottom = 324.0
+theme_override_colors/font_color = Color(0.403922, 0.27451, 0.180392, 1)
+theme_override_font_sizes/font_size = 14
+horizontal_alignment = 0
+vertical_alignment = 1
+
+[node name="BottomUI" type="Control" parent="." unique_id=1208847293]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="BackToFieldSelect" type="TextureButton" parent="BottomUI" unique_id=1246873036]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_left = 23.0
+offset_top = 132.0
+offset_right = 198.0
+offset_bottom = 207.0
+texture_normal = ExtResource("27_back_n")
+texture_pressed = ExtResource("29_back_p")
+texture_hover = ExtResource("28_back_h")
+texture_disabled = ExtResource("30_back_d")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="BottomUI/BackToFieldSelect"]
+layout_mode = 0
+offset_left = 38.0
+offset_top = 5.0
+offset_right = 154.0
+offset_bottom = 51.0
+theme_override_colors/font_color = Color(1, 0.956863, 0.835294, 1)
+theme_override_font_sizes/font_size = 16
+text = "Quay lại"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ActionTray" type="Panel" parent="BottomUI" unique_id=234253217]
+layout_mode = 0
+offset_left = 177.0
+offset_top = 574.0
+offset_right = 1265.0
+offset_bottom = 708.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleActionTray")
+
+[node name="ToolGroup" type="Panel" parent="BottomUI/ActionTray" unique_id=134497463]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 7.0
+offset_right = 673.0
+offset_bottom = 88.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleTransparent")
+
+[node name="Action_till" type="TextureButton" parent="BottomUI/ActionTray/ToolGroup" unique_id=504156041]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 7.0
+offset_right = 187.0
+offset_bottom = 82.0
+texture_normal = ExtResource("2_hoe_n")
+texture_pressed = ExtResource("4_hoe_p")
+texture_hover = ExtResource("3_hoe_h")
+texture_disabled = ExtResource("5_hoe_d")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="BottomUI/ActionTray/ToolGroup/Action_till" unique_id=412470208]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 68.0
+offset_right = 128.0
+offset_bottom = 95.0
+theme_override_colors/font_color = Color(1, 0.956863, 0.835294, 1)
+theme_override_colors/font_outline_color = Color(0.290196, 0.160784, 0.0980392, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 17
+text = "Cuốc"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Action_seed" type="TextureButton" parent="BottomUI/ActionTray/ToolGroup" unique_id=1019448438]
+layout_mode = 0
+offset_left = 195.0
+offset_top = 7.0
+offset_right = 331.0
+offset_bottom = 80.0
+texture_normal = ExtResource("6_seed_n")
+texture_pressed = ExtResource("8_seed_p")
+texture_hover = ExtResource("7_seed_h")
+texture_disabled = ExtResource("9_seed_d")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="BottomUI/ActionTray/ToolGroup/Action_seed" unique_id=719193075]
+layout_mode = 0
+offset_left = 26.0
+offset_top = 63.0
+offset_right = 130.0
+offset_bottom = 90.0
+theme_override_colors/font_color = Color(1, 0.956863, 0.835294, 1)
+theme_override_colors/font_outline_color = Color(0.290196, 0.160784, 0.0980392, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 17
+text = "Gieo"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Action_water" type="TextureButton" parent="BottomUI/ActionTray/ToolGroup" unique_id=883476971]
+layout_mode = 0
+offset_left = 339.0
+offset_top = 7.0
+offset_right = 491.0
+offset_bottom = 79.0
+texture_normal = ExtResource("10_water_n")
+texture_pressed = ExtResource("12_water_p")
+texture_hover = ExtResource("11_water_h")
+texture_disabled = ExtResource("13_water_d")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="BottomUI/ActionTray/ToolGroup/Action_water" unique_id=1348499812]
+layout_mode = 0
+offset_left = 36.0
+offset_top = 63.0
+offset_right = 140.0
+offset_bottom = 90.0
+theme_override_colors/font_color = Color(1, 0.956863, 0.835294, 1)
+theme_override_colors/font_outline_color = Color(0.290196, 0.160784, 0.0980392, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 17
+text = "Tưới"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Action_fertilize" type="TextureButton" parent="BottomUI/ActionTray/ToolGroup" unique_id=1755781320]
+layout_mode = 0
+offset_left = 499.0
+offset_top = 7.0
+offset_right = 661.0
+offset_bottom = 80.0
+texture_normal = ExtResource("14_fert_n")
+texture_pressed = ExtResource("16_fert_p")
+texture_hover = ExtResource("15_fert_h")
+texture_disabled = ExtResource("17_fert_d")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="BottomUI/ActionTray/ToolGroup/Action_fertilize" unique_id=470350068]
+layout_mode = 0
+offset_left = 31.0
+offset_top = 60.0
+offset_right = 135.0
+offset_bottom = 87.0
+theme_override_colors/font_color = Color(1, 0.956863, 0.835294, 1)
+theme_override_colors/font_outline_color = Color(0.290196, 0.160784, 0.0980392, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 17
+text = "Bón"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Action_harvest" type="TextureButton" parent="BottomUI/ActionTray" unique_id=1601977653]
+layout_mode = 0
+offset_left = 680.0
+offset_top = 11.0
+offset_right = 844.0
+offset_bottom = 84.0
+texture_normal = ExtResource("18_harvest_n")
+texture_pressed = ExtResource("20_harvest_p")
+texture_hover = ExtResource("19_harvest_h")
+texture_disabled = ExtResource("21_harvest_d")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Icon" type="TextureRect" parent="BottomUI/ActionTray/Action_harvest" unique_id=1846711954]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 17.0
+offset_right = 50.0
+offset_bottom = 57.0
+mouse_filter = 2
+texture = ExtResource("22_basket")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="BottomUI/ActionTray/Action_harvest" unique_id=2006556414]
+layout_mode = 0
+offset_left = 38.0
+offset_top = 8.0
+offset_right = 142.0
+offset_bottom = 68.0
+theme_override_colors/font_color = Color(1, 0.956863, 0.835294, 1)
+theme_override_colors/font_outline_color = Color(0.290196, 0.160784, 0.0980392, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 16
+text = "Thu hoạch"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Action_advance_day" type="TextureButton" parent="BottomUI/ActionTray" unique_id=88165090]
+layout_mode = 0
+offset_left = 850.0
+offset_top = 8.0
+offset_right = 1066.0
+offset_bottom = 86.0
+texture_normal = ExtResource("23_next_n")
+texture_pressed = ExtResource("25_next_p")
+texture_hover = ExtResource("24_next_h")
+texture_disabled = ExtResource("26_next_d")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="BottomUI/ActionTray/Action_advance_day" unique_id=1428753536]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 45.0
+offset_top = 0.0
+offset_right = 168.0
+offset_bottom = 76.0
+theme_override_colors/font_color = Color(1, 0.956863, 0.835294, 1)
+theme_override_colors/font_outline_color = Color(0.113725, 0.0823529, 0.211765, 1)
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 21
+text = "Ngày mới"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SeedPickerGroup" type="Panel" parent="BottomUI/ActionTray" unique_id=2119988164]
+layout_mode = 0
+offset_left = 205.0
+offset_top = -67.0
+offset_right = 385.0
+offset_bottom = 5.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleSeedGroup")
+
+[node name="Title" type="Label" parent="BottomUI/ActionTray/SeedPickerGroup" unique_id=956381336]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 2.0
+offset_right = 172.0
+offset_bottom = 25.0
+theme_override_colors/font_color = Color(0.415686, 0.278431, 0.168627, 1)
+theme_override_font_sizes/font_size = 13
+text = "HẠT GIỐNG"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Seed_carrot" type="TextureButton" parent="BottomUI/ActionTray/SeedPickerGroup" unique_id=835470185]
+layout_mode = 0
+offset_left = 17.0
+offset_top = 25.0
+offset_right = 61.0
+offset_bottom = 70.0
+texture_normal = ExtResource("31_carrot")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Seed_tomato" type="TextureButton" parent="BottomUI/ActionTray/SeedPickerGroup" unique_id=1389103136]
+layout_mode = 0
+offset_left = 70.0
+offset_top = 25.0
+offset_right = 114.0
+offset_bottom = 70.0
+texture_normal = ExtResource("32_tomato")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Seed_pumpkin" type="TextureButton" parent="BottomUI/ActionTray/SeedPickerGroup" unique_id=2065829983]
+layout_mode = 0
+offset_left = 123.0
+offset_top = 25.0
+offset_right = 167.0
+offset_bottom = 70.0
+texture_normal = ExtResource("33_pumpkin")
+ignore_texture_size = true
+stretch_mode = 0

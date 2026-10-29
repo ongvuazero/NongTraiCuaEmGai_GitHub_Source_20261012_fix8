@@ -1,0 +1,24 @@
+{
+  "spec_version": "6.1",
+  "screen_id": "TITLE_SCREEN",
+  "canonical_viewport": [1280, 720],
+  "composition_class": "CLASS_A_PLATE_FIRST",
+  "visual_status": "LEGACY_VISUAL_FALLBACK",
+  "composition_owner": {
+    "type": "plate_first",
+    "required_key": "TITLE_WORLD_PLATE",
+    "fallback_policy": "no visually-different substitute may be declared parity-pass"
+  },
+  "controls": [
+    {"id": "CONTINUE", "asset_key": "BTN_CONTINUE", "rect_px": [502, 288, 276, 66], "action": "continue_game"},
+    {"id": "NEW_GAME", "asset_key": "BTN_NEW_GAME", "rect_px": [502, 374, 276, 66], "action": "new_game"},
+    {"id": "SETTINGS", "asset_key": "BTN_SETTINGS", "rect_px": [502, 460, 276, 65], "action": "open_settings"},
+    {"id": "QUIT", "asset_key": "BTN_QUIT", "rect_px": [502, 544, 280, 66], "action": "quit_game"}
+  ],
+  "overlays": [
+    {"id": "TITLE_LOGO", "asset_key": "TITLE_LOGO", "rect_px": [415, 45, 430, 227], "placement_policy": "frozen"}
+  ],
+  "required_visual_keys": ["TITLE_WORLD_PLATE", "TITLE_LOGO", "BTN_CONTINUE", "BTN_NEW_GAME", "BTN_SETTINGS", "BTN_QUIT"],
+  "optional_if_baked_into_world_plate": ["TITLE_LEFT_QUOTE_SIGN", "TITLE_RIGHT_QUOTE_SIGN", "TITLE_DRAGON_DIRECTION_SIGN"],
+  "qa_fixture": {"capture": "title_FALLBACK_v6_1.png", "viewport": [1280, 720]}
+}

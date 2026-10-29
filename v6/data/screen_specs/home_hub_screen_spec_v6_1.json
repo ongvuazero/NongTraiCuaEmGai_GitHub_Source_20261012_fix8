@@ -1,0 +1,29 @@
+{
+  "spec_version": "6.1",
+  "screen_id": "HOME_HUB_SCREEN",
+  "canonical_viewport": [1280, 720],
+  "composition_class": "CLASS_B_HYBRID_BAKED_PLUS_ANCHORS",
+  "visual_status": "LEGACY_VISUAL_FALLBACK",
+  "composition_owner": {"type": "hybrid_baked_plus_anchors", "required_key": "HOME_HUB_WORLD_PLATE"},
+  "ui_rects": [
+    {"id": "LOGO_RECT", "px": [24, 21, 244, 118]},
+    {"id": "DATE_PANEL_RECT", "px": [430, 26, 151, 66]},
+    {"id": "MONEY_PANEL_RECT", "px": [595, 26, 144, 66]},
+    {"id": "ENERGY_PANEL_RECT", "px": [752, 26, 152, 66]},
+    {"id": "LONGKHI_PANEL_RECT", "px": [921, 26, 177, 66]},
+    {"id": "DATE_VALUE_RECT", "px": [474, 28, 101, 62]},
+    {"id": "MONEY_VALUE_RECT", "px": [639, 28, 94, 62]},
+    {"id": "ENERGY_VALUE_RECT", "px": [796, 28, 102, 62]},
+    {"id": "LONGKHI_VALUE_RECT", "px": [965, 28, 127, 62]},
+    {"id": "NAV_FIELD_RECT", "px": [28, 145, 180, 57]},
+    {"id": "NAV_SHOP_RECT", "px": [28, 212, 180, 57]},
+    {"id": "NAV_STORAGE_RECT", "px": [28, 279, 180, 57]},
+    {"id": "NAV_ANIMALS_RECT", "px": [28, 346, 180, 57]},
+    {"id": "NAV_DRAGON_RECT", "px": [28, 413, 180, 57]},
+    {"id": "NAV_QUEST_RECT", "px": [28, 480, 180, 57]},
+    {"id": "NAV_SETTINGS_RECT", "px": [28, 547, 180, 57]},
+    {"id": "REST_BUTTON_RECT", "px": [28, 614, 180, 59]}
+  ],
+  "required_visual_keys": ["HOME_HUB_WORLD_PLATE", "HOME_HUB_FRONT_OCCLUDER", "HOME_HUB_WALKABILITY_MAP", "FARMER_BACK", "CAT_PREFAB_ART", "COW_PREFAB_ART", "SHEEP_PREFAB_ART", "CHICKEN_PREFAB_ART", "PORTAL_PREFAB_ART"],
+  "qa_fixture": {"day": 12, "season": "Spring", "money": 12480, "energy": [88, 100], "long_khi": 3250, "capture": "home_hub_FALLBACK_v6_1.png"}
+}

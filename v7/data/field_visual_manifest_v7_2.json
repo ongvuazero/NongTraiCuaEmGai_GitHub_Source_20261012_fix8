@@ -1,0 +1,47 @@
+{
+  "version": "7.2",
+  "screen_id": "FIELD_VISUAL_CALIBRATION_PROOF",
+  "canonical_viewport": [1280, 720],
+  "logical_grid": {"columns": 4, "rows": 3},
+  "projection": {
+    "mode": "AUTHORED_PERSPECTIVE_QUAD_WITH_DEPTH_CURVE",
+    "quad": {
+      "tl": [278, 268],
+      "tr": [894, 268],
+      "br": [954, 558],
+      "bl": [214, 558]
+    },
+    "depth_exponent": 1.28,
+    "bed_margin_u": 0.075,
+    "bed_margin_v": 0.13,
+    "crop_anchor_local_u": 0.50,
+    "crop_anchor_local_v": 0.68,
+    "mature_target_height_far": 61.0,
+    "mature_target_height_mid": 72.5,
+    "mature_target_height_near": 84.0,
+    "stage_multipliers": [0.34, 0.46, 0.62, 0.80, 1.00, 1.00]
+  },
+  "soil_material": {
+    "untilled": "BACKGROUND_ONLY",
+    "dry_color": "754629",
+    "dry_edge_color": "9a673c",
+    "wet_color": "493126",
+    "wet_highlight_color": "8c7663",
+    "furrow_count": 5,
+    "furrow_positions": [0.18, 0.36, 0.54, 0.72, 0.90]
+  },
+  "plots": [
+    {"plot_id": 1, "grid_coord": [0, 0]},
+    {"plot_id": 2, "grid_coord": [1, 0]},
+    {"plot_id": 3, "grid_coord": [2, 0]},
+    {"plot_id": 4, "grid_coord": [3, 0]},
+    {"plot_id": 5, "grid_coord": [0, 1]},
+    {"plot_id": 6, "grid_coord": [1, 1]},
+    {"plot_id": 7, "grid_coord": [2, 1]},
+    {"plot_id": 8, "grid_coord": [3, 1]},
+    {"plot_id": 9, "grid_coord": [0, 2]},
+    {"plot_id": 10, "grid_coord": [1, 2]},
+    {"plot_id": 11, "grid_coord": [2, 2]},
+    {"plot_id": 12, "grid_coord": [3, 2]}
+  ]
+}

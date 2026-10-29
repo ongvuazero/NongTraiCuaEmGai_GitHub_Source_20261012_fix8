@@ -1,0 +1,120 @@
+{
+  "version": 2,
+  "policy": "Exact Texture2D resource paths only. A replacement must load successfully. Keep original source files, node ownership, input geometry and UI overlays. Sprite2D draw extent is preserved across source dimensions; Control layout and stretch modes are preserved.",
+  "replacements": {
+	"res://v6/art/plates/save/save_thumb_slot1_v6_5.png": "res://assets/living_world_all_v2/home_hub.png",
+	"res://v6/art/plates/save/save_thumb_slot2_v6_5.png": "res://assets/living_world_all_v2/home_hub.png",
+	"res://v6/art/plates/save/save_thumb_slot3_v6_5.png": "res://assets/living_world_all_v2/home_hub.png",
+	"res://v6/art/plates/save/save_thumb_detail_v6_5.png": "res://assets/living_world_all_v2/home_hub.png",
+    "res://v6/art/reference_runtime/home_hub_reference_runtime_base_v6_5.png": "res://assets/living_world_all_v2/home_hub.png",
+    "res://v6/art/plates/home_hub/home_hub_world_plate_v6_2.png": "res://assets/living_world_all_v2/home_hub.png",
+    "res://v6/art/reference_runtime/title_reference_runtime_base_v6_5.png": "res://assets/living_world_all_v2/home_hub.png",
+    "res://v6/art/reference_runtime/save_reference_runtime_base_v6_5.png": "res://assets/living_world_all_v2/home_hub.png",
+    "res://assets/canonical_v2/03_ART_RUNTIME_READY/ENVIRONMENT/BACKGROUND_PLATES/E01-04__Home_Hub_far_coast_distant_Dragon_Island.png": "res://assets/living_world_all_v2/home_hub.png",
+    "res://assets/field_approved_v1/runtime/field_background_clear_v2_20261008.png": "res://assets/living_world_all_v2/field.png",
+    "res://assets/canonical_v2/03_ART_RUNTIME_READY/ENVIRONMENT/BACKGROUND_PLATES/E01-08__Field_Select_scenic_background_farmhouse_edge.png": "res://assets/living_world_all_v2/field.png",
+    "res://assets/canonical_v2/03_ART_RUNTIME_READY/ENVIRONMENT/SCREEN_PLATES/animal_coop_yard.png": "res://assets/living_world_all_v2/chicken_yard.png",
+    "res://assets/canonical_v2/03_ART_RUNTIME_READY/ENVIRONMENT/SCREEN_PLATES/animal_environment.png": "res://assets/living_world_all_v2/chicken_yard.png",
+    "res://assets/canonical_v2/03_ART_RUNTIME_READY/ENVIRONMENT/BACKGROUND_PLATES/E03-01__Animal_far_farm_mountains_lake_background.png": "res://assets/living_world_all_v2/chicken_yard.png",
+    "res://assets/gdd_closure_v3/environment/cow_yard.png": "res://assets/living_world_all_v2/cow_yard.png",
+    "res://assets/gdd_closure_v3/environment/duck_pond.png": "res://assets/living_world_all_v2/duck_pond.png",
+    "res://assets/gdd_closure_v3/environment/pig_yard.png": "res://assets/living_world_all_v2/pig_yard.png",
+    "res://assets/approved_world_v2/destinations/botanical.png": "res://assets/living_world_all_v2/botanical.png",
+    "res://assets/approved_world_v1/destinations/botanical.png": "res://assets/living_world_all_v2/botanical.png",
+    "res://assets/approved_world_v2/destinations/monster.png": "res://assets/living_world_all_v2/monster.png",
+    "res://assets/approved_world_v1/destinations/monster.png": "res://assets/living_world_all_v2/monster.png",
+    "res://assets/approved_world_v2/destinations/ice.png": "res://assets/living_world_all_v2/ice.png",
+    "res://assets/approved_world_v1/destinations/ice.png": "res://assets/living_world_all_v2/ice.png",
+    "res://assets/approved_world_v2/destinations/lava.png": "res://assets/living_world_all_v2/lava.png",
+    "res://assets/approved_world_v1/destinations/lava.png": "res://assets/living_world_all_v2/lava.png",
+    "res://assets/approved_world_v1/ui/dragon_environment_matte_v3.png": "res://assets/living_world_all_v2/dragon.png",
+    "res://assets/canonical_v2/03_ART_RUNTIME_READY/ENVIRONMENT/SCREEN_PLATES/dragon_environment.png": "res://assets/living_world_all_v2/dragon.png",
+    "res://assets/canonical_v2/03_ART_RUNTIME_READY/ENVIRONMENT/SCREEN_PLATES/shop_environment.png": "res://assets/living_world_all_v2/shop.png",
+    "res://assets/canonical_v2/03_ART_RUNTIME_READY/ENVIRONMENT/BACKGROUND_PLATES/E02-01__Shop_wood_wall_shelf_background.png": "res://assets/living_world_all_v2/shop.png",
+    "res://assets/canonical_v2/03_ART_RUNTIME_READY/ENVIRONMENT/SCREEN_PLATES/storage_environment.png": "res://assets/living_world_all_v2/storage.png",
+    "res://assets/canonical_v2/03_ART_RUNTIME_READY/ENVIRONMENT/BACKGROUND_PLATES/E02-05__Storage_wood_shelf_wall_background.png": "res://assets/living_world_all_v2/storage.png",
+    "res://assets/canonical_v2/03_ART_RUNTIME_READY/REPAIRS_AND_SHARED/SETTINGS/settings_neutral_parchment_wood_backdrop.png": "res://assets/living_world_all_v2/settings.png"
+  },
+  "preserved_painterly_sources": [
+    "res://assets/living_world_v1/snake_painterly_pilot.png"
+  ],
+  "native_ui_guards": {
+    "res://v6/art/reference_runtime/home_hub_reference_runtime_base_v6_5.png": "res://v6/art/plates/home_hub/home_hub_ui_overlay_v6_5.png",
+    "res://v6/art/reference_runtime/title_reference_runtime_base_v6_5.png": "res://v6/art/plates/title/title_ui_overlay_v6_5.png",
+    "res://v6/art/reference_runtime/save_reference_runtime_base_v6_5.png": "res://v6/art/plates/save/save_ui_overlay_runtime_v6_6.png"
+  },
+  "native_ui_masks": {
+    "res://v6/art/plates/home_hub/home_hub_ui_overlay_v6_5.png": {
+      "replacement_background": "res://assets/living_world_all_v2/home_hub.png",
+      "geometry_source": "res://v6/data/screen_specs/home_hub_screen_spec_v6_3.json",
+      "geometry_group": "visible_ui_rects",
+      "full_rgb_restore_keys": ["LOGO"],
+      "backing_texture": "res://v6/art/reference_runtime/home_hub_reference_runtime_base_v6_5.png",
+      "backing_art_rects": [[26, 3, 238, 118]],
+      "visible_rects": {
+        "LOGO": [18, 10, 12, 2],
+        "DATE": [5, 5, 5, 5],
+        "MONEY": [5, 5, 5, 5],
+        "ENERGY": [5, 5, 5, 5],
+        "LONG_KHI": [5, 5, 5, 5],
+        "NAV_FIELD": [5, 5, 5, 5],
+        "NAV_SHOP": [5, 5, 5, 5],
+        "NAV_STORAGE": [5, 5, 5, 5],
+        "NAV_ANIMALS": [5, 5, 5, 5],
+        "NAV_DRAGON": [5, 5, 5, 5],
+        "NAV_QUEST": [5, 5, 5, 5],
+        "NAV_SETTINGS": [5, 5, 5, 5],
+        "REST_NEXTDAY": [5, 5, 5, 5]
+      },
+      "policy": "Restore retained native RGB in internal overlay alpha holes only inside authored UI art rectangles. Transparent zero-RGB space remains transparent. Dynamic HUD/navigation text and hit geometry remain separate."
+    },
+    "res://v6/art/plates/title/title_ui_overlay_v6_5.png": {
+      "replacement_background": "res://assets/living_world_all_v2/home_hub.png",
+      "geometry_source": "res://v6/data/screen_specs/title_screen_spec_v6_3.json",
+      "full_rgb_restore_keys": ["TITLE_LOGO"],
+      "backing_texture": "res://v6/art/reference_runtime/title_reference_runtime_base_v6_5.png",
+      "backing_art_rects": [[407, 40, 449, 237]],
+      "visible_rects": {
+        "TITLE_LOGO": [14, 20, 16, 12],
+        "CONTINUE": [10, 10, 10, 10],
+        "NEW_GAME": [10, 10, 10, 10],
+        "SETTINGS": [10, 10, 10, 10],
+        "QUIT": [10, 10, 10, 10]
+      },
+      "policy": "Restore native branded logo RGB and the original four menu skins without changing their labels or hit rectangles. Zero-RGB transparent space stays transparent."
+    },
+    "res://v6/art/plates/save/save_ui_overlay_runtime_v6_6.png": {
+	  "reject_cold_backing_pixels": true,
+      "cold_filter_exempt_keys": ["CONFIRM"],
+      "replacement_background": "res://assets/living_world_all_v2/home_hub.png",
+      "backing_texture": "res://v6/art/reference_runtime/save_reference_runtime_base_v6_5.png",
+      "backing_art_rects": [[27, 4, 253, 118]],
+      "backing_art_provenance": "The original branded logo is native artwork in the backing plate. Only that logo rectangle is sampled from its untouched source. Other cleared caption areas use the overlay's original clean RGB skin, retaining authored controls without old text.",
+      "geometry_source": "res://v6/data/screen_specs/save_screen_spec_v6_3.json",
+      "full_rgb_restore_keys": ["LOGO"],
+      "visible_rects": {
+        "LOGO": [18, 12, 24, 0],
+        "HEADER": [2, 4, 4, 4],
+        "SLOT_1_SELECTED": [6, 6, 6, 6],
+        "SLOT_2": [6, 6, 6, 6],
+        "SLOT_3": [6, 6, 6, 6],
+        "DETAIL_PANEL": [8, 8, 8, 8],
+        "BACK": [5, 5, 5, 5],
+        "DELETE": [5, 5, 5, 5],
+        "CONFIRM": [5, 5, 5, 5]
+      },
+      "extra_art_rects": [[754, 94, 442, 56], [769, 80, 80, 70], [1114, 92, 82, 58]],
+      "full_rgb_restore_extra_art": true,
+      "extra_art_provenance": "Existing blank wood detail-title header and leaf rim measured on the 1280x720 save_ui_overlay_runtime_v6_6.png, surrounding the unchanged authored DETAIL_TITLE [830,94,360,45]. Rim allowances only retain original skin pixels; no UI or input rectangle moves."
+    }
+  },
+  "decorative_textures_to_hide": [
+    "res://v6/art/plates/save/save_detail_quote_complete_v6_7.png"
+  ],
+  "unmapped_composites": [
+    {
+      "source": "res://v6/art/plates/save/save_unified_static_runtime_base_v6_8_1.png",
+      "reason": "Parity-only composite contains functional save panels and is not a background-only texture."
+    }
+  ]
+}

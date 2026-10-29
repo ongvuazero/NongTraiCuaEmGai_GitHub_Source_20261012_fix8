@@ -1,0 +1,14 @@
+{
+  "registry_version": "6.1",
+  "screen_id": "TITLE_SCREEN",
+  "canonical_viewport": [1280, 720],
+  "status": "LEGACY_VISUAL_FALLBACK",
+  "rects": [
+    {"id": "FALLBACK_CAT_RECT", "type": "LEGACY_FALLBACK_RECT", "px": [92, 438, 125, 145]},
+    {"id": "FALLBACK_SHEEP_RECT", "type": "LEGACY_FALLBACK_RECT", "px": [1030, 425, 84, 78]},
+    {"id": "FALLBACK_COW_RECT", "type": "LEGACY_FALLBACK_RECT", "px": [1092, 400, 105, 98]},
+    {"id": "FALLBACK_CHICKEN_RECT", "type": "LEGACY_FALLBACK_RECT", "px": [1195, 447, 58, 54]},
+    {"id": "BUTTON_ICON_RECT", "type": "RELATIVE_CONTENT_RECT", "px": [25, 13, 42, 42]},
+    {"id": "BUTTON_LABEL_RECT", "type": "RELATIVE_CONTENT_RECT", "px": [62, 0, 210, 66]}
+  ]
+}

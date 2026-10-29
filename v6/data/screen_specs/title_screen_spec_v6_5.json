@@ -1,0 +1,10 @@
+{
+  "spec_version": "6.5",
+  "screen_id": "TITLE_SCREEN",
+  "canonical_viewport": [1280, 720],
+  "geometry_policy": "LOCK_V6_4",
+  "base_plate": "res://v6/art/reference_runtime/title_reference_runtime_base_v6_5.png",
+  "ui_overlay": "res://v6/art/plates/title/title_ui_overlay_v6_5.png",
+  "render_dynamic": ["menu_labels", "transparent_hit_targets"],
+  "forbid_duplicate_runtime_art": ["logo", "cat", "animals", "quote_signs", "dragon_sign", "button_icons"]
+}

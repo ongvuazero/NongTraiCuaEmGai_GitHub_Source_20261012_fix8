@@ -1,0 +1,155 @@
+MY SISTER'S FARM — FIELD ASSEMBLY FINAL COMMAND V1
+===================================================
+
+INPUT
+Use only the approved source pack:
+MY_SISTERS_FARM_FIELD_APPROVED_SOURCE_PACK_V1.zip
+
+APPROVED SOURCE SHEETS
+- 01_BACKGROUND/field_background_approved.png
+- 02_PLOTS/field_plot_sheet_approved.png
+- 03_CROPS/field_crop_sheet_approved.png
+- 04_FARMER/field_farmer_sheet_approved.png
+- 05_UI/field_ui_sheet_approved.png
+
+These five sheets are LOCKED.
+Do not redesign them.
+Do not replace them.
+Do not generate a new Field art direction.
+Do not return to older Field reconstruction packs.
+
+PRIMARY GOAL
+Use these approved sheets to rebuild the current Field screen in the game.
+The result should visually follow this approved source line.
+
+DO NOT
+- change gameplay logic
+- change GameState
+- change FarmData
+- change save schema
+- change crop progression
+- change plot count
+- add new UI systems
+- add gems/hearts/mail/map/crowns/extra currencies
+- start Animal/Dragon/Island
+- build/export
+
+LANGUAGE LOCK
+Use English for Field UI.
+Vietnamese is deferred.
+
+ASSEMBLY PIPELINE
+Use this layer order:
+1. background
+2. plot state
+3. crop
+4. front soil / crop occlusion if needed
+5. farmer
+6. existing restrained FX
+7. UI
+
+BACKGROUND
+Use 01_BACKGROUND/field_background_approved.png as the environment base.
+Do not place plots/UI baked into the background.
+
+PLOTS
+Use 02_PLOTS/field_plot_sheet_approved.png as the source for:
+- untilled
+- tilled
+- wet
+- selected
+- fertilized
+
+If the sheet requires slicing, slice it cleanly.
+Keep perspective/style consistent.
+Do not redraw plots from scratch.
+
+CROPS
+Use 03_CROPS/field_crop_sheet_approved.png as the source for:
+- Carrot stage 1-4
+- Tomato stage 1-4
+- Pumpkin stage 1-4
+
+Do not place an extra soil patch under crops.
+Crops must sit naturally on plot soil.
+
+FARMER
+Use 04_FARMER/field_farmer_sheet_approved.png as the source for:
+- idle
+- till
+- plant
+- water
+- harvest
+
+Preserve one consistent farmer design.
+If slicing frames, keep consistent frame size/pivot as much as practical.
+
+UI
+Use 05_UI/field_ui_sheet_approved.png as the source for:
+- logo
+- back button
+- day/season frame
+- coins frame
+- energy frame
+- right crop info panel
+- seed picker
+- bottom action bar
+- reward popup
+
+Dynamic values should still be runtime text/data in Godot when practical.
+Do not add unrelated UI systems.
+
+VISUAL TARGET
+The field must remain the main focus.
+The result should feel cozy, bright, spring-like, and visually consistent.
+Avoid the old look of pasted floating rectangles or mismatched camera angles.
+
+QA SCREENSHOTS
+Capture actual runtime at 1280x720:
+01_EMPTY_FIELD.png
+02_SELECTED_PLOT.png
+03_TILLED.png
+04_CARROT_PLANTED.png
+05_CARROT_GROWING.png
+06_CARROT_READY.png
+07_WATER_ACTION.png
+08_HARVEST_ACTION.png
+09_SEED_PICKER.png
+10_FULL_FIELD.png
+
+Also create:
+REPORTS/FIELD_APPROVED_SOURCE_COMPARE.png
+Layout:
+APPROVED SOURCE DIRECTION | CURRENT RUNTIME
+
+REGRESSION
+Must still pass:
+CURRENT_CORE_LOOP_TEST_PASS
+PHASE1_CROP_PROGRESSION_TEST_PASS
+PHASE2_FIRST_SESSION_TEST_PASS
+
+OUTPUT
+Create:
+MY_SISTERS_FARM_FIELD_APPROVED_SOURCE_RESULT_V1.zip
+
+Include only:
+- REPORTS/FIELD_APPROVED_SOURCE_COMPARE.png
+- 10 QA screenshots
+- short report
+- files actually modified
+
+FINAL RESPONSE
+Return only:
+FIELD ASSEMBLY: PASS/FAIL
+GAMEPLAY CHANGED: NO
+PHASE0/CORE LOOP: PASS/FAIL
+PHASE1: PASS/FAIL
+PHASE2: PASS/FAIL
+VISUAL REVIEW: REQUIRED
+FILES MODIFIED:
+COMPARE SHEET:
+ZIP PATH:
+ZIP SIZE:
+
+Then STOP.
+Do not start another feature or screen.

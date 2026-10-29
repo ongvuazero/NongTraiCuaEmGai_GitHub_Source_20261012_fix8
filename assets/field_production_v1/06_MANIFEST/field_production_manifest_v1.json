@@ -1,0 +1,714 @@
+{
+  "project": "MY SISTER'S FARM",
+  "pack": "FIELD_PRODUCTION_ASSET_PACK_V1",
+  "language": "English production UI; Vietnamese deferred",
+  "source_canvas": {
+    "background": [
+      1672,
+      941
+    ],
+    "plot_sheet": [
+      1672,
+      941
+    ],
+    "crop_sheet": [
+      1448,
+      1086
+    ],
+    "farmer_sheet": [
+      1672,
+      941
+    ],
+    "soil_lip_sheet": [
+      2172,
+      724
+    ],
+    "ui_sheet": [
+      1672,
+      941
+    ]
+  },
+  "runtime_target": [
+    1280,
+    720
+  ],
+  "layer_order": [
+    "field_background_clean",
+    "plot_state",
+    "crop_sprite",
+    "front_soil_lip",
+    "farmer",
+    "interaction_fx",
+    "field_ui"
+  ],
+  "plot_files": {
+    "untilled": "02_PLOTS/plot_untilled.png",
+    "tilled": "02_PLOTS/plot_tilled.png",
+    "wet": "02_PLOTS/plot_wet.png",
+    "selected": "02_PLOTS/plot_selected.png",
+    "fertilized": "02_PLOTS/plot_fertilized.png",
+    "front_soil_lip_far": "02_PLOTS/front_soil_lip_far.png",
+    "front_soil_lip_mid": "02_PLOTS/front_soil_lip_mid.png",
+    "front_soil_lip_near": "02_PLOTS/front_soil_lip_near.png"
+  },
+  "crops": {
+    "CARROT": [
+      {
+        "file": "03_CROPS/CARROT/carrot_stage_01.png",
+        "size": [
+          222,
+          138
+        ]
+      },
+      {
+        "file": "03_CROPS/CARROT/carrot_stage_02.png",
+        "size": [
+          316,
+          258
+        ]
+      },
+      {
+        "file": "03_CROPS/CARROT/carrot_stage_03.png",
+        "size": [
+          383,
+          299
+        ]
+      },
+      {
+        "file": "03_CROPS/CARROT/carrot_stage_04.png",
+        "size": [
+          391,
+          357
+        ]
+      }
+    ],
+    "TOMATO": [
+      {
+        "file": "03_CROPS/TOMATO/tomato_stage_01.png",
+        "size": [
+          249,
+          151
+        ]
+      },
+      {
+        "file": "03_CROPS/TOMATO/tomato_stage_02.png",
+        "size": [
+          335,
+          273
+        ]
+      },
+      {
+        "file": "03_CROPS/TOMATO/tomato_stage_03.png",
+        "size": [
+          381,
+          314
+        ]
+      },
+      {
+        "file": "03_CROPS/TOMATO/tomato_stage_04.png",
+        "size": [
+          396,
+          332
+        ]
+      }
+    ],
+    "PUMPKIN": [
+      {
+        "file": "03_CROPS/PUMPKIN/pumpkin_stage_01.png",
+        "size": [
+          288,
+          169
+        ]
+      },
+      {
+        "file": "03_CROPS/PUMPKIN/pumpkin_stage_02.png",
+        "size": [
+          348,
+          283
+        ]
+      },
+      {
+        "file": "03_CROPS/PUMPKIN/pumpkin_stage_03.png",
+        "size": [
+          390,
+          289
+        ]
+      },
+      {
+        "file": "03_CROPS/PUMPKIN/pumpkin_stage_04.png",
+        "size": [
+          398,
+          325
+        ]
+      }
+    ]
+  },
+  "farmer": {
+    "IDLE": [
+      {
+        "file": "04_FARMER/IDLE/idle_01.png",
+        "frame_index": 0,
+        "canvas": [
+          209,
+          189
+        ],
+        "pivot_px": [
+          104.5,
+          187
+        ]
+      },
+      {
+        "file": "04_FARMER/IDLE/idle_02.png",
+        "frame_index": 1,
+        "canvas": [
+          209,
+          189
+        ],
+        "pivot_px": [
+          104.5,
+          187
+        ]
+      },
+      {
+        "file": "04_FARMER/IDLE/idle_03.png",
+        "frame_index": 2,
+        "canvas": [
+          209,
+          189
+        ],
+        "pivot_px": [
+          104.5,
+          187
+        ]
+      },
+      {
+        "file": "04_FARMER/IDLE/idle_04.png",
+        "frame_index": 3,
+        "canvas": [
+          209,
+          189
+        ],
+        "pivot_px": [
+          104.5,
+          187
+        ]
+      },
+      {
+        "file": "04_FARMER/IDLE/idle_05.png",
+        "frame_index": 4,
+        "canvas": [
+          209,
+          189
+        ],
+        "pivot_px": [
+          104.5,
+          187
+        ]
+      },
+      {
+        "file": "04_FARMER/IDLE/idle_06.png",
+        "frame_index": 5,
+        "canvas": [
+          209,
+          189
+        ],
+        "pivot_px": [
+          104.5,
+          187
+        ]
+      },
+      {
+        "file": "04_FARMER/IDLE/idle_07.png",
+        "frame_index": 6,
+        "canvas": [
+          209,
+          189
+        ],
+        "pivot_px": [
+          104.5,
+          187
+        ]
+      },
+      {
+        "file": "04_FARMER/IDLE/idle_08.png",
+        "frame_index": 7,
+        "canvas": [
+          209,
+          189
+        ],
+        "pivot_px": [
+          104.5,
+          187
+        ]
+      }
+    ],
+    "TILL": [
+      {
+        "file": "04_FARMER/TILL/till_01.png",
+        "frame_index": 0,
+        "canvas": [
+          209,
+          189
+        ],
+        "pivot_px": [
+          104.5,
+          187
+        ]
+      },
+      {
+        "file": "04_FARMER/TILL/till_02.png",
+        "frame_index": 1,
+        "canvas": [
+          209,
+          189
+        ],
+        "pivot_px": [
+          104.5,
+          187
+        ]
+      },
+      {
+        "file": "04_FARMER/TILL/till_03.png",
+        "frame_index": 2,
+        "canvas": [
+          209,
+          189
+        ],
+        "pivot_px": [
+          104.5,
+          187
+        ]
+      },
+      {
+        "file": "04_FARMER/TILL/till_04.png",
+        "frame_index": 3,
+        "canvas": [
+          209,
+          189
+        ],
+        "pivot_px": [
+          104.5,
+          187
+        ]
+      },
+      {
+        "file": "04_FARMER/TILL/till_05.png",
+        "frame_index": 4,
+        "canvas": [
+          209,
+          189
+        ],
+        "pivot_px": [
+          104.5,
+          187
+        ]
+      },
+      {
+        "file": "04_FARMER/TILL/till_06.png",
+        "frame_index": 5,
+        "canvas": [
+          209,
+          189
+        ],
+        "pivot_px": [
+          104.5,
+          187
+        ]
+      },
+      {
+        "file": "04_FARMER/TILL/till_07.png",
+        "frame_index": 6,
+        "canvas": [
+          209,
+          189
+        ],
+        "pivot_px": [
+          104.5,
+          187
+        ]
+      },
+      {
+        "file": "04_FARMER/TILL/till_08.png",
+        "frame_index": 7,
+        "canvas": [
+          209,
+          189
+        ],
+        "pivot_px": [
+          104.5,
+          187
+        ]
+      }
+    ],
+    "PLANT": [
+      {
+        "file": "04_FARMER/PLANT/plant_01.png",
+        "frame_index": 0,
+        "canvas": [
+          209,
+          189
+        ],
+        "pivot_px": [
+          104.5,
+          187
+        ]
+      },
+      {
+        "file": "04_FARMER/PLANT/plant_02.png",
+        "frame_index": 1,
+        "canvas": [
+          209,
+          189
+        ],
+        "pivot_px": [
+          104.5,
+          187
+        ]
+      },
+      {
+        "file": "04_FARMER/PLANT/plant_03.png",
+        "frame_index": 2,
+        "canvas": [
+          209,
+          189
+        ],
+        "pivot_px": [
+          104.5,
+          187
+        ]
+      },
+      {
+        "file": "04_FARMER/PLANT/plant_04.png",
+        "frame_index": 3,
+        "canvas": [
+          209,
+          189
+        ],
+        "pivot_px": [
+          104.5,
+          187
+        ]
+      },
+      {
+        "file": "04_FARMER/PLANT/plant_05.png",
+        "frame_index": 4,
+        "canvas": [
+          209,
+          189
+        ],
+        "pivot_px": [
+          104.5,
+          187
+        ]
+      },
+      {
+        "file": "04_FARMER/PLANT/plant_06.png",
+        "frame_index": 5,
+        "canvas": [
+          209,
+          189
+        ],
+        "pivot_px": [
+          104.5,
+          187
+        ]
+      },
+      {
+        "file": "04_FARMER/PLANT/plant_07.png",
+        "frame_index": 6,
+        "canvas": [
+          209,
+          189
+        ],
+        "pivot_px": [
+          104.5,
+          187
+        ]
+      },
+      {
+        "file": "04_FARMER/PLANT/plant_08.png",
+        "frame_index": 7,
+        "canvas": [
+          209,
+          189
+        ],
+        "pivot_px": [
+          104.5,
+          187
+        ]
+      }
+    ],
+    "WATER": [
+      {
+        "file": "04_FARMER/WATER/water_01.png",
+        "frame_index": 0,
+        "canvas": [
+          209,
+          189
+        ],
+        "pivot_px": [
+          104.5,
+          187
+        ]
+      },
+      {
+        "file": "04_FARMER/WATER/water_02.png",
+        "frame_index": 1,
+        "canvas": [
+          209,
+          189
+        ],
+        "pivot_px": [
+          104.5,
+          187
+        ]
+      },
+      {
+        "file": "04_FARMER/WATER/water_03.png",
+        "frame_index": 2,
+        "canvas": [
+          209,
+          189
+        ],
+        "pivot_px": [
+          104.5,
+          187
+        ]
+      },
+      {
+        "file": "04_FARMER/WATER/water_04.png",
+        "frame_index": 3,
+        "canvas": [
+          209,
+          189
+        ],
+        "pivot_px": [
+          104.5,
+          187
+        ]
+      },
+      {
+        "file": "04_FARMER/WATER/water_05.png",
+        "frame_index": 4,
+        "canvas": [
+          209,
+          189
+        ],
+        "pivot_px": [
+          104.5,
+          187
+        ]
+      },
+      {
+        "file": "04_FARMER/WATER/water_06.png",
+        "frame_index": 5,
+        "canvas": [
+          209,
+          189
+        ],
+        "pivot_px": [
+          104.5,
+          187
+        ]
+      },
+      {
+        "file": "04_FARMER/WATER/water_07.png",
+        "frame_index": 6,
+        "canvas": [
+          209,
+          189
+        ],
+        "pivot_px": [
+          104.5,
+          187
+        ]
+      },
+      {
+        "file": "04_FARMER/WATER/water_08.png",
+        "frame_index": 7,
+        "canvas": [
+          209,
+          189
+        ],
+        "pivot_px": [
+          104.5,
+          187
+        ]
+      }
+    ],
+    "HARVEST": [
+      {
+        "file": "04_FARMER/HARVEST/harvest_01.png",
+        "frame_index": 0,
+        "canvas": [
+          209,
+          189
+        ],
+        "pivot_px": [
+          104.5,
+          187
+        ]
+      },
+      {
+        "file": "04_FARMER/HARVEST/harvest_02.png",
+        "frame_index": 1,
+        "canvas": [
+          209,
+          189
+        ],
+        "pivot_px": [
+          104.5,
+          187
+        ]
+      },
+      {
+        "file": "04_FARMER/HARVEST/harvest_03.png",
+        "frame_index": 2,
+        "canvas": [
+          209,
+          189
+        ],
+        "pivot_px": [
+          104.5,
+          187
+        ]
+      },
+      {
+        "file": "04_FARMER/HARVEST/harvest_04.png",
+        "frame_index": 3,
+        "canvas": [
+          209,
+          189
+        ],
+        "pivot_px": [
+          104.5,
+          187
+        ]
+      },
+      {
+        "file": "04_FARMER/HARVEST/harvest_05.png",
+        "frame_index": 4,
+        "canvas": [
+          209,
+          189
+        ],
+        "pivot_px": [
+          104.5,
+          187
+        ]
+      },
+      {
+        "file": "04_FARMER/HARVEST/harvest_06.png",
+        "frame_index": 5,
+        "canvas": [
+          209,
+          189
+        ],
+        "pivot_px": [
+          104.5,
+          187
+        ]
+      },
+      {
+        "file": "04_FARMER/HARVEST/harvest_07.png",
+        "frame_index": 6,
+        "canvas": [
+          209,
+          189
+        ],
+        "pivot_px": [
+          104.5,
+          187
+        ]
+      },
+      {
+        "file": "04_FARMER/HARVEST/harvest_08.png",
+        "frame_index": 7,
+        "canvas": [
+          209,
+          189
+        ],
+        "pivot_px": [
+          104.5,
+          187
+        ]
+      }
+    ]
+  },
+  "farmer_fixed_frame": {
+    "frame_size": [
+      209,
+      189
+    ],
+    "frames_per_action": 8,
+    "pivot": "bottom_center",
+    "actions": [
+      "idle",
+      "till",
+      "plant",
+      "water",
+      "harvest"
+    ]
+  },
+  "ui": {
+    "dynamic_text_rule": "All mutable values/text rendered by Godot, not baked into PNG.",
+    "files": {
+      "05_UI/TOP_HUD/logo.png": [
+        448,
+        221
+      ],
+      "05_UI/TOP_HUD/hud_day_frame.png": [
+        391,
+        119
+      ],
+      "05_UI/TOP_HUD/hud_coins_frame.png": [
+        375,
+        118
+      ],
+      "05_UI/TOP_HUD/hud_energy_frame.png": [
+        335,
+        113
+      ],
+      "05_UI/TOP_HUD/hud_plus_button.png": [
+        146,
+        117
+      ],
+      "05_UI/TOP_HUD/back_button.png": [
+        212,
+        140
+      ],
+      "05_UI/SEED_PICKER/seed_picker_frame.png": [
+        775,
+        480
+      ],
+      "05_UI/RIGHT_PANEL/right_info_panel.png": [
+        395,
+        594
+      ],
+      "05_UI/REWARD/reward_carrot_example.png": [
+        356,
+        393
+      ],
+      "05_UI/REWARD/reward_blank_small_left.png": [
+        160,
+        120
+      ],
+      "05_UI/REWARD/reward_blank_small_right.png": [
+        150,
+        125
+      ],
+      "05_UI/BOTTOM_ACTION_BAR/bottom_action_bar_blank.png": [
+        1607,
+        178
+      ]
+    }
+  },
+  "hard_locks": [
+    "Do not redesign the Field.",
+    "Do not add new gameplay systems.",
+    "Do not change GameState/FarmData/save schema.",
+    "Do not change crop progression or plot count in this assembly pass.",
+    "Do not regenerate replacement art automatically.",
+    "Do not use old V1/V2 reconstruction assets as the new visual authority."
+  ]
+}

@@ -1,0 +1,268 @@
+{
+  "manifest_version": "6.2",
+  "canonical_viewport": [
+    1280,
+    720
+  ],
+  "allowed_roots": [
+    "res://assets/canonical_v2/03_ART_RUNTIME_READY/",
+    "res://v6/art/"
+  ],
+  "status": "INFRASTRUCTURE_PASS",
+  "counts": {
+    "required": 27,
+    "found": 27,
+    "missing": 0
+  },
+  "assets": [
+    {
+      "key": "TITLE_WORLD_PLATE",
+      "screen": "TITLE",
+      "status": "FOUND",
+      "path": "res://v6/art/plates/title/title_world_plate_v6_2.png",
+      "sha256": "b2975ce5fa4e0a344ffce29bf793ea595af64c323a9608a8d1bd6dc6e7b7c9c6",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "key": "TITLE_LOGO",
+      "screen": "TITLE",
+      "status": "FOUND",
+      "path": "res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/TITLE_SAVE_HOME/canonical_logo.png",
+      "sha256": "a62bc906ae18234ec935addfe30118e15c8ba5371c02a8477998ef928bb0daae",
+      "width": 1238,
+      "height": 690
+    },
+    {
+      "key": "BTN_CONTINUE",
+      "screen": "TITLE",
+      "status": "FOUND",
+      "path": "res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/TITLE_SAVE_HOME/title_button_frame_default.png",
+      "sha256": "34cf2add0db3c0232682a1427b0673860667bf474cf31b6bb508b26295f14fcf",
+      "width": 613,
+      "height": 211,
+      "notes": "Shared canonical Title button shell; dynamic label/icon remain overlays."
+    },
+    {
+      "key": "BTN_NEW_GAME",
+      "screen": "TITLE",
+      "status": "FOUND",
+      "path": "res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/TITLE_SAVE_HOME/title_button_frame_default.png",
+      "sha256": "34cf2add0db3c0232682a1427b0673860667bf474cf31b6bb508b26295f14fcf",
+      "width": 613,
+      "height": 211,
+      "notes": "Shared canonical Title button shell; dynamic label/icon remain overlays."
+    },
+    {
+      "key": "BTN_SETTINGS",
+      "screen": "TITLE",
+      "status": "FOUND",
+      "path": "res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/TITLE_SAVE_HOME/title_button_frame_default.png",
+      "sha256": "34cf2add0db3c0232682a1427b0673860667bf474cf31b6bb508b26295f14fcf",
+      "width": 613,
+      "height": 211,
+      "notes": "Shared canonical Title button shell; dynamic label/icon remain overlays."
+    },
+    {
+      "key": "BTN_QUIT",
+      "screen": "TITLE",
+      "status": "FOUND",
+      "path": "res://v6/art/plates/title/quit_door_icon_v6_2.png",
+      "sha256": "e693c8774df30a50d28112a07f5d811a13d29cfa55cfe9a8e5d737835975e5ef",
+      "width": 256,
+      "height": 256
+    },
+    {
+      "key": "TITLE_LEFT_QUOTE_SIGN",
+      "screen": "TITLE",
+      "status": "FOUND",
+      "path": "res://v6/art/plates/title/title_world_plate_v6_2.png",
+      "sha256": "b2975ce5fa4e0a344ffce29bf793ea595af64c323a9608a8d1bd6dc6e7b7c9c6",
+      "width": 1280,
+      "height": 720,
+      "notes": "Static sign is baked into TITLE_WORLD_PLATE; do not add a duplicate overlay."
+    },
+    {
+      "key": "TITLE_RIGHT_QUOTE_SIGN",
+      "screen": "TITLE",
+      "status": "FOUND",
+      "path": "res://v6/art/plates/title/title_world_plate_v6_2.png",
+      "sha256": "b2975ce5fa4e0a344ffce29bf793ea595af64c323a9608a8d1bd6dc6e7b7c9c6",
+      "width": 1280,
+      "height": 720,
+      "notes": "Static sign is baked into TITLE_WORLD_PLATE; do not add a duplicate overlay."
+    },
+    {
+      "key": "TITLE_DRAGON_DIRECTION_SIGN",
+      "screen": "TITLE",
+      "status": "FOUND",
+      "path": "res://v6/art/plates/title/title_world_plate_v6_2.png",
+      "sha256": "b2975ce5fa4e0a344ffce29bf793ea595af64c323a9608a8d1bd6dc6e7b7c9c6",
+      "width": 1280,
+      "height": 720,
+      "notes": "Static sign is baked into TITLE_WORLD_PLATE; do not add a duplicate overlay."
+    },
+    {
+      "key": "SAVE_BG_PLATE",
+      "screen": "SAVE",
+      "status": "FOUND",
+      "path": "res://v6/art/plates/save/save_bg_plate_v6_2.png",
+      "sha256": "db6c36b3f5d04c39e9e9a21944475466f110679c70617307ea252ea45abc41b4",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "key": "SAVE_HEADER_PLATE",
+      "screen": "SAVE",
+      "status": "FOUND",
+      "path": "res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/PANELS/wood_title_header_9slice.png",
+      "sha256": "39665e003a00d54af2666551271589f30646eafbb1d71210f5414a45da400d4a",
+      "width": 954,
+      "height": 169
+    },
+    {
+      "key": "SAVE_SLOT_OCCUPIED",
+      "screen": "SAVE",
+      "status": "FOUND",
+      "path": "res://v6/art/plates/save/save_slot_occupied_v6_2.png",
+      "sha256": "2e63190833b9d9f4de034d66ee6929adf9ddeb4d9295d66295a60a12d83ce567",
+      "width": 671,
+      "height": 146
+    },
+    {
+      "key": "SAVE_SLOT_SELECTED",
+      "screen": "SAVE",
+      "status": "FOUND",
+      "path": "res://v6/art/plates/save/save_slot_selected_v6_2.png",
+      "sha256": "217672a5c5992cd68fbdc1525c9983ae929b43926b914b0a3263add31a892135",
+      "width": 671,
+      "height": 146
+    },
+    {
+      "key": "SAVE_SLOT_EMPTY",
+      "screen": "SAVE",
+      "status": "FOUND",
+      "path": "res://v6/art/plates/save/save_slot_empty_v6_2.png",
+      "sha256": "c1a8fc0ad63e50d61fb455022aaef7391e90c6313ba354d20196af217bb18414",
+      "width": 671,
+      "height": 146
+    },
+    {
+      "key": "SAVE_DETAIL_PANEL",
+      "screen": "SAVE",
+      "status": "FOUND",
+      "path": "res://v6/art/plates/save/save_detail_panel_v6_2.png",
+      "sha256": "38ed2dfa85501a26a3163eb7fa06782c3c9ccbef5f69dd8232e9442c3186b71d",
+      "width": 533,
+      "height": 481
+    },
+    {
+      "key": "BTN_BACK",
+      "screen": "SAVE",
+      "status": "FOUND",
+      "path": "res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/SHARED_BUTTONS/back/default.png",
+      "sha256": "230db48922f3464b62bb33b8577407e29faafec62dcf3b65e06bf211eee1c0a9",
+      "width": 232,
+      "height": 223
+    },
+    {
+      "key": "BTN_DELETE",
+      "screen": "SAVE",
+      "status": "FOUND",
+      "path": "res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/SHARED_BUTTONS/danger/default.png",
+      "sha256": "488c2a2515324677ff322d1a32db1cd16cac311a0a0d010a86ca5cf4d8fc02e0",
+      "width": 598,
+      "height": 210
+    },
+    {
+      "key": "BTN_CONFIRM",
+      "screen": "SAVE",
+      "status": "FOUND",
+      "path": "res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/SHARED_BUTTONS/primary_large/default.png",
+      "sha256": "5dc74cf9c8dfda60bc9f7fb4edbb59ca15ad6fd2f44fab6424770ea33d8853cf",
+      "width": 786,
+      "height": 205
+    },
+    {
+      "key": "HOME_HUB_WORLD_PLATE",
+      "screen": "HOME_HUB",
+      "status": "FOUND",
+      "path": "res://v6/art/plates/home_hub/home_hub_world_plate_v6_2.png",
+      "sha256": "2a2ce8733e1d3cbf42ccb2cbf64e87d43b11d3cbefd89c7921d5b70324d650e6",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "key": "HOME_HUB_FRONT_OCCLUDER",
+      "screen": "HOME_HUB",
+      "status": "FOUND",
+      "path": "res://v6/art/plates/home_hub/home_hub_front_occluder_v6_2.png",
+      "sha256": "adb845634557fb91c192c1220d13b286a1d0fd01665ae11bfda502d15993c13b",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "key": "HOME_HUB_WALKABILITY_MAP",
+      "screen": "HOME_HUB",
+      "status": "FOUND",
+      "path": "res://v6/art/plates/home_hub/home_hub_walkability_v6_2.png",
+      "sha256": "f4defefe518e177bd1bf71f6db0dcc7d0f9d9af0bbe99db4efd2db19ebc5cde3",
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "key": "FARMER_BACK",
+      "screen": "HOME_HUB",
+      "status": "FOUND",
+      "path": "res://assets/canonical_v2/03_ART_RUNTIME_READY/REPAIRS_AND_SHARED/CHARACTER/farmer_full_back.png",
+      "sha256": "0fd545f7ba6b6e63a396bb92e8034c3aa4bbc12d3a9bf8d8603c2995781b4e50",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "key": "CAT_PREFAB_ART",
+      "screen": "HOME_HUB",
+      "status": "FOUND",
+      "path": "res://assets/canonical_v2/03_ART_RUNTIME_READY/CHARACTERS/CAT/calico_cat_sitting.png",
+      "sha256": "5ff006687170b1aab2b54657873b86c9c25fa8930af9b1b04b779ead714da55c",
+      "width": 439,
+      "height": 514
+    },
+    {
+      "key": "COW_PREFAB_ART",
+      "screen": "HOME_HUB",
+      "status": "FOUND",
+      "path": "res://assets/canonical_v2/03_ART_RUNTIME_READY/CHARACTERS/ANIMALS/cow_idle.png",
+      "sha256": "5f4761808e0f93c0cf8f65c564052ebbf6700fc2df5029c9b419a59ff6ead5c3",
+      "width": 489,
+      "height": 517
+    },
+    {
+      "key": "SHEEP_PREFAB_ART",
+      "screen": "HOME_HUB",
+      "status": "FOUND",
+      "path": "res://assets/canonical_v2/03_ART_RUNTIME_READY/CHARACTERS/ANIMALS/sheep_idle.png",
+      "sha256": "654cca6d6b0a4ee4151b273250f4ec541c9c9e08373ea5032c0c5217ee9a23f8",
+      "width": 489,
+      "height": 539
+    },
+    {
+      "key": "CHICKEN_PREFAB_ART",
+      "screen": "HOME_HUB",
+      "status": "FOUND",
+      "path": "res://assets/canonical_v2/03_ART_RUNTIME_READY/CHARACTERS/ANIMALS/chicken_idle.png",
+      "sha256": "5aef5ccbad0966713d51a985fa428098823dc5cbee007e419d157596bb08fe56",
+      "width": 294,
+      "height": 375
+    },
+    {
+      "key": "PORTAL_PREFAB_ART",
+      "screen": "HOME_HUB",
+      "status": "FOUND",
+      "path": "res://assets/canonical_v2/03_ART_RUNTIME_READY/PROPS/PORTAL/dragon_portal_complete.png",
+      "sha256": "d7a0aacd0b6866ec53b016ed47c4f021d0ec8f67f3514d0da25f862a4e13a483",
+      "width": 401,
+      "height": 504
+    }
+  ]
+}

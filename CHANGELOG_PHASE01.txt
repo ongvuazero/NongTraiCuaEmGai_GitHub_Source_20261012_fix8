@@ -1,0 +1,28 @@
+MY SISTER'S FARM - PHASE 01 CRITICAL CORRECTNESS
+Date: 2026-09-13
+
+Implemented
+- Added SaveService with three physical slot files, metadata from real saves, validated transactional temporary writes, previous-save backups, delete recovery backups, corrupt-save rejection, and legacy V2 migration into slot 1.
+- Continue loads the most recently played valid slot.
+- New Game always creates a fresh state. Occupied slots require a second explicit overwrite confirmation.
+- Save screen now selects all three real slots and exposes Confirm/Delete with confirmation.
+- Meaningful gameplay mutations save immediately: field work, next day, purchases, delivery, event rewards, crafting, animal care/collection, and settings Apply.
+- Centralized energy costs and rejected all listed field/animal actions before mutation, inventory consumption, or animation when energy is insufficient.
+- Replaced persistent fertilizer with fertilizer_pending; the bonus is consumed on the next successful watered growth tick.
+- Added Master, Music, and SFX buses and connected all three sliders to live bus volume.
+- Added Apply/Reset/Back settings behavior and context-aware Back.
+- Farmer one-shot animations now return to idle through animation_finished without rebuilding the screen for the reset.
+- Added valid/invalid plot feedback and no-energy/unavailable badges using existing V2 assets.
+- Added isolated-save deterministic test support via MSF_TEST_SAVE_DIR.
+
+Verification
+- PHASE01_CORRECTNESS_TEST_PASS
+- V2_CONTRACT_TEST_PASS
+- Visual smoke test exit code 0 at 1280x720
+- Headless boot exit code 0
+- No parser/runtime errors in the accepted Phase 01 runs
+
+Preserved
+- Existing 12-plot independent Field state and world crop rendering.
+- Existing nine-screen navigation and gameplay scope.
+- Canonical V2 assets; no source assets were deleted or regenerated.

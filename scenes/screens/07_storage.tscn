@@ -1,0 +1,2663 @@
+[gd_scene format=3 uid="uid://bj60m5yivrttj"]
+
+[ext_resource type="Script" uid="uid://ddwd5isqq6kpw" path="res://scripts/screens/storage_screen.gd" id="1_wpnnq"]
+[ext_resource type="Texture2D" uid="uid://bcjdanty0e50d" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/ENVIRONMENT/SCREEN_PLATES/storage_environment.png" id="2_66put"]
+[ext_resource type="Texture2D" uid="uid://c4em2wlffsuep" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/TITLE_SAVE_HOME/canonical_logo.png" id="3_3ttpp"]
+[ext_resource type="Texture2D" uid="uid://bosboi8eujp3e" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/HUD/day_season_chip.png" id="4_ug38s"]
+[ext_resource type="Texture2D" uid="uid://g71uyu1qdi84" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/HUD/money_chip.png" id="5_8rb5j"]
+[ext_resource type="Texture2D" uid="uid://b4fiqkklolcr0" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/HUD/energy_chip.png" id="6_y5xnm"]
+[ext_resource type="Texture2D" uid="uid://brkmxgljhu2ib" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/HUD/long_khi_chip.png" id="7_0pp86"]
+[ext_resource type="Texture2D" uid="uid://cd8n1r000pemc" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/TITLE_SAVE_HOME/title_button_frame_default.png" id="8_xrtua"]
+[ext_resource type="Texture2D" uid="uid://bqsxb0mjrlkyj" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/TITLE_SAVE_HOME/title_button_frame_pressed.png" id="9_5aey4"]
+[ext_resource type="Texture2D" uid="uid://4sa08cfhg7mj" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/TITLE_SAVE_HOME/title_button_frame_hover.png" id="10_2123j"]
+[ext_resource type="Texture2D" uid="uid://bxtfrn4jdyq62" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/TITLE_SAVE_HOME/title_button_frame_disabled.png" id="11_17t25"]
+[ext_resource type="Texture2D" uid="uid://b6ivaq1riop64" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/SHARED_BUTTONS/night_next_day/default.png" id="12_rmixx"]
+[ext_resource type="Texture2D" uid="uid://cog8cero58n4n" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/SHARED_BUTTONS/night_next_day/pressed.png" id="13_0a7ph"]
+[ext_resource type="Texture2D" uid="uid://cn356yjwcctl0" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/SHARED_BUTTONS/night_next_day/hover.png" id="14_xx0ae"]
+[ext_resource type="Texture2D" uid="uid://ljckoglqm6v6" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/SHARED_BUTTONS/night_next_day/disabled.png" id="15_yit8s"]
+[ext_resource type="Texture2D" uid="uid://blj4jnds84moo" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/PANELS/right_detail_panel_9slice.png" id="16_jynge"]
+[ext_resource type="Texture2D" uid="uid://b4jqcidup8nhc" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/SHARED_BUTTONS/primary_medium/default.png" id="17_cqvjk"]
+[ext_resource type="Texture2D" uid="uid://bom20iiwygta5" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/SHARED_BUTTONS/primary_medium/pressed.png" id="18_vy1s0"]
+[ext_resource type="Texture2D" uid="uid://bk72ihtc2jlkc" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/SHARED_BUTTONS/primary_medium/hover.png" id="19_aj42h"]
+[ext_resource type="Texture2D" uid="uid://dqxw0gv0xipbe" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/SHARED_BUTTONS/primary_medium/disabled.png" id="20_qo52l"]
+[ext_resource type="Texture2D" path="res://assets/ui_mockup_application_v1/item_card_blank_v1.png" id="21_an2qt"]
+[ext_resource type="Texture2D" uid="uid://cpcykxmsbdf0k" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/ITEMS/seed_carrot.png" id="22_66kp3"]
+[ext_resource type="Texture2D" uid="uid://r0n2h5d0obki" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/ITEMS/seed_tomato.png" id="23_k3twp"]
+[ext_resource type="Texture2D" uid="uid://bnug6a3k3ltkl" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/ITEMS/seed_pumpkin.png" id="24_qbj5d"]
+[ext_resource type="Texture2D" uid="uid://bmk0yj624qw8j" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/ITEMS/crop_carrot.png" id="25_x4cb8"]
+[ext_resource type="Texture2D" uid="uid://v5xrbyv27a7m" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/ITEMS/crop_tomato.png" id="26_ustm0"]
+[ext_resource type="Texture2D" uid="uid://cpgfdi50ceq78" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/ITEMS/crop_pumpkin.png" id="27_xnllm"]
+[ext_resource type="Texture2D" uid="uid://bbu6p4muorte4" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/ITEMS/animal_feed.png" id="28_syk8w"]
+[ext_resource type="Texture2D" uid="uid://dyhxyohqw2w6a" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/ITEMS/medicine.png" id="29_6lny0"]
+[ext_resource type="Texture2D" uid="uid://cqcb4hw14tx32" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/ITEMS/egg.png" id="30_nhvq6"]
+[ext_resource type="Texture2D" path="res://assets/visual_animation_closure_v1/long_khi_complete.tres" id="31_tkqai"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_storage_card"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6qc6u"]
+bg_color = Color(0.41960785, 0.2901961, 0.16862746, 0.8627451)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.8784314, 0.7411765, 0.45490196, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_inqj0"]
+bg_color = Color(0.41960785, 0.2901961, 0.16862746, 0.8627451)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.8784314, 0.7411765, 0.45490196, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r5dv5"]
+bg_color = Color(0.41960785, 0.2901961, 0.16862746, 0.8627451)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.8784314, 0.7411765, 0.45490196, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cui1q"]
+bg_color = Color(0.41960785, 0.2901961, 0.16862746, 0.8627451)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.8784314, 0.7411765, 0.45490196, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_napi4"]
+bg_color = Color(0.41960785, 0.2901961, 0.16862746, 0.8627451)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.8784314, 0.7411765, 0.45490196, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uyl6q"]
+bg_color = Color(0.41960785, 0.2901961, 0.16862746, 0.8627451)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.8784314, 0.7411765, 0.45490196, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8247d"]
+bg_color = Color(0.41960785, 0.2901961, 0.16862746, 0.8627451)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.8784314, 0.7411765, 0.45490196, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5w62p"]
+bg_color = Color(0.41960785, 0.2901961, 0.16862746, 0.8627451)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.8784314, 0.7411765, 0.45490196, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3axg4"]
+bg_color = Color(0.41960785, 0.2901961, 0.16862746, 0.8627451)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.8784314, 0.7411765, 0.45490196, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fmgrp"]
+bg_color = Color(0.41960785, 0.2901961, 0.16862746, 0.8627451)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.8784314, 0.7411765, 0.45490196, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pymvn"]
+bg_color = Color(1, 0.94509804, 0.83137256, 0.9607843)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.5294118, 0.33333334, 0.1764706, 1)
+corner_radius_top_left = 18
+corner_radius_top_right = 18
+corner_radius_bottom_right = 18
+corner_radius_bottom_left = 18
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ym25j"]
+bg_color = Color(0.96862745, 0.90588236, 0.78431374, 0.9098039)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.54509807, 0.35686275, 0.1764706, 1)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_storage_hover"]
+bg_color = Color(0, 0, 0, 0)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_left = 12
+corner_radius_bottom_right = 12
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_storage_pressed"]
+bg_color = Color(0, 0, 0, 0)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_left = 12
+corner_radius_bottom_right = 12
+
+[node name="StorageRoot" type="Control" unique_id=844747181]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_wpnnq")
+metadata/SHOP_STORAGE_CORE_LOCK = "FUNCTIONAL_TEST_REQUIRED"
+metadata/shop_storage_status = "FUNCTIONAL_TEST_REQUIRED"
+metadata/true_wysiwyg_v2 = true
+metadata/TRUE_WYSIWYG_V2 = "VISUAL_REVIEW_REQUIRED"
+
+[node name="Background" type="TextureRect" parent="." unique_id=2002605504]
+layout_mode = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+mouse_filter = 2
+texture = ExtResource("2_66put")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="TopHUD" type="Control" parent="." unique_id=831408404]
+anchors_preset = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+mouse_filter = 2
+z_index = 5
+
+[node name="Logo" type="TextureRect" parent="TopHUD" unique_id=940605340]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 10.0
+offset_right = 276.0
+offset_bottom = 121.0
+visible = false
+mouse_filter = 2
+texture = ExtResource("3_3ttpp")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="HUD_DaySeasonChip" type="TextureRect" parent="TopHUD" unique_id=29842396]
+layout_mode = 0
+offset_left = 505.0
+offset_top = 9.0
+offset_right = 689.0
+offset_bottom = 71.0
+mouse_filter = 2
+texture = ExtResource("4_ug38s")
+expand_mode = 1
+visible = false
+
+[node name="HUD_DaySeasonLabel" type="Label" parent="TopHUD" unique_id=559306771]
+layout_mode = 0
+offset_left = 559.0
+offset_top = 12.0
+offset_right = 682.0
+offset_bottom = 68.0
+theme_override_colors/font_color = Color(0.23137255, 0.15686275, 0.101960786, 1)
+theme_override_font_sizes/font_size = 17
+text = "Ngày 1 · Mùa xuân"
+horizontal_alignment = 1
+vertical_alignment = 1
+visible = false
+
+[node name="HUD_CoinChip" type="TextureRect" parent="TopHUD" unique_id=986998468]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 1039.0
+offset_top = 9.0
+offset_right = 1259.0
+offset_bottom = 71.0
+mouse_filter = 2
+texture = ExtResource("5_8rb5j")
+expand_mode = 1
+
+[node name="HUD_CoinValue" type="Label" parent="TopHUD" unique_id=1856028960]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 1101.0
+offset_top = 12.0
+offset_right = 1250.0
+offset_bottom = 68.0
+theme_override_colors/font_color = Color(0.23137255, 0.15686275, 0.101960786, 1)
+theme_override_font_sizes/font_size = 23
+text = "400"
+horizontal_alignment = 1
+vertical_alignment = 1
+mouse_filter = 2
+
+[node name="HUD_EnergyChip" type="TextureRect" parent="TopHUD" unique_id=304281435]
+layout_mode = 0
+offset_left = 885.0
+offset_top = 9.0
+offset_right = 1069.0
+offset_bottom = 71.0
+mouse_filter = 2
+texture = ExtResource("6_y5xnm")
+expand_mode = 1
+visible = false
+
+[node name="HUD_EnergyValue" type="Label" parent="TopHUD" unique_id=802800255]
+layout_mode = 0
+offset_left = 939.0
+offset_top = 12.0
+offset_right = 1062.0
+offset_bottom = 68.0
+theme_override_colors/font_color = Color(0.23137255, 0.15686275, 0.101960786, 1)
+theme_override_font_sizes/font_size = 19
+text = "100/100"
+horizontal_alignment = 1
+vertical_alignment = 1
+visible = false
+
+[node name="HUD_DragonEnergyChip" type="TextureRect" parent="TopHUD" unique_id=2034238447]
+layout_mode = 0
+offset_left = 1076.0
+offset_top = 9.0
+offset_right = 1274.0
+offset_bottom = 71.0
+mouse_filter = 2
+texture = ExtResource("7_0pp86")
+expand_mode = 1
+visible = false
+
+[node name="HUD_DragonEnergyValue" type="Label" parent="TopHUD" unique_id=1568319084]
+layout_mode = 0
+offset_left = 1130.0
+offset_top = 12.0
+offset_right = 1267.0
+offset_bottom = 68.0
+theme_override_colors/font_color = Color(0.23137255, 0.15686275, 0.101960786, 1)
+theme_override_font_sizes/font_size = 19
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+visible = false
+
+[node name="LeftNavigation" type="Control" parent="." unique_id=2069325803]
+anchors_preset = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+visible = false
+mouse_filter = 2
+
+[node name="LeftNav_field_select" type="TextureButton" parent="LeftNavigation" unique_id=60157509]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 129.0
+offset_right = 231.0
+offset_bottom = 189.0
+texture_normal = ExtResource("8_xrtua")
+texture_pressed = ExtResource("9_5aey4")
+texture_hover = ExtResource("10_2123j")
+texture_disabled = ExtResource("11_17t25")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Caption" type="Label" parent="LeftNavigation/LeftNav_field_select" unique_id=1540258215]
+layout_mode = 0
+offset_right = 207.0
+offset_bottom = 60.0
+theme_override_colors/font_color = Color(0.23529412, 0.15686275, 0.09411765, 1)
+theme_override_font_sizes/font_size = 18
+text = "Ruộng"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LeftNav_shop" type="TextureButton" parent="LeftNavigation" unique_id=253681005]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 195.0
+offset_right = 231.0
+offset_bottom = 255.0
+texture_normal = ExtResource("8_xrtua")
+texture_pressed = ExtResource("9_5aey4")
+texture_hover = ExtResource("10_2123j")
+texture_disabled = ExtResource("11_17t25")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Caption" type="Label" parent="LeftNavigation/LeftNav_shop" unique_id=1135778924]
+layout_mode = 0
+offset_right = 207.0
+offset_bottom = 60.0
+theme_override_colors/font_color = Color(0.23529412, 0.15686275, 0.09411765, 1)
+theme_override_font_sizes/font_size = 18
+text = "Cửa hàng"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LeftNav_storage" type="TextureButton" parent="LeftNavigation" unique_id=851623890]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 261.0
+offset_right = 231.0
+offset_bottom = 321.0
+disabled = true
+texture_normal = ExtResource("8_xrtua")
+texture_pressed = ExtResource("9_5aey4")
+texture_hover = ExtResource("10_2123j")
+texture_disabled = ExtResource("11_17t25")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Caption" type="Label" parent="LeftNavigation/LeftNav_storage" unique_id=1937425302]
+layout_mode = 0
+offset_right = 207.0
+offset_bottom = 60.0
+theme_override_colors/font_color = Color(0.23529412, 0.15686275, 0.09411765, 1)
+theme_override_font_sizes/font_size = 18
+text = "Kho"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LeftNav_animal" type="TextureButton" parent="LeftNavigation" unique_id=52715213]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 327.0
+offset_right = 231.0
+offset_bottom = 387.0
+texture_normal = ExtResource("8_xrtua")
+texture_pressed = ExtResource("9_5aey4")
+texture_hover = ExtResource("10_2123j")
+texture_disabled = ExtResource("11_17t25")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Caption" type="Label" parent="LeftNavigation/LeftNav_animal" unique_id=547197272]
+layout_mode = 0
+offset_right = 207.0
+offset_bottom = 60.0
+theme_override_colors/font_color = Color(0.23529412, 0.15686275, 0.09411765, 1)
+theme_override_font_sizes/font_size = 18
+text = "Vật nuôi"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LeftNav_dragon" type="TextureButton" parent="LeftNavigation" unique_id=645110268]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 393.0
+offset_right = 231.0
+offset_bottom = 453.0
+texture_normal = ExtResource("8_xrtua")
+texture_pressed = ExtResource("9_5aey4")
+texture_hover = ExtResource("10_2123j")
+texture_disabled = ExtResource("11_17t25")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Caption" type="Label" parent="LeftNavigation/LeftNav_dragon" unique_id=1501358048]
+layout_mode = 0
+offset_right = 207.0
+offset_bottom = 60.0
+theme_override_colors/font_color = Color(0.23529412, 0.15686275, 0.09411765, 1)
+theme_override_font_sizes/font_size = 18
+text = "Đảo Rồng"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LeftNav_quest" type="TextureButton" parent="LeftNavigation" unique_id=2016325018]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 459.0
+offset_right = 231.0
+offset_bottom = 519.0
+texture_normal = ExtResource("8_xrtua")
+texture_pressed = ExtResource("9_5aey4")
+texture_hover = ExtResource("10_2123j")
+texture_disabled = ExtResource("11_17t25")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Caption" type="Label" parent="LeftNavigation/LeftNav_quest" unique_id=2135832650]
+layout_mode = 0
+offset_right = 207.0
+offset_bottom = 60.0
+theme_override_colors/font_color = Color(0.23529412, 0.15686275, 0.09411765, 1)
+theme_override_font_sizes/font_size = 18
+text = "Nhiệm vụ"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LeftNav_settings" type="TextureButton" parent="LeftNavigation" unique_id=567091077]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 525.0
+offset_right = 231.0
+offset_bottom = 585.0
+texture_normal = ExtResource("8_xrtua")
+texture_pressed = ExtResource("9_5aey4")
+texture_hover = ExtResource("10_2123j")
+texture_disabled = ExtResource("11_17t25")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Caption" type="Label" parent="LeftNavigation/LeftNav_settings" unique_id=89078758]
+layout_mode = 0
+offset_right = 207.0
+offset_bottom = 60.0
+theme_override_colors/font_color = Color(0.23529412, 0.15686275, 0.09411765, 1)
+theme_override_font_sizes/font_size = 18
+text = "Cài đặt"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LeftNav_RestNextDay" type="TextureButton" parent="LeftNavigation" unique_id=551092114]
+layout_mode = 0
+offset_left = 21.0
+offset_top = 593.0
+offset_right = 246.0
+offset_bottom = 654.0
+texture_normal = ExtResource("12_rmixx")
+texture_pressed = ExtResource("13_0a7ph")
+texture_hover = ExtResource("14_xx0ae")
+texture_disabled = ExtResource("15_yit8s")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Caption" type="Label" parent="LeftNavigation/LeftNav_RestNextDay" unique_id=1533035388]
+layout_mode = 0
+offset_left = 42.0
+offset_right = 219.0
+offset_bottom = 61.0
+theme_override_colors/font_color = Color(1, 0.9529412, 0.76862746, 1)
+theme_override_font_sizes/font_size = 16
+text = "Nghỉ / Ngày mới"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Header" type="Control" parent="." unique_id=1975910611]
+layout_mode = 0
+anchors_preset = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 1280.0
+offset_bottom = 720.0
+mouse_filter = 2
+
+[node name="StorageBoardArt" type="NinePatchRect" parent="Header" unique_id=1977783936]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 52.0
+offset_right = 1277.0
+offset_bottom = 718.0
+editor_description = "Canonical clean wood/parchment panel. Original storage_board.png contained five baked tab wells that duplicated runtime controls. No art was repainted or sliced."
+texture = ExtResource("16_jynge")
+patch_margin_left = 175
+patch_margin_top = 124
+patch_margin_right = 175
+patch_margin_bottom = 52
+
+[node name="StorageTitle" type="Label" parent="Header" unique_id=2132204892]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 290.0
+offset_top = 95.0
+offset_right = 940.0
+offset_bottom = 153.0
+theme_override_colors/font_color = Color(1, 0.9529412, 0.7921569, 1)
+theme_override_font_sizes/font_size = 29
+text = "KHO NÔNG TRẠI"
+horizontal_alignment = 1
+vertical_alignment = 1
+mouse_filter = 2
+
+[node name="StorageCapacityValue" type="Label" parent="Header" unique_id=870495840]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 951.0
+offset_top = 111.0
+offset_right = 1129.0
+offset_bottom = 149.0
+theme_override_colors/font_color = Color(1, 0.9529412, 0.7921569, 1)
+theme_override_font_sizes/font_size = 18
+text = "16 / 100"
+horizontal_alignment = 1
+vertical_alignment = 1
+mouse_filter = 2
+
+[node name="CategoryTabs" type="Control" parent="." unique_id=247979011]
+layout_mode = 0
+anchors_preset = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 1280.0
+offset_bottom = 720.0
+mouse_filter = 2
+
+[node name="StorageCategory_All" type="TextureButton" parent="CategoryTabs" unique_id=1643119982]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 62.0
+offset_top = 171.0
+offset_right = 256.0
+offset_bottom = 214.0
+texture_normal = ExtResource("17_cqvjk")
+texture_pressed = ExtResource("18_vy1s0")
+texture_hover = ExtResource("19_aj42h")
+texture_disabled = ExtResource("20_qo52l")
+ignore_texture_size = true
+stretch_mode = 0
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+
+[node name="Caption" type="Label" parent="CategoryTabs/StorageCategory_All" unique_id=1717029403]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 194.0
+offset_bottom = 43.0
+theme_override_colors/font_color = Color(0.24705882, 0.16470589, 0.09411765, 1)
+theme_override_font_sizes/font_size = 18
+text = "Tất cả"
+horizontal_alignment = 1
+vertical_alignment = 1
+mouse_filter = 2
+
+[node name="StorageCategory_Seeds" type="TextureButton" parent="CategoryTabs" unique_id=619009843]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 266.0
+offset_top = 171.0
+offset_right = 460.0
+offset_bottom = 214.0
+texture_normal = ExtResource("8_xrtua")
+texture_pressed = ExtResource("9_5aey4")
+texture_hover = ExtResource("10_2123j")
+texture_disabled = ExtResource("11_17t25")
+ignore_texture_size = true
+stretch_mode = 0
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+
+[node name="Caption" type="Label" parent="CategoryTabs/StorageCategory_Seeds" unique_id=112623322]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 194.0
+offset_bottom = 43.0
+theme_override_colors/font_color = Color(0.23529412, 0.15686275, 0.09411765, 1)
+theme_override_font_sizes/font_size = 18
+text = "Hạt giống"
+horizontal_alignment = 1
+vertical_alignment = 1
+mouse_filter = 2
+
+[node name="StorageCategory_Crops" type="TextureButton" parent="CategoryTabs" unique_id=1568308365]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 470.0
+offset_top = 171.0
+offset_right = 664.0
+offset_bottom = 214.0
+texture_normal = ExtResource("8_xrtua")
+texture_pressed = ExtResource("9_5aey4")
+texture_hover = ExtResource("10_2123j")
+texture_disabled = ExtResource("11_17t25")
+ignore_texture_size = true
+stretch_mode = 0
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+
+[node name="Caption" type="Label" parent="CategoryTabs/StorageCategory_Crops" unique_id=612421720]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 194.0
+offset_bottom = 43.0
+theme_override_colors/font_color = Color(0.23529412, 0.15686275, 0.09411765, 1)
+theme_override_font_sizes/font_size = 18
+text = "Nông sản"
+horizontal_alignment = 1
+vertical_alignment = 1
+mouse_filter = 2
+
+[node name="StorageCategory_Other" type="TextureButton" parent="CategoryTabs" unique_id=1405954675]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 674.0
+offset_top = 220.0
+offset_right = 868.0
+offset_bottom = 263.0
+texture_normal = ExtResource("8_xrtua")
+texture_pressed = ExtResource("9_5aey4")
+texture_hover = ExtResource("10_2123j")
+texture_disabled = ExtResource("11_17t25")
+ignore_texture_size = true
+stretch_mode = 0
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+
+[node name="Caption" type="Label" parent="CategoryTabs/StorageCategory_Other" unique_id=863243733]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 194.0
+offset_bottom = 43.0
+theme_override_colors/font_color = Color(0.23529412, 0.15686275, 0.09411765, 1)
+theme_override_font_sizes/font_size = 18
+text = "Khác"
+horizontal_alignment = 1
+vertical_alignment = 1
+mouse_filter = 2
+
+[node name="StorageCategory_Food" type="TextureButton" parent="CategoryTabs" unique_id=433592433]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 674.0
+offset_top = 171.0
+offset_right = 868.0
+offset_bottom = 214.0
+texture_normal = ExtResource("8_xrtua")
+texture_pressed = ExtResource("9_5aey4")
+texture_hover = ExtResource("10_2123j")
+texture_disabled = ExtResource("11_17t25")
+ignore_texture_size = true
+stretch_mode = 0
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+
+[node name="Caption" type="Label" parent="CategoryTabs/StorageCategory_Food" unique_id=654503731]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 194.0
+offset_bottom = 43.0
+theme_override_colors/font_color = Color(0.23529412, 0.15686275, 0.09411765, 1)
+theme_override_font_sizes/font_size = 18
+text = "Food"
+horizontal_alignment = 1
+vertical_alignment = 1
+mouse_filter = 2
+
+[node name="StorageCategory_Medicine" type="TextureButton" parent="CategoryTabs" unique_id=473428699]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 62.0
+offset_top = 220.0
+offset_right = 256.0
+offset_bottom = 263.0
+texture_normal = ExtResource("8_xrtua")
+texture_pressed = ExtResource("9_5aey4")
+texture_hover = ExtResource("10_2123j")
+texture_disabled = ExtResource("11_17t25")
+ignore_texture_size = true
+stretch_mode = 0
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+
+[node name="Caption" type="Label" parent="CategoryTabs/StorageCategory_Medicine" unique_id=1443869008]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 194.0
+offset_bottom = 43.0
+theme_override_colors/font_color = Color(0.23529412, 0.15686275, 0.09411765, 1)
+theme_override_font_sizes/font_size = 18
+text = "Thuốc"
+horizontal_alignment = 1
+vertical_alignment = 1
+mouse_filter = 2
+
+[node name="StorageCategory_Eggs" type="TextureButton" parent="CategoryTabs" unique_id=434535329]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 266.0
+offset_top = 220.0
+offset_right = 460.0
+offset_bottom = 263.0
+texture_normal = ExtResource("8_xrtua")
+texture_pressed = ExtResource("9_5aey4")
+texture_hover = ExtResource("10_2123j")
+texture_disabled = ExtResource("11_17t25")
+ignore_texture_size = true
+stretch_mode = 0
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+
+[node name="Caption" type="Label" parent="CategoryTabs/StorageCategory_Eggs" unique_id=1754945745]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 194.0
+offset_bottom = 43.0
+theme_override_colors/font_color = Color(0.23529412, 0.15686275, 0.09411765, 1)
+theme_override_font_sizes/font_size = 18
+text = "Eggs"
+horizontal_alignment = 1
+vertical_alignment = 1
+mouse_filter = 2
+
+[node name="StorageCategory_Materials" type="TextureButton" parent="CategoryTabs" unique_id=161387519]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 470.0
+offset_top = 220.0
+offset_right = 664.0
+offset_bottom = 263.0
+texture_normal = ExtResource("8_xrtua")
+texture_pressed = ExtResource("9_5aey4")
+texture_hover = ExtResource("10_2123j")
+texture_disabled = ExtResource("11_17t25")
+ignore_texture_size = true
+stretch_mode = 0
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+
+[node name="Caption" type="Label" parent="CategoryTabs/StorageCategory_Materials" unique_id=1480620777]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 194.0
+offset_bottom = 43.0
+theme_override_colors/font_color = Color(0.23529412, 0.15686275, 0.09411765, 1)
+theme_override_font_sizes/font_size = 18
+text = "Vật liệu"
+horizontal_alignment = 1
+vertical_alignment = 1
+mouse_filter = 2
+
+[node name="MainContent" type="Control" parent="." unique_id=2064894113]
+layout_mode = 0
+anchors_preset = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 1280.0
+offset_bottom = 720.0
+mouse_filter = 2
+
+[node name="ItemGrid_5x3" type="Control" parent="MainContent" unique_id=1970343004]
+layout_mode = 0
+anchors_preset = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 1280.0
+offset_bottom = 720.0
+mouse_filter = 2
+
+[node name="ItemSlot01" type="Control" parent="MainContent/ItemGrid_5x3" unique_id=1182010058]
+layout_mode = 0
+anchors_preset = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 62.0
+offset_top = 271.0
+offset_right = 214.0
+offset_bottom = 423.0
+mouse_filter = 2
+
+[node name="Art_storage_cell" type="TextureRect" parent="MainContent/ItemGrid_5x3/ItemSlot01" unique_id=1414587128]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 152.0
+offset_bottom = 152.0
+modulate = Color(1, 1, 1, 0.95)
+mouse_filter = 2
+texture = ExtResource("21_an2qt")
+expand_mode = 1
+
+
+
+[node name="StorageCard_seed_carrot" type="Panel" parent="MainContent/ItemGrid_5x3/ItemSlot01" unique_id=1668560926]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 152.0
+offset_bottom = 152.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_storage_card")
+mouse_filter = 1
+
+[node name="Art_seed_carrot" type="TextureRect" parent="MainContent/ItemGrid_5x3/ItemSlot01/StorageCard_seed_carrot" unique_id=1736457130]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 28.0
+offset_top = 8.0
+offset_right = 124.0
+offset_bottom = 77.0
+mouse_filter = 2
+texture = ExtResource("22_66kp3")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="StorageCard_seed_carrotLabel" type="Label" parent="MainContent/ItemGrid_5x3/ItemSlot01/StorageCard_seed_carrot" unique_id=2104714235]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 8.0
+offset_top = 77.0
+offset_right = 144.0
+offset_bottom = 124.0
+theme_override_colors/font_color = Color(0.29411766, 0.17254902, 0.09411765, 1)
+theme_override_font_sizes/font_size = 17
+text = "Hạt Cà rốt"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+max_lines_visible = 2
+mouse_filter = 2
+
+[node name="StorageCard_seed_carrotSurface" type="Panel" parent="MainContent/ItemGrid_5x3/ItemSlot01/StorageCard_seed_carrot" unique_id=429290391]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 27.0
+offset_top = 124.0
+offset_right = 125.0
+offset_bottom = 151.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_6qc6u")
+mouse_filter = 2
+
+[node name="StorageCard_seed_carrotSurfaceLabel" type="Label" parent="MainContent/ItemGrid_5x3/ItemSlot01/StorageCard_seed_carrot/StorageCard_seed_carrotSurface" unique_id=26656012]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 98.0
+offset_bottom = 27.0
+theme_override_colors/font_color = Color(1, 0.9490196, 0.8117647, 1)
+theme_override_font_sizes/font_size = 18
+text = "× 6"
+horizontal_alignment = 1
+vertical_alignment = 1
+mouse_filter = 2
+
+[node name="SelectAll_seed_carrot" type="Button" parent="MainContent/ItemGrid_5x3/ItemSlot01/StorageCard_seed_carrot" unique_id=1814090336]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 152.0
+offset_bottom = 152.0
+flat = true
+mouse_filter = 0
+z_index = 10
+mouse_default_cursor_shape = 2
+theme_override_styles/hover = SubResource("StyleBoxFlat_storage_hover")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_storage_pressed")
+
+[node name="ItemSlot02" type="Control" parent="MainContent/ItemGrid_5x3" unique_id=1905371915]
+layout_mode = 0
+anchors_preset = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 224.0
+offset_top = 271.0
+offset_right = 376.0
+offset_bottom = 423.0
+mouse_filter = 2
+
+[node name="Art_storage_cell" type="TextureRect" parent="MainContent/ItemGrid_5x3/ItemSlot02" unique_id=1775400180]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 152.0
+offset_bottom = 152.0
+modulate = Color(1, 1, 1, 0.95)
+mouse_filter = 2
+texture = ExtResource("21_an2qt")
+expand_mode = 1
+
+
+
+[node name="StorageCard_seed_tomato" type="Panel" parent="MainContent/ItemGrid_5x3/ItemSlot02" unique_id=1605991788]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 152.0
+offset_bottom = 152.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_storage_card")
+mouse_filter = 1
+
+[node name="Art_seed_tomato" type="TextureRect" parent="MainContent/ItemGrid_5x3/ItemSlot02/StorageCard_seed_tomato" unique_id=524055309]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 28.0
+offset_top = 8.0
+offset_right = 124.0
+offset_bottom = 77.0
+mouse_filter = 2
+texture = ExtResource("23_k3twp")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="StorageCard_seed_tomatoLabel" type="Label" parent="MainContent/ItemGrid_5x3/ItemSlot02/StorageCard_seed_tomato" unique_id=842317873]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 8.0
+offset_top = 77.0
+offset_right = 144.0
+offset_bottom = 124.0
+theme_override_colors/font_color = Color(0.29411766, 0.17254902, 0.09411765, 1)
+theme_override_font_sizes/font_size = 17
+text = "Hạt Cà chua"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+max_lines_visible = 2
+mouse_filter = 2
+
+[node name="StorageCard_seed_tomatoSurface" type="Panel" parent="MainContent/ItemGrid_5x3/ItemSlot02/StorageCard_seed_tomato" unique_id=451793533]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 27.0
+offset_top = 124.0
+offset_right = 125.0
+offset_bottom = 151.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_inqj0")
+mouse_filter = 2
+
+[node name="StorageCard_seed_tomatoSurfaceLabel" type="Label" parent="MainContent/ItemGrid_5x3/ItemSlot02/StorageCard_seed_tomato/StorageCard_seed_tomatoSurface" unique_id=280603121]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 98.0
+offset_bottom = 27.0
+theme_override_colors/font_color = Color(1, 0.9490196, 0.8117647, 1)
+theme_override_font_sizes/font_size = 18
+text = "× 4"
+horizontal_alignment = 1
+vertical_alignment = 1
+mouse_filter = 2
+
+[node name="SelectAll_seed_tomato" type="Button" parent="MainContent/ItemGrid_5x3/ItemSlot02/StorageCard_seed_tomato" unique_id=939379523]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 152.0
+offset_bottom = 152.0
+flat = true
+mouse_filter = 0
+z_index = 10
+mouse_default_cursor_shape = 2
+theme_override_styles/hover = SubResource("StyleBoxFlat_storage_hover")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_storage_pressed")
+
+[node name="ItemSlot03" type="Control" parent="MainContent/ItemGrid_5x3" unique_id=1641026880]
+layout_mode = 0
+anchors_preset = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 386.0
+offset_top = 271.0
+offset_right = 538.0
+offset_bottom = 423.0
+mouse_filter = 2
+
+[node name="Art_storage_cell" type="TextureRect" parent="MainContent/ItemGrid_5x3/ItemSlot03" unique_id=1078176517]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 152.0
+offset_bottom = 152.0
+modulate = Color(1, 1, 1, 0.95)
+mouse_filter = 2
+texture = ExtResource("21_an2qt")
+expand_mode = 1
+
+
+
+[node name="StorageCard_seed_pumpkin" type="Panel" parent="MainContent/ItemGrid_5x3/ItemSlot03" unique_id=1618743964]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 152.0
+offset_bottom = 152.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_storage_card")
+mouse_filter = 1
+
+[node name="Art_seed_pumpkin" type="TextureRect" parent="MainContent/ItemGrid_5x3/ItemSlot03/StorageCard_seed_pumpkin" unique_id=1046439174]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 28.0
+offset_top = 8.0
+offset_right = 124.0
+offset_bottom = 77.0
+mouse_filter = 2
+texture = ExtResource("24_qbj5d")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="StorageCard_seed_pumpkinLabel" type="Label" parent="MainContent/ItemGrid_5x3/ItemSlot03/StorageCard_seed_pumpkin" unique_id=950527970]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 8.0
+offset_top = 77.0
+offset_right = 144.0
+offset_bottom = 124.0
+theme_override_colors/font_color = Color(0.29411766, 0.17254902, 0.09411765, 1)
+theme_override_font_sizes/font_size = 17
+text = "Hạt Bí ngô"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+max_lines_visible = 2
+mouse_filter = 2
+
+[node name="StorageCard_seed_pumpkinSurface" type="Panel" parent="MainContent/ItemGrid_5x3/ItemSlot03/StorageCard_seed_pumpkin" unique_id=1133227134]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 27.0
+offset_top = 124.0
+offset_right = 125.0
+offset_bottom = 151.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_r5dv5")
+mouse_filter = 2
+
+[node name="StorageCard_seed_pumpkinSurfaceLabel" type="Label" parent="MainContent/ItemGrid_5x3/ItemSlot03/StorageCard_seed_pumpkin/StorageCard_seed_pumpkinSurface" unique_id=906360684]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 98.0
+offset_bottom = 27.0
+theme_override_colors/font_color = Color(1, 0.9490196, 0.8117647, 1)
+theme_override_font_sizes/font_size = 18
+text = "× 2"
+horizontal_alignment = 1
+vertical_alignment = 1
+mouse_filter = 2
+
+[node name="SelectAll_seed_pumpkin" type="Button" parent="MainContent/ItemGrid_5x3/ItemSlot03/StorageCard_seed_pumpkin" unique_id=1472992128]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 152.0
+offset_bottom = 152.0
+flat = true
+mouse_filter = 0
+z_index = 10
+mouse_default_cursor_shape = 2
+theme_override_styles/hover = SubResource("StyleBoxFlat_storage_hover")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_storage_pressed")
+
+[node name="ItemSlot04" type="Control" parent="MainContent/ItemGrid_5x3" unique_id=508533467]
+layout_mode = 0
+anchors_preset = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 548.0
+offset_top = 271.0
+offset_right = 700.0
+offset_bottom = 423.0
+mouse_filter = 2
+
+[node name="Art_storage_cell" type="TextureRect" parent="MainContent/ItemGrid_5x3/ItemSlot04" unique_id=157614034]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 152.0
+offset_bottom = 152.0
+modulate = Color(1, 1, 1, 0.95)
+mouse_filter = 2
+texture = ExtResource("21_an2qt")
+expand_mode = 1
+
+
+
+[node name="StorageAllCard_crop_carrot" type="Panel" parent="MainContent/ItemGrid_5x3/ItemSlot04" unique_id=237112209]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 152.0
+offset_bottom = 152.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_storage_card")
+mouse_filter = 1
+
+[node name="Art_crop_carrot" type="TextureRect" parent="MainContent/ItemGrid_5x3/ItemSlot04/StorageAllCard_crop_carrot" unique_id=527874779]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 28.0
+offset_top = 8.0
+offset_right = 124.0
+offset_bottom = 77.0
+mouse_filter = 2
+texture = ExtResource("25_x4cb8")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="StorageAllCard_crop_carrotLabel" type="Label" parent="MainContent/ItemGrid_5x3/ItemSlot04/StorageAllCard_crop_carrot" unique_id=1328246139]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 8.0
+offset_top = 77.0
+offset_right = 144.0
+offset_bottom = 124.0
+theme_override_colors/font_color = Color(0.29411766, 0.17254902, 0.09411765, 1)
+theme_override_font_sizes/font_size = 17
+text = "Cà rốt tươi"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+max_lines_visible = 2
+mouse_filter = 2
+
+[node name="StorageAllCard_crop_carrotSurface" type="Panel" parent="MainContent/ItemGrid_5x3/ItemSlot04/StorageAllCard_crop_carrot" unique_id=1580512195]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 27.0
+offset_top = 124.0
+offset_right = 125.0
+offset_bottom = 151.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_cui1q")
+mouse_filter = 2
+
+[node name="StorageAllCard_crop_carrotSurfaceLabel" type="Label" parent="MainContent/ItemGrid_5x3/ItemSlot04/StorageAllCard_crop_carrot/StorageAllCard_crop_carrotSurface" unique_id=1547121955]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 98.0
+offset_bottom = 27.0
+theme_override_colors/font_color = Color(1, 0.9490196, 0.8117647, 1)
+theme_override_font_sizes/font_size = 18
+text = "× 0"
+horizontal_alignment = 1
+vertical_alignment = 1
+mouse_filter = 2
+
+[node name="SelectAll_crop_carrot" type="Button" parent="MainContent/ItemGrid_5x3/ItemSlot04/StorageAllCard_crop_carrot" unique_id=112634801]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 152.0
+offset_bottom = 152.0
+flat = true
+mouse_filter = 0
+z_index = 10
+mouse_default_cursor_shape = 2
+theme_override_styles/hover = SubResource("StyleBoxFlat_storage_hover")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_storage_pressed")
+
+[node name="ItemSlot05" type="Control" parent="MainContent/ItemGrid_5x3" unique_id=1356037605]
+layout_mode = 0
+anchors_preset = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 710.0
+offset_top = 271.0
+offset_right = 862.0
+offset_bottom = 423.0
+mouse_filter = 2
+
+[node name="Art_storage_cell" type="TextureRect" parent="MainContent/ItemGrid_5x3/ItemSlot05" unique_id=194188208]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 152.0
+offset_bottom = 152.0
+modulate = Color(1, 1, 1, 0.95)
+mouse_filter = 2
+texture = ExtResource("21_an2qt")
+expand_mode = 1
+
+
+
+[node name="StorageAllCard_crop_tomato" type="Panel" parent="MainContent/ItemGrid_5x3/ItemSlot05" unique_id=1393805710]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 152.0
+offset_bottom = 152.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_storage_card")
+mouse_filter = 1
+
+[node name="Art_crop_tomato" type="TextureRect" parent="MainContent/ItemGrid_5x3/ItemSlot05/StorageAllCard_crop_tomato" unique_id=943238989]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 28.0
+offset_top = 8.0
+offset_right = 124.0
+offset_bottom = 77.0
+mouse_filter = 2
+texture = ExtResource("26_ustm0")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="StorageAllCard_crop_tomatoLabel" type="Label" parent="MainContent/ItemGrid_5x3/ItemSlot05/StorageAllCard_crop_tomato" unique_id=173919585]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 8.0
+offset_top = 77.0
+offset_right = 144.0
+offset_bottom = 124.0
+theme_override_colors/font_color = Color(0.29411766, 0.17254902, 0.09411765, 1)
+theme_override_font_sizes/font_size = 17
+text = "Cà chua"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+max_lines_visible = 2
+mouse_filter = 2
+
+[node name="StorageAllCard_crop_tomatoSurface" type="Panel" parent="MainContent/ItemGrid_5x3/ItemSlot05/StorageAllCard_crop_tomato" unique_id=78545731]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 27.0
+offset_top = 124.0
+offset_right = 125.0
+offset_bottom = 151.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_napi4")
+mouse_filter = 2
+
+[node name="StorageAllCard_crop_tomatoSurfaceLabel" type="Label" parent="MainContent/ItemGrid_5x3/ItemSlot05/StorageAllCard_crop_tomato/StorageAllCard_crop_tomatoSurface" unique_id=1864315957]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 98.0
+offset_bottom = 27.0
+theme_override_colors/font_color = Color(1, 0.9490196, 0.8117647, 1)
+theme_override_font_sizes/font_size = 18
+text = "× 0"
+horizontal_alignment = 1
+vertical_alignment = 1
+mouse_filter = 2
+
+[node name="SelectAll_crop_tomato" type="Button" parent="MainContent/ItemGrid_5x3/ItemSlot05/StorageAllCard_crop_tomato" unique_id=264028422]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 152.0
+offset_bottom = 152.0
+flat = true
+mouse_filter = 0
+z_index = 10
+mouse_default_cursor_shape = 2
+theme_override_styles/hover = SubResource("StyleBoxFlat_storage_hover")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_storage_pressed")
+
+[node name="ItemSlot06" type="Control" parent="MainContent/ItemGrid_5x3" unique_id=360730269]
+layout_mode = 0
+anchors_preset = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 62.0
+offset_top = 433.0
+offset_right = 214.0
+offset_bottom = 585.0
+mouse_filter = 2
+
+[node name="Art_storage_cell" type="TextureRect" parent="MainContent/ItemGrid_5x3/ItemSlot06" unique_id=734334376]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 152.0
+offset_bottom = 152.0
+modulate = Color(1, 1, 1, 0.95)
+mouse_filter = 2
+texture = ExtResource("21_an2qt")
+expand_mode = 1
+
+
+
+[node name="StorageAllCard_crop_pumpkin" type="Panel" parent="MainContent/ItemGrid_5x3/ItemSlot06" unique_id=1890109868]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 152.0
+offset_bottom = 152.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_storage_card")
+mouse_filter = 1
+
+[node name="Art_crop_pumpkin" type="TextureRect" parent="MainContent/ItemGrid_5x3/ItemSlot06/StorageAllCard_crop_pumpkin" unique_id=104382748]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 28.0
+offset_top = 8.0
+offset_right = 124.0
+offset_bottom = 77.0
+mouse_filter = 2
+texture = ExtResource("27_xnllm")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="StorageAllCard_crop_pumpkinLabel" type="Label" parent="MainContent/ItemGrid_5x3/ItemSlot06/StorageAllCard_crop_pumpkin" unique_id=1257960332]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 8.0
+offset_top = 77.0
+offset_right = 144.0
+offset_bottom = 124.0
+theme_override_colors/font_color = Color(0.29411766, 0.17254902, 0.09411765, 1)
+theme_override_font_sizes/font_size = 17
+text = "Bí ngô"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+max_lines_visible = 2
+mouse_filter = 2
+
+[node name="StorageAllCard_crop_pumpkinSurface" type="Panel" parent="MainContent/ItemGrid_5x3/ItemSlot06/StorageAllCard_crop_pumpkin" unique_id=476942739]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 27.0
+offset_top = 124.0
+offset_right = 125.0
+offset_bottom = 151.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_uyl6q")
+mouse_filter = 2
+
+[node name="StorageAllCard_crop_pumpkinSurfaceLabel" type="Label" parent="MainContent/ItemGrid_5x3/ItemSlot06/StorageAllCard_crop_pumpkin/StorageAllCard_crop_pumpkinSurface" unique_id=1677180872]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 98.0
+offset_bottom = 27.0
+theme_override_colors/font_color = Color(1, 0.9490196, 0.8117647, 1)
+theme_override_font_sizes/font_size = 18
+text = "× 0"
+horizontal_alignment = 1
+vertical_alignment = 1
+mouse_filter = 2
+
+[node name="SelectAll_crop_pumpkin" type="Button" parent="MainContent/ItemGrid_5x3/ItemSlot06/StorageAllCard_crop_pumpkin" unique_id=2096679949]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 152.0
+offset_bottom = 152.0
+flat = true
+mouse_filter = 0
+z_index = 10
+mouse_default_cursor_shape = 2
+theme_override_styles/hover = SubResource("StyleBoxFlat_storage_hover")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_storage_pressed")
+
+[node name="ItemSlot07" type="Control" parent="MainContent/ItemGrid_5x3" unique_id=1542723755]
+layout_mode = 0
+anchors_preset = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 224.0
+offset_top = 433.0
+offset_right = 376.0
+offset_bottom = 585.0
+mouse_filter = 2
+
+[node name="Art_storage_cell" type="TextureRect" parent="MainContent/ItemGrid_5x3/ItemSlot07" unique_id=458729340]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 152.0
+offset_bottom = 152.0
+modulate = Color(1, 1, 1, 0.95)
+mouse_filter = 2
+texture = ExtResource("21_an2qt")
+expand_mode = 1
+
+
+
+[node name="StorageAllCard_animal_feed" type="Panel" parent="MainContent/ItemGrid_5x3/ItemSlot07" unique_id=2054856163]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 152.0
+offset_bottom = 152.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_storage_card")
+mouse_filter = 1
+
+[node name="Art_animal_feed" type="TextureRect" parent="MainContent/ItemGrid_5x3/ItemSlot07/StorageAllCard_animal_feed" unique_id=987338515]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 28.0
+offset_top = 8.0
+offset_right = 124.0
+offset_bottom = 77.0
+mouse_filter = 2
+texture = ExtResource("28_syk8w")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="StorageAllCard_animal_feedLabel" type="Label" parent="MainContent/ItemGrid_5x3/ItemSlot07/StorageAllCard_animal_feed" unique_id=934160588]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 8.0
+offset_top = 77.0
+offset_right = 144.0
+offset_bottom = 124.0
+theme_override_colors/font_color = Color(0.29411766, 0.17254902, 0.09411765, 1)
+theme_override_font_sizes/font_size = 17
+text = "Thức ăn vật nuôi"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+max_lines_visible = 2
+mouse_filter = 2
+
+[node name="StorageAllCard_animal_feedSurface" type="Panel" parent="MainContent/ItemGrid_5x3/ItemSlot07/StorageAllCard_animal_feed" unique_id=981110530]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 27.0
+offset_top = 124.0
+offset_right = 125.0
+offset_bottom = 151.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_8247d")
+mouse_filter = 2
+
+[node name="StorageAllCard_animal_feedSurfaceLabel" type="Label" parent="MainContent/ItemGrid_5x3/ItemSlot07/StorageAllCard_animal_feed/StorageAllCard_animal_feedSurface" unique_id=239099742]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 98.0
+offset_bottom = 27.0
+theme_override_colors/font_color = Color(1, 0.9490196, 0.8117647, 1)
+theme_override_font_sizes/font_size = 18
+text = "× 3"
+horizontal_alignment = 1
+vertical_alignment = 1
+mouse_filter = 2
+
+[node name="SelectAll_animal_feed" type="Button" parent="MainContent/ItemGrid_5x3/ItemSlot07/StorageAllCard_animal_feed" unique_id=603146024]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 152.0
+offset_bottom = 152.0
+flat = true
+mouse_filter = 0
+z_index = 10
+mouse_default_cursor_shape = 2
+theme_override_styles/hover = SubResource("StyleBoxFlat_storage_hover")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_storage_pressed")
+
+[node name="ItemSlot08" type="Control" parent="MainContent/ItemGrid_5x3" unique_id=1936545449]
+layout_mode = 0
+anchors_preset = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 386.0
+offset_top = 433.0
+offset_right = 538.0
+offset_bottom = 585.0
+mouse_filter = 2
+
+[node name="Art_storage_cell" type="TextureRect" parent="MainContent/ItemGrid_5x3/ItemSlot08" unique_id=1240688507]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 152.0
+offset_bottom = 152.0
+modulate = Color(1, 1, 1, 0.95)
+mouse_filter = 2
+texture = ExtResource("21_an2qt")
+expand_mode = 1
+
+
+
+[node name="StorageAllCard_medicine" type="Panel" parent="MainContent/ItemGrid_5x3/ItemSlot08" unique_id=2078123365]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 152.0
+offset_bottom = 152.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_storage_card")
+mouse_filter = 1
+
+[node name="Art_medicine" type="TextureRect" parent="MainContent/ItemGrid_5x3/ItemSlot08/StorageAllCard_medicine" unique_id=79152508]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 28.0
+offset_top = 8.0
+offset_right = 124.0
+offset_bottom = 77.0
+mouse_filter = 2
+texture = ExtResource("29_6lny0")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="StorageAllCard_medicineLabel" type="Label" parent="MainContent/ItemGrid_5x3/ItemSlot08/StorageAllCard_medicine" unique_id=1951396900]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 8.0
+offset_top = 77.0
+offset_right = 144.0
+offset_bottom = 124.0
+theme_override_colors/font_color = Color(0.29411766, 0.17254902, 0.09411765, 1)
+theme_override_font_sizes/font_size = 17
+text = "Thuốc bổ sung"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+max_lines_visible = 2
+mouse_filter = 2
+
+[node name="StorageAllCard_medicineSurface" type="Panel" parent="MainContent/ItemGrid_5x3/ItemSlot08/StorageAllCard_medicine" unique_id=1138418893]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 27.0
+offset_top = 124.0
+offset_right = 125.0
+offset_bottom = 151.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_5w62p")
+mouse_filter = 2
+
+[node name="StorageAllCard_medicineSurfaceLabel" type="Label" parent="MainContent/ItemGrid_5x3/ItemSlot08/StorageAllCard_medicine/StorageAllCard_medicineSurface" unique_id=989845933]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 98.0
+offset_bottom = 27.0
+theme_override_colors/font_color = Color(1, 0.9490196, 0.8117647, 1)
+theme_override_font_sizes/font_size = 18
+text = "× 1"
+horizontal_alignment = 1
+vertical_alignment = 1
+mouse_filter = 2
+
+[node name="SelectAll_medicine" type="Button" parent="MainContent/ItemGrid_5x3/ItemSlot08/StorageAllCard_medicine" unique_id=1436720887]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 152.0
+offset_bottom = 152.0
+flat = true
+mouse_filter = 0
+z_index = 10
+mouse_default_cursor_shape = 2
+theme_override_styles/hover = SubResource("StyleBoxFlat_storage_hover")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_storage_pressed")
+
+[node name="ItemSlot09" type="Control" parent="MainContent/ItemGrid_5x3" unique_id=1122801623]
+layout_mode = 0
+anchors_preset = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 548.0
+offset_top = 433.0
+offset_right = 700.0
+offset_bottom = 585.0
+mouse_filter = 2
+
+[node name="Art_storage_cell" type="TextureRect" parent="MainContent/ItemGrid_5x3/ItemSlot09" unique_id=1141224431]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 152.0
+offset_bottom = 152.0
+modulate = Color(1, 1, 1, 0.95)
+mouse_filter = 2
+texture = ExtResource("21_an2qt")
+expand_mode = 1
+
+
+
+[node name="StorageAllCard_egg" type="Panel" parent="MainContent/ItemGrid_5x3/ItemSlot09" unique_id=10463669]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 152.0
+offset_bottom = 152.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_storage_card")
+mouse_filter = 1
+
+[node name="Art_egg" type="TextureRect" parent="MainContent/ItemGrid_5x3/ItemSlot09/StorageAllCard_egg" unique_id=1602427162]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 28.0
+offset_top = 8.0
+offset_right = 124.0
+offset_bottom = 77.0
+mouse_filter = 2
+texture = ExtResource("30_nhvq6")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="StorageAllCard_eggLabel" type="Label" parent="MainContent/ItemGrid_5x3/ItemSlot09/StorageAllCard_egg" unique_id=218661659]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 8.0
+offset_top = 77.0
+offset_right = 144.0
+offset_bottom = 124.0
+theme_override_colors/font_color = Color(0.29411766, 0.17254902, 0.09411765, 1)
+theme_override_font_sizes/font_size = 17
+text = "Trứng gà"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+max_lines_visible = 2
+mouse_filter = 2
+
+[node name="StorageAllCard_eggSurface" type="Panel" parent="MainContent/ItemGrid_5x3/ItemSlot09/StorageAllCard_egg" unique_id=1659654974]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 27.0
+offset_top = 124.0
+offset_right = 125.0
+offset_bottom = 151.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_3axg4")
+mouse_filter = 2
+
+[node name="StorageAllCard_eggSurfaceLabel" type="Label" parent="MainContent/ItemGrid_5x3/ItemSlot09/StorageAllCard_egg/StorageAllCard_eggSurface" unique_id=1534628574]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 98.0
+offset_bottom = 27.0
+theme_override_colors/font_color = Color(1, 0.9490196, 0.8117647, 1)
+theme_override_font_sizes/font_size = 18
+text = "× 0"
+horizontal_alignment = 1
+vertical_alignment = 1
+mouse_filter = 2
+
+[node name="SelectAll_egg" type="Button" parent="MainContent/ItemGrid_5x3/ItemSlot09/StorageAllCard_egg" unique_id=376676789]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 152.0
+offset_bottom = 152.0
+flat = true
+mouse_filter = 0
+z_index = 10
+mouse_default_cursor_shape = 2
+theme_override_styles/hover = SubResource("StyleBoxFlat_storage_hover")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_storage_pressed")
+
+[node name="ItemSlot10" type="Control" parent="MainContent/ItemGrid_5x3" unique_id=1026170117]
+layout_mode = 0
+anchors_preset = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 710.0
+offset_top = 433.0
+offset_right = 862.0
+offset_bottom = 585.0
+mouse_filter = 2
+
+[node name="Art_storage_cell" type="TextureRect" parent="MainContent/ItemGrid_5x3/ItemSlot10" unique_id=545640185]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 152.0
+offset_bottom = 152.0
+modulate = Color(1, 1, 1, 0.95)
+mouse_filter = 2
+texture = ExtResource("21_an2qt")
+expand_mode = 1
+
+
+
+[node name="StorageAllCard_dragon_treat" type="Panel" parent="MainContent/ItemGrid_5x3/ItemSlot10" unique_id=1274080130]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 152.0
+offset_bottom = 152.0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_storage_card")
+mouse_filter = 1
+
+[node name="Art_long_khi" type="TextureRect" parent="MainContent/ItemGrid_5x3/ItemSlot10/StorageAllCard_dragon_treat" unique_id=1525264829]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 28.0
+offset_top = 8.0
+offset_right = 124.0
+offset_bottom = 77.0
+mouse_filter = 2
+texture = ExtResource("31_tkqai")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="StorageAllCard_dragon_treatLabel" type="Label" parent="MainContent/ItemGrid_5x3/ItemSlot10/StorageAllCard_dragon_treat" unique_id=1340318856]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 8.0
+offset_top = 77.0
+offset_right = 144.0
+offset_bottom = 124.0
+theme_override_colors/font_color = Color(0.29411766, 0.17254902, 0.09411765, 1)
+theme_override_font_sizes/font_size = 17
+text = "Bánh Rồng"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+max_lines_visible = 2
+mouse_filter = 2
+
+[node name="StorageAllCard_dragon_treatSurface" type="Panel" parent="MainContent/ItemGrid_5x3/ItemSlot10/StorageAllCard_dragon_treat" unique_id=1570649370]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 27.0
+offset_top = 124.0
+offset_right = 125.0
+offset_bottom = 151.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_fmgrp")
+mouse_filter = 2
+
+[node name="StorageAllCard_dragon_treatSurfaceLabel" type="Label" parent="MainContent/ItemGrid_5x3/ItemSlot10/StorageAllCard_dragon_treat/StorageAllCard_dragon_treatSurface" unique_id=1659370497]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 98.0
+offset_bottom = 27.0
+theme_override_colors/font_color = Color(1, 0.9490196, 0.8117647, 1)
+theme_override_font_sizes/font_size = 18
+text = "× 0"
+horizontal_alignment = 1
+vertical_alignment = 1
+mouse_filter = 2
+
+[node name="SelectAll_dragon_treat" type="Button" parent="MainContent/ItemGrid_5x3/ItemSlot10/StorageAllCard_dragon_treat" unique_id=1167640506]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 152.0
+offset_bottom = 152.0
+flat = true
+mouse_filter = 0
+z_index = 10
+mouse_default_cursor_shape = 2
+theme_override_styles/hover = SubResource("StyleBoxFlat_storage_hover")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_storage_pressed")
+
+[node name="ItemSlot11" type="Control" parent="MainContent/ItemGrid_5x3" unique_id=815358028]
+anchors_preset = 0
+offset_left = 274.0
+offset_top = 504.0
+offset_right = 395.0
+offset_bottom = 620.0
+visible = false
+mouse_filter = 2
+
+[node name="Art_storage_cell" type="TextureRect" parent="MainContent/ItemGrid_5x3/ItemSlot11" unique_id=431467600]
+layout_mode = 0
+offset_right = 121.0
+offset_bottom = 116.0
+modulate = Color(1, 1, 1, 0.72)
+mouse_filter = 2
+texture = ExtResource("21_an2qt")
+expand_mode = 1
+
+[node name="ItemSlot11Label" type="Label" parent="MainContent/ItemGrid_5x3/ItemSlot11" unique_id=1918054923]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 42.0
+offset_right = 109.0
+offset_bottom = 67.0
+theme_override_colors/font_color = Color(0.6039216, 0.47843137, 0.3372549, 1)
+theme_override_font_sizes/font_size = 16
+text = "Ô TRỐNG"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ItemSlot12" type="Control" parent="MainContent/ItemGrid_5x3" unique_id=1523055571]
+anchors_preset = 0
+offset_left = 403.0
+offset_top = 504.0
+offset_right = 524.0
+offset_bottom = 620.0
+visible = false
+mouse_filter = 2
+
+[node name="Art_storage_cell" type="TextureRect" parent="MainContent/ItemGrid_5x3/ItemSlot12" unique_id=1479627273]
+layout_mode = 0
+offset_right = 121.0
+offset_bottom = 116.0
+modulate = Color(1, 1, 1, 0.72)
+mouse_filter = 2
+texture = ExtResource("21_an2qt")
+expand_mode = 1
+
+[node name="ItemSlot12Label" type="Label" parent="MainContent/ItemGrid_5x3/ItemSlot12" unique_id=1746598006]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 42.0
+offset_right = 109.0
+offset_bottom = 67.0
+theme_override_colors/font_color = Color(0.6039216, 0.47843137, 0.3372549, 1)
+theme_override_font_sizes/font_size = 16
+text = "Ô TRỐNG"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ItemSlot13" type="Control" parent="MainContent/ItemGrid_5x3" unique_id=1173576105]
+anchors_preset = 0
+offset_left = 532.0
+offset_top = 504.0
+offset_right = 653.0
+offset_bottom = 620.0
+visible = false
+mouse_filter = 2
+
+[node name="Art_storage_cell" type="TextureRect" parent="MainContent/ItemGrid_5x3/ItemSlot13" unique_id=1260676181]
+layout_mode = 0
+offset_right = 121.0
+offset_bottom = 116.0
+modulate = Color(1, 1, 1, 0.72)
+mouse_filter = 2
+texture = ExtResource("21_an2qt")
+expand_mode = 1
+
+[node name="ItemSlot13Label" type="Label" parent="MainContent/ItemGrid_5x3/ItemSlot13" unique_id=1754824729]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 42.0
+offset_right = 109.0
+offset_bottom = 67.0
+theme_override_colors/font_color = Color(0.6039216, 0.47843137, 0.3372549, 1)
+theme_override_font_sizes/font_size = 16
+text = "Ô TRỐNG"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ItemSlot14" type="Control" parent="MainContent/ItemGrid_5x3" unique_id=1978999566]
+anchors_preset = 0
+offset_left = 661.0
+offset_top = 504.0
+offset_right = 782.0
+offset_bottom = 620.0
+visible = false
+mouse_filter = 2
+
+[node name="Art_storage_cell" type="TextureRect" parent="MainContent/ItemGrid_5x3/ItemSlot14" unique_id=116746110]
+layout_mode = 0
+offset_right = 121.0
+offset_bottom = 116.0
+modulate = Color(1, 1, 1, 0.72)
+mouse_filter = 2
+texture = ExtResource("21_an2qt")
+expand_mode = 1
+
+[node name="ItemSlot14Label" type="Label" parent="MainContent/ItemGrid_5x3/ItemSlot14" unique_id=1750060456]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 42.0
+offset_right = 109.0
+offset_bottom = 67.0
+theme_override_colors/font_color = Color(0.6039216, 0.47843137, 0.3372549, 1)
+theme_override_font_sizes/font_size = 16
+text = "Ô TRỐNG"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ItemSlot15" type="Control" parent="MainContent/ItemGrid_5x3" unique_id=858275728]
+anchors_preset = 0
+offset_left = 790.0
+offset_top = 504.0
+offset_right = 911.0
+offset_bottom = 620.0
+visible = false
+mouse_filter = 2
+
+[node name="Art_storage_cell" type="TextureRect" parent="MainContent/ItemGrid_5x3/ItemSlot15" unique_id=813661213]
+layout_mode = 0
+offset_right = 121.0
+offset_bottom = 116.0
+modulate = Color(1, 1, 1, 0.72)
+mouse_filter = 2
+texture = ExtResource("21_an2qt")
+expand_mode = 1
+
+[node name="ItemSlot15Label" type="Label" parent="MainContent/ItemGrid_5x3/ItemSlot15" unique_id=154474355]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 42.0
+offset_right = 109.0
+offset_bottom = 67.0
+theme_override_colors/font_color = Color(0.6039216, 0.47843137, 0.3372549, 1)
+theme_override_font_sizes/font_size = 16
+text = "Ô TRỐNG"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ItemDetailPanel" type="Panel" parent="MainContent" unique_id=1244335100]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 905.0
+offset_top = 170.0
+offset_right = 1227.0
+offset_bottom = 622.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_pymvn")
+mouse_filter = 1
+
+[node name="DetailHeading" type="Label" parent="MainContent/ItemDetailPanel" unique_id=1078436987]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 12.0
+offset_top = 10.0
+offset_right = 310.0
+offset_bottom = 44.0
+theme_override_colors/font_color = Color(0.29411766, 0.17254902, 0.09411765, 1)
+theme_override_font_sizes/font_size = 20
+text = "CHI TIẾT VẬT PHẨM"
+horizontal_alignment = 1
+vertical_alignment = 1
+mouse_filter = 2
+
+[node name="SelectedItemArtwork" type="TextureRect" parent="MainContent/ItemDetailPanel" unique_id=2123333480]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 49.0
+offset_top = 49.0
+offset_right = 273.0
+offset_bottom = 244.0
+mouse_filter = 2
+texture = ExtResource("22_66kp3")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="SelectedItemName" type="Label" parent="MainContent/ItemDetailPanel" unique_id=1556135275]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 14.0
+offset_top = 247.0
+offset_right = 308.0
+offset_bottom = 297.0
+theme_override_colors/font_color = Color(0.29411766, 0.17254902, 0.09411765, 1)
+theme_override_font_sizes/font_size = 24
+text = "Hạt Cà rốt"
+horizontal_alignment = 1
+vertical_alignment = 1
+mouse_filter = 2
+autowrap_mode = 3
+max_lines_visible = 2
+
+[node name="SelectedItemDescription" type="Label" parent="MainContent/ItemDetailPanel" unique_id=670781861]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 19.0
+offset_top = 304.0
+offset_right = 303.0
+offset_bottom = 385.0
+theme_override_colors/font_color = Color(0.4392157, 0.28235295, 0.13333334, 1)
+theme_override_font_sizes/font_size = 17
+text = "Số lượng: 6
+Phân loại: Tất cả
+Vật phẩm được bảo quản cẩn thận trong kho nông trại."
+horizontal_alignment = 0
+vertical_alignment = 1
+autowrap_mode = 3
+mouse_filter = 2
+max_lines_visible = 3
+
+[node name="SelectedItemUsage" type="Label" parent="MainContent/ItemDetailPanel"]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 386.0
+offset_right = 303.0
+offset_bottom = 444.0
+editor_description = "Short item-use help; full copy remains available in the tooltip."
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.42, 0.27, 0.13, 1)
+theme_override_font_sizes/font_size = 16
+text = "Chọn ô ruộng để gieo hạt."
+vertical_alignment = 1
+autowrap_mode = 3
+max_lines_visible = 2
+text_overrun_behavior = 3
+
+[node name="StorageFeedbackPanel" type="Panel" parent="MainContent" unique_id=1954509989]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 62.0
+offset_top = 646.0
+offset_right = 868.0
+offset_bottom = 706.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_ym25j")
+mouse_filter = 2
+
+[node name="FeedbackLabel" type="Label" parent="MainContent/StorageFeedbackPanel" unique_id=1765294776]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 12.0
+offset_top = 4.0
+offset_right = 794.0
+offset_bottom = 56.0
+theme_override_colors/font_color = Color(0.36078432, 0.20784314, 0.11372549, 1)
+theme_override_font_sizes/font_size = 17
+text = "Chọn một nhóm vật phẩm để xem kho."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+mouse_filter = 2
+max_lines_visible = 2
+
+[node name="FooterActions" type="Control" parent="." unique_id=1168202219]
+layout_mode = 0
+anchors_preset = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 1280.0
+offset_bottom = 720.0
+mouse_filter = 2
+
+[node name="StorageSellSelected" type="TextureButton" parent="FooterActions" unique_id=1286067833]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 905.0
+offset_top = 642.0
+offset_right = 1009.0
+offset_bottom = 699.0
+tooltip_text = "Chỉ bán nông sản đang có trong kho"
+disabled = true
+texture_normal = ExtResource("17_cqvjk")
+texture_pressed = ExtResource("18_vy1s0")
+texture_hover = ExtResource("19_aj42h")
+texture_disabled = ExtResource("20_qo52l")
+ignore_texture_size = true
+stretch_mode = 0
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+
+[node name="Caption" type="Label" parent="FooterActions/StorageSellSelected" unique_id=1683057718]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 104.0
+offset_bottom = 57.0
+theme_override_colors/font_color = Color(0.24705882, 0.16470589, 0.09411765, 1)
+theme_override_font_sizes/font_size = 20
+text = "Bán"
+horizontal_alignment = 1
+vertical_alignment = 1
+mouse_filter = 2
+
+[node name="StorageUseSelected" type="TextureButton" parent="FooterActions" unique_id=788947899]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 1014.0
+offset_top = 642.0
+offset_right = 1118.0
+offset_bottom = 699.0
+tooltip_text = "Chỉ Thuốc bổ sung đang có trong kho mới dùng trực tiếp được"
+disabled = true
+texture_normal = ExtResource("8_xrtua")
+texture_pressed = ExtResource("9_5aey4")
+texture_hover = ExtResource("10_2123j")
+texture_disabled = ExtResource("11_17t25")
+ignore_texture_size = true
+stretch_mode = 0
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+
+[node name="Caption" type="Label" parent="FooterActions/StorageUseSelected" unique_id=112026560]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 104.0
+offset_bottom = 57.0
+theme_override_colors/font_color = Color(0.23529412, 0.15686275, 0.09411765, 1)
+theme_override_font_sizes/font_size = 20
+text = "Dùng"
+horizontal_alignment = 1
+vertical_alignment = 1
+mouse_filter = 2
+
+[node name="StorageClose" type="TextureButton" parent="FooterActions" unique_id=1473518926]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 1123.0
+offset_top = 642.0
+offset_right = 1227.0
+offset_bottom = 699.0
+texture_normal = ExtResource("8_xrtua")
+texture_pressed = ExtResource("9_5aey4")
+texture_hover = ExtResource("10_2123j")
+texture_disabled = ExtResource("11_17t25")
+ignore_texture_size = true
+stretch_mode = 0
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+
+[node name="Caption" type="Label" parent="FooterActions/StorageClose" unique_id=491875332]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 104.0
+offset_bottom = 57.0
+theme_override_colors/font_color = Color(0.23529412, 0.15686275, 0.09411765, 1)
+theme_override_font_sizes/font_size = 20
+text = "Đóng"
+horizontal_alignment = 1
+vertical_alignment = 1
+mouse_filter = 2
+
+[node name="StorageBackToHub" type="Button" parent="FooterActions" unique_id=248375027]
+layout_mode = 0
+offset_left = 26.0
+offset_top = 12.0
+offset_right = 261.0
+offset_bottom = 115.0
+tooltip_text = "Về trang trại"
+flat = true
+visible = false
+
+[node name="StoragePreviousPage" type="TextureButton" parent="FooterActions" unique_id=387474648]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 152.0
+offset_top = 594.0
+offset_right = 326.0
+offset_bottom = 639.0
+texture_normal = ExtResource("8_xrtua")
+texture_pressed = ExtResource("9_5aey4")
+texture_hover = ExtResource("10_2123j")
+texture_disabled = ExtResource("11_17t25")
+ignore_texture_size = true
+stretch_mode = 0
+mouse_filter = 0
+
+[node name="Caption" type="Label" parent="FooterActions/StoragePreviousPage" unique_id=1235796240]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 174.0
+offset_bottom = 45.0
+theme_override_colors/font_color = Color(0.23529412, 0.15686275, 0.09411765, 1)
+theme_override_font_sizes/font_size = 18
+text = "Previous"
+horizontal_alignment = 1
+vertical_alignment = 1
+mouse_filter = 2
+
+[node name="StoragePageLabel" type="Label" parent="FooterActions" unique_id=883169668]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 338.0
+offset_top = 594.0
+offset_right = 588.0
+offset_bottom = 639.0
+theme_override_colors/font_color = Color(0.29411766, 0.17254902, 0.09411765, 1)
+theme_override_font_sizes/font_size = 18
+text = "Page 1 / 1"
+horizontal_alignment = 1
+vertical_alignment = 1
+mouse_filter = 2
+
+[node name="StorageNextPage" type="TextureButton" parent="FooterActions" unique_id=584095562]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 600.0
+offset_top = 594.0
+offset_right = 774.0
+offset_bottom = 639.0
+texture_normal = ExtResource("8_xrtua")
+texture_pressed = ExtResource("9_5aey4")
+texture_hover = ExtResource("10_2123j")
+texture_disabled = ExtResource("11_17t25")
+ignore_texture_size = true
+stretch_mode = 0
+mouse_filter = 0
+
+[node name="Caption" type="Label" parent="FooterActions/StorageNextPage" unique_id=1582512576]
+layout_mode = 0
+anchor_left = 0
+anchor_top = 0
+anchor_right = 0
+anchor_bottom = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 174.0
+offset_bottom = 45.0
+theme_override_colors/font_color = Color(0.23529412, 0.15686275, 0.09411765, 1)
+theme_override_font_sizes/font_size = 18
+text = "Next"
+horizontal_alignment = 1
+vertical_alignment = 1
+mouse_filter = 2

@@ -1,0 +1,39 @@
+{
+  "version": "7.1",
+  "screen_id": "FIELD_PROJECTION_PROOF",
+  "canonical_viewport": [1280, 720],
+  "logical_grid": {"columns": 4, "rows": 3},
+  "projection": {
+    "mode": "AUTHORED_PERSPECTIVE_QUAD",
+    "quad": {
+      "tl": [330, 290],
+      "tr": [890, 290],
+      "br": [940, 555],
+      "bl": [260, 555]
+    },
+    "plot_inset_ratio": 0.12,
+    "crop_anchor_v": 0.55,
+    "far_scale": 0.78,
+    "near_scale": 1.0
+  },
+  "future_dimetric_2_1": {
+    "tile_width": 160,
+    "tile_height": 80,
+    "basis_x": [80, 40],
+    "basis_y": [-80, 40]
+  },
+  "plots": [
+    {"plot_id": 1, "grid_coord": [0, 0]},
+    {"plot_id": 2, "grid_coord": [1, 0]},
+    {"plot_id": 3, "grid_coord": [2, 0]},
+    {"plot_id": 4, "grid_coord": [3, 0]},
+    {"plot_id": 5, "grid_coord": [0, 1]},
+    {"plot_id": 6, "grid_coord": [1, 1]},
+    {"plot_id": 7, "grid_coord": [2, 1]},
+    {"plot_id": 8, "grid_coord": [3, 1]},
+    {"plot_id": 9, "grid_coord": [0, 2]},
+    {"plot_id": 10, "grid_coord": [1, 2]},
+    {"plot_id": 11, "grid_coord": [2, 2]},
+    {"plot_id": 12, "grid_coord": [3, 2]}
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "spec_version": "6.4",
+  "screen_id": "TITLE_SCREEN",
+  "canonical_viewport": [1280, 720],
+  "geometry_policy": "LOCK_V6_3_RECTS",
+  "world_plate": "res://v6/art/plates/title/title_world_plate_v6_2.png",
+  "static_ui_owner": "res://v6/art/plates/title/title_ui_master_plate_v6_4.png",
+  "static_ui_policy": "logo + exact four button shells + static button icons; no menu text",
+  "hit_rects": {
+    "CONTINUE": [493, 280, 294, 77],
+    "NEW_GAME": [493, 367, 294, 79],
+    "SETTINGS": [493, 452, 294, 79],
+    "QUIT": [493, 536, 294, 79]
+  },
+  "label_rects": {
+    "CONTINUE": [535, 280, 230, 77],
+    "NEW_GAME": [550, 367, 215, 79],
+    "SETTINGS": [550, 452, 215, 79],
+    "QUIT": [550, 536, 215, 79]
+  },
+  "qa_locale": "en",
+  "shipping_locale": "runtime"
+}

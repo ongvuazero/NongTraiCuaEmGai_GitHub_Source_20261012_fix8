@@ -1,0 +1,190 @@
+{
+  "version": 3,
+  "purpose": "Presentation-only relative walking lanes around authored Control positions. Moving the actual Control keeps its input, attached state and action origins together. No farm state or source PNG is changed.",
+  "lane_method": "Manually checked against the 1280x720 native yard/destination plates. Chicken foreground/back lanes are disjoint even using full Control rectangles. All offsets retain HUD, care panel, water, landmark, station and bottom action clearance.",
+  "bodies": {
+    "ChickenVisual01": {
+      "lane": [
+        -42,
+        0,
+        50,
+        9
+      ],
+      "speed": 27,
+      "start": "walk",
+      "stride_pixels": 23.76
+    },
+    "ChickenVisual02": {
+      "lane": [
+        0,
+        0,
+        28,
+        8
+      ],
+      "speed": 16,
+      "start": "look",
+      "stride_pixels": 14.08
+    },
+    "CowVisual": {
+      "lane": [
+        -34,
+        0,
+        46,
+        12
+      ],
+      "speed": 28,
+      "stride_pixels": 30.24
+    },
+    "DuckVisual": {
+      "lane": [
+        -32,
+        0,
+        35,
+        8
+      ],
+      "speed": 23,
+      "stride_pixels": 21.16
+    },
+    "PigVisual": {
+      "lane": [
+        -46,
+        0,
+        70,
+        16
+      ],
+      "speed": 28,
+      "stride_pixels": 28
+    },
+    "DragonBody_0": {
+      "lane": [
+        -32,
+        0,
+        58,
+        15
+      ],
+      "speed": 22,
+      "stride_pixels": 21.12
+    },
+    "DragonBody_1": {
+      "lane": [
+        -22,
+        0,
+        30,
+        10
+      ],
+      "speed": 14,
+      "stride_pixels": 13.44
+    },
+    "DragonBody_2": {
+      "lane": [
+        -12,
+        0,
+        12,
+        9
+      ],
+      "speed": 10,
+      "stride_pixels": 9.6
+    },
+    "DestinationBody_shadow_dragon": {
+      "lane": [
+        -24,
+        0,
+        30,
+        8
+      ],
+      "speed": 18,
+      "stride_pixels": 12.96
+    },
+    "DestinationBody_slime": {
+      "lane": [
+        -2,
+        0,
+        20,
+        8
+      ],
+      "speed": 9,
+      "locomotion": "hop",
+      "stride_pixels": 6.48
+    },
+    "DestinationBody_golem": {
+      "lane": [
+        -8,
+        0,
+        17,
+        8
+      ],
+      "speed": 7,
+      "stride_pixels": 7.84
+    },
+    "DestinationBody_ice_dragon": {
+      "lane": [
+        -24,
+        0,
+        36,
+        8
+      ],
+      "speed": 18,
+      "stride_pixels": 17.28
+    },
+    "DestinationBody_crystal_dragon": {
+      "lane": [
+        -8,
+        0,
+        22,
+        10
+      ],
+      "speed": 14,
+      "stride_pixels": 13.44
+    },
+    "DestinationBody_ice_fish": {
+      "lane": [
+        -5,
+        -2,
+        10,
+        4
+      ],
+      "speed": 6,
+      "locomotion": "swim",
+      "stride_pixels": 5.76
+    },
+    "DestinationBody_rainbow_dragon": {
+      "lane": [
+        -36,
+        0,
+        70,
+        10
+      ],
+      "speed": 20,
+      "stride_pixels": 14.4
+    },
+    "DestinationBody_snake": {
+      "lane": [
+        -34,
+        0,
+        68,
+        12
+      ],
+      "speed": 12,
+      "locomotion": "slither",
+      "stride_pixels": 10.56
+    },
+    "CatVisual": {
+      "lane": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "FarmerVisual": {
+      "lane": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "pose_method": "Complete source frames only. No UV/head/leg/tail deformation. Actors without verified locomotion stay on their authored ground.",
+  "playback_note": "stride_pixels is Control travel per complete source gait cycle; playback advances only on actual travel. No unused cadence settings. Stationary attention turns settle before mirroring; route/species continuity stays in session memory."
+}

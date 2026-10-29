@@ -1,0 +1,10 @@
+{
+  "version": "7.0",
+  "save_root": "isolated timestamped QA directory",
+  "plot_count": 12,
+  "fixture_crop": "carrot",
+  "selected_plot": 1,
+  "secondary_persistence_plot": 2,
+  "required_fixture_states": ["untilled", "tilled", "planted_watered", "growing", "ready_to_harvest", "post_harvest"],
+  "real_save_mutation": false
+}

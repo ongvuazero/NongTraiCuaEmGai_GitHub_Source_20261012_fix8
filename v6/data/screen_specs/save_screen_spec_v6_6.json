@@ -1,0 +1,16 @@
+{
+  "spec_version": "6.6",
+  "screen_id": "SAVE_SCREEN",
+  "canonical_viewport": [1280, 720],
+  "geometry_policy": "LOCK_V6_5_DO_NOT_NUDGE",
+  "base_plate": "res://v6/art/reference_runtime/save_reference_runtime_base_v6_5.png",
+  "ui_overlay_runtime": "res://v6/art/plates/save/save_ui_overlay_runtime_v6_6.png",
+  "static_icon_overlay": "res://v6/art/plates/save/save_static_icon_overlay_v6_5.png",
+  "dynamic_layout": "res://v6/data/screen_specs/save_dynamic_layout_v6_6.json",
+  "reference_fidelity_mode": {
+    "environment_flag": "MSF_REFERENCE_FIDELITY=1",
+    "behavior": "Render exact base plate plus transparent hit targets only. Do not draw overlay or captions. This is a visual-fidelity test only; functional smoke remains separate."
+  },
+  "normal_runtime_behavior": "Render exact base + V6.6 runtime overlay + static icons + real dynamic save data.",
+  "parity_dynamic_behavior": "Render exact base + V6.6 runtime overlay + static icons + deterministic fixture data using V6.6 left-aligned baselines."
+}

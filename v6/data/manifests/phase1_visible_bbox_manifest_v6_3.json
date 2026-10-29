@@ -1,0 +1,924 @@
+{
+  "manifest_version": "6.3",
+  "canonical_viewport": [
+    1280,
+    720
+  ],
+  "contract": "VISIBLE_ALPHA_BOUNDING_BOX",
+  "assets": [
+    {
+      "role": "TITLE_LOGO",
+      "screen": "title",
+      "path": "res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/TITLE_SAVE_HOME/canonical_logo.png",
+      "canvas_size": [
+        1238,
+        690
+      ],
+      "alpha_bbox": [
+        5,
+        8,
+        1232,
+        682
+      ],
+      "alpha_fill_ratio": 0.983615,
+      "nine_slice": false,
+      "target_visible_rect": [
+        421,
+        60,
+        419,
+        205
+      ],
+      "scale_x": 0.340097,
+      "scale_y": 0.300587,
+      "aspect_delta": 0.131446,
+      "compensated_node_rect": [
+        419.2995,
+        57.5953,
+        421.0406,
+        207.4047
+      ],
+      "warnings": [
+        "NONUNIFORM_SCALE_GT_0_08"
+      ]
+    },
+    {
+      "role": "TITLE_CONTINUE_FRAME",
+      "screen": "title",
+      "path": "res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/TITLE_SAVE_HOME/title_button_frame_default.png",
+      "canvas_size": [
+        613,
+        211
+      ],
+      "alpha_bbox": [
+        1,
+        0,
+        610,
+        211
+      ],
+      "alpha_fill_ratio": 0.995106,
+      "nine_slice": true,
+      "target_visible_rect": [
+        493,
+        280,
+        294,
+        77
+      ],
+      "scale_x": 0.481967,
+      "scale_y": 0.364929,
+      "aspect_delta": 0.320715,
+      "compensated_node_rect": [
+        492.518,
+        280.0,
+        295.4459,
+        77.0
+      ]
+    },
+    {
+      "role": "TITLE_NEW_GAME_FRAME",
+      "screen": "title",
+      "path": "res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/TITLE_SAVE_HOME/title_button_frame_default.png",
+      "canvas_size": [
+        613,
+        211
+      ],
+      "alpha_bbox": [
+        1,
+        0,
+        610,
+        211
+      ],
+      "alpha_fill_ratio": 0.995106,
+      "nine_slice": true,
+      "target_visible_rect": [
+        493,
+        367,
+        294,
+        79
+      ],
+      "scale_x": 0.481967,
+      "scale_y": 0.374408,
+      "aspect_delta": 0.28728,
+      "compensated_node_rect": [
+        492.518,
+        367.0,
+        295.4459,
+        79.0
+      ]
+    },
+    {
+      "role": "TITLE_SETTINGS_FRAME",
+      "screen": "title",
+      "path": "res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/TITLE_SAVE_HOME/title_button_frame_default.png",
+      "canvas_size": [
+        613,
+        211
+      ],
+      "alpha_bbox": [
+        1,
+        0,
+        610,
+        211
+      ],
+      "alpha_fill_ratio": 0.995106,
+      "nine_slice": true,
+      "target_visible_rect": [
+        493,
+        452,
+        294,
+        79
+      ],
+      "scale_x": 0.481967,
+      "scale_y": 0.374408,
+      "aspect_delta": 0.28728,
+      "compensated_node_rect": [
+        492.518,
+        452.0,
+        295.4459,
+        79.0
+      ]
+    },
+    {
+      "role": "TITLE_QUIT_FRAME",
+      "screen": "title",
+      "path": "res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/TITLE_SAVE_HOME/title_button_frame_default.png",
+      "canvas_size": [
+        613,
+        211
+      ],
+      "alpha_bbox": [
+        1,
+        0,
+        610,
+        211
+      ],
+      "alpha_fill_ratio": 0.995106,
+      "nine_slice": true,
+      "target_visible_rect": [
+        493,
+        536,
+        294,
+        79
+      ],
+      "scale_x": 0.481967,
+      "scale_y": 0.374408,
+      "aspect_delta": 0.28728,
+      "compensated_node_rect": [
+        492.518,
+        536.0,
+        295.4459,
+        79.0
+      ]
+    },
+    {
+      "role": "TITLE_NEW_GAME_ICON",
+      "screen": "title",
+      "path": "res://assets/canonical_v2/03_ART_RUNTIME_READY/ITEMS/plant.png",
+      "canvas_size": [
+        357,
+        400
+      ],
+      "alpha_bbox": [
+        8,
+        8,
+        349,
+        392
+      ],
+      "alpha_fill_ratio": 0.958039,
+      "nine_slice": false
+    },
+    {
+      "role": "TITLE_SETTINGS_ICON",
+      "screen": "title",
+      "path": "res://assets/canonical_v2/03_ART_RUNTIME_READY/ITEMS/settings.png",
+      "canvas_size": [
+        214,
+        165
+      ],
+      "alpha_bbox": [
+        8,
+        8,
+        206,
+        149
+      ],
+      "alpha_fill_ratio": 0.869272,
+      "nine_slice": false
+    },
+    {
+      "role": "TITLE_QUIT_ICON",
+      "screen": "title",
+      "path": "res://v6/art/plates/title/quit_door_icon_v6_2.png",
+      "canvas_size": [
+        256,
+        256
+      ],
+      "alpha_bbox": [
+        18,
+        34,
+        202,
+        202
+      ],
+      "alpha_fill_ratio": 0.62262,
+      "nine_slice": false
+    },
+    {
+      "role": "SAVE_LOGO",
+      "screen": "save",
+      "path": "res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/TITLE_SAVE_HOME/canonical_logo.png",
+      "canvas_size": [
+        1238,
+        690
+      ],
+      "alpha_bbox": [
+        5,
+        8,
+        1232,
+        682
+      ],
+      "alpha_fill_ratio": 0.983615,
+      "nine_slice": false,
+      "target_visible_rect": [
+        45,
+        16,
+        211,
+        106
+      ],
+      "scale_x": 0.171266,
+      "scale_y": 0.155425,
+      "aspect_delta": 0.10192,
+      "compensated_node_rect": [
+        44.1437,
+        14.7566,
+        212.0276,
+        107.2434
+      ],
+      "warnings": [
+        "NONUNIFORM_SCALE_GT_0_08"
+      ]
+    },
+    {
+      "role": "HOME_LOGO",
+      "screen": "home_hub",
+      "path": "res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/TITLE_SAVE_HOME/canonical_logo.png",
+      "canvas_size": [
+        1238,
+        690
+      ],
+      "alpha_bbox": [
+        5,
+        8,
+        1232,
+        682
+      ],
+      "alpha_fill_ratio": 0.983615,
+      "nine_slice": false,
+      "target_visible_rect": [
+        44,
+        13,
+        208,
+        104
+      ],
+      "scale_x": 0.168831,
+      "scale_y": 0.152493,
+      "aspect_delta": 0.107143,
+      "compensated_node_rect": [
+        43.1558,
+        11.7801,
+        209.013,
+        105.2199
+      ],
+      "warnings": [
+        "NONUNIFORM_SCALE_GT_0_08"
+      ]
+    },
+    {
+      "role": "HOME_DATE_PANEL",
+      "screen": "home_hub",
+      "path": "res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/HUD/day_season_chip.png",
+      "canvas_size": [
+        418,
+        142
+      ],
+      "alpha_bbox": [
+        8,
+        0,
+        405,
+        136
+      ],
+      "alpha_fill_ratio": 0.92796,
+      "nine_slice": false,
+      "target_visible_rect": [
+        535,
+        13,
+        166,
+        57
+      ],
+      "scale_x": 0.409877,
+      "scale_y": 0.419118,
+      "aspect_delta": 0.022049,
+      "compensated_node_rect": [
+        531.721,
+        13.0,
+        171.3284,
+        59.5147
+      ]
+    },
+    {
+      "role": "HOME_MONEY_PANEL",
+      "screen": "home_hub",
+      "path": "res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/HUD/money_chip.png",
+      "canvas_size": [
+        693,
+        219
+      ],
+      "alpha_bbox": [
+        8,
+        8,
+        677,
+        203
+      ],
+      "alpha_fill_ratio": 0.905539,
+      "nine_slice": false,
+      "target_visible_rect": [
+        703,
+        14,
+        168,
+        56
+      ],
+      "scale_x": 0.248154,
+      "scale_y": 0.275862,
+      "aspect_delta": 0.100443,
+      "compensated_node_rect": [
+        701.0148,
+        11.7931,
+        171.9705,
+        60.4138
+      ],
+      "warnings": [
+        "NONUNIFORM_SCALE_GT_0_08"
+      ]
+    },
+    {
+      "role": "HOME_ENERGY_PANEL",
+      "screen": "home_hub",
+      "path": "res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/HUD/energy_chip.png",
+      "canvas_size": [
+        771,
+        228
+      ],
+      "alpha_bbox": [
+        5,
+        7,
+        763,
+        218
+      ],
+      "alpha_fill_ratio": 0.946219,
+      "nine_slice": false,
+      "target_visible_rect": [
+        876,
+        14,
+        170,
+        56
+      ],
+      "scale_x": 0.222805,
+      "scale_y": 0.256881,
+      "aspect_delta": 0.132653,
+      "compensated_node_rect": [
+        874.886,
+        12.2018,
+        171.7824,
+        58.5688
+      ],
+      "warnings": [
+        "NONUNIFORM_SCALE_GT_0_08"
+      ]
+    },
+    {
+      "role": "HOME_LONGKHI_PANEL",
+      "screen": "home_hub",
+      "path": "res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/HUD/long_khi_chip.png",
+      "canvas_size": [
+        631,
+        235
+      ],
+      "alpha_bbox": [
+        5,
+        2,
+        618,
+        225
+      ],
+      "alpha_fill_ratio": 0.937721,
+      "nine_slice": false,
+      "target_visible_rect": [
+        1057,
+        13,
+        201,
+        57
+      ],
+      "scale_x": 0.325243,
+      "scale_y": 0.253333,
+      "aspect_delta": 0.283853,
+      "compensated_node_rect": [
+        1055.3738,
+        12.4933,
+        205.2282,
+        59.5333
+      ],
+      "warnings": [
+        "NONUNIFORM_SCALE_GT_0_08"
+      ]
+    },
+    {
+      "role": "HOME_NAV_FIELD",
+      "screen": "home_hub",
+      "path": "res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/TITLE_SAVE_HOME/title_button_frame_default.png",
+      "canvas_size": [
+        613,
+        211
+      ],
+      "alpha_bbox": [
+        1,
+        0,
+        610,
+        211
+      ],
+      "alpha_fill_ratio": 0.995106,
+      "nine_slice": true,
+      "target_visible_rect": [
+        23,
+        129,
+        208,
+        62
+      ],
+      "scale_x": 0.340984,
+      "scale_y": 0.293839,
+      "aspect_delta": 0.160444,
+      "compensated_node_rect": [
+        22.659,
+        129.0,
+        209.023,
+        62.0
+      ]
+    },
+    {
+      "role": "HOME_NAV_SHOP",
+      "screen": "home_hub",
+      "path": "res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/TITLE_SAVE_HOME/title_button_frame_default.png",
+      "canvas_size": [
+        613,
+        211
+      ],
+      "alpha_bbox": [
+        1,
+        0,
+        610,
+        211
+      ],
+      "alpha_fill_ratio": 0.995106,
+      "nine_slice": true,
+      "target_visible_rect": [
+        23,
+        194,
+        208,
+        62
+      ],
+      "scale_x": 0.340984,
+      "scale_y": 0.293839,
+      "aspect_delta": 0.160444,
+      "compensated_node_rect": [
+        22.659,
+        194.0,
+        209.023,
+        62.0
+      ]
+    },
+    {
+      "role": "HOME_NAV_STORAGE",
+      "screen": "home_hub",
+      "path": "res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/TITLE_SAVE_HOME/title_button_frame_default.png",
+      "canvas_size": [
+        613,
+        211
+      ],
+      "alpha_bbox": [
+        1,
+        0,
+        610,
+        211
+      ],
+      "alpha_fill_ratio": 0.995106,
+      "nine_slice": true,
+      "target_visible_rect": [
+        23,
+        258,
+        208,
+        62
+      ],
+      "scale_x": 0.340984,
+      "scale_y": 0.293839,
+      "aspect_delta": 0.160444,
+      "compensated_node_rect": [
+        22.659,
+        258.0,
+        209.023,
+        62.0
+      ]
+    },
+    {
+      "role": "HOME_NAV_ANIMALS",
+      "screen": "home_hub",
+      "path": "res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/TITLE_SAVE_HOME/title_button_frame_default.png",
+      "canvas_size": [
+        613,
+        211
+      ],
+      "alpha_bbox": [
+        1,
+        0,
+        610,
+        211
+      ],
+      "alpha_fill_ratio": 0.995106,
+      "nine_slice": true,
+      "target_visible_rect": [
+        23,
+        323,
+        208,
+        62
+      ],
+      "scale_x": 0.340984,
+      "scale_y": 0.293839,
+      "aspect_delta": 0.160444,
+      "compensated_node_rect": [
+        22.659,
+        323.0,
+        209.023,
+        62.0
+      ]
+    },
+    {
+      "role": "HOME_NAV_DRAGON",
+      "screen": "home_hub",
+      "path": "res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/TITLE_SAVE_HOME/title_button_frame_default.png",
+      "canvas_size": [
+        613,
+        211
+      ],
+      "alpha_bbox": [
+        1,
+        0,
+        610,
+        211
+      ],
+      "alpha_fill_ratio": 0.995106,
+      "nine_slice": true,
+      "target_visible_rect": [
+        23,
+        388,
+        208,
+        62
+      ],
+      "scale_x": 0.340984,
+      "scale_y": 0.293839,
+      "aspect_delta": 0.160444,
+      "compensated_node_rect": [
+        22.659,
+        388.0,
+        209.023,
+        62.0
+      ]
+    },
+    {
+      "role": "HOME_NAV_QUEST",
+      "screen": "home_hub",
+      "path": "res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/TITLE_SAVE_HOME/title_button_frame_default.png",
+      "canvas_size": [
+        613,
+        211
+      ],
+      "alpha_bbox": [
+        1,
+        0,
+        610,
+        211
+      ],
+      "alpha_fill_ratio": 0.995106,
+      "nine_slice": true,
+      "target_visible_rect": [
+        23,
+        454,
+        208,
+        62
+      ],
+      "scale_x": 0.340984,
+      "scale_y": 0.293839,
+      "aspect_delta": 0.160444,
+      "compensated_node_rect": [
+        22.659,
+        454.0,
+        209.023,
+        62.0
+      ]
+    },
+    {
+      "role": "HOME_NAV_SETTINGS",
+      "screen": "home_hub",
+      "path": "res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/TITLE_SAVE_HOME/title_button_frame_default.png",
+      "canvas_size": [
+        613,
+        211
+      ],
+      "alpha_bbox": [
+        1,
+        0,
+        610,
+        211
+      ],
+      "alpha_fill_ratio": 0.995106,
+      "nine_slice": true,
+      "target_visible_rect": [
+        23,
+        519,
+        208,
+        62
+      ],
+      "scale_x": 0.340984,
+      "scale_y": 0.293839,
+      "aspect_delta": 0.160444,
+      "compensated_node_rect": [
+        22.659,
+        519.0,
+        209.023,
+        62.0
+      ]
+    },
+    {
+      "role": "HOME_REST_NEXTDAY",
+      "screen": "home_hub",
+      "path": "res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/SHARED_BUTTONS/night_next_day/default.png",
+      "canvas_size": [
+        952,
+        218
+      ],
+      "alpha_bbox": [
+        7,
+        5,
+        938,
+        213
+      ],
+      "alpha_fill_ratio": 0.962696,
+      "nine_slice": false,
+      "target_visible_rect": [
+        20,
+        592,
+        230,
+        72
+      ],
+      "scale_x": 0.245203,
+      "scale_y": 0.338028,
+      "aspect_delta": 0.274609,
+      "compensated_node_rect": [
+        18.2836,
+        590.3099,
+        233.4328,
+        73.6901
+      ],
+      "warnings": [
+        "NONUNIFORM_SCALE_GT_0_08"
+      ]
+    },
+    {
+      "role": "HOME_NAV_ICON_FIELD",
+      "screen": "home_hub",
+      "path": "res://assets/canonical_v2/03_ART_RUNTIME_READY/ITEMS/field.png",
+      "canvas_size": [
+        174,
+        161
+      ],
+      "alpha_bbox": [
+        8,
+        8,
+        166,
+        145
+      ],
+      "alpha_fill_ratio": 0.859213,
+      "nine_slice": false
+    },
+    {
+      "role": "HOME_NAV_ICON_SHOP",
+      "screen": "home_hub",
+      "path": "res://assets/canonical_v2/03_ART_RUNTIME_READY/ITEMS/shop.png",
+      "canvas_size": [
+        192,
+        171
+      ],
+      "alpha_bbox": [
+        8,
+        8,
+        184,
+        160
+      ],
+      "alpha_fill_ratio": 0.896686,
+      "nine_slice": false
+    },
+    {
+      "role": "HOME_NAV_ICON_STORAGE",
+      "screen": "home_hub",
+      "path": "res://assets/canonical_v2/03_ART_RUNTIME_READY/ITEMS/storage.png",
+      "canvas_size": [
+        208,
+        160
+      ],
+      "alpha_bbox": [
+        8,
+        8,
+        200,
+        147
+      ],
+      "alpha_fill_ratio": 0.883413,
+      "nine_slice": false
+    },
+    {
+      "role": "HOME_NAV_ICON_ANIMAL",
+      "screen": "home_hub",
+      "path": "res://assets/canonical_v2/03_ART_RUNTIME_READY/ITEMS/animal.png",
+      "canvas_size": [
+        202,
+        169
+      ],
+      "alpha_bbox": [
+        8,
+        8,
+        194,
+        159
+      ],
+      "alpha_fill_ratio": 0.903568,
+      "nine_slice": false
+    },
+    {
+      "role": "HOME_NAV_ICON_DRAGON",
+      "screen": "home_hub",
+      "path": "res://assets/canonical_v2/03_ART_RUNTIME_READY/ITEMS/dragon.png",
+      "canvas_size": [
+        186,
+        190
+      ],
+      "alpha_bbox": [
+        8,
+        0,
+        178,
+        190
+      ],
+      "alpha_fill_ratio": 0.956989,
+      "nine_slice": false
+    },
+    {
+      "role": "HOME_NAV_ICON_QUEST",
+      "screen": "home_hub",
+      "path": "res://assets/canonical_v2/03_ART_RUNTIME_READY/ITEMS/quest.png",
+      "canvas_size": [
+        188,
+        165
+      ],
+      "alpha_bbox": [
+        8,
+        0,
+        180,
+        157
+      ],
+      "alpha_fill_ratio": 0.911025,
+      "nine_slice": false
+    },
+    {
+      "role": "HOME_NAV_ICON_SETTINGS",
+      "screen": "home_hub",
+      "path": "res://assets/canonical_v2/03_ART_RUNTIME_READY/ITEMS/settings.png",
+      "canvas_size": [
+        214,
+        165
+      ],
+      "alpha_bbox": [
+        8,
+        8,
+        206,
+        149
+      ],
+      "alpha_fill_ratio": 0.869272,
+      "nine_slice": false
+    },
+    {
+      "role": "HOME_FARMER",
+      "screen": "home_hub_actor",
+      "path": "res://assets/canonical_v2/03_ART_RUNTIME_READY/REPAIRS_AND_SHARED/CHARACTER/farmer_full_back.png",
+      "canvas_size": [
+        1024,
+        1024
+      ],
+      "alpha_bbox": [
+        315,
+        41,
+        393,
+        898
+      ],
+      "alpha_fill_ratio": 0.336565,
+      "nine_slice": false,
+      "target_visible_height": 154,
+      "uniform_scale": 0.171492
+    },
+    {
+      "role": "HOME_CAT",
+      "screen": "home_hub_actor",
+      "path": "res://assets/canonical_v2/03_ART_RUNTIME_READY/CHARACTERS/CAT/calico_cat_sitting.png",
+      "canvas_size": [
+        439,
+        514
+      ],
+      "alpha_bbox": [
+        0,
+        0,
+        439,
+        514
+      ],
+      "alpha_fill_ratio": 1.0,
+      "nine_slice": false,
+      "target_visible_height": 82,
+      "uniform_scale": 0.159533
+    },
+    {
+      "role": "HOME_COW",
+      "screen": "home_hub_actor",
+      "path": "res://assets/canonical_v2/03_ART_RUNTIME_READY/CHARACTERS/ANIMALS/cow_idle.png",
+      "canvas_size": [
+        489,
+        517
+      ],
+      "alpha_bbox": [
+        8,
+        8,
+        481,
+        501
+      ],
+      "alpha_fill_ratio": 0.953199,
+      "nine_slice": false,
+      "target_visible_height": 96,
+      "uniform_scale": 0.191617
+    },
+    {
+      "role": "HOME_SHEEP",
+      "screen": "home_hub_actor",
+      "path": "res://assets/canonical_v2/03_ART_RUNTIME_READY/CHARACTERS/ANIMALS/sheep_idle.png",
+      "canvas_size": [
+        489,
+        539
+      ],
+      "alpha_bbox": [
+        0,
+        0,
+        489,
+        539
+      ],
+      "alpha_fill_ratio": 1.0,
+      "nine_slice": false,
+      "target_visible_height": 84,
+      "uniform_scale": 0.155844
+    },
+    {
+      "role": "HOME_CHICKEN",
+      "screen": "home_hub_actor",
+      "path": "res://assets/canonical_v2/03_ART_RUNTIME_READY/CHARACTERS/ANIMALS/chicken_idle.png",
+      "canvas_size": [
+        294,
+        375
+      ],
+      "alpha_bbox": [
+        8,
+        8,
+        278,
+        367
+      ],
+      "alpha_fill_ratio": 0.925406,
+      "nine_slice": false,
+      "target_visible_height": 54,
+      "uniform_scale": 0.147139
+    },
+    {
+      "role": "HOME_PORTAL",
+      "screen": "home_hub_actor",
+      "path": "res://assets/canonical_v2/03_ART_RUNTIME_READY/PROPS/PORTAL/dragon_portal_complete.png",
+      "canvas_size": [
+        401,
+        504
+      ],
+      "alpha_bbox": [
+        0,
+        0,
+        401,
+        504
+      ],
+      "alpha_fill_ratio": 1.0,
+      "nine_slice": false,
+      "target_visible_height": 140,
+      "uniform_scale": 0.277778
+    }
+  ],
+  "warning_count": 7
+}

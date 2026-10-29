@@ -1,0 +1,46 @@
+FIELD UI RUNTIME RULES
+
+The PNGs in this pack are presentation frames/components.
+Dynamic game text/data MUST be rendered by Godot Labels/Textures at runtime.
+
+Do not bake:
+- DAY / SEASON value
+- COINS value
+- ENERGY value
+- crop name
+- crop state
+- growth/water/yield text
+- seed quantity
+- reward quantity/name
+
+Logo art is intentionally baked branding.
+
+Required runtime labels/icons:
+TOP HUD
+- day/season label on hud_day_frame.png
+- coins label on hud_coins_frame.png
+- energy label on hud_energy_frame.png
+
+RIGHT PANEL
+- crop name
+- state
+- growth
+- water
+- yield
+- tip
+
+BOTTOM BAR
+- TILL / PLANT / WATER / FERTILIZE
+- HARVEST
+- NEXT DAY
+
+SEED PICKER
+- crop icons
+- crop names
+- quantity
+- selected/locked state
+
+REWARD
+- crop icon
+- +quantity
+- crop name

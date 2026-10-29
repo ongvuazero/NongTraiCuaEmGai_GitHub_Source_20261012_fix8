@@ -1,0 +1,75 @@
+{
+  "version": 2,
+  "canvas": [1280, 720],
+  "ui_exclusions": [[0,0,245,720],[245,0,1035,190],[940,170,330,470],[1035,640,245,80]],
+  "context": [943,190,322,445],
+  "caption_geometry": "Optional caption_rect contains global x,y,width,max_height. Paper text keeps its natural measured height; this placement never changes object feet, pivots, sizes or input geometry.",
+  "farmer": {"feet":[313,555],"size":[124,190],"pivot":[0.5,0.97]},
+  "motion": "Complete source poses fit the authored body Controls. Per-island feet are checked with all accepted pose bounds and entire relative motion lanes, not one arrival frame. Input and captions follow the same Controls.",
+  "islands": {
+    "botanical": {
+      "farmer": {"feet":[310,574],"size":[124,190],"pivot":[0.5,0.97]},
+      "ground": [[255,340],[930,340],[930,665],[260,680]], "water": [],
+      "actors": [],
+      "landmarks": [
+        {"id":"garden","group":"buildings","kind":"building","feet":[420,355],"size":[172,145],"pivot":[0.5,0.93],"hit_shape":[[0.13,0.30],[0.42,0.08],[0.82,0.18],[0.95,0.85],[0.1,0.97]],"action_point":[420,325]},
+        {"id":"medicine_cold","group":"recipes","kind":"workbench","texture":"alchemy","feet":[755,340],"size":[178,128],"pivot":[0.5,0.92],"hit_shape":[[0.06,0.27],[0.75,0.06],[0.98,0.76],[0.78,0.96],[0.06,0.9]],"action_point":[755,300]},
+        {"id":"mint","group":"gardens","kind":"garden","feet":[460,505],"size":[170,110],"pivot":[0.5,0.90],"caption_rect":[390,522,170,64],"hit_shape":[[0.17,0.19],[0.83,0.19],[0.90,0.73],[0.84,0.82],[0.16,0.82],[0.10,0.73]],"action_point":[460,456]},
+        {"id":"lavender","group":"gardens","kind":"garden","feet":[645,535],"size":[170,110],"pivot":[0.5,0.90],"caption_rect":[560,386,170,64],"hit_shape":[[0.17,0.19],[0.83,0.19],[0.90,0.73],[0.84,0.82],[0.16,0.82],[0.10,0.73]],"action_point":[645,486]},
+        {"id":"sun_herb","group":"gardens","kind":"garden","feet":[825,575],"size":[170,110],"pivot":[0.5,0.90],"hit_shape":[[0.17,0.19],[0.83,0.19],[0.90,0.73],[0.84,0.82],[0.16,0.82],[0.10,0.73]],"action_point":[825,526]},
+        {"id":"botanical","group":"gather","kind":"resource","texture":"seed_mint","feet":[630,645],"size":[106,88],"pivot":[0.5,0.9],"caption_rect":[555,658,166,60],"hit_shape":[[0.1,0.2],[0.9,0.2],[0.96,0.9],[0.04,0.9]],"action_point":[630,611]}
+      ]
+    },
+    "monster": {
+      "farmer": {"feet":[326,554],"size":[124,190],"pivot":[0.5,0.97]},
+      "ground": [[255,340],[930,340],[930,665],[260,680]], "water": [],
+      "actors": [
+        {"id":"shadow_dragon","feet":[514,530],"size":[205,174],"pivot":[0.5,0.96],"caption_rect":[390,551,160,44],"terrain":"ground","hit_shape":"source_alpha_0.18","action_point":[514,430]},
+        {"id":"slime","feet":[620,648],"size":[118,110],"pivot":[0.5,0.96],"caption_rect":[548,657,144,60],"terrain":"ground","hit_shape":"source_alpha_0.18","action_point":[620,594]},
+        {"id":"golem","feet":[810,575],"size":[166,149],"pivot":[0.5,0.96],"caption_rect":[727,386,166,64],"terrain":"ground","hit_shape":"source_alpha_0.18","action_point":[810,483]}
+      ],
+      "landmarks": [
+        {"id":"monster_pen","group":"buildings","kind":"building","feet":[415,340],"size":[176,142],"pivot":[0.5,0.93],"hit_shape":[[0.08,0.25],[0.5,0.04],[0.95,0.25],[0.93,0.93],[0.1,0.93]],"action_point":[415,292]},
+        {"id":"slime_feed","group":"recipes","kind":"workbench","texture":"alchemy","feet":[760,340],"size":[178,128],"pivot":[0.5,0.92],"hit_shape":[[0.06,0.27],[0.75,0.06],[0.98,0.76],[0.78,0.96],[0.06,0.9]],"action_point":[760,297]},
+        {"id":"monster","group":"gather","kind":"resource","texture":"monster_gel","feet":[765,650],"size":[82,68],"pivot":[0.5,0.9],"caption_rect":[726,658,144,60],"hit_shape":[[0.1,0.2],[0.9,0.2],[0.96,0.9],[0.04,0.9]],"action_point":[765,620]}
+      ]
+    },
+    "ice": {
+      "farmer": {"feet":[313,566],"size":[124,190],"pivot":[0.5,0.97]},
+      "ground": [[255,340],[930,340],[930,460],[840,460],[840,535],[735,550],[735,650],[260,680]],
+      "water": [[860,506],[925,503],[954,528],[952,581],[918,602],[854,578],[846,540]],
+      "actors": [
+        {"id":"ice_dragon","feet":[500,510],"size":[186,166],"pivot":[0.5,0.96],"caption_rect":[366,526,144,60],"terrain":"ground","hit_shape":"source_alpha_0.18","action_point":[500,421]},
+        {"id":"crystal_dragon","feet":[720,600],"size":[185,162],"pivot":[0.5,0.96],"caption_rect":[618,635,176,58],"terrain":"ground","hit_shape":"source_alpha_0.18","action_point":[720,510]},
+        {"id":"ice_fish","feet":[900,572],"size":[70,52],"pivot":[0.5,0.9],"caption_rect":[804,582,130,60],"terrain":"water","hit_shape":"source_alpha_0.18","action_point":[900,544]}
+      ],
+      "landmarks": [
+        {"id":"icehouse","group":"buildings","kind":"building","feet":[415,340],"size":[150,143],"pivot":[0.5,0.93],"hit_shape":[[0.08,0.25],[0.5,0.04],[0.95,0.25],[0.93,0.93],[0.1,0.93]],"action_point":[415,290]},
+        {"id":"frost_feed","group":"recipes","kind":"workbench","texture":"alchemy","feet":[650,340],"size":[160,115],"pivot":[0.5,0.92],"hit_shape":[[0.06,0.27],[0.75,0.06],[0.98,0.76],[0.78,0.96],[0.06,0.9]],"action_point":[650,300]},
+        {"id":"frost_herb","group":"gardens","kind":"garden","feet":[845,430],"size":[158,108],"pivot":[0.5,0.9],"caption_rect":[770,286,158,64],"hit_shape":[[0.17,0.19],[0.83,0.19],[0.90,0.73],[0.84,0.82],[0.16,0.82],[0.10,0.73]],"action_point":[845,385]},
+        {"id":"ice","group":"gather","kind":"resource","texture":"ice_shard","feet":[560,640],"size":[100,80],"pivot":[0.5,0.9],"caption_rect":[452,643,156,60],"hit_shape":[[0.1,0.2],[0.9,0.2],[0.96,0.9],[0.04,0.9]],"action_point":[560,605]}
+      ]
+    },
+    "lava": {
+      "farmer": {"feet":[355,572],"size":[124,190],"pivot":[0.5,0.97]},
+      "ground": [[260,340],[930,340],[930,665],[260,680]], "water": [],
+      "actors": [{"id":"rainbow_dragon","feet":[590,570],"size":[238,200],"pivot":[0.5,0.96],"terrain":"ground","hit_shape":"source_alpha_0.18","action_point":[590,467]}],
+      "landmarks": [
+        {"id":"forge","group":"buildings","kind":"building","feet":[400,350],"size":[166,150],"pivot":[0.5,0.93],"hit_shape":[[0.08,0.25],[0.5,0.04],[0.95,0.25],[0.93,0.93],[0.1,0.93]],"action_point":[400,295]},
+        {"id":"rainbow_feed","group":"recipes","kind":"workbench","texture":"alchemy","feet":[790,350],"size":[178,128],"pivot":[0.5,0.92],"hit_shape":[[0.06,0.27],[0.75,0.06],[0.98,0.76],[0.78,0.96],[0.06,0.9]],"action_point":[790,302]},
+        {"id":"lava","group":"gather","kind":"resource","texture":"ember","feet":[820,615],"size":[106,94],"pivot":[0.5,0.9],"hit_shape":[[0.1,0.2],[0.9,0.2],[0.96,0.9],[0.04,0.9]],"action_point":[820,573]}
+      ]
+    },
+    "snake": {
+      "farmer": {"feet":[318,578],"size":[124,190],"pivot":[0.5,0.97]},
+      "ground": [[260,340],[930,340],[930,665],[260,680]], "water": [],
+      "actors": [{"id":"snake","feet":[575,590],"size":[230,167],"pivot":[0.5,0.96],"terrain":"ground","hit_shape":"source_alpha_0.18","action_point":[575,496]}],
+      "landmarks": [
+        {"id":"serpent_den","group":"buildings","kind":"building","feet":[420,350],"size":[174,145],"pivot":[0.5,0.93],"caption_rect":[302,322,236,60],"hit_shape":[[0.08,0.25],[0.5,0.04],[0.95,0.25],[0.93,0.93],[0.1,0.93]],"action_point":[420,300]},
+        {"id":"medicine_poison","group":"recipes","kind":"workbench","texture":"alchemy","feet":[755,350],"size":[178,128],"pivot":[0.5,0.92],"hit_shape":[[0.06,0.27],[0.75,0.06],[0.98,0.76],[0.78,0.96],[0.06,0.9]],"action_point":[755,300]},
+        {"id":"antidote_herb","group":"gardens","kind":"garden","feet":[825,515],"size":[170,110],"pivot":[0.5,0.9],"hit_shape":[[0.17,0.19],[0.83,0.19],[0.90,0.73],[0.84,0.82],[0.16,0.82],[0.10,0.73]],"action_point":[825,470]},
+        {"id":"snake","group":"gather","kind":"resource","texture":"snake_scale","feet":[365,650],"size":[102,90],"pivot":[0.5,0.9],"caption_rect":[292,664,150,56],"hit_shape":[[0.1,0.2],[0.9,0.2],[0.96,0.9],[0.04,0.9]],"action_point":[365,614]}
+      ]
+    }
+  }
+}

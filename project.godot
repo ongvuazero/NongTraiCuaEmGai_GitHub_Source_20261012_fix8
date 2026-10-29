@@ -1,0 +1,69 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[animation]
+
+compatibility/default_parent_skeleton_in_mesh_instance_3d=true
+
+[application]
+
+config/name="Nông Trại Của Em Gái"
+config/use_custom_user_dir=true
+config/custom_user_dir_name="Godot/app_userdata/Nong Trai Vui Ve"
+config/name_localized={
+"vi": "Nông Trại Của Em Gái",
+"en": "My Little Sister’s Farm",
+"th": "ฟาร์มของน้องสาวฉัน",
+"ms": "Ladang Adik Perempuan Saya",
+"id": "Ladang Adik Perempuanku",
+"in": "Ladang Adik Perempuanku",
+"zh_CN": "妹妹的农场",
+"zh": "妹妹的农场",
+"ja": "妹の農場",
+"ko": "여동생의 농장",
+"ru": "Ферма моей младшей сестры",
+"es": "La granja de mi hermanita",
+"pt_BR": "A fazenda da minha irmãzinha",
+"pt": "A fazenda da minha irmãzinha",
+"de": "Die Farm meiner kleinen Schwester",
+"fr": "La ferme de ma petite sœur",
+"pl": "Farma mojej młodszej siostry"
+}
+config/version="0.1.7-test-20261012"
+run/main_scene="res://scenes/main.tscn"
+config/features=PackedStringArray("4.6")
+config/icon="res://assets/branding_v1/app_icon_20261010/nong-trai-app-1024.png"
+
+[autoload]
+
+GameState="*res://autoload/game_state.gd"
+ScreenRouter="*res://autoload/screen_router.gd"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/stretch/mode="canvas_items"
+window/stretch/aspect="keep"
+window/handheld/orientation=0
+
+[gui]
+
+theme/custom="res://resources/ui/game_theme.tres"
+
+[internationalization]
+
+locale/fallback="vi"
+
+[rendering]
+
+renderer/rendering_method="mobile"
+renderer/rendering_method.mobile="gl_compatibility"
+textures/vram_compression/import_etc2_astc=true

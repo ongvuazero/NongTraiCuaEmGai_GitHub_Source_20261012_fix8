@@ -1,0 +1,80 @@
+MY SISTER'S FARM — FIELD FEEL FIX V10 REPORT
+=============================================
+
+12 PLOTS VISUAL CHANGED: NO
+TOOLBAR-FIRST/DIRECT-CLICK CHANGED: NO
+
+EXACT PLOT CLICK TARGETS: PASS
+GUTTER MISCLICK TEST: PASS
+ALL 12 CENTER CLICK TEST: PASS
+
+WORLD REBUILDS PER SUCCESS ACTION: 1 maximum
+ACTION LATENCY MS: 34.12 average (measured real-route QA run)
+
+FARMER FRAME ALIGNMENT: PASS
+FARMER FOOT JITTER: PASS
+VFX TARGET ANCHOR: PASS
+VFX TIMING: PASS
+
+REAL-ROUTE QA: PASS
+VISUAL REVIEW: REQUIRED
+
+IMPLEMENTATION
+--------------
+- Kept every Plot01..Plot12 authored position and size unchanged.
+- Restored only TECHNICAL/ClickTarget as an invisible interactive control.
+- Disabled the full-field Geometry hit-test input route.
+- Routed real mouse press/release through each authored ClickTarget.
+- Added GameState.apply_field_action_on_plot() for one direct transaction.
+- Successful actions emit one state change and cause one Field rebuild.
+- Invalid actions update feedback without rebuilding the Field world.
+- Added a restrained 0.12 s bed feedback pulse.
+- Installed 40 normalized farmer frames from farmer_aligned/.
+- Farmer animation speeds: idle 6, till 12, plant 12, water 14,
+  fertilize 12, harvest 14 FPS; speed_scale remains 1.0.
+- All action VFX use PixelMap.visual_crop_anchor().
+- Action VFX use SINE/QUAD ease-out timing without TRANS_BACK bounce.
+
+REAL-ROUTE TEST COVERAGE
+------------------------
+- Center click: P01 through P12.
+- Inside-edge click: left, right, top and bottom of every plot.
+- Horizontal gutters between every adjacent pair in all three rows.
+- Rapid TILL, WATER and HARVEST across four plots.
+- Plant and fertilize transaction checks.
+- Energy/inventory/crop validation remains in GameState.
+- Farmer alpha-bound center spread <= 1 px for every animation.
+- Farmer visible-foot bottom spread = 0 px for every animation.
+- Transient action effects removed within 0.75 seconds.
+
+AUTOMATED RESULT
+----------------
+FIELD_FEEL_V10_TEST_PASS
+FIELD_V10_MAX_REBUILDS=1
+FIELD_V10_AVERAGE_LATENCY_MS=34.12
+
+QA OUTPUTS
+----------
+REPORTS/FIELD_HITBOX_DEBUG.png
+REPORTS/V10_TILL_SEQUENCE.png
+REPORTS/V10_WATER_SEQUENCE.png
+REPORTS/V10_HARVEST_SEQUENCE.png
+REPORTS/V10_VFX_CLOSEUPS.png
+
+CHANGED CODE
+------------
+autoload/game_state.gd
+scripts/screens/field_screen.gd
+v7/production/field_state.gd
+v7/production/field_actor_depth.gd
+v7/production/field_renderer.gd
+v7/production/field_crop_cluster.gd
+v7/production/field_debug_overlay.gd
+
+NEW TEST
+--------
+scripts/field_feel_v10_test.gd
+
+NEW RUNTIME ASSETS
+------------------
+assets/field_approved_v1/runtime/farmer_aligned/ (40 PNG files)

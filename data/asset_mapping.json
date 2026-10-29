@@ -1,0 +1,24 @@
+{
+  "project_name": "Nong Trai Vui Ve",
+  "canonical_package": "MY_SISTERS_FARM_CANONICAL_V2_RUNTIME_READY",
+  "runtime_root": "res://assets/canonical_v2/03_ART_RUNTIME_READY",
+  "canonical_source_root": "res://assets/canonical_v2/02_ART_SOURCE_CANONICAL",
+  "spec_root": "res://docs/canonical_v2",
+  "active_crops": ["carrot", "tomato", "pumpkin"],
+  "field_layers": ["BaseSoil", "StateOverlay", "CropSprite", "ReadyOverlay", "SelectionOverlay"],
+  "plot_grid": {"columns": 4, "rows": 3, "plot_size": [115, 80]},
+  "runtime_scripts": [
+    "res://scripts/main.gd",
+    "res://scripts/farm_data.gd",
+    "res://scripts/ui_asset_registry.gd"
+  ],
+  "qa_scripts": [
+    "res://scripts/v2_contract_test.gd",
+    "res://scripts/visual_smoke_test.gd"
+  ],
+  "retired_asset_directories": [
+    "res://assets/library",
+    "res://assets/reference"
+  ],
+  "retired_directories_ignored_by_godot": true
+}

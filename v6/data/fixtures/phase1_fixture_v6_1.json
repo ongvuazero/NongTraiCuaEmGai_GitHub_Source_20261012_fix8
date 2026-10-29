@@ -1,0 +1,11 @@
+{
+  "fixture_version": "6.1",
+  "viewport": [1280, 720],
+  "day": 12,
+  "season": "Spring",
+  "coins": 12480,
+  "energy": 88,
+  "energy_max": 100,
+  "long_khi": 3250,
+  "selected_slot": 1
+}

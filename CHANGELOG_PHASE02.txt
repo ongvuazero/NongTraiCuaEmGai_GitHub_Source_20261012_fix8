@@ -1,0 +1,8 @@
+MY SISTER'S FARM - PHASE 02 CHANGELOG
+
+- Deterministically extracted 145 runtime-ready derivatives from Canonical V2 U01-U05 and I01-I02.
+- Added runtime asset extraction manifest and gap report.
+- Replaced all source-sheet runtime references with 03_ART_RUNTIME_READY paths.
+- Added distinct seed and harvested-product icons for carrot, tomato and pumpkin.
+- Corrected family-sheet slicing for title buttons, save cards, field cards and storage cells.
+- Preserved every Canonical V2 source sheet unchanged.

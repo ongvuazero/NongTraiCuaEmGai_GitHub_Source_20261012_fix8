@@ -1,0 +1,60 @@
+MY SISTER'S FARM — FIELD GAMEPLAY RESTORE V7 REPORT
+====================================================
+
+12 PLOTS VISUAL CHANGED: NO
+UI ART CHANGED: NO
+FARMER RANGE GATING REMOVED: PASS
+PLOT01 ACTION TEST: PASS
+PLOT12 ACTION TEST: PASS
+ALL 12 CLICK TARGETS: PASS
+TOOLBAR-FIRST DIRECT-CLICK: PASS
+GAMEPLAY REGRESSION: PASS
+
+IMPLEMENTATION
+--------------
+- Toolbar availability is global and no longer depends on the currently selected plot.
+- TILL, WATER, FERTILIZE and HARVEST now select a persistent active tool.
+- PLANT uses the existing seed picker and selects the persistent SEED tool.
+- Clicking any projected plot validates and applies the active tool to that clicked plot.
+- Invalid plot/action combinations fail safely without energy, seed or crop mutation.
+- WATER now explicitly rejects an empty plot, including a tilled empty plot.
+- Farmer placement and animation remain visual-only and never gate an action.
+- No scene geometry, plot position, plot spacing, plot scale, plot ID, hitbox or art changed.
+
+AUTOMATED REGRESSION GUARD
+--------------------------
+Test: res://scripts/field_gameplay_restore_v7_test.gd
+Godot: 4.6.1 stable
+Result: FIELD_GAMEPLAY_RESTORE_V7_TEST_PASS
+
+Verified:
+- Plot01 and Plot12 action success.
+- TILL direct-click success for Plot01 through Plot12.
+- PLANT direct-click success for Plot01 through Plot12.
+- WATER success on far, middle and near rows.
+- HARVEST success on far, middle and near rows.
+- Toolbar tool remains selectable when the current plot is invalid.
+- Invalid WATER consumes no energy.
+- Invalid PLANT consumes no energy or seed.
+- Every projected plot center resolves to its own plot ID.
+
+RANGE-GATE SEARCH
+-----------------
+ZERO farmer-distance gameplay gates remain in Field runtime.
+
+Remaining project-wide search hits do not affect gameplay:
+- res://v7/production/field_bed_visual.gd: distance_to is used only to round bed-art geometry.
+- res://v7/production/field_debug_overlay.gd: standing_lane is used only by the optional debug overlay.
+- res://v7/production/field_walkability.gd: legacy/debug utility definitions; no longer referenced by Field gameplay.
+- res://scripts/field_soul_recovery_test.gd: distance_to is a visual-placement assertion in an old test.
+- res://scripts/field_gameplay_restore_v7_test.gd: forbidden terms appear only in the source-code regression scan.
+
+MODIFIED GAMEPLAY FILES
+-----------------------
+autoload/game_state.gd
+scripts/screens/field_screen.gd
+v7/production/field_state.gd
+
+NEW REGRESSION FILE
+-------------------
+scripts/field_gameplay_restore_v7_test.gd

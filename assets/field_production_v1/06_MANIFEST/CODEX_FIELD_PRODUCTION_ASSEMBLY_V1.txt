@@ -1,0 +1,157 @@
+MY SISTER'S FARM — FIELD PRODUCTION ASSET ASSEMBLY V1
+=======================================================
+
+INPUT
+Use:
+MY_SISTERS_FARM_FIELD_PRODUCTION_ASSET_PACK_V1.zip
+
+SOURCE OF TRUTH
+The PNG assets in this pack replace the old reconstructed V1/V2 Field visual assets.
+
+GOAL
+Assemble the current working Field gameplay with these production layers.
+
+DO NOT:
+- redesign
+- generate new art
+- add gameplay
+- change GameState
+- change FarmData
+- change save schema
+- change crop progression
+- change plot count
+- start Animal/Dragon/Island
+- build/export
+
+CANONICAL LAYER ORDER
+
+1. 01_BACKGROUND/field_background_clean.png
+2. one plot state from 02_PLOTS/
+3. crop sprite from 03_CROPS/
+4. matching front soil lip from 02_PLOTS/
+5. farmer animation from 04_FARMER/
+6. existing restrained interaction FX
+7. split UI from 05_UI/
+
+IMPORTANT CROP RULE
+Crop images contain ONLY crops.
+Never place another soil patch underneath a crop.
+
+Use:
+plot base
+→ crop
+→ front_soil_lip
+
+The front soil lip is what visually buries roots/stems into the bed.
+
+PLOT STATES
+Use:
+plot_untilled.png
+plot_tilled.png
+plot_wet.png
+plot_selected.png
+plot_fertilized.png
+
+Selected is an overlay/state reference.
+If glow is too strong, reduce opacity in Godot.
+Do not redraw it.
+
+FRONT SOIL LIP
+Use row depth:
+far row  -> front_soil_lip_far.png
+mid row  -> front_soil_lip_mid.png
+near row -> front_soil_lip_near.png
+
+Scale to the plot visual bounds while keeping the lip aligned to the front edge.
+
+CROPS
+Carrot/Tomato/Pumpkin each have 4 stages.
+Use stage 01→04 in order.
+
+Do not expose full carrot roots above the soil.
+The front-soil lip must cover the lower crop/root area.
+
+FARMER
+Each action contains 8 fixed-canvas frames and one 8-frame strip.
+
+Actions:
+IDLE
+TILL
+PLANT
+WATER
+HARVEST
+
+Pivot:
+BOTTOM CENTER.
+
+Do not trim individual runtime frames again.
+The fixed frame canvas preserves animation alignment.
+
+Use action animation only after gameplay validation succeeds.
+Return to IDLE afterward.
+
+UI
+Use split assets under 05_UI/.
+
+All changing text/data must be rendered by Godot.
+
+Do NOT bake values into image:
+DAY/SEASON
+COINS
+ENERGY
+crop name/state
+growth/water/yield
+seed count
+reward quantity
+
+Read:
+05_UI/RUNTIME_TEXT_RULES.txt
+
+BOTTOM ACTION BAR
+Overlay the existing action icons/text at runtime on the blank action bar slots.
+
+SEED PICKER
+Overlay crop icon/name/count and lock state at runtime.
+
+RIGHT PANEL
+Overlay crop preview and current data at runtime.
+
+REWARD
+Use runtime crop icon + text.
+Do not hard-code Carrot for Tomato/Pumpkin rewards.
+
+QA
+Capture at 1280×720:
+
+01_EMPTY_FIELD.png
+02_SELECTED_PLOT.png
+03_TILLED.png
+04_CARROT_STAGE1.png
+05_CARROT_GROWING.png
+06_CARROT_READY.png
+07_WATER_ACTION.png
+08_HARVEST_ACTION.png
+09_SEED_PICKER.png
+10_FULL_FIELD.png
+
+Also capture one short animation strip or GIF-equivalent frame contact sheet for:
+WATER
+HARVEST
+
+Regression:
+CURRENT_CORE_LOOP_TEST_PASS
+PHASE1_CROP_PROGRESSION_TEST_PASS
+PHASE2_FIRST_SESSION_TEST_PASS
+
+OUTPUT
+Create:
+MY_SISTERS_FARM_FIELD_PRODUCTION_ASSEMBLY_RESULT_V1.zip
+
+Include:
+- QA screenshots
+- changed source/scene/config files only
+- a short report
+- no full project
+
+STOP after QA.
+Wait for human visual review.

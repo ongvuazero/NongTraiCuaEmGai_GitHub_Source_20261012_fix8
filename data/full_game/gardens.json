@@ -1,0 +1,7 @@
+{
+  "mint":{"name":"Mint","seed":"seed_mint","item":"mint","days":3,"island":"botanical","season":"spring","description":"Fresh herb for cold remedies and grain feed."},
+  "lavender":{"name":"Lavender","seed":"seed_lavender","item":"lavender","days":3,"island":"botanical","season":"summer","description":"Calming herb for restorative tonics."},
+  "sun_herb":{"name":"Sun Herb","seed":"seed_sun_herb","item":"sun_herb","days":4,"island":"botanical","season":"autumn","description":"Warm herb for fever remedies and fire dragon meals."},
+  "frost_herb":{"name":"Frost Herb","seed":"seed_frost_herb","item":"frost_herb","days":4,"island":"ice","season":"winter","description":"Cold-growing herb for specialist food and crystal recipes."},
+  "antidote_herb":{"name":"Antidote Herb","seed":"seed_antidote_herb","item":"antidote_herb","days":4,"island":"snake","season":"spring","description":"Used specifically for poison remedies."}
+}

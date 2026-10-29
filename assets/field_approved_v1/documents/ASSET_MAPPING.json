@@ -1,0 +1,47 @@
+{
+  "approved_assets": {
+    "background": "01_BACKGROUND/field_background_approved.png",
+    "plots": "02_PLOTS/field_plot_sheet_approved.png",
+    "crops": "03_CROPS/field_crop_sheet_approved.png",
+    "farmer": "04_FARMER/field_farmer_sheet_approved.png",
+    "ui": "05_UI/field_ui_sheet_approved.png"
+  },
+  "field_scope": {
+    "language": "English",
+    "keep_gameplay_unchanged": true,
+    "do_not_use_old_reconstruction_assets": true
+  },
+  "runtime_requirements": {
+    "plot_states": [
+      "untilled",
+      "tilled",
+      "wet",
+      "selected",
+      "fertilized"
+    ],
+    "crops": [
+      "carrot",
+      "tomato",
+      "pumpkin"
+    ],
+    "crop_stages_per_crop": 4,
+    "farmer_actions": [
+      "idle",
+      "till",
+      "plant",
+      "water",
+      "harvest"
+    ],
+    "ui_groups": [
+      "logo",
+      "back",
+      "day/season",
+      "coins",
+      "energy",
+      "right panel",
+      "seed picker",
+      "bottom actions",
+      "reward popup"
+    ]
+  }
+}

@@ -1,0 +1,385 @@
+[gd_scene load_steps=11 format=3]
+
+[ext_resource type="Script" path="res://scripts/screens/world_system_screen.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/PANELS/large_parchment_9slice.png" id="2"]
+[ext_resource type="FontFile" path="res://assets/fonts/BeVietnamPro-Regular.ttf" id="3"]
+[ext_resource type="FontFile" path="res://assets/fonts/BeVietnamPro-SemiBold.ttf" id="4"]
+[ext_resource type="Texture2D" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/TITLE_SAVE_HOME/title_button_frame_default.png" id="5"]
+
+[sub_resource type="StyleBoxTexture" id="Parchment"]
+texture = ExtResource("2")
+texture_margin_left = 80.0
+texture_margin_top = 82.0
+texture_margin_right = 80.0
+texture_margin_bottom = 44.0
+
+[sub_resource type="StyleBoxFlat" id="InsetCream"]
+bg_color = Color(0.98, 0.93, 0.83, 0.9)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.67, 0.46, 0.25, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_left = 15
+corner_radius_bottom_right = 15
+
+[sub_resource type="StyleBoxFlat" id="FeedbackCream"]
+bg_color = Color(0.98, 0.92, 0.8, 0.9)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.77, 0.62, 0.39, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_left = 8
+corner_radius_bottom_right = 8
+
+[sub_resource type="StyleBoxFlat" id="ProgressFill"]
+bg_color = Color(0.43, 0.66, 0.24, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_left = 10
+corner_radius_bottom_right = 10
+
+[sub_resource type="StyleBoxFlat" id="ProgressTrack"]
+bg_color = Color(0.81, 0.7, 0.52, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_left = 10
+corner_radius_bottom_right = 10
+
+[node name="WorldSystemScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1")
+metadata/presentation_version = "MOCKUP_WORLD_APPLICATION_V1"
+
+[node name="MainPanel" type="Panel" parent="."]
+offset_left = 32.0
+offset_top = 118.0
+offset_right = 1248.0
+offset_bottom = 636.0
+mouse_filter = 1
+theme_override_styles/panel = SubResource("Parchment")
+editor_description = "WORLD UI: shared farm-art frame. ISLAND_LAYOUT contains serialized island regions."
+
+[node name="TitlePlaque" type="TextureRect" parent="MainPanel"]
+offset_left = 298.0
+offset_top = -24.0
+offset_right = 918.0
+offset_bottom = 46.0
+mouse_filter = 2
+texture = ExtResource("5")
+expand_mode = 1
+stretch_mode = 0
+
+[node name="Tabs" type="HBoxContainer" parent="MainPanel"]
+offset_left = 30.0
+offset_top = 55.0
+offset_right = 1186.0
+offset_bottom = 100.0
+theme_override_constants/separation = 10
+alignment = 1
+
+[node name="Entries" type="ScrollContainer" parent="MainPanel"]
+offset_left = 28.0
+offset_top = 112.0
+offset_right = 410.0
+offset_bottom = 464.0
+horizontal_scroll_mode = 0
+
+[node name="EntryList" type="VBoxContainer" parent="MainPanel/Entries"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 10
+
+[node name="DetailBackdrop" type="Panel" parent="MainPanel"]
+offset_left = 428.0
+offset_top = 111.0
+offset_right = 1188.0
+offset_bottom = 464.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("InsetCream")
+
+[node name="EntryPreview" type="Control" parent="MainPanel"]
+offset_left = 446.0
+offset_top = 118.0
+offset_right = 678.0
+offset_bottom = 410.0
+mouse_filter = 2
+clip_contents = true
+
+[node name="PreviewScenery" type="TextureRect" parent="MainPanel/EntryPreview"]
+offset_right = 232.0
+offset_bottom = 292.0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 6
+modulate = Color(1, 1, 1, 0.3)
+
+[node name="PreviewIcon" type="TextureRect" parent="MainPanel/EntryPreview"]
+offset_left = 4.0
+offset_top = 12.0
+offset_right = 228.0
+offset_bottom = 280.0
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Details" type="ScrollContainer" parent="MainPanel"]
+offset_left = 696.0
+offset_top = 299.0
+offset_right = 1172.0
+offset_bottom = 410.0
+horizontal_scroll_mode = 0
+
+[node name="DetailContent" type="VBoxContainer" parent="MainPanel/Details"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 7
+
+[node name="Actions" type="GridContainer" parent="MainPanel"]
+offset_left = 446.0
+offset_top = 420.0
+offset_right = 1172.0
+offset_bottom = 460.0
+columns = 3
+theme_override_constants/h_separation = 8
+theme_override_constants/v_separation = 7
+
+[node name="MilestoneProgress" type="ProgressBar" parent="MainPanel"]
+visible = false
+offset_left = 696.0
+offset_top = 266.0
+offset_right = 1172.0
+offset_bottom = 291.0
+mouse_filter = 2
+theme_override_styles/fill = SubResource("ProgressFill")
+theme_override_styles/background = SubResource("ProgressTrack")
+show_percentage = false
+
+[node name="MilestoneRewardTray" type="HBoxContainer" parent="MainPanel"]
+visible = false
+offset_left = 696.0
+offset_top = 321.0
+offset_right = 1172.0
+offset_bottom = 409.0
+mouse_filter = 2
+theme_override_constants/separation = 12
+
+[node name="FeedbackStrip" type="Panel" parent="MainPanel"]
+offset_left = 28.0
+offset_top = 474.0
+offset_right = 1188.0
+offset_bottom = 503.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("FeedbackCream")
+
+[node name="Heading" type="Label" parent="MainPanel"]
+offset_left = 335.0
+offset_top = -12.0
+offset_right = 881.0
+offset_bottom = 34.0
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.28, 0.16, 0.08, 1)
+theme_override_fonts/font = ExtResource("4")
+theme_override_font_sizes/font_size = 27
+text = "Explore the islands"
+vertical_alignment = 1
+horizontal_alignment = 1
+
+[node name="Subtitle" type="Label" parent="MainPanel"]
+visible = false
+offset_left = 40.0
+offset_top = 42.0
+offset_right = 1176.0
+offset_bottom = 63.0
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.28, 0.16, 0.08, 1)
+theme_override_fonts/font = ExtResource("3")
+theme_override_font_sizes/font_size = 15
+text = ""
+vertical_alignment = 1
+
+[node name="EntryHeading" type="Label" parent="MainPanel"]
+visible = false
+offset_left = 34.0
+offset_top = 104.0
+offset_right = 410.0
+offset_bottom = 127.0
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.28, 0.16, 0.08, 1)
+theme_override_fonts/font = ExtResource("4")
+theme_override_font_sizes/font_size = 17
+text = ""
+vertical_alignment = 1
+
+[node name="DetailHeading" type="Label" parent="MainPanel"]
+visible = false
+offset_left = 440.0
+offset_top = 104.0
+offset_right = 1180.0
+offset_bottom = 127.0
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.28, 0.16, 0.08, 1)
+theme_override_fonts/font = ExtResource("4")
+theme_override_font_sizes/font_size = 17
+text = ""
+vertical_alignment = 1
+
+[node name="EntryName" type="Label" parent="MainPanel"]
+offset_left = 696.0
+offset_top = 123.0
+offset_right = 1172.0
+offset_bottom = 161.0
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.28, 0.16, 0.08, 1)
+theme_override_fonts/font = ExtResource("4")
+theme_override_font_sizes/font_size = 26
+text = "Main Island"
+vertical_alignment = 1
+
+[node name="EntryDescription" type="Label" parent="MainPanel"]
+offset_left = 696.0
+offset_top = 168.0
+offset_right = 1172.0
+offset_bottom = 255.0
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.28, 0.16, 0.08, 1)
+theme_override_fonts/font = ExtResource("3")
+theme_override_font_sizes/font_size = 17
+text = ""
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="EntryStatus" type="Label" parent="MainPanel"]
+offset_left = 696.0
+offset_top = 263.0
+offset_right = 1172.0
+offset_bottom = 290.0
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.33, 0.46, 0.2, 1)
+theme_override_fonts/font = ExtResource("4")
+theme_override_font_sizes/font_size = 16
+text = ""
+vertical_alignment = 1
+
+[node name="Feedback" type="Label" parent="MainPanel"]
+offset_left = 40.0
+offset_top = 477.0
+offset_right = 1176.0
+offset_bottom = 500.0
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.28, 0.16, 0.08, 1)
+theme_override_fonts/font = ExtResource("3")
+theme_override_font_sizes/font_size = 13
+text = "Ready when you are. Your progress is saved automatically."
+vertical_alignment = 1
+text_overrun_behavior = 3
+
+[node name="ISLAND_LAYOUT" type="Control" parent="MainPanel"]
+visible = false
+mouse_filter = 2
+editor_description = "SERIALIZED ISLAND REGIONS: positions and sizes are read once by the island screen. Child markers are not drawn in the game."
+
+[node name="Entries" type="Control" parent="MainPanel/ISLAND_LAYOUT"]
+offset_left = 24.0
+offset_top = 64.0
+offset_right = 778.0
+offset_bottom = 466.0
+
+[node name="DetailBackdrop" type="Control" parent="MainPanel/ISLAND_LAYOUT"]
+offset_left = 790.0
+offset_top = 62.0
+offset_right = 1190.0
+offset_bottom = 504.0
+
+[node name="EntryName" type="Control" parent="MainPanel/ISLAND_LAYOUT"]
+offset_left = 806.0
+offset_top = 78.0
+offset_right = 1174.0
+offset_bottom = 112.0
+
+[node name="EntryDescription" type="Control" parent="MainPanel/ISLAND_LAYOUT"]
+offset_left = 806.0
+offset_top = 119.0
+offset_right = 1174.0
+offset_bottom = 163.0
+
+[node name="EntryPreview" type="Control" parent="MainPanel/ISLAND_LAYOUT"]
+offset_left = 806.0
+offset_top = 168.0
+offset_right = 1174.0
+offset_bottom = 315.0
+
+[node name="EntryStatus" type="Control" parent="MainPanel/ISLAND_LAYOUT"]
+offset_left = 806.0
+offset_top = 321.0
+offset_right = 1174.0
+offset_bottom = 346.0
+
+[node name="Details" type="Control" parent="MainPanel/ISLAND_LAYOUT"]
+offset_left = 806.0
+offset_top = 352.0
+offset_right = 1174.0
+offset_bottom = 440.0
+
+[node name="Actions" type="Control" parent="MainPanel/ISLAND_LAYOUT"]
+offset_left = 806.0
+offset_top = 448.0
+offset_right = 1174.0
+offset_bottom = 489.0
+
+[node name="FeedbackStrip" type="Control" parent="MainPanel/ISLAND_LAYOUT"]
+offset_left = 24.0
+offset_top = 474.0
+offset_right = 778.0
+offset_bottom = 503.0
+
+[node name="Feedback" type="Control" parent="MainPanel/ISLAND_LAYOUT"]
+offset_left = 35.0
+offset_top = 477.0
+offset_right = 768.0
+offset_bottom = 500.0
+
+[node name="COMPANION_LAYOUT" type="Control" parent="MainPanel"]
+visible = false
+mouse_filter = 2
+editor_description = "SERIALIZED COMPANION REGIONS: artwork, care details, and two rows of existing actions."
+
+[node name="EntryPreview" type="Control" parent="MainPanel/COMPANION_LAYOUT"]
+offset_left = 446.0
+offset_top = 118.0
+offset_right = 678.0
+offset_bottom = 364.0
+
+[node name="EntryDescription" type="Control" parent="MainPanel/COMPANION_LAYOUT"]
+offset_left = 696.0
+offset_top = 168.0
+offset_right = 1172.0
+offset_bottom = 251.0
+
+[node name="EntryStatus" type="Control" parent="MainPanel/COMPANION_LAYOUT"]
+offset_left = 696.0
+offset_top = 257.0
+offset_right = 1172.0
+offset_bottom = 284.0
+
+[node name="Details" type="Control" parent="MainPanel/COMPANION_LAYOUT"]
+offset_left = 696.0
+offset_top = 291.0
+offset_right = 1172.0
+offset_bottom = 365.0
+
+[node name="Actions" type="Control" parent="MainPanel/COMPANION_LAYOUT"]
+offset_left = 446.0
+offset_top = 374.0
+offset_right = 1172.0
+offset_bottom = 460.0

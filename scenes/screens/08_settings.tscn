@@ -1,0 +1,1330 @@
+[gd_scene format=3 uid="uid://b8o75jinmm22c"]
+
+[ext_resource type="Script" uid="uid://c1d4omivuvsjr" path="res://scripts/screens/settings_screen.gd" id="1_cym8p"]
+[ext_resource type="Texture2D" uid="uid://cxefo6rhnnbfr" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/REPAIRS_AND_SHARED/SETTINGS/settings_neutral_parchment_wood_backdrop.png" id="2_ro0dc"]
+[ext_resource type="Texture2D" uid="uid://c4em2wlffsuep" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/TITLE_SAVE_HOME/canonical_logo.png" id="3_a6v2x"]
+[ext_resource type="Texture2D" uid="uid://bosboi8eujp3e" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/HUD/day_season_chip.png" id="4_j63p2"]
+[ext_resource type="Texture2D" uid="uid://g71uyu1qdi84" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/HUD/money_chip.png" id="5_0ary6"]
+[ext_resource type="Texture2D" uid="uid://b4fiqkklolcr0" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/HUD/energy_chip.png" id="6_35ivp"]
+[ext_resource type="Texture2D" uid="uid://brkmxgljhu2ib" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/HUD/long_khi_chip.png" id="7_glvw3"]
+[ext_resource type="Texture2D" uid="uid://cd8n1r000pemc" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/TITLE_SAVE_HOME/title_button_frame_default.png" id="8_jiw42"]
+[ext_resource type="Texture2D" uid="uid://bqsxb0mjrlkyj" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/TITLE_SAVE_HOME/title_button_frame_pressed.png" id="9_ivdmt"]
+[ext_resource type="Texture2D" uid="uid://4sa08cfhg7mj" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/TITLE_SAVE_HOME/title_button_frame_hover.png" id="10_yop2n"]
+[ext_resource type="Texture2D" uid="uid://bxtfrn4jdyq62" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/TITLE_SAVE_HOME/title_button_frame_disabled.png" id="11_v4ph7"]
+[ext_resource type="Texture2D" uid="uid://b4jqcidup8nhc" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/SHARED_BUTTONS/primary_medium/default.png" id="16_wb1qt"]
+[ext_resource type="Texture2D" uid="uid://bom20iiwygta5" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/SHARED_BUTTONS/primary_medium/pressed.png" id="17_7stut"]
+[ext_resource type="Texture2D" uid="uid://bk72ihtc2jlkc" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/SHARED_BUTTONS/primary_medium/hover.png" id="18_par54"]
+[ext_resource type="Texture2D" uid="uid://dqxw0gv0xipbe" path="res://assets/canonical_v2/03_ART_RUNTIME_READY/UI/SHARED_BUTTONS/primary_medium/disabled.png" id="19_kmtc4"]
+
+[ext_resource type="FontFile" path="res://assets/fonts/BeVietnamPro-Bold.ttf" id="MockupBold"]
+[ext_resource type="Script" path="res://scripts/ui/farm_navigation_button.gd" id="MockupNavigation"]
+
+[sub_resource type="StyleBoxEmpty" id="EmptySettingsPanel"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1y2fo"]
+bg_color = Color(0.24705882, 0.15686275, 0.09411765, 0.3019608)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.24705882, 0.15686275, 0.09411765, 0.2)
+corner_radius_top_left = 22
+corner_radius_top_right = 22
+corner_radius_bottom_right = 22
+corner_radius_bottom_left = 22
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qa5kb"]
+bg_color = Color(0.972549, 0.9137255, 0.8, 0.9607843)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.5019608, 0.3137255, 0.16862746, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o5acv"]
+bg_color = Color(1, 0.95686275, 0.8627451, 0.7411765)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.78039217, 0.59607846, 0.38431373, 1)
+corner_radius_top_left = 14
+corner_radius_top_right = 14
+corner_radius_bottom_right = 14
+corner_radius_bottom_left = 14
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hpwlw"]
+bg_color = Color(0.43529412, 0.6117647, 0.29803923, 0.9098039)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.28235295, 0.42352942, 0.19607843, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8tr8w"]
+bg_color = Color(0.84705883, 0.76862746, 0.60784316, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.6156863, 0.45490196, 0.2784314, 1)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fglpg"]
+bg_color = Color(0.9607843, 0.827451, 0.4862745, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.49019608, 0.32156864, 0.15686275, 1)
+corner_radius_top_left = 11
+corner_radius_top_right = 11
+corner_radius_bottom_right = 11
+corner_radius_bottom_left = 11
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v3ui0"]
+bg_color = Color(0.84705883, 0.76862746, 0.60784316, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.6156863, 0.45490196, 0.2784314, 1)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_axhdu"]
+bg_color = Color(0.9607843, 0.827451, 0.4862745, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.49019608, 0.32156864, 0.15686275, 1)
+corner_radius_top_left = 11
+corner_radius_top_right = 11
+corner_radius_bottom_right = 11
+corner_radius_bottom_left = 11
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ub6mb"]
+bg_color = Color(0.84705883, 0.76862746, 0.60784316, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.6156863, 0.45490196, 0.2784314, 1)
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7lxrf"]
+bg_color = Color(0.9607843, 0.827451, 0.4862745, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.49019608, 0.32156864, 0.15686275, 1)
+corner_radius_top_left = 11
+corner_radius_top_right = 11
+corner_radius_bottom_right = 11
+corner_radius_bottom_left = 11
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_883fo"]
+bg_color = Color(1, 0.95686275, 0.8627451, 0.7411765)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.78039217, 0.59607846, 0.38431373, 1)
+corner_radius_top_left = 14
+corner_radius_top_right = 14
+corner_radius_bottom_right = 14
+corner_radius_bottom_left = 14
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0fj75"]
+bg_color = Color(0.43529412, 0.6117647, 0.29803923, 0.9098039)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.28235295, 0.42352942, 0.19607843, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5nm7w"]
+bg_color = Color(1, 0.96862745, 0.9019608, 0.8509804)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.6901961, 0.5137255, 0.3137255, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ep8ds"]
+bg_color = Color(1, 0.96862745, 0.9019608, 0.8509804)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.6901961, 0.5137255, 0.3137255, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i5imu"]
+bg_color = Color(1, 0.95686275, 0.8627451, 0.7411765)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.78039217, 0.59607846, 0.38431373, 1)
+corner_radius_top_left = 14
+corner_radius_top_right = 14
+corner_radius_bottom_right = 14
+corner_radius_bottom_left = 14
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u7f4r"]
+bg_color = Color(0.43529412, 0.6117647, 0.29803923, 0.9098039)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.28235295, 0.42352942, 0.19607843, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wuumf"]
+bg_color = Color(1, 0.96862745, 0.9019608, 0.8509804)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.6901961, 0.5137255, 0.3137255, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bo8xw"]
+bg_color = Color(1, 0.96862745, 0.9019608, 0.8509804)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.6901961, 0.5137255, 0.3137255, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bi1jp"]
+bg_color = Color(1, 0.95686275, 0.8627451, 0.7411765)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.78039217, 0.59607846, 0.38431373, 1)
+corner_radius_top_left = 14
+corner_radius_top_right = 14
+corner_radius_bottom_right = 14
+corner_radius_bottom_left = 14
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kcc1e"]
+bg_color = Color(0.43529412, 0.6117647, 0.29803923, 0.9098039)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.28235295, 0.42352942, 0.19607843, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ric7f"]
+bg_color = Color(1, 0.96862745, 0.9019608, 0.8509804)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.6901961, 0.5137255, 0.3137255, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7ihql"]
+bg_color = Color(1, 0.96862745, 0.9019608, 0.8509804)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.6901961, 0.5137255, 0.3137255, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[node name="SettingsRoot" type="Control" unique_id=546707253]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_cym8p")
+metadata/true_wysiwyg_v2 = true
+metadata/TRUE_WYSIWYG_V2 = "PASS"
+
+[node name="Background" type="TextureRect" parent="." unique_id=564824061]
+layout_mode = 0
+offset_left = -39.0
+offset_right = 1400.0
+offset_bottom = 849.0
+mouse_filter = 2
+texture = ExtResource("2_ro0dc")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="TopHUD" type="Control" parent="." unique_id=1422936876]
+anchors_preset = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+mouse_filter = 2
+
+[node name="Logo" type="TextureRect" parent="TopHUD" unique_id=62825928]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 10.0
+offset_right = 257.0
+offset_bottom = 121.0
+mouse_filter = 2
+texture = ExtResource("3_a6v2x")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="HUD_DaySeasonChip" type="TextureRect" parent="TopHUD" unique_id=105184832]
+layout_mode = 0
+offset_left = 262.0
+offset_top = 11.0
+offset_right = 613.0
+offset_bottom = 78.0
+mouse_filter = 2
+texture = ExtResource("4_j63p2")
+expand_mode = 1
+
+[node name="HUD_DaySeasonLabel" type="Label" parent="TopHUD" unique_id=104249984]
+layout_mode = 0
+offset_left = 410.0
+offset_top = 18.0
+offset_right = 556.0
+offset_bottom = 74.0
+theme_override_colors/font_color = Color(0.23137255, 0.15686275, 0.101960786, 1)
+theme_override_font_sizes/font_size = 17
+text = "Ngày 1 · Mùa xuân"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HUD_CoinChip" type="TextureRect" parent="TopHUD" unique_id=893825236]
+layout_mode = 0
+offset_left = 620.0
+offset_top = 11.0
+offset_right = 802.0
+offset_bottom = 73.0
+mouse_filter = 2
+texture = ExtResource("5_0ary6")
+expand_mode = 1
+
+[node name="HUD_CoinValue" type="Label" parent="TopHUD" unique_id=1971059183]
+layout_mode = 0
+offset_left = 667.0
+offset_top = 20.0
+offset_right = 788.0
+offset_bottom = 76.0
+theme_override_colors/font_color = Color(0.23137255, 0.15686275, 0.101960786, 1)
+theme_override_font_sizes/font_size = 19
+text = "400"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HUD_EnergyChip" type="TextureRect" parent="TopHUD" unique_id=757124317]
+layout_mode = 0
+offset_left = 833.0
+offset_top = 10.0
+offset_right = 1017.0
+offset_bottom = 72.0
+mouse_filter = 2
+texture = ExtResource("6_35ivp")
+expand_mode = 1
+
+[node name="HUD_EnergyValue" type="Label" parent="TopHUD" unique_id=1151323836]
+layout_mode = 0
+offset_left = 868.0
+offset_top = 14.0
+offset_right = 991.0
+offset_bottom = 70.0
+theme_override_colors/font_color = Color(0.23137255, 0.15686275, 0.101960786, 1)
+theme_override_font_sizes/font_size = 19
+text = "100/100"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HUD_DragonEnergyChip" type="TextureRect" parent="TopHUD" unique_id=175017670]
+layout_mode = 0
+offset_left = 1076.0
+offset_top = 9.0
+offset_right = 1274.0
+offset_bottom = 71.0
+mouse_filter = 2
+texture = ExtResource("7_glvw3")
+expand_mode = 1
+
+[node name="HUD_DragonEnergyValue" type="Label" parent="TopHUD" unique_id=1235783188]
+layout_mode = 0
+offset_left = 1137.0
+offset_top = 16.0
+offset_right = 1274.0
+offset_bottom = 72.0
+theme_override_colors/font_color = Color(0.23137255, 0.15686275, 0.101960786, 1)
+theme_override_font_sizes/font_size = 19
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MainContent" type="Control" parent="." unique_id=918842204]
+anchors_preset = 0
+offset_left = -25.0
+offset_right = 1159.0
+offset_bottom = 739.0
+mouse_filter = 2
+
+[node name="SettingsCanvas" type="Panel" parent="MainContent" unique_id=1592956925]
+layout_mode = 0
+offset_left = 287.0
+offset_top = 132.0
+offset_right = 1147.0
+offset_bottom = 677.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_1y2fo")
+
+[node name="SettingsPanel" type="Panel" parent="MainContent" unique_id=931355894]
+layout_mode = 0
+offset_left = 281.0
+offset_top = 125.0
+offset_right = 1141.0
+offset_bottom = 670.0
+theme_override_styles/panel = SubResource("EmptySettingsPanel")
+mouse_filter = 2
+
+[node name="SettingsClose" type="Button" parent="MainContent" unique_id=495385929]
+visible = false
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="AudioSection" type="Control" parent="MainContent" unique_id=120820826]
+anchors_preset = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+mouse_filter = 2
+
+[node name="SectionBackground" type="Panel" parent="MainContent/AudioSection" unique_id=1768160090]
+layout_mode = 0
+offset_left = 314.0
+offset_top = 161.0
+offset_right = 724.0
+offset_bottom = 386.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_o5acv")
+
+[node name="SectionIcon" type="Panel" parent="MainContent/AudioSection" unique_id=1964940998]
+layout_mode = 0
+offset_left = 326.0
+offset_top = 169.0
+offset_right = 356.0
+offset_bottom = 199.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_hpwlw")
+
+[node name="IconGlyph" type="Label" parent="MainContent/AudioSection/SectionIcon" unique_id=665601702]
+layout_mode = 0
+offset_right = 30.0
+offset_bottom = 30.0
+theme_override_colors/font_color = Color(1, 0.9529412, 0.8235294, 1)
+theme_override_font_sizes/font_size = 16
+text = "♪"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SectionTitle" type="Label" parent="MainContent/AudioSection" unique_id=35995795]
+layout_mode = 0
+offset_left = 364.0
+offset_top = 169.0
+offset_right = 710.0
+offset_bottom = 199.0
+theme_override_colors/font_color = Color(0.36078432, 0.20784314, 0.11372549, 1)
+theme_override_font_sizes/font_size = 21
+text = "ÂM THANH"
+vertical_alignment = 1
+theme_override_fonts/font = ExtResource("MockupBold")
+
+[node name="MasterRow" type="Control" parent="MainContent/AudioSection" unique_id=711234131]
+anchors_preset = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+mouse_filter = 2
+
+[node name="MasterVolumeLabel" type="Label" parent="MainContent/AudioSection/MasterRow" unique_id=1418800081]
+layout_mode = 0
+offset_left = 325.0
+offset_top = 201.0
+offset_right = 470.0
+offset_bottom = 241.0
+theme_override_colors/font_color = Color(0.2901961, 0.16862746, 0.09803922, 1)
+theme_override_font_sizes/font_size = 17
+text = "Am luong chung"
+vertical_alignment = 1
+
+[node name="SettingsMasterValue" type="Label" parent="MainContent/AudioSection/MasterRow" unique_id=199117742]
+layout_mode = 0
+offset_left = 655.0
+offset_top = 201.0
+offset_right = 699.0
+offset_bottom = 241.0
+theme_override_colors/font_color = Color(0.36078432, 0.20784314, 0.11372549, 1)
+theme_override_font_sizes/font_size = 16
+text = "80%"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Settings_master_Down" type="TextureButton" parent="MainContent/AudioSection/MasterRow" unique_id=1208290472]
+layout_mode = 0
+offset_left = 474.0
+offset_top = 201.0
+offset_right = 508.0
+offset_bottom = 235.0
+texture_normal = ExtResource("8_jiw42")
+texture_pressed = ExtResource("9_ivdmt")
+texture_hover = ExtResource("10_yop2n")
+texture_disabled = ExtResource("11_v4ph7")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Caption" type="Label" parent="MainContent/AudioSection/MasterRow/Settings_master_Down" unique_id=1574234692]
+layout_mode = 0
+offset_right = 34.0
+offset_bottom = 34.0
+theme_override_colors/font_color = Color(0.23529412, 0.15686275, 0.09411765, 1)
+theme_override_font_sizes/font_size = 18
+text = "−"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SettingsMasterTrack" type="Panel" parent="MainContent/AudioSection/MasterRow" unique_id=670311171]
+layout_mode = 0
+offset_left = 514.0
+offset_top = 206.0
+offset_right = 614.0
+offset_bottom = 230.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_8tr8w")
+
+[node name="ProgressFill" type="ColorRect" parent="MainContent/AudioSection/MasterRow/SettingsMasterTrack" unique_id=401655728]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 84.0
+offset_bottom = 20.0
+mouse_filter = 2
+color = Color(0.44705883, 0.6509804, 0.29803923, 1)
+
+[node name="MasterSliderHandle" type="Panel" parent="MainContent/AudioSection/MasterRow" unique_id=321203634]
+layout_mode = 0
+offset_left = 578.6
+offset_top = 205.0
+offset_right = 600.6
+offset_bottom = 233.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_fglpg")
+
+[node name="Settings_master_Up" type="TextureButton" parent="MainContent/AudioSection/MasterRow" unique_id=876911137]
+layout_mode = 0
+offset_left = 620.0
+offset_top = 201.0
+offset_right = 654.0
+offset_bottom = 235.0
+texture_normal = ExtResource("8_jiw42")
+texture_pressed = ExtResource("9_ivdmt")
+texture_hover = ExtResource("10_yop2n")
+texture_disabled = ExtResource("11_v4ph7")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Caption" type="Label" parent="MainContent/AudioSection/MasterRow/Settings_master_Up" unique_id=1501892441]
+layout_mode = 0
+offset_right = 34.0
+offset_bottom = 34.0
+theme_override_colors/font_color = Color(0.23529412, 0.15686275, 0.09411765, 1)
+theme_override_font_sizes/font_size = 18
+text = "+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MusicRow" type="Control" parent="MainContent/AudioSection" unique_id=1563362508]
+anchors_preset = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+mouse_filter = 2
+
+[node name="MusicVolumeLabel" type="Label" parent="MainContent/AudioSection/MusicRow" unique_id=783859632]
+layout_mode = 0
+offset_left = 325.0
+offset_top = 256.0
+offset_right = 470.0
+offset_bottom = 296.0
+theme_override_colors/font_color = Color(0.2901961, 0.16862746, 0.09803922, 1)
+theme_override_font_sizes/font_size = 17
+text = "Nhac"
+vertical_alignment = 1
+
+[node name="SettingsMusicValue" type="Label" parent="MainContent/AudioSection/MusicRow" unique_id=830828586]
+layout_mode = 0
+offset_left = 655.0
+offset_top = 256.0
+offset_right = 699.0
+offset_bottom = 296.0
+theme_override_colors/font_color = Color(0.36078432, 0.20784314, 0.11372549, 1)
+theme_override_font_sizes/font_size = 16
+text = "70%"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Settings_music_Down" type="TextureButton" parent="MainContent/AudioSection/MusicRow" unique_id=1072743741]
+layout_mode = 0
+offset_left = 474.0
+offset_top = 256.0
+offset_right = 508.0
+offset_bottom = 290.0
+texture_normal = ExtResource("8_jiw42")
+texture_pressed = ExtResource("9_ivdmt")
+texture_hover = ExtResource("10_yop2n")
+texture_disabled = ExtResource("11_v4ph7")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Caption" type="Label" parent="MainContent/AudioSection/MusicRow/Settings_music_Down" unique_id=500968072]
+layout_mode = 0
+offset_right = 34.0
+offset_bottom = 34.0
+theme_override_colors/font_color = Color(0.23529412, 0.15686275, 0.09411765, 1)
+theme_override_font_sizes/font_size = 18
+text = "−"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SettingsMusicTrack" type="Panel" parent="MainContent/AudioSection/MusicRow" unique_id=1094467592]
+layout_mode = 0
+offset_left = 514.0
+offset_top = 261.0
+offset_right = 614.0
+offset_bottom = 285.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_v3ui0")
+
+[node name="ProgressFill" type="ColorRect" parent="MainContent/AudioSection/MusicRow/SettingsMusicTrack" unique_id=2061692420]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 74.0
+offset_bottom = 20.0
+mouse_filter = 2
+color = Color(0.44705883, 0.6509804, 0.29803923, 1)
+
+[node name="MusicSliderHandle" type="Panel" parent="MainContent/AudioSection/MusicRow" unique_id=1607178595]
+layout_mode = 0
+offset_left = 569.4
+offset_top = 260.0
+offset_right = 591.4
+offset_bottom = 288.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_axhdu")
+
+[node name="Settings_music_Up" type="TextureButton" parent="MainContent/AudioSection/MusicRow" unique_id=481157779]
+layout_mode = 0
+offset_left = 620.0
+offset_top = 256.0
+offset_right = 654.0
+offset_bottom = 290.0
+texture_normal = ExtResource("8_jiw42")
+texture_pressed = ExtResource("9_ivdmt")
+texture_hover = ExtResource("10_yop2n")
+texture_disabled = ExtResource("11_v4ph7")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Caption" type="Label" parent="MainContent/AudioSection/MusicRow/Settings_music_Up" unique_id=1694698054]
+layout_mode = 0
+offset_right = 34.0
+offset_bottom = 34.0
+theme_override_colors/font_color = Color(0.23529412, 0.15686275, 0.09411765, 1)
+theme_override_font_sizes/font_size = 18
+text = "+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SFXRow" type="Control" parent="MainContent/AudioSection" unique_id=219804211]
+anchors_preset = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+mouse_filter = 2
+
+[node name="SfxVolumeLabel" type="Label" parent="MainContent/AudioSection/SFXRow" unique_id=730576215]
+layout_mode = 0
+offset_left = 325.0
+offset_top = 311.0
+offset_right = 470.0
+offset_bottom = 351.0
+theme_override_colors/font_color = Color(0.2901961, 0.16862746, 0.09803922, 1)
+theme_override_font_sizes/font_size = 17
+text = "Hieu ung"
+vertical_alignment = 1
+
+[node name="SettingsSfxValue" type="Label" parent="MainContent/AudioSection/SFXRow" unique_id=1597154296]
+layout_mode = 0
+offset_left = 655.0
+offset_top = 311.0
+offset_right = 699.0
+offset_bottom = 351.0
+theme_override_colors/font_color = Color(0.36078432, 0.20784314, 0.11372549, 1)
+theme_override_font_sizes/font_size = 16
+text = "85%"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Settings_sfx_Down" type="TextureButton" parent="MainContent/AudioSection/SFXRow" unique_id=1584933194]
+layout_mode = 0
+offset_left = 474.0
+offset_top = 311.0
+offset_right = 508.0
+offset_bottom = 345.0
+texture_normal = ExtResource("8_jiw42")
+texture_pressed = ExtResource("9_ivdmt")
+texture_hover = ExtResource("10_yop2n")
+texture_disabled = ExtResource("11_v4ph7")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Caption" type="Label" parent="MainContent/AudioSection/SFXRow/Settings_sfx_Down" unique_id=2057830837]
+layout_mode = 0
+offset_right = 34.0
+offset_bottom = 34.0
+theme_override_colors/font_color = Color(0.23529412, 0.15686275, 0.09411765, 1)
+theme_override_font_sizes/font_size = 18
+text = "−"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SettingsSfxTrack" type="Panel" parent="MainContent/AudioSection/SFXRow" unique_id=693851211]
+layout_mode = 0
+offset_left = 514.0
+offset_top = 316.0
+offset_right = 614.0
+offset_bottom = 340.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_ub6mb")
+
+[node name="ProgressFill" type="ColorRect" parent="MainContent/AudioSection/SFXRow/SettingsSfxTrack" unique_id=643888240]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 89.0
+offset_bottom = 20.0
+mouse_filter = 2
+color = Color(0.44705883, 0.6509804, 0.29803923, 1)
+
+[node name="SfxSliderHandle" type="Panel" parent="MainContent/AudioSection/SFXRow" unique_id=692839673]
+layout_mode = 0
+offset_left = 583.2
+offset_top = 315.0
+offset_right = 605.2
+offset_bottom = 343.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_7lxrf")
+
+[node name="Settings_sfx_Up" type="TextureButton" parent="MainContent/AudioSection/SFXRow" unique_id=92032715]
+layout_mode = 0
+offset_left = 620.0
+offset_top = 311.0
+offset_right = 654.0
+offset_bottom = 345.0
+texture_normal = ExtResource("8_jiw42")
+texture_pressed = ExtResource("9_ivdmt")
+texture_hover = ExtResource("10_yop2n")
+texture_disabled = ExtResource("11_v4ph7")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Caption" type="Label" parent="MainContent/AudioSection/SFXRow/Settings_sfx_Up" unique_id=1079430121]
+layout_mode = 0
+offset_right = 34.0
+offset_bottom = 34.0
+theme_override_colors/font_color = Color(0.23529412, 0.15686275, 0.09411765, 1)
+theme_override_font_sizes/font_size = 18
+text = "+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="DisplaySection" type="Control" parent="MainContent" unique_id=798298955]
+anchors_preset = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+mouse_filter = 2
+
+[node name="SectionBackground" type="Panel" parent="MainContent/DisplaySection" unique_id=790413408]
+layout_mode = 0
+offset_left = 733.0
+offset_top = 161.0
+offset_right = 1120.0
+offset_bottom = 386.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_883fo")
+
+[node name="SectionIcon" type="Panel" parent="MainContent/DisplaySection" unique_id=422459492]
+layout_mode = 0
+offset_left = 745.0
+offset_top = 169.0
+offset_right = 775.0
+offset_bottom = 199.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_0fj75")
+
+[node name="IconGlyph" type="Label" parent="MainContent/DisplaySection/SectionIcon" unique_id=2135818251]
+layout_mode = 0
+offset_right = 30.0
+offset_bottom = 30.0
+theme_override_colors/font_color = Color(1, 0.9529412, 0.8235294, 1)
+theme_override_font_sizes/font_size = 16
+text = "▣"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SectionTitle" type="Label" parent="MainContent/DisplaySection" unique_id=1451072116]
+layout_mode = 0
+offset_left = 783.0
+offset_top = 169.0
+offset_right = 1106.0
+offset_bottom = 199.0
+theme_override_colors/font_color = Color(0.36078432, 0.20784314, 0.11372549, 1)
+theme_override_font_sizes/font_size = 21
+text = "HIỂN THỊ"
+vertical_alignment = 1
+theme_override_fonts/font = ExtResource("MockupBold")
+
+[node name="FullscreenLabel" type="Label" parent="MainContent/DisplaySection" unique_id=511007913]
+layout_mode = 0
+offset_left = 728.0
+offset_top = 200.0
+offset_right = 908.0
+offset_bottom = 240.0
+theme_override_colors/font_color = Color(0.2901961, 0.16862746, 0.09803922, 1)
+theme_override_font_sizes/font_size = 18
+text = "Toàn màn hình"
+vertical_alignment = 1
+
+[node name="SettingsFullscreenToggle" type="TextureButton" parent="MainContent/DisplaySection" unique_id=997575348]
+layout_mode = 0
+offset_left = 935.0
+offset_top = 202.0
+offset_right = 1051.0
+offset_bottom = 240.0
+texture_normal = ExtResource("16_wb1qt")
+texture_pressed = ExtResource("17_7stut")
+texture_hover = ExtResource("18_par54")
+texture_disabled = ExtResource("19_kmtc4")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Caption" type="Label" parent="MainContent/DisplaySection/SettingsFullscreenToggle" unique_id=349737186]
+layout_mode = 0
+offset_right = 116.0
+offset_bottom = 38.0
+theme_override_colors/font_color = Color(0.24705882, 0.16470589, 0.09411765, 1)
+theme_override_font_sizes/font_size = 16
+text = "TẮT"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ResolutionLabel" type="Label" parent="MainContent/DisplaySection" unique_id=887313913]
+layout_mode = 0
+offset_left = 748.0
+offset_top = 259.0
+offset_right = 928.0
+offset_bottom = 299.0
+theme_override_colors/font_color = Color(0.2901961, 0.16862746, 0.09803922, 1)
+theme_override_font_sizes/font_size = 17
+text = "Độ phân giải"
+vertical_alignment = 1
+
+[node name="WindowModeLabel" type="Label" parent="MainContent/DisplaySection" unique_id=682144535]
+layout_mode = 0
+offset_left = 748.0
+offset_top = 315.0
+offset_right = 928.0
+offset_bottom = 355.0
+theme_override_colors/font_color = Color(0.2901961, 0.16862746, 0.09803922, 1)
+theme_override_font_sizes/font_size = 17
+text = "Chế độ cửa sổ"
+vertical_alignment = 1
+
+[node name="ResolutionValue" type="Panel" parent="MainContent/DisplaySection" unique_id=1819794696]
+layout_mode = 0
+offset_left = 934.0
+offset_top = 258.0
+offset_right = 1094.0
+offset_bottom = 296.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_5nm7w")
+
+[node name="ValueLabel" type="Label" parent="MainContent/DisplaySection/ResolutionValue" unique_id=1000351500]
+layout_mode = 0
+offset_left = 8.0
+offset_right = 152.0
+offset_bottom = 38.0
+theme_override_colors/font_color = Color(0.36078432, 0.20784314, 0.11372549, 1)
+theme_override_font_sizes/font_size = 16
+text = "1280 × 720"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="WindowModeValue" type="Panel" parent="MainContent/DisplaySection" unique_id=1488916817]
+layout_mode = 0
+offset_left = 934.0
+offset_top = 314.0
+offset_right = 1094.0
+offset_bottom = 352.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_ep8ds")
+
+[node name="ValueLabel" type="Label" parent="MainContent/DisplaySection/WindowModeValue" unique_id=273987075]
+layout_mode = 0
+offset_left = 8.0
+offset_right = 152.0
+offset_bottom = 38.0
+theme_override_colors/font_color = Color(0.36078432, 0.20784314, 0.11372549, 1)
+theme_override_font_sizes/font_size = 16
+text = "Tiêu chuẩn"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="GameplaySection" type="Control" parent="MainContent" unique_id=1566437071]
+anchors_preset = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+mouse_filter = 2
+
+[node name="SectionBackground" type="Panel" parent="MainContent/GameplaySection" unique_id=1754743929]
+layout_mode = 0
+offset_left = 314.0
+offset_top = 398.0
+offset_right = 724.0
+offset_bottom = 590.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_i5imu")
+
+[node name="SectionIcon" type="Panel" parent="MainContent/GameplaySection" unique_id=1517373049]
+layout_mode = 0
+offset_left = 326.0
+offset_top = 406.0
+offset_right = 356.0
+offset_bottom = 436.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_u7f4r")
+
+[node name="IconGlyph" type="Label" parent="MainContent/GameplaySection/SectionIcon" unique_id=1780908790]
+layout_mode = 0
+offset_right = 30.0
+offset_bottom = 30.0
+theme_override_colors/font_color = Color(1, 0.9529412, 0.8235294, 1)
+theme_override_font_sizes/font_size = 16
+text = "✓"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SectionTitle" type="Label" parent="MainContent/GameplaySection" unique_id=1107587641]
+layout_mode = 0
+offset_left = 364.0
+offset_top = 406.0
+offset_right = 710.0
+offset_bottom = 436.0
+theme_override_colors/font_color = Color(0.36078432, 0.20784314, 0.11372549, 1)
+theme_override_font_sizes/font_size = 21
+text = "NÔNG TRẠI"
+vertical_alignment = 1
+theme_override_fonts/font = ExtResource("MockupBold")
+
+[node name="RestConfirmLabel" type="Label" parent="MainContent/GameplaySection" unique_id=2147414763]
+layout_mode = 0
+offset_left = 332.0
+offset_top = 443.0
+offset_right = 563.88
+offset_bottom = 485.0
+theme_override_colors/font_color = Color(0.36078432, 0.20784314, 0.11372549, 1)
+theme_override_font_sizes/font_size = 16
+text = "Đơn hàng đã giao"
+vertical_alignment = 1
+
+[node name="GuideVisibilityLabel" type="Label" parent="MainContent/GameplaySection" unique_id=1684315888]
+layout_mode = 0
+offset_left = 332.0
+offset_top = 500.0
+offset_right = 563.88
+offset_bottom = 542.0
+theme_override_colors/font_color = Color(0.36078432, 0.20784314, 0.11372549, 1)
+theme_override_font_sizes/font_size = 16
+text = "Gợi ý đầu phiên"
+vertical_alignment = 1
+
+[node name="RestConfirmValue" type="Panel" parent="MainContent/GameplaySection" unique_id=1971415926]
+layout_mode = 0
+offset_left = 563.88
+offset_top = 445.0
+offset_right = 698.52
+offset_bottom = 483.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_wuumf")
+
+[node name="ValueLabel" type="Label" parent="MainContent/GameplaySection/RestConfirmValue" unique_id=1628886002]
+layout_mode = 0
+offset_left = 4.0
+offset_right = 130.64001
+offset_bottom = 38.0
+theme_override_colors/font_color = Color(0.29803923, 0.43137255, 0.19607843, 1)
+theme_override_font_sizes/font_size = 16
+text = "BẬT"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="GuideVisibilityValue" type="Panel" parent="MainContent/GameplaySection" unique_id=753526662]
+layout_mode = 0
+offset_left = 563.88
+offset_top = 502.0
+offset_right = 698.52
+offset_bottom = 540.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_bo8xw")
+
+[node name="ValueLabel" type="Label" parent="MainContent/GameplaySection/GuideVisibilityValue" unique_id=1667453923]
+layout_mode = 0
+offset_left = 4.0
+offset_right = 130.64001
+offset_bottom = 38.0
+theme_override_colors/font_color = Color(0.29803923, 0.43137255, 0.19607843, 1)
+theme_override_font_sizes/font_size = 16
+text = "BẬT"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LanguageSection" type="Control" parent="MainContent" unique_id=1274150344]
+anchors_preset = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+mouse_filter = 2
+
+[node name="SectionBackground" type="Panel" parent="MainContent/LanguageSection" unique_id=317657122]
+layout_mode = 0
+offset_left = 733.0
+offset_top = 398.0
+offset_right = 1120.0
+offset_bottom = 590.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_bi1jp")
+
+[node name="SectionIcon" type="Panel" parent="MainContent/LanguageSection" unique_id=539227940]
+layout_mode = 0
+offset_left = 745.0
+offset_top = 406.0
+offset_right = 775.0
+offset_bottom = 436.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_kcc1e")
+
+[node name="IconGlyph" type="Label" parent="MainContent/LanguageSection/SectionIcon" unique_id=742549890]
+layout_mode = 0
+offset_right = 30.0
+offset_bottom = 30.0
+theme_override_colors/font_color = Color(1, 0.9529412, 0.8235294, 1)
+theme_override_font_sizes/font_size = 16
+text = "A"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SectionTitle" type="Label" parent="MainContent/LanguageSection" unique_id=1443693617]
+layout_mode = 0
+offset_left = 783.0
+offset_top = 406.0
+offset_right = 1106.0
+offset_bottom = 436.0
+theme_override_colors/font_color = Color(0.36078432, 0.20784314, 0.11372549, 1)
+theme_override_font_sizes/font_size = 21
+text = "NGÔN NGỮ"
+vertical_alignment = 1
+theme_override_fonts/font = ExtResource("MockupBold")
+
+[node name="LanguageLabel" type="Label" parent="MainContent/LanguageSection" unique_id=993719378]
+layout_mode = 0
+offset_left = 751.0
+offset_top = 443.0
+offset_right = 968.62
+offset_bottom = 485.0
+theme_override_colors/font_color = Color(0.36078432, 0.20784314, 0.11372549, 1)
+theme_override_font_sizes/font_size = 16
+text = "Ngôn ngữ"
+vertical_alignment = 1
+
+[node name="TextSizeLabel" type="Label" parent="MainContent/LanguageSection" unique_id=1200538117]
+layout_mode = 0
+offset_left = 751.0
+offset_top = 500.0
+offset_right = 968.62
+offset_bottom = 542.0
+theme_override_colors/font_color = Color(0.36078432, 0.20784314, 0.11372549, 1)
+theme_override_font_sizes/font_size = 16
+text = "Cỡ chữ"
+vertical_alignment = 1
+
+[node name="LanguageValue" type="Panel" parent="MainContent/LanguageSection" unique_id=1483989027]
+layout_mode = 0
+offset_left = 968.62
+offset_top = 445.0
+offset_right = 1094.98
+offset_bottom = 483.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_ric7f")
+
+[node name="ValueLabel" type="Label" parent="MainContent/LanguageSection/LanguageValue" unique_id=652108101]
+layout_mode = 0
+offset_left = 4.0
+offset_right = 122.359985
+offset_bottom = 38.0
+theme_override_colors/font_color = Color(0.29803923, 0.43137255, 0.19607843, 1)
+theme_override_font_sizes/font_size = 16
+text = "Tiếng Việt"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextSizeValue" type="Panel" parent="MainContent/LanguageSection" unique_id=1757775082]
+layout_mode = 0
+offset_left = 968.62
+offset_top = 502.0
+offset_right = 1094.98
+offset_bottom = 540.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_7ihql")
+
+[node name="ValueLabel" type="Label" parent="MainContent/LanguageSection/TextSizeValue" unique_id=1292933946]
+layout_mode = 0
+offset_left = 4.0
+offset_right = 122.359985
+offset_bottom = 38.0
+theme_override_colors/font_color = Color(0.29803923, 0.43137255, 0.19607843, 1)
+theme_override_font_sizes/font_size = 16
+text = "Tiêu chuẩn"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="FooterActions" type="Control" parent="." unique_id=316143798]
+anchors_preset = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+mouse_filter = 2
+
+[node name="SettingsBack" type="TextureButton" parent="FooterActions" unique_id=1648915260]
+layout_mode = 0
+offset_left = 969.0
+offset_top = 610.0
+offset_right = 1141.0
+offset_bottom = 660.0
+texture_normal = ExtResource("8_jiw42")
+texture_pressed = ExtResource("9_ivdmt")
+texture_hover = ExtResource("10_yop2n")
+texture_disabled = ExtResource("11_v4ph7")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Caption" type="Label" parent="FooterActions/SettingsBack" unique_id=658830424]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 1.0
+offset_right = 156.0
+offset_bottom = 50.0
+theme_override_colors/font_color = Color(0.23529412, 0.15686275, 0.09411765, 1)
+theme_override_font_sizes/font_size = 17
+text = "Quay lại"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SettingsResetDefaults" type="TextureButton" parent="FooterActions" unique_id=2063080154]
+layout_mode = 0
+offset_left = 311.0
+offset_top = 602.0
+offset_right = 488.0
+offset_bottom = 658.0
+texture_normal = ExtResource("8_jiw42")
+texture_pressed = ExtResource("9_ivdmt")
+texture_hover = ExtResource("10_yop2n")
+texture_disabled = ExtResource("11_v4ph7")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Caption" type="Label" parent="FooterActions/SettingsResetDefaults" unique_id=1143928689]
+layout_mode = 0
+offset_right = 177.0
+offset_bottom = 56.0
+theme_override_colors/font_color = Color(0.23529412, 0.15686275, 0.09411765, 1)
+theme_override_font_sizes/font_size = 17
+text = "Mặc định"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SettingsApply" type="TextureButton" parent="FooterActions" unique_id=1737537460]
+layout_mode = 0
+offset_left = 582.0
+offset_top = 605.0
+offset_right = 840.0
+offset_bottom = 663.0
+texture_normal = ExtResource("16_wb1qt")
+texture_pressed = ExtResource("17_7stut")
+texture_hover = ExtResource("18_par54")
+texture_disabled = ExtResource("19_kmtc4")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Caption" type="Label" parent="FooterActions/SettingsApply" unique_id=61980338]
+layout_mode = 0
+offset_left = -1.0
+offset_top = -1.0
+offset_right = 258.0
+offset_bottom = 57.0
+theme_override_colors/font_color = Color(0.24705882, 0.16470589, 0.09411765, 1)
+theme_override_font_sizes/font_size = 22
+text = "Áp dụng"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LeftNav_field_select" type="TextureButton" parent="."]
+offset_left = 24.0
+offset_top = 148.0
+offset_right = 229.0
+offset_bottom = 208.0
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("MockupNavigation")
+icon_id = "field"
+caption_source = "Ruộng"
+caption_font_size = 18
+
+[node name="LeftNav_shop" type="TextureButton" parent="."]
+offset_left = 24.0
+offset_top = 214.0
+offset_right = 229.0
+offset_bottom = 274.0
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("MockupNavigation")
+icon_id = "shop"
+caption_source = "Cửa hàng"
+caption_font_size = 18
+
+[node name="LeftNav_storage" type="TextureButton" parent="."]
+offset_left = 24.0
+offset_top = 280.0
+offset_right = 229.0
+offset_bottom = 340.0
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("MockupNavigation")
+icon_id = "storage"
+caption_source = "Kho"
+caption_font_size = 18
+
+[node name="LeftNav_animal" type="TextureButton" parent="."]
+offset_left = 24.0
+offset_top = 346.0
+offset_right = 229.0
+offset_bottom = 406.0
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("MockupNavigation")
+icon_id = "animal"
+caption_source = "Vật nuôi"
+caption_font_size = 18
+
+[node name="LeftNav_dragon" type="TextureButton" parent="."]
+offset_left = 24.0
+offset_top = 412.0
+offset_right = 229.0
+offset_bottom = 472.0
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("MockupNavigation")
+icon_id = "dragon"
+caption_source = "Đảo Rồng"
+caption_font_size = 18
+
+[node name="LeftNav_quest" type="TextureButton" parent="."]
+offset_left = 24.0
+offset_top = 478.0
+offset_right = 229.0
+offset_bottom = 538.0
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("MockupNavigation")
+icon_id = "quest"
+caption_source = "Nhiệm vụ"
+caption_font_size = 18
+
+[node name="LeftNav_settings" type="TextureButton" parent="."]
+offset_left = 24.0
+offset_top = 544.0
+offset_right = 229.0
+offset_bottom = 604.0
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("MockupNavigation")
+icon_id = "settings"
+caption_source = "Cài đặt"
+caption_font_size = 18
+
+[node name="Header" type="Control" parent="." unique_id=2012652058]
+anchors_preset = 0
+offset_right = 1280.0
+offset_bottom = 720.0
+mouse_filter = 2
+
+[node name="SettingsTitle" type="TextureButton" parent="Header" unique_id=47933936]
+layout_mode = 0
+offset_left = 536.0
+offset_top = 101.0
+offset_right = 820.0
+offset_bottom = 165.0
+disabled = true
+texture_normal = ExtResource("8_jiw42")
+texture_pressed = ExtResource("9_ivdmt")
+texture_hover = ExtResource("10_yop2n")
+texture_disabled = ExtResource("8_jiw42")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Caption" type="Label" parent="Header/SettingsTitle" unique_id=1485937754]
+layout_mode = 0
+offset_right = 284.0
+offset_bottom = 64.0
+theme_override_colors/font_color = Color(0.23529412, 0.15686275, 0.09411765, 1)
+theme_override_font_sizes/font_size = 28
+text = "CÀI ĐẶT"
+horizontal_alignment = 1
+vertical_alignment = 1
+theme_override_fonts/font = ExtResource("MockupBold")

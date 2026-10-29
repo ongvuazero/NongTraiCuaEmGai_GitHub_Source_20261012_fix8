@@ -1,0 +1,11 @@
+MY SISTER'S FARM - RUNTIME ASSET GAP REPORT V3
+
+Generated runtime derivatives: 153
+PASS: shared button families and states required by the current 10-screen MVP.
+PASS: shared panels, HUD chips, navigation, title logo, save/field-select/shop/storage/settings/animal/dragon components.
+PASS: independent seed and harvested-product icons for carrot, tomato and pumpkin.
+PASS: egg, milk, wool, feed, medicine, tool and system/resource icon targets.
+PASS: six current environment composites exported as runtime screen plates.
+
+Not extracted because there is no current MVP runtime consumer: most P01/P02 world prop variants, dragon breeding/hatching components, and optional V01/V02 effects. Their source sheets remain untouched.
+No artwork was generated. All outputs are deterministic crops or lossless runtime re-exports of Canonical V2 source files.

@@ -1,0 +1,74 @@
+MY SISTER'S FARM — TRUE WYSIWYG MANUAL EDIT GUIDE V2
+=====================================================
+
+AUTHORING SPACE: 1280 x 720
+
+The scene files below contain the same visible nodes used at runtime. They are not
+preview screenshots and they are not disconnected anchor proxies. Open a scene,
+select a visible node, edit it, save, and play.
+
+04 FIELD SELECT
+res://scenes/screens/04_field_select.tscn
+- MainBoard: main selection board.
+- FieldCard01..04: real cards and their child art/text.
+- EnterField: runtime click target for FieldCard01.
+- BackToHub: runtime back button.
+
+05 FIELD GAMEPLAY
+res://scenes/screens/05_field_gameplay.tscn
+- Background: actual scenic art.
+- FieldArea/Plot01..Plot12: move an entire plot and all its layers together.
+- Each Plot contains SoilVisual, WateredOverlay, FertilizedOverlay,
+  SelectionFrame, CropLayer/CropVisual, CropSocket01..03, and ClickTarget.
+- FarmerVisual and CatVisual: actual runtime character nodes.
+- FieldGameplayUI/RightUI/CropDetailPanel: actual runtime crop panel.
+- FieldGameplayUI/BottomUI/ActionTray: actual action HUD.
+- Action_till, Action_seed, Action_water, Action_fertilize, Action_harvest,
+  Action_advance_day and SeedPickerGroup are real editable runtime controls.
+
+06 SHOP
+res://scenes/screens/06_shop.tscn
+- Background and Logo: actual scene art.
+- ProductGrid/ProductSlot01..08: real product card groups.
+- ProductDetailPanel: real runtime details and Buy button.
+- ShopFeedbackPanel: runtime feedback.
+- LeftNav_* and ShopBackToHub: runtime buttons.
+
+07 STORAGE
+res://scenes/screens/07_storage.tscn
+- ItemGrid_5x3/ItemSlot01..15: exactly fifteen authored slots.
+- ItemDetailPanel: actual detail panel.
+- StorageFeedbackPanel and StorageSellSelected/StorageUseSelected/StorageClose:
+  real runtime controls.
+- LeftNav_* and StorageBackToHub: runtime navigation.
+
+08 SETTINGS
+res://scenes/screens/08_settings.tscn
+- SettingsMainPanel and SettingsSection_0..3: real panel nodes.
+- Settings_master/music/sfx_Down/Up: real volume controls.
+- SettingsFullscreenToggle: real toggle.
+- Select the visible option panels, labels, footer buttons and edit them directly.
+
+09 ANIMAL
+res://scenes/screens/09_animal.tscn
+- AnimalInfoPanel: real status card and child bars/text.
+- CowVisual, SheepVisual, ChickenVisual01/02, ChickVisual01..03: actual art.
+- CoopVisual marks the approved coop area baked into the background.
+- FeedStationVisual and foreground fence ColorRects are actual scene nodes.
+- AnimalAction_* and AnimalBackToHub are runtime buttons.
+
+10 DRAGON
+res://scenes/screens/10_dragon.tscn
+- PortalOrHatcheryVisual: actual portal art.
+- FarmerVisual, CatVisual, DragonVisual01..05: actual runtime art.
+- DragonInfoPanel: real visible information card.
+- ActivityZoneLayer: authored habitat editing region.
+- DragonNav_* and DragonBackToHub: runtime controls.
+
+OPEN ALL SEVEN
+--------------
+Run res://tools/editor/open_msf_visual_scenes.gd from the Godot script editor.
+
+LOCKED
+------
+01 Title, 02 Save, and 03 Home Hub remain locked and were not modified.

@@ -1,0 +1,23 @@
+{
+  "spec_version": "6.3",
+  "screen_id": "TITLE_SCREEN",
+  "canonical_viewport": [1280, 720],
+  "visible_rects": {
+    "TITLE_LOGO": [421, 60, 419, 205],
+    "CONTINUE": [493, 280, 294, 77],
+    "NEW_GAME": [493, 367, 294, 79],
+    "SETTINGS": [493, 452, 294, 79],
+    "QUIT": [493, 536, 294, 79]
+  },
+  "content_rects": {
+    "CONTINUE_LABEL": [535, 280, 230, 77],
+    "NEW_GAME_LABEL": [550, 367, 215, 79],
+    "NEW_GAME_ICON": [511, 385, 42, 42],
+    "SETTINGS_LABEL": [550, 452, 215, 79],
+    "SETTINGS_ICON": [511, 470, 42, 42],
+    "QUIT_LABEL": [550, 536, 215, 79],
+    "QUIT_ICON": [509, 552, 46, 46]
+  },
+  "placement_mode": "alpha_bbox_compensated",
+  "world_plate_policy": "keep_v6_2"
+}

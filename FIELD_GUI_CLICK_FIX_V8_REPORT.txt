@@ -1,0 +1,43 @@
+MY SISTER'S FARM — FIELD GUI CLICK FIX V8 REPORT
+================================================
+
+12 PLOTS CHANGED: NO
+GUI CLICK ROUTE: PASS
+PLOT01 MANUAL CLICK: PASS
+PLOT12 MANUAL CLICK: PASS
+TOOLBAR-FIRST DIRECT-CLICK: PASS
+
+ROOT CAUSE
+----------
+The full-screen EDIT_ME/FieldArea Control received real mouse input during
+Godot's GUI phase, so the previous _unhandled_input fallback was not reached.
+The V7 gameplay test bypassed this route by invoking _unhandled_input directly.
+
+FIX APPLIED
+-----------
+- Connected EDIT_ME/FieldArea.gui_input to _on_field_area_gui_input().
+- Kept the existing Geometry.hit_test_plot() hit resolution.
+- Routed valid GUI clicks into the existing _select_plot() and toolbar-first
+  action path.
+- Kept _unhandled_input() as a fallback.
+- Did not change any plot position, size, spacing, hit geometry or art.
+
+QA
+--
+FIELD_GAMEPLAY_GUI_CLICK_V8_TEST_PASS
+- FieldArea.gui_input connection: PASS
+- FieldArea mouse input reception: PASS
+- Plot01 TILL through GUI click route: PASS
+- Plot12 TILL through GUI click route: PASS
+- Plot12 PLANT through GUI click route: PASS
+
+FIELD_GAMEPLAY_RESTORE_V7_TEST_PASS
+- All 12 projected plot targets: PASS
+- Global toolbar selection: PASS
+- Invalid action resource safety: PASS
+- Farmer range independence: PASS
+
+FILES APPLIED
+-------------
+scripts/screens/field_screen.gd
+scripts/field_gameplay_gui_click_v8_test.gd

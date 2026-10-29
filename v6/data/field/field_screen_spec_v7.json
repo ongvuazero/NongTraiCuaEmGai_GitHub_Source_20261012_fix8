@@ -1,0 +1,15 @@
+{
+  "version": "7.0",
+  "screen_id": "FIELD",
+  "screen_type": "TILEMAP_GRID_FIRST",
+  "canonical_viewport": [1280, 720],
+  "canonical_route": ["hub", "field_select", "field"],
+  "field_select_policy": "intentional product step; one garden open and two future gardens locked",
+  "visual_owner_stack": ["SCENIC_BASE", "PLAYABLE_GROUND", "STATE_AWARE_PLOT_VISUALS", "INTERACTION_SELECTION", "HUD"],
+  "state_authority": "GameState/FarmData",
+  "grid_manifest": "res://v6/data/field/field_grid_manifest_v7.json",
+  "plot_prefab": "res://scenes/components/plot_view.tscn",
+  "required_actions": ["till", "seed", "water", "harvest"],
+  "supported_existing_action": "fertilize",
+  "runtime_marker": "V7_PHASE2_FIELD_CORE_CANONICAL"
+}

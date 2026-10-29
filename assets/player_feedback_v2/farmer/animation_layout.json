@@ -1,0 +1,440 @@
+{
+  "version": 1,
+  "method": "Read-only brown boot sole centroids; fractional atlas origin correction; fixed per-animation scale, no per-frame body resize",
+  "animations": {
+    "fertilize": {
+      "path": "res://assets/player_feedback_v2/farmer/fertilize_sheet.png",
+      "canvas": [
+        1774,
+        887
+      ],
+      "grid": [
+        4,
+        2
+      ],
+      "reference_body_height": 362,
+      "frame_pivots": [
+        [
+          263.5,
+          438
+        ],
+        [
+          226.5,
+          438
+        ],
+        [
+          192.5,
+          438
+        ],
+        [
+          190.5,
+          438
+        ],
+        [
+          242.5,
+          408.5
+        ],
+        [
+          223.5,
+          408.5
+        ],
+        [
+          212.5,
+          408.5
+        ],
+        [
+          197.5,
+          408.5
+        ]
+      ],
+      "qc": [
+        {
+          "alpha32_edge_pixels": 0,
+          "nonblank_pixels": 47056
+        },
+        {
+          "alpha32_edge_pixels": 0,
+          "nonblank_pixels": 49023
+        },
+        {
+          "alpha32_edge_pixels": 0,
+          "nonblank_pixels": 50341
+        },
+        {
+          "alpha32_edge_pixels": 0,
+          "nonblank_pixels": 49744
+        },
+        {
+          "alpha32_edge_pixels": 0,
+          "nonblank_pixels": 48347
+        },
+        {
+          "alpha32_edge_pixels": 0,
+          "nonblank_pixels": 48536
+        },
+        {
+          "alpha32_edge_pixels": 0,
+          "nonblank_pixels": 47045
+        },
+        {
+          "alpha32_edge_pixels": 0,
+          "nonblank_pixels": 44282
+        }
+      ]
+    },
+    "harvest": {
+      "path": "res://assets/player_feedback_v2/farmer/harvest_generic_sheet.png",
+      "canvas": [
+        1774,
+        887
+      ],
+      "grid": [
+        4,
+        2
+      ],
+      "reference_body_height": 433,
+      "frame_pivots": [
+        [
+          223.5,
+          439
+        ],
+        [
+          220,
+          438
+        ],
+        [
+          229.5,
+          438
+        ],
+        [
+          232.5,
+          440
+        ],
+        [
+          223.5,
+          436.5
+        ],
+        [
+          223,
+          437.5
+        ],
+        [
+          233,
+          437.5
+        ],
+        [
+          233,
+          437.5
+        ]
+      ],
+      "qc": [
+        {
+          "alpha32_edge_pixels": 0,
+          "nonblank_pixels": 63351
+        },
+        {
+          "alpha32_edge_pixels": 0,
+          "nonblank_pixels": 67263
+        },
+        {
+          "alpha32_edge_pixels": 0,
+          "nonblank_pixels": 65453
+        },
+        {
+          "alpha32_edge_pixels": 0,
+          "nonblank_pixels": 70672
+        },
+        {
+          "alpha32_edge_pixels": 0,
+          "nonblank_pixels": 68627
+        },
+        {
+          "alpha32_edge_pixels": 0,
+          "nonblank_pixels": 65916
+        },
+        {
+          "alpha32_edge_pixels": 0,
+          "nonblank_pixels": 64083
+        },
+        {
+          "alpha32_edge_pixels": 0,
+          "nonblank_pixels": 63303
+        }
+      ]
+    },
+    "hoe": {
+      "path": "res://assets/player_feedback_v2/farmer/hoe_sheet.png",
+      "canvas": [
+        1774,
+        887
+      ],
+      "grid": [
+        4,
+        2
+      ],
+      "reference_body_height": 423,
+      "frame_pivots": [
+        [
+          234.5,
+          442
+        ],
+        [
+          235.5,
+          442
+        ],
+        [
+          231,
+          442
+        ],
+        [
+          215.5,
+          442
+        ],
+        [
+          227.5,
+          432.5
+        ],
+        [
+          233,
+          432.5
+        ],
+        [
+          230.5,
+          432.5
+        ],
+        [
+          222,
+          432.5
+        ]
+      ],
+      "qc": [
+        {
+          "alpha32_edge_pixels": 0,
+          "nonblank_pixels": 57713
+        },
+        {
+          "alpha32_edge_pixels": 0,
+          "nonblank_pixels": 57738
+        },
+        {
+          "alpha32_edge_pixels": 0,
+          "nonblank_pixels": 58176
+        },
+        {
+          "alpha32_edge_pixels": 0,
+          "nonblank_pixels": 55592
+        },
+        {
+          "alpha32_edge_pixels": 0,
+          "nonblank_pixels": 57866
+        },
+        {
+          "alpha32_edge_pixels": 0,
+          "nonblank_pixels": 57482
+        },
+        {
+          "alpha32_edge_pixels": 0,
+          "nonblank_pixels": 58864
+        },
+        {
+          "alpha32_edge_pixels": 0,
+          "nonblank_pixels": 56555
+        }
+      ],
+      "pivot_frame_7_correction": "Actual boot sole medians189.5 and254.5 => midpoint222. Hoe tool/brown handle blob was wrongly included before. Source image unchanged."
+    },
+    "plant": {
+      "path": "res://assets/player_feedback_v2/farmer/plant_sheet.png",
+      "canvas": [
+        1774,
+        887
+      ],
+      "grid": [
+        4,
+        2
+      ],
+      "reference_body_height": 426,
+      "frame_pivots": [
+        [
+          224,
+          437
+        ],
+        [
+          224,
+          437
+        ],
+        [
+          223,
+          438
+        ],
+        [
+          223,
+          437
+        ],
+        [
+          225,
+          435.5
+        ],
+        [
+          223.5,
+          436.5
+        ],
+        [
+          223.5,
+          436.5
+        ],
+        [
+          223.5,
+          436.5
+        ]
+      ],
+      "qc": [
+        {
+          "alpha32_edge_pixels": 0,
+          "nonblank_pixels": 61713
+        },
+        {
+          "alpha32_edge_pixels": 0,
+          "nonblank_pixels": 64302
+        },
+        {
+          "alpha32_edge_pixels": 0,
+          "nonblank_pixels": 64954
+        },
+        {
+          "alpha32_edge_pixels": 0,
+          "nonblank_pixels": 64355
+        },
+        {
+          "alpha32_edge_pixels": 0,
+          "nonblank_pixels": 66670
+        },
+        {
+          "alpha32_edge_pixels": 0,
+          "nonblank_pixels": 65485
+        },
+        {
+          "alpha32_edge_pixels": 0,
+          "nonblank_pixels": 63348
+        },
+        {
+          "alpha32_edge_pixels": 0,
+          "nonblank_pixels": 62192
+        }
+      ]
+    },
+    "water": {
+      "path": "res://assets/player_feedback_v2/farmer/water_sheet.png",
+      "canvas": [
+        1774,
+        887
+      ],
+      "grid": [
+        4,
+        2
+      ],
+      "reference_body_height": 429,
+      "frame_pivots": [
+        [
+          235.5,
+          440
+        ],
+        [
+          234.5,
+          440
+        ],
+        [
+          234,
+          440
+        ],
+        [
+          235.5,
+          440
+        ],
+        [
+          234,
+          440.5
+        ],
+        [
+          234,
+          440.5
+        ],
+        [
+          233.5,
+          440.5
+        ],
+        [
+          236,
+          440.5
+        ]
+      ],
+      "qc": [
+        {
+          "alpha32_edge_pixels": 0,
+          "nonblank_pixels": 56703
+        },
+        {
+          "alpha32_edge_pixels": 0,
+          "nonblank_pixels": 57105
+        },
+        {
+          "alpha32_edge_pixels": 0,
+          "nonblank_pixels": 58641
+        },
+        {
+          "alpha32_edge_pixels": 0,
+          "nonblank_pixels": 58131
+        },
+        {
+          "alpha32_edge_pixels": 0,
+          "nonblank_pixels": 58125
+        },
+        {
+          "alpha32_edge_pixels": 0,
+          "nonblank_pixels": 58486
+        },
+        {
+          "alpha32_edge_pixels": 0,
+          "nonblank_pixels": 57220
+        },
+        {
+          "alpha32_edge_pixels": 0,
+          "nonblank_pixels": 56728
+        }
+      ]
+    },
+    "idle": {
+      "path": "res://assets/canonical_v2/03_ART_RUNTIME_READY/ANIMATION/FARMER/idle/frame_01.png",
+      "canvas": [
+        384,
+        540
+      ],
+      "grid": [
+        1,
+        1
+      ],
+      "reference_body_height": 505,
+      "frame_pivots": [
+        [
+          219.5,
+          523
+        ]
+      ],
+      "qc": [
+        {
+          "alpha32_edge_pixels": 0,
+          "nonblank_pixels": 74350
+        }
+      ]
+    },
+    "walk": {
+      "type": "fast_glide",
+      "pose": "idle",
+      "speed_pixels_per_second": 520,
+      "standing_boot_clearance": 16,
+      "source_facing": "right",
+      "footsteps": false,
+      "user_choice": "2026-10-12: intentionally fast gliding as initial version; not natural walking"
+    }
+  }
+}

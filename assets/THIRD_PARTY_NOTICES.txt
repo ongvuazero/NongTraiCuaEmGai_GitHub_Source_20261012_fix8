@@ -1,0 +1,26 @@
+Nông Trại Của Em Gái — third-party notices
+
+Fonts
+Be Vietnam Pro: copyright 2021 The Be Vietnam Pro Project Authors.
+Noto font families: see the individual copyright notices listed below.
+The included fonts are distributed under the SIL Open Font License 1.1.
+Original licence texts are kept unmodified in:
+assets/fonts/OFL.txt
+assets/fonts/noto/NotoSans.OFL.txt
+assets/fonts/noto/NotoSansThai.OFL.txt
+assets/fonts/noto/NotoSansSC.OFL.txt
+assets/fonts/noto/NotoSansJP.OFL.txt
+assets/fonts/noto/NotoSansKR.OFL.txt
+assets/fonts/noto/LICENSE-NotoSansSymbols2.txt
+assets/fonts/noto/LICENSE-NotoSansSymbols.txt
+assets/fonts/noto/LICENSE-NotoEmoji.txt
+
+Engine
+The game uses Godot Engine 4.6.1. Godot is distributed under the MIT licence.
+Engine and bundled third-party licence details:
+https://godotengine.org/license/
+https://docs.godotengine.org/en/4.6/about/complying_with_licenses.html
+
+This file inventories the font notices found in this project. It does not
+certify store compliance or ownership of every image/music asset. A complete
+art/music rights inventory and public privacy policy are still release gates.

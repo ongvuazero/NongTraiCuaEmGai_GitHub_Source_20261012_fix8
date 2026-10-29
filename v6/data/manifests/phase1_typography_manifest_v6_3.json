@@ -1,0 +1,29 @@
+{
+  "manifest_version": "6.3",
+  "canonical_viewport": [1280, 720],
+  "font_policy": {
+    "font_path": "system://default",
+    "note": "No TTF/OTF is bundled in canonical V2; every parity label therefore locks size, outline, shadow, alignment, content rect, and baseline explicitly."
+  },
+  "screens": {
+    "title": [
+      {"role": "MENU_LABEL", "font_path": "system://default", "font_size": 27, "outline_size": 1, "outline_color": "#fff4dc", "shadow": [1, 1, "#0000002e"], "alignment": "center", "content_rect_source": "title_screen_spec_v6_3.json/content_rects", "baseline_offset": 0}
+    ],
+    "save": [
+      {"role": "HEADER_TITLE", "font_path": "system://default", "font_size": 28, "outline_size": 1, "outline_color": "#fff1d5", "shadow": [1, 1, "#0000002e"], "alignment": "center", "content_rect": [275, 39, 340, 37], "baseline_offset": 0},
+      {"role": "HEADER_SUBTITLE", "font_path": "system://default", "font_size": 14, "outline_size": 0, "outline_color": "#00000000", "shadow": [0, 0, "#00000000"], "alignment": "center", "content_rect": [275, 77, 340, 25], "baseline_offset": 0},
+      {"role": "SLOT_NUMBER", "font_path": "system://default", "font_size": 22, "outline_size": 1, "outline_color": "#fff1dc", "shadow": [1, 1, "#0000002e"], "alignment": "center", "content_rect_source": "save_screen_spec_v6_3.json/content_rects/SLOT_*_NUMBER", "baseline_offset": 0},
+      {"role": "SLOT_NAME", "font_path": "system://default", "font_size": 21, "outline_size": 0, "outline_color": "#00000000", "shadow": [1, 1, "#0000002e"], "alignment": "left", "content_rect_source": "save_screen_spec_v6_3.json/content_rects/SLOT_*_NAME", "baseline_offset": 0},
+      {"role": "SLOT_INFO", "font_path": "system://default", "font_size": 15, "outline_size": 0, "outline_color": "#00000000", "shadow": [0, 0, "#00000000"], "alignment": "left", "content_rect_source": "save_screen_spec_v6_3.json/content_rects/SLOT_*_INFO", "baseline_offset": 0},
+      {"role": "SLOT_FLAVOR", "font_path": "system://default", "font_size": 13, "outline_size": 0, "outline_color": "#00000000", "shadow": [0, 0, "#00000000"], "alignment": "left", "content_rect_source": "save_screen_spec_v6_3.json/content_rects/SLOT_*_FLAVOR", "baseline_offset": 0},
+      {"role": "DETAIL_TITLE", "font_path": "system://default", "font_size": 26, "outline_size": 0, "outline_color": "#00000000", "shadow": [1, 1, "#00000055"], "alignment": "center", "content_rect": [830, 94, 360, 45], "baseline_offset": 0},
+      {"role": "DETAIL_DATA", "font_path": "system://default", "font_size": 12, "outline_size": 0, "outline_color": "#00000000", "shadow": [0, 0, "#00000000"], "alignment": "center", "content_rect_source": "save_screen_spec_v6_3.json/content_rects/DETAIL_*", "baseline_offset": 0},
+      {"role": "ACTION_BUTTON", "font_path": "system://default", "font_size": 23, "outline_size": 1, "outline_color": "#fff4dc", "shadow": [1, 1, "#0000002e"], "alignment": "center", "content_rect_source": "save_screen_spec_v6_3.json/visible_rects/BACK|DELETE|CONFIRM", "baseline_offset": 0}
+    ],
+    "home_hub": [
+      {"role": "HUD_VALUE", "font_path": "system://default", "font_size": 16, "outline_size": 0, "outline_color": "#00000000", "shadow": [0, 0, "#00000000"], "alignment": "center", "content_rect_source": "home_hub_screen_spec_v6_3.json/value_rects", "baseline_offset": 0},
+      {"role": "NAV_LABEL", "font_path": "system://default", "font_size": 18, "outline_size": 0, "outline_color": "#00000000", "shadow": [0, 0, "#00000000"], "alignment": "center", "content_rect_source": "home_hub_anchors_v6_1.json/NAV_LABEL_RECT", "baseline_offset": 0},
+      {"role": "REST_LABEL", "font_path": "system://default", "font_size": 13, "outline_size": 0, "outline_color": "#00000000", "shadow": [0, 0, "#00000000"], "alignment": "center", "content_rect_source": "home_hub_anchors_v6_1.json/REST_LABEL_RECT", "baseline_offset": 0}
+    ]
+  }
+}

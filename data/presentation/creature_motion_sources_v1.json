@@ -1,0 +1,5399 @@
+{
+  "version": 4,
+  "source_method": "Reviewed complete source silhouettes, one constant max-extents scale, explicit virtual body-axis/ground and mouth points. No body UV deformation. No metrics-only art approval.",
+  "source_size": [
+    1774,
+    887
+  ],
+  "water_dragon": {
+    "source": "res://assets/living_world_source_poses_v3/water_dragon.png",
+    "source_size": [
+      1774,
+      887
+    ],
+    "reference_frame": 0,
+    "locomotion_frames": true,
+    "annotation_status": "Source stills manually inspected; explicit mouth points independently reviewed. Proposed sequences require native fixed-scale playback review; no whole-game or animation-quality PASS is claimed.",
+    "source_pose_indices": [
+      0,
+      1,
+      2,
+      4,
+      5,
+      6
+    ],
+    "frames": [
+      {
+        "source_pose": 0,
+        "rect": [
+          21,
+          93,
+          447,
+          327
+        ],
+        "alpha_pixels": 95643,
+        "feet": [
+          255,
+          420
+        ],
+        "mouth": [
+          428,
+          259
+        ]
+      },
+      {
+        "source_pose": 1,
+        "rect": [
+          475,
+          92,
+          426,
+          329
+        ],
+        "alpha_pixels": 94606,
+        "feet": [
+          694,
+          421
+        ],
+        "mouth": [
+          860,
+          258
+        ]
+      },
+      {
+        "source_pose": 2,
+        "rect": [
+          906,
+          91,
+          434,
+          330
+        ],
+        "alpha_pixels": 94439,
+        "feet": [
+          1131,
+          421
+        ],
+        "mouth": [
+          1300,
+          258
+        ]
+      },
+      {
+        "source_pose": 4,
+        "rect": [
+          14,
+          512,
+          445,
+          334
+        ],
+        "alpha_pixels": 102820,
+        "feet": [
+          242,
+          846
+        ],
+        "mouth": [
+          418,
+          676
+        ]
+      },
+      {
+        "source_pose": 5,
+        "rect": [
+          461,
+          511,
+          434,
+          334
+        ],
+        "alpha_pixels": 101591,
+        "feet": [
+          682,
+          845
+        ],
+        "mouth": [
+          853,
+          674
+        ]
+      },
+      {
+        "source_pose": 6,
+        "rect": [
+          906,
+          531,
+          439,
+          318
+        ],
+        "alpha_pixels": 96909,
+        "feet": [
+          1125,
+          849
+        ],
+        "mouth": [
+          1301,
+          722
+        ]
+      }
+    ],
+    "target_pivot": [
+      0.5,
+      0.965
+    ],
+    "walk": [
+      {
+        "frame": 0,
+        "duration": 0.24
+      },
+      {
+        "frame": 1,
+        "duration": 0.24
+      },
+      {
+        "frame": 2,
+        "duration": 0.24
+      },
+      {
+        "frame": 1,
+        "duration": 0.24
+      }
+    ],
+    "idle": [
+      {
+        "frame": 3,
+        "duration": 2.1
+      },
+      {
+        "frame": 4,
+        "duration": 0.13
+      },
+      {
+        "frame": 3,
+        "duration": 0.8
+      }
+    ],
+    "look": [
+      {
+        "frame": 3,
+        "duration": 0.7
+      },
+      {
+        "frame": 4,
+        "duration": 0.14
+      },
+      {
+        "frame": 3,
+        "duration": 0.65
+      }
+    ],
+    "forage": [
+      {
+        "frame": 3,
+        "duration": 0.35
+      },
+      {
+        "frame": 5,
+        "duration": 0.35
+      },
+      {
+        "frame": 3,
+        "duration": 0.45
+      }
+    ],
+    "feed": [
+      {
+        "frame": 3,
+        "duration": 0.2
+      },
+      {
+        "frame": 5,
+        "duration": 0.32
+      },
+      {
+        "frame": 3,
+        "duration": 0.36
+      }
+    ],
+    "pet": [
+      {
+        "frame": 3,
+        "duration": 0.2
+      },
+      {
+        "frame": 4,
+        "duration": 0.42
+      },
+      {
+        "frame": 3,
+        "duration": 0.28
+      }
+    ],
+    "normalization": "Whole-sheet 4-connected alpha >= 16 dominant creature bounds, not uniform grid crops. X is the median torso alpha in a reviewed silhouette-relative ROI [0.08,0.44,0.75,0.29]; Y is bounding-rectangle exclusive bottom END. Ground anchor is virtual under the body, not the alternating planted-paw median. Renderer must use one constant max-extents scale across every accepted frame. Original PNG unmodified.",
+    "mouth_method": "Manual visible mouth/open-lip seam source coordinates independently reviewed; alpha membership checked; no generic raw-color inference.",
+    "clean": [
+      {
+        "frame": 3,
+        "duration": 0.2,
+        "phase": "prepare"
+      },
+      {
+        "frame": 4,
+        "duration": 0.28,
+        "phase": "bite"
+      },
+      {
+        "frame": 3,
+        "duration": 0.47,
+        "phase": "recover"
+      }
+    ],
+    "heal": [
+      {
+        "frame": 3,
+        "duration": 0.2,
+        "phase": "prepare"
+      },
+      {
+        "frame": 4,
+        "duration": 0.35,
+        "phase": "bite"
+      },
+      {
+        "frame": 3,
+        "duration": 0.4,
+        "phase": "recover"
+      }
+    ],
+    "collect": [
+      {
+        "frame": 3,
+        "duration": 0.18,
+        "phase": "prepare"
+      },
+      {
+        "frame": 4,
+        "duration": 0.25,
+        "phase": "bite"
+      },
+      {
+        "frame": 3,
+        "duration": 0.52,
+        "phase": "recover"
+      }
+    ],
+    "turn": [
+      {
+        "frame": 3,
+        "duration": 0.48
+      }
+    ],
+    "turn_duration": 0.48,
+    "care_playback": "once; prepare/bite/recover, hold final accepted pose until 0.95 s"
+  },
+  "cloud_chicken": {
+    "locomotion_frames": true,
+    "source": "res://assets/living_world_all_v2/chicken_motion.png",
+    "source_size": [
+      1774,
+      887
+    ],
+    "frames": [
+      {
+        "rect": [
+          46,
+          24,
+          347,
+          412
+        ],
+        "alpha_pixels": 84816,
+        "feet": [
+          223.9182,
+          436
+        ],
+        "mouth": [
+          339,
+          133
+        ]
+      },
+      {
+        "rect": [
+          494,
+          23,
+          339,
+          414
+        ],
+        "alpha_pixels": 82666,
+        "feet": [
+          669.4778,
+          437
+        ],
+        "mouth": [
+          785,
+          131
+        ]
+      },
+      {
+        "rect": [
+          932,
+          23,
+          345,
+          413
+        ],
+        "alpha_pixels": 83808,
+        "feet": [
+          1109.5342,
+          436
+        ],
+        "mouth": [
+          1229,
+          132
+        ]
+      },
+      {
+        "rect": [
+          1384,
+          23,
+          343,
+          413
+        ],
+        "alpha_pixels": 83359,
+        "feet": [
+          1560.4953,
+          436
+        ],
+        "mouth": [
+          1672,
+          132
+        ]
+      },
+      {
+        "rect": [
+          45,
+          460,
+          342,
+          396
+        ],
+        "alpha_pixels": 82321,
+        "feet": [
+          222.1296,
+          856
+        ],
+        "mouth": [
+          335,
+          567
+        ]
+      },
+      {
+        "rect": [
+          474,
+          500,
+          396,
+          355
+        ],
+        "alpha_pixels": 79164,
+        "feet": [
+          659.49,
+          855
+        ],
+        "mouth": [
+          808,
+          758
+        ]
+      },
+      {
+        "rect": [
+          934,
+          478,
+          389,
+          377
+        ],
+        "alpha_pixels": 83583,
+        "feet": [
+          1108.1208,
+          855
+        ],
+        "mouth": [
+          1253,
+          805
+        ]
+      },
+      {
+        "rect": [
+          1395,
+          461,
+          336,
+          395
+        ],
+        "alpha_pixels": 80736,
+        "feet": [
+          1568.6766,
+          856
+        ],
+        "mouth": [
+          1685,
+          566
+        ]
+      },
+      {"rect":[101,527,220,247],"feet":[210.5,774],"mouth":[303,599],"source":"res://assets/living_world_gait_pilot_v4/chicken_turn_care_source.png","source_scale":1.5903614457831325,"alpha_pixels":35569},
+      {"rect":[466,523,226,251],"feet":[578,774],"mouth":[584,608],"source":"res://assets/living_world_gait_pilot_v4/chicken_turn_care_source.png","source_scale":1.5903614457831325,"alpha_pixels":32956},
+      {"rect":[837,524,224,249],"feet":[948,773],"mouth":[856,599],"source":"res://assets/living_world_gait_pilot_v4/chicken_turn_care_source.png","source_scale":1.5903614457831325,"alpha_pixels":35983},
+      {"rect":[1203,526,244,249],"feet":[1324,775],"mouth":[1428,604],"source":"res://assets/living_world_gait_pilot_v4/chicken_turn_care_source.png","source_scale":1.5903614457831325,"alpha_pixels":36113},
+      {"rect":[107,768,249,252],"feet":[230.5,1020],"mouth":[338,829],"source":"res://assets/living_world_gait_pilot_v4/chicken_turn_care_source.png","source_scale":1.5903614457831325,"alpha_pixels":38018},
+      {"rect":[447,787,281,232],"feet":[585,1019],"mouth":[644,890],"source":"res://assets/living_world_gait_pilot_v4/chicken_turn_care_source.png","source_scale":1.5903614457831325,"alpha_pixels":39576},
+      {"rect":[823,774,242,245],"feet":[943,1019],"mouth":[1031,822],"source":"res://assets/living_world_gait_pilot_v4/chicken_turn_care_source.png","source_scale":1.5903614457831325,"alpha_pixels":37045},
+      {"rect":[1199,776,263,243],"feet":[1329.5,1019],"mouth":[1402,837],"source":"res://assets/living_world_gait_pilot_v4/chicken_turn_care_source.png","source_scale":1.5903614457831325,"alpha_pixels":39046}
+    ],
+    "reference_frame": 0,
+    "target_pivot": [
+      0.5,
+      0.962
+    ],
+    "fit_height_ratio": 0.885,
+    "walk": [
+      {
+        "frame": 0,
+        "duration": 0.22
+      },
+      {
+        "frame": 1,
+        "duration": 0.22
+      },
+      {
+        "frame": 2,
+        "duration": 0.22
+      },
+      {
+        "frame": 3,
+        "duration": 0.22
+      }
+    ],
+    "forage": [
+      {
+        "frame": 4,
+        "duration": 0.35
+      },
+      {
+        "frame": 5,
+        "duration": 0.16
+      },
+      {
+        "frame": 6,
+        "duration": 0.17
+      },
+      {
+        "frame": 5,
+        "duration": 0.16
+      },
+      {
+        "frame": 4,
+        "duration": 0.4
+      }
+    ],
+    "idle": [
+      {
+        "frame": 4,
+        "duration": 1.8
+      },
+      {
+        "frame": 7,
+        "duration": 0.12
+      },
+      {
+        "frame": 4,
+        "duration": 1.1
+      }
+    ],
+    "look": [
+      {
+        "frame": 4,
+        "duration": 0.7
+      },
+      {
+        "frame": 7,
+        "duration": 0.13
+      },
+      {
+        "frame": 4,
+        "duration": 0.6
+      }
+    ],
+    "feed": [
+      {
+        "frame": 4,
+        "duration": 0.15
+      },
+      {
+        "frame": 5,
+        "duration": 0.22
+      },
+      {
+        "frame": 6,
+        "duration": 0.2
+      },
+      {
+        "frame": 5,
+        "duration": 0.18
+      },
+      {
+        "frame": 4,
+        "duration": 0.2
+      }
+    ],
+    "pet": [
+      {
+        "frame": 4,
+        "duration": 0.2
+      },
+      {
+        "frame": 12,
+        "duration": 0.5
+      },
+      {
+        "frame": 4,
+        "duration": 0.25
+      }
+    ],
+    "normalization": "Original eight measured poses retained unchanged. Additional turn/care source uses complete alpha8 connected bounds, not grid cuts; one explicit 396/249 source-density ratio, virtual torso axis and exclusive bottom. No new gait from the rejected top rows is bound. Constant physical scale fits every accepted pose. Source PNG pixels unmodified.",
+    "mouth_method": "Read-only orange-beak ROI medians, manually verified against eight native poses; explicit source pixel contacts.",
+    "clean": [
+      {
+        "frame": 4,
+        "duration": 0.2,
+        "phase": "prepare"
+      },
+      {
+        "frame": 13,
+        "duration": 0.28,
+        "phase": "bite"
+      },
+      {
+        "frame": 4,
+        "duration": 0.47,
+        "phase": "recover"
+      }
+    ],
+    "heal": [
+      {
+        "frame": 4,
+        "duration": 0.2,
+        "phase": "prepare"
+      },
+      {
+        "frame": 14,
+        "duration": 0.35,
+        "phase": "bite"
+      },
+      {
+        "frame": 4,
+        "duration": 0.4,
+        "phase": "recover"
+      }
+    ],
+    "collect": [
+      {
+        "frame": 4,
+        "duration": 0.18,
+        "phase": "prepare"
+      },
+      {
+        "frame": 15,
+        "duration": 0.25,
+        "phase": "bite"
+      },
+      {
+        "frame": 4,
+        "duration": 0.52,
+        "phase": "recover"
+      }
+    ],
+    "turn": [
+      {
+        "frame": 4,
+        "duration": 0.48
+      }
+    ],
+    "turn_to_left": [{"frame":4,"duration":0.10,"mirror":false},{"frame":8,"duration":0.14,"mirror":false},{"frame":9,"duration":0.22,"mirror":false},{"frame":10,"duration":0.14,"mirror":false},{"frame":4,"duration":0.10,"mirror":true}],
+    "turn_to_right": [{"frame":4,"duration":0.10,"mirror":true},{"frame":10,"duration":0.14,"mirror":false},{"frame":9,"duration":0.22,"mirror":false},{"frame":8,"duration":0.14,"mirror":false},{"frame":4,"duration":0.10,"mirror":false}],
+    "turn_duration": 0.70,
+    "care_playback": "once; distinct closed-eye pet, ruffled clean, alert heal and chirp collection. Frontal source turn bridges both orientations; native art review pending. Old approved feeding/gait untouched."
+  },
+  "cow": {
+    "source": "res://assets/living_world_source_poses_v3/cow.png",
+    "source_size": [
+      1774,
+      887
+    ],
+    "reference_frame": 0,
+    "locomotion_frames": true,
+    "annotation_status": "Source stills manually inspected; explicit mouth points independently reviewed. Proposed sequences require native fixed-scale playback review; no whole-game or animation-quality PASS is claimed.",
+    "source_pose_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "frames": [
+      {
+        "source_pose": 0,
+        "rect": [
+          60,
+          38,
+          403,
+          394
+        ],
+        "alpha_pixels": 93672,
+        "feet": [
+          241,
+          432
+        ],
+        "mouth": [
+          395,
+          195
+        ]
+      },
+      {
+        "source_pose": 1,
+        "rect": [
+          495,
+          39,
+          391,
+          399
+        ],
+        "alpha_pixels": 97070,
+        "feet": [
+          673,
+          438
+        ],
+        "mouth": [
+          819,
+          198
+        ]
+      },
+      {
+        "source_pose": 2,
+        "rect": [
+          919,
+          39,
+          395,
+          398
+        ],
+        "alpha_pixels": 95566,
+        "feet": [
+          1097,
+          437
+        ],
+        "mouth": [
+          1253,
+          195
+        ]
+      },
+      {
+        "source_pose": 3,
+        "rect": [
+          1344,
+          41,
+          396,
+          396
+        ],
+        "alpha_pixels": 96781,
+        "feet": [
+          1521,
+          437
+        ],
+        "mouth": [
+          1674,
+          202
+        ]
+      },
+      {
+        "source_pose": 4,
+        "rect": [
+          61,
+          470,
+          394,
+          387
+        ],
+        "alpha_pixels": 96227,
+        "feet": [
+          239,
+          857
+        ],
+        "mouth": [
+          388,
+          626
+        ]
+      },
+      {
+        "source_pose": 5,
+        "rect": [
+          489,
+          468,
+          391,
+          389
+        ],
+        "alpha_pixels": 96574,
+        "feet": [
+          666,
+          857
+        ],
+        "mouth": [
+          816,
+          627
+        ]
+      },
+      {
+        "source_pose": 6,
+        "rect": [
+          913,
+          506,
+          429,
+          351
+        ],
+        "alpha_pixels": 95699,
+        "feet": [
+          1100,
+          857
+        ],
+        "mouth": [
+          1250,
+          683
+        ]
+      },
+      {
+        "source_pose": 7,
+        "rect": [
+          1358,
+          469,
+          380,
+          388
+        ],
+        "alpha_pixels": 96136,
+        "feet": [
+          1531,
+          857
+        ],
+        "mouth": [
+          1683,
+          630
+        ]
+      }
+    ],
+    "target_pivot": [
+      0.5,
+      0.965
+    ],
+    "walk": [
+      {
+        "frame": 0,
+        "duration": 0.27
+      },
+      {
+        "frame": 1,
+        "duration": 0.27
+      },
+      {
+        "frame": 2,
+        "duration": 0.27
+      },
+      {
+        "frame": 3,
+        "duration": 0.27
+      }
+    ],
+    "idle": [
+      {
+        "frame": 4,
+        "duration": 2.1
+      },
+      {
+        "frame": 5,
+        "duration": 0.13
+      },
+      {
+        "frame": 4,
+        "duration": 0.8
+      }
+    ],
+    "look": [
+      {
+        "frame": 4,
+        "duration": 0.7
+      },
+      {
+        "frame": 5,
+        "duration": 0.14
+      },
+      {
+        "frame": 4,
+        "duration": 0.65
+      }
+    ],
+    "forage": [
+      {
+        "frame": 4,
+        "duration": 0.35
+      },
+      {
+        "frame": 6,
+        "duration": 0.35
+      },
+      {
+        "frame": 4,
+        "duration": 0.45
+      }
+    ],
+    "feed": [
+      {
+        "frame": 4,
+        "duration": 0.2
+      },
+      {
+        "frame": 6,
+        "duration": 0.32
+      },
+      {
+        "frame": 4,
+        "duration": 0.36
+      }
+    ],
+    "pet": [
+      {
+        "frame": 4,
+        "duration": 0.2
+      },
+      {
+        "frame": 5,
+        "duration": 0.42
+      },
+      {
+        "frame": 4,
+        "duration": 0.28
+      }
+    ],
+    "normalization": "Whole-sheet 4-connected alpha >= 16 dominant creature bounds, not uniform grid crops. X is the median torso alpha in a reviewed silhouette-relative ROI [0.08,0.44,0.75,0.29]; Y is bounding-rectangle exclusive bottom END. Ground anchor is virtual under the body, not the alternating planted-paw median. Renderer must use one constant max-extents scale across every accepted frame. Original PNG unmodified.",
+    "mouth_method": "Manual visible mouth/open-lip seam source coordinates independently reviewed; alpha membership checked; no generic raw-color inference.",
+    "clean": [
+      {
+        "frame": 4,
+        "duration": 0.2,
+        "phase": "prepare"
+      },
+      {
+        "frame": 5,
+        "duration": 0.28,
+        "phase": "bite"
+      },
+      {
+        "frame": 4,
+        "duration": 0.47,
+        "phase": "recover"
+      }
+    ],
+    "heal": [
+      {
+        "frame": 4,
+        "duration": 0.2,
+        "phase": "prepare"
+      },
+      {
+        "frame": 5,
+        "duration": 0.35,
+        "phase": "bite"
+      },
+      {
+        "frame": 4,
+        "duration": 0.4,
+        "phase": "recover"
+      }
+    ],
+    "collect": [
+      {
+        "frame": 4,
+        "duration": 0.18,
+        "phase": "prepare"
+      },
+      {
+        "frame": 5,
+        "duration": 0.25,
+        "phase": "bite"
+      },
+      {
+        "frame": 4,
+        "duration": 0.52,
+        "phase": "recover"
+      }
+    ],
+    "turn": [
+      {
+        "frame": 4,
+        "duration": 0.48
+      }
+    ],
+    "turn_duration": 0.48,
+    "care_playback": "once; prepare/bite/recover, hold final accepted pose until 0.95 s"
+  },
+  "duck": {
+    "source": "res://assets/living_world_source_poses_v3/duck.png",
+    "source_size": [
+      1774,
+      887
+    ],
+    "reference_frame": 0,
+    "locomotion_frames": true,
+    "annotation_status": "Source stills manually inspected; explicit mouth points independently reviewed. Proposed sequences require native fixed-scale playback review; no whole-game or animation-quality PASS is claimed.",
+    "source_pose_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "frames": [
+      {
+        "source_pose": 0,
+        "rect": [
+          58,
+          26,
+          343,
+          406
+        ],
+        "alpha_pixels": 69248,
+        "feet": [
+          215,
+          432
+        ],
+        "mouth": [
+          378,
+          130
+        ]
+      },
+      {
+        "source_pose": 1,
+        "rect": [
+          504,
+          25,
+          330,
+          406
+        ],
+        "alpha_pixels": 68481,
+        "feet": [
+          655,
+          431
+        ],
+        "mouth": [
+          813,
+          130
+        ]
+      },
+      {
+        "source_pose": 2,
+        "rect": [
+          946,
+          23,
+          345,
+          409
+        ],
+        "alpha_pixels": 69131,
+        "feet": [
+          1104,
+          432
+        ],
+        "mouth": [
+          1270,
+          128
+        ]
+      },
+      {
+        "source_pose": 3,
+        "rect": [
+          1391,
+          26,
+          342,
+          405
+        ],
+        "alpha_pixels": 68294,
+        "feet": [
+          1548,
+          431
+        ],
+        "mouth": [
+          1710,
+          130
+        ]
+      },
+      {
+        "source_pose": 4,
+        "rect": [
+          56,
+          459,
+          342,
+          409
+        ],
+        "alpha_pixels": 73713,
+        "feet": [
+          213,
+          868
+        ],
+        "mouth": [
+          378,
+          565
+        ]
+      },
+      {
+        "source_pose": 5,
+        "rect": [
+          498,
+          462,
+          338,
+          406
+        ],
+        "alpha_pixels": 72304,
+        "feet": [
+          653,
+          868
+        ],
+        "mouth": [
+          814,
+          569
+        ]
+      },
+      {
+        "source_pose": 6,
+        "rect": [
+          936,
+          469,
+          346,
+          399
+        ],
+        "alpha_pixels": 74045,
+        "feet": [
+          1095,
+          868
+        ],
+        "mouth": [
+          1271,
+          615
+        ]
+      },
+      {
+        "source_pose": 7,
+        "rect": [
+          1382,
+          458,
+          343,
+          410
+        ],
+        "alpha_pixels": 73400,
+        "feet": [
+          1539,
+          868
+        ],
+        "mouth": [
+          1698,
+          559
+        ]
+      }
+    ],
+    "target_pivot": [
+      0.5,
+      0.94
+    ],
+    "walk": [
+      {
+        "frame": 0,
+        "duration": 0.23
+      },
+      {
+        "frame": 1,
+        "duration": 0.23
+      },
+      {
+        "frame": 2,
+        "duration": 0.23
+      },
+      {
+        "frame": 3,
+        "duration": 0.23
+      }
+    ],
+    "idle": [
+      {
+        "frame": 4,
+        "duration": 2.1
+      },
+      {
+        "frame": 5,
+        "duration": 0.13
+      },
+      {
+        "frame": 4,
+        "duration": 0.8
+      }
+    ],
+    "look": [
+      {
+        "frame": 4,
+        "duration": 0.7
+      },
+      {
+        "frame": 5,
+        "duration": 0.14
+      },
+      {
+        "frame": 4,
+        "duration": 0.65
+      }
+    ],
+    "forage": [
+      {
+        "frame": 4,
+        "duration": 0.35
+      },
+      {
+        "frame": 6,
+        "duration": 0.35
+      },
+      {
+        "frame": 4,
+        "duration": 0.45
+      }
+    ],
+    "feed": [
+      {
+        "frame": 4,
+        "duration": 0.2
+      },
+      {
+        "frame": 6,
+        "duration": 0.32
+      },
+      {
+        "frame": 4,
+        "duration": 0.36
+      }
+    ],
+    "pet": [
+      {
+        "frame": 4,
+        "duration": 0.2
+      },
+      {
+        "frame": 5,
+        "duration": 0.42
+      },
+      {
+        "frame": 4,
+        "duration": 0.28
+      }
+    ],
+    "normalization": "Whole-sheet 4-connected alpha >= 16 dominant creature bounds, not uniform grid crops. X is the median torso alpha in a reviewed silhouette-relative ROI [0.08,0.44,0.75,0.29]; Y is bounding-rectangle exclusive bottom END. Ground anchor is virtual under the body, not the alternating planted-paw median. Renderer must use one constant max-extents scale across every accepted frame. Original PNG unmodified.",
+    "mouth_method": "Manual visible mouth/open-lip seam source coordinates independently reviewed; alpha membership checked; no generic raw-color inference.",
+    "clean": [
+      {
+        "frame": 4,
+        "duration": 0.2,
+        "phase": "prepare"
+      },
+      {
+        "frame": 5,
+        "duration": 0.28,
+        "phase": "bite"
+      },
+      {
+        "frame": 4,
+        "duration": 0.47,
+        "phase": "recover"
+      }
+    ],
+    "heal": [
+      {
+        "frame": 4,
+        "duration": 0.2,
+        "phase": "prepare"
+      },
+      {
+        "frame": 5,
+        "duration": 0.35,
+        "phase": "bite"
+      },
+      {
+        "frame": 4,
+        "duration": 0.4,
+        "phase": "recover"
+      }
+    ],
+    "collect": [
+      {
+        "frame": 4,
+        "duration": 0.18,
+        "phase": "prepare"
+      },
+      {
+        "frame": 5,
+        "duration": 0.25,
+        "phase": "bite"
+      },
+      {
+        "frame": 4,
+        "duration": 0.52,
+        "phase": "recover"
+      }
+    ],
+    "turn": [
+      {
+        "frame": 4,
+        "duration": 0.48
+      }
+    ],
+    "turn_duration": 0.48,
+    "care_playback": "once; prepare/bite/recover, hold final accepted pose until 0.95 s"
+  },
+  "pig": {
+    "source": "res://assets/living_world_source_poses_v3/pig.png",
+    "source_size": [
+      1774,
+      887
+    ],
+    "reference_frame": 0,
+    "locomotion_frames": true,
+    "annotation_status": "Source stills manually inspected; explicit mouth points independently reviewed. Proposed sequences require native fixed-scale playback review; no whole-game or animation-quality PASS is claimed.",
+    "source_pose_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "frames": [
+      {
+        "source_pose": 0,
+        "rect": [
+          30,
+          36,
+          425,
+          375
+        ],
+        "alpha_pixels": 98150,
+        "feet": [
+          222,
+          411
+        ],
+        "mouth": [
+          398,
+          178
+        ]
+      },
+      {
+        "source_pose": 1,
+        "rect": [
+          480,
+          35,
+          399,
+          388
+        ],
+        "alpha_pixels": 97122,
+        "feet": [
+          662,
+          423
+        ],
+        "mouth": [
+          822,
+          178
+        ]
+      },
+      {
+        "source_pose": 2,
+        "rect": [
+          909,
+          41,
+          401,
+          375
+        ],
+        "alpha_pixels": 93056,
+        "feet": [
+          1088,
+          416
+        ],
+        "mouth": [
+          1248,
+          182
+        ]
+      },
+      {
+        "source_pose": 3,
+        "rect": [
+          1347,
+          36,
+          415,
+          387
+        ],
+        "alpha_pixels": 100351,
+        "feet": [
+          1535,
+          423
+        ],
+        "mouth": [
+          1707,
+          178
+        ]
+      },
+      {
+        "source_pose": 4,
+        "rect": [
+          26,
+          461,
+          418,
+          388
+        ],
+        "alpha_pixels": 103781,
+        "feet": [
+          216,
+          849
+        ],
+        "mouth": [
+          388,
+          608
+        ]
+      },
+      {
+        "source_pose": 5,
+        "rect": [
+          474,
+          460,
+          404,
+          389
+        ],
+        "alpha_pixels": 101078,
+        "feet": [
+          658,
+          849
+        ],
+        "mouth": [
+          823,
+          608
+        ]
+      },
+      {
+        "source_pose": 6,
+        "rect": [
+          908,
+          506,
+          414,
+          343
+        ],
+        "alpha_pixels": 94758,
+        "feet": [
+          1094,
+          849
+        ],
+        "mouth": [
+          1237,
+          678
+        ]
+      },
+      {
+        "source_pose": 7,
+        "rect": [
+          1347,
+          459,
+          413,
+          390
+        ],
+        "alpha_pixels": 103320,
+        "feet": [
+          1535,
+          849
+        ],
+        "mouth": [
+          1702,
+          607
+        ]
+      }
+    ],
+    "target_pivot": [
+      0.5,
+      0.91
+    ],
+    "walk": [
+      {
+        "frame": 0,
+        "duration": 0.25
+      },
+      {
+        "frame": 1,
+        "duration": 0.25
+      },
+      {
+        "frame": 2,
+        "duration": 0.25
+      },
+      {
+        "frame": 3,
+        "duration": 0.25
+      }
+    ],
+    "idle": [
+      {
+        "frame": 4,
+        "duration": 2.1
+      },
+      {
+        "frame": 5,
+        "duration": 0.13
+      },
+      {
+        "frame": 4,
+        "duration": 0.8
+      }
+    ],
+    "look": [
+      {
+        "frame": 4,
+        "duration": 0.7
+      },
+      {
+        "frame": 5,
+        "duration": 0.14
+      },
+      {
+        "frame": 4,
+        "duration": 0.65
+      }
+    ],
+    "forage": [
+      {
+        "frame": 4,
+        "duration": 0.35
+      },
+      {
+        "frame": 6,
+        "duration": 0.35
+      },
+      {
+        "frame": 4,
+        "duration": 0.45
+      }
+    ],
+    "feed": [
+      {
+        "frame": 4,
+        "duration": 0.2
+      },
+      {
+        "frame": 6,
+        "duration": 0.32
+      },
+      {
+        "frame": 4,
+        "duration": 0.36
+      }
+    ],
+    "pet": [
+      {
+        "frame": 4,
+        "duration": 0.2
+      },
+      {
+        "frame": 5,
+        "duration": 0.42
+      },
+      {
+        "frame": 4,
+        "duration": 0.28
+      }
+    ],
+    "normalization": "Whole-sheet 4-connected alpha >= 16 dominant creature bounds, not uniform grid crops. X is the median torso alpha in a reviewed silhouette-relative ROI [0.08,0.44,0.75,0.29]; Y is bounding-rectangle exclusive bottom END. Ground anchor is virtual under the body, not the alternating planted-paw median. Renderer must use one constant max-extents scale across every accepted frame. Original PNG unmodified.",
+    "mouth_method": "Manual visible mouth/open-lip seam source coordinates independently reviewed; alpha membership checked; no generic raw-color inference.",
+    "clean": [
+      {
+        "frame": 4,
+        "duration": 0.2,
+        "phase": "prepare"
+      },
+      {
+        "frame": 5,
+        "duration": 0.28,
+        "phase": "bite"
+      },
+      {
+        "frame": 4,
+        "duration": 0.47,
+        "phase": "recover"
+      }
+    ],
+    "heal": [
+      {
+        "frame": 4,
+        "duration": 0.2,
+        "phase": "prepare"
+      },
+      {
+        "frame": 5,
+        "duration": 0.35,
+        "phase": "bite"
+      },
+      {
+        "frame": 4,
+        "duration": 0.4,
+        "phase": "recover"
+      }
+    ],
+    "collect": [
+      {
+        "frame": 4,
+        "duration": 0.18,
+        "phase": "prepare"
+      },
+      {
+        "frame": 5,
+        "duration": 0.25,
+        "phase": "bite"
+      },
+      {
+        "frame": 4,
+        "duration": 0.52,
+        "phase": "recover"
+      }
+    ],
+    "turn": [
+      {
+        "frame": 4,
+        "duration": 0.48
+      }
+    ],
+    "turn_duration": 0.48,
+    "care_playback": "once; prepare/bite/recover, hold final accepted pose until 0.95 s"
+  },
+  "fire_dragon": {
+    "source": "res://assets/living_world_source_poses_v3/fire_dragon.png",
+    "source_size": [
+      1774,
+      887
+    ],
+    "reference_frame": 0,
+    "locomotion_frames": true,
+    "annotation_status": "Source stills manually inspected; explicit mouth points independently reviewed. Proposed sequences require native fixed-scale playback review; no whole-game or animation-quality PASS is claimed.",
+    "source_pose_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "frames": [
+      {
+        "source_pose": 0,
+        "rect": [
+          23,
+          62,
+          402,
+          363
+        ],
+        "alpha_pixels": 91714,
+        "feet": [
+          218,
+          425
+        ],
+        "mouth": [
+          386,
+          226
+        ]
+      },
+      {
+        "source_pose": 1,
+        "rect": [
+          447,
+          62,
+          385,
+          365
+        ],
+        "alpha_pixels": 83867,
+        "feet": [
+          637,
+          427
+        ],
+        "mouth": [
+          794,
+          227
+        ]
+      },
+      {
+        "source_pose": 2,
+        "rect": [
+          861,
+          62,
+          416,
+          358
+        ],
+        "alpha_pixels": 87221,
+        "feet": [
+          1069,
+          420
+        ],
+        "mouth": [
+          1225,
+          227
+        ]
+      },
+      {
+        "source_pose": 3,
+        "rect": [
+          1303,
+          61,
+          421,
+          365
+        ],
+        "alpha_pixels": 90075,
+        "feet": [
+          1512,
+          426
+        ],
+        "mouth": [
+          1668,
+          230
+        ]
+      },
+      {
+        "source_pose": 4,
+        "rect": [
+          22,
+          462,
+          393,
+          372
+        ],
+        "alpha_pixels": 91310,
+        "feet": [
+          215.5,
+          834
+        ],
+        "mouth": [
+          377,
+          632
+        ]
+      },
+      {
+        "source_pose": 5,
+        "rect": [
+          452,
+          462,
+          403,
+          372
+        ],
+        "alpha_pixels": 92995,
+        "feet": [
+          650,
+          834
+        ],
+        "mouth": [
+          819,
+          632
+        ]
+      },
+      {
+        "source_pose": 6,
+        "rect": [
+          892,
+          495,
+          392,
+          339
+        ],
+        "alpha_pixels": 86429,
+        "feet": [
+          1082,
+          834
+        ],
+        "mouth": [
+          1227,
+          683
+        ]
+      },
+      {
+        "source_pose": 7,
+        "rect": [
+          1317,
+          462,
+          417,
+          372
+        ],
+        "alpha_pixels": 93428,
+        "feet": [
+          1523,
+          834
+        ],
+        "mouth": [
+          1689,
+          628
+        ]
+      }
+    ],
+    "target_pivot": [
+      0.5,
+      0.965
+    ],
+    "walk": [
+      {
+        "frame": 0,
+        "duration": 0.24
+      },
+      {
+        "frame": 1,
+        "duration": 0.24
+      },
+      {
+        "frame": 2,
+        "duration": 0.24
+      },
+      {
+        "frame": 3,
+        "duration": 0.24
+      }
+    ],
+    "idle": [
+      {
+        "frame": 4,
+        "duration": 2.1
+      },
+      {
+        "frame": 5,
+        "duration": 0.13
+      },
+      {
+        "frame": 4,
+        "duration": 0.8
+      }
+    ],
+    "look": [
+      {
+        "frame": 4,
+        "duration": 0.7
+      },
+      {
+        "frame": 5,
+        "duration": 0.14
+      },
+      {
+        "frame": 4,
+        "duration": 0.65
+      }
+    ],
+    "forage": [
+      {
+        "frame": 4,
+        "duration": 0.35
+      },
+      {
+        "frame": 6,
+        "duration": 0.35
+      },
+      {
+        "frame": 4,
+        "duration": 0.45
+      }
+    ],
+    "feed": [
+      {
+        "frame": 4,
+        "duration": 0.2
+      },
+      {
+        "frame": 6,
+        "duration": 0.32
+      },
+      {
+        "frame": 4,
+        "duration": 0.36
+      }
+    ],
+    "pet": [
+      {
+        "frame": 4,
+        "duration": 0.2
+      },
+      {
+        "frame": 5,
+        "duration": 0.42
+      },
+      {
+        "frame": 4,
+        "duration": 0.28
+      }
+    ],
+    "normalization": "Whole-sheet 4-connected alpha >= 16 dominant creature bounds, not uniform grid crops. X is the median torso alpha in a reviewed silhouette-relative ROI [0.08,0.44,0.75,0.29]; Y is bounding-rectangle exclusive bottom END. Ground anchor is virtual under the body, not the alternating planted-paw median. Renderer must use one constant max-extents scale across every accepted frame. Original PNG unmodified.",
+    "mouth_method": "Manual visible mouth/open-lip seam source coordinates independently reviewed; alpha membership checked; no generic raw-color inference.",
+    "clean": [
+      {
+        "frame": 4,
+        "duration": 0.2,
+        "phase": "prepare"
+      },
+      {
+        "frame": 5,
+        "duration": 0.28,
+        "phase": "bite"
+      },
+      {
+        "frame": 4,
+        "duration": 0.47,
+        "phase": "recover"
+      }
+    ],
+    "heal": [
+      {
+        "frame": 4,
+        "duration": 0.2,
+        "phase": "prepare"
+      },
+      {
+        "frame": 5,
+        "duration": 0.35,
+        "phase": "bite"
+      },
+      {
+        "frame": 4,
+        "duration": 0.4,
+        "phase": "recover"
+      }
+    ],
+    "collect": [
+      {
+        "frame": 4,
+        "duration": 0.18,
+        "phase": "prepare"
+      },
+      {
+        "frame": 5,
+        "duration": 0.25,
+        "phase": "bite"
+      },
+      {
+        "frame": 4,
+        "duration": 0.52,
+        "phase": "recover"
+      }
+    ],
+    "turn": [
+      {
+        "frame": 4,
+        "duration": 0.48
+      }
+    ],
+    "turn_duration": 0.48,
+    "care_playback": "once; prepare/bite/recover, hold final accepted pose until 0.95 s"
+  },
+  "farmer_front": {
+    "source": "res://assets/living_world_source_poses_v3/farmer_front.png",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "locomotion_frames": false,
+    "approved_frames": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "frames": [
+      {
+        "rect": [
+          241,
+          22,
+          272,
+          577
+        ],
+        "feet": [
+          363,
+          599
+        ]
+      },
+      {
+        "rect": [
+          765,
+          22,
+          271,
+          577
+        ],
+        "feet": [
+          894,
+          599
+        ]
+      },
+      {
+        "rect": [
+          241,
+          637,
+          274,
+          584
+        ],
+        "feet": [
+          363,
+          1221
+        ]
+      },
+      {
+        "rect": [
+          765,
+          636,
+          274,
+          585
+        ],
+        "feet": [
+          896,
+          1221
+        ]
+      }
+    ],
+    "target_pivot": [
+      0.5,
+      0.96
+    ],
+    "idle": [
+      {
+        "frame": 0,
+        "duration": 3.1
+      },
+      {
+        "frame": 1,
+        "duration": 0.12
+      },
+      {
+        "frame": 0,
+        "duration": 2.1
+      }
+    ],
+    "look": [
+      {
+        "frame": 0,
+        "duration": 2.4
+      },
+      {
+        "frame": 2,
+        "duration": 0.35
+      },
+      {
+        "frame": 0,
+        "duration": 1.4
+      }
+    ],
+    "normalization": "Read-only source alpha bounds; body-axis virtual ground anchors, one constant scale for complete poses. Viewer-facing Home/Title and islands/Dragon use this front identity. Not a walking sequence."
+  },
+  "ice_dragon": {
+    "source": "res://assets/living_world_source_poses_v3/ice_dragon.png",
+    "locomotion_frames": true,
+    "reference_frame": 4,
+    "frames": [
+      {
+        "source_index": 0,
+        "rect": [
+          16,
+          58,
+          408,
+          376
+        ],
+        "feet": [
+          245,
+          433
+        ],
+        "mouth": [
+          385,
+          224
+        ]
+      },
+      {
+        "source_index": 1,
+        "rect": [
+          457,
+          56,
+          416,
+          376
+        ],
+        "feet": [
+          688,
+          433
+        ],
+        "mouth": [
+          838,
+          224
+        ]
+      },
+      {
+        "source_index": 2,
+        "rect": [
+          898,
+          56,
+          413,
+          380
+        ],
+        "feet": [
+          1130.5,
+          433
+        ],
+        "mouth": [
+          1280,
+          224
+        ]
+      },
+      {
+        "source_index": 3,
+        "rect": [
+          1338,
+          56,
+          416,
+          376
+        ],
+        "feet": [
+          1574,
+          433
+        ],
+        "mouth": [
+          1723,
+          224
+        ]
+      },
+      {
+        "source_index": 4,
+        "rect": [
+          16,
+          464,
+          413,
+          377
+        ],
+        "feet": [
+          244,
+          840
+        ],
+        "mouth": [
+          389,
+          634
+        ]
+      },
+      {
+        "source_index": 5,
+        "rect": [
+          451,
+          464,
+          416,
+          377
+        ],
+        "feet": [
+          688,
+          840
+        ],
+        "mouth": [
+          832,
+          634
+        ]
+      },
+      {
+        "source_index": 6,
+        "rect": [
+          897,
+          471,
+          416,
+          372
+        ],
+        "feet": [
+          1130.5,
+          840
+        ],
+        "mouth": [
+          1276,
+          655
+        ]
+      },
+      {
+        "source_index": 7,
+        "rect": [
+          1339,
+          464,
+          417,
+          377
+        ],
+        "feet": [
+          1574,
+          840
+        ],
+        "mouth": [
+          1725,
+          637
+        ]
+      }
+    ],
+    "walk": [
+      {
+        "frame": 0,
+        "duration": 0.24
+      },
+      {
+        "frame": 1,
+        "duration": 0.24
+      },
+      {
+        "frame": 2,
+        "duration": 0.24
+      },
+      {
+        "frame": 3,
+        "duration": 0.24
+      }
+    ],
+    "idle": [
+      {
+        "frame": 4,
+        "duration": 1.5
+      },
+      {
+        "frame": 5,
+        "duration": 0.18
+      },
+      {
+        "frame": 4,
+        "duration": 0.8
+      }
+    ],
+    "feed": [
+      {
+        "frame": 4,
+        "duration": 0.18,
+        "phase": "prepare"
+      },
+      {
+        "frame": 6,
+        "duration": 0.22,
+        "phase": "prepare"
+      },
+      {
+        "frame": 7,
+        "duration": 0.28,
+        "phase": "bite"
+      },
+      {
+        "frame": 6,
+        "duration": 0.1,
+        "phase": "recover"
+      },
+      {
+        "frame": 4,
+        "duration": 0.17,
+        "phase": "recover"
+      }
+    ],
+    "look": [
+      {
+        "frame": 4,
+        "duration": 0.54
+      },
+      {
+        "frame": 5,
+        "duration": 0.18
+      },
+      {
+        "frame": 4,
+        "duration": 0.7
+      }
+    ],
+    "source_review_status": "CANDIDATE_SOURCE_ONLY_NATIVE_ANIMATION_REVIEW_REQUIRED",
+    "review_note": "Four credible leg-phase source poses with complete separate body components, no real source-edge contact atalpha8, and no neighboring body contamination in the proposed atlas crops.",
+    "pet": [
+      {
+        "frame": 4,
+        "duration": 0.2,
+        "phase": "prepare"
+      },
+      {
+        "frame": 5,
+        "duration": 0.34,
+        "phase": "bite"
+      },
+      {
+        "frame": 4,
+        "duration": 0.41,
+        "phase": "recover"
+      }
+    ],
+    "clean": [
+      {
+        "frame": 4,
+        "duration": 0.2,
+        "phase": "prepare"
+      },
+      {
+        "frame": 5,
+        "duration": 0.28,
+        "phase": "bite"
+      },
+      {
+        "frame": 4,
+        "duration": 0.47,
+        "phase": "recover"
+      }
+    ],
+    "heal": [
+      {
+        "frame": 4,
+        "duration": 0.2,
+        "phase": "prepare"
+      },
+      {
+        "frame": 5,
+        "duration": 0.35,
+        "phase": "bite"
+      },
+      {
+        "frame": 4,
+        "duration": 0.4,
+        "phase": "recover"
+      }
+    ],
+    "collect": [
+      {
+        "frame": 4,
+        "duration": 0.18,
+        "phase": "prepare"
+      },
+      {
+        "frame": 5,
+        "duration": 0.25,
+        "phase": "bite"
+      },
+      {
+        "frame": 4,
+        "duration": 0.52,
+        "phase": "recover"
+      }
+    ],
+    "turn": [
+      {
+        "frame": 4,
+        "duration": 0.48
+      }
+    ],
+    "turn_duration": 0.48,
+    "care_playback": "once; prepare/bite/recover, hold final accepted pose until 0.95 s"
+  },
+  "forest_dragon": {
+    "source": "res://assets/living_world_source_poses_v3/forest_dragon.png",
+    "locomotion_frames": true,
+    "reference_frame": 4,
+    "frames": [
+      {
+        "source_index": 0,
+        "rect": [
+          9,
+          49,
+          441,
+          374
+        ],
+        "feet": [
+          247,
+          423
+        ],
+        "mouth": [
+          408,
+          208
+        ]
+      },
+      {
+        "source_index": 1,
+        "rect": [
+          460,
+          50,
+          438,
+          376
+        ],
+        "feet": [
+          692,
+          423
+        ],
+        "mouth": [
+          854,
+          209
+        ]
+      },
+      {
+        "source_index": 2,
+        "rect": [
+          901,
+          53,
+          427,
+          371
+        ],
+        "feet": [
+          1134,
+          423
+        ],
+        "mouth": [
+          1285,
+          220
+        ]
+      },
+      {
+        "source_index": 3,
+        "rect": [
+          1335,
+          49,
+          432,
+          376
+        ],
+        "feet": [
+          1577,
+          423
+        ],
+        "mouth": [
+          1738,
+          209
+        ]
+      },
+      {
+        "source_index": 4,
+        "rect": [
+          13,
+          483,
+          438,
+          365
+        ],
+        "feet": [
+          246,
+          847
+        ],
+        "mouth": [
+          411,
+          640
+        ]
+      },
+      {
+        "source_index": 5,
+        "rect": [
+          460,
+          483,
+          436,
+          366
+        ],
+        "feet": [
+          690,
+          847
+        ],
+        "mouth": [
+          855,
+          640
+        ]
+      },
+      {
+        "source_index": 6,
+        "rect": [
+          901,
+          499,
+          435,
+          349
+        ],
+        "feet": [
+          1132,
+          847
+        ],
+        "mouth": [
+          1292,
+          663
+        ]
+      },
+      {
+        "source_index": 7,
+        "rect": [
+          1339,
+          483,
+          426,
+          365
+        ],
+        "feet": [
+          1576,
+          847
+        ],
+        "mouth": [
+          1740,
+          640
+        ]
+      }
+    ],
+    "walk": [
+      {
+        "frame": 0,
+        "duration": 0.24
+      },
+      {
+        "frame": 1,
+        "duration": 0.24
+      },
+      {
+        "frame": 2,
+        "duration": 0.24
+      },
+      {
+        "frame": 3,
+        "duration": 0.24
+      }
+    ],
+    "idle": [
+      {
+        "frame": 4,
+        "duration": 1.5
+      },
+      {
+        "frame": 5,
+        "duration": 0.18
+      },
+      {
+        "frame": 4,
+        "duration": 0.8
+      }
+    ],
+    "feed": [
+      {
+        "frame": 4,
+        "duration": 0.18,
+        "phase": "prepare"
+      },
+      {
+        "frame": 6,
+        "duration": 0.22,
+        "phase": "prepare"
+      },
+      {
+        "frame": 7,
+        "duration": 0.28,
+        "phase": "bite"
+      },
+      {
+        "frame": 6,
+        "duration": 0.1,
+        "phase": "recover"
+      },
+      {
+        "frame": 4,
+        "duration": 0.17,
+        "phase": "recover"
+      }
+    ],
+    "look": [
+      {
+        "frame": 4,
+        "duration": 0.54
+      },
+      {
+        "frame": 5,
+        "duration": 0.18
+      },
+      {
+        "frame": 4,
+        "duration": 0.7
+      }
+    ],
+    "source_review_status": "CANDIDATE_SOURCE_ONLY_NATIVE_ANIMATION_REVIEW_REQUIRED",
+    "review_note": "Four credible leg-phase source poses. Regular cells clip0/1 and contaminate2; complete component crops recover existing pixels. No source repaint is needed for this crop-only repair. If uniform cells are mandatory, do not approve this walk loop.",
+    "pet": [
+      {
+        "frame": 4,
+        "duration": 0.2,
+        "phase": "prepare"
+      },
+      {
+        "frame": 5,
+        "duration": 0.34,
+        "phase": "bite"
+      },
+      {
+        "frame": 4,
+        "duration": 0.41,
+        "phase": "recover"
+      }
+    ],
+    "clean": [
+      {
+        "frame": 4,
+        "duration": 0.2,
+        "phase": "prepare"
+      },
+      {
+        "frame": 5,
+        "duration": 0.28,
+        "phase": "bite"
+      },
+      {
+        "frame": 4,
+        "duration": 0.47,
+        "phase": "recover"
+      }
+    ],
+    "heal": [
+      {
+        "frame": 4,
+        "duration": 0.2,
+        "phase": "prepare"
+      },
+      {
+        "frame": 5,
+        "duration": 0.35,
+        "phase": "bite"
+      },
+      {
+        "frame": 4,
+        "duration": 0.4,
+        "phase": "recover"
+      }
+    ],
+    "collect": [
+      {
+        "frame": 4,
+        "duration": 0.18,
+        "phase": "prepare"
+      },
+      {
+        "frame": 5,
+        "duration": 0.25,
+        "phase": "bite"
+      },
+      {
+        "frame": 4,
+        "duration": 0.52,
+        "phase": "recover"
+      }
+    ],
+    "turn": [
+      {
+        "frame": 4,
+        "duration": 0.48
+      }
+    ],
+    "turn_duration": 0.48,
+    "care_playback": "once; prepare/bite/recover, hold final accepted pose until 0.95 s"
+  },
+  "gold_dragon": {
+    "source": "res://assets/living_world_source_poses_v3/gold_dragon.png",
+    "locomotion_frames": true,
+    "reference_frame": 4,
+    "frames": [
+      {
+        "source_index": 0,
+        "rect": [
+          10,
+          62,
+          421,
+          363
+        ],
+        "feet": [
+          245,
+          423
+        ],
+        "mouth": [
+          391,
+          216
+        ]
+      },
+      {
+        "source_index": 1,
+        "rect": [
+          460,
+          64,
+          420,
+          358
+        ],
+        "feet": [
+          689,
+          423
+        ],
+        "mouth": [
+          842,
+          217
+        ]
+      },
+      {
+        "source_index": 2,
+        "rect": [
+          892,
+          63,
+          425,
+          361
+        ],
+        "feet": [
+          1131,
+          423
+        ],
+        "mouth": [
+          1287,
+          216
+        ]
+      },
+      {
+        "source_index": 3,
+        "rect": [
+          1340,
+          64,
+          425,
+          360
+        ],
+        "feet": [
+          1575,
+          423
+        ],
+        "mouth": [
+          1732,
+          217
+        ]
+      },
+      {
+        "source_index": 4,
+        "rect": [
+          12,
+          479,
+          415,
+          367
+        ],
+        "feet": [
+          245,
+          844
+        ],
+        "mouth": [
+          392,
+          635
+        ]
+      },
+      {
+        "source_index": 5,
+        "rect": [
+          454,
+          479,
+          422,
+          366
+        ],
+        "feet": [
+          689,
+          844
+        ],
+        "mouth": [
+          838,
+          635
+        ]
+      },
+      {
+        "source_index": 6,
+        "rect": [
+          897,
+          489,
+          422,
+          357
+        ],
+        "feet": [
+          1132,
+          844
+        ],
+        "mouth": [
+          1281,
+          657
+        ]
+      },
+      {
+        "source_index": 7,
+        "rect": [
+          1343,
+          479,
+          418,
+          367
+        ],
+        "feet": [
+          1576,
+          844
+        ],
+        "mouth": [
+          1729,
+          635
+        ]
+      }
+    ],
+    "walk": [
+      {
+        "frame": 0,
+        "duration": 0.24
+      },
+      {
+        "frame": 1,
+        "duration": 0.24
+      },
+      {
+        "frame": 2,
+        "duration": 0.24
+      },
+      {
+        "frame": 3,
+        "duration": 0.24
+      }
+    ],
+    "idle": [
+      {
+        "frame": 4,
+        "duration": 1.5
+      },
+      {
+        "frame": 5,
+        "duration": 0.18
+      },
+      {
+        "frame": 4,
+        "duration": 0.8
+      }
+    ],
+    "feed": [
+      {
+        "frame": 4,
+        "duration": 0.18,
+        "phase": "prepare"
+      },
+      {
+        "frame": 6,
+        "duration": 0.22,
+        "phase": "prepare"
+      },
+      {
+        "frame": 7,
+        "duration": 0.28,
+        "phase": "bite"
+      },
+      {
+        "frame": 6,
+        "duration": 0.1,
+        "phase": "recover"
+      },
+      {
+        "frame": 4,
+        "duration": 0.17,
+        "phase": "recover"
+      }
+    ],
+    "look": [
+      {
+        "frame": 4,
+        "duration": 0.54
+      },
+      {
+        "frame": 5,
+        "duration": 0.18
+      },
+      {
+        "frame": 4,
+        "duration": 0.7
+      }
+    ],
+    "source_review_status": "CANDIDATE_SOURCE_ONLY_NATIVE_ANIMATION_REVIEW_REQUIRED",
+    "review_note": "Four credible leg-phase source poses with complete separate body components, no real source-edge contact atalpha8, and no neighboring body contamination in the proposed atlas crops.",
+    "pet": [
+      {
+        "frame": 4,
+        "duration": 0.2,
+        "phase": "prepare"
+      },
+      {
+        "frame": 5,
+        "duration": 0.34,
+        "phase": "bite"
+      },
+      {
+        "frame": 4,
+        "duration": 0.41,
+        "phase": "recover"
+      }
+    ],
+    "clean": [
+      {
+        "frame": 4,
+        "duration": 0.2,
+        "phase": "prepare"
+      },
+      {
+        "frame": 5,
+        "duration": 0.28,
+        "phase": "bite"
+      },
+      {
+        "frame": 4,
+        "duration": 0.47,
+        "phase": "recover"
+      }
+    ],
+    "heal": [
+      {
+        "frame": 4,
+        "duration": 0.2,
+        "phase": "prepare"
+      },
+      {
+        "frame": 5,
+        "duration": 0.35,
+        "phase": "bite"
+      },
+      {
+        "frame": 4,
+        "duration": 0.4,
+        "phase": "recover"
+      }
+    ],
+    "collect": [
+      {
+        "frame": 4,
+        "duration": 0.18,
+        "phase": "prepare"
+      },
+      {
+        "frame": 5,
+        "duration": 0.25,
+        "phase": "bite"
+      },
+      {
+        "frame": 4,
+        "duration": 0.52,
+        "phase": "recover"
+      }
+    ],
+    "turn": [
+      {
+        "frame": 4,
+        "duration": 0.48
+      }
+    ],
+    "turn_duration": 0.48,
+    "care_playback": "once; prepare/bite/recover, hold final accepted pose until 0.95 s"
+  },
+  "shadow_dragon": {
+    "source": "res://assets/living_world_source_poses_v3/shadow_dragon.png",
+    "locomotion_frames": true,
+    "reference_frame": 3,
+    "frames": [
+      {
+        "source_index": 0,
+        "rect": [
+          9,
+          46,
+          429,
+          372
+        ],
+        "feet": [
+          246,
+          417
+        ],
+        "mouth": [
+          401,
+          200
+        ]
+      },
+      {
+        "source_index": 1,
+        "rect": [
+          461,
+          49,
+          424,
+          370
+        ],
+        "feet": [
+          690,
+          417
+        ],
+        "mouth": [
+          851,
+          203
+        ]
+      },
+      {
+        "source_index": 2,
+        "rect": [
+          902,
+          45,
+          423,
+          375
+        ],
+        "feet": [
+          1133,
+          417
+        ],
+        "mouth": [
+          1295,
+          201
+        ]
+      },
+      {
+        "source_index": 4,
+        "rect": [
+          9,
+          471,
+          429,
+          374
+        ],
+        "feet": [
+          247,
+          844
+        ],
+        "mouth": [
+          401,
+          628
+        ]
+      },
+      {
+        "source_index": 5,
+        "rect": [
+          461,
+          474,
+          420,
+          371
+        ],
+        "feet": [
+          691,
+          844
+        ],
+        "mouth": [
+          850,
+          628
+        ]
+      },
+      {
+        "source_index": 6,
+        "rect": [
+          903,
+          480,
+          412,
+          366
+        ],
+        "feet": [
+          1133,
+          844
+        ],
+        "mouth": [
+          1286,
+          648
+        ]
+      },
+      {
+        "source_index": 7,
+        "rect": [
+          1339,
+          473,
+          423,
+          373
+        ],
+        "feet": [
+          1576,
+          844
+        ],
+        "mouth": [
+          1728,
+          629
+        ]
+      }
+    ],
+    "walk": [
+      {
+        "frame": 0,
+        "duration": 0.24
+      },
+      {
+        "frame": 1,
+        "duration": 0.24
+      },
+      {
+        "frame": 2,
+        "duration": 0.24
+      }
+    ],
+    "idle": [
+      {
+        "frame": 3,
+        "duration": 1.5
+      },
+      {
+        "frame": 4,
+        "duration": 0.18
+      },
+      {
+        "frame": 3,
+        "duration": 0.8
+      }
+    ],
+    "feed": [
+      {
+        "frame": 3,
+        "duration": 0.18,
+        "phase": "prepare"
+      },
+      {
+        "frame": 5,
+        "duration": 0.22,
+        "phase": "prepare"
+      },
+      {
+        "frame": 6,
+        "duration": 0.28,
+        "phase": "bite"
+      },
+      {
+        "frame": 5,
+        "duration": 0.1,
+        "phase": "recover"
+      },
+      {
+        "frame": 3,
+        "duration": 0.17,
+        "phase": "recover"
+      }
+    ],
+    "look": [
+      {
+        "frame": 3,
+        "duration": 0.54
+      },
+      {
+        "frame": 4,
+        "duration": 0.18
+      },
+      {
+        "frame": 3,
+        "duration": 0.7
+      }
+    ],
+    "source_review_status": "CANDIDATE_SOURCE_ONLY_NATIVE_ANIMATION_REVIEW_REQUIRED",
+    "review_note": "Three credible walk candidates0/1/2; source3 deferred for a low-alpha fringe reaching the real right image edge. The opaque/main body is intact atalpha32 but that does not approve the clipped fringe.",
+    "pet": [
+      {
+        "frame": 3,
+        "duration": 0.2,
+        "phase": "prepare"
+      },
+      {
+        "frame": 4,
+        "duration": 0.34,
+        "phase": "bite"
+      },
+      {
+        "frame": 3,
+        "duration": 0.41,
+        "phase": "recover"
+      }
+    ],
+    "clean": [
+      {
+        "frame": 3,
+        "duration": 0.2,
+        "phase": "prepare"
+      },
+      {
+        "frame": 4,
+        "duration": 0.28,
+        "phase": "bite"
+      },
+      {
+        "frame": 3,
+        "duration": 0.47,
+        "phase": "recover"
+      }
+    ],
+    "heal": [
+      {
+        "frame": 3,
+        "duration": 0.2,
+        "phase": "prepare"
+      },
+      {
+        "frame": 4,
+        "duration": 0.35,
+        "phase": "bite"
+      },
+      {
+        "frame": 3,
+        "duration": 0.4,
+        "phase": "recover"
+      }
+    ],
+    "collect": [
+      {
+        "frame": 3,
+        "duration": 0.18,
+        "phase": "prepare"
+      },
+      {
+        "frame": 4,
+        "duration": 0.25,
+        "phase": "bite"
+      },
+      {
+        "frame": 3,
+        "duration": 0.52,
+        "phase": "recover"
+      }
+    ],
+    "turn": [
+      {
+        "frame": 3,
+        "duration": 0.48
+      }
+    ],
+    "turn_duration": 0.48,
+    "care_playback": "once; prepare/bite/recover, hold final accepted pose until 0.95 s"
+  },
+  "crystal_dragon": {
+    "source": "res://assets/living_world_source_poses_v3/crystal_dragon.png",
+    "locomotion_frames": true,
+    "reference_frame": 4,
+    "frames": [
+      {
+        "source_index": 0,
+        "rect": [
+          14,
+          44,
+          417,
+          374
+        ],
+        "feet": [
+          246,
+          416
+        ],
+        "mouth": [
+          382,
+          213
+        ]
+      },
+      {
+        "source_index": 1,
+        "rect": [
+          447,
+          44,
+          421,
+          374
+        ],
+        "feet": [
+          690,
+          416
+        ],
+        "mouth": [
+          827,
+          213
+        ]
+      },
+      {
+        "source_index": 2,
+        "rect": [
+          898,
+          45,
+          411,
+          369
+        ],
+        "feet": [
+          1134,
+          416
+        ],
+        "mouth": [
+          1270,
+          213
+        ]
+      },
+      {
+        "source_index": 3,
+        "rect": [
+          1341,
+          45,
+          419,
+          373
+        ],
+        "feet": [
+          1578,
+          416
+        ],
+        "mouth": [
+          1713,
+          213
+        ]
+      },
+      {
+        "source_index": 4,
+        "rect": [
+          10,
+          489,
+          413,
+          370
+        ],
+        "feet": [
+          247,
+          857
+        ],
+        "mouth": [
+          380,
+          655
+        ]
+      },
+      {
+        "source_index": 5,
+        "rect": [
+          453,
+          489,
+          415,
+          370
+        ],
+        "feet": [
+          690,
+          857
+        ],
+        "mouth": [
+          824,
+          655
+        ]
+      },
+      {
+        "source_index": 6,
+        "rect": [
+          897,
+          492,
+          414,
+          367
+        ],
+        "feet": [
+          1133,
+          857
+        ],
+        "mouth": [
+          1267,
+          665
+        ]
+      },
+      {
+        "source_index": 7,
+        "rect": [
+          1340,
+          488,
+          414,
+          371
+        ],
+        "feet": [
+          1577,
+          857
+        ],
+        "mouth": [
+          1709,
+          655
+        ]
+      }
+    ],
+    "walk": [
+      {
+        "frame": 0,
+        "duration": 0.24
+      },
+      {
+        "frame": 1,
+        "duration": 0.24
+      },
+      {
+        "frame": 2,
+        "duration": 0.24
+      },
+      {
+        "frame": 3,
+        "duration": 0.24
+      }
+    ],
+    "idle": [
+      {
+        "frame": 4,
+        "duration": 1.5
+      },
+      {
+        "frame": 5,
+        "duration": 0.18
+      },
+      {
+        "frame": 4,
+        "duration": 0.8
+      }
+    ],
+    "feed": [
+      {
+        "frame": 4,
+        "duration": 0.18,
+        "phase": "prepare"
+      },
+      {
+        "frame": 6,
+        "duration": 0.22,
+        "phase": "prepare"
+      },
+      {
+        "frame": 7,
+        "duration": 0.28,
+        "phase": "bite"
+      },
+      {
+        "frame": 6,
+        "duration": 0.1,
+        "phase": "recover"
+      },
+      {
+        "frame": 4,
+        "duration": 0.17,
+        "phase": "recover"
+      }
+    ],
+    "look": [
+      {
+        "frame": 4,
+        "duration": 0.54
+      },
+      {
+        "frame": 5,
+        "duration": 0.18
+      },
+      {
+        "frame": 4,
+        "duration": 0.7
+      }
+    ],
+    "source_review_status": "CANDIDATE_SOURCE_ONLY_NATIVE_ANIMATION_REVIEW_REQUIRED",
+    "review_note": "Four credible leg-phase source poses with complete separate body components, no real source-edge contact atalpha8, and no neighboring body contamination in the proposed atlas crops.",
+    "pet": [
+      {
+        "frame": 4,
+        "duration": 0.2,
+        "phase": "prepare"
+      },
+      {
+        "frame": 5,
+        "duration": 0.34,
+        "phase": "bite"
+      },
+      {
+        "frame": 4,
+        "duration": 0.41,
+        "phase": "recover"
+      }
+    ],
+    "clean": [
+      {
+        "frame": 4,
+        "duration": 0.2,
+        "phase": "prepare"
+      },
+      {
+        "frame": 5,
+        "duration": 0.28,
+        "phase": "bite"
+      },
+      {
+        "frame": 4,
+        "duration": 0.47,
+        "phase": "recover"
+      }
+    ],
+    "heal": [
+      {
+        "frame": 4,
+        "duration": 0.2,
+        "phase": "prepare"
+      },
+      {
+        "frame": 5,
+        "duration": 0.35,
+        "phase": "bite"
+      },
+      {
+        "frame": 4,
+        "duration": 0.4,
+        "phase": "recover"
+      }
+    ],
+    "collect": [
+      {
+        "frame": 4,
+        "duration": 0.18,
+        "phase": "prepare"
+      },
+      {
+        "frame": 5,
+        "duration": 0.25,
+        "phase": "bite"
+      },
+      {
+        "frame": 4,
+        "duration": 0.52,
+        "phase": "recover"
+      }
+    ],
+    "turn": [
+      {
+        "frame": 4,
+        "duration": 0.48
+      }
+    ],
+    "turn_duration": 0.48,
+    "care_playback": "once; prepare/bite/recover, hold final accepted pose until 0.95 s"
+  },
+  "rainbow_dragon": {
+    "source": "res://assets/living_world_source_poses_v3/rainbow_dragon.png",
+    "locomotion_frames": true,
+    "reference_frame": 3,
+    "frames": [
+      {
+        "source_index": 0,
+        "rect": [
+          22,
+          64,
+          403,
+          358
+        ],
+        "feet": [
+          245,
+          420
+        ],
+        "mouth": [
+          380,
+          212
+        ]
+      },
+      {
+        "source_index": 1,
+        "rect": [
+          460,
+          66,
+          395,
+          356
+        ],
+        "feet": [
+          689,
+          420
+        ],
+        "mouth": [
+          825,
+          214
+        ]
+      },
+      {
+        "source_index": 3,
+        "rect": [
+          1344,
+          64,
+          408,
+          357
+        ],
+        "feet": [
+          1575,
+          420
+        ],
+        "mouth": [
+          1711,
+          213
+        ]
+      },
+      {
+        "source_index": 4,
+        "rect": [
+          17,
+          482,
+          402,
+          364
+        ],
+        "feet": [
+          245,
+          844
+        ],
+        "mouth": [
+          382,
+          631
+        ]
+      },
+      {
+        "source_index": 5,
+        "rect": [
+          461,
+          482,
+          400,
+          364
+        ],
+        "feet": [
+          689,
+          844
+        ],
+        "mouth": [
+          827,
+          630
+        ]
+      },
+      {
+        "source_index": 6,
+        "rect": [
+          904,
+          487,
+          408,
+          359
+        ],
+        "feet": [
+          1132,
+          844
+        ],
+        "mouth": [
+          1272,
+          649
+        ]
+      },
+      {
+        "source_index": 7,
+        "rect": [
+          1345,
+          482,
+          404,
+          363
+        ],
+        "feet": [
+          1575,
+          844
+        ],
+        "mouth": [
+          1717,
+          630
+        ]
+      }
+    ],
+    "walk": [
+      {
+        "frame": 0,
+        "duration": 0.24
+      },
+      {
+        "frame": 1,
+        "duration": 0.24
+      },
+      {
+        "frame": 2,
+        "duration": 0.24
+      }
+    ],
+    "idle": [
+      {
+        "frame": 3,
+        "duration": 1.5
+      },
+      {
+        "frame": 4,
+        "duration": 0.18
+      },
+      {
+        "frame": 3,
+        "duration": 0.8
+      }
+    ],
+    "feed": [
+      {
+        "frame": 3,
+        "duration": 0.18,
+        "phase": "prepare"
+      },
+      {
+        "frame": 5,
+        "duration": 0.22,
+        "phase": "prepare"
+      },
+      {
+        "frame": 6,
+        "duration": 0.28,
+        "phase": "bite"
+      },
+      {
+        "frame": 5,
+        "duration": 0.1,
+        "phase": "recover"
+      },
+      {
+        "frame": 3,
+        "duration": 0.17,
+        "phase": "recover"
+      }
+    ],
+    "look": [
+      {
+        "frame": 3,
+        "duration": 0.54
+      },
+      {
+        "frame": 4,
+        "duration": 0.18
+      },
+      {
+        "frame": 3,
+        "duration": 0.7
+      }
+    ],
+    "source_review_status": "CANDIDATE_SOURCE_ONLY_NATIVE_ANIMATION_REVIEW_REQUIRED",
+    "review_note": "Use0/1/3 as a conservative3-frame source walk. Defer2 because its planted-contact plane is roughly10sourcepx higher; fixed virtual ground removes estimator-driven torso hopping but cannot create a missing planted paw.",
+    "pet": [
+      {
+        "frame": 3,
+        "duration": 0.2,
+        "phase": "prepare"
+      },
+      {
+        "frame": 4,
+        "duration": 0.34,
+        "phase": "bite"
+      },
+      {
+        "frame": 3,
+        "duration": 0.41,
+        "phase": "recover"
+      }
+    ],
+    "clean": [
+      {
+        "frame": 3,
+        "duration": 0.2,
+        "phase": "prepare"
+      },
+      {
+        "frame": 4,
+        "duration": 0.28,
+        "phase": "bite"
+      },
+      {
+        "frame": 3,
+        "duration": 0.47,
+        "phase": "recover"
+      }
+    ],
+    "heal": [
+      {
+        "frame": 3,
+        "duration": 0.2,
+        "phase": "prepare"
+      },
+      {
+        "frame": 4,
+        "duration": 0.35,
+        "phase": "bite"
+      },
+      {
+        "frame": 3,
+        "duration": 0.4,
+        "phase": "recover"
+      }
+    ],
+    "collect": [
+      {
+        "frame": 3,
+        "duration": 0.18,
+        "phase": "prepare"
+      },
+      {
+        "frame": 4,
+        "duration": 0.25,
+        "phase": "bite"
+      },
+      {
+        "frame": 3,
+        "duration": 0.52,
+        "phase": "recover"
+      }
+    ],
+    "turn": [
+      {
+        "frame": 3,
+        "duration": 0.48
+      }
+    ],
+    "turn_duration": 0.48,
+    "care_playback": "once; prepare/bite/recover, hold final accepted pose until 0.95 s"
+  },
+  "cat": {
+    "source": "res://assets/living_world_source_poses_v3/cat.png",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "reference_frame": 0,
+    "locomotion_frames": false,
+    "approved_frames": [
+      0,
+      1,
+      2
+    ],
+    "source_pose_indices": [
+      0,
+      1,
+      3
+    ],
+    "frames": [
+      {
+        "source_pose": 0,
+        "rect": [
+          164,
+          21,
+          394,
+          583
+        ],
+        "alpha_pixels": 158861,
+        "feet": [
+          351,
+          604
+        ],
+        "mouth": [
+          346,
+          260
+        ]
+      },
+      {
+        "source_pose": 1,
+        "rect": [
+          715,
+          29,
+          394,
+          575
+        ],
+        "alpha_pixels": 158004,
+        "feet": [
+          902,
+          606
+        ],
+        "mouth": [
+          904,
+          260
+        ]
+      },
+      {
+        "source_pose": 3,
+        "rect": [
+          716,
+          651,
+          394,
+          574
+        ],
+        "alpha_pixels": 158070,
+        "feet": [
+          903,
+          1227.5
+        ],
+        "mouth": [
+          901,
+          887
+        ]
+      }
+    ],
+    "target_pivot": [
+      0.5,
+      0.96
+    ],
+    "fit_height_ratio": 1,
+    "walk": [],
+    "annotation_status": "Source stills and explicit mouth pixels manually reviewed. Proposal requires native constant-scale playback review; no animation/art-quality PASS is claimed.",
+    "normalization": "Read-only dominant connected alpha>=96 bounds; rect ends are exclusive. X is the reviewed torso ROI median. Y is torso ROI centroid plus a single reference-ground offset (180.5 source pixels), never per-frame feet/fins. Uniform scale across all accepted poses.",
+    "mouth_method": "Manual source-pixel mouth/lip contacts checked against original visible mouth pixels; no automatic skin/beak-color landmark inference.",
+    "review_notes": "Seated expression poses only; no walk. Source pose 2 is rejected because it contains an extra orange exclamation mark.",
+    "idle": [
+      {
+        "frame": 0,
+        "duration": 2.8
+      },
+      {
+        "frame": 1,
+        "duration": 0.13
+      },
+      {
+        "frame": 0,
+        "duration": 2
+      }
+    ],
+    "look": [
+      {
+        "frame": 0,
+        "duration": 0.9
+      },
+      {
+        "frame": 2,
+        "duration": 0.35
+      },
+      {
+        "frame": 0,
+        "duration": 0.9
+      }
+    ],
+    "pet": [
+      {
+        "frame": 1,
+        "duration": 0.28
+      },
+      {
+        "frame": 0,
+        "duration": 0.2
+      },
+      {
+        "frame": 1,
+        "duration": 0.32
+      },
+      {
+        "frame": 0,
+        "duration": 0.15
+      }
+    ]
+  },
+  "sheep": {
+    "source": "res://assets/living_world_source_poses_v3/sheep.png",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "reference_frame": 1,
+    "locomotion_frames": true,
+    "approved_frames": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "source_pose_indices": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "frames": [
+      {
+        "source_pose": 0,
+        "rect": [
+          61,
+          63,
+          519,
+          536
+        ],
+        "alpha_pixels": 184827,
+        "feet": [
+          299.5,
+          599
+        ],
+        "mouth": [
+          444,
+          301
+        ]
+      },
+      {
+        "source_pose": 1,
+        "rect": [
+          690,
+          63,
+          518,
+          536
+        ],
+        "alpha_pixels": 184388,
+        "feet": [
+          928,
+          598.9176
+        ],
+        "mouth": [
+          1073,
+          302
+        ]
+      },
+      {
+        "source_pose": 2,
+        "rect": [
+          59,
+          667,
+          524,
+          533
+        ],
+        "alpha_pixels": 186568,
+        "feet": [
+          300,
+          1201.4818
+        ],
+        "mouth": [
+          446,
+          905
+        ]
+      },
+      {
+        "source_pose": 3,
+        "rect": [
+          689,
+          666,
+          521,
+          535
+        ],
+        "alpha_pixels": 185999,
+        "feet": [
+          929,
+          1201.5
+        ],
+        "mouth": [
+          1074,
+          906
+        ]
+      }
+    ],
+    "target_pivot": [
+      0.5,
+      0.96
+    ],
+    "fit_height_ratio": 1,
+    "walk": [
+      {
+        "frame": 0,
+        "duration": 0.26
+      },
+      {
+        "frame": 1,
+        "duration": 0.26
+      },
+      {
+        "frame": 2,
+        "duration": 0.26
+      },
+      {
+        "frame": 3,
+        "duration": 0.26
+      }
+    ],
+    "annotation_status": "Source stills and explicit mouth pixels manually reviewed. Proposal requires native constant-scale playback review; no animation/art-quality PASS is claimed.",
+    "normalization": "Read-only dominant connected alpha>=96 bounds; rect ends are exclusive. X is the reviewed torso ROI median. Y is torso ROI centroid plus a single reference-ground offset (193 source pixels), never per-frame feet/fins. Uniform scale across all accepted poses.",
+    "mouth_method": "Manual source-pixel mouth/lip contacts checked against original visible mouth pixels; no automatic skin/beak-color landmark inference.",
+    "review_notes": "All four source poses change real lower-leg placement. Source pose 1 is the least-lifted available idle by summed lower-leg ground gaps (66.84 source pixels versus 68.00, 74.45 and 71.50). None is a newly drawn all-feet-planted pose; native gait continuity still needs visual review.",
+    "idle": [
+      {
+        "frame": 1,
+        "duration": 3
+      }
+    ],
+    "look": [
+      {
+        "frame": 1,
+        "duration": 1.4
+      }
+    ],
+    "feed": [
+      {
+        "frame": 1,
+        "duration": 0.95
+      }
+    ],
+    "pet": [
+      {
+        "frame": 1,
+        "duration": 0.95
+      }
+    ]
+  },
+  "farmer_back": {
+    "source": "res://assets/living_world_source_poses_v3/farmer.png",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "reference_frame": 0,
+    "locomotion_frames": false,
+    "approved_frames": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "source_pose_indices": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "frames": [
+      {
+        "source_pose": 0,
+        "rect": [
+          206,
+          37,
+          260,
+          562
+        ],
+        "alpha_pixels": 87445,
+        "feet": [
+          336,
+          599
+        ]
+      },
+      {
+        "source_pose": 1,
+        "rect": [
+          789,
+          40,
+          255,
+          560
+        ],
+        "alpha_pixels": 84938,
+        "feet": [
+          917,
+          600.9952
+        ]
+      },
+      {
+        "source_pose": 2,
+        "rect": [
+          208,
+          647,
+          257,
+          558
+        ],
+        "alpha_pixels": 85588,
+        "feet": [
+          337,
+          1206.6877
+        ]
+      },
+      {
+        "source_pose": 3,
+        "rect": [
+          791,
+          646,
+          254,
+          559
+        ],
+        "alpha_pixels": 85791,
+        "feet": [
+          918,
+          1206.2464
+        ]
+      }
+    ],
+    "target_pivot": [
+      0.5,
+      0.96
+    ],
+    "fit_height_ratio": 1,
+    "walk": [],
+    "annotation_status": "Source stills and explicit mouth pixels manually reviewed. Proposal requires native constant-scale playback review; no animation/art-quality PASS is claimed.",
+    "normalization": "Read-only dominant connected alpha>=96 bounds; rect ends are exclusive. X is the reviewed torso ROI median. Y is torso ROI centroid plus a single reference-ground offset (274.8642 source pixels), never per-frame feet/fins. Uniform scale across all accepted poses.",
+    "mouth_method": "No visible mouth in back-facing poses; mouth fields deliberately omitted.",
+    "review_notes": "Archived rear-facing idle source; current Home/Title explicitly selects farmer_front. Not walk poses. No mouth is visible, so no mouth point is invented. Never bind this source to islands/Dragon or the current front-facing Home.",
+    "idle": [
+      {
+        "frame": 0,
+        "duration": 2.8
+      },
+      {
+        "frame": 1,
+        "duration": 0.22
+      },
+      {
+        "frame": 0,
+        "duration": 2
+      }
+    ],
+    "look": [
+      {
+        "frame": 0,
+        "duration": 0.9
+      },
+      {
+        "frame": 2,
+        "duration": 0.35
+      },
+      {
+        "frame": 0,
+        "duration": 0.9
+      }
+    ],
+    "pet": [
+      {
+        "frame": 0,
+        "duration": 0.95
+      }
+    ],
+    "allowed_motion_scenes": [
+      "hub"
+    ],
+    "allowed_body_nodes": [
+      "HomeLivingPresenter/FarmerVisual"
+    ],
+    "excluded_body_nodes": [
+      "DestinationFarmer",
+      "Dragon/FarmerVisual"
+    ]
+  },
+  "slime": {
+    "source": "res://assets/visual_animation_closure_v1/poses/slime.png",
+    "source_size": [
+      1774,
+      887
+    ],
+    "reference_frame": 4,
+    "locomotion_frames": true,
+    "approved_frames": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "source_pose_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "frames": [
+      {
+        "source_pose": 0,
+        "rect": [
+          25,
+          237,
+          429,
+          218
+        ],
+        "alpha_pixels": 62650,
+        "feet": [
+          222.165,
+          466
+        ],
+        "mouth": [
+          308,
+          401
+        ]
+      },
+      {
+        "source_pose": 1,
+        "rect": [
+          484,
+          153,
+          416,
+          302
+        ],
+        "alpha_pixels": 73680,
+        "feet": [
+          707.8343,
+          466
+        ],
+        "mouth": [
+          804,
+          335
+        ]
+      },
+      {
+        "source_pose": 2,
+        "rect": [
+          934,
+          84,
+          358,
+          314
+        ],
+        "alpha_pixels": 79400,
+        "feet": [
+          1097,
+          466
+        ],
+        "mouth": [
+          1162,
+          265
+        ]
+      },
+      {
+        "source_pose": 3,
+        "rect": [
+          1343,
+          174,
+          413,
+          285
+        ],
+        "alpha_pixels": 74875,
+        "feet": [
+          1534.3165,
+          466
+        ],
+        "mouth": [
+          1616,
+          365
+        ]
+      },
+      {
+        "source_pose": 4,
+        "rect": [
+          27,
+          533,
+          389,
+          305
+        ],
+        "alpha_pixels": 84188,
+        "feet": [
+          204,
+          838
+        ],
+        "mouth": [
+          280,
+          718
+        ]
+      },
+      {
+        "source_pose": 5,
+        "rect": [
+          487,
+          534,
+          389,
+          304
+        ],
+        "alpha_pixels": 83560,
+        "feet": [
+          664,
+          838
+        ],
+        "mouth": [
+          733,
+          718
+        ]
+      },
+      {
+        "source_pose": 6,
+        "rect": [
+          920,
+          525,
+          384,
+          313
+        ],
+        "alpha_pixels": 84915,
+        "feet": [
+          1094.5,
+          838
+        ],
+        "mouth": [
+          1182,
+          704
+        ]
+      },
+      {
+        "source_pose": 7,
+        "rect": [
+          1358,
+          523,
+          389,
+          315
+        ],
+        "alpha_pixels": 86845,
+        "feet": [
+          1535,
+          838
+        ],
+        "mouth": [
+          1616,
+          716
+        ]
+      }
+    ],
+    "target_pivot": [
+      0.5,
+      0.96
+    ],
+    "fit_height_ratio": 1,
+    "walk": [
+      {
+        "frame": 0,
+        "duration": 0.16
+      },
+      {
+        "frame": 1,
+        "duration": 0.18
+      },
+      {
+        "frame": 2,
+        "duration": 0.2
+      },
+      {
+        "frame": 3,
+        "duration": 0.18
+      }
+    ],
+    "annotation_status": "Source body bounds, eight poses and manual mouth contacts visually inspected. Native temporal binding verified separately; no blanket art/continuous gait PASS.",
+    "normalization": "Hop first row shares virtual source ground Y=466, retaining the airborne second phase. Bottom row uses connected body-exclusive bottom; blue haze below bounds is excluded. Constant uniform max-extents fit across all8 measured poses. Source PNG unmodified.",
+    "mouth_method": "Full native PNG and diagnostic mouth crops inspected. Mouth coordinates manually chosen at visible lip/mouth seams, not inferred from colors.",
+    "review_notes": "Authored crouch/push/airborne/land poses provide real hopping; atlas rectangles exclude detached blue haze below each body. Airborne frame2 retains ground Y466 and is not shifted down.",
+    "idle": [
+      {
+        "frame": 4,
+        "duration": 0.85
+      },
+      {
+        "frame": 5,
+        "duration": 0.18
+      },
+      {
+        "frame": 4,
+        "duration": 0.65
+      }
+    ],
+    "look": [
+      {
+        "frame": 4,
+        "duration": 0.58
+      },
+      {
+        "frame": 5,
+        "duration": 0.18
+      },
+      {
+        "frame": 4,
+        "duration": 0.65
+      }
+    ],
+    "feed": [
+      {
+        "frame": 4,
+        "duration": 0.18,
+        "phase": "prepare"
+      },
+      {
+        "frame": 6,
+        "duration": 0.22,
+        "phase": "prepare"
+      },
+      {
+        "frame": 7,
+        "duration": 0.28,
+        "phase": "bite"
+      },
+      {
+        "frame": 6,
+        "duration": 0.1,
+        "phase": "recover"
+      },
+      {
+        "frame": 4,
+        "duration": 0.17,
+        "phase": "recover"
+      }
+    ],
+    "pet": [
+      {
+        "frame": 4,
+        "duration": 0.2,
+        "phase": "prepare"
+      },
+      {
+        "frame": 5,
+        "duration": 0.3,
+        "phase": "bite"
+      },
+      {
+        "frame": 4,
+        "duration": 0.45,
+        "phase": "recover"
+      }
+    ],
+    "clean": [
+      {
+        "frame": 4,
+        "duration": 0.2,
+        "phase": "prepare"
+      },
+      {
+        "frame": 5,
+        "duration": 0.28,
+        "phase": "bite"
+      },
+      {
+        "frame": 4,
+        "duration": 0.47,
+        "phase": "recover"
+      }
+    ],
+    "heal": [
+      {
+        "frame": 4,
+        "duration": 0.2,
+        "phase": "prepare"
+      },
+      {
+        "frame": 5,
+        "duration": 0.35,
+        "phase": "bite"
+      },
+      {
+        "frame": 4,
+        "duration": 0.4,
+        "phase": "recover"
+      }
+    ],
+    "collect": [
+      {
+        "frame": 4,
+        "duration": 0.18,
+        "phase": "prepare"
+      },
+      {
+        "frame": 5,
+        "duration": 0.25,
+        "phase": "bite"
+      },
+      {
+        "frame": 4,
+        "duration": 0.52,
+        "phase": "recover"
+      }
+    ],
+    "turn": [
+      {
+        "frame": 4,
+        "duration": 0.48
+      }
+    ],
+    "turn_duration": 0.48,
+    "care_playback": "once; prepare/bite/recover, hold final accepted pose until 0.95 s",
+    "forage": [
+      {
+        "frame": 4,
+        "duration": 0.3
+      },
+      {
+        "frame": 6,
+        "duration": 0.24
+      },
+      {
+        "frame": 7,
+        "duration": 0.2
+      },
+      {
+        "frame": 4,
+        "duration": 0.36
+      }
+    ]
+  },
+  "golem": {
+    "source": "res://assets/visual_animation_closure_v1/poses/golem.png",
+    "source_size": [
+      1774,
+      887
+    ],
+    "reference_frame": 4,
+    "locomotion_frames": true,
+    "approved_frames": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "source_pose_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "frames": [
+      {
+        "source_pose": 0,
+        "rect": [
+          22,
+          16,
+          430,
+          414
+        ],
+        "alpha_pixels": 101300,
+        "feet": [
+          212.5248,
+          430
+        ],
+        "mouth": [
+          273,
+          160
+        ]
+      },
+      {
+        "source_pose": 1,
+        "rect": [
+          470,
+          15,
+          404,
+          416
+        ],
+        "alpha_pixels": 98900,
+        "feet": [
+          647.5663,
+          431
+        ],
+        "mouth": [
+          709,
+          158
+        ]
+      },
+      {
+        "source_pose": 2,
+        "rect": [
+          895,
+          19,
+          423,
+          414
+        ],
+        "alpha_pixels": 102549,
+        "feet": [
+          1086.1079,
+          433
+        ],
+        "mouth": [
+          1153,
+          163
+        ]
+      },
+      {
+        "source_pose": 3,
+        "rect": [
+          1339,
+          15,
+          420,
+          416
+        ],
+        "alpha_pixels": 99121,
+        "feet": [
+          1522.2124,
+          431
+        ],
+        "mouth": [
+          1593,
+          160
+        ]
+      },
+      {
+        "source_pose": 4,
+        "rect": [
+          34,
+          454,
+          393,
+          423
+        ],
+        "alpha_pixels": 112396,
+        "feet": [
+          212.9622,
+          877
+        ],
+        "mouth": [
+          267,
+          596
+        ]
+      },
+      {
+        "source_pose": 5,
+        "rect": [
+          478,
+          455,
+          393,
+          422
+        ],
+        "alpha_pixels": 112452,
+        "feet": [
+          656.951,
+          877
+        ],
+        "mouth": [
+          710,
+          597
+        ]
+      },
+      {
+        "source_pose": 6,
+        "rect": [
+          922,
+          452,
+          399,
+          425
+        ],
+        "alpha_pixels": 109541,
+        "feet": [
+          1095.311,
+          877
+        ],
+        "mouth": [
+          1158,
+          598
+        ]
+      },
+      {
+        "source_pose": 7,
+        "rect": [
+          1365,
+          453,
+          382,
+          424
+        ],
+        "alpha_pixels": 107713,
+        "feet": [
+          1533.2674,
+          877
+        ],
+        "mouth": [
+          1597,
+          599
+        ]
+      }
+    ],
+    "target_pivot": [
+      0.5,
+      0.96
+    ],
+    "fit_height_ratio": 1,
+    "walk": [
+      {
+        "frame": 0,
+        "duration": 0.28
+      },
+      {
+        "frame": 1,
+        "duration": 0.28
+      },
+      {
+        "frame": 2,
+        "duration": 0.28
+      },
+      {
+        "frame": 3,
+        "duration": 0.28
+      }
+    ],
+    "annotation_status": "Source body bounds, eight poses and manual mouth contacts visually inspected. Native temporal binding verified separately; no blanket art/continuous gait PASS.",
+    "normalization": "Standing/slither poses use complete connected-body exclusive bottom and torso ROI centroid X, never whichever moving paw/tail tip is planted. Constant uniform max-extents fit across all8 measured poses. Source PNG unmodified.",
+    "mouth_method": "Full native PNG and diagnostic mouth crops inspected. Mouth coordinates manually chosen at visible lip/mouth seams, not inferred from colors.",
+    "review_notes": "Authored standing weighted steps alternate support. Seated placeholder replaced by standing source poses with separate neutral/blink/open-mouth/bite care poses.",
+    "idle": [
+      {
+        "frame": 4,
+        "duration": 0.85
+      },
+      {
+        "frame": 5,
+        "duration": 0.18
+      },
+      {
+        "frame": 4,
+        "duration": 0.65
+      }
+    ],
+    "look": [
+      {
+        "frame": 4,
+        "duration": 0.58
+      },
+      {
+        "frame": 5,
+        "duration": 0.18
+      },
+      {
+        "frame": 4,
+        "duration": 0.65
+      }
+    ],
+    "feed": [
+      {
+        "frame": 4,
+        "duration": 0.18,
+        "phase": "prepare"
+      },
+      {
+        "frame": 6,
+        "duration": 0.22,
+        "phase": "prepare"
+      },
+      {
+        "frame": 7,
+        "duration": 0.28,
+        "phase": "bite"
+      },
+      {
+        "frame": 6,
+        "duration": 0.1,
+        "phase": "recover"
+      },
+      {
+        "frame": 4,
+        "duration": 0.17,
+        "phase": "recover"
+      }
+    ],
+    "pet": [
+      {
+        "frame": 4,
+        "duration": 0.2,
+        "phase": "prepare"
+      },
+      {
+        "frame": 5,
+        "duration": 0.3,
+        "phase": "bite"
+      },
+      {
+        "frame": 4,
+        "duration": 0.45,
+        "phase": "recover"
+      }
+    ],
+    "clean": [
+      {
+        "frame": 4,
+        "duration": 0.2,
+        "phase": "prepare"
+      },
+      {
+        "frame": 5,
+        "duration": 0.28,
+        "phase": "bite"
+      },
+      {
+        "frame": 4,
+        "duration": 0.47,
+        "phase": "recover"
+      }
+    ],
+    "heal": [
+      {
+        "frame": 4,
+        "duration": 0.2,
+        "phase": "prepare"
+      },
+      {
+        "frame": 5,
+        "duration": 0.35,
+        "phase": "bite"
+      },
+      {
+        "frame": 4,
+        "duration": 0.4,
+        "phase": "recover"
+      }
+    ],
+    "collect": [
+      {
+        "frame": 4,
+        "duration": 0.18,
+        "phase": "prepare"
+      },
+      {
+        "frame": 5,
+        "duration": 0.25,
+        "phase": "bite"
+      },
+      {
+        "frame": 4,
+        "duration": 0.52,
+        "phase": "recover"
+      }
+    ],
+    "turn": [
+      {
+        "frame": 4,
+        "duration": 0.48
+      }
+    ],
+    "turn_duration": 0.48,
+    "care_playback": "once; prepare/bite/recover, hold final accepted pose until 0.95 s",
+    "forage": [
+      {
+        "frame": 4,
+        "duration": 0.3
+      },
+      {
+        "frame": 6,
+        "duration": 0.24
+      },
+      {
+        "frame": 7,
+        "duration": 0.2
+      },
+      {
+        "frame": 4,
+        "duration": 0.36
+      }
+    ]
+  },
+  "snake": {
+    "source": "res://assets/visual_animation_closure_v1/poses/snake.png",
+    "source_size": [
+      1774,
+      887
+    ],
+    "reference_frame": 4,
+    "locomotion_frames": true,
+    "approved_frames": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "source_pose_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "frames": [
+      {
+        "source_pose": 0,
+        "rect": [
+          41,
+          143,
+          417,
+          286
+        ],
+        "alpha_pixels": 55308,
+        "feet": [
+          231.7702,
+          429
+        ],
+        "mouth": [
+          437,
+          260
+        ]
+      },
+      {
+        "source_pose": 1,
+        "rect": [
+          502,
+          150,
+          381,
+          280
+        ],
+        "alpha_pixels": 53075,
+        "feet": [
+          673.6783,
+          430
+        ],
+        "mouth": [
+          856,
+          266
+        ]
+      },
+      {
+        "source_pose": 2,
+        "rect": [
+          920,
+          155,
+          393,
+          271
+        ],
+        "alpha_pixels": 53912,
+        "feet": [
+          1101.5675,
+          426
+        ],
+        "mouth": [
+          1293,
+          270
+        ]
+      },
+      {
+        "source_pose": 3,
+        "rect": [
+          1358,
+          156,
+          394,
+          272
+        ],
+        "alpha_pixels": 51127,
+        "feet": [
+          1542.6433,
+          428
+        ],
+        "mouth": [
+          1737,
+          272
+        ]
+      },
+      {
+        "source_pose": 4,
+        "rect": [
+          81,
+          472,
+          298,
+          312
+        ],
+        "alpha_pixels": 61071,
+        "feet": [
+          215.5318,
+          784
+        ],
+        "mouth": [
+          351,
+          601
+        ]
+      },
+      {
+        "source_pose": 5,
+        "rect": [
+          534,
+          476,
+          292,
+          307
+        ],
+        "alpha_pixels": 59490,
+        "feet": [
+          665.9806,
+          783
+        ],
+        "mouth": [
+          798,
+          603
+        ]
+      },
+      {
+        "source_pose": 6,
+        "rect": [
+          957,
+          472,
+          299,
+          311
+        ],
+        "alpha_pixels": 61792,
+        "feet": [
+          1093.3595,
+          783
+        ],
+        "mouth": [
+          1222,
+          596
+        ]
+      },
+      {
+        "source_pose": 7,
+        "rect": [
+          1394,
+          476,
+          303,
+          309
+        ],
+        "alpha_pixels": 60570,
+        "feet": [
+          1530.33,
+          785
+        ],
+        "mouth": [
+          1664,
+          604
+        ]
+      }
+    ],
+    "target_pivot": [
+      0.5,
+      0.96
+    ],
+    "fit_height_ratio": 1,
+    "walk": [
+      {
+        "frame": 0,
+        "duration": 0.22
+      },
+      {
+        "frame": 1,
+        "duration": 0.22
+      },
+      {
+        "frame": 2,
+        "duration": 0.22
+      },
+      {
+        "frame": 3,
+        "duration": 0.22
+      }
+    ],
+    "annotation_status": "Source body bounds, eight poses and manual mouth contacts visually inspected. Native temporal binding verified separately; no blanket art/continuous gait PASS.",
+    "normalization": "Standing/slither poses use complete connected-body exclusive bottom and torso ROI centroid X, never whichever moving paw/tail tip is planted. Constant uniform max-extents fit across all8 measured poses. Source PNG unmodified.",
+    "mouth_method": "Full native PNG and diagnostic mouth crops inspected. Mouth coordinates manually chosen at visible lip/mouth seams, not inferred from colors.",
+    "review_notes": "Corrected source preserves complete slither bodies with clear actual PNG margins. First row changes real lateral curves; bottom row supplies coiled neutral/blink/open-mouth/bite attention.",
+    "idle": [
+      {
+        "frame": 4,
+        "duration": 0.85
+      },
+      {
+        "frame": 5,
+        "duration": 0.18
+      },
+      {
+        "frame": 4,
+        "duration": 0.65
+      }
+    ],
+    "look": [
+      {
+        "frame": 4,
+        "duration": 0.58
+      },
+      {
+        "frame": 5,
+        "duration": 0.18
+      },
+      {
+        "frame": 4,
+        "duration": 0.65
+      }
+    ],
+    "feed": [
+      {
+        "frame": 4,
+        "duration": 0.18,
+        "phase": "prepare"
+      },
+      {
+        "frame": 6,
+        "duration": 0.22,
+        "phase": "prepare"
+      },
+      {
+        "frame": 7,
+        "duration": 0.28,
+        "phase": "bite"
+      },
+      {
+        "frame": 6,
+        "duration": 0.1,
+        "phase": "recover"
+      },
+      {
+        "frame": 4,
+        "duration": 0.17,
+        "phase": "recover"
+      }
+    ],
+    "pet": [
+      {
+        "frame": 4,
+        "duration": 0.2,
+        "phase": "prepare"
+      },
+      {
+        "frame": 5,
+        "duration": 0.3,
+        "phase": "bite"
+      },
+      {
+        "frame": 4,
+        "duration": 0.45,
+        "phase": "recover"
+      }
+    ],
+    "clean": [
+      {
+        "frame": 4,
+        "duration": 0.2,
+        "phase": "prepare"
+      },
+      {
+        "frame": 5,
+        "duration": 0.28,
+        "phase": "bite"
+      },
+      {
+        "frame": 4,
+        "duration": 0.47,
+        "phase": "recover"
+      }
+    ],
+    "heal": [
+      {
+        "frame": 4,
+        "duration": 0.2,
+        "phase": "prepare"
+      },
+      {
+        "frame": 5,
+        "duration": 0.35,
+        "phase": "bite"
+      },
+      {
+        "frame": 4,
+        "duration": 0.4,
+        "phase": "recover"
+      }
+    ],
+    "collect": [
+      {
+        "frame": 4,
+        "duration": 0.18,
+        "phase": "prepare"
+      },
+      {
+        "frame": 5,
+        "duration": 0.25,
+        "phase": "bite"
+      },
+      {
+        "frame": 4,
+        "duration": 0.52,
+        "phase": "recover"
+      }
+    ],
+    "turn": [
+      {
+        "frame": 4,
+        "duration": 0.48
+      }
+    ],
+    "turn_duration": 0.48,
+    "care_playback": "once; prepare/bite/recover, hold final accepted pose until 0.95 s",
+    "forage": [
+      {
+        "frame": 4,
+        "duration": 0.3
+      },
+      {
+        "frame": 6,
+        "duration": 0.24
+      },
+      {
+        "frame": 7,
+        "duration": 0.2
+      },
+      {
+        "frame": 4,
+        "duration": 0.36
+      }
+    ]
+  },
+  "ice_fish": {
+    "source": "res://assets/living_world_source_poses_v3/ice_fish.png",
+    "source_size": [
+      1254,
+      1254
+    ],
+    "reference_frame": 0,
+    "locomotion_frames": true,
+    "approved_frames": [
+      0,
+      1,
+      2
+    ],
+    "source_pose_indices": [
+      0,
+      1,
+      3
+    ],
+    "frames": [
+      {
+        "source_pose": 0,
+        "rect": [
+          77,
+          184,
+          517,
+          365
+        ],
+        "alpha_pixels": 109845,
+        "feet": [
+          392,
+          549
+        ],
+        "mouth": [
+          556,
+          393
+        ]
+      },
+      {
+        "source_pose": 1,
+        "rect": [
+          693,
+          184,
+          502,
+          365
+        ],
+        "alpha_pixels": 107671,
+        "feet": [
+          998,
+          548.9642
+        ],
+        "mouth": [
+          1158,
+          392
+        ]
+      },
+      {
+        "source_pose": 3,
+        "rect": [
+          691,
+          737,
+          504,
+          360
+        ],
+        "alpha_pixels": 107147,
+        "feet": [
+          998,
+          1099.4668
+        ],
+        "mouth": [
+          1157,
+          947
+        ]
+      }
+    ],
+    "target_pivot": [
+      0.5,
+      0.96
+    ],
+    "fit_height_ratio": 1,
+    "walk": [
+      {
+        "frame": 0,
+        "duration": 0.24
+      },
+      {
+        "frame": 1,
+        "duration": 0.24
+      },
+      {
+        "frame": 2,
+        "duration": 0.24
+      },
+      {
+        "frame": 1,
+        "duration": 0.24
+      }
+    ],
+    "annotation_status": "Source stills and explicit mouth pixels manually reviewed. Proposal requires native constant-scale playback review; no animation/art-quality PASS is claimed.",
+    "normalization": "Read-only dominant connected alpha>=96 bounds; rect ends are exclusive. X is the reviewed torso ROI median. Y is torso ROI centroid plus a single reference-ground offset (176.5766 source pixels), never per-frame feet/fins. Uniform scale across all accepted poses.",
+    "mouth_method": "Manual source-pixel mouth/lip contacts checked against original visible mouth pixels; no automatic skin/beak-color landmark inference.",
+    "review_notes": "Accepted source poses 0/1/3 face right and change fin placement; walk denotes a modest swim-lane fin cycle, never a leg walk. Source pose 2 faces left and is rejected. Body-centroid alignment uses the torso, never fin tips.",
+    "idle": [
+      {
+        "frame": 0,
+        "duration": 2.5
+      },
+      {
+        "frame": 1,
+        "duration": 0.25
+      },
+      {
+        "frame": 0,
+        "duration": 1.6
+      }
+    ],
+    "look": [
+      {
+        "frame": 0,
+        "duration": 0.8
+      },
+      {
+        "frame": 2,
+        "duration": 0.35
+      },
+      {
+        "frame": 0,
+        "duration": 0.8
+      }
+    ],
+    "feed": [
+      {
+        "frame": 0,
+        "duration": 0.2
+      },
+      {
+        "frame": 1,
+        "duration": 0.25
+      },
+      {
+        "frame": 2,
+        "duration": 0.25
+      },
+      {
+        "frame": 0,
+        "duration": 0.25
+      }
+    ],
+    "pet": [
+      {
+        "frame": 0,
+        "duration": 0.2,
+        "phase": "prepare"
+      },
+      {
+        "frame": 2,
+        "duration": 0.3,
+        "phase": "bite"
+      },
+      {
+        "frame": 0,
+        "duration": 0.45,
+        "phase": "recover"
+      }
+    ],
+    "clean": [
+      {
+        "frame": 0,
+        "duration": 0.2,
+        "phase": "prepare"
+      },
+      {
+        "frame": 1,
+        "duration": 0.28,
+        "phase": "bite"
+      },
+      {
+        "frame": 0,
+        "duration": 0.47,
+        "phase": "recover"
+      }
+    ],
+    "heal": [
+      {
+        "frame": 0,
+        "duration": 0.2,
+        "phase": "prepare"
+      },
+      {
+        "frame": 1,
+        "duration": 0.35,
+        "phase": "bite"
+      },
+      {
+        "frame": 0,
+        "duration": 0.4,
+        "phase": "recover"
+      }
+    ],
+    "collect": [
+      {
+        "frame": 0,
+        "duration": 0.18,
+        "phase": "prepare"
+      },
+      {
+        "frame": 1,
+        "duration": 0.25,
+        "phase": "bite"
+      },
+      {
+        "frame": 0,
+        "duration": 0.52,
+        "phase": "recover"
+      }
+    ],
+    "turn": [
+      {
+        "frame": 0,
+        "duration": 0.48
+      }
+    ],
+    "turn_duration": 0.48,
+    "care_playback": "once; prepare/bite/recover, hold final accepted pose until 0.95 s"
+  },
+  "playback_note": "Care sequences play once and recover; selection cycles accepted attention/blink poses; turns stop before stationary attention mirroring; stride frames advance by measured Control distance. Sparse source poses still require native visual review."
+}

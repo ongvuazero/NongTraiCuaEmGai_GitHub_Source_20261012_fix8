@@ -1,0 +1,17 @@
+{
+  "spec_version": "6.5",
+  "screen_id": "SAVE_SCREEN",
+  "canonical_viewport": [1280, 720],
+  "geometry_policy": "LOCK_V6_4",
+  "base_plate": "res://v6/art/reference_runtime/save_reference_runtime_base_v6_5.png",
+  "ui_overlay": "res://v6/art/plates/save/save_ui_overlay_v6_5.png",
+  "static_icon_overlay": "res://v6/art/plates/save/save_static_icon_overlay_v6_5.png",
+  "parity_thumbnails": {
+    "slot_1": "res://v6/art/plates/save/save_thumb_slot1_v6_5.png",
+    "slot_2": "res://v6/art/plates/save/save_thumb_slot2_v6_5.png",
+    "slot_3": "res://v6/art/plates/save/save_thumb_slot3_v6_5.png",
+    "detail": "res://v6/art/plates/save/save_thumb_detail_v6_5.png"
+  },
+  "detail_title_parity": "Save Slot Details",
+  "shipping_thumbnail_policy": "real save screenshot if available; same locked rects"
+}
